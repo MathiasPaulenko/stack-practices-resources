@@ -1,0 +1,13 @@
+{
+  "name": "stack-practices-resources",
+  "version": "1.0.0",
+  "description": "Code recipes, patterns and downloadable resources for stackpractices.com",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-catalog.js",
+    "test": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
