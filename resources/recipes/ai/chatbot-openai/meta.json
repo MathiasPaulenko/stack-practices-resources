@@ -1,0 +1,20 @@
+{
+  "title": "OpenAI Assistants API Chatbot: Build, Cost & Deploy",
+  "title_es": "Chatbot con OpenAI Assistants API: Build, Coste y Deploy",
+  "description": "How to create an AI chatbot using the OpenAI Assistants API with function calling and file search.",
+  "description_es": "Cómo crear un chatbot de IA usando la OpenAI Assistants API con function calling y file search.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "chatbot-openai",
+  "source_urls": ["https://stackpractices.com/recipes/chatbot-openai/"],
+  "language": "en",
+  "tags": ["ai", "chatbot", "openai", "assistants-api", "llm", "function-calling", "file-search"],
+  "files": [
+    "chatbot.py",
+    "chatbot.js",
+    "chatbot.java",
+    "function_handler.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
