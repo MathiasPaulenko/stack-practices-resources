@@ -1,0 +1,21 @@
+{
+  "title": "Optimistic Locking in Databases: SQL, Node, Java, MongoDB, DynamoDB",
+  "title_es": "Bloqueo optimista en bases de datos: SQL, Node, Java, MongoDB, DynamoDB",
+  "description": "Practical examples of optimistic locking with versioning in PostgreSQL, Node.js, Java/JPA, MongoDB, DynamoDB and HTTP ETags.",
+  "description_es": "Ejemplos prácticos de bloqueo optimista con versionado en PostgreSQL, Node.js, Java/JPA, MongoDB, DynamoDB y ETags HTTP.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "optimistic-locking",
+  "source_urls": ["https://stackpractices.com/recipes/optimistic-locking/"],
+  "language": "en",
+  "tags": ["databases", "concurrency", "optimistic-locking", "sql", "postgresql", "mongodb", "dynamodb", "jpa", "etag"],
+  "files": [
+    "optimistic_update.py",
+    "optimistic_update.js",
+    "optimistic_update.java",
+    "batch_update.py",
+    "etags.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
