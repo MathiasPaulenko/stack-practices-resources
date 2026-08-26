@@ -1,0 +1,19 @@
+{
+  "title": "Parse and Write TOML Files: Python, Java & JS Examples",
+  "title_es": "Analizar TOML: Python, Java y JS con Ejemplos",
+  "description": "How to parse and write TOML configuration files in Python, Java, and JavaScript.",
+  "description_es": "Cómo analizar y escribir archivos de configuración TOML en Python, Java y JavaScript.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-toml-files",
+  "source_urls": ["https://stackpractices.com/recipes/parse-toml-files/"],
+  "language": "en",
+  "tags": ["data", "parsing", "config", "python", "javascript", "java", "toml", "tomli"],
+  "files": [
+    "config.toml",
+    "parse_toml.py",
+    "parse_toml.js",
+    "parse_toml.java",
+    "validate_toml.py"
+  ]
+}
