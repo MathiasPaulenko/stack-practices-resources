@@ -1,0 +1,19 @@
+# GitHub Actions workflow — lint OpenAPI spec on every PR.
+# Drop into .github/workflows/lint-openapi.yml in your repo.
+
+name: Lint OpenAPI
+
+on:
+  pull_request:
+    paths:
+      - "openapi.yaml"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npx @redocly/cli lint openapi.yaml

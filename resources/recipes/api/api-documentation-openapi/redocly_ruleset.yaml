@@ -1,0 +1,9 @@
+# Redocly CLI ruleset — custom linting rules for OpenAPI specs.
+# Usage: redocly lint --config=redocly_ruleset.yaml openapi.yaml
+
+rules:
+  operation-operationId-unique:
+    severity: error
+  operation-summary:
+    severity: warn
+    max_length: 50

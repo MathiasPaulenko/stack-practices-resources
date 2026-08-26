@@ -1,0 +1,67 @@
+openapi: 3.0.3
+info:
+  title: Book API
+  version: 1.0.0
+  description: Sample API for managing books, used in the StackPractices OpenAPI guide.
+servers:
+  - url: https://api.example.com/v1
+paths:
+  /books/{book_id}:
+    get:
+      operationId: getBookById
+      summary: Get a book by ID
+      description: Returns a single book record.
+      tags:
+        - books
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            format: int64
+          description: Numeric ID of the book.
+      responses:
+        "200":
+          description: Book found.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Book"
+        "404":
+          description: Book not found.
+          content:
+            application/problem+json:
+              schema:
+                $ref: "#/components/schemas/Problem"
+components:
+  schemas:
+    Book:
+      type: object
+      required:
+        - id
+        - title
+      properties:
+        id:
+          type: integer
+          format: int64
+        title:
+          type: string
+    Problem:
+      type: object
+      required:
+        - title
+        - status
+      properties:
+        type:
+          type: string
+          format: uri
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+        instance:
+          type: string
+          format: uri

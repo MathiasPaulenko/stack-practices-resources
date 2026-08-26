@@ -1,0 +1,22 @@
+{
+  "title": "OpenAPI Docs with Swagger UI and Redoc: A Practical Guide",
+  "title_es": "OpenAPI con Swagger UI y Redoc: guía práctica",
+  "description": "Complete runnable examples for documenting REST APIs with OpenAPI. Includes Python/FastAPI, JavaScript/Express, Java/SpringDoc, a sample OpenAPI YAML spec, and CI linting with Redocly.",
+  "description_es": "Ejemplos completos y ejecutables para documentar APIs REST con OpenAPI. Incluye Python/FastAPI, JavaScript/Express, Java/SpringDoc, un spec OpenAPI YAML de ejemplo, y linting en CI con Redocly.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "api-documentation-openapi",
+  "source_urls": [
+    "https://stackpractices.com/recipes/api-documentation-openapi/"
+  ],
+  "language": "multi",
+  "tags": ["openapi", "swagger", "redoc", "api-documentation", "fastapi", "express", "springdoc", "ci"],
+  "files": [
+    "openapi.yaml",
+    "python_fastapi.py",
+    "javascript_express.js",
+    "java_springdoc.java",
+    "redocly_ruleset.yaml",
+    "github_actions_lint.yml"
+  ]
+}
