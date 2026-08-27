@@ -1,0 +1,25 @@
+{
+  "title": "Measure and Enforce Python Test Coverage with pytest-cov",
+  "title_es": "Medir y Exigir Cobertura de Tests con pytest-cov",
+  "description": "Runnable sample project and configuration files for pytest-cov, including pyproject.toml, .coveragerc, parallel coverage, GitHub Actions and diff-cover examples.",
+  "description_es": "Proyecto de ejemplo ejecutable y archivos de configuración para pytest-cov, incluyendo pyproject.toml, .coveragerc, cobertura paralela, GitHub Actions y ejemplos de diff-cover.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "python-coverage-pytest-cov",
+  "source_urls": ["https://stackpractices.com/recipes/python-coverage-pytest-cov/"],
+  "language": "bilingual",
+  "tags": ["testing", "python", "pytest", "coverage", "pytest-cov", "branch-coverage", "ci-cd", "github-actions"],
+  "files": [
+    "pyproject.toml",
+    ".coveragerc",
+    "tox.ini",
+    "github_actions_coverage.yml",
+    "sample_app/__init__.py",
+    "sample_app/models.py",
+    "sample_app/services.py",
+    "tests/__init__.py",
+    "tests/test_services.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

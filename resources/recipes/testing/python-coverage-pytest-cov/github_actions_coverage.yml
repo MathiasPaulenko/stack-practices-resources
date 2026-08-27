@@ -1,0 +1,45 @@
+name: Tests and Coverage
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[test]"
+
+      - name: Run tests with coverage
+        run: |
+          pytest --cov=sample_app --cov-report=xml --cov-report=term-missing --cov-branch --cov-fail-under=80
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+          fail_ci_if_error: false
+
+      - name: Coverage diff for PRs
+        if: github.event_name == 'pull_request'
+        run: |
+          pip install diff-cover
+          coverage xml
+          git fetch origin ${{ github.base_ref }}
+          diff-cover coverage.xml --compare-branch=origin/${{ github.base_ref }} --fail-under=100

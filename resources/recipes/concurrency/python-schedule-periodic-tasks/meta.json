@@ -1,0 +1,19 @@
+{
+  "title": "APScheduler BackgroundScheduler: Prevent Overlapping Jobs",
+  "title_es": "APScheduler BackgroundScheduler: Evitar Tareas Superpuestas",
+  "description": "Runnable APScheduler example with interval, cron, and date triggers, persistent job stores, and Flask integration.",
+  "description_es": "Ejemplo ejecutable de APScheduler con disparadores de intervalo, cron y fecha, almacenes persistentes e integración con Flask.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "python-schedule-periodic-tasks",
+  "source_urls": ["https://stackpractices.com/recipes/python-schedule-periodic-tasks/"],
+  "language": "python",
+  "tags": ["python", "apscheduler", "scheduling", "cron", "background-jobs", "automation", "concurrency"],
+  "files": [
+    "main.py",
+    "flask_app.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
