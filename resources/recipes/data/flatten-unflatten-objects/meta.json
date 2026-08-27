@@ -1,0 +1,13 @@
+{
+  "title": "Flatten and Unflatten Nested Objects: Python, JS & Java Examples",
+  "title_es": "Aplanar y Reconstruir Objetos Anidados: Ejemplos en Python, JS y Java",
+  "description": "Runnable examples for flattening and unflattening nested objects with dot-notation, bracket indices, and custom separators in Python, JavaScript, and Java.",
+  "description_es": "Ejemplos ejecutables para aplanar y reconstruir objetos anidados con notación por puntos, índices entre corchetes y separadores personalizados en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "flatten-unflatten-objects",
+  "source_urls": ["https://stackpractices.com/recipes/flatten-unflatten-objects/"],
+  "language": "en",
+  "tags": ["flatten", "unflatten", "objects", "nested", "recursion", "python", "javascript", "java", "json", "dot-notation"],
+  "files": ["flatten.py", "flatten.js", "FlattenUtil.java", "sample.json", "README.md", "README.es.md"]
+}

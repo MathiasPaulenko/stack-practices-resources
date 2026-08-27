@@ -1,0 +1,16 @@
+{
+  "user": {
+    "name": "Alice",
+    "address": {
+      "city": "London",
+      "zip": "SW1A"
+    },
+    "tags": ["admin", "active"],
+    "emails": ["alice@example.com", "alice@work.com"]
+  },
+  "version": 1,
+  "metadata": {
+    "created": "2026-01-15",
+    "updated": "2026-08-28"
+  }
+}
