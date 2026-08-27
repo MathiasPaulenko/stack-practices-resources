@@ -1,0 +1,4 @@
+{"ts":"2023-10-10T13:55:36Z","level":"INFO","service":"web","msg":"request completed","status":200,"duration_ms":12}
+{"ts":"2023-10-10T13:55:37Z","level":"ERROR","service":"api","msg":"database timeout","status":500,"duration_ms":2300}
+{"ts":"2023-10-10T13:55:38Z","level":"WARN","service":"auth","msg":"failed login","status":401,"duration_ms":45}
+{"ts":"2023-10-10T13:55:39Z","level":"INFO","service":"web","msg":"served static asset","status":304,"duration_ms":2}

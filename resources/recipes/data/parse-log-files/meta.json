@@ -1,0 +1,24 @@
+{
+  "title": "Parse Server Log Files: Python, Java & JS Examples",
+  "title_es": "Analizar Archivos de Log: Ejemplos en Python, Java y JS",
+  "description": "Runnable examples for parsing Apache/Nginx, JSON Lines, and syslog logs in Python, Java, and JavaScript.",
+  "description_es": "Ejemplos ejecutables para analizar logs de Apache/Nginx, JSON Lines y syslog en Python, Java y JavaScript.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-log-files",
+  "source_urls": ["https://stackpractices.com/recipes/parse-log-files/"],
+  "language": "en",
+  "tags": ["logs", "parsing", "python", "javascript", "java", "devops", "observability", "syslog", "json-lines"],
+  "files": [
+    "access.log",
+    "app.jsonl",
+    "syslog.log",
+    "parse_log.py",
+    "parse_log.js",
+    "LogParser.java",
+    "parse_jsonl.py",
+    "parse_syslog.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
