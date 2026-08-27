@@ -1,0 +1,22 @@
+{
+  "title": "Thread-Safe Collections: Blocking Queues and Concurrent Maps",
+  "title_es": "Colecciones Thread-Safe: Blocking Queues y Concurrent Maps",
+  "description": "Runnable examples of blocking queues, concurrent maps, thread-safe queues, copy-on-write lists, and atomic counters in Java, Python, and C++.",
+  "description_es": "Ejemplos ejecutables de colas bloqueantes, mapas concurrentes, colas seguras entre hilos, listas copy-on-write y contadores atómicos en Java, Python y C++.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "concurrent-data-structures",
+  "source_urls": ["https://stackpractices.com/recipes/concurrent-data-structures/"],
+  "language": "java,python,cpp",
+  "tags": ["concurrency", "atomic-operations", "threads", "parallel", "java", "python", "cpp"],
+  "files": [
+    "OrderProcessor.java",
+    "InMemoryCache.java",
+    "CopyOnWriteEventDispatcher.java",
+    "TaskQueue.py",
+    "AtomicCounter.py",
+    "AtomicCounter.cpp",
+    "README.md",
+    "README.es.md"
+  ]
+}
