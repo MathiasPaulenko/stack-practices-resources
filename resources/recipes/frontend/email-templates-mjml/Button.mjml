@@ -1,0 +1,11 @@
+<!-- emails/components/Button.mjml -->
+<mj-button
+  href="{{url}}"
+  background-color="{{#if color}}{{color}}{{else}}#3b82f6{{/if}}"
+  color="#ffffff"
+  border-radius="4px"
+  font-size="16px"
+  padding="16px 32px"
+>
+  {{text}}
+</mj-button>

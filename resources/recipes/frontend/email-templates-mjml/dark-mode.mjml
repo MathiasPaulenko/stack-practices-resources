@@ -1,0 +1,26 @@
+<!-- emails/dark-mode.mjml -->
+<mjml>
+  <mj-head>
+    <mj-raw>
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+    <mj-style>
+      @media (prefers-color-scheme: dark) {
+        .dark-bg { background-color: #1f2937 !important; }
+        .dark-text { color: #f3f4f6 !important; }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f3f4f6">
+    <mj-section>
+      <mj-column>
+        <mj-wrapper css-class="dark-bg">
+          <mj-text css-class="dark-text" align="center">
+            Dark mode content
+          </mj-text>
+        </mj-wrapper>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

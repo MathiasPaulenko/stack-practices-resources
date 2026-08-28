@@ -1,0 +1,19 @@
+{
+  "name": "email-templates-mjml",
+  "version": "1.0.0",
+  "description": "Responsive email templates with MJML, Handlebars, and Nodemailer",
+  "scripts": {
+    "build": "tsc",
+    "send": "node dist/EmailSender.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "mjml": "^4.15.3",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.10",
+    "@types/nodemailer": "^6.4.15"
+  }
+}

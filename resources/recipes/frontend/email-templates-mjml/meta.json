@@ -1,0 +1,26 @@
+{
+  "title": "Build Responsive Email Templates with MJML",
+  "title_es": "Templates de Email Responsivos con MJML",
+  "description": "Create cross-client responsive email templates with MJML, compile with TypeScript, inject live variables with Handlebars, and send via Nodemailer.",
+  "description_es": "Crea templates de email responsivos con MJML, variables en vivo con Handlebars y CSS inline para Gmail, Outlook y Apple Mail.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "email-templates-mjml",
+  "source_urls": [
+    "https://stackpractices.com/recipes/email-templates-mjml/",
+    "https://stackpractices.com/es/recipes/email-templates-mjml/"
+  ],
+  "language": "typescript",
+  "tags": ["email", "mjml", "handlebars", "nodemailer", "responsive", "frontend"],
+  "files": [
+    "welcome.mjml",
+    "EmailRenderer.ts",
+    "EmailSender.ts",
+    "Button.mjml",
+    "dark-mode.mjml",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
