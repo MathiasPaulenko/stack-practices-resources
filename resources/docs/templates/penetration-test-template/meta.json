@@ -1,0 +1,24 @@
+{
+  "title": "Penetration Test Plan Template",
+  "title_es": "Plantilla de Plan de Pruebas de Penetración",
+  "description": "Document security assessment findings with this penetration test plan template, including risk ratings, reproduction steps, and actionable remediation guidance.",
+  "description_es": "Documenta hallazgos de auditorías de seguridad con esta plantilla de plan de pruebas de penetración, incluyendo calificaciones de riesgo, pasos de reproducción y guías de remediación accionables.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "penetration-test-template",
+  "source_urls": [
+    "https://owasp.org/www-project-web-security-testing-guide/",
+    "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "http://www.pentest-standard.org/index.php/Main_Page",
+    "https://csrc.nist.gov/publications/detail/sp/800-115/final",
+    "https://www.first.org/cvss/calculator/3.1"
+  ],
+  "language": ["en", "es"],
+  "tags": ["security", "template", "vulnerabilities", "owasp", "pentest"],
+  "files": [
+    "penetration-test-template.md",
+    "example-report.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
