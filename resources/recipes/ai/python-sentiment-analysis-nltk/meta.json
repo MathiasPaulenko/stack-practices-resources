@@ -1,0 +1,25 @@
+{
+  "title": "Sentiment Analysis with Python and NLTK",
+  "title_es": "Análisis de Sentimiento con Python y NLTK",
+  "description": "Score text sentiment using NLTK VADER and custom lexicons in Python. Classify reviews, process CSVs, and track sentiment trends.",
+  "description_es": "Puntúa el sentimiento de texto con NLTK VADER y léxicos personalizados. Clasifica reviews, procesa CSVs y analiza tendencias.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-sentiment-analysis-nltk",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-sentiment-analysis-nltk/",
+    "https://stackpractices.com/es/recipes/python-sentiment-analysis-nltk/"
+  ],
+  "language": "python",
+  "tags": ["ai", "python", "nlp", "text-processing", "nltk", "vader"],
+  "files": [
+    "sentiment_basic.py",
+    "classify_sentiment.py",
+    "csv_batch.py",
+    "custom_lexicon.py",
+    "sentiment_over_time.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
