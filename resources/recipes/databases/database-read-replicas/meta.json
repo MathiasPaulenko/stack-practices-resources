@@ -1,0 +1,31 @@
+{
+  "title": "Set Up Database Read Replicas for Scaling",
+  "title_es": "Configurar Read Replicas de Base de Datos para Escalado",
+  "description": "Scale read-heavy workloads with database read replicas, replication lag monitoring, and read/write splitting across primary and replica instances.",
+  "description_es": "Escala workloads intensivos en lectura con read replicas, monitoreo de replication lag y split de lectura/escritura entre primaria y réplicas.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "database-read-replicas",
+  "source_urls": [
+    "https://www.postgresql.org/docs/current/warm-standby.html",
+    "https://dev.mysql.com/doc/refman/8.0/en/replication.html",
+    "https://www.pgbouncer.org/config.html",
+    "https://proxysql.com/documentation/",
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html",
+    "https://www.cockroachlabs.com/docs/stable/architecture/overview.html"
+  ],
+  "language": "python",
+  "tags": ["database", "sql", "postgresql", "mysql", "read-replicas", "replication", "scaling", "load-balancing"],
+  "files": [
+    "routing_session.py",
+    "go_router.go",
+    "django_routers.py",
+    "pgbouncer.ini",
+    "proxysql_setup.sql",
+    "read_after_write.py",
+    "lag_monitoring.sql",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
