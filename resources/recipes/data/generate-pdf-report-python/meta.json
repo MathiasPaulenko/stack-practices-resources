@@ -1,0 +1,27 @@
+{
+  "title": "Generate PDF Reports in Python: ReportLab & fpdf2 Guide",
+  "title_es": "Generar Reportes PDF en Python: Guía de ReportLab y fpdf2",
+  "description": "Create styled PDF documents from data using ReportLab and fpdf2 in Python.",
+  "description_es": "Crea documentos PDF con estilos a partir de datos usando ReportLab y fpdf2 en Python.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "generate-pdf-report-python",
+  "source_urls": [
+    "https://stackpractices.com/recipes/generate-pdf-report-python/",
+    "https://stackpractices.com/es/recipes/generate-pdf-report-python/"
+  ],
+  "language": "python",
+  "tags": ["pdf", "python", "reportlab", "fpdf2", "pandas", "matplotlib", "weasyprint"],
+  "files": [
+    "basic_fpdf2.py",
+    "styled_reportlab.py",
+    "pdf_from_dataframe.py",
+    "header_footer.py",
+    "chart_report.py",
+    "weasyprint_html.py",
+    "batch_invoices.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
