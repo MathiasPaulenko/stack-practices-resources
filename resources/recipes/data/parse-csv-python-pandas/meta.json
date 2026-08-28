@@ -1,0 +1,25 @@
+{
+  "title": "Parse CSV Files with Python and Pandas",
+  "title_es": "Leer Archivos CSV con Python y Pandas",
+  "description": "Read, filter, and transform large CSV files efficiently using Python pandas and the csv module.",
+  "description_es": "Leer, filtrar y transformar archivos CSV grandes de forma eficiente con pandas y el módulo csv de Python.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-csv-python-pandas",
+  "source_urls": [
+    "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html",
+    "https://docs.python.org/3/library/csv.html",
+    "https://pola.rs/user-guide/io/csv/",
+    "https://duckdb.org/docs/data/csv/overview",
+    "https://dask.org/"
+  ],
+  "language": "python",
+  "tags": ["csv", "pandas", "python", "data-processing", "file-handling"],
+  "files": [
+    "parse_csv_examples.py",
+    "sample.csv",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
