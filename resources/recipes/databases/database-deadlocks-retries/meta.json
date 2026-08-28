@@ -1,0 +1,23 @@
+{
+  "title": "Handle Database Deadlocks and Retries",
+  "title_es": "Manejar deadlocks y reintentos en bases de datos",
+  "description": "Detect, prevent, and recover from database deadlocks with automatic retry logic, consistent lock ordering, and the right isolation levels.",
+  "description_es": "Detecta, previene y recupera deadlocks de base de datos con lógica de reintento automático, ordenamiento consistente de locks y niveles de aislamiento adecuados.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "database-deadlocks-retries",
+  "source_urls": [
+    "https://stackpractices.com/recipes/database-deadlocks-retries/",
+    "https://stackpractices.com/es/recipes/database-deadlocks-retries/"
+  ],
+  "language": "multi",
+  "tags": ["database", "deadlocks", "retries", "transactions", "isolation-levels", "sql", "postgresql", "mysql", "sql-server"],
+  "files": [
+    "transfer_funds.py",
+    "transfer_funds.js",
+    "TransferFunds.java",
+    "deadlock_test.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
