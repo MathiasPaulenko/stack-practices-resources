@@ -1,0 +1,18 @@
+{
+  "title": "asyncio.Semaphore: Limit Concurrent API Calls in Python",
+  "title_es": "Limitar Llamadas API Concurrentes con asyncio.Semaphore",
+  "description": "Practical asyncio.Semaphore patterns for rate limiting, connection pool management, and bounded concurrency in Python.",
+  "description_es": "Patrones prácticos con asyncio.Semaphore para limitación de tasa, gestión de pools de conexiones y concurrencia limitada en Python.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "python-asyncio-semaphore-rate-limiting",
+  "source_urls": "https://stackpractices.com/recipes/python-asyncio-semaphore-rate-limiting/",
+  "language": "python",
+  "tags": ["python", "asyncio", "semaphore", "rate-limiting", "concurrency"],
+  "files": [
+    "semaphore_examples.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

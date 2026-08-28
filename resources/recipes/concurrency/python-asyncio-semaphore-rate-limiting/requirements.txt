@@ -1,0 +1,3 @@
+# asyncio.Semaphore companion examples — no external runtime deps required
+# for patterns 1, 3, 4, 5, 6, 7 (stdlib only). Pattern 2 is simulated.
+# Install aiohttp only if you want real HTTP calls.
