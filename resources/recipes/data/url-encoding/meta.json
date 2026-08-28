@@ -1,0 +1,22 @@
+{
+  "title": "URL Encoding",
+  "title_es": "Codificacion de URLs",
+  "description": "Encode and decode URLs, query parameters, and path segments safely across Python, JavaScript, and Java.",
+  "description_es": "Codifica y decodifica URLs, parámetros de query y segmentos de path de forma segura en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "url-encoding",
+  "source_urls": [
+    "https://stackpractices.com/recipes/url-encoding/",
+    "https://stackpractices.com/es/recipes/url-encoding/"
+  ],
+  "language": "multi",
+  "tags": ["data", "encoding", "url", "percent-encoding", "parsing", "python", "javascript", "java", "utf-8"],
+  "files": [
+    "url_encoding.py",
+    "url_encoding.js",
+    "UrlEncoding.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
