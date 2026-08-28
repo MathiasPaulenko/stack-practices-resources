@@ -5,7 +5,7 @@ Ejemplos ejecutables para la receta [Análisis de Sentimiento con Python y NLTK]
 ## Archivos
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | `sentiment_basic.py` | Scoring básico de sentimiento con VADER |
 | `classify_sentiment.py` | Clasifica texto en etiquetas positivo/negativo/neutral |
 | `csv_batch.py` | Procesamiento en lote de sentimiento desde CSV |

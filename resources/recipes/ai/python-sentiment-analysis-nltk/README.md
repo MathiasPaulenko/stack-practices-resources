@@ -5,7 +5,7 @@ Runnable examples for the [Sentiment Analysis with Python and NLTK](https://stac
 ## Files
 
 | File | Description |
-|------|-------------|
+| ------ | ------------- |
 | `sentiment_basic.py` | Basic VADER sentiment scoring |
 | `classify_sentiment.py` | Classify text into positive/negative/neutral labels |
 | `csv_batch.py` | Batch process sentiment scoring from a CSV file |
