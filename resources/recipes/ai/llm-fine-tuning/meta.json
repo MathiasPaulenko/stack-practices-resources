@@ -1,0 +1,22 @@
+{
+  "title": "LLM Fine-Tuning for Code Generation with LoRA",
+  "title_es": "Fine-Tuning de LLM para Generación de Código con LoRA",
+  "description": "Runnable companion for fine-tuning a causal language model on code tasks using LoRA/QLoRA with Hugging Face transformers, PEFT, and datasets.",
+  "description_es": "Companion ejecutable para hacer fine-tuning de un modelo de lenguaje causal en tareas de código usando LoRA/QLoRA con Hugging Face transformers, PEFT y datasets.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "llm-fine-tuning",
+  "source_urls": [
+    "https://stackpractices.com/recipes/llm-fine-tuning/"
+  ],
+  "language": "python",
+  "tags": ["llm", "fine-tuning", "lora", "qlora", "hugging-face", "code-generation"],
+  "files": [
+    "fine_tune.py",
+    "requirements.txt",
+    "data/train.jsonl",
+    "data/val.jsonl",
+    "README.md",
+    "README.es.md"
+  ]
+}

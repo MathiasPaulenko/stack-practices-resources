@@ -1,0 +1,2 @@
+{"instruction": "Write a Python function that sums a list of numbers", "output": "def sum_numbers(numbers):\n    return sum(numbers)\n\nprint(sum_numbers([1, 2, 3, 4, 5]))"}
+{"instruction": "Write a Python function that converts Celsius to Fahrenheit", "output": "def celsius_to_fahrenheit(c):\n    return (c * 9/5) + 32\n\nprint(celsius_to_fahrenheit(0))"}
