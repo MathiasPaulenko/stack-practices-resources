@@ -1,0 +1,28 @@
+{
+  "title": "Go REST API with Gin and Middleware",
+  "title_es": "REST API en Go con Gin y Middleware",
+  "description": "Runnable companion for a Go REST API using Gin. Includes logging, auth, request validation, structured error handling, and graceful shutdown.",
+  "description_es": "Companion ejecutable para una REST API en Go con Gin. Incluye logging, auth, validación de requests, manejo estructurado de errores y graceful shutdown.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "go-rest-api-gin",
+  "source_urls": [
+    "https://stackpractices.com/recipes/go-rest-api-gin/"
+  ],
+  "language": "multi",
+  "tags": ["golang", "gin", "rest", "middleware", "api", "graceful-shutdown"],
+  "files": [
+    "go.mod",
+    "main.go",
+    "middleware/logger.go",
+    "middleware/auth.go",
+    "middleware/error.go",
+    "middleware/auth_test.go",
+    "middleware/error_test.go",
+    "handlers/user.go",
+    "handlers/user_test.go",
+    "server/server.go",
+    "README.md",
+    "README.es.md"
+  ]
+}
