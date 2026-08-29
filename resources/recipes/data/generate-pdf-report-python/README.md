@@ -4,18 +4,18 @@ Runnable examples for the [Generate PDF Reports in Python](https://stackpractice
 
 ## Files
 
-| File | Description |
-|------|-------------|
-| `basic_fpdf2.py` | Simple text PDF with fpdf2 |
-| `styled_reportlab.py` | Styled table and title with ReportLab |
-| `pdf_from_dataframe.py` | Render a pandas DataFrame to PDF |
-| `header_footer.py` | Page numbers and footer text with ReportLab |
-| `chart_report.py` | Embed a matplotlib chart into a PDF |
-| `weasyprint_html.py` | Convert HTML and CSS to PDF with WeasyPrint |
-| `batch_invoices.py` | Generate multiple PDFs from a list of records |
-| `requirements.txt` | Python dependencies |
-| `README.md` | English instructions |
-| `README.es.md` | Spanish instructions |
+| File                  | Description                                          |
+| --------------------- | ---------------------------------------------------- |
+| `basic_fpdf2.py`      | Simple text PDF with fpdf2                           |
+| `styled_reportlab.py` | Styled table and title with ReportLab                |
+| `pdf_from_dataframe.py` | Render a pandas DataFrame to PDF                   |
+| `header_footer.py`    | Page numbers and footer text with ReportLab          |
+| `chart_report.py`     | Embed a matplotlib chart into a PDF                  |
+| `weasyprint_html.py`  | Convert HTML and CSS to PDF with WeasyPrint          |
+| `batch_invoices.py`   | Generate multiple PDFs from a list of records        |
+| `requirements.txt`    | Python dependencies                                  |
+| `README.md`           | English instructions                                 |
+| `README.es.md`        | Spanish instructions                                 |
 
 ## Quick Start
 
