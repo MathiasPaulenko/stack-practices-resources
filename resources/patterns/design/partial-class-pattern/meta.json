@@ -1,0 +1,35 @@
+{
+  "title": "Partial Class Pattern",
+  "title_es": "Patrón Partial Class",
+  "description": "Runnable C# examples of the Partial Class Pattern: generated vs custom files, responsibility splits and serialization.",
+  "description_es": "Ejemplos ejecutables en C# del Patrón Partial Class: archivos generados vs custom, separación de responsabilidades y serialización.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "partial-class-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/partial-class-pattern/"
+  ],
+  "language": "csharp",
+  "tags": [
+    "partial-class",
+    "csharp",
+    "design-pattern",
+    "code-generation",
+    "structural",
+    "dotnet"
+  ],
+  "files": [
+    "Program.cs",
+    "partial-class-pattern.csproj",
+    "Customer.generated.cs",
+    "Customer.custom.cs",
+    "Order.cs",
+    "Order.Validation.cs",
+    "Order.Pricing.cs",
+    "Order.Serialization.cs",
+    "OrderItem.cs",
+    "CouponService.cs",
+    "README.md",
+    "README.es.md"
+  ]
+}
