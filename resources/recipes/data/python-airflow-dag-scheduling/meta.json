@@ -17,6 +17,9 @@
     "README.es.md",
     "requirements.txt",
     "docker-compose.yml",
-    "dags/etl_daily_pipeline.py"
+    "dags/etl_daily_pipeline.py",
+    "dags/sensor_example.py",
+    "dags/branching_example.py",
+    "dags/dynamic_mapping_example.py"
   ]
 }

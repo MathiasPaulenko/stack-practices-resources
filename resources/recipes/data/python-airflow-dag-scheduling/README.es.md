@@ -5,6 +5,9 @@ Proyecto complementario ejecutable para la receta de StackPractices.
 ## Contenido
 
 - `dags/etl_daily_pipeline.py` — un DAG completo de Airflow usando la TaskFlow API.
+- `dags/sensor_example.py` — un `PythonSensor` que espera un archivo con modo `reschedule`.
+- `dags/branching_example.py` — un `BranchPythonOperator` que elige entre dos caminos.
+- `dags/dynamic_mapping_example.py` — mapeo dinámico de tareas con `expand()`.
 - `docker-compose.yml` — un setup local mínimo basado en `airflow standalone`.
 - `requirements.txt` — dependencias de Python.
 
@@ -40,6 +43,9 @@ del contenedor.
 | Archivo | Propósito |
 | --- | --- |
 | `dags/etl_daily_pipeline.py` | DAG ETL de ejemplo con TaskFlow API |
+| `dags/sensor_example.py` | Sensor que espera un archivo con modo `reschedule` |
+| `dags/branching_example.py` | Branching condicional con `BranchPythonOperator` |
+| `dags/dynamic_mapping_example.py` | Mapeo dinámico de tareas con `expand()` |
 | `requirements.txt` | Dependencias de Python |
 | `docker-compose.yml` | Contenedor mínimo de Airflow standalone |
 
