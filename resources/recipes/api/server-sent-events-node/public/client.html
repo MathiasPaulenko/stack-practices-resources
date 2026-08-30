@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSE Client Demo</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 0.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    li.connected { color: #16a34a; }
+    li.heartbeat { color: #6b7280; }
+    li.error { color: #dc2626; }
+  </style>
+</head>
+<body>
+  <h1>SSE Client Demo</h1>
+  <p>Open the console to see the connection status and events.</p>
+  <ul id="events"></ul>
+
+  <script>
+    const list = document.getElementById('events');
+    let attempts = 0;
+    let reconnectTimer = null;
+
+    function append(type, text) {
+      const li = document.createElement('li');
+      li.className = type;
+      li.textContent = `${new Date().toLocaleTimeString()} — ${text}`;
+      list.prepend(li);
+    }
+
+    function connect() {
+      const source = new EventSource('/events');
+
+      source.addEventListener('connected', (e) => {
+        attempts = 0;
+        const data = JSON.parse(e.data);
+        append('connected', `Connected as ${data.clientId}`);
+      });
+
+      source.addEventListener('notification', (e) => {
+        const data = JSON.parse(e.data);
+        append('notification', data.message);
+      });
+
+      source.addEventListener('heartbeat', (e) => {
+        const data = JSON.parse(e.data);
+        append('heartbeat', `Heartbeat ${data.ts}`);
+      });
+
+      source.onerror = () => {
+        source.close();
+        append('error', 'Connection error; retrying...');
+
+        if (reconnectTimer) return;
+
+        const delay = Math.min(1000 * 2 ** attempts, 30000);
+        attempts += 1;
+
+        reconnectTimer = setTimeout(() => {
+          reconnectTimer = null;
+          connect();
+        }, delay);
+      };
+    }
+
+    connect();
+  </script>
+</body>
+</html>

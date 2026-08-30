@@ -1,0 +1,22 @@
+{
+  "title": "Server-Sent Events with Node.js and Express",
+  "title_es": "Server-Sent Events con Node.js y Express",
+  "description": "Runnable companion for the SSE with Node.js and Express recipe. Includes an Express server, browser client demo, heartbeats, reconnection, and backpressure handling.",
+  "description_es": "Companion ejecutable para la receta de SSE con Node.js y Express. Incluye un servidor Express, demo de cliente en browser, heartbeats, reconexión y manejo de backpressure.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "server-sent-events-node",
+  "source_urls": [
+    "https://stackpractices.com/recipes/server-sent-events-node/"
+  ],
+  "language": "typescript",
+  "tags": ["sse", "real-time", "nodejs", "express", "api"],
+  "files": [
+    "package.json",
+    "tsconfig.json",
+    "src/server.ts",
+    "public/client.html",
+    "README.md",
+    "README.es.md"
+  ]
+}

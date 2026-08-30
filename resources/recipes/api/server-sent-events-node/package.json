@@ -1,0 +1,22 @@
+{
+  "name": "server-sent-events-node",
+  "version": "1.0.0",
+  "description": "Runnable companion for the StackPractices SSE with Node.js and Express recipe",
+  "type": "module",
+  "scripts": {
+    "dev:server": "tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
