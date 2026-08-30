@@ -1,0 +1,22 @@
+{
+  "title": "Schedule and Monitor DAGs with Apache Airflow",
+  "title_es": "Programar y Monitorear DAGs con Apache Airflow",
+  "description": "Runnable Apache Airflow DAG example with TaskFlow API, sensors, branching, and dynamic task mapping.",
+  "description_es": "Ejemplo ejecutable de DAG de Apache Airflow con TaskFlow API, sensors, branching y dynamic task mapping.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "python-airflow-dag-scheduling",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-airflow-dag-scheduling/",
+    "https://stackpractices.com/es/recipes/python-airflow-dag-scheduling/"
+  ],
+  "language": "bilingual",
+  "tags": ["airflow", "dag", "python", "scheduling", "etl", "taskflow", "orchestration"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "requirements.txt",
+    "docker-compose.yml",
+    "dags/etl_daily_pipeline.py"
+  ]
+}
