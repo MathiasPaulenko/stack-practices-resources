@@ -1,0 +1,14 @@
+{
+  "name": "convert-csv-to-json",
+  "version": "1.0.0",
+  "description": "CSV to JSON conversion examples in Node.js",
+  "type": "module",
+  "scripts": {
+    "csv-parse": "node convert_csv_csv_parse.mjs",
+    "papaparse": "node convert_csv_papaparse.mjs"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "papaparse": "^5.4.1"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Convert CSV to JSON",
+  "title_es": "Convertir CSV a JSON",
+  "description": "Runnable Python, JavaScript, and Java examples for converting CSV files to structured JSON.",
+  "description_es": "Ejemplos ejecutables en Python, JavaScript y Java para convertir archivos CSV a JSON estructurado.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "convert-csv-to-json",
+  "source_urls": [
+    "https://stackpractices.com/recipes/convert-csv-to-json/",
+    "https://stackpractices.com/es/recipes/convert-csv-to-json/"
+  ],
+  "language": "bilingual",
+  "tags": ["csv", "json", "conversion", "python", "javascript", "java", "data-processing"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "data/sample.csv",
+    "convert_csv_std.py",
+    "convert_csv_pandas.py",
+    "requirements.txt",
+    "convert_csv_csv_parse.mjs",
+    "convert_csv_papaparse.mjs",
+    "package.json",
+    "pom.xml",
+    "src/main/java/CsvToJson.java",
+    "src/main/java/CsvToJsonCommons.java"
+  ]
+}
