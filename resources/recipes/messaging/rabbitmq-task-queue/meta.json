@@ -1,0 +1,21 @@
+{
+  "title": "RabbitMQ Task Queue and RPC",
+  "title_es": "RabbitMQ Task Queue y RPC",
+  "description": "Runnable RabbitMQ examples with durable task queues, dead-letter exchanges, prefetch, bounded retries and request-reply RPC using amqplib.",
+  "description_es": "Ejemplos ejecutables de RabbitMQ con durable task queues, dead-letter exchanges, prefetch, reintentos acotados y RPC request-reply usando amqplib.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "rabbitmq-task-queue",
+  "source_urls": ["https://stackpractices.com/recipes/rabbitmq-task-queue/"],
+  "language": "typescript",
+  "tags": ["rabbitmq", "amqp", "typescript", "task-queue", "rpc", "messaging", "dead-letter-queue"],
+  "files": [
+    "producer.ts",
+    "worker.ts",
+    "rpc-client.ts",
+    "rpc-server.ts",
+    "docker-compose.rabbitmq.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
