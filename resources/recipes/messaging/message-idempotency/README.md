@@ -21,7 +21,7 @@ Runnable examples for the StackPractices recipe [Message Processing Idempotency]
 docker compose up -d
 ```
 
-2. Run the Node.js Redis example:
+1. Run the Node.js Redis example:
 
 ```bash
 cp .env.example .env
@@ -29,7 +29,7 @@ npm install
 node redis_dedup.js
 ```
 
-3. Run the Python Kafka consumer:
+1. Run the Python Kafka consumer:
 
 ```bash
 python -m venv .venv
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 python kafka_consumer.py
 ```
 
-4. Run the Java Kafka consumer:
+1. Run the Java Kafka consumer:
 
 ```bash
 mvn compile

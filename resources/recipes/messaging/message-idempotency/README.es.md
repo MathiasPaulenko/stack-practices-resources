@@ -21,7 +21,7 @@ Ejemplos ejecutables para la receta de StackPractices [Idempotencia en Procesami
 docker compose up -d
 ```
 
-2. Ejecutá el ejemplo de Redis en Node.js:
+1. Ejecutá el ejemplo de Redis en Node.js:
 
 ```bash
 cp .env.example .env
@@ -29,7 +29,7 @@ npm install
 node redis_dedup.js
 ```
 
-3. Ejecutá el consumer Kafka en Python:
+1. Ejecutá el consumer Kafka en Python:
 
 ```bash
 python -m venv .venv
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 python kafka_consumer.py
 ```
 
-4. Ejecutá el consumer Kafka en Java:
+1. Ejecutá el consumer Kafka en Java:
 
 ```bash
 mvn compile
