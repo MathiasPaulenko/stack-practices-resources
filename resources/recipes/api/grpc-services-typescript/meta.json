@@ -1,0 +1,23 @@
+{
+  "title": "Build gRPC Services in TypeScript with Protocol Buffers",
+  "title_es": "Construye servicios gRPC en TypeScript con Protocol Buffers",
+  "description": "Runnable Node.js gRPC example with @grpc/grpc-js: unary, streaming, health checks, TLS and deadlines.",
+  "description_es": "Ejemplo ejecutable de gRPC con @grpc/grpc-js: llamadas unarias, streaming, health checks, TLS y deadlines.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "grpc-services-typescript",
+  "source_urls": ["https://stackpractices.com/recipes/grpc-services-typescript/"],
+  "language": "bilingual",
+  "tags": ["grpc", "typescript", "protobuf", "microservices", "streaming", "health-checks", "tls", "nodejs"],
+  "files": [
+    "package.json",
+    "tsconfig.json",
+    "proto/user.proto",
+    "src/server.ts",
+    "src/client.ts",
+    "src/health-client.ts",
+    ".env.example",
+    "README.md",
+    "README.es.md"
+  ]
+}

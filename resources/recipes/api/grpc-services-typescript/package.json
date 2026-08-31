@@ -1,0 +1,23 @@
+{
+  "name": "grpc-typescript-services",
+  "version": "1.0.0",
+  "description": "Runnable gRPC example in TypeScript with unary, streaming, health checks, TLS and deadlines.",
+  "scripts": {
+    "proto:generate": "grpc_tools_node_protoc --js_out=import_style=commonjs,binary:./generated --grpc_out=grpc_js:./generated --ts_out=grpc_js:./generated --proto_path=./proto ./proto/*.proto",
+    "build": "tsc",
+    "start:server": "ts-node src/server.ts",
+    "start:client": "ts-node src/client.ts",
+    "start:health": "ts-node src/health-client.ts"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.12.0",
+    "grpc-health-check": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "grpc-tools": "^1.12.0",
+    "ts-node": "^10.9.0",
+    "ts-protoc-gen": "^0.15.0",
+    "typescript": "^5.4.0"
+  }
+}
