@@ -1,0 +1,12 @@
+GET /products/_search
+{
+  "size": 0,
+  "aggs": {
+    "categories": {
+      "terms": { "field": "category.keyword", "size": 10 }
+    },
+    "brands": {
+      "terms": { "field": "brand.keyword", "size": 10 }
+    }
+  }
+}

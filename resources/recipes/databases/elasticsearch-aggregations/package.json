@@ -1,0 +1,8 @@
+{
+  "name": "elasticsearch-aggregations-companion",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.15.0"
+  }
+}

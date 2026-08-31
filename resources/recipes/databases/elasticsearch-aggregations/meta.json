@@ -1,0 +1,33 @@
+{
+  "title": "How to Use Elasticsearch Aggregations (With Examples)",
+  "title_es": "Cómo usar agregaciones de Elasticsearch (con ejemplos)",
+  "description": "Runnable Elasticsearch aggregation examples in Python, JavaScript, and JSON queries with Docker Compose.",
+  "description_es": "Ejemplos ejecutables de agregaciones de Elasticsearch en Python, JavaScript y consultas JSON con Docker Compose.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "elasticsearch-aggregations",
+  "source_urls": [
+    "https://stackpractices.com/recipes/elasticsearch-aggregations/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "elasticsearch",
+    "aggregations",
+    "analytics",
+    "search",
+    "databases"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "requirements.txt",
+    "package.json",
+    "python/products_aggregations.py",
+    "javascript/search_client.mjs",
+    "queries/setup_index.json",
+    "queries/terms_facet.json",
+    "queries/date_histogram_revenue.json",
+    "queries/composite_pagination.json"
+  ]
+}

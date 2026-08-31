@@ -1,0 +1,18 @@
+PUT /products
+{
+  "mappings": {
+    "properties": {
+      "name": { "type": "text" },
+      "category": {
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "brand": {
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "price": { "type": "float" },
+      "popularity": { "type": "float" }
+    }
+  }
+}
