@@ -1,0 +1,39 @@
+{
+  "title": "Password Hashing with bcrypt, Argon2 and PBKDF2",
+  "title_es": "Hashing de Contraseñas con bcrypt, Argon2 y PBKDF2",
+  "description": "Runnable examples in Python, JavaScript and Java for hashing and verifying passwords with bcrypt, Argon2id and PBKDF2, plus work-factor benchmarks.",
+  "description_es": "Ejemplos ejecutables en Python, JavaScript y Java para hashear y verificar contraseñas con bcrypt, Argon2id y PBKDF2, más benchmarks del factor de trabajo.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "password-hashing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/password-hashing/"
+  ],
+  "language": "multi",
+  "tags": [
+    "authentication",
+    "bcrypt",
+    "argon2",
+    "pbkdf2",
+    "security",
+    "python",
+    "nodejs",
+    "java"
+  ],
+  "files": [
+    "hash_bcrypt.py",
+    "hash_argon2.py",
+    "hash_pbkdf2.py",
+    "hash_bcrypt.js",
+    "hash_argon2.js",
+    "hash_pbkdf2.js",
+    "HashBcrypt.java",
+    "HashArgon2.java",
+    "HashPBKDF2.java",
+    "pom.xml",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

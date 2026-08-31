@@ -1,0 +1,15 @@
+{
+  "name": "password-hashing-companion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runnable password hashing examples in Node.js",
+  "scripts": {
+    "bcrypt": "node hash_bcrypt.js",
+    "argon2": "node hash_argon2.js",
+    "pbkdf2": "node hash_pbkdf2.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "argon2": "^0.40.1"
+  }
+}
