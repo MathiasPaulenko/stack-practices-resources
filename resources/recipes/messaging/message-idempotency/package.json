@@ -1,0 +1,12 @@
+{
+  "name": "message-idempotency-companion",
+  "version": "1.0.0",
+  "description": "Runnable idempotent consumer examples for StackPractices",
+  "main": "redis_dedup.js",
+  "scripts": {
+    "redis": "node redis_dedup.js"
+  },
+  "dependencies": {
+    "redis": "^4.7.0"
+  }
+}

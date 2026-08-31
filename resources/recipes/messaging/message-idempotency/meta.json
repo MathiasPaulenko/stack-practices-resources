@@ -1,0 +1,26 @@
+{
+  "title": "Message Processing Idempotency",
+  "title_es": "Idempotencia en Procesamiento de Mensajes",
+  "description": "Runnable idempotent consumer examples using Redis, PostgreSQL and Kafka with Node.js, Python and Java.",
+  "description_es": "Ejemplos ejecutables de consumers idempotentes con Redis, PostgreSQL y Kafka en Node.js, Python y Java.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "message-idempotency",
+  "source_urls": ["https://stackpractices.com/recipes/message-idempotency/"],
+  "language": "mixed",
+  "tags": ["messaging", "distributed-systems", "kafka", "rabbitmq", "idempotency", "deduplication", "redis", "postgresql"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "package.json",
+    "requirements.txt",
+    "pom.xml",
+    "redis_dedup.js",
+    "postgres_dedup.sql",
+    "kafka_consumer.py",
+    "kafka_consumer.java",
+    "kafka_idempotent_producer.java",
+    "sqs_handler.py"
+  ]
+}
