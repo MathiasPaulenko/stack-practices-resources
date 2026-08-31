@@ -1,0 +1,7 @@
+# Force LF line endings for shell scripts so hooks work on Windows and Unix.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.pdf binary

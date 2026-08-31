@@ -1,0 +1,15 @@
+pre-commit:
+  commands:
+    lint-js:
+      glob: "*.{js,ts}"
+      run: npx eslint {staged_files}
+    lint-py:
+      glob: "*.py"
+      run: pre-commit run --files {staged_files}
+    check-secrets:
+      run: gitleaks protect --staged
+
+commit-msg:
+  commands:
+    commitlint:
+      run: npx --no-install commitlint --edit {1}

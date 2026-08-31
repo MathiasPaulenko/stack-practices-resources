@@ -1,0 +1,37 @@
+{
+  "title": "Set Up Pre-Commit Hooks with husky and lint-staged",
+  "title_es": "Configura pre-commit hooks con husky y lint-staged",
+  "description": "Ready-to-use pre-commit hook examples for Python, JavaScript, Node, Java and cross-language projects with husky, lint-staged, pre-commit, simple-git-hooks and lefthook.",
+  "description_es": "Ejemplos listos para usar de hooks pre-commit para Python, JavaScript, Node, Java y proyectos multi-lenguaje con husky, lint-staged, pre-commit, simple-git-hooks y lefthook.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "pre-commit-hooks",
+  "source_urls": [
+    "https://stackpractices.com/recipes/pre-commit-hooks/",
+    "https://stackpractices.com/es/recipes/pre-commit-hooks/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pre-commit",
+    "husky",
+    "lint-staged",
+    "git-hooks",
+    "code-quality",
+    "gitleaks",
+    "commitlint",
+    "simple-git-hooks",
+    "lefthook"
+  ],
+  "files": [
+    ".pre-commit-config.yaml",
+    ".gitattributes",
+    ".husky/pre-commit",
+    ".lintstagedrc.js",
+    "commitlint.config.js",
+    "package.json",
+    "build.gradle",
+    "lefthook.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
