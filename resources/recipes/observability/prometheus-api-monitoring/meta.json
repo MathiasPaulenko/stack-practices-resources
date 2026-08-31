@@ -1,0 +1,26 @@
+{
+  "title": "Prometheus API Monitoring",
+  "title_es": "Monitoreo de APIs con Prometheus",
+  "description": "Prometheus client instrumentation for REST and gRPC APIs with custom metrics, collectors, alerting rules, and Grafana dashboards.",
+  "description_es": "Instrumentación con cliente Prometheus para APIs REST y gRPC con métricas personalizadas, recolectores, reglas de alertas y paneles de Grafana.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "prometheus-api-monitoring",
+  "source_urls": [
+    "https://stackpractices.com/recipes/prometheus-api-monitoring/",
+    "https://stackpractices.com/es/recipes/prometheus-api-monitoring/"
+  ],
+  "language": "multi",
+  "tags": ["prometheus", "observability", "api-monitoring", "metrics", "alerting", "devops"],
+  "files": [
+    "middleware.js",
+    "middleware.go",
+    "middleware.py",
+    "prometheus-alerts.yml",
+    "prometheus.yml",
+    "prometheus-queries.yml",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

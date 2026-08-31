@@ -1,0 +1,21 @@
+# prometheus-queries.yml
+# Requests per second
+rate(http_requests_total[5m])
+
+# p99 latency
+histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket[5m])) by (le))
+
+# Error rate
+rate(http_requests_total{status_code=~"5.."}[5m])
+
+# SLI: percentage of requests under 500ms
+sum(rate(http_request_duration_seconds_bucket{le="0.5"}[30d]))
+/
+sum(rate(http_request_duration_seconds_count[30d]))
+
+# Error budget remaining
+1 - (
+  sum(rate(http_requests_total{status_code=~"5.."}[30d]))
+  /
+  sum(rate(http_requests_total[30d]))
+)
