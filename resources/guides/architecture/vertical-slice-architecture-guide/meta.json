@@ -1,0 +1,29 @@
+{
+  "title": "Vertical Slice Architecture: Feature-First Organization",
+  "title_es": "Slices Verticales: Organización por Feature",
+  "description": "A practical guide to Vertical Slice Architecture: organizing code by feature instead of technical concern to reduce cross-layer navigation and improve cohesion.",
+  "description_es": "Guía práctica de Arquitectura por Slices Verticales: organizar código por feature en lugar de por capa técnica para reducir navegación cruzada y mejorar cohesión.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "vertical-slice-architecture-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/vertical-slice-architecture-guide/",
+    "es": "https://stackpractices.com/es/guides/vertical-slice-architecture-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["vertical-slice", "architecture", "feature-based", "cohesion", "modularity"],
+  "files": [
+    "Features/Orders/CreateOrder/CreateOrderCommand.cs",
+    "Features/Orders/CreateOrder/CreateOrderHandler.cs",
+    "Features/Orders/CreateOrder/CreateOrderValidator.cs",
+    "Features/Orders/CreateOrder/CreateOrderEndpoint.cs",
+    "Common/Behaviors/LoggingBehavior.cs",
+    "Common/Behaviors/ValidationBehavior.cs",
+    "Common/Domain/Order.cs",
+    "Common/Domain/Product.cs",
+    "Common/Infrastructure/AppDbContext.cs",
+    "Program.cs",
+    "README.md",
+    "README.es.md"
+  ]
+}

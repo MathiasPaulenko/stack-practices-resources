@@ -1,0 +1,23 @@
+{
+  "title": "Docker Network Isolation and Inter-Container Security",
+  "title_es": "Aislamiento de Red Docker y Seguridad Entre Contenedores",
+  "description": "Secure inter-container communication with custom Docker networks, network segmentation, and access control policies.",
+  "description_es": "Asegura la comunicación entre contenedores con redes Docker personalizadas, segmentación de red y políticas de control de acceso.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-network-isolation",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/docker-network-isolation/",
+    "es": "https://stackpractices.com/es/recipes/docker-network-isolation/"
+  },
+  "language": ["bash", "yaml", "dockerfile"],
+  "tags": ["docker", "networking", "security", "isolation", "bridge", "overlay"],
+  "files": [
+    "docker-compose.yml",
+    "Dockerfile",
+    "nginx.conf",
+    "init-db.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

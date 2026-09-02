@@ -1,0 +1,26 @@
+{
+  "title": "Export Data to CSV and Excel Files",
+  "title_es": "Exportar Datos a CSV y Excel",
+  "description": "How to export structured data to CSV and Excel files efficiently.",
+  "description_es": "Cómo exportar datos estructurados a archivos CSV y Excel de forma eficiente.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "export-csv-excel",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/export-csv-excel/",
+    "es": "https://stackpractices.com/es/recipes/export-csv-excel/"
+  },
+  "language": ["python", "javascript", "java"],
+  "tags": ["file-handling", "csv", "excel", "data", "python", "javascript", "java", "export", "streaming"],
+  "files": [
+    "export_csv.py",
+    "export_excel.js",
+    "ExportExcel.java",
+    "sanitize_csv.py",
+    "requirements.txt",
+    "package.json",
+    "pom.xml",
+    "README.md",
+    "README.es.md"
+  ]
+}

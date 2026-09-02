@@ -9,7 +9,7 @@
   "source_urls": [
     "https://stackpractices.com/recipes/server-sent-events-node/"
   ],
-  "language": "typescript",
+  "language": "bilingual",
   "tags": ["sse", "real-time", "nodejs", "express", "api"],
   "files": [
     "package.json",

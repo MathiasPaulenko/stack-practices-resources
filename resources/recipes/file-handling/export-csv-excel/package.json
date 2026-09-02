@@ -1,0 +1,14 @@
+{
+  "name": "export-csv-excel-companion",
+  "version": "1.0.0",
+  "description": "CSV and Excel export examples in JavaScript",
+  "main": "export_excel.js",
+  "scripts": {
+    "start": "node export_excel.js"
+  },
+  "dependencies": {
+    "fast-csv": "^5.0.0",
+    "xlsx": "^0.18.5",
+    "express": "^4.18.0"
+  }
+}
