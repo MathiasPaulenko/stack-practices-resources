@@ -1,0 +1,29 @@
+{
+  "title": "gRPC API with Protocol Buffers",
+  "title_es": "API gRPC con Protocol Buffers",
+  "description": "Runnable gRPC examples in Python, JavaScript, and Java with a shared .proto schema.",
+  "description_es": "Ejemplos ejecutables de gRPC en Python, JavaScript y Java con un esquema .proto compartido.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "grpc-api",
+  "source_urls": [
+    "https://stackpractices.com/recipes/grpc-api/",
+    "https://stackpractices.com/es/recipes/grpc-api/"
+  ],
+  "language": "bilingual",
+  "tags": ["grpc", "protobuf", "rpc", "python", "javascript", "java"],
+  "files": [
+    "service.proto",
+    "server.py",
+    "client.py",
+    "server.js",
+    "client.js",
+    "Server.java",
+    "Client.java",
+    "requirements.txt",
+    "package.json",
+    "pom.xml",
+    "README.md",
+    "README.es.md"
+  ]
+}

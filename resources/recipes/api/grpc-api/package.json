@@ -1,0 +1,14 @@
+{
+  "name": "grpc-api-companion",
+  "version": "1.0.0",
+  "description": "Runnable gRPC examples in JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "node client.js"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.0",
+    "@grpc/proto-loader": "^0.7.12"
+  }
+}
