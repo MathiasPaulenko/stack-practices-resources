@@ -1,0 +1,11 @@
+{
+  "name": "async-generator-pattern-companion",
+  "version": "1.0.0",
+  "description": "Companion code for the Async Generator Pattern",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

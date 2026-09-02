@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  mock-api:
+    image: jmalloc/echo-server:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080

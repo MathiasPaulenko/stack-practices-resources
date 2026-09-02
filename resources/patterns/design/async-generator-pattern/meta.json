@@ -1,0 +1,24 @@
+{
+  "title": "Async Generator Pattern for Lazy Streaming",
+  "title_es": "Patrón Async Generator para Streaming Perezoso",
+  "description": "Stream data lazily with async generators in Python, JavaScript and Java. Yield values as they arrive for memory-efficient processing of large sequences.",
+  "description_es": "Stream datos perezosamente con async generators en Python, JavaScript y Java. Procesá secuencias grandes o infinitas con uso constante de memoria.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "async-generator-pattern",
+  "source_urls": "https://stackpractices.com/patterns/async-generator-pattern/",
+  "language": "multi",
+  "tags": ["async", "pattern", "design-pattern", "streaming", "backpressure", "python", "javascript", "java"],
+  "files": [
+    "python_async_generator.py",
+    "javascript_async_generator.js",
+    "java_lazy_stream.java",
+    "test_async_generator.py",
+    "test_async_generator.js",
+    "docker-compose.yml",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
