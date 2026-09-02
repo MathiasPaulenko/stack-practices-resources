@@ -1,0 +1,30 @@
+{
+  "title": "Traffic Mirroring for Production Testing",
+  "title_es": "Traffic Mirroring para Testing en Producción",
+  "description": "Runnable configs for Nginx, Istio, Envoy, and GoReplay traffic mirroring with response comparison and tests.",
+  "description_es": "Configs ejecutables para mirroring de tráfico con Nginx, Istio, Envoy y GoReplay con comparación de respuestas y tests.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "traffic-mirroring",
+  "source_urls": [
+    "https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html",
+    "https://nginx.org/en/docs/http/ngx_http_mirror_module.html",
+    "https://istio.io/latest/docs/tasks/traffic-management/mirroring/",
+    "https://www.envoyproxy.io/docs/envoy/latest/api-v3/config/route/v3/route_components.proto",
+    "https://github.com/buger/goreplay"
+  ],
+  "language": ["en", "es"],
+  "tags": ["devops", "testing", "deployment", "nginx", "istio", "envoy", "aws", "kubernetes"],
+  "files": [
+    "nginx.conf",
+    "istio-virtualservice.yaml",
+    "envoy.yaml",
+    "goreplay-commands.sh",
+    "response_comparison.js",
+    "test_mirror.py",
+    "docker-compose.yml",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Manage Application Secrets with HashiCorp Vault and Python",
+  "title_es": "Gestiona Secretos de Aplicación con HashiCorp Vault y Python",
+  "description": "Python hvac client for HashiCorp Vault: static KV v2 secrets, dynamic database credentials, lease renewal, AppRole, Transit, and Kubernetes auth",
+  "description_es": "Cliente Python hvac para HashiCorp Vault: secretos estáticos KV v2, credenciales dinámicas de BD, renovación de leases, AppRole, Transit y auth Kubernetes",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "python-secrets-management-vault",
+  "source_urls": [
+    "https://developer.hashicorp.com/vault/docs",
+    "https://hvac.readthedocs.io/",
+    "https://developer.hashicorp.com/vault/docs/secrets/kv",
+    "https://developer.hashicorp.com/vault/docs/secrets/databases",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+  ],
+  "language": ["python"],
+  "tags": ["python", "hashicorp-vault", "secrets-management", "security", "hvac", "dynamic-secrets"],
+  "files": [
+    "vault_client.py",
+    "static_secrets.py",
+    "dynamic_secrets.py",
+    "lease_management.py",
+    "vault_secret_manager.py",
+    "approle_auth.py",
+    "transit_encrypt.py",
+    "kubernetes_auth.py",
+    "test_vault.py",
+    "requirements.txt",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

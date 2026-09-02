@@ -1,0 +1,17 @@
+{
+  "name": "handle-errors-demo",
+  "version": "1.0.0",
+  "description": "RFC 7807 Problem Details error handling with Express",
+  "main": "javascript_express.js",
+  "scripts": {
+    "start": "node javascript_express.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}

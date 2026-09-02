@@ -1,0 +1,27 @@
+{
+  "title": "Handle API Errors with RFC 7807",
+  "title_es": "Manejar Errores en APIs con RFC 7807",
+  "description": "RFC 7807 Problem Details implementations in Python, JavaScript, and Java with contract tests",
+  "description_es": "Implementaciones de RFC 7807 Problem Details en Python, JavaScript y Java con contract tests",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "handle-errors",
+  "source_urls": [
+    "https://datatracker.ietf.org/doc/html/rfc7807",
+    "https://www.rfc-editor.org/rfc/rfc9457"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["error-handling", "rfc-7807", "problem-details", "rest", "http"],
+  "files": [
+    "python_fastapi.py",
+    "javascript_express.js",
+    "java_spring_boot.java",
+    "test_errors.py",
+    "test_errors.js",
+    "requirements.txt",
+    "package.json",
+    "pom.xml",
+    "README.md",
+    "README.es.md"
+  ]
+}
