@@ -1,0 +1,25 @@
+{
+  "title": "Idempotent API Endpoints",
+  "title_es": "Endpoints de API Idempotentes",
+  "description": "How to design and implement idempotent API endpoints that safely handle retries, duplicate requests, and network failures without side effects.",
+  "description_es": "Cómo diseñar e implementar endpoints de API idempotentes que manejen retries, requests duplicados y fallas de red sin efectos secundarios.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "idempotent-api-endpoints",
+  "source_urls": [
+    "https://stackpractices.com/recipes/idempotent-api-endpoints/",
+    "https://stackpractices.com/es/recipes/idempotent-api-endpoints/"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["api", "distributed-systems", "http", "rest", "backend", "idempotency"],
+  "files": [
+    "meta.json",
+    "python_fastapi.py",
+    "javascript_express.js",
+    "java_spring.java",
+    "test_idempotency.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
