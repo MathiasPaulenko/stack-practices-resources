@@ -1,0 +1,17 @@
+{
+  "name": "soft-deletes-companion",
+  "version": "1.0.0",
+  "description": "Soft deletes companion with Sequelize",
+  "main": "javascript_soft_deletes.js",
+  "scripts": {
+    "start": "node javascript_soft_deletes.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "sequelize": "^6.37.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

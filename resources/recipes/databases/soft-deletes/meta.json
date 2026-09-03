@@ -1,0 +1,31 @@
+{
+  "title": "Implement Soft Deletes in Databases with Python, JS and Java",
+  "title_es": "Borrado Lógico en Bases de Datos con Python, JS y Java",
+  "description": "Soft deletes with timestamp flags, filtered queries, unique indexes, purge jobs and recovery flows in Python, JavaScript, and Java.",
+  "description_es": "Soft deletes con columnas timestamp, consultas filtradas, índices únicos, purge jobs y flujos de recuperación en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "soft-deletes",
+  "source_urls": [
+    "https://www.postgresql.org/docs/current/indexes-partial.html",
+    "https://docs.sqlalchemy.org/en/20/orm/queryguide/",
+    "https://sequelize.org/docs/v6/core-concepts/paranoid/",
+    "https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html#pc-filter",
+    "https://gdpr-info.eu/art-17-gdpr/"
+  ],
+  "language": ["python", "javascript", "java", "sql"],
+  "tags": ["database", "audit", "sql", "postgresql", "soft-delete", "python", "javascript", "java"],
+  "files": [
+    "python_soft_deletes.py",
+    "javascript_soft_deletes.js",
+    "java_soft_deletes.java",
+    "sql_schema.sql",
+    "test_soft_deletes.py",
+    "test_soft_deletes.js",
+    "docker-compose.yml",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
