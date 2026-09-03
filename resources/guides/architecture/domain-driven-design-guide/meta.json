@@ -1,0 +1,31 @@
+{
+  "title": "Domain-Driven Design (DDD): A Practical Guide",
+  "title_es": "Domain-Driven Design (DDD): Guía Práctica",
+  "description": "DDD fundamentals with bounded contexts, entities, value objects, aggregates, repositories, domain events, and a complete e-commerce example.",
+  "description_es": "Fundamentos de DDD con bounded contexts, entidades, value objects, aggregates, repositorios, domain events y un ejemplo completo de e-commerce.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "domain-driven-design-guide",
+  "source_urls": [
+    "https://www.domainlanguage.com/ddd/",
+    "https://martinfowler.com/bliki/DomainDrivenDesign.html",
+    "https://www.dddcommunity.org/library/vernon_2011/",
+    "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-domain-layer/",
+    "https://www.dddcommunity.org/"
+  ],
+  "language": ["python", "java"],
+  "tags": ["architecture", "domain-driven-design", "guide", "design", "pattern"],
+  "files": [
+    "python_entities_value_objects.py",
+    "python_aggregate_root.py",
+    "python_repositories_events.py",
+    "java_order_aggregate.java",
+    "java_anti_corruption_layer.java",
+    "test_aggregates.py",
+    "test_value_objects.py",
+    "test_domain_events.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
