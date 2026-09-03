@@ -1,0 +1,17 @@
+{
+  "slug": "circuit-breaker-with-monitoring-pattern",
+  "type": "patterns",
+  "topic": "observability",
+  "title": "Circuit Breaker with Monitoring",
+  "description": "Expose circuit breaker state as Prometheus metrics for observability, alerting, and dashboards.",
+  "languages": ["python", "javascript", "java"],
+  "files": [
+    "python_circuit_breaker.py",
+    "javascript_circuit_breaker.js",
+    "java_circuit_breaker.java",
+    "test_circuit_breaker.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

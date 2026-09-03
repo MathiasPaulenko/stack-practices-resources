@@ -1,0 +1,6 @@
+# Python dependencies for idempotent consumer pattern tests
+# No external dependencies required — uses only stdlib (sqlite3, json, datetime)
+# Install for Kafka integration testing:
+#   pip install kafka-python
+# Install for Redis integration testing:
+#   pip install redis

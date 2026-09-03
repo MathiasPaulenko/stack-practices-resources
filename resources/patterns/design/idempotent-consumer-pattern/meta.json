@@ -1,0 +1,25 @@
+{
+  "title": "Idempotent Consumer Pattern",
+  "title_es": "Patrón de Consumidor Idempotente",
+  "description": "Process messages from a queue exactly once with deduplication strategies in Python, Java, and JavaScript.",
+  "description_es": "Procesa mensajes de una cola exactamente una vez con estrategias de deduplicación en Python, Java y JavaScript.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "idempotent-consumer-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/idempotent-consumer-pattern/",
+    "https://stackpractices.com/es/patterns/idempotent-consumer-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["idempotency", "messaging", "kafka", "deduplication", "event-driven"],
+  "files": [
+    "python_idempotent_consumer.py",
+    "java_idempotent_consumer.java",
+    "javascript_idempotent_consumer.js",
+    "test_dedup.py",
+    "test_idempotent_operations.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
