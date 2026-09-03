@@ -1,0 +1,33 @@
+{
+  "title": "Complete Guide to RabbitMQ Architecture",
+  "title_es": "Guía completa de arquitectura RabbitMQ",
+  "description": "RabbitMQ architecture with exchanges, queues, bindings, routing patterns, dead letter queues, clustering, and production best practices.",
+  "description_es": "Arquitectura RabbitMQ con exchanges, queues, bindings, patrones de routing, dead letter queues, clustering y mejores prácticas de producción.",
+  "type": "guides",
+  "topic": "messaging",
+  "slug": "complete-guide-rabbitmq-architecture",
+  "source_urls": [
+    "https://www.rabbitmq.com/documentation.html",
+    "https://www.rabbitmq.com/amqp-0-9-1-quickref.html",
+    "https://pypi.org/project/pika/",
+    "https://www.rabbitmq.com/quorum-queues.html",
+    "https://www.rabbitmq.com/clustering.html"
+  ],
+  "language": ["python", "bash", "javascript"],
+  "tags": ["rabbitmq", "messaging", "amqp", "exchanges", "queue", "routing", "dead-letter", "clustering"],
+  "files": [
+    "python_exchanges.py",
+    "python_consumer_patterns.py",
+    "python_clustering.py",
+    "python_monitoring.py",
+    "javascript_rabbitmq.js",
+    "docker-compose.yml",
+    "rabbitmq.conf",
+    "test_exchanges.py",
+    "test_consumer_patterns.py",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

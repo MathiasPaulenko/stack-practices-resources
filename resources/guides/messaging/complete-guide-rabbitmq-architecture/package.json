@@ -1,0 +1,13 @@
+{
+  "name": "rabbitmq-architecture-companion",
+  "version": "1.0.0",
+  "description": "RabbitMQ architecture companion with amqplib",
+  "main": "javascript_rabbitmq.js",
+  "scripts": {
+    "start": "node javascript_rabbitmq.js",
+    "test": "echo 'No JS tests configured. Use pytest for Python tests.'"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
