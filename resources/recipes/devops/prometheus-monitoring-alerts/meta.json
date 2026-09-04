@@ -1,0 +1,23 @@
+{
+  "title": "Metrics Collection and Alerting with Prometheus",
+  "title_es": "Métricas y Alertas con Prometheus",
+  "description": "Instrument applications with Prometheus metrics, configure alerting rules, and set up Alertmanager routing.",
+  "description_es": "Instrumenta aplicaciones con métricas de Prometheus, configura reglas de alertas y enrutamiento de Alertmanager.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "prometheus-monitoring-alerts",
+  "source_urls": [
+    "https://stackpractices.com/recipes/prometheus-monitoring-alerts/",
+    "https://stackpractices.com/es/recipes/prometheus-monitoring-alerts/"
+  ],
+  "language": ["typescript", "python", "yaml"],
+  "tags": ["prometheus", "monitoring", "alerting", "observability", "devops"],
+  "files": [
+    "metrics_server.ts",
+    "prometheus.yml",
+    "alerts.yml",
+    "records.yml",
+    "alertmanager.yml",
+    "custom_exporter.py"
+  ]
+}

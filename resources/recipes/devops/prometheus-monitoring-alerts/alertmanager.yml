@@ -1,0 +1,32 @@
+# alertmanager.yml
+global:
+  smtp_smarthost: 'smtp.example.com:587'
+  smtp_from: 'alerts@example.com'
+
+route:
+  group_by: ['alertname', 'severity']
+  group_wait: 10s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'default'
+
+receivers:
+  - name: 'default'
+    email_configs:
+      - to: 'oncall@example.com'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/...'
+        channel: '#alerts'
+
+  - name: 'pagerduty'
+    pagerduty_configs:
+      - routing_key: 'your-routing-key'
+
+  - name: 'slack-warnings'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/...'
+        channel: '#warnings'
+
+  - name: 'db-team'
+    email_configs:
+      - to: 'db-team@example.com'
