@@ -1,0 +1,24 @@
+{
+  "title": "Call a REST API: Python, JavaScript, Java & Go Examples",
+  "title_es": "Llamar a una API REST: Python, JS, Java y Go",
+  "description": "Runnable HTTP client examples in Python (requests), JavaScript (fetch), Java (HttpClient), and Go (net/http) with GET, POST, auth, timeouts, and error handling.",
+  "description_es": "Ejemplos runnable de clientes HTTP en Python (requests), JavaScript (fetch), Java (HttpClient) y Go (net/http) con GET, POST, auth, timeouts y manejo de errores.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "call-rest-api",
+  "source_urls": [
+    "https://stackpractices.com/recipes/call-rest-api/"
+  ],
+  "language": "bilingual",
+  "tags": ["api", "rest", "http", "python", "javascript", "java", "go", "backend"],
+  "files": [
+    "get_request.py",
+    "post_request.py",
+    "fetch_get.js",
+    "fetch_timeout.js",
+    "httpclient_get.java",
+    "nethttp_get.go",
+    "README.md",
+    "README.es.md"
+  ]
+}
