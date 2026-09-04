@@ -1,0 +1,24 @@
+{
+  "title": "Repository Pattern with TypeScript Generics",
+  "title_es": "Repository Pattern con Generics de TypeScript",
+  "description": "Type-safe repository pattern in TypeScript with generics, Mongoose and in-memory implementations, and unit tests.",
+  "description_es": "Repository pattern type-safe en TypeScript con generics, implementaciones Mongoose y en memoria, y tests unitarios.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "repository-pattern-typescript",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/repository-pattern-typescript/",
+    "es": "https://stackpractices.com/es/patterns/repository-pattern-typescript/"
+  },
+  "language": "typescript",
+  "tags": ["repository", "typescript", "generics", "design-pattern", "architecture"],
+  "files": [
+    "repository.ts",
+    "mongoose_repository.ts",
+    "in_memory_repository.ts",
+    "user_service.ts",
+    "test_repository.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "test": "pytest test_repository.py -v"
+  },
+  "devDependencies": {
+    "pytest": "^8.0.0"
+  }
+}

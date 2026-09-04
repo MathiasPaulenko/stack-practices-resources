@@ -1,0 +1,23 @@
+{
+  "title": "Complete Guide to GraphQL Caching",
+  "title_es": "Guía completa de caching en GraphQL",
+  "description": "GraphQL caching examples for CDN, gateway, DataLoader, persisted queries, and Apollo Client.",
+  "description_es": "Ejemplos de caching GraphQL para CDN, gateway, DataLoader, persisted queries y Apollo Client.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "complete-guide-graphql-caching",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-graphql-caching/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-graphql-caching/"
+  },
+  "language": "multi",
+  "tags": ["graphql", "caching", "cdn", "dataloader", "apollo", "cache-invalidation"],
+  "files": [
+    "apollo-client-persisted-queries.js",
+    "dataloader-with-redis.js",
+    "cache-invalidation.js",
+    "apollo-client-normalized-cache.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

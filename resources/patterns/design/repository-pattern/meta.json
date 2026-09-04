@@ -1,0 +1,23 @@
+{
+  "title": "Repository Pattern",
+  "title_es": "Patrón Repository",
+  "description": "Repository pattern with Python, Java, and JavaScript implementations plus unit tests with in-memory repositories.",
+  "description_es": "Patrón Repository con implementaciones en Python, Java y JavaScript más tests unitarios con repositorios en memoria.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "repository-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/repository-pattern/",
+    "es": "https://stackpractices.com/es/patterns/repository-pattern/"
+  },
+  "language": "multi",
+  "tags": ["repository", "design-pattern", "architecture", "data-access", "python", "java", "javascript"],
+  "files": [
+    "user_repository.py",
+    "user_repository.js",
+    "UserRepository.java",
+    "test_repository.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
