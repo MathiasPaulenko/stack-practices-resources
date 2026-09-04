@@ -1,0 +1,22 @@
+{
+  "title": "Validate DataFrame Schemas with Pandera",
+  "title_es": "Validar schemas de DataFrame con Pandera",
+  "description": "Pandera schema validation examples for pandas and Polars DataFrames with custom checks, pipeline validation, and pytest integration.",
+  "description_es": "Ejemplos de validación de schemas con Pandera para DataFrames de pandas y Polars con checks personalizados, validación de pipeline e integración con pytest.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "python-data-validation-pandera",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/python-data-validation-pandera/",
+    "es": "https://stackpractices.com/es/recipes/python-data-validation-pandera/"
+  },
+  "language": "multi",
+  "tags": ["python", "pandera", "pandas", "polars", "validation", "schema", "testing"],
+  "files": [
+    "schema_validation.py",
+    "pipeline_validation.py",
+    "test_validation.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
