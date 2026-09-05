@@ -1,0 +1,24 @@
+{
+  "title": "Feature Flags: Rollout, Targeting, and Safe Rollback",
+  "title_es": "Feature Flags: Rollout, Segmentación y Rollback Seguro",
+  "description": "Implement feature toggles to roll out, test, and revert functionality safely without redeploying code. Covers boolean, percentage, user, and group rollouts in Python, JavaScript, and Java.",
+  "description_es": "Implementá feature toggles para desplegar, probar y revertir funcionalidad de forma segura sin volver a desplegar código. Incluye rollouts booleanos, porcentuales, por usuario y por grupo en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "feature-flags",
+  "source_urls": [
+    "https://stackpractices.com/recipes/feature-flags/",
+    "https://stackpractices.com/es/recipes/feature-flags/"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["devops", "feature-flags", "toggles", "rollout", "ab-testing", "python", "javascript", "java"],
+  "files": [
+    "feature_flags.py",
+    "feature_flags.js",
+    "FeatureFlags.java",
+    "rollout_plan.py",
+    "ab_test.js",
+    "launchdarkly_example.py",
+    "test_feature_flags.py"
+  ]
+}
