@@ -1,0 +1,31 @@
+{
+  "slug": "cli-tool-argument-parsing",
+  "type": "recipes",
+  "topic": "devops",
+  "title": "CLI Argument Parsing in Python, JS, Java, Go, and Rust",
+  "title_es": "Parseo de argumentos CLI en Python, JS, Java, Go y Rust",
+  "description": "Runnable deploy CLI examples in Python (argparse, Typer), JavaScript (commander.js, yargs), Java (picocli), Go (cobra), and Rust (clap).",
+  "description_es": "Ejemplos ejecutables del CLI deploy en Python (argparse, Typer), JavaScript (commander.js, yargs), Java (picocli), Go (cobra) y Rust (clap).",
+  "language": ["python", "javascript", "java", "go", "rust", "yaml", "json"],
+  "tags": ["cli", "command-line", "argparse", "commander.js", "picocli", "cobra", "clap", "devops", "automation"],
+  "source_urls": [
+    "https://docs.python.org/3/library/argparse.html",
+    "https://github.com/tj/commander.js",
+    "https://picocli.info/",
+    "https://pkg.go.dev/github.com/spf13/cobra",
+    "https://docs.rs/clap/"
+  ],
+  "files": [
+    "deploy_argparse.py",
+    "deploy_typer.py",
+    "deploy_commander.js",
+    "DeployCli.java",
+    "main.go",
+    "main.rs",
+    "Cargo.toml",
+    "package.json",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

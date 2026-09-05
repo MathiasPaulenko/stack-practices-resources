@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  python-argparse:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    command: python deploy_argparse.py prod --version 2.1.0 --dry-run
+
+  python-typer:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    command: python deploy_typer.py prod --version 2.1.0 --dry-run
+    depends_on:
+      - python-argparse
+
+  node-commander:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    command: node deploy_commander.js deploy prod --version 2.1.0 --dry-run
+
+  go-cobra:
+    build:
+      context: .
+      dockerfile: Dockerfile.go
+    command: /app/deploy-cli deploy prod --version 2.1.0 --dry-run
+
+  rust-clap:
+    build:
+      context: .
+      dockerfile: Dockerfile.rust
+    command: /app/deploy-cli deploy prod --version 2.1.0 --dry-run

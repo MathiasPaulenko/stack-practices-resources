@@ -1,0 +1,8 @@
+{
+  "name": "deploy-cli",
+  "version": "1.0.0",
+  "description": "CLI for app deployments",
+  "dependencies": {
+    "commander": "^12.0.0"
+  }
+}
