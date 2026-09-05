@@ -1,0 +1,13 @@
+{
+  "slug": "brotli-nginx-compression",
+  "type": "recipes",
+  "topic": "performance",
+  "title": "Enable Brotli Compression in Nginx for Static Assets",
+  "description": "Configure Brotli compression in Nginx with pre-compressed static assets, Docker setup, and monitoring.",
+  "languages": ["nginx", "bash", "javascript", "dockerfile", "yaml"],
+  "difficulty": "beginner",
+  "topics": ["performance", "frontend", "infrastructure"],
+  "tags": ["brotli", "nginx", "compression", "performance", "static-assets", "optimization"],
+  "author": "Mathias Paulenko",
+  "lastUpdated": "2026-09-06"
+}
