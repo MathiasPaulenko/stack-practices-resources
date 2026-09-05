@@ -1,0 +1,25 @@
+{
+  "slug": "server-sent-events",
+  "type": "recipes",
+  "topic": "api",
+  "title": "Server-Sent Events (SSE): One-Way Real-Time Streaming",
+  "title_es": "Server-Sent Events (SSE): Streaming en Tiempo Real",
+  "description": "Implement SSE in Python, Node.js, and Java with broadcasting, heartbeats, and Redis pub/sub scaling.",
+  "description_es": "Implementá SSE en Python, Node.js y Java con broadcasting, heartbeats y escalado con Redis pub/sub.",
+  "language": ["python", "javascript", "java", "html", "yaml"],
+  "tags": ["sse", "server-sent-events", "streaming", "real-time", "http", "flask", "express", "spring-boot"],
+  "source_urls": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
+    "https://html.spec.whatwg.org/multipage/server-sent-events.html"
+  ],
+  "files": [
+    "server.py",
+    "server.js",
+    "Server.java",
+    "client.html",
+    "redis_pubsub.py",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

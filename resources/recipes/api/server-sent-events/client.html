@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSE Client Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 2rem auto; }
+    #events { border: 1px solid #ccc; padding: 1rem; height: 300px; overflow-y: auto; }
+    .event { padding: 4px 0; border-bottom: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>SSE Client Demo</h1>
+  <p>Connects to <code>/events</code> and displays incoming SSE messages.</p>
+  <div id="events"></div>
+
+  <script>
+    const eventSource = new EventSource("/events");
+    const eventsDiv = document.getElementById("events");
+
+    eventSource.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      const div = document.createElement("div");
+      div.className = "event";
+      div.textContent = `[${new Date().toLocaleTimeString()}] ${data.message}`;
+      eventsDiv.appendChild(div);
+      eventsDiv.scrollTop = eventsDiv.scrollHeight;
+    };
+
+    eventSource.onerror = () => {
+      const div = document.createElement("div");
+      div.className = "event";
+      div.textContent = "Connection error — browser will auto-reconnect...";
+      eventsDiv.appendChild(div);
+    };
+  </script>
+</body>
+</html>
