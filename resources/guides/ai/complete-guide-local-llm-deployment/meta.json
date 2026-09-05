@@ -1,0 +1,28 @@
+{
+  "title": "Local LLM Deployment: Ollama, vLLM & llama.cpp",
+  "title_es": "Despliegue Local de LLM: Ollama, vLLM y llama.cpp",
+  "description": "Deploy large language models locally with Ollama, vLLM, and llama.cpp. Covers quantization, GPU sizing, API serving, Docker, and benchmarking.",
+  "description_es": "Desplegá modelos grandes de lenguaje localmente con Ollama, vLLM y llama.cpp. Incluye cuantización, GPUs, servidores de API, Docker y benchmarking.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-local-llm-deployment",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-local-llm-deployment/",
+    "https://stackpractices.com/es/guides/complete-guide-local-llm-deployment/"
+  ],
+  "language": ["python", "bash", "dockerfile", "yaml"],
+  "tags": ["ai", "local-llm", "ollama", "vllm", "llama-cpp", "quantization", "gpu", "docker"],
+  "files": [
+    "ollama_api.py",
+    "ollama_client.py",
+    "Modelfile",
+    "vllm_serve.sh",
+    "vllm_client.py",
+    "llama_cpp_build.sh",
+    "llama_cpp_bindings.py",
+    "estimate_vram.py",
+    "benchmark.py",
+    "Dockerfile",
+    "docker-compose.yml"
+  ]
+}
