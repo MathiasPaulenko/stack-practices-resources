@@ -1,0 +1,10 @@
+{
+  "app_name": "my-service",
+  "debug": false,
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "change-me"
+  }
+}

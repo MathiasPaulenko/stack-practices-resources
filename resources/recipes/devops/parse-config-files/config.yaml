@@ -1,0 +1,7 @@
+app_name: "my-service"
+debug: ${DEBUG:false}
+database:
+  host: ${DB_HOST:localhost}
+  port: ${DB_PORT:5432}
+  username: ${DB_USER:postgres}
+  password: ${DB_PASSWORD}

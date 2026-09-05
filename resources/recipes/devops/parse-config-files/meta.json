@@ -1,0 +1,23 @@
+{
+  "title": "Parse and Validate YAML/JSON Configuration",
+  "title_es": "Parsear y Validar Configuración YAML/JSON",
+  "description": "How to parse and validate application configuration files in YAML and JSON across Python, JavaScript, Java, and Go.",
+  "description_es": "Cómo parsear y validar archivos de configuración de aplicaciones en YAML y JSON en Python, JavaScript, Java y Go.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "parse-config-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-config-files/",
+    "https://stackpractices.com/es/recipes/parse-config-files/"
+  ],
+  "language": ["python", "javascript", "java", "go", "yaml", "json"],
+  "tags": ["devops", "yaml", "json", "config", "validation", "python", "javascript", "java", "go"],
+  "files": [
+    "config.yaml",
+    "config.json",
+    "load_config.py",
+    "load_config.js",
+    "ConfigLoader.java",
+    "load_config.go"
+  ]
+}
