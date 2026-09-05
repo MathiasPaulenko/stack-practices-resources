@@ -1,0 +1,16 @@
+query GetUserWithOrdersAndReviews {
+  user(id: "1") {
+    id
+    name
+    email
+    orders {
+      id
+      total
+    }
+    reviews {
+      id
+      rating
+      comment
+    }
+  }
+}

@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  users-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node users-service.js
+    ports:
+      - "4001:4001"
+
+  orders-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node orders-service.js
+    ports:
+      - "4002:4002"
+
+  reviews-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node reviews-service.js
+    ports:
+      - "4003:4003"
+
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: node gateway.js
+    ports:
+      - "4000:4000"
+    depends_on:
+      - users-service
+      - orders-service
+      - reviews-service

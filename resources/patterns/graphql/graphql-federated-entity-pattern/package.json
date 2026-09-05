@@ -1,0 +1,11 @@
+{
+  "name": "graphql-federated-entity-pattern",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "@apollo/subgraph": "^2.7.0",
+    "@apollo/gateway": "^2.8.0",
+    "graphql": "^16.8.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "graphql-federated-entity-pattern",
+  "type": "patterns",
+  "topic": "graphql",
+  "title": "GraphQL Federated Entity Pattern",
+  "title_es": "Patrón de entidades federadas en GraphQL",
+  "description": "Apollo Federation entity pattern with 3 subgraphs (users, orders, reviews) and a gateway.",
+  "description_es": "Patrón de entidades federadas con 3 subgraphs (usuarios, órdenes, reseñas) y un gateway.",
+  "language": ["typescript", "graphql", "yaml", "json"],
+  "tags": ["graphql", "federation", "apollo", "entity", "subgraph", "microservices", "schema-design"],
+  "source_urls": [
+    "https://www.apollographql.com/docs/federation/",
+    "https://www.apollographql.com/docs/federation/federated-types/federated-directives/"
+  ],
+  "files": [
+    "users-service.ts",
+    "orders-service.ts",
+    "reviews-service.ts",
+    "gateway.ts",
+    "client-query.graphql",
+    "docker-compose.yml",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
