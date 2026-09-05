@@ -1,0 +1,21 @@
+{
+  "title": "Create and Use Database Views and Materialized Views",
+  "title_es": "Crear y usar vistas y vistas materializadas",
+  "description": "How to create and use database views and materialized views to simplify queries and improve read performance.",
+  "description_es": "Cómo crear y usar vistas de base de datos y vistas materializadas para simplificar consultas y mejorar el rendimiento de lectura.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "database-views-materialized",
+  "source_urls": [
+    "https://stackpractices.com/recipes/database-views-materialized/",
+    "https://stackpractices.com/es/recipes/database-views-materialized/"
+  ],
+  "language": ["sql"],
+  "tags": ["database", "sql", "postgresql", "mysql", "views", "materialized-views"],
+  "files": [
+    "postgresql_views.sql",
+    "sqlserver_indexed_view.sql",
+    "mysql_simulated_mv.sql",
+    "pg_cron_schedule.sql"
+  ]
+}
