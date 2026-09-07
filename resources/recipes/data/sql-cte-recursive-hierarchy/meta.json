@@ -1,0 +1,33 @@
+{
+  "title": "Recursive CTEs for Hierarchical Data Queries",
+  "title_es": "CTEs Recursivas para Consultas de Datos Jerárquicos",
+  "description": "SQL scripts for recursive CTE examples: tree traversal, org charts, category trees, cycle detection, BOM explosion, and multi-database variants.",
+  "description_es": "Scripts SQL para ejemplos de CTEs recursivas: tree traversal, org charts, árboles de categorías, detección de ciclos, explosión de BOM y variantes multi-database.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "sql-cte-recursive-hierarchy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-cte-recursive-hierarchy/",
+    "https://stackpractices.com/es/recipes/sql-cte-recursive-hierarchy/"
+  ],
+  "language": ["sql"],
+  "tags": ["sql", "cte", "recursive", "hierarchy", "data"],
+  "files": [
+    "01_basic_recursive_cte.sql",
+    "02_org_chart.sql",
+    "03_category_tree.sql",
+    "04_ancestors_bottom_up.sql",
+    "05_aggregation_hierarchy.sql",
+    "06_rollup.sql",
+    "07_cycle_detection.sql",
+    "08_depth_limit.sql",
+    "09_bill_of_materials.sql",
+    "10_postgresql_array_path.sql",
+    "11_mysql_recursive.sql",
+    "12_sql_server_no_recursive.sql",
+    "13_snowflake_connect_by.sql",
+    "setup_test_data.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}
