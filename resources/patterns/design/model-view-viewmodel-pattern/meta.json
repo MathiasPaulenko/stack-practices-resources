@@ -1,0 +1,22 @@
+{
+  "slug": "model-view-viewmodel-pattern",
+  "title": "Model-View-ViewModel (MVVM) Pattern",
+  "titleEs": "Patrón Model-View-ViewModel (MVVM)",
+  "type": "patterns",
+  "topic": "design",
+  "difficulty": "intermediate",
+  "description": "Bind UI components declaratively to a ViewModel that exposes data and commands, enabling automatic synchronization between view and state.",
+  "descriptionEs": "Vincula componentes UI declarativamente a un ViewModel que expone datos y comandos, habilitando sincronización automática entre view y estado.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-06-25",
+  "lastUpdated": "2026-09-07",
+  "files": [
+    "python_mvvm.py",
+    "test_python_mvvm.py",
+    "JavaMVVM.java",
+    "javascript_mvvm.js",
+    "test_javascript_mvvm.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
