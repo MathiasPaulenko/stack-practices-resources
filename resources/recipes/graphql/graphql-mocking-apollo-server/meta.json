@@ -1,0 +1,28 @@
+{
+  "title": "Mock GraphQL Resolvers for Frontend Development",
+  "title_es": "Mocks de resolvers GraphQL para desarrollo frontend",
+  "description": "Set up mocked GraphQL resolvers with Apollo Server so frontend teams can develop against a fake API before the backend is ready.",
+  "description_es": "Configura resolvers GraphQL mockeados con Apollo Server para que los equipos frontend desarrollen contra una API falsa antes del backend.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-mocking-apollo-server",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-mocking-apollo-server/",
+    "https://stackpractices.com/es/recipes/graphql-mocking-apollo-server/"
+  ],
+  "language": "typescript",
+  "tags": ["graphql", "mocking", "apollo", "frontend", "testing", "resolvers"],
+  "files": [
+    "mock-server.ts",
+    "custom-mocks.ts",
+    "type-mocks.ts",
+    "env-toggle.ts",
+    "custom-scalars.ts",
+    "relay-pagination.ts",
+    "msw-handlers.ts",
+    "seeded-mocks.ts",
+    "error-mocks.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
