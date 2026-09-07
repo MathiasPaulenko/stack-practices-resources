@@ -1,0 +1,25 @@
+{
+  "title": "Write Unit Tests with Mocks and Stubs",
+  "title_es": "Escribir Unit Tests con Mocks y Stubs",
+  "description": "Isolate code under test using mock objects, stubs, and spies to replace external dependencies like databases, APIs, and file systems.",
+  "description_es": "Aísla código bajo test usando objetos mock, stubs y spies para reemplazar dependencias externas como bases de datos, APIs y sistemas de archivos.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "unit-testing-mocking",
+  "source_urls": [
+    "https://stackpractices.com/recipes/unit-testing-mocking/",
+    "https://stackpractices.com/es/recipes/unit-testing-mocking/"
+  ],
+  "language": "javascript",
+  "tags": ["testing", "unit-tests", "mocking", "stubs", "jest", "pytest", "mockito"],
+  "files": [
+    "payment.js",
+    "payment.test.js",
+    "payment.py",
+    "test_payment.py",
+    "PaymentService.java",
+    "PaymentServiceTest.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
