@@ -1,0 +1,26 @@
+{
+  "title": "Implement Graceful Shutdown and Zero-Downtime Restarts",
+  "title_es": "Implementar graceful shutdown y reinicios sin downtime",
+  "description": "How to implement graceful shutdown and zero-downtime restarts for web servers, workers, and containers.",
+  "description_es": "Cómo implementar graceful shutdown y reinicios sin downtime para servidores web, workers y contenedores.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "graceful-shutdown",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graceful-shutdown/",
+    "https://stackpractices.com/es/recipes/graceful-shutdown/"
+  ],
+  "language": "python",
+  "tags": ["devops", "containers", "deployment", "ci-cd", "automation", "sigterm", "zero-downtime"],
+  "files": [
+    "app.py",
+    "server.js",
+    "App.java",
+    "main.go",
+    "deployment.yaml",
+    "nginx.conf",
+    "test-graceful-shutdown.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

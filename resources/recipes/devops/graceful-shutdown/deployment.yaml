@@ -1,0 +1,46 @@
+# deployment.yaml — Kubernetes deployment with preStop hook and grace period
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graceful-app
+  labels:
+    app: graceful-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: graceful-app
+  template:
+    metadata:
+      labels:
+        app: graceful-app
+    spec:
+      containers:
+        - name: app
+          image: graceful-app:latest
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 3
+            periodSeconds: 5
+          lifecycle:
+            preStop:
+              exec:
+                command:
+                  - /bin/sh
+                  - -c
+                  - |
+                    # Mark as not ready
+                    curl -X POST http://localhost:8080/admin/shutdown
+                    # Wait for endpoint controller to remove pod from Service
+                    sleep 10
+      terminationGracePeriodSeconds: 45  # Must be > preStop + drain time
