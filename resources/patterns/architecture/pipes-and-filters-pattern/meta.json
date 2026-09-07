@@ -1,0 +1,26 @@
+{
+  "title": "Pipes and Filters Pattern: Composable Data Pipelines",
+  "title_es": "Patrón Pipes and Filters: Pipelines de Datos Componibles",
+  "description": "Chain independent processing steps with composable data transformation pipelines in Python, JavaScript and Java. Each filter is a pure function you can test and reorder.",
+  "description_es": "Encadena pasos de procesamiento independientes con pipelines de transformación de datos componibles en Python, JavaScript y Java. Cada filtro es una función pura que podés testear y reordenar.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "pipes-and-filters-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/pipes-and-filters-pattern/",
+    "https://www.enterpriseintegrationpatterns.com/patterns/conduit/PipesAndFilters.html",
+    "https://martinfowler.com/articles/collection-pipeline.html"
+  ],
+  "language": "bilingual",
+  "tags": ["design-pattern", "pipeline", "data-processing", "composability", "python", "javascript", "java"],
+  "files": [
+    "pipe_python.py",
+    "pipe_javascript.js",
+    "PipesAndFilters.java",
+    "async_pipe_python.py",
+    "test_pipe_python.py",
+    "test_pipe_javascript.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
