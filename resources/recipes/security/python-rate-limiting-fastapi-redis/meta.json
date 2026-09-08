@@ -1,0 +1,22 @@
+{
+  "slug": "python-rate-limiting-fastapi-redis",
+  "title": "Distributed Rate Limiting with FastAPI and Redis",
+  "titleEs": "Rate limiting distribuido con FastAPI y Redis",
+  "type": "recipes",
+  "topic": "security",
+  "difficulty": "intermediate",
+  "description": "Implement distributed rate limiting in FastAPI using Redis sliding window and token bucket algorithms with per-user, per-IP, and per-endpoint limits.",
+  "descriptionEs": "Implementa rate limiting distribuido en FastAPI usando algoritmos de sliding window y token bucket con Redis para limites por usuario, IP y endpoint.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-07-03",
+  "lastUpdated": "2026-09-08",
+  "files": [
+    "sliding_window.py",
+    "token_bucket.py",
+    "fixed_window.py",
+    "middleware.py",
+    "test_rate_limiting.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
