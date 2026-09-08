@@ -1,0 +1,28 @@
+# Sentry alert rules (configured in Sentry UI or via API).
+# Example: Alert on high error rate, new errors in production, and performance regressions.
+
+rules:
+  - name: "High error rate"
+    conditions:
+      - event_level: error
+      - threshold: 10  # errors in 1 hour
+    actions:
+      - notify_slack: "#alerts"
+      - notify_email: ["oncall@company.com"]
+
+  - name: "New error in production"
+    conditions:
+      - event_level: error
+      - environment: production
+      - is_new: true
+    actions:
+      - notify_slack: "#engineering"
+      - create_issue: true
+
+  - name: "Performance regression"
+    conditions:
+      - metric: p95_duration
+      - threshold: 2000  # ms
+      - comparison: greater_than
+    actions:
+      - notify_slack: "#performance"
