@@ -1,0 +1,22 @@
+{
+  "slug": "parse-command-line-arguments",
+  "title": "Parse Command Line Arguments: argparse, Commander & picocli",
+  "titleEs": "Analizar Argumentos CLI: argparse, Commander y picocli",
+  "type": "recipes",
+  "topic": "data",
+  "difficulty": "beginner",
+  "description": "Runnable examples of CLI argument parsing in Python (argparse, Click), Node.js (Commander), and Java (picocli) with subcommands, type validation, and tests.",
+  "descriptionEs": "Ejemplos ejecutables de parsing de argumentos CLI en Python (argparse, Click), Node.js (Commander) y Java (picocli) con subcomandos, validacion de tipos y tests.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-06-20",
+  "lastUpdated": "2026-09-08",
+  "files": [
+    "argparse_example.py",
+    "click_example.py",
+    "commander_example.js",
+    "picocli_example.java",
+    "test_cli_examples.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
