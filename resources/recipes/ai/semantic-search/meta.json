@@ -1,0 +1,33 @@
+{
+    "topic":  "ai",
+    "language":  "multi",
+    "files":  [
+                  "semantic_search_faiss.py",
+                  "semantic_search_openai.py",
+                  "semantic_search_js.js",
+                  "SemanticSearchService.java",
+                  "test_semantic_search.py",
+                  "README.md",
+                  "README.es.md"
+              ],
+    "title":  "Semantic Search with Embeddings in Python, JS, Java",
+    "title_es":  "Búsqueda semántica con embeddings en Python, JS y Java",
+    "type":  "recipes",
+    "description":  "Companion examples for semantic search: Python sentence-transformers + FAISS, Python OpenAI + FAISS, JavaScript cosine, Java Spring AI + pgvector, and tests.",
+    "description_es":  "Ejemplos companion para búsqueda semántica: Python sentence-transformers + FAISS, Python OpenAI + FAISS, JavaScript coseno, Java Spring AI + pgvector, y tests.",
+    "slug":  "semantic-search",
+    "author":  "Mathias Paulenko",
+    "source_urls":  [
+                        "https://stackpractices.com/recipes/semantic-search/"
+                    ],
+    "tags":  [
+                 "ai",
+                 "embeddings",
+                 "openai",
+                 "vector-search",
+                 "python",
+                 "faiss",
+                 "pgvector"
+             ],
+    "lastUpdated":  "2026-09-08"
+}
