@@ -1,0 +1,33 @@
+{
+    "topic":  "file-handling",
+    "language":  "multi",
+    "files":  [
+                  "safe_copy.py",
+                  "copy_move.js",
+                  "FileCopier.java",
+                  "safe_copy.sh",
+                  "test_copy_move.py",
+                  "README.md",
+                  "README.es.md"
+              ],
+    "title":  "Copy and Move Files Safely in Python, JS, Java, and Bash",
+    "title_es":  "Cómo Copiar y Mover Archivos con Python, JS, Java y Bash",
+    "type":  "recipes",
+    "description":  "Companion examples for copy/move files: Python shutil, JavaScript fs, Java NIO, Bash, with checksums, atomic moves, and tests.",
+    "description_es":  "Ejemplos companion para copiar/mover archivos: Python shutil, JavaScript fs, Java NIO, Bash, con checksums, movimientos atómicos y tests.",
+    "slug":  "copy-move-files",
+    "author":  "Mathias Paulenko",
+    "source_urls":  [
+                        "https://stackpractices.com/recipes/copy-move-files/"
+                    ],
+    "tags":  [
+                 "file-handling",
+                 "filesystem",
+                 "python",
+                 "javascript",
+                 "java",
+                 "bash",
+                 "checksum"
+             ],
+    "lastUpdated":  "2026-09-09"
+}
