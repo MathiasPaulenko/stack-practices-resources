@@ -1,0 +1,23 @@
+{
+  "title": "Send Transactional Emails with SMTP",
+  "title_es": "Enviar Emails con SMTP",
+  "description": "Production-ready SMTP email sending in Python, Node.js, and Java with TLS, templates, attachments, and rate limiting.",
+  "description_es": "Envío de email SMTP listo para producción en Python, Node.js y Java con TLS, plantillas, adjuntos y rate limiting.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "send-emails-smtp",
+  "source_urls": [
+    "https://stackpractices.com/recipes/send-emails-smtp/",
+    "https://stackpractices.com/es/recipes/send-emails-smtp/"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["email", "smtp", "smtplib", "nodemailer", "jakarta-mail", "tls", "deliverability"],
+  "files": [
+    "send_email.py",
+    "send_email.js",
+    "SmtpSender.java",
+    "test_send_email.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
