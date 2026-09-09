@@ -1,0 +1,23 @@
+{
+  "title": "Distributed Lock Pattern",
+  "title_es": "Patrón Distributed Lock",
+  "description": "Distributed lock implementations using Redis SET NX, ZooKeeper Curator, and Redlock with TTLs and fencing tokens.",
+  "description_es": "Implementaciones de distributed lock con Redis SET NX, ZooKeeper Curator y Redlock con TTL y fencing tokens.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "distributed-lock-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/distributed-lock-pattern/",
+    "https://stackpractices.com/es/patterns/distributed-lock-pattern/"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["distributed-lock", "redis", "zookeeper", "etcd", "redlock", "fencing-token", "concurrency"],
+  "files": [
+    "redis_lock.py",
+    "redlock.js",
+    "ZooKeeperLock.java",
+    "test_redis_lock.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
