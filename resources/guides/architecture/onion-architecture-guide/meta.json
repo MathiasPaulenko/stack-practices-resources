@@ -1,0 +1,38 @@
+{
+  "title": "Onion Architecture: Domain-Centric Design Guide",
+  "title_es": "Guía de Arquitectura Onion: Diseño Centrado en el Dominio",
+  "description": "A practical guide to Onion Architecture: organize code around the domain, enforce inward dependencies, and isolate infrastructure. Includes C# examples with tests.",
+  "description_es": "Guía práctica de Arquitectura Onion: organiza código alrededor del dominio, fuerza dependencias hacia adentro y aísla infraestructura. Incluye ejemplos en C# con tests.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "onion-architecture-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/onion-architecture-guide/",
+    "es": "https://stackpractices.com/es/guides/onion-architecture-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["onion-architecture", "dependency-inversion", "domain-driven-design", "clean-architecture", "ports-and-adapters", "layered-architecture"],
+  "files": [
+    "Domain/Entities/Order.cs",
+    "Domain/ValueObjects/Money.cs",
+    "Domain/ValueObjects/OrderId.cs",
+    "Domain/Events/OrderPlacedEvent.cs",
+    "Domain/Interfaces/IOrderRepository.cs",
+    "Domain/Interfaces/IProductRepository.cs",
+    "Domain/Interfaces/IEventBus.cs",
+    "Domain/Exceptions/DomainException.cs",
+    "Application/Orders/PlaceOrder/PlaceOrderCommand.cs",
+    "Application/Orders/PlaceOrder/PlaceOrderHandler.cs",
+    "Application/Interfaces/IUnitOfWork.cs",
+    "Infrastructure/Persistence/Repositories/SqlOrderRepository.cs",
+    "Infrastructure/Persistence/Repositories/SqlProductRepository.cs",
+    "Infrastructure/Messaging/InMemoryEventBus.cs",
+    "Infrastructure/Persistence/AppDbContext.cs",
+    "Presentation/Controllers/OrdersController.cs",
+    "Tests/DomainTests.cs",
+    "Tests/ApplicationTests.cs",
+    "Tests/ArchitectureTests.cs",
+    "README.md",
+    "README.es.md"
+  ]
+}
