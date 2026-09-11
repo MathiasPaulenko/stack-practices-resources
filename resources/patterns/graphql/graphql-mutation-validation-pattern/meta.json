@@ -1,0 +1,35 @@
+{
+    "title":  "GraphQL Mutation Validation Pattern: Centralized Input Checks",
+    "title_es":  "GraphQL Mutation Validation: ValidaciÃ³n Centralizada",
+    "description":  "Centralize GraphQL mutation validation with reusable rules, custom scalars, and structured errors. TypeScript examples and best practices.",
+    "description_es":  "CentralizÃ¡ la validaciÃ³n de mutaciones GraphQL con reglas reutilizables, scalars y errores estructurados. Ejemplos en TypeScript y mejores prÃ¡cticas.",
+    "type":  "patterns",
+    "topic":  "graphql",
+    "slug":  "graphql-mutation-validation-pattern",
+    "source_urls":  [
+                        "https://stackpractices.com/patterns/graphql-mutation-validation-pattern/",
+                        "https://stackpractices.com/es/patterns/graphql-mutation-validation-pattern/"
+                    ],
+    "language":  "multi",
+    "tags":  [
+                 "graphql",
+                 "mutation",
+                 "validation",
+                 "input-validation",
+                 "error-handling",
+                 "typescript",
+                 "apollo-server"
+             ],
+    "files":  [
+                  "validation.ts",
+                  "rules.ts",
+                  "scalars.ts",
+                  "validation.js",
+                  "rules.js",
+                  "scalars.js",
+                  "test_validation.ts",
+                  "test_validation.js",
+                  "README.md",
+                  "README.es.md"
+              ]
+}
