@@ -1,0 +1,97 @@
+{
+  "dashboard": {
+    "title": "API Service Overview",
+    "tags": ["api", "production"],
+    "timezone": "utc",
+    "panels": [
+      {
+        "title": "Request Rate",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "sum(rate(http_requests_total[5m])) by (route)",
+            "legendFormat": "{{ route }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "reqps",
+            "min": 0
+          }
+        },
+        "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 }
+      },
+      {
+        "title": "P95 Latency",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, route))",
+            "legendFormat": "{{ route }}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "s",
+            "custom": {
+              "drawStyle": "line",
+              "lineWidth": 2
+            }
+          }
+        },
+        "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 }
+      },
+      {
+        "title": "Error Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m])) * 100",
+            "legendFormat": "Error %"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "thresholds": {
+              "steps": [
+                { "color": "green", "value": 0 },
+                { "color": "yellow", "value": 1 },
+                { "color": "red", "value": 5 }
+              ]
+            }
+          }
+        },
+        "gridPos": { "h": 4, "w": 6, "x": 0, "y": 8 }
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "service",
+          "type": "query",
+          "query": "label_values(http_requests_total, job)",
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "route",
+          "type": "query",
+          "query": "label_values(http_requests_total{job=~\"$service\"}, route)",
+          "multi": true,
+          "includeAll": true
+        },
+        {
+          "name": "interval",
+          "type": "interval",
+          "options": [
+            { "text": "1m", "value": "1m" },
+            { "text": "5m", "value": "5m" },
+            { "text": "1h", "value": "1h" }
+          ],
+          "current": { "text": "5m", "value": "5m" }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Grafana Dashboards for Observability with Prometheus",
+  "title_es": "Dashboards de Grafana para Observabilidad con Prometheus",
+  "description": "Build Grafana dashboards that visualize Prometheus metrics with panels, variables, provisioning, and alerts.",
+  "description_es": "Construye dashboards de Grafana que visualizan métricas de Prometheus con paneles, variables, provisioning y alertas.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "grafana-dashboards-observability",
+  "source_urls": [
+    "https://grafana.com/docs/grafana/latest/administration/provisioning/",
+    "https://prometheus.io/docs/prometheus/latest/querying/basics/"
+  ],
+  "language": "yaml-json-hcl",
+  "tags": ["grafana", "prometheus", "dashboards", "monitoring", "observability"],
+  "files": [
+    "provisioning/datasources/prometheus.yml",
+    "provisioning/datasources/loki.yml",
+    "provisioning/dashboards/dashboards.yml",
+    "provisioning/dashboards/api-overview.json",
+    "provisioning/alerting/alerts.yml",
+    "terraform/grafana.tf",
+    "recording-rules.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

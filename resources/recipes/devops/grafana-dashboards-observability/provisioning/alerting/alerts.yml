@@ -1,0 +1,28 @@
+# provisioning/alerting/alerts.yml
+apiVersion: 1
+groups:
+  - orgId: 1
+    name: API Health
+    interval: 30s
+    rules:
+      - uid: api-error-rate
+        title: API Error Rate > 5%
+        condition: A
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 300
+            datasourceUid: prometheus
+            model:
+              expr: sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m])) > 0.05
+              instant: true
+        noDataState: NoData
+        execErrState: Error
+        for: 5m
+        annotations:
+          summary: "Error rate above 5%"
+        labels:
+          severity: critical
+        notification_settings:
+          group_by: ['alertname']
+          group_wait: 10s
