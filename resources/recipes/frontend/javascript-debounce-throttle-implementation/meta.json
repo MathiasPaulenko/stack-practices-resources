@@ -1,0 +1,27 @@
+{
+  "title": "Debounce and Throttle Functions in JavaScript",
+  "title_es": "Funciones Debounce y Throttle en JavaScript",
+  "description": "Implement debounce and throttle in JavaScript with leading/trailing edge, cancelable timers, and real-world use cases.",
+  "description_es": "Implementa debounce y throttle en JavaScript con leading/trailing edge, timers cancelables y casos de uso reales.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "javascript-debounce-throttle-implementation",
+  "source_urls": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout",
+    "https://lodash.com/docs#debounce"
+  ],
+  "language": "javascript",
+  "tags": ["javascript", "debounce", "throttle", "performance", "rate-limiting", "events"],
+  "files": [
+    "src/debounce.js",
+    "src/throttle.js",
+    "src/debounce-advanced.js",
+    "src/throttle-trailing.js",
+    "src/debounce-cancelable.js",
+    "src/autosave.js",
+    "src/scroll-progress.js",
+    "src/use-debounce.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
