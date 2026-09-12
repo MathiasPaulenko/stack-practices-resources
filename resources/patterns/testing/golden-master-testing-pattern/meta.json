@@ -1,0 +1,25 @@
+{
+  "title": "Golden Master Testing: Characterize Legacy Code Safely",
+  "title_es": "Golden Master Testing: Caracteriza Legacy Code",
+  "description": "Golden master testing captures legacy behavior as a baseline so you can refactor without fear. Includes characterization tests, approval testing and hash comparison in Python and JavaScript.",
+  "description_es": "Golden master testing captura el comportamiento del legacy como línea base para refactorizar sin miedo. Incluye characterization tests, approval testing y comparación con hash en Python y JavaScript.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "golden-master-testing-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/golden-master-testing-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["testing", "golden-master", "characterization-tests", "legacy-code", "refactoring", "python", "javascript", "pytest"],
+  "files": [
+    "legacy_calculator.py",
+    "refactored_calculator.py",
+    "generate_golden_master.py",
+    "test_golden_master.py",
+    "test_inputs.json",
+    "golden_master.json",
+    "normalize_output.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
