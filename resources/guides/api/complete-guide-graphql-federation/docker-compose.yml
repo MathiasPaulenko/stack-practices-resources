@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  users-subgraph:
+    build: .
+    command: node src/users-subgraph.js
+    ports:
+      - "4001:4001"
+  orders-subgraph:
+    build: .
+    command: node src/orders-subgraph.js
+    ports:
+      - "4002:4002"
+  products-subgraph:
+    build: .
+    command: uvicorn src.products-subgraph:app --host 0.0.0.0 --port 4003
+    ports:
+      - "4003:4003"
+  gateway:
+    build: .
+    command: node src/gateway.js
+    ports:
+      - "4000:4000"
+    depends_on:
+      - users-subgraph
+      - orders-subgraph
+      - products-subgraph

@@ -1,0 +1,25 @@
+{
+  "slug": "complete-guide-graphql-federation",
+  "type": "guides",
+  "topic": "api",
+  "title": "Complete Guide to GraphQL Federation",
+  "titleEs": "Guía Completa de GraphQL Federation",
+  "description": "Build unified GraphQL APIs across multiple services with Apollo Federation. Covers subgraphs, supergraph composition, entity resolution, and gateway deployment.",
+  "descriptionEs": "Construye APIs GraphQL unificadas con Apollo Federation. Cubre subgraphs, supergraph, resolución de entidades y despliegue de gateway.",
+  "author": "Mathias Paulenko",
+  "lastUpdated": "2026-09-12",
+  "language": "nodejs",
+  "technologies": ["graphql", "apollo-federation", "nodejs", "python", "ariadne"],
+  "files": [
+    "src/users-subgraph.js",
+    "src/orders-subgraph.js",
+    "src/products-subgraph.py",
+    "src/gateway.js",
+    "supergraph.yaml",
+    "package.json",
+    "requirements.txt",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

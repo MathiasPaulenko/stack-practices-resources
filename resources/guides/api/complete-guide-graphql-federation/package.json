@@ -1,0 +1,15 @@
+{
+  "name": "graphql-federation-guide",
+  "version": "1.0.0",
+  "description": "Companion resources for the Complete Guide to GraphQL Federation",
+  "scripts": {
+    "start:users": "node src/users-subgraph.js",
+    "start:orders": "node src/orders-subgraph.js",
+    "start:gateway": "node src/gateway.js"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^2.8.0",
+    "@apollo/subgraph": "^2.8.0",
+    "apollo-server": "^3.12.0"
+  }
+}
