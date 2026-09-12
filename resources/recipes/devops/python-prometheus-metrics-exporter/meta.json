@@ -1,0 +1,44 @@
+{
+  "slug": "python-prometheus-metrics-exporter",
+  "type": "recipes",
+  "topic": "devops",
+  "title": "Expose Custom Application Metrics with Python and Prometheus",
+  "titleEs": "Expón métricas de aplicación con Python y Prometheus",
+  "description": "Build a custom Prometheus metrics exporter in Python using prometheus_client. Covers counters, gauges, histograms, summaries, and Flask/FastAPI integration.",
+  "descriptionEs": "Construye un exporter de métricas Prometheus en Python con prometheus_client. Cubre counters, gauges, histograms, summaries e integración con Flask y FastAPI.",
+  "author": "Mathias Paulenko",
+  "lastUpdated": "2026-09-12",
+  "publishedAt": "2026-07-02",
+  "difficulty": "intermediate",
+  "tags": [
+    "python",
+    "prometheus",
+    "metrics",
+    "observability",
+    "monitoring"
+  ],
+  "topics": [
+    "devops",
+    "observability"
+  ],
+  "languages": [
+    "python",
+    "yaml"
+  ],
+  "frameworks": [
+    "flask",
+    "fastapi"
+  ],
+  "files": [
+    "src/basic_metrics.py",
+    "src/flask_integration.py",
+    "src/fastapi_integration.py",
+    "src/custom_collector.py",
+    "src/summary_metric.py",
+    "src/requirements.txt",
+    "prometheus.yml",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

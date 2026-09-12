@@ -1,0 +1,11 @@
+scrape_configs:
+  - job_name: "python-app"
+    scrape_interval: 15s
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["localhost:8000"]
+
+  - job_name: "flask-app"
+    scrape_interval: 15s
+    static_configs:
+      - targets: ["localhost:5000"]
