@@ -1,0 +1,66 @@
+# prompt_metadata.yaml
+prompt_id: "customer-support-classifier"
+name: "Customer Support Ticket Classifier"
+description: "Classifies incoming support tickets into categories"
+current_version: "3.2.0"
+status: "production"
+owner: "ai-team@company.com"
+
+versions:
+  - version: "3.2.0"
+    date: "2026-07-04"
+    author: "jane@company.com"
+    status: "production"
+    model: "gpt-4o-mini"
+    temperature: 0
+    change_type: "patch"
+    changes:
+      - "Reduced system prompt from 450 to 280 tokens"
+      - "Removed redundant category descriptions"
+    eval_scores:
+      accuracy: 0.92
+      precision: 0.91
+      recall: 0.89
+      f1: 0.90
+      latency_p95: 280
+      cost_per_1k: 0.53
+    rollback_to: "3.1.0"
+
+  - version: "3.1.0"
+    date: "2026-06-20"
+    author: "jane@company.com"
+    status: "archived"
+    model: "gpt-4o-mini"
+    temperature: 0
+    change_type: "minor"
+    changes:
+      - "Added 'BILLING' category"
+      - "Updated category descriptions for clarity"
+    eval_scores:
+      accuracy: 0.90
+      precision: 0.89
+      recall: 0.88
+      f1: 0.88
+      latency_p95: 320
+      cost_per_1k: 0.55
+    rollback_to: "3.0.0"
+
+  - version: "3.0.0"
+    date: "2026-06-01"
+    author: "john@company.com"
+    status: "archived"
+    model: "gpt-4o-mini"
+    temperature: 0
+    change_type: "major"
+    changes:
+      - "Migrated from GPT-4o to GPT-4o-mini (15x cost reduction)"
+      - "Rewrote system prompt for mini model"
+      - "Added UNCLEAR category for ambiguous tickets"
+    eval_scores:
+      accuracy: 0.88
+      precision: 0.87
+      recall: 0.86
+      f1: 0.86
+      latency_p95: 300
+      cost_per_1k: 0.53
+    rollback_to: "2.1.0"

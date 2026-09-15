@@ -1,0 +1,38 @@
+# .github/workflows/security-review.yml
+# GitHub Actions workflow for automated security checks on PRs
+# Requires secrets: SNYK_TOKEN
+
+name: Security Review
+on: [pull_request]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Semgrep SAST scan
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: semgrep.yml
+        continue-on-error: false
+
+      - name: npm audit
+        run: npm audit --audit-level=high --omit=dev
+        continue-on-error: false
+
+      - name: Snyk dependency scan
+        uses: snyk/actions/node@master
+        with:
+          command: test
+          args: --severity-threshold=high --fail-on=issues
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      - name: GitLeaks secret scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: License check
+        run: npx license-checker --production --failOn 'GPL-3.0;AGPL-3.0'

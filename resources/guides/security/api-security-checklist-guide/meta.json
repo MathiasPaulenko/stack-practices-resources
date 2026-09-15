@@ -1,0 +1,25 @@
+{
+  "title": "API Security Checklist Guide: Authentication to Encryption",
+  "title_es": "Guía Checklist de Seguridad de APIs: Autenticación a Encriptación",
+  "description": "Production-ready API security checklist covering authentication, authorization, input validation, rate limiting, encryption, error handling, logging, CORS, and deployment hardening. Includes a printable 40-item checklist and a helmet.js config example.",
+  "description_es": "Checklist de seguridad de APIs lista para producción que cubre autenticación, autorización, validación de entrada, rate limiting, encriptación, manejo de errores, logging, CORS y endurecimiento de despliegue. Incluye una checklist imprimible de 40 items y un ejemplo de configuración de helmet.js.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "api-security-checklist-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/api-security-checklist-guide/",
+    "https://owasp.org/API-Security/",
+    "https://datatracker.ietf.org/doc/html/rfc7807",
+    "https://datatracker.ietf.org/doc/html/rfc7519"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "api", "authentication", "authorization", "jwt", "rate-limiting", "encryption", "cors", "helmet", "ci-cd"],
+  "files": [
+    "api-security-checklist.md",
+    "api-security-checklist.es.md",
+    "helmet-config-example.js",
+    "jwt-sign-example.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

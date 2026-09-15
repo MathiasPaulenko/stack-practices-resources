@@ -1,0 +1,22 @@
+{
+  "title": "Cursor-Based Pagination in PostgreSQL (Keyset vs OFFSET)",
+  "title_es": "Paginación por Cursor en PostgreSQL (Keyset vs OFFSET)",
+  "description": "Runnable companion for cursor-based pagination in PostgreSQL. Includes TypeScript repository, Python async implementation, Java JDBC example, and SQL schema with composite indexes.",
+  "description_es": "Companion ejecutable para paginación por cursor en PostgreSQL. Incluye repositorio TypeScript, implementación async en Python, ejemplo JDBC en Java, y esquema SQL con índices compuestos.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "cursor-pagination-postgresql",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cursor-pagination-postgresql/"
+  ],
+  "language": "multi",
+  "tags": ["pagination", "cursor", "keyset", "postgresql", "performance", "api", "typescript", "python", "java"],
+  "files": [
+    "cursor_pagination.ts",
+    "cursor_pagination.py",
+    "CursorPagination.java",
+    "schema.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

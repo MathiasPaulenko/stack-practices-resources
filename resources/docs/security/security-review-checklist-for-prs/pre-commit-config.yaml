@@ -1,0 +1,16 @@
+# .pre-commit-config.yaml
+# Pre-commit hooks for secret scanning
+# Place this file in your repository root and run `pre-commit install`
+
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.0
+    hooks:
+      - id: gitleaks
+        args: ['--config', '.gitleaks.toml']
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']

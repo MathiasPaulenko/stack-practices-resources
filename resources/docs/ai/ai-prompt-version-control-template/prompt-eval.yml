@@ -1,0 +1,38 @@
+# .github/workflows/prompt-eval.yml
+name: Prompt Evaluation
+
+on:
+  pull_request:
+    paths:
+      - "prompts/**"
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install openai
+
+      - name: Run prompt evaluation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/eval_prompt.py \
+            --prompt prompts/classifier/prompt.md \
+            --test-set prompts/classifier/eval/test_set.jsonl \
+            --model gpt-4o-mini \
+            --threshold 0.88
+
+      - name: Check regression
+        run: |
+          python scripts/check_regression.py \
+            --old-results prompts/classifier/eval/eval_results_3.1.0.json \
+            --new-results eval_output.json \
+            --max-drop 0.02

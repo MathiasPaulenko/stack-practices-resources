@@ -1,0 +1,22 @@
+{
+  "title": "Refresh-Ahead Cache Pattern",
+  "title_es": "Patrón Refresh-Ahead Cache",
+  "description": "Refresh-ahead cache pattern implementations in Python, TypeScript, and Java with background thread refresh.",
+  "description_es": "Implementaciones del patrón refresh-ahead cache en Python, TypeScript y Java con refresco en hilo en segundo plano.",
+  "type": "patterns",
+  "topic": "caching",
+  "slug": "refresh-ahead-cache-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/refresh-ahead-cache-pattern/",
+    "https://stackpractices.com/es/patterns/refresh-ahead-cache-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["caching", "pattern", "redis", "performance", "python", "java", "typescript"],
+  "files": [
+    "refresh_ahead_cache.py",
+    "refresh_ahead_cache.ts",
+    "RefreshAheadCacheManager.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

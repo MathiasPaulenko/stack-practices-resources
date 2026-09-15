@@ -1,0 +1,30 @@
+Dimension,Criterion,Level,Score,Evidence,Gap
+Logging,Log structure,3,3,Structured JSON output,—
+Logging,Log levels,2,2,Debug logs in production,Add log level policies
+Logging,Correlation IDs,3,3,X-Request-ID propagated,—
+Logging,Log retention,3,3,30 days hot 90 cold,—
+Logging,Log searchability,3,3,Elasticsearch structured fields,—
+Logging,Sensitive data,2,2,Full request bodies logged,Add PII redaction
+Metrics,RED metrics,3,3,Prometheus exporters,Add duration histograms
+Metrics,USE metrics,3,3,Node exporter cAdvisor,—
+Metrics,Business metrics,2,2,Mixpanel not Prometheus,Expose from app
+Metrics,Cardinality,2,2,High-cardinality user_id,Remove use exemplars
+Metrics,Dashboards,3,3,Grafana per service,Add business dashboard
+Metrics,SLO dashboards,1,1,No SLOs defined,Define SLOs
+Tracing,Distributed tracing,2,2,OTel in 3 of 8 services,Instrument remaining
+Tracing,Trace propagation,3,3,W3C traceparent,—
+Tracing,Span attributes,2,2,Inconsistent across services,Add DB attributes
+Tracing,Trace sampling,2,2,Head-based only,Add tail-based
+Tracing,Trace correlation,2,2,trace_id in logs not metrics,Add exemplars
+Tracing,Service maps,3,3,Service mesh generated,—
+Alerting,Alert noise,2,2,40% actionable,Tune thresholds
+Alerting,Alert routing,3,3,Alertmanager by service,—
+Alerting,Runbooks,1,1,No runbooks,Create for top 20
+Alerting,SLO-based alerting,1,1,None,Implement burn rate
+Alerting,Alert escalation,3,3,PagerDuty 3-level,—
+Alerting,Alert context,2,2,Some Grafana links,Add runbook links
+Culture,Ownership,3,3,Teams own dashboards,—
+Culture,Incident review,3,3,Blameless postmortems,—
+Culture,Action item tracking,2,2,40% overdue,Monthly review
+Culture,On-call culture,3,3,1-week rotation follow-sun,—
+Culture,Training,1,1,No onboarding,Create guide

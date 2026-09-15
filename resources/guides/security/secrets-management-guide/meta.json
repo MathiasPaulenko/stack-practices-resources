@@ -1,0 +1,26 @@
+{
+  "title": "Secrets Management Guide: Vault, Cloud Managers",
+  "title_es": "Guía de Gestión de Secretos: Vault y Cloud Managers",
+  "description": "Practical guide to secrets management with HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, and GCP Secret Manager. Includes rotation strategies, CI/CD integration, and secret scanning scripts.",
+  "description_es": "Guía práctica de gestión de secretos con HashiCorp Vault, AWS Secrets Manager, Azure Key Vault y GCP Secret Manager. Incluye estrategias de rotación, integración CI/CD y scripts de escaneo de secretos.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "secrets-management-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/secrets-management-guide/",
+    "https://developer.hashicorp.com/vault/docs",
+    "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "secrets-management", "vault", "aws", "azure", "gcp", "kubernetes", "ci-cd"],
+  "files": [
+    "vault_client.py",
+    "aws_secrets_manager.py",
+    "azure_key_vault.py",
+    "scan_secrets.sh",
+    "external-secret.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

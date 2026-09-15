@@ -1,0 +1,13 @@
+{
+  "title": "AI Prompt Version Control Template",
+  "title_es": "Plantilla de Control de Versiones de Prompts de IA",
+  "description": "Version LLM prompts with eval scores, change history, rollback, A/B testing, metadata schema, changelog, evaluation tracking, and CI/CD integration.",
+  "description_es": "Versiona prompts de LLM con puntuaciones de evaluación, historial de cambios, reversión, pruebas A/B, esquema de metadatos, changelog, seguimiento de evaluación e integración CI/CD.",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-prompt-version-control-template",
+  "source_urls": "https://stackpractices.com/docs/ai-prompt-version-control-template/",
+  "language": "en",
+  "tags": ["ai", "llm", "prompt-engineering", "version-control", "template", "ci-cd", "evaluation"],
+  "files": ["prompt_metadata.yaml", "eval_prompt.py", "ab_test.py", "check_regression.py", "prompt-eval.yml", "README.md", "README.es.md"]
+}

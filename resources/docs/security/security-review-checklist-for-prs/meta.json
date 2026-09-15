@@ -1,0 +1,22 @@
+{
+  "title": "Security Review Checklist for PRs",
+  "title_es": "Checklist de Revisión de Seguridad para PRs",
+  "description": "Pre-commit config, Semgrep rules, and GitHub Actions workflow for automated PR security review.",
+  "description_es": "Configuración pre-commit, reglas de Semgrep y workflow de GitHub Actions para revisión de seguridad automatizada de PRs.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "security-review-checklist-for-prs",
+  "source_urls": [
+    "https://stackpractices.com/docs/security-review-checklist-for-prs/",
+    "https://stackpractices.com/es/docs/security-review-checklist-for-prs/"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "code-review", "pull-request", "sast", "semgrep", "gitleaks"],
+  "files": [
+    "pre-commit-config.yaml",
+    "semgrep.yml",
+    "security-review.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

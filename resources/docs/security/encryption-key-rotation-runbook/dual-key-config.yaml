@@ -1,0 +1,12 @@
+encryption:
+  mode: dual-key
+  current_key:
+    kms_key_id: "arn:aws:kms:us-east-1:123:key/old-key-id"
+    status: "read-only"
+  new_key:
+    kms_key_id: "arn:aws:kms:us-east-1:123:key/new-key-id"
+    status: "read-write"
+  migration:
+    batch_size: 1000
+    parallelism: 4
+    rate_limit: 100  # records per second

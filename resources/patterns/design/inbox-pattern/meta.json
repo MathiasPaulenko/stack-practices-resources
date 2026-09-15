@@ -1,0 +1,13 @@
+{
+  "title": "Inbox Pattern",
+  "title_es": "Patrón Inbox",
+  "description": "Scripts for implementing the Inbox Pattern with idempotent event processing, deduplication, and retry logic.",
+  "description_es": "Scripts para implementar el Patrón Inbox con procesamiento idempotente de eventos, deduplicación y lógica de reintentos.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "inbox-pattern",
+  "source_urls": ["https://stackpractices.com/patterns/inbox-pattern/"],
+  "language": ["en", "es"],
+  "tags": ["messaging", "idempotency", "reliability", "event-driven", "inbox"],
+  "files": ["inbox_processor.py", "inbox_processor.js", "README.md", "README.es.md"]
+}

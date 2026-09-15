@@ -1,0 +1,22 @@
+{
+  "title": "SLO Document Template",
+  "title_es": "Plantilla de Documento SLO",
+  "description": "Service Level Objective document template with SLIs, SLOs, error budgets, alerting thresholds, and SLI selection guide. Includes Prometheus alerting rules.",
+  "description_es": "Plantilla de documento de Service Level Objective con SLIs, SLOs, error budgets, umbrales de alertas y guía de selección de SLIs. Incluye reglas de alertas de Prometheus.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "slo-document-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/slo-document-template/",
+    "https://sre.google/workbook/table-of-contents/",
+    "https://prometheus.io/docs/practices/alerting/"
+  ],
+  "language": "bilingual",
+  "tags": ["slo", "sli", "observability", "template", "prometheus", "alerting", "error-budget"],
+  "files": [
+    "slo-template.md",
+    "slo-alerts.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

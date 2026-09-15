@@ -1,0 +1,50 @@
+# SLO alerting rules for Prometheus / Alertmanager.
+#
+# Replace [service] with your service name and adjust thresholds.
+# Requires Prometheus with appropriate metrics (http_requests_total, http_request_duration_seconds).
+
+groups:
+  - name: slo_alerts
+    rules:
+      # Page: error budget 10% consumed in 1 hour
+      - alert: SLOBurnRateCritical
+        expr: |
+          (
+            sum(rate(http_requests_total{job="[service]",status=~"5.."}[1h]))
+            /
+            sum(rate(http_requests_total{job="[service]"}[1h]))
+          ) > (10 * 0.001)
+        for: 5m
+        labels:
+          severity: page
+        annotations:
+          summary: "SLO burn rate critical for [service]"
+          description: "Error budget 10% consumed in 1 hour. On-call must respond immediately."
+
+      # Ticket: error budget 50% consumed in 7 days
+      - alert: SLOBurnRateWarning
+        expr: |
+          (
+            sum(rate(http_requests_total{job="[service]",status=~"5.."}[7d]))
+            /
+            sum(rate(http_requests_total{job="[service]"}[7d]))
+          ) > (50 * 0.001)
+        for: 10m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "SLO burn rate warning for [service]"
+          description: "Error budget 50% consumed in 7 days. Team should review in next sprint."
+
+      # Latency p95 above SLO
+      - alert: SLOLatencyP95Breach
+        expr: |
+          histogram_quantile(0.95,
+            sum(rate(http_request_duration_seconds_bucket{job="[service]"}[5m])) by (le)
+          ) > 0.2
+        for: 10m
+        labels:
+          severity: page
+        annotations:
+          summary: "Latency p95 above SLO for [service]"
+          description: "p95 latency exceeds 200ms SLO target for 10 minutes."

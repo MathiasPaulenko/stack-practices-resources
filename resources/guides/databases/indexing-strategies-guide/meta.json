@@ -1,0 +1,23 @@
+{
+  "title": "Database Indexing Strategies: From B-Trees to BRIN",
+  "title_es": "Estrategias de Indexación de Bases de Datos: Desde B-Trees hasta BRIN",
+  "description": "Practical guide to database indexes: B-Tree, Hash, GIN, GiST, BRIN, partial, and covering indexes. Includes SQL examples for PostgreSQL and MySQL, an unused-index audit script, and CREATE INDEX CONCURRENTLY examples for production.",
+  "description_es": "Guía práctica de índices de bases de datos: B-Tree, Hash, GIN, GiST, BRIN, parciales y de cobertura. Incluye ejemplos SQL para PostgreSQL y MySQL, un script de auditoría de índices no usados y ejemplos de CREATE INDEX CONCURRENTLY para producción.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "indexing-strategies-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/indexing-strategies-guide/",
+    "https://www.postgresql.org/docs/current/indexes.html",
+    "https://dev.mysql.com/doc/refman/8.0/en/optimization-indexes.html"
+  ],
+  "language": "bilingual",
+  "tags": ["databases", "indexing", "b-tree", "hash", "gin", "gist", "brin", "partial-index", "query-optimization", "postgresql", "mysql"],
+  "files": [
+    "unused-indexes-audit.sql",
+    "create-index-concurrently-examples.sql",
+    "index-monitoring-queries.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

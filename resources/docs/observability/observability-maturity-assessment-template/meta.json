@@ -1,0 +1,22 @@
+{
+  "title": "Observability Maturity Assessment Template",
+  "title_es": "Plantilla de Assessment de Madurez de Observabilidad",
+  "description": "5-level observability maturity assessment across logging, metrics, tracing, alerting and culture. Includes scoring sheet, gap analysis, and improvement roadmap template.",
+  "description_es": "Assessment de madurez de observabilidad de 5 niveles en logging, métricas, tracing, alertas y cultura. Incluye hoja de scoring, análisis de gaps y plantilla de roadmap de mejora.",
+  "type": "docs",
+  "topic": "observability",
+  "slug": "observability-maturity-assessment-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/observability-maturity-assessment-template/",
+    "https://sre.google/workbook/",
+    "https://opentelemetry.io/"
+  ],
+  "language": "bilingual",
+  "tags": ["observability", "assessment", "maturity", "template", "sre", "opentelemetry", "prometheus", "alerting"],
+  "files": [
+    "assessment-template.md",
+    "scoring-sheet.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Encryption Key Rotation Runbook",
+  "title_es": "Runbook de Rotación de Claves de Cifrado",
+  "description": "Runbook for rotating encryption keys with zero downtime using dual-key migration. Covers AWS KMS, TLS, JWT, database TDEK and API signing key rotation with verification scripts and rollback procedures.",
+  "description_es": "Runbook para rotar claves de cifrado sin downtime usando migración dual-key. Cubre rotación de AWS KMS, TLS, JWT, TDEK de base de datos y claves de firma de API con scripts de verificación y procedimientos de rollback.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "encryption-key-rotation-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/encryption-key-rotation-runbook/",
+    "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+    "https://csrc.nist.gov/projects/key-management",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "encryption", "key-rotation", "kms", "runbook", "aws", "yaml", "python", "bash"],
+  "files": [
+    "dual-key-config.yaml",
+    "migrate_keys.py",
+    "verify_rotation.sh",
+    "jwks-dual-key.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

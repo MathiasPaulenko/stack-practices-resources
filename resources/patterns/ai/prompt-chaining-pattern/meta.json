@@ -1,0 +1,24 @@
+{
+  "title": "Prompt Chaining Pattern: Chain LLM Calls for Better Results",
+  "title_es": "Patrón Prompt Chaining: Encadena Llamadas LLM para Mejores Resultados",
+  "description": "Chain multiple LLM calls where each step's output feeds the next step's input. Break complex tasks into smaller, verifiable prompts for better results. Includes Python, JavaScript and Java implementations with validation and retry logic.",
+  "description_es": "Encadena múltiples llamadas LLM donde la salida de cada paso alimenta la entrada del siguiente. Divide tareas complejas en prompts más pequeños y verificables para mejores resultados. Incluye implementaciones en Python, JavaScript y Java con validación y lógica de reintentos.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "prompt-chaining-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/prompt-chaining-pattern/",
+    "https://cookbook.openai.com/examples/how_to_call_models_with_the_language_api",
+    "https://python.langchain.com/docs/modules/chains/",
+    "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts"
+  ],
+  "language": "bilingual",
+  "tags": ["ai", "pattern", "llm", "pipeline", "prompt-engineering", "python", "javascript", "java"],
+  "files": [
+    "prompt_chain.py",
+    "prompt_chain.js",
+    "PromptChaining.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

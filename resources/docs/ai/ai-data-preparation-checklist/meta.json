@@ -1,0 +1,13 @@
+{
+  "title": "AI Data Preparation Checklist",
+  "title_es": "Checklist de Preparación de Datos para IA",
+  "description": "Scripts for preparing data for LLM and RAG systems: cleaning, PII removal, deduplication, chunking, embedding generation, and retrieval quality testing.",
+  "description_es": "Scripts para preparar datos para sistemas LLM y RAG: limpieza, eliminación de PII, deduplicación, fragmentación, generación de embeddings y prueba de calidad de recuperación.",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-data-preparation-checklist",
+  "source_urls": ["https://stackpractices.com/docs/ai-data-preparation-checklist/"],
+  "language": ["en", "es"],
+  "tags": ["ai", "rag", "data-quality", "embeddings", "chunking", "pii", "deduplication"],
+  "files": ["clean_text.py", "detect_pii.py", "find_duplicates.py", "chunk_documents.py", "generate_embeddings.py", "test_retrieval.py", "README.md", "README.es.md"]
+}

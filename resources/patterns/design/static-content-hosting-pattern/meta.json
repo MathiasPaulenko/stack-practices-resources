@@ -1,0 +1,13 @@
+{
+  "title": "Static Content Hosting Pattern",
+  "title_es": "Patrón de Hosting de Contenido Estático",
+  "description": "Scripts for uploading and managing static assets on object storage with CDN integration.",
+  "description_es": "Scripts para subir y gestionar assets estáticos en almacenamiento de objetos con integración CDN.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "static-content-hosting-pattern",
+  "source_urls": ["https://stackpractices.com/patterns/static-content-hosting-pattern/"],
+  "language": ["en", "es"],
+  "tags": ["cdn", "s3", "cloudfront", "object-storage", "frontend"],
+  "files": ["upload_assets.py", "invalidate_cache.py", "generate_signed_urls.py", "resize_images.py", "README.md", "README.es.md"]
+}

@@ -1,0 +1,40 @@
+# semgrep.yml
+# Custom Semgrep security rules for PR review
+# Run: semgrep --config semgrep.yml --error
+
+rules:
+  - id: no-hardcoded-secrets
+    pattern: password = "..."
+    message: "Hardcoded password detected"
+    severity: ERROR
+    languages: [python, javascript, java]
+
+  - id: no-sql-injection
+    pattern: cursor.execute(f"...")
+    message: "Possible SQL injection — use parameterized queries"
+    severity: ERROR
+    languages: [python]
+
+  - id: no-shell-true
+    pattern: subprocess.run(..., shell=True)
+    message: "shell=True is dangerous with user input"
+    severity: WARNING
+    languages: [python]
+
+  - id: no-innerhtml
+    pattern: $EL.innerHTML = $INPUT
+    message: "innerHTML with user input causes XSS — use textContent"
+    severity: ERROR
+    languages: [javascript]
+
+  - id: no-eval-user-input
+    pattern: eval($INPUT)
+    message: "eval() with user input is dangerous"
+    severity: ERROR
+    languages: [python, javascript]
+
+  - id: no-document-write
+    pattern: document.write($INPUT)
+    message: "document.write() with user input causes XSS"
+    severity: ERROR
+    languages: [javascript]
