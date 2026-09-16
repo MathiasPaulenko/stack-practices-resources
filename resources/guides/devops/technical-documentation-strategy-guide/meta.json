@@ -1,0 +1,23 @@
+{
+  "title": "Technical Documentation Strategy: Docs as Code",
+  "title_es": "Estrategia de Documentación Técnica: Docs as Code",
+  "description": "Downloadable templates for a docs-as-code documentation strategy. Includes a service README template, an Architecture Decision Record (ADR) template, a symptom-keyed runbook template, a CODEOWNERS example for doc ownership, and a stale-docs detection script.",
+  "description_es": "Plantillas descargables para una estrategia de documentación docs-as-code. Incluye una plantilla de README de servicio, una plantilla de Architecture Decision Record (ADR), una plantilla de runbook indexado por síntomas, un ejemplo de CODEOWNERS para ownership de docs y un script de detección de docs obsoletos.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "technical-documentation-strategy-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/technical-documentation-strategy-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["devops", "documentation", "docs-as-code", "adr", "runbook", "readme", "codeowners", "template", "markdown", "bash"],
+  "files": [
+    "readme-template.md",
+    "adr-template.md",
+    "runbook-template.md",
+    "codeowners-example",
+    "stale-docs-check.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

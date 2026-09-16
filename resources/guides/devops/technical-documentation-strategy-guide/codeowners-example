@@ -1,0 +1,13 @@
+# .github/CODEOWNERS
+# Documentation ownership example — a PR that touches a path below
+# automatically requests review from the listed owner.
+
+# README and architecture docs are owned by the service team
+/README.md                    @payment-team
+/architecture.md              @payment-team
+
+# Runbooks are owned by the on-call rotation
+/runbook.md                   @payment-oncall
+
+# ADRs are owned by the tech lead
+/adr/                         @payment-tech-lead
