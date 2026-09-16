@@ -1,0 +1,24 @@
+{
+  "title": "API Lifecycle Management Template",
+  "title_es": "Plantilla del Ciclo de Vida de APIs",
+  "description": "Checklist template for API deprecation, versioning, and sunset procedures. Includes the master lifecycle checklist, a migration guide template, a filled deprecation notice example, and a Prometheus-based sunset readiness script.",
+  "description_es": "Plantilla de checklist para deprecación, versionado y cierre de APIs. Incluye el checklist maestro de ciclo de vida, una plantilla de guía de migración, un ejemplo de aviso de deprecación rellenado y un script de preparación para cierre basado en Prometheus.",
+  "type": "docs",
+  "topic": "architecture",
+  "slug": "api-lifecycle-management-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-lifecycle-management-template/",
+    "https://www.rfc-editor.org/rfc/rfc9745",
+    "https://www.rfc-editor.org/rfc/rfc8594"
+  ],
+  "language": "bilingual",
+  "tags": ["api", "lifecycle", "deprecation", "sunset", "versioning", "template", "checklist", "python", "prometheus"],
+  "files": [
+    "api-lifecycle-checklist.md",
+    "migration-guide-template.md",
+    "deprecation-notice-example.md",
+    "sunset-readiness-check.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
