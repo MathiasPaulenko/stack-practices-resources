@@ -1,0 +1,23 @@
+{
+  "title": "Deployment Rollback Runbook",
+  "title_es": "Runbook de Rollback de Despliegues",
+  "description": "Production rollback runbook: trigger criteria, kubectl/Helm/ArgoCD rollback commands, blue-green and canary rollback, database migration rollback strategies, verification checklist, and incident communication template.",
+  "description_es": "Runbook de rollback en producción: criterios de trigger, comandos de rollback con kubectl/Helm/ArgoCD, rollback blue-green y canary, estrategias de rollback de migraciones de base de datos, checklist de verificación y plantilla de comunicación de incidentes.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "deployment-rollback-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/deployment-rollback-runbook/",
+    "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+    "https://helm.sh/docs/helm/helm_rollback/",
+    "https://argo-cd.readthedocs.io/"
+  ],
+  "language": "bilingual",
+  "tags": ["deployment", "rollback", "kubernetes", "helm", "argocd", "runbook", "incident-response", "devops", "database-migration"],
+  "files": [
+    "rollback-runbook.md",
+    "rollback-commands.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
