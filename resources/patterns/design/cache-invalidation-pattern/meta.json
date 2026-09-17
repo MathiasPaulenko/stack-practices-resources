@@ -1,0 +1,30 @@
+{
+  "title": "Cache Invalidation Pattern — Companion Code",
+  "title_es": "Patrón Cache Invalidation — Código complementario",
+  "description": "Runnable Redis invalidation strategies (TTL, explicit, pub/sub, versioned keys, tag-based) in Python and TypeScript that accompany the Cache Invalidation Pattern resource.",
+  "description_es": "Estrategias ejecutables de invalidación en Redis (TTL, explícita, pub/sub, claves versionadas, por tags) en Python y TypeScript que acompañan al recurso del Patrón Cache Invalidation.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "cache-invalidation-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/cache-invalidation-pattern/",
+    "https://stackpractices.com/es/patterns/cache-invalidation-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "caching",
+    "invalidation",
+    "redis",
+    "ttl",
+    "pub-sub",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "cache_invalidator.py",
+    "cache-manager.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
