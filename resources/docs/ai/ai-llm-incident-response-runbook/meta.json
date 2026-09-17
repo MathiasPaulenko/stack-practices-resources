@@ -1,0 +1,22 @@
+{
+  "title": "AI LLM Incident Response Runbook",
+  "title_es": "Runbook de Respuesta a Incidentes de LLM",
+  "description": "Operational runbook for LLM production incidents: severity levels, escalation path, five incident playbooks (outage, hallucination, cost spike, safety failure, quality degradation), post-incident checklist, and a provider status check script.",
+  "description_es": "Runbook operativo para incidentes de LLM en producción: niveles de severidad, ruta de escalado, cinco playbooks de incidentes (caída, alucinación, pico de costo, fallo de seguridad, degradación), checklist post-incidente y script de verificación de estado de proveedores.",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-llm-incident-response-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/ai-llm-incident-response-runbook/",
+    "https://sre.google/sre-book/managing-incidents/",
+    "https://response.pagerduty.com/"
+  ],
+  "language": "bilingual",
+  "tags": ["llm", "incident-response", "runbook", "sre", "on-call", "hallucination", "cost-spike", "ai"],
+  "files": [
+    "llm-incident-runbook.md",
+    "check-llm-status.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "report-generator",
+    "cpu_avg": 0.2,
+    "mem_avg": 0.8,
+    "peak_hours": [2, 3],
+    "start_hour": 2,
+    "end_hour": 4,
+    "cpu": 500,
+    "mem": 1024
+  },
+  {
+    "name": "notification-sender",
+    "cpu_avg": 0.6,
+    "mem_avg": 0.2,
+    "peak_hours": [9, 10, 11],
+    "start_hour": 9,
+    "end_hour": 12,
+    "cpu": 750,
+    "mem": 512
+  },
+  {
+    "name": "data-cleaner",
+    "cpu_avg": 0.1,
+    "mem_avg": 0.1,
+    "peak_hours": [0, 1],
+    "start_hour": 0,
+    "end_hour": 2,
+    "cpu": 250,
+    "mem": 256
+  },
+  {
+    "name": "metrics-aggregator",
+    "cpu_avg": 0.4,
+    "mem_avg": 0.3,
+    "peak_hours": [9, 10],
+    "start_hour": 9,
+    "end_hour": 11,
+    "cpu": 500,
+    "mem": 768
+  }
+]

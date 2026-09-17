@@ -1,0 +1,21 @@
+{
+  "title": "Apply Prompt Engineering: What Works",
+  "title_es": "Aplicar lo que funciona en Prompt Engineering",
+  "description": "Runnable companion files for the prompt engineering recipe. Includes a prompt evaluation suite script (runs a prompt against a JSON test set and reports pass/fail), a reusable few-shot prompt template, and a sample test set.",
+  "description_es": "Ficheros ejecutables complementarios de la receta de prompt engineering. Incluye una suite de evaluación de prompts (ejecuta un prompt contra un test set JSON y reporta pass/fail), una plantilla reusable de prompt few-shot y un test set de ejemplo.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "prompt-engineering",
+  "source_urls": [
+    "https://stackpractices.com/recipes/prompt-engineering/"
+  ],
+  "language": "bilingual",
+  "tags": ["ai", "llm", "prompt-engineering", "openai", "few-shot", "evaluation", "python", "testing"],
+  "files": [
+    "prompt-eval-suite.py",
+    "few-shot-template.md",
+    "test-set.example.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,12 @@
+domain\Assertions.class
+domain\SoftAssertions.class
+UserSoftAssertionsTest$Config.class
+UserSoftAssertionsTest$UserDto.class
+domain\AbstractUserAssert.class
+domain\UserAssert.class
+domain\BddAssertions.class
+UserSoftAssertionsTest$OrderResponse.class
+UserSoftAssertionsTest$User.class
+GeneratedSoftAssertionsTest.class
+UserSoftAssertionsTest$Product.class
+UserSoftAssertionsTest.class

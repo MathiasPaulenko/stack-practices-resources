@@ -1,0 +1,12 @@
+[
+  {"input": "How do I reset my password?", "expected": "SUPPORT"},
+  {"input": "Find me red running shoes under $100", "expected": "SEARCH"},
+  {"input": "I was charged twice last month", "expected": "BILLING"},
+  {"input": "Where is my order?", "expected": "SUPPORT"},
+  {"input": "Show me laptops with 32GB RAM", "expected": "SEARCH"},
+  {"input": "Refund please", "expected": "BILLING"},
+  {"input": "Why was my card declined?", "expected": "BILLING"},
+  {"input": "Do you ship to Canada?", "expected": "SUPPORT"},
+  {"input": "Best wireless headphones", "expected": "SEARCH"},
+  {"input": "I want to cancel my subscription", "expected": "BILLING"}
+]

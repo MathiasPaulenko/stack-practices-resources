@@ -1,0 +1,31 @@
+{
+  "title": "CSS Architecture Pattern — Companion Tools",
+  "title_es": "Patrón de Arquitectura CSS — Herramientas",
+  "description": "Drop-in design tokens, cascade-layer stylesheet, and CSS module button component that accompany the CSS Architecture Pattern resource.",
+  "description_es": "Design tokens listos para usar, hoja de estilos por capas y componente de botón con CSS modules que acompañan al recurso del Patrón de Arquitectura CSS.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "css-architecture-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/css-architecture-pattern/",
+    "https://stackpractices.com/es/patterns/css-architecture-pattern/"
+  ],
+  "language": "en",
+  "tags": [
+    "pattern",
+    "frontend",
+    "css",
+    "design-system",
+    "tailwind",
+    "css-modules"
+  ],
+  "files": [
+    "design-tokens.css",
+    "cascade-layers.css",
+    "Button.module.css",
+    "tokens.json",
+    "cube-css.css",
+    "README.md",
+    "README.es.md"
+  ]
+}

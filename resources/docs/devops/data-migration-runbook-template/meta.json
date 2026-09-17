@@ -1,0 +1,22 @@
+{
+  "title": "Data Migration Runbook Template",
+  "title_es": "Plantilla de Runbook de Migración de Datos",
+  "description": "Production data migration runbook: pre-migration checklist, strategy selection, dry run execution, row-count validation script, rollback procedure, and post-migration actions.",
+  "description_es": "Runbook de migración de datos en producción: checklist pre-migración, selección de estrategia, prueba en seco, script de validación de conteos de filas, procedimiento de rollback y acciones post-migración.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "data-migration-runbook-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-migration-runbook-template/",
+    "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html",
+    "https://www.postgresql.org/docs/current/pgupgrade.html"
+  ],
+  "language": "bilingual",
+  "tags": ["data-migration", "runbook", "postgresql", "rollback", "validation", "cdc", "etl", "devops"],
+  "files": [
+    "migration-runbook.md",
+    "validate-migration.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

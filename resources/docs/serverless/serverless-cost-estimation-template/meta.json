@@ -1,0 +1,23 @@
+{
+  "title": "Serverless Cost Estimation Template",
+  "title_es": "Plantilla de Estimación de Costos Serverless",
+  "description": "Serverless cost estimation template: per-function estimation worksheet, hidden costs checklist, scenario summary, validation log, plus a Python calculator for AWS Lambda monthly cost (x86/arm64).",
+  "description_es": "Plantilla de estimación de costos serverless: hoja de estimación por función, checklist de costos ocultos, resumen de escenarios, log de validación, más una calculadora Python del costo mensual de AWS Lambda (x86/arm64).",
+  "type": "docs",
+  "topic": "serverless",
+  "slug": "serverless-cost-estimation-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/serverless-cost-estimation-template/",
+    "https://aws.amazon.com/lambda/pricing/",
+    "https://azure.microsoft.com/pricing/details/functions/",
+    "https://cloud.google.com/functions/pricing"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "aws-lambda", "cost-estimation", "cloud-costs", "finops", "template"],
+  "files": [
+    "cost-estimation.md",
+    "estimate-costs.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

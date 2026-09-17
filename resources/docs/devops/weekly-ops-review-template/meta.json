@@ -1,0 +1,22 @@
+{
+  "title": "Weekly Ops Review Template",
+  "title_es": "Plantilla de Revisión Semanal de Operaciones",
+  "description": "Weekly operations review template: executive summary table, incident review, cost analysis, SLO status, action item tracker, plus a Python script that generates the summary table from a JSON export.",
+  "description_es": "Plantilla de revisión semanal de operaciones: tabla de resumen ejecutivo, revisión de incidentes, análisis de costos, estado de SLO, tracker de acciones, más un script Python que genera la tabla de resumen desde un JSON.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "weekly-ops-review-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/weekly-ops-review-template/",
+    "https://sre.google/workbook/implementing-slos/",
+    "https://dora.dev/"
+  ],
+  "language": "bilingual",
+  "tags": ["ops-review", "sre", "incident-review", "cost-analysis", "slo", "devops", "template"],
+  "files": [
+    "weekly-ops-review.md",
+    "summarize-week.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

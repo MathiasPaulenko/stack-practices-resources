@@ -1,0 +1,30 @@
+{
+  "title": "Write-Behind Cache Pattern — Companion Code",
+  "title_es": "Patrón Write-Behind Cache — Código complementario",
+  "description": "Runnable write-behind cache implementations with a durable Redis dirty set, atomic flush takeover and batch upserts, in Python and TypeScript, that accompany the Write-Behind Cache Pattern resource.",
+  "description_es": "Implementaciones ejecutables de caché write-behind con dirty set durable en Redis, toma atómica del volcado y upserts en lote, en Python y TypeScript, que acompañan al recurso del Patrón Write-Behind Cache.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "write-behind-cache-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/write-behind-cache-pattern/",
+    "https://stackpractices.com/es/patterns/write-behind-cache-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "caching",
+    "write-behind",
+    "write-back",
+    "redis",
+    "eventual-consistency",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "write_behind_cache.py",
+    "write-behind-cache.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

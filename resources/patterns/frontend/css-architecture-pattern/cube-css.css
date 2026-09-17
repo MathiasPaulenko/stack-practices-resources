@@ -1,0 +1,32 @@
+/* cube-css.css — CUBE CSS variant: Composition, Utility, Block, Exception */
+
+/* Composition — layout patterns that wrap components */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* Utility — single-purpose classes */
+.bg-brand-500 { background-color: var(--color-brand-500); }
+.text-white { color: white; }
+.p-4 { padding: 1rem; }
+
+/* Block — a component's own styles */
+.product-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+}
+
+/* Exception — state overrides via data attributes or classes */
+.product-card:where(.is-featured) {
+  border-color: var(--color-brand-500);
+}

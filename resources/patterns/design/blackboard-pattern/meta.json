@@ -1,0 +1,27 @@
+{
+  "title": "Blackboard Pattern — Companion Tools",
+  "title_es": "Patrón Blackboard — Herramientas",
+  "description": "Runnable blackboard solver demo with knowledge sources, hypotheses, and a controller that accompany the Blackboard Pattern resource.",
+  "description_es": "Demo ejecutable de solver blackboard con knowledge sources, hipótesis y un controller que acompaña al recurso del Patrón Blackboard.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "blackboard-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/blackboard-pattern/",
+    "https://stackpractices.com/es/patterns/blackboard-pattern/"
+  ],
+  "language": "en",
+  "tags": [
+    "pattern",
+    "design-pattern",
+    "behavioral",
+    "ai",
+    "blackboard"
+  ],
+  "files": [
+    "blackboard-solver.py",
+    "blackboard-event-driven.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

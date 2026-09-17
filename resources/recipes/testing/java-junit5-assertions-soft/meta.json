@@ -1,0 +1,23 @@
+{
+  "title": "AssertJ Soft Assertions in JUnit5",
+  "title_es": "Soft Assertions con AssertJ en JUnit5",
+  "description": "Collect every assertion failure in a single JUnit5 test run with AssertJ SoftAssertions, assertSoftly, and SoftAssertionsExtension.",
+  "description_es": "Recolecta todos los fallos de aserción en una sola ejecución de test JUnit5 con AssertJ SoftAssertions, assertSoftly y SoftAssertionsExtension.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "java-junit5-assertions-soft",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-junit5-assertions-soft/",
+    "https://stackpractices.com/es/recipes/java-junit5-assertions-soft/"
+  ],
+  "language": "java",
+  "tags": ["testing", "unit-tests", "java", "junit5", "assertj", "soft-assertions", "maven"],
+  "files": [
+    "pom.xml",
+    "src/main/java/domain/User.java",
+    "src/test/java/UserSoftAssertionsTest.java",
+    "src/test/java/GeneratedSoftAssertionsTest.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Compute Resource Consolidation Pattern — Companion Tools",
+  "title_es": "Patrón de Consolidación de Recursos de Cómputo — Herramientas",
+  "description": "Runnable workload analyzer and spot-instance window planner that accompany the Compute Resource Consolidation Pattern resource.",
+  "description_es": "Analizador de cargas ejecutable y planificador de ventanas spot que acompañan al recurso del Patrón de Consolidación de Recursos de Cómputo.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "compute-resource-consolidation-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/compute-resource-consolidation-pattern/",
+    "https://stackpractices.com/es/patterns/compute-resource-consolidation-pattern/"
+  ],
+  "language": "en",
+  "tags": [
+    "pattern",
+    "cost-optimization",
+    "architecture",
+    "infrastructure",
+    "bin-packing",
+    "spot-instances"
+  ],
+  "files": [
+    "workload-analyzer.py",
+    "spot-consolidation.py",
+    "workloads.example.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
