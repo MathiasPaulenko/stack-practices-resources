@@ -1,0 +1,27 @@
+{
+  "title": "Circuit Breaker Half-Open — Companion Code",
+  "title_es": "Circuit Breaker Half-Open — Código complementario",
+  "description": "Runnable three-state circuit breaker in Python with thread-safe state transitions and a unittest suite covering closed → open → half-open → closed/open paths.",
+  "description_es": "Circuit breaker de tres estados ejecutable en Python con transiciones de estado thread-safe y una suite unittest que cubre los caminos closed → open → half-open → closed/open.",
+  "type": "patterns",
+  "topic": "resilience",
+  "slug": "circuit-breaker-half-open-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/circuit-breaker-half-open-pattern/",
+    "https://stackpractices.com/es/patterns/circuit-breaker-half-open-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "circuit-breaker",
+    "resilience",
+    "fault-tolerance",
+    "half-open",
+    "microservices"
+  ],
+  "files": [
+    "circuit_breaker.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
