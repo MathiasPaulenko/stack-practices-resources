@@ -1,0 +1,60 @@
+<!doctype html>
+<!--
+  vanilla-island.html — islands architecture with zero frameworks.
+  Open this file in a browser: the counter below the fold only gets its
+  JavaScript behavior when it scrolls into view (the equivalent of
+  client:visible), while the rest of the page stays static.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanilla island demo</title>
+  <style>
+    body { font-family: system-ui; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+    .spacer { height: 120vh; color: #888; display: grid; place-items: center; }
+    [data-island] { border: 1px solid #ccc; border-radius: 8px; padding: 1rem; }
+    button { font: inherit; padding: .5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Static page, one island</h1>
+  <p>This text shipped as plain HTML — no JavaScript was needed to read it.</p>
+
+  <div class="spacer">Scroll down — the counter hydrates when it becomes visible</div>
+
+  <!-- The island: declarative marker + serialized props, hydrated on demand -->
+  <div data-island="counter" data-props='{"start": 10}'>
+    <p>Count: <output>10</output></p>
+    <button type="button" disabled>+1 (hydrating…)</button>
+  </div>
+
+  <script>
+    // The "framework runtime": finds islands and attaches behavior on demand.
+    const hydrateCounter = (el) => {
+      const props = JSON.parse(el.dataset.props);
+      let count = props.start;
+      const output = el.querySelector('output');
+      const button = el.querySelector('button');
+      button.disabled = false;
+      button.textContent = '+1';
+      button.addEventListener('click', () => { output.value = ++count; });
+      console.log('island hydrated at', new Date().toISOString());
+    };
+
+    // client:visible equivalent — hydrate when the island enters the viewport.
+    const observer = new IntersectionObserver((entries) => {
+      entries
+        .filter((e) => e.isIntersecting)
+        .forEach((e) => {
+          observer.unobserve(e.target);
+          hydrateCounter(e.target);
+        });
+    });
+
+    document
+      .querySelectorAll('[data-island="counter"]')
+      .forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>

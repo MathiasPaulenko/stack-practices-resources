@@ -1,0 +1,48 @@
+---
+// page.astro — an Astro page that hydrates only its interactive islands
+import SearchBox from './SearchBox.jsx';
+import CartCounter from './CartCounter.jsx';
+import NewsletterForm from './NewsletterForm.jsx';
+
+const products = [
+  { id: 1, name: 'Mechanical keyboard', price: 129 },
+  { id: 2, name: 'Ergonomic mouse', price: 89 },
+  { id: 3, name: 'USB-C dock', price: 149 },
+];
+---
+
+<html>
+<body>
+  <header>
+    <!-- Static navigation — zero JavaScript shipped -->
+    <nav>
+      <a href="/">Home</a>
+      <a href="/products">Products</a>
+      <a href="/about">About</a>
+    </nav>
+
+    <!-- Island 1: hydrate on load — the search must work immediately -->
+    <SearchBox client:load />
+    <CartCounter client:load />
+  </header>
+
+  <main>
+    <h1>Products</h1>
+
+    <!-- Static grid — rendered on the server, ships no JS at all -->
+    <div class="product-grid">
+      {products.map(product => (
+        <article class="product-card">
+          <h2>{product.name}</h2>
+          <p>${product.price}</p>
+        </article>
+      ))}
+    </div>
+  </main>
+
+  <footer>
+    <!-- Island 2: hydrate when the browser is idle — not urgent -->
+    <NewsletterForm client:idle />
+  </footer>
+</body>
+</html>

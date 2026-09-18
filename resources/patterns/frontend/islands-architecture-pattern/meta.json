@@ -1,0 +1,36 @@
+{
+  "title": "Islands Architecture Pattern — Companion Code",
+  "title_es": "Patrón Islands Architecture — Código complementario",
+  "description": "Islands architecture examples: an Astro page using client directives, a React island component, a dependency-free shared store, a zero-framework partial hydration demo, and a hydration-cost estimator.",
+  "description_es": "Ejemplos de arquitectura de islas: una página de Astro con directivas client:, un componente isla en React, un store compartido sin dependencias, una demo de hidratación parcial sin frameworks y un estimador del coste de hidratación.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "islands-architecture-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/islands-architecture-pattern/",
+    "https://stackpractices.com/es/patterns/islands-architecture-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "astro",
+    "react",
+    "javascript",
+    "islands",
+    "partial-hydration",
+    "ssr",
+    "performance",
+    "frontend"
+  ],
+  "files": [
+    "islands/page.astro",
+    "islands/SearchBox.jsx",
+    "islands/CartCounter.jsx",
+    "islands/NewsletterForm.jsx",
+    "islands/store.js",
+    "islands/nanostores-cart.js",
+    "islands/vanilla-island.html",
+    "islands/hydration-cost.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
