@@ -1,0 +1,28 @@
+{
+  "title": "Safe Zip Extraction — Companion Code",
+  "title_es": "Extracción Segura de Zips — Código complementario",
+  "description": "Runnable safe zip extraction module in Python: path traversal validation, file count and size caps, duplicate-entry detection, and quarantine — with a unittest suite covering malicious archives.",
+  "description_es": "Módulo ejecutable de extracción segura de zips en Python: validación de path traversal, límites de cantidad y tamaño, detección de entradas duplicadas y cuarentena — con una suite unittest que cubre archivos maliciosos.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "python-zip-file-extraction",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-zip-file-extraction/",
+    "https://stackpractices.com/es/recipes/python-zip-file-extraction/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "zip",
+    "zipfile",
+    "security",
+    "path-traversal",
+    "zip-bomb",
+    "file-handling"
+  ],
+  "files": [
+    "safe_extract.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
