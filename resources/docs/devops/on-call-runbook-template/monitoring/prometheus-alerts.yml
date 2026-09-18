@@ -1,0 +1,31 @@
+# prometheus/alerts.yml
+# Alert rules wired to runbook sections via the `runbook:` annotation.
+groups:
+  - name: service-alerts
+    rules:
+      - alert: HighErrorRate
+        expr: |
+          rate(http_requests_total{status=~"5.."}[5m])
+          / rate(http_requests_total[5m]) > 0.01
+        for: 5m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "High error rate on {{ $labels.service }}"
+          description: "Error rate is {{ $value | humanizePercentage }} for {{ $labels.service }}"
+          runbook: "https://wiki.internal/runbooks/on-call#21-high-error-rate"
+          dashboard: "https://grafana.internal/d/service-overview?var-service={{ $labels.service }}"
+
+      - alert: DiskUsageHigh
+        expr: |
+          (1 - node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 > 85
+        for: 10m
+        labels:
+          severity: warning
+          team: platform
+        annotations:
+          summary: "Disk usage > 85% on {{ $labels.instance }}"
+          description: "Disk usage is {{ $value }}% on {{ $labels.instance }}"
+          runbook: "https://wiki.internal/runbooks/on-call#23-disk-usage--85"
+          dashboard: "https://grafana.internal/d/node-overview?var-node={{ $labels.instance }}"

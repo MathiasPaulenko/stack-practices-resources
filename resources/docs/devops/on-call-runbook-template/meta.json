@@ -1,0 +1,33 @@
+{
+  "title": "On-Call Runbook Template — Companion Code",
+  "title_es": "Plantilla de Runbook de Guardia — Código complementario",
+  "description": "On-call kit: an alert-indexed runbook template with severity and escalation rules, an executable diagnostic script, Prometheus alert rules wired to runbook sections, a kubectl diagnostics cheatsheet, and a post-incident update checklist.",
+  "description_es": "Kit de guardia: una plantilla de runbook indexada por alertas con severidad y reglas de escalado, un script de diagnóstico ejecutable, reglas de alertas de Prometheus conectadas a las secciones del runbook, un cheatsheet de diagnóstico kubectl y un checklist de actualización post-incidente.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "on-call-runbook-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/on-call-runbook-template/",
+    "https://stackpractices.com/es/docs/on-call-runbook-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "on-call",
+    "runbook",
+    "incident-response",
+    "devops",
+    "sre",
+    "prometheus",
+    "kubernetes",
+    "bash",
+    "alerts",
+    "template"
+  ],
+  "files": [
+    "runbook/on-call-runbook-template.md",
+    "scripts/diagnose.sh",
+    "monitoring/prometheus-alerts.yml",
+    "monitoring/kubectl-diagnostics.md",
+    "checklists/post-incident-update.md"
+  ]
+}
