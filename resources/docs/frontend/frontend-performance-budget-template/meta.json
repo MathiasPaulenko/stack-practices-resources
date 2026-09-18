@@ -1,0 +1,31 @@
+{
+  "title": "Frontend Performance Budget Template — Companion Code",
+  "title_es": "Plantilla de Performance Budget para Frontend — Código complementario",
+  "description": "Performance budget kit: a copy-paste budget document with per-route limits, a GitHub Actions workflow that fails the build on overruns, a gzip bundle-size check script, and a Lighthouse CI configuration asserting Core Web Vitals thresholds.",
+  "description_es": "Kit de performance budget: documento de budget listo para copiar con límites por ruta, workflow de GitHub Actions que rompe el build ante desbordes, script de chequeo de tamaño de bundle con gzip y configuración de Lighthouse CI que verifica umbrales de Core Web Vitals.",
+  "type": "docs",
+  "topic": "frontend",
+  "slug": "frontend-performance-budget-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/frontend-performance-budget-template/",
+    "https://stackpractices.com/es/docs/frontend-performance-budget-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "performance",
+    "frontend",
+    "performance-budget",
+    "lighthouse-ci",
+    "github-actions",
+    "core-web-vitals",
+    "bundle-size",
+    "ci-cd",
+    "template"
+  ],
+  "files": [
+    "budget/performance-budget-template.md",
+    "ci/budget-check.yml",
+    "ci/check-bundle-size.js",
+    "ci/lighthouserc.json"
+  ]
+}

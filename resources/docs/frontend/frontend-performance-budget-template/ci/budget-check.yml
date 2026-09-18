@@ -1,0 +1,25 @@
+name: Performance Budget Check
+on: [pull_request]
+
+jobs:
+  budget-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run build
+
+      - name: Check bundle sizes
+        run: |
+          node scripts/check-bundle-size.js
+
+      - name: Lighthouse CI
+        run: |
+          npm install -g @lhci/cli
+          lhci collect --url=http://localhost:3000 --numberOfRuns=3
+          lhci assert --preset=lighthouse:recommended
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_TOKEN }}
