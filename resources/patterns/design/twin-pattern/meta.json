@@ -1,0 +1,30 @@
+{
+  "title": "Twin Pattern — Companion Code",
+  "title_es": "Patrón Twin — Código complementario",
+  "description": "Runnable Twin Pattern implementations in Python and TypeScript: a Widget sharing state with Graphic and Interactive twins through mutual references, with unit tests showing how to test a twin in isolation via the WidgetLike interface.",
+  "description_es": "Implementaciones ejecutables del Patrón Twin en Python y TypeScript: un Widget que comparte estado con los twins Graphic e Interactive mediante referencias mutuas, con tests unitarios que muestran cómo testear un twin de forma aislada vía la interfaz WidgetLike.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "twin-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/twin-pattern/",
+    "https://stackpractices.com/es/patterns/twin-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "design-pattern",
+    "twin",
+    "composition",
+    "multiple-inheritance",
+    "delegation",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "twin_widget.py",
+    "twin-widget.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
