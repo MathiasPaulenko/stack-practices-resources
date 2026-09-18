@@ -1,0 +1,23 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "name": "artifact.tar.gz",
+      "digest": { "sha256": "abc123..." }
+    }
+  ],
+  "predicateType": "https://slsa.dev/provenance/v1",
+  "predicate": {
+    "builder": { "id": "github-actions" },
+    "buildType": "https://github.com/actions/runner",
+    "invocation": {
+      "configSource": {
+        "uri": "git+https://github.com/org/repo",
+        "digest": { "sha1": "commit-hash" }
+      }
+    },
+    "materials": [
+      { "uri": "git+https://github.com/org/repo", "digest": { "sha1": "commit-hash" } }
+    ]
+  }
+}

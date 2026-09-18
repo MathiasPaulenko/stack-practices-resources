@@ -1,0 +1,32 @@
+{
+  "title": "CI/CD Pipeline Security Template — Companion Code",
+  "title_es": "Plantilla de Seguridad de Pipeline CI/CD — Código complementario",
+  "description": "CI/CD security kit: six control tables with verification methods, a hardened GitHub Actions workflow using OIDC and cosign, an SLSA provenance example, and a ten-item audit checklist.",
+  "description_es": "Kit de seguridad CI/CD: seis tablas de controles con métodos de verificación, un workflow endurecido de GitHub Actions con OIDC y cosign, un ejemplo de provenance SLSA y un checklist de auditoría de diez ítems.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "ci-cd-pipeline-security-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/ci-cd-pipeline-security-template/",
+    "https://stackpractices.com/es/docs/ci-cd-pipeline-security-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "ci-cd",
+    "security",
+    "supply-chain",
+    "github-actions",
+    "slsa",
+    "cosign",
+    "oidc",
+    "sbom",
+    "devsecops",
+    "template"
+  ],
+  "files": [
+    "pipeline/security-controls-template.md",
+    "ci/secure-pipeline.yml",
+    "ci/slsa-provenance.json",
+    "audit/pipeline-audit-checklist.md"
+  ]
+}
