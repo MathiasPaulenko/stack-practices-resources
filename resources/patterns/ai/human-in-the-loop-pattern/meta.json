@@ -1,0 +1,27 @@
+{
+  "title": "Human-in-the-Loop Pattern — Companion Code",
+  "title_es": "Patrón Human-in-the-Loop — Código complementario",
+  "description": "Runnable approval gate for LLM agents in Python: risk x confidence matrix, reviewer callback, and a unittest suite covering every approval path.",
+  "description_es": "Gate de aprobación ejecutable para agentes LLM en Python: matriz riesgo x confianza, callback de revisor y suite unittest que cubre cada camino de aprobación.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "human-in-the-loop-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/human-in-the-loop-pattern/",
+    "https://stackpractices.com/es/patterns/human-in-the-loop-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "ai-agents",
+    "human-in-the-loop",
+    "llm",
+    "safety",
+    "approval"
+  ],
+  "files": [
+    "human_in_the_loop.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
