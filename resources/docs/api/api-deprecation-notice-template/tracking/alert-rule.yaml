@@ -1,0 +1,13 @@
+# alert-rule.yaml — Prometheus alert: fires when a client with
+# meaningful traffic still hasn't started migrating after the notice.
+alert: stale_deprecation_consumer
+expr: |
+  sum by (client_id) (
+    rate(api_requests_total{endpoint=~"/v1/.*"}[1h])
+  ) > 10
+for: 24h
+labels:
+  severity: warning
+annotations:
+  summary: "Client {{ $labels.client_id }} still using deprecated v1 endpoints"
+  description: "This client has made >10 req/h to v1 endpoints in the last 24h"

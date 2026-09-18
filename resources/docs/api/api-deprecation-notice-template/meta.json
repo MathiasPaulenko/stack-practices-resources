@@ -1,0 +1,33 @@
+{
+  "title": "API Deprecation Notice Template — Companion Code",
+  "title_es": "Plantilla de Aviso de Deprecación de API — Código complementario",
+  "description": "API deprecation kit: a copy-paste notice template, Express and Flask middleware emitting Deprecation/Sunset headers, a SQL query tracking migration progress, and a Prometheus alert for stale consumers.",
+  "description_es": "Kit de deprecación de API: plantilla de aviso lista para copiar, middleware en Express y Flask que emite headers Deprecation/Sunset, consulta SQL de rastreo de migración y alerta de Prometheus para consumidores sin migrar.",
+  "type": "docs",
+  "topic": "api",
+  "slug": "api-deprecation-notice-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-deprecation-notice-template/",
+    "https://stackpractices.com/es/docs/api-deprecation-notice-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "api",
+    "deprecation",
+    "express",
+    "flask",
+    "sql",
+    "prometheus",
+    "migration",
+    "template"
+  ],
+  "files": [
+    "notice/deprecation-notice-template.md",
+    "middleware/express.js",
+    "middleware/flask.py",
+    "tracking/deprecation-traffic.sql",
+    "tracking/alert-rule.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
