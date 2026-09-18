@@ -1,0 +1,31 @@
+# failover/k8s-failover.yaml — Kubernetes service with failover
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-service
+  annotations:
+    # External-dns annotation for DNS-based failover
+    external-dns.alpha.kubernetes.io/hostname: api.example.com
+spec:
+  type: LoadBalancer
+  selector:
+    app: api-server
+  ports:
+    - port: 80
+      targetPort: 8080
+---
+# PodDisruptionBudget ensures minimum availability
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: api-pdb
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: api-server
+---
+# Multi-cluster failover with Global Load Balancer (e.g., AWS Global Accelerator)
+# Primary cluster: us-east-1
+# Standby cluster: eu-west-1
+# Traffic routes to primary; on failure, routes to standby

@@ -1,0 +1,36 @@
+{
+  "title": "Failover Pattern — Companion Code",
+  "title_es": "Patrón Failover — Código complementario",
+  "description": "Failover implementations across four layers: health-monitored active-passive manager, PostgreSQL connection failover, DNS-based failover, Nginx upstream backup, Kubernetes multi-cluster setup, JavaScript client, and active-active / cascading variants.",
+  "description_es": "Implementaciones de failover en cuatro capas: gestor active-passive con health checks, failover de conexiones PostgreSQL, failover DNS, upstream de respaldo en Nginx, despliegue multi-clúster en Kubernetes, cliente JavaScript y variantes active-active / en cascada.",
+  "type": "patterns",
+  "topic": "resilience",
+  "slug": "failover-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/failover-pattern/",
+    "https://stackpractices.com/es/patterns/failover-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "javascript",
+    "nginx",
+    "kubernetes",
+    "failover",
+    "resilience",
+    "high-availability",
+    "postgresql"
+  ],
+  "files": [
+    "failover/health_monitored.py",
+    "failover/database.py",
+    "failover/dns.py",
+    "failover/active_active.py",
+    "failover/cascading.py",
+    "failover/client.js",
+    "failover/nginx.conf",
+    "failover/k8s-failover.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
