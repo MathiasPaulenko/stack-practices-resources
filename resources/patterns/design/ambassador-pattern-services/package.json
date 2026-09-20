@@ -1,0 +1,10 @@
+{
+  "name": "ambassador-pattern-services",
+  "version": "1.0.0",
+  "description": "Ambassador pattern — runnable local proxy with retry, circuit breaker and monitoring in Python and JavaScript",
+  "private": true,
+  "scripts": {
+    "demo": "node ambassador.js && python ambassador.py",
+    "test": "node --test ambassador.test.js && python -m pytest test_ambassador.py -v"
+  }
+}
