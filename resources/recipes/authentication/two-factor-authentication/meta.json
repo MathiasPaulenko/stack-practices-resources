@@ -1,0 +1,24 @@
+{
+  "title": "Two-Factor Authentication (TOTP)",
+  "title_es": "Autenticación de Dos Factores (TOTP)",
+  "description": "Runnable companion for the 2FA/TOTP recipe: enroll + confirm + verify endpoints, AES-256-GCM secret storage, hashed single-use backup codes, and rate-limited verification with pytest coverage.",
+  "description_es": "Companion ejecutable de la receta 2FA/TOTP: endpoints enroll + confirm + verify, almacenamiento de secretos AES-256-GCM, códigos de respaldo hasheados de un solo uso y verificación con rate limit y cobertura pytest.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "two-factor-authentication",
+  "source_urls": [
+    "https://stackpractices.com/recipes/two-factor-authentication/",
+    "https://datatracker.ietf.org/doc/html/rfc6238",
+    "https://datatracker.ietf.org/doc/html/rfc4226",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html"
+  ],
+  "language": "bilingual",
+  "tags": ["2fa", "totp", "authentication", "security", "mfa", "pyotp", "otplib", "python", "javascript", "backup-codes"],
+  "files": [
+    "totp_service.py",
+    "totp-service.js",
+    "test_totp.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
