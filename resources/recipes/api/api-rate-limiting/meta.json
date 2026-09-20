@@ -1,0 +1,25 @@
+{
+  "title": "API Rate Limiting",
+  "title_es": "Rate Limiting de APIs",
+  "description": "Runnable companion for the API rate limiting recipe: atomic Lua token bucket for Redis, Express sliding-window middleware, and pytest coverage for enforcement, failover, and distributed consistency.",
+  "description_es": "Companion ejecutable de la receta de rate limiting de APIs: token bucket atómico con Lua para Redis, middleware sliding-window para Express y cobertura pytest para enforcement, failover y consistencia distribuida.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "api-rate-limiting",
+  "source_urls": [
+    "https://stackpractices.com/recipes/api-rate-limiting/",
+    "https://redis.io/commands/",
+    "https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/",
+    "https://owasp.org/API-Security/"
+  ],
+  "language": "bilingual",
+  "tags": ["rate-limiting", "api", "redis", "token-bucket", "sliding-window", "lua", "express", "python", "javascript", "security"],
+  "files": [
+    "token_bucket.lua",
+    "rate_limiter.py",
+    "express-rate-limit.js",
+    "test_rate_limiter.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
