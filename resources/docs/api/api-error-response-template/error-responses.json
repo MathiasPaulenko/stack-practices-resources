@@ -1,0 +1,16 @@
+{
+  "$comment": "Machine-readable error catalog — generate docs, handlers, and contract tests from this single source. Extend 'codes' with your own entries; never recycle a retired code for a different meaning.",
+  "base_uri": "https://api.example.com/errors",
+  "codes": [
+    { "status": 400, "code": "INVALID_REQUEST", "type": "invalid-request", "title": "Invalid Request", "when": "Generic malformed request" },
+    { "status": 400, "code": "VALIDATION_ERROR", "type": "validation-failed", "title": "Validation Failed", "when": "Schema or business rule validation failed" },
+    { "status": 401, "code": "UNAUTHORIZED", "type": "unauthorized", "title": "Unauthorized", "when": "Missing or invalid authentication token", "headers": { "WWW-Authenticate": "Bearer" } },
+    { "status": 403, "code": "FORBIDDEN", "type": "forbidden", "title": "Forbidden", "when": "Authenticated user lacks permission" },
+    { "status": 404, "code": "RESOURCE_NOT_FOUND", "type": "resource-not-found", "title": "Resource Not Found", "when": "Requested resource does not exist" },
+    { "status": 409, "code": "CONFLICT", "type": "conflict", "title": "Conflict", "when": "Resource already exists or state conflict" },
+    { "status": 422, "code": "UNPROCESSABLE_ENTITY", "type": "unprocessable", "title": "Unprocessable Content", "when": "Semantic validation failed" },
+    { "status": 429, "code": "RATE_LIMIT_EXCEEDED", "type": "rate-limit-exceeded", "title": "Rate Limit Exceeded", "when": "Too many requests", "headers": { "Retry-After": "<seconds>" } },
+    { "status": 500, "code": "INTERNAL_ERROR", "type": "internal", "title": "Internal Server Error", "when": "Unexpected server-side failure" },
+    { "status": 503, "code": "SERVICE_UNAVAILABLE", "type": "service-unavailable", "title": "Service Unavailable", "when": "Temporary outage or maintenance", "headers": { "Retry-After": "<seconds>" } }
+  ]
+}

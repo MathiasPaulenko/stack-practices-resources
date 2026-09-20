@@ -1,0 +1,24 @@
+{
+  "title": "API Error Response Template",
+  "title_es": "Plantilla de Respuesta de Error de API",
+  "description": "Runnable companion for the API error response template: RFC 9457 problem-details middleware for Express and Flask plus a machine-readable error catalog.",
+  "description_es": "Companion ejecutable de la plantilla de respuesta de error de API: middleware problem-details RFC 9457 para Express y Flask más un catálogo de errores legible por máquina.",
+  "type": "docs",
+  "topic": "api",
+  "slug": "api-error-response-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-error-response-template/",
+    "https://www.rfc-editor.org/rfc/rfc9457",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+    "https://owasp.org/API-Security/"
+  ],
+  "language": "bilingual",
+  "tags": ["api", "error-handling", "rfc-7807", "problem-details", "express", "flask", "javascript", "python", "json"],
+  "files": [
+    "problem-details.js",
+    "problem_details.py",
+    "error-responses.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
