@@ -1,0 +1,11 @@
+{
+  "name": "progressive-enhancement-pattern",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Runnable progressive enhancement demo: baseline HTML plus CSS and JS enhancement layers.",
+  "scripts": {
+    "test": "node --test validation.test.mjs",
+    "start": "python -m http.server 8080 || npx serve ."
+  }
+}

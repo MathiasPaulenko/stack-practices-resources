@@ -1,0 +1,35 @@
+{
+  "title": "Progressive Enhancement: Layered HTML, CSS and JavaScript",
+  "title_es": "Mejora Progresiva: Capas de HTML, CSS y JavaScript",
+  "description": "Runnable progressive enhancement demo: a baseline HTML form and table that work without JavaScript, enhanced in layers with feature detection, inline validation, async submit and click-to-sort. Includes dependency-free node:test coverage of the validation logic.",
+  "description_es": "Demo ejecutable de mejora progresiva: un formulario y tabla HTML base que funcionan sin JavaScript, mejorados por capas con detección de características, validación en línea, envío asíncrono y ordenación por clic. Incluye tests con node:test sin dependencias sobre la lógica de validación.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "progressive-enhancement-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/progressive-enhancement-pattern/",
+    "https://stackpractices.com/es/patterns/progressive-enhancement-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "frontend",
+    "progressive-enhancement",
+    "accessibility",
+    "html",
+    "css",
+    "javascript",
+    "feature-detection",
+    "pattern"
+  ],
+  "files": [
+    "index.html",
+    "styles.css",
+    "feature-detect.js",
+    "enhance.js",
+    "validation.mjs",
+    "validation.test.mjs",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
