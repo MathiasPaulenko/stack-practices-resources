@@ -1,0 +1,24 @@
+{
+  "title": "API Monitoring & Alerting Template",
+  "title_es": "Plantilla de Monitoreo y Alertas de API",
+  "description": "Ready-to-import companion for the API monitoring template: Prometheus alert rules with burn rate, Grafana dashboard JSON, and a fill-in runbook template.",
+  "description_es": "Companion listo para importar de la plantilla de monitoreo de API: reglas de alerta Prometheus con burn rate, JSON de dashboard Grafana y una plantilla de runbook rellenable.",
+  "type": "docs",
+  "topic": "architecture",
+  "slug": "api-monitoring-alerting-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-monitoring-alerting-template/",
+    "https://sre.google/sre-book/monitoring-distributed-systems/",
+    "https://sre.google/workbook/alerting-on-slos/",
+    "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/"
+  ],
+  "language": "bilingual",
+  "tags": ["monitoring", "alerting", "prometheus", "grafana", "slo", "sli", "runbook", "sre", "template"],
+  "files": [
+    "alert-rules.yml",
+    "grafana-dashboard.json",
+    "runbook-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
