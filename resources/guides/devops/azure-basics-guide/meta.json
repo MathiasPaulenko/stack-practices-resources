@@ -1,0 +1,21 @@
+{
+  "title": "Azure Basics — Core Services for Developers",
+  "title_es": "Azure Básico — Servicios Core para Desarrolladores",
+  "description": "Runnable companion for the Azure basics guide: a bootstrap script that provisions a resource group, storage account, App Service plan, web app, Key Vault, and managed identity with the Azure CLI.",
+  "description_es": "Companion ejecutable de la guía básica de Azure: script de bootstrap que aprovisiona un resource group, storage account, plan de App Service, web app, Key Vault y managed identity con la CLI de Azure.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "azure-basics-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/azure-basics-guide/",
+    "https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+    "https://learn.microsoft.com/en-us/azure/architecture/"
+  ],
+  "language": "bilingual",
+  "tags": ["azure", "cloud-computing", "devops", "bash", "azure-cli", "guide"],
+  "files": [
+    "azure-bootstrap.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
