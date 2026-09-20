@@ -1,0 +1,27 @@
+{
+  "title": "Incident Timeline Template — Companion Resources",
+  "title_es": "Plantilla de Línea de Tiempo de Incidentes — Recursos complementarios",
+  "description": "Fillable markdown incident timeline template (T± notation, delay analysis, quality checklist) plus a complete worked SEV1 example.",
+  "description_es": "Plantilla markdown rellenable de línea de tiempo de incidentes (notación T±, análisis de retrasos, checklist de calidad) más un ejemplo SEV1 completo.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "incident-timeline-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/incident-timeline-template/",
+    "https://stackpractices.com/es/docs/incident-timeline-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "incident-management",
+    "postmortem",
+    "template",
+    "sre",
+    "mttr"
+  ],
+  "files": [
+    "incident-timeline-template.md",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
