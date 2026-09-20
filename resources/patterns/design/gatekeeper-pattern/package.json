@@ -1,0 +1,11 @@
+{
+  "name": "gatekeeper-pattern",
+  "version": "1.0.0",
+  "description": "Gatekeeper pattern — runnable edge validator and Express-style middleware examples",
+  "private": true,
+  "scripts": {
+    "start": "node express_app.js",
+    "demo": "node gatekeeper.js && python gatekeeper.py",
+    "test": "node --test gatekeeper.test.js && python -m pytest test_gatekeeper.py -v"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Gatekeeper Pattern: Centralized Edge Security",
+  "title_es": "Patrón Gatekeeper: Seguridad Centralizada en el Borde",
+  "description": "Runnable Gatekeeper examples: a framework-free edge validator in Python and JavaScript covering path blocking, rate limiting, injection screening and HS256 JWT authentication, plus an Express-style middleware stack — all with tests.",
+  "description_es": "Ejemplos ejecutables del Patrón Gatekeeper: un validador de borde sin frameworks en Python y JavaScript con bloqueo de rutas, rate limiting, detección de inyección y autenticación JWT HS256, más un stack de middleware estilo Express — todo con tests.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "gatekeeper-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/gatekeeper-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "security",
+    "edge",
+    "api-gateway",
+    "jwt",
+    "rate-limiting",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "gatekeeper.py",
+    "test_gatekeeper.py",
+    "gatekeeper.js",
+    "gatekeeper.test.js",
+    "express_app.js",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
