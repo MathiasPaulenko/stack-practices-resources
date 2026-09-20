@@ -1,0 +1,28 @@
+name: test
+
+on:
+  push:
+    paths:
+      - "resources/recipes/api/input-validation/**"
+  pull_request:
+    paths:
+      - "resources/recipes/api/input-validation/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: resources/recipes/api/input-validation
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: npm install
+      - run: pip install -r requirements.txt
+      - run: node --test validate_user.test.js
+      - run: python -m pytest test_validate_user.py -v

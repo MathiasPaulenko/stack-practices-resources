@@ -1,0 +1,13 @@
+{
+  "name": "input-validation",
+  "version": "1.0.0",
+  "description": "Input validation recipe — Pydantic v2 and Zod schema-first examples with tests",
+  "private": true,
+  "scripts": {
+    "demo": "node validate_user.js",
+    "test": "node --test validate_user.test.js && python -m pytest test_validate_user.py -v"
+  },
+  "dependencies": {
+    "zod": "^3.24.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Input Validation: Schema-First Examples in 3 Languages",
+  "title_es": "Validación de Input: Schemas en 3 Lenguajes",
+  "description": "Runnable input validation examples: Pydantic v2 models with field validators, Zod schemas with safeParse error handling, and tests covering the rejection paths.",
+  "description_es": "Ejemplos ejecutables de validación de input: modelos Pydantic v2 con field validators, schemas Zod con manejo de errores safeParse, y tests que cubren los caminos de rechazo.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "input-validation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/input-validation/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "input-validation",
+    "pydantic",
+    "zod",
+    "jakarta-validation",
+    "schema-validation",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "requirements.txt",
+    "validate_user.py",
+    "test_validate_user.py",
+    "validate_user.js",
+    "validate_user.test.js",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
