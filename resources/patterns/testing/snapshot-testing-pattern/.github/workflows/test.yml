@@ -1,0 +1,24 @@
+# CI guard for snapshot tests.
+#
+# `jest --ci` refuses to write missing snapshots, so a snapshot that
+# never got committed fails loudly instead of silently passing.
+
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run tests (fail if snapshots are outdated)
+        run: npx jest --ci

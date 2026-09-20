@@ -1,0 +1,24 @@
+{
+  "title": "Snapshot Testing: Capture and Compare Serialized Output",
+  "title_es": "Snapshot Testing: Captura y Compara la Salida Serializada",
+  "description": "Runnable snapshot testing examples: Jest snapshots with property matchers and inline snapshots, pytest-snapshot and syrupy in Python, plus output normalization helpers and a CI guard workflow.",
+  "description_es": "Ejemplos ejecutables de snapshot testing: snapshots de Jest con property matchers e inline, pytest-snapshot y syrupy en Python, helpers de normalización de salida y un workflow de guarda en CI.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "snapshot-testing-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/snapshot-testing-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["testing", "snapshot", "jest", "pytest", "syrupy", "regression", "python", "javascript"],
+  "files": [
+    "package.json",
+    "user_card.test.jsx",
+    "test_snapshots.py",
+    "normalize_response.py",
+    "generate_nginx_config.py",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
