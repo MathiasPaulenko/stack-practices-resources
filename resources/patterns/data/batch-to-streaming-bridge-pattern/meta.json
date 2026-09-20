@@ -1,0 +1,34 @@
+{
+  "title": "Batch-to-Streaming Bridge: One Lake for Both Pipelines",
+  "title_es": "Puente Batch-Streaming: Un Solo Lago para Ambos Pipelines",
+  "description": "Runnable batch-to-streaming bridge examples: a partitioned lake, shared-schema producers, a speed layer and serving-layer dedup in Python and JavaScript with tests.",
+  "description_es": "Ejemplos ejecutables del puente batch-streaming: un lago particionado, productores de esquema compartido, capa speed y dedup en capa de servicio en Python y JavaScript con tests.",
+  "type": "patterns",
+  "topic": "data",
+  "slug": "batch-to-streaming-bridge-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/batch-to-streaming-bridge-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "architectural",
+    "lambda-architecture",
+    "data-lake",
+    "streaming",
+    "batch",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "bridge.py",
+    "test_bridge.py",
+    "bridge.js",
+    "bridge.test.js",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

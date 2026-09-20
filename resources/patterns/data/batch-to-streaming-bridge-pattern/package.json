@@ -1,0 +1,10 @@
+{
+  "name": "batch-to-streaming-bridge-pattern",
+  "version": "1.0.0",
+  "description": "Batch-to-Streaming Bridge — runnable shared-lake examples in Python and JavaScript",
+  "private": true,
+  "scripts": {
+    "demo": "node bridge.js && python bridge.py",
+    "test": "node --test bridge.test.js && python -m pytest test_bridge.py -v"
+  }
+}
