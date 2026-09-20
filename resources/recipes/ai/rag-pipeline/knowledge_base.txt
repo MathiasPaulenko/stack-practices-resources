@@ -1,0 +1,22 @@
+Refund policy: Customers can request a full refund within 30 days of purchase.
+After 30 days, refunds are evaluated case by case and may be issued as store
+credit. Digital downloads are refundable only if the file was not accessed.
+
+Warranty: All hardware products carry a 12-month limited warranty covering
+manufacturing defects. The warranty does not cover accidental damage, misuse,
+or unauthorized repairs. Extended coverage up to 36 months is available at
+checkout for an additional fee.
+
+Shipping: We ship to 40 countries. Standard shipping takes 5-10 business days;
+express shipping takes 2-4 business days. Shipping costs are calculated at
+checkout based on destination and package weight. Orders over $75 ship free
+within the continental US.
+
+Support: Our support team answers within one business day via the help desk.
+For urgent production incidents, premium-plan customers can use the priority
+channel with a 4-hour response SLA.
+
+Accounts: Each account supports up to 5 team members on the starter plan and
+unlimited members on the business plan. Admins can invite, suspend, or remove
+members from the settings page. Two-factor authentication is available for all
+plans and required on the enterprise plan.

@@ -1,0 +1,23 @@
+{
+  "title": "RAG Pipeline with LangChain and Vector Databases",
+  "title_es": "Pipeline RAG con LangChain y bases vectoriales",
+  "description": "Runnable RAG pipeline: document chunking, embeddings, Chroma vector store, retrieval chain, and query evaluation with LangChain.",
+  "description_es": "Pipeline RAG ejecutable: fragmentación de documentos, embeddings, base vectorial Chroma, cadena de recuperación y evaluación con LangChain.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "rag-pipeline",
+  "source_urls": [
+    "https://stackpractices.com/recipes/rag-pipeline/",
+    "https://stackpractices.com/es/recipes/rag-pipeline/"
+  ],
+  "language": "en",
+  "tags": ["ai", "rag", "langchain", "embeddings", "vector-database", "chroma", "openai", "llm"],
+  "files": [
+    "rag_pipeline.py",
+    "evaluate.py",
+    "knowledge_base.txt",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
