@@ -1,0 +1,22 @@
+{
+  "title": "Implement Property-Based Testing",
+  "title_es": "Implementar Property-Based Testing",
+  "description": "Runnable property-based testing examples with Hypothesis (Python), fast-check (JavaScript) and jqwik (Java): simple properties, composite strategies, serialization round-trips and stateful model-based testing.",
+  "description_es": "Ejemplos ejecutables de property-based testing con Hypothesis (Python), fast-check (JavaScript) y jqwik (Java): propiedades simples, estrategias compuestas, ciclos de serialización y testing con estado basado en modelo.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "implement-property-based-testing",
+  "source_urls": ["https://stackpractices.com/recipes/implement-property-based-testing/"],
+  "language": "bilingual",
+  "tags": ["testing", "property-based-testing", "hypothesis", "fast-check", "jqwik", "python", "javascript", "java"],
+  "files": [
+    "python/requirements.txt",
+    "python/test_property_based.py",
+    "javascript/package.json",
+    "javascript/property-based.mjs",
+    "java/pom.xml",
+    "java/src/test/java/PropertyBasedExamples.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
