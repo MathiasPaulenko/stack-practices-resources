@@ -1,0 +1,11 @@
+{
+  "name": "intercepting-filter-pattern",
+  "version": "1.0.0",
+  "description": "Intercepting Filter pattern — runnable filter chain and Express-style middleware examples",
+  "private": true,
+  "scripts": {
+    "start": "node express_app.js",
+    "demo": "node filter_chain.js",
+    "test": "node --test express_app.test.js && python -m pytest test_filter_chain.py -v"
+  }
+}

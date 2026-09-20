@@ -1,0 +1,34 @@
+{
+  "title": "Intercepting Filter: Pluggable Request Pipelines",
+  "title_es": "Intercepting Filter: Filtros de Petición Reutilizables",
+  "description": "Runnable Intercepting Filter examples: a filter chain in Python and JavaScript with authentication, logging and compression filters, plus a real Express middleware pipeline with tests and a CI workflow.",
+  "description_es": "Ejemplos ejecutables del Patrón Intercepting Filter: una cadena de filtros en Python y JavaScript con autenticación, logging y compresión, más un pipeline real de middleware en Express con tests y workflow de CI.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "intercepting-filter-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/intercepting-filter-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "middleware",
+    "pipeline",
+    "express",
+    "servlet",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "filter_chain.py",
+    "test_filter_chain.py",
+    "filter_chain.js",
+    "express_app.js",
+    "express_app.test.js",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
