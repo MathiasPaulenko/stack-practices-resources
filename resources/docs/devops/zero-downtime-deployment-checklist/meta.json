@@ -1,0 +1,23 @@
+{
+  "title": "Zero-Downtime Deployment Checklist",
+  "title_es": "Checklist de Despliegue sin Tiempo de Inactividad",
+  "description": "Production zero-downtime deployment checklist: pre-deployment readiness, health check gating, rollout strategy selection, database migration safety, rollback triggers, and post-deployment validation. Includes ready-to-adapt Kubernetes rolling update and Argo Rollouts canary manifests.",
+  "description_es": "Checklist de despliegue sin downtime en producción: preparación previa, gating por health checks, selección de estrategia de rollout, seguridad en migraciones de base de datos, disparadores de rollback y validación post-despliegue. Incluye manifests listos para adaptar de rolling update en Kubernetes y canary con Argo Rollouts.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "zero-downtime-deployment-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/zero-downtime-deployment-checklist/",
+    "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-update-deployment",
+    "https://argo-rollouts.readthedocs.io/"
+  ],
+  "language": "bilingual",
+  "tags": ["deployment", "zero-downtime", "canary", "rollback", "kubernetes", "argo-rollouts", "blue-green", "checklist", "devops"],
+  "files": [
+    "zero-downtime-checklist.md",
+    "rolling-update.yaml",
+    "canary-rollout.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

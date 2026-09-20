@@ -1,0 +1,50 @@
+# Kubernetes rolling update manifest for zero-downtime deployments.
+# Replace <app>, <registry>, <tag>, and <namespace> before applying.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <app>
+  namespace: <namespace>
+spec:
+  replicas: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      # Keep every replica serving while new pods come up alongside.
+      maxSurge: 3
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: <app>
+  template:
+    metadata:
+      labels:
+        app: <app>
+    spec:
+      containers:
+        - name: <app>
+          image: <registry>/<app>:<tag>
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health/live
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 3
+          lifecycle:
+            # Give the kubelet time to remove the pod from endpoints before SIGTERM,
+            # so in-flight requests are not routed to a dying pod.
+            preStop:
+              exec:
+                command: ["sh", "-c", "sleep 15 && kill -SIGTERM 1"]
+      # Keep above the longest expected request; raise for WebSocket/streaming.
+      terminationGracePeriodSeconds: 60

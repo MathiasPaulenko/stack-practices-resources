@@ -1,0 +1,48 @@
+# Argo Rollouts canary manifest with metric-gated promotion.
+# Requires the argo-rollouts controller and an AnalysisTemplate named "success-rate"
+# that queries your metrics provider (Prometheus, Datadog, etc.).
+# Replace <app>, <registry>, <tag>, and <namespace> before applying.
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: <app>
+  namespace: <namespace>
+spec:
+  replicas: 10
+  strategy:
+    canary:
+      steps:
+        - setWeight: 10
+        - pause: { duration: 5m }
+        # Each analysis step runs the template against your metrics provider;
+        # a failed analysis aborts the rollout and shifts traffic back.
+        - analysis:
+            templates:
+              - templateName: success-rate
+            args:
+              - name: service-name
+                value: <app>
+        - setWeight: 30
+        - pause: { duration: 5m }
+        - analysis:
+            templates:
+              - templateName: success-rate
+            args:
+              - name: service-name
+                value: <app>
+        - setWeight: 50
+        - pause: { duration: 10m }
+        - setWeight: 100
+  selector:
+    matchLabels:
+      app: <app>
+  template:
+    metadata:
+      labels:
+        app: <app>
+    spec:
+      containers:
+        - name: <app>
+          image: <registry>/<app>:<tag>
+          ports:
+            - containerPort: 8080
