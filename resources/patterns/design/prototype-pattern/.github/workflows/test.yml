@@ -1,0 +1,27 @@
+name: test
+
+on:
+  push:
+    paths:
+      - "resources/patterns/design/prototype-pattern/**"
+  pull_request:
+    paths:
+      - "resources/patterns/design/prototype-pattern/**"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: resources/patterns/design/prototype-pattern
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - run: node --test prototype.test.js
+      - run: python -m pytest test_prototype.py -v

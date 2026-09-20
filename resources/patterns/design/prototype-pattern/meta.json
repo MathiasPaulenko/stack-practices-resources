@@ -1,0 +1,33 @@
+{
+  "title": "Prototype Pattern: Clone Objects Instead of Rebuilding",
+  "title_es": "Patrón Prototype: Clona Objetos sin Reconstruirlos",
+  "description": "Runnable Prototype pattern examples: a named prototype registry in Python and JavaScript with deep-clone semantics, fluent customization and tests covering clone independence.",
+  "description_es": "Ejemplos ejecutables del patrón Prototype: un registro de prototipos con nombre en Python y JavaScript con semántica de copia profunda, personalización fluida y tests que cubren la independencia de los clones.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "prototype-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/prototype-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "creational",
+    "prototype",
+    "cloning",
+    "deep-copy",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "prototype.py",
+    "test_prototype.py",
+    "prototype.js",
+    "prototype.test.js",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

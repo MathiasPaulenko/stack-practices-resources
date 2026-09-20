@@ -1,0 +1,10 @@
+{
+  "name": "prototype-pattern",
+  "version": "1.0.0",
+  "description": "Prototype pattern — runnable prototype registry examples in Python and JavaScript",
+  "private": true,
+  "scripts": {
+    "demo": "node prototype.js && python prototype.py",
+    "test": "node --test prototype.test.js && python -m pytest test_prototype.py -v"
+  }
+}
