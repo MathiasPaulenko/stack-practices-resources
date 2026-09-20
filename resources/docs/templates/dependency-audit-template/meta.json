@@ -1,0 +1,29 @@
+{
+  "title": "Third-Party Dependency Audit Template — Companion Code",
+  "title_es": "Plantilla de Auditoría de Dependencias de Terceros — Código complementario",
+  "description": "Dependency audit kit: the copy-paste audit template with threshold tables, a Dependabot config for weekly vulnerability scanning, and a license-check script that flags copyleft licenses hiding in transitive dependencies.",
+  "description_es": "Kit de auditoría de dependencias: la plantilla de auditoría lista para copiar con tablas de umbrales, una configuración de Dependabot para escaneo semanal de vulnerabilidades y un script que detecta licencias copyleft escondidas en dependencias transitivas.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "dependency-audit-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/dependency-audit-template/",
+    "https://stackpractices.com/es/docs/dependency-audit-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "dependencies",
+    "audit",
+    "security",
+    "supply-chain",
+    "license-compliance",
+    "template"
+  ],
+  "files": [
+    "templates/dependency-audit-template.md",
+    "automation/dependabot.yml",
+    "scripts/license-check.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

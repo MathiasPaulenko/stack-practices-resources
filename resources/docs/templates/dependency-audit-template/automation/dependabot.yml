@@ -1,0 +1,19 @@
+# Dependabot configuration for weekly vulnerability scanning.
+# Place at .github/dependabot.yml. Add one `updates` block per ecosystem
+# present in the repo (npm, pip, maven, docker, github-actions, ...).
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    # Group patch/minor updates into a single PR to reduce noise;
+    # majors stay separate for manual review.
+    groups:
+      patch-updates:
+        update-types: ["patch", "minor"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
