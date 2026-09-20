@@ -1,0 +1,35 @@
+{
+  "title": "Decorator Pattern for HTTP Pipelines — Companion Code",
+  "title_es": "Patrón Decorator para pipelines HTTP — Código complementario",
+  "description": "Runnable TypeScript decorator stack for HTTP clients: fetch wrapper, logging, selective retry with backoff+jitter, auth header, and a real half-open circuit breaker, composed through a factory.",
+  "description_es": "Stack de decoradores TypeScript ejecutable para clientes HTTP: wrapper de fetch, logging, reintentos selectivos con backoff+jitter, header de auth y un circuit breaker con half-open real, compuestos mediante una factory.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "decorator-pattern-pipeline",
+  "source_urls": [
+    "https://stackpractices.com/patterns/decorator-pattern-pipeline/",
+    "https://stackpractices.com/es/patterns/decorator-pattern-pipeline/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "typescript",
+    "decorator-pattern",
+    "http-client",
+    "middleware",
+    "circuit-breaker",
+    "retry"
+  ],
+  "files": [
+    "src/HttpClient.ts",
+    "src/FetchClient.ts",
+    "src/BaseClientDecorator.ts",
+    "src/LoggingDecorator.ts",
+    "src/RetryDecorator.ts",
+    "src/AuthDecorator.ts",
+    "src/CircuitBreakerDecorator.ts",
+    "src/httpClientFactory.ts",
+    "demo.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
