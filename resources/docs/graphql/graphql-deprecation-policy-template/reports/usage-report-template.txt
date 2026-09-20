@@ -1,0 +1,12 @@
+Deprecated Field Usage Report — Week of {YYYY-MM-DD}
+
+Field                    | Type     | Usage Count | Top Clients
+-------------------------|----------|-------------|------------------
+User.name                | User     | 1,234       | mobile-app, admin
+User.email               | User     | 567         | mobile-app
+OrderStatus.RETURNED     | Enum     | 89          | reporting-service
+Product.legacyPrice      | Product  | 12          | legacy-integration
+
+Total deprecated queries: 1,902
+Trend: down 15% from last week
+Removal eligible: Product.legacyPrice (usage < 50 for 30 days)

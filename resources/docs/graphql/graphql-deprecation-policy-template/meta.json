@@ -1,0 +1,31 @@
+{
+  "title": "GraphQL Deprecation Policy Template — Companion Code",
+  "title_es": "Plantilla de Política de Deprecación de GraphQL — Código complementario",
+  "description": "GraphQL deprecation kit: an Apollo Server 4 plugin that tracks deprecated field usage and surfaces warnings in response extensions, a deprecation email template, a weekly usage report template, and a migration guide template.",
+  "description_es": "Kit de deprecación de GraphQL: plugin de Apollo Server 4 que registra el uso de campos deprecados y muestra avisos en las extensions de la respuesta, plantilla de email de deprecación, plantilla de informe semanal de uso y plantilla de guía de migración.",
+  "type": "docs",
+  "topic": "graphql",
+  "slug": "graphql-deprecation-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/graphql-deprecation-policy-template/",
+    "https://stackpractices.com/es/docs/graphql-deprecation-policy-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graphql",
+    "deprecation",
+    "apollo-server",
+    "policy",
+    "versioning",
+    "migration",
+    "template"
+  ],
+  "files": [
+    "tracking/apollo-server-4-deprecation-plugin.ts",
+    "communication/deprecation-email-template.md",
+    "reports/usage-report-template.txt",
+    "templates/migration-guide-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
