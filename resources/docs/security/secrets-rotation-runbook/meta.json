@@ -1,0 +1,25 @@
+{
+  "title": "Secrets Rotation Runbook",
+  "title_es": "Runbook de Rotación de Secretos",
+  "description": "Runnable companion for the secrets rotation runbook: database password rotation script, AWS Secrets Manager rotation Lambda, Vault setup commands, and a ready-to-fill secret inventory.",
+  "description_es": "Companion ejecutable del runbook de rotación de secretos: script de rotación de contraseñas de base de datos, Lambda de rotación para AWS Secrets Manager, comandos de configuración de Vault e inventario de secretos listo para rellenar.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "secrets-rotation-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/secrets-rotation-runbook/",
+    "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+    "https://developer.hashicorp.com/vault/docs/secrets/databases",
+    "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "secrets", "rotation", "runbook", "aws", "vault", "python", "bash", "csv"],
+  "files": [
+    "rotate_database_password.py",
+    "rotation_lambda.py",
+    "vault-setup.sh",
+    "secret-inventory.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}
