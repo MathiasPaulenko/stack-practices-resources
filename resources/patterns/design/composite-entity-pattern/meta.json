@@ -1,0 +1,35 @@
+{
+  "title": "Composite Entity Pattern: One Aggregate Across Multiple Tables",
+  "title_es": "Patrón Composite Entity: Un Agregado en Varias Tablas",
+  "description": "Runnable Composite Entity examples: an OrderMapper that loads and saves Order + LineItem + ShippingAddress across three tables in one transaction, in Python, Java and JavaScript, with the ownership-encoding schema.",
+  "description_es": "Ejemplos ejecutables del patrón Composite Entity: un OrderMapper que carga y guarda Order + LineItem + ShippingAddress en tres tablas dentro de una transacción, en Python, Java y JavaScript, con el esquema que codifica la propiedad.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "composite-entity-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/composite-entity-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "structural",
+    "composite-entity",
+    "persistence",
+    "orm",
+    "aggregate",
+    "python",
+    "java",
+    "javascript",
+    "sqlite"
+  ],
+  "files": [
+    "order_mapper.py",
+    "order_projection.py",
+    "order_mapper_json.py",
+    "OrderMapper.java",
+    "order-mapper.js",
+    "schema.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}
