@@ -1,0 +1,59 @@
+# Alertmanager routing tree implementing the severity policy:
+#   P1/P2 -> PagerDuty with aggressive repeat intervals
+#   P3    -> Slack
+#   P4    -> email
+# Everything else falls through to the default receiver.
+# Replace the placeholder keys and channels before deploying.
+
+route:
+  receiver: default
+  group_by: ["alertname", "service", "severity"]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  routes:
+    - matchers:
+        - severity = "P1"
+      receiver: pagerduty-critical
+      group_wait: 0s
+      repeat_interval: 30m
+    - matchers:
+        - severity = "P2"
+      receiver: pagerduty-warning
+      group_wait: 30s
+      repeat_interval: 2h
+    - matchers:
+        - severity = "P3"
+      receiver: slack-alerts
+      group_wait: 5m
+    - matchers:
+        - severity = "P4"
+      receiver: email-alerts
+      group_wait: 1h
+
+receivers:
+  - name: pagerduty-critical
+    pagerduty_configs:
+      - service_key: "P1_SERVICE_KEY"
+  - name: pagerduty-warning
+    pagerduty_configs:
+      - service_key: "P2_SERVICE_KEY"
+  - name: slack-alerts
+    slack_configs:
+      - channel: "#alerts"
+        api_url: "SLACK_WEBHOOK_URL"
+  - name: email-alerts
+    email_configs:
+      - to: "team@example.com"
+  - name: default
+    slack_configs:
+      - channel: "#alerts"
+        api_url: "SLACK_WEBHOOK_URL"
+
+# Suppress warning alerts while a matching critical alert is firing.
+inhibit_rules:
+  - source_match:
+      severity: "P1"
+    target_match:
+      severity: "P2"
+    equal: ["alertname", "service"]

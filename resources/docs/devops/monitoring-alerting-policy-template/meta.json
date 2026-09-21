@@ -1,0 +1,35 @@
+{
+  "title": "Monitoring and Alerting Policy Template",
+  "title_es": "Plantilla de Política de Monitoreo y Alertas",
+  "description": "Companion kit for the monitoring and alerting policy: Prometheus alert rules with P1–P5 severity labels, an Alertmanager routing tree with inhibit rules, and a printable alert quality scorecard for quarterly reviews.",
+  "description_es": "Kit complementario de la política de monitoreo y alertas: reglas de Prometheus con etiquetas de severidad P1–P5, árbol de enrutamiento de Alertmanager con reglas de inhibición y una tabla de puntuación de calidad de alertas imprimible para revisiones trimestrales.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "monitoring-alerting-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/monitoring-alerting-policy-template/",
+    "https://stackpractices.com/es/docs/monitoring-alerting-policy-template/",
+    "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+    "https://prometheus.io/docs/alerting/latest/configuration/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "monitoring",
+    "alerting",
+    "prometheus",
+    "alertmanager",
+    "pagerduty",
+    "incident-response",
+    "sre",
+    "devops",
+    "policy",
+    "template"
+  ],
+  "files": [
+    "prometheus-alert-rules.yaml",
+    "alertmanager-routing.yaml",
+    "alert-quality-scorecard.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
