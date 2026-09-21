@@ -1,0 +1,7 @@
+month,cpu_peak_pct,mem_peak_pct,disk_tb,db_conn_peak,over_limit
+Aug 2026,72,82,3.7,88,
+Sep 2026,78,86,4.2,94,
+Oct 2026,85,91,4.7,102,db_connections
+Nov 2026,95,96,5.2,115,"cpu,disk,db_connections"
+Dec 2026,98,98,5.7,125,"cpu,disk,db_connections"
+Jan 2027,100,100,6.2,140,"cpu,disk,db_connections"

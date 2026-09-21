@@ -1,0 +1,37 @@
+=== Capacity Forecast Dashboard — Q3 2026 ===
+
+CURRENT STATE (as of 2026-07-11):
+  CPU utilization (avg):     42%
+  CPU utilization (peak):    68%
+  Memory utilization (avg):  55%
+  Memory utilization (peak): 78%
+  Disk usage:                3.2 TB / 5 TB (64%)
+  Network throughput (avg):  120 Mbps
+  Network throughput (peak): 450 Mbps
+  DB connections (avg):      45 / 100
+  DB connections (peak):     82 / 100
+
+GROWTH ASSUMPTIONS:
+  User growth rate:          8% / month (based on last 6 months)
+  Traffic growth rate:       12% / month (traffic grows faster than users)
+  Data growth rate:          50 GB / month
+  Seasonal peak factor:      2.5x (Black Friday, holiday season)
+
+6-MONTH PROJECTION:
+  Month    | CPU Peak | Mem Peak | Disk    | DB Conn Peak
+  ---------|----------|----------|---------|-------------
+  Aug 2026 | 72%      | 82%      | 3.7 TB  | 88
+  Sep 2026 | 78%      | 86%      | 4.2 TB  | 94
+  Oct 2026 | 85%      | 91%      | 4.7 TB  | 102 (OVER!)
+  Nov 2026 | 95%      | 96%      | 5.2 TB  | 115 (OVER!)
+  Dec 2026 | 98%      | 98%      | 5.7 TB  | 125 (OVER!)
+  Jan 2027 | 100%+    | 100%+    | 6.2 TB  | 140 (OVER!)
+
+BOTTLENECK: Database connections hit limit in October 2026
+ACTION: Increase connection pool to 200 by September 2026
+
+BOTTLENECK: Disk hits 5 TB limit in November 2026
+ACTION: Add 3 TB storage by October 2026
+
+BOTTLENECK: CPU hits 90% in November 2026 (seasonal peak)
+ACTION: Add 4 instances to auto-scaling group by October 2026

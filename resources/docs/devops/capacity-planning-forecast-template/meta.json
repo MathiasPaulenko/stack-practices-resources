@@ -1,0 +1,33 @@
+{
+  "title": "Capacity Planning Forecast Template",
+  "title_es": "Plantilla de Pronóstico de Capacidad",
+  "description": "Companion kit for the capacity planning forecast: a fillable 9-section Markdown template (current state, growth assumptions, traffic projections, resource forecast, scaling plan, cost projection, risk assessment, action items) plus a worked dashboard example showing bottleneck detection.",
+  "description_es": "Kit complementario del pronóstico de capacidad: una plantilla Markdown rellenable de 9 secciones (estado actual, suposiciones de crecimiento, proyecciones de tráfico, pronóstico de recursos, plan de escalado, proyección de costes, evaluación de riesgos, acciones) más un ejemplo de dashboard completado que muestra la detección de cuellos de botella.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "capacity-planning-forecast-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/capacity-planning-forecast-template/",
+    "https://stackpractices.com/es/docs/capacity-planning-forecast-template/",
+    "https://sre.google/workbook/capacity-planning/",
+    "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "capacity-planning",
+    "forecasting",
+    "infrastructure",
+    "scaling",
+    "sre",
+    "devops",
+    "performance",
+    "template"
+  ],
+  "files": [
+    "capacity-forecast-template.md",
+    "capacity-dashboard-example.txt",
+    "capacity-projection.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}
