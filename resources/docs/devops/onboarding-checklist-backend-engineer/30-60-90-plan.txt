@@ -1,0 +1,35 @@
+=== Day 30: Contributing ===
+
+Goals:
+  - Environment fully configured and working
+  - First 3-5 PRs merged (bug fixes, small features, tests)
+  - Participating in code reviews (reviewing others)
+  - Understands team workflow (standups, planning, retros)
+  - Has met all team members 1:1
+  - Completed security and compliance training
+
+Check-in: Manager + buddy review progress, identify blockers
+
+=== Day 60: Owning ===
+
+Goals:
+  - Owns a service or component (primary reviewer for changes)
+  - Has been on-call shadow for 2+ shifts
+  - Participating in design discussions
+  - Can deploy to staging independently
+  - Can debug production issues with guidance
+  - Has written or updated documentation
+
+Check-in: Manager reviews ownership readiness, adjust scope
+
+=== Day 90: Independent ===
+
+Goals:
+  - Fully independent on-call (with backup available)
+  - Can deploy to production independently
+  - Leading a small feature or improvement
+  - Mentoring the next new hire (if applicable)
+  - Has completed a postmortem or contributed to one
+  - Performance review: on track for expectations
+
+Check-in: Manager + skip-level, confirm successful onboarding

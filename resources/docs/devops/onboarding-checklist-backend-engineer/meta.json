@@ -1,0 +1,32 @@
+{
+  "title": "Backend Engineer Onboarding Checklist",
+  "title_es": "Checklist de Onboarding para Ingenieros Backend",
+  "description": "Companion kit for backend engineer onboarding: a fillable two-week checklist (Day 1 setup, codebase orientation, production awareness, ownership) plus a 30-60-90 day plan with check-ins.",
+  "description_es": "Kit complementario del onboarding de ingenieros backend: una checklist rellenable de dos semanas (configuración del Día 1, orientación al codebase, conciencia de producción, titularidad) más un plan 30-60-90 días con check-ins.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "onboarding-checklist-backend-engineer",
+  "source_urls": [
+    "https://stackpractices.com/docs/onboarding-checklist-backend-engineer/",
+    "https://stackpractices.com/es/docs/onboarding-checklist-backend-engineer/",
+    "https://about.gitlab.com/handbook/people-group/general-onboarding/",
+    "https://www.atlassian.com/team-playbook"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "onboarding",
+    "checklist",
+    "backend",
+    "engineering-management",
+    "hiring",
+    "team-process",
+    "template"
+  ],
+  "files": [
+    "onboarding-checklist.md",
+    "30-60-90-plan.txt",
+    "onboarding-checklist-frontend-variant.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
