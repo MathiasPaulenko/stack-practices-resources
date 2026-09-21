@@ -1,0 +1,29 @@
+{
+  "title": "Iterator Pattern for Custom Collections: Trees, BFS/DFS and Async Streams",
+  "title_es": "Patrón Iterator para Colecciones Personalizadas: Árboles, BFS/DFS y Streams Asíncronos",
+  "description": "Runnable Iterator pattern examples in TypeScript: pre-order and level-order tree traversal with an O(1) index-based queue, async paginated query iterator, and a LinkedList implementing Symbol.iterator with generator traversals.",
+  "description_es": "Ejemplos ejecutables del patrón Iterator en TypeScript: recorrido de árboles pre-order y level-order con cola indexada O(1), iterador asíncrono de consulta paginada, y una LinkedList que implementa Symbol.iterator con recorridos por generators.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "iterator-pattern-collections",
+  "source_urls": [
+    "https://stackpractices.com/patterns/iterator-pattern-collections/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "behavioral",
+    "iterator",
+    "typescript",
+    "generators",
+    "tree-traversal",
+    "async"
+  ],
+  "files": [
+    "iterators.ts",
+    "linked-list.ts",
+    "iterators.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
