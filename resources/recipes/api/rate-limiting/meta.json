@@ -1,0 +1,37 @@
+{
+  "title": "Rate Limiting",
+  "title_es": "Limitación de Tasa (Rate Limiting)",
+  "description": "Runnable rate limiter implementations: token bucket (Python), fixed window with per-endpoint budgets (JavaScript + Redis), and sliding window log (Java).",
+  "description_es": "Implementaciones ejecutables de rate limiting: token bucket (Python), fixed window con presupuestos por endpoint (JavaScript + Redis) y sliding window log (Java).",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "rate-limiting",
+  "source_urls": [
+    "https://stackpractices.com/recipes/rate-limiting/",
+    "https://stackpractices.com/es/recipes/rate-limiting/",
+    "https://www.rfc-editor.org/rfc/rfc6585",
+    "https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/",
+    "https://redis.io/commands/incr/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "rate-limiting",
+    "throttling",
+    "api",
+    "token-bucket",
+    "fixed-window",
+    "sliding-window",
+    "redis",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "token_bucket.py",
+    "fixed_window_redis.js",
+    "SlidingWindow.java",
+    "sliding_window_counter.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
