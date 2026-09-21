@@ -1,0 +1,74 @@
+{
+  "$schema": "browser-support-matrix/feature-matrix/v1",
+  "note": "Machine-readable version of the feature compatibility matrix. 'example' values are illustrative — replace with your own audit.",
+  "tiers": {
+    "tier1_full": ["chrome>=110", "edge>=110", "firefox>=115", "safari>=16"],
+    "tier2_best_effort": ["samsung>=20", "opera>=95", "chrome-android>=110"],
+    "tier3_unsupported": ["ie", "safari<16", "chrome<110", "firefox<115"]
+  },
+  "features": [
+    {
+      "name": "optional chaining / nullish coalescing (ES2020)",
+      "category": "javascript",
+      "support": {"chrome": true, "edge": true, "firefox": true, "safari": true, "samsung": true},
+      "polyfill": null,
+      "fallback": null
+    },
+    {
+      "name": "import attributes (CSS Modules)",
+      "category": "javascript",
+      "support": {"chrome": ">=123", "edge": ">=123", "firefox": false, "safari": false, "samsung": ">=123"},
+      "polyfill": "bundler",
+      "fallback": "bundler handles"
+    },
+    {
+      "name": "WebGPU",
+      "category": "web-api",
+      "support": {"chrome": ">=113", "edge": ">=113", "firefox": false, "safari": false, "samsung": ">=113"},
+      "polyfill": "webgpu-polyfill (8 KB gzipped, dynamic import)",
+      "fallback": "WebGL renderer"
+    },
+    {
+      "name": "View Transitions API",
+      "category": "css",
+      "support": {"chrome": ">=111", "edge": ">=111", "firefox": false, "safari": false, "samsung": true},
+      "polyfill": null,
+      "fallback": "no transition (instant page swap)"
+    },
+    {
+      "name": "scroll-driven animations",
+      "category": "css",
+      "support": {"chrome": ">=115", "edge": ">=115", "firefox": false, "safari": false, "samsung": true},
+      "polyfill": null,
+      "fallback": "JS IntersectionObserver-based"
+    },
+    {
+      "name": "Push API",
+      "category": "web-api",
+      "support": {"chrome": true, "edge": true, "firefox": true, "safari": ">=16.4", "samsung": true},
+      "polyfill": null,
+      "fallback": "polling for updates"
+    },
+    {
+      "name": "Web Share API",
+      "category": "web-api",
+      "support": {"chrome": true, "edge": true, "firefox": false, "safari": true, "samsung": true},
+      "polyfill": "web-share-polyfill (2 KB gzipped, dynamic import)",
+      "fallback": "custom share dialog with copy link"
+    },
+    {
+      "name": "File System Access API",
+      "category": "web-api",
+      "support": {"chrome": true, "edge": true, "firefox": false, "safari": false, "samsung": true},
+      "polyfill": null,
+      "fallback": "download + upload flow"
+    },
+    {
+      "name": "Payment Request API",
+      "category": "web-api",
+      "support": {"chrome": true, "edge": true, "firefox": false, "safari": true, "samsung": true},
+      "polyfill": null,
+      "fallback": "traditional checkout form"
+    }
+  ]
+}

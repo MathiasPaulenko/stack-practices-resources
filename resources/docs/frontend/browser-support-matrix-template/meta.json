@@ -1,0 +1,35 @@
+{
+  "title": "Browser Support Matrix Template",
+  "title_es": "Plantilla de Matriz de Soporte de Navegadores",
+  "description": "Companion kit for the browser support matrix: a fillable Markdown matrix (tiers, feature compatibility, polyfills, fallbacks, testing matrix) plus Babel/Browserslist configs and a feature-probe upgrade banner.",
+  "description_es": "Kit complementario de la matriz de soporte de navegadores: una matriz Markdown rellenable (niveles, compatibilidad de funciones, polyfills, fallbacks, matriz de pruebas) más configuraciones de Babel/Browserslist y un banner de actualización con prueba de función.",
+  "type": "docs",
+  "topic": "frontend",
+  "slug": "browser-support-matrix-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/browser-support-matrix-template/",
+    "https://stackpractices.com/es/docs/browser-support-matrix-template/",
+    "https://caniuse.com/",
+    "https://github.com/browserslist/browserslist",
+    "https://web.dev/baseline"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "browser-support",
+    "compatibility",
+    "polyfills",
+    "browserslist",
+    "frontend",
+    "testing",
+    "template"
+  ],
+  "files": [
+    "browser-support-matrix.md",
+    "feature-matrix.json",
+    "babel.config.js",
+    "browserslist",
+    "upgrade-banner.html",
+    "README.md",
+    "README.es.md"
+  ]
+}

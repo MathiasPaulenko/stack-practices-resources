@@ -1,0 +1,11 @@
+<div id="upgrade-banner" hidden>
+  <p>Please update your browser to use this application.</p>
+</div>
+
+<script>
+  // Feature probe: browsers that lack these are below our baseline.
+  // (UA sniffing is fragile; the banner only needs a coarse signal.)
+  if (!window.structuredClone || !window.fetch || !('loading' in HTMLImageElement.prototype)) {
+    document.getElementById('upgrade-banner').hidden = false;
+  }
+</script>

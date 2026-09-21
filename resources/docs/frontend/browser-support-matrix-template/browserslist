@@ -1,0 +1,11 @@
+[production]
+Chrome >= 110
+Edge >= 110
+Firefox >= 115
+Safari >= 16
+Samsung >= 20
+
+[development]
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
