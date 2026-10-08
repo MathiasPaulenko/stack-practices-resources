@@ -1,0 +1,37 @@
+{
+  "title": "Provision an AWS VPC with Terraform",
+  "title_es": "Provisionar una VPC de AWS con Terraform",
+  "description": "Complete Terraform configuration for a production-ready AWS VPC: public and private subnets across three AZs, NAT gateways, route tables, security groups, flow logs and VPC endpoints.",
+  "description_es": "Configuración Terraform completa para una VPC de AWS lista para producción: subredes públicas y privadas en tres AZs, NAT gateways, tablas de ruteo, security groups, flow logs y VPC endpoints.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "terraform-aws-vpc",
+  "source_urls": [
+    "https://stackpractices.com/recipes/terraform-aws-vpc/",
+    "https://stackpractices.com/es/recipes/terraform-aws-vpc/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "aws",
+    "vpc",
+    "networking",
+    "iac",
+    "nat-gateway",
+    "security-groups"
+  ],
+  "files": [
+    "versions.tf",
+    "variables.tf",
+    "vpc.tf",
+    "gateways.tf",
+    "routing.tf",
+    "security.tf",
+    "flow_logs.tf",
+    "endpoints.tf",
+    "nacls.tf",
+    "outputs.tf",
+    "README.md",
+    "README.es.md"
+  ]
+}
