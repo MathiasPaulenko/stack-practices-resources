@@ -1,0 +1,35 @@
+{
+    "topic": "file-handling",
+    "language": "multi",
+    "files": [
+        "job-control.sh",
+        "xargs-exit-codes.sh",
+        "retry-backoff.sh",
+        "parallel_pool.py",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "Parallel Job Control with Bash: Exit Codes, Retries, and Joblog",
+    "title_es": "Control de Jobs Paralelos en Bash: Códigos de Salida, Reintentos y Joblog",
+    "type": "recipes",
+    "description": "Companion scripts for parallel job control in Bash: a GNU parallel joblog wrapper with summary report, per-job result files with xargs, retries with exponential backoff, and a Python multiprocessing.Pool equivalent.",
+    "description_es": "Scripts companion para control de jobs paralelos en Bash: un wrapper de GNU parallel con joblog y reporte, archivos de resultado por job con xargs, reintentos con backoff exponencial y un equivalente con multiprocessing.Pool de Python.",
+    "slug": "bash-parallel-job-execution",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/bash-parallel-job-execution/"
+    ],
+    "tags": [
+        "file-handling",
+        "bash",
+        "parallel",
+        "concurrency",
+        "xargs",
+        "gnu-parallel",
+        "joblog",
+        "retries",
+        "exit-codes",
+        "python"
+    ],
+    "lastUpdated": "2026-10-08"
+}
