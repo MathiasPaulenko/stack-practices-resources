@@ -1,0 +1,28 @@
+=== Service Decommissioning Notification ===
+
+To: engineering@example.com, stakeholders@example.com
+From: platform-team@example.com
+Date: [DATE]
+Subject: Decommissioning of [SERVICE_NAME]
+
+The service [SERVICE_NAME] will be decommissioned on [SHUTDOWN_DATE].
+
+What does this mean?
+- The service will stop accepting traffic on [SHUTDOWN_DATE]
+- Data will be archived and available for [RETENTION_PERIOD]
+- Endpoints will return 410 Gone after shutdown
+- Upstream dependencies must be updated before [SHUTDOWN_DATE]
+
+What do you need to do?
+1. Check if your service depends on [SERVICE_NAME]
+2. If it does, migrate to [REPLACEMENT_SERVICE] before [SHUTDOWN_DATE]
+3. Update configurations, environment variables, and documentation
+4. Contact platform-team@example.com if you need migration support
+
+Timeline:
+- [TODAY]: Notification sent
+- [T-30]: Service shutdown (stop)
+- [T-60]: Infrastructure deletion
+- [T-90]: Data deletion (per retention policy)
+
+Contact: platform-team@example.com

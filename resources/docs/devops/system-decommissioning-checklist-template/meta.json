@@ -1,0 +1,23 @@
+{
+  "title": "System Decommissioning Checklist Template",
+  "title_es": "Plantilla de Checklist de Desmantelamiento",
+  "description": "Operational checklist for safely retiring a production service: dependency discovery, data handling and retention, dependency removal, staged shutdown, resource cleanup, notification email, remaining-resource verification script, and a 30-day post-decommissioning audit.",
+  "description_es": "Checklist operativa para retirar un servicio de producción de forma segura: descubrimiento de dependencias, manejo y retención de datos, eliminación de dependencias, apagado por etapas, limpieza de recursos, email de notificación, script de verificación de recursos restantes y auditoría post-desmantelamiento a los 30 días.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "system-decommissioning-checklist-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/system-decommissioning-checklist-template/",
+    "https://csrc.nist.gov/pubs/sp/800/88/r1/final"
+  ],
+  "language": "bilingual",
+  "tags": ["decommissioning", "checklist", "runbook", "deprecation", "infrastructure", "devops", "migration"],
+  "files": [
+    "decommissioning-checklist.md",
+    "decommissioning-notification.txt",
+    "post-decommissioning-audit.md",
+    "verify-remaining-resources.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
