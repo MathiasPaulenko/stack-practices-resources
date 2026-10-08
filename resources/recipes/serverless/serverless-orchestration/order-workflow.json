@@ -1,0 +1,87 @@
+{
+  "Comment": "Order Processing Workflow",
+  "StartAt": "ValidateOrder",
+  "States": {
+    "ValidateOrder": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:validateOrder",
+      "Next": "CheckInventory",
+      "Catch": [
+        {
+          "ErrorEquals": ["ValidationException"],
+          "Next": "NotifyCustomerInvalid"
+        }
+      ]
+    },
+    "CheckInventory": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:checkInventory",
+      "Next": "ProcessPayment",
+      "Retry": [
+        {
+          "ErrorEquals": ["ServiceUnavailable"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 3,
+          "BackoffRate": 2
+        }
+      ]
+    },
+    "ProcessPayment": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:processPayment",
+      "Next": "ParallelTasks",
+      "Catch": [
+        {
+          "ErrorEquals": ["PaymentFailed"],
+          "Next": "ReleaseInventory"
+        }
+      ]
+    },
+    "ParallelTasks": {
+      "Type": "Parallel",
+      "Branches": [
+        {
+          "StartAt": "SendEmail",
+          "States": {
+            "SendEmail": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-1:123456789:function:sendEmail",
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "UpdateAnalytics",
+          "States": {
+            "UpdateAnalytics": {
+              "Type": "Task",
+              "Resource": "arn:aws:lambda:us-east-1:123456789:function:updateAnalytics",
+              "End": true
+            }
+          }
+        }
+      ],
+      "Next": "ScheduleShipment"
+    },
+    "ScheduleShipment": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:scheduleShipment",
+      "End": true
+    },
+    "ReleaseInventory": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:releaseInventory",
+      "Next": "NotifyCustomerFailed"
+    },
+    "NotifyCustomerInvalid": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:notifyCustomer",
+      "End": true
+    },
+    "NotifyCustomerFailed": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:123456789:function:notifyCustomer",
+      "End": true
+    }
+  }
+}

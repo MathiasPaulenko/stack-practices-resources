@@ -1,0 +1,20 @@
+{
+  "title": "Serverless Orchestration: Step Functions vs Temporal",
+  "title_es": "Orquestación Serverless: Step Functions vs Temporal",
+  "description": "The same order-processing workflow on AWS Step Functions, Temporal, and Azure Durable Functions, plus a saga with compensating transactions.",
+  "description_es": "El mismo workflow de pedidos en AWS Step Functions, Temporal y Azure Durable Functions, más una saga con transacciones de compensación.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-orchestration",
+  "source_urls": ["https://stackpractices.com/recipes/serverless-orchestration/"],
+  "language": "en",
+  "tags": ["serverless", "step-functions", "temporal", "durable-functions", "orchestration", "saga", "aws-lambda"],
+  "files": [
+    "order-workflow.json",
+    "order-workflow.ts",
+    "order-orchestrator.py",
+    "order-saga.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
