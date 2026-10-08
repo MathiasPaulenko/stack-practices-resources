@@ -1,0 +1,26 @@
+{
+  "title": "Test Pyramid: Balance Unit, Integration and E2E Tests",
+  "title_es": "Pirámide de Tests: Unit, Integration y E2E",
+  "description": "Companion code for the test pyramid pattern: runnable unit tests in JavaScript and Python, an E2E Playwright spec, a layer-distribution report script, a smoke test script, and a layered GitHub Actions pipeline.",
+  "description_es": "Código companion del patrón pirámide de tests: tests unitarios ejecutables en JavaScript y Python, un spec E2E de Playwright, un script de reporte de distribución por capas, un script de smoke tests y un pipeline de GitHub Actions por capas.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "test-pyramid-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/test-pyramid-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["testing", "test-pyramid", "unit-tests", "integration-tests", "e2e", "vitest", "pytest", "playwright", "ci-cd"],
+  "files": [
+    "pricing.js",
+    "calculator.test.js",
+    "pricing.py",
+    "test_pricing.py",
+    "checkout.e2e.spec.ts",
+    "report_test_distribution.py",
+    "smoke-test.sh",
+    "test-pyramid-ci.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
