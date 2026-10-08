@@ -1,0 +1,21 @@
+{
+  "title": "Build an ETL Pipeline with pandas and Parquet",
+  "title_es": "Construir un Pipeline ETL con pandas y Parquet",
+  "description": "Runnable pandas ETL pipeline: extract CSV/JSON, transform with type coercion and validation, load to partitioned Parquet with retries, incremental append, and schema enforcement.",
+  "description_es": "Pipeline ETL ejecutable con pandas: extrae CSV/JSON, transforma con coerción de tipos y validación, carga a Parquet particionado con reintentos, carga incremental y validación de esquema.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "python-pandas-etl-pipeline",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-pandas-etl-pipeline/",
+    "https://stackpractices.com/es/recipes/python-pandas-etl-pipeline/"
+  ],
+  "language": "python",
+  "tags": ["pandas", "etl", "parquet", "pyarrow", "data-pipeline", "python", "data-processing"],
+  "files": [
+    "etl_pipeline.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
