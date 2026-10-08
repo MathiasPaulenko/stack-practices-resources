@@ -1,0 +1,23 @@
+{
+  "title": "Error Tracking with Sentry in Express",
+  "title_es": "Seguimiento de Errores con Sentry en Express",
+  "description": "Runnable Express app with Sentry v8+ error tracking: instrument.js init pattern, setupExpressErrorHandler, user context, breadcrumbs, custom startSpan, and a /debug-sentry test route.",
+  "description_es": "App Express ejecutable con seguimiento de errores Sentry v8+: patrón de init con instrument.js, setupExpressErrorHandler, contexto de usuario, breadcrumbs, startSpan personalizado y ruta de prueba /debug-sentry.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "nodejs-sentry-error-tracking",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-sentry-error-tracking/",
+    "https://docs.sentry.io/platforms/javascript/guides/express/"
+  ],
+  "language": "bilingual",
+  "tags": ["nodejs", "express", "sentry", "error-tracking", "observability", "monitoring"],
+  "files": [
+    "instrument.js",
+    "app.js",
+    "package.json",
+    ".env.example",
+    "README.md",
+    "README.es.md"
+  ]
+}
