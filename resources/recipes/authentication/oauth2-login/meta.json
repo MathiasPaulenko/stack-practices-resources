@@ -1,0 +1,37 @@
+{
+    "topic": "authentication",
+    "language": "multi",
+    "files": [
+        "flask_app.py",
+        "passport_app.js",
+        "SecurityConfig.java",
+        "application.yml.example",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "OAuth 2.0 Login: Authorization Code Flow with PKCE",
+    "title_es": "Inicio de Sesión OAuth 2.0: Flujo Authorization Code con PKCE",
+    "type": "recipes",
+    "description": "Runnable OAuth 2.0 login examples: a Flask app with Authlib, an Express app with Passport (state + PKCE enabled), a Spring Security filter chain, and the application.yml client registration for Google and GitHub.",
+    "description_es": "Ejemplos ejecutables de login OAuth 2.0: una app Flask con Authlib, una app Express con Passport (state + PKCE activados), un filter chain de Spring Security y el application.yml de registro para Google y GitHub.",
+    "slug": "oauth2-login",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/oauth2-login/"
+    ],
+    "tags": [
+        "authentication",
+        "oauth2",
+        "oidc",
+        "pkce",
+        "python",
+        "flask",
+        "authlib",
+        "javascript",
+        "express",
+        "passport",
+        "java",
+        "spring-security"
+    ],
+    "lastUpdated": "2026-10-08"
+}
