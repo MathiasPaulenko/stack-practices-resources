@@ -1,0 +1,34 @@
+{
+    "topic": "concurrency",
+    "language": "multi",
+    "files": [
+        "dashboard.js",
+        "fetch_urls.py",
+        "AsyncOrderService.java",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "Async Patterns with Promises, Futures, and Coroutines",
+    "title_es": "Patrones Async con Promises, Futures y Coroutines",
+    "type": "recipes",
+    "description": "Runnable async examples in three runtimes: Promise.all/allSettled fan-out in Node.js, asyncio TaskGroup plus a semaphore-bounded fetcher in Python, and a CompletableFuture pipeline in Java.",
+    "description_es": "Ejemplos async ejecutables en tres runtimes: fan-out con Promise.all/allSettled en Node.js, TaskGroup de asyncio más un fetcher limitado por semáforo en Python, y un pipeline con CompletableFuture en Java.",
+    "slug": "async-patterns",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/async-patterns/"
+    ],
+    "tags": [
+        "concurrency",
+        "async",
+        "event-loop",
+        "promises",
+        "completablefuture",
+        "asyncio",
+        "nodejs",
+        "python",
+        "java",
+        "semaphore"
+    ],
+    "lastUpdated": "2026-10-08"
+}
