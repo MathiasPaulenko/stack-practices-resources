@@ -1,0 +1,35 @@
+{
+    "topic": "file-handling",
+    "language": "multi",
+    "files": [
+        "debounced_watcher.py",
+        "chokidar-watcher.js",
+        "RecursiveWatcher.java",
+        "watch.sh",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "Watch File Changes: Runnable Watchers in Python, JS, Java, and Bash",
+    "title_es": "Observar Cambios en Archivos: Watchers Ejecutables en Python, JS, Java y Bash",
+    "type": "recipes",
+    "description": "Companion examples for file system watching: a debounced Python watchdog handler with event coalescing, a chokidar watcher with awaitWriteFinish, a recursive Java WatchService with OVERFLOW handling, and an inotifywait shell script.",
+    "description_es": "Ejemplos companion para observar el sistema de archivos: un handler de watchdog con debounce y coalescencia de eventos, un watcher chokidar con awaitWriteFinish, un WatchService recursivo en Java con manejo de OVERFLOW, y un script de shell con inotifywait.",
+    "slug": "watch-file-changes",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/watch-file-changes/"
+    ],
+    "tags": [
+        "file-handling",
+        "filesystem",
+        "watcher",
+        "python",
+        "javascript",
+        "java",
+        "bash",
+        "inotify",
+        "chokidar",
+        "watchdog"
+    ],
+    "lastUpdated": "2026-10-08"
+}
