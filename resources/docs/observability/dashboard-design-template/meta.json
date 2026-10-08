@@ -1,0 +1,23 @@
+{
+  "title": "Dashboard Design Template",
+  "title_es": "Plantilla de Diseño de Dashboards",
+  "description": "Observability dashboard design template with 6-row layout (status banner, RED metrics, traffic, infrastructure, business, context), PromQL panel specs, SLO and error-budget config, Grafana import JSON, and burn-rate alert rules.",
+  "description_es": "Plantilla de diseño de dashboards de observabilidad con layout de 6 filas (banner de estado, métricas RED, tráfico, infraestructura, negocio, contexto), specs de paneles PromQL, configuración de SLOs y error budget, JSON importable de Grafana y reglas de alertas de burn rate.",
+  "type": "docs",
+  "topic": "observability",
+  "slug": "dashboard-design-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/dashboard-design-template/",
+    "https://sre.google/workbook/alerting-on-slos/",
+    "https://grafana.com/docs/grafana/latest/dashboards/"
+  ],
+  "language": "bilingual",
+  "tags": ["observability", "dashboard", "grafana", "prometheus", "slo", "error-budget", "monitoring", "template", "sre"],
+  "files": [
+    "dashboard-template.md",
+    "dashboard.json",
+    "slo-alerts.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

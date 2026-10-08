@@ -1,0 +1,163 @@
+{
+  "title": "Payment Service Health",
+  "uid": "payment-service-health",
+  "schemaVersion": 39,
+  "version": 1,
+  "editable": true,
+  "timezone": "browser",
+  "refresh": "30s",
+  "time": { "from": "now-1h", "to": "now" },
+  "tags": ["payment", "payment-team", "slo"],
+  "annotations": {
+    "list": [
+      {
+        "name": "Deployments",
+        "datasource": { "type": "prometheus", "uid": "${datasource}" },
+        "expr": "deployments{service=\"payment\"}",
+        "enable": true
+      },
+      {
+        "name": "Incidents",
+        "datasource": { "type": "prometheus", "uid": "${datasource}" },
+        "expr": "incidents{service=\"payment\"}",
+        "enable": true
+      }
+    ]
+  },
+  "templating": {
+    "list": [
+      {
+        "name": "datasource",
+        "type": "datasource",
+        "query": "prometheus",
+        "label": "Data source"
+      },
+      {
+        "name": "environment",
+        "type": "query",
+        "datasource": { "type": "prometheus", "uid": "${datasource}" },
+        "query": "label_values(up, environment)",
+        "current": { "text": "production", "value": "production" }
+      },
+      {
+        "name": "instance",
+        "type": "query",
+        "datasource": { "type": "prometheus", "uid": "${datasource}" },
+        "query": "label_values(up{service=\"payment\"}, instance)",
+        "includeAll": true
+      },
+      {
+        "name": "endpoint",
+        "type": "query",
+        "datasource": { "type": "prometheus", "uid": "${datasource}" },
+        "query": "label_values(http_requests_total{service=\"payment\"}, endpoint)",
+        "includeAll": true
+      }
+    ]
+  },
+  "links": [
+    { "title": "Runbook", "url": "https://runbooks.example.com/payment-service", "type": "link", "icon": "doc" },
+    { "title": "Logs", "url": "https://kibana.example.com/app/discover#/?_a=(query:service:payment)", "type": "link", "icon": "doc" },
+    { "title": "Traces", "url": "https://jaeger.example.com/search?service=payment", "type": "link", "icon": "doc" },
+    { "title": "Alerts", "url": "https://alertmanager.example.com/#/alerts?receiver=payment", "type": "link", "icon": "bolt" }
+  ],
+  "panels": [
+    {
+      "id": 1, "type": "stat", "title": "Health",
+      "gridPos": { "h": 4, "w": 8, "x": 0, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "up{service=\"payment\"}" }],
+      "thresholds": { "mode": "absolute", "steps": [{ "color": "red", "value": null }, { "color": "yellow", "value": 0.5 }, { "color": "green", "value": 1 }] },
+      "fieldConfig": { "defaults": { "mappings": [{ "type": "value", "options": { "0": { "text": "ERR" }, "0.5": { "text": "WARN" }, "1": { "text": "OK" } } }] }, "overrides": [] }
+    },
+    {
+      "id": 2, "type": "stat", "title": "SLO Status",
+      "gridPos": { "h": 4, "w": 8, "x": 8, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "payment_slo_availability_ratio" }],
+      "fieldConfig": { "defaults": { "unit": "percentunit", "thresholds": { "mode": "absolute", "steps": [{ "color": "red", "value": null }, { "color": "yellow", "value": 0.99 }, { "color": "green", "value": 0.999 }] } }, "overrides": [] }
+    },
+    {
+      "id": 3, "type": "gauge", "title": "Error Budget Remaining",
+      "gridPos": { "h": 4, "w": 8, "x": 16, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "payment_error_budget_remaining_pct" }],
+      "fieldConfig": { "defaults": { "unit": "percent", "min": 0, "max": 100, "thresholds": { "mode": "absolute", "steps": [{ "color": "red", "value": null }, { "color": "yellow", "value": 10 }, { "color": "green", "value": 30 }] } }, "overrides": [] }
+    },
+    {
+      "id": 4, "type": "timeseries", "title": "Request Rate",
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 4 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "rate(http_requests_total{service=\"payment\", environment=\"$environment\"}[5m])", "legendFormat": "req/s" }],
+      "fieldConfig": { "defaults": { "unit": "reqps" }, "overrides": [] }
+    },
+    {
+      "id": 5, "type": "timeseries", "title": "Error Rate",
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 4 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "rate(http_requests_total{service=\"payment\",status=~\"5..\", environment=\"$environment\"}[5m]) / rate(http_requests_total{service=\"payment\", environment=\"$environment\"}[5m])", "legendFormat": "5xx ratio" }],
+      "fieldConfig": { "defaults": { "unit": "percentunit", "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "yellow", "value": 0.01 }, { "color": "red", "value": 0.05 }] } }, "overrides": [] }
+    },
+    {
+      "id": 6, "type": "timeseries", "title": "p95 Latency",
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 4 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{service=\"payment\", environment=\"$environment\"}[5m]))", "legendFormat": "p95" }],
+      "fieldConfig": { "defaults": { "unit": "s", "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "yellow", "value": 0.5 }, { "color": "red", "value": 1 }] } }, "overrides": [] }
+    },
+    {
+      "id": 7, "type": "timeseries", "title": "Requests by Endpoint",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 12 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "sum(rate(http_requests_total{service=\"payment\", endpoint=~\"$endpoint\"}[5m])) by (endpoint)", "legendFormat": "{{endpoint}}" }],
+      "fieldConfig": { "defaults": { "custom": { "drawStyle": "line", "fillOpacity": 20, "stacking": { "mode": "normal" } } }, "overrides": [] }
+    },
+    {
+      "id": 8, "type": "piechart", "title": "Status Code Distribution",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 12 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "sum(rate(http_requests_total{service=\"payment\"}[5m])) by (status)", "legendFormat": "{{status}}" }]
+    },
+    {
+      "id": 9, "type": "timeseries", "title": "CPU Usage",
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 20 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "rate(container_cpu_usage_seconds_total{pod=~\"payment.*\"}[5m]) * 100" }],
+      "fieldConfig": { "defaults": { "unit": "percent", "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "yellow", "value": 70 }, { "color": "red", "value": 90 }] } }, "overrides": [] }
+    },
+    {
+      "id": 10, "type": "timeseries", "title": "Memory",
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 20 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "container_memory_working_set_bytes{pod=~\"payment.*\"}" }],
+      "fieldConfig": { "defaults": { "unit": "bytes" }, "overrides": [] }
+    },
+    {
+      "id": 11, "type": "timeseries", "title": "DB Connections",
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 20 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "payment_db_connections_active / payment_db_connections_max" }],
+      "fieldConfig": { "defaults": { "unit": "percentunit", "thresholds": { "mode": "absolute", "steps": [{ "color": "green", "value": null }, { "color": "yellow", "value": 0.7 }, { "color": "red", "value": 0.9 }] } }, "overrides": [] }
+    },
+    {
+      "id": 12, "type": "timeseries", "title": "Orders/min",
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 28 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "rate(payment_orders_total[5m]) * 60" }]
+    },
+    {
+      "id": 13, "type": "timeseries", "title": "Revenue/min",
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 28 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "rate(payment_revenue_total[5m]) * 60" }],
+      "fieldConfig": { "defaults": { "unit": "currencyUSD" }, "overrides": [] }
+    },
+    {
+      "id": 14, "type": "stat", "title": "Order Success Rate",
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 28 },
+      "datasource": { "type": "prometheus", "uid": "${datasource}" },
+      "targets": [{ "expr": "rate(payment_orders_total{status=\"success\"}[5m]) / rate(payment_orders_total[5m])" }],
+      "fieldConfig": { "defaults": { "unit": "percentunit", "thresholds": { "mode": "absolute", "steps": [{ "color": "red", "value": null }, { "color": "yellow", "value": 0.95 }, { "color": "green", "value": 0.99 }] } }, "overrides": [] }
+    }
+  ]
+}
