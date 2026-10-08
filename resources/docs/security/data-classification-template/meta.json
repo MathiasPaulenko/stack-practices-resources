@@ -1,0 +1,22 @@
+{
+  "title": "Data Classification Template",
+  "title_es": "Plantilla de Clasificación de Datos",
+  "description": "Fillable data classification policy template: four levels (Public, Internal, Confidential, Restricted), dataset inventory, per-level handling rules for access/transmission/storage, and an exception log. Includes a completed worked example for a B2B SaaS.",
+  "description_es": "Plantilla rellenable de política de clasificación de datos: cuatro niveles (Público, Interno, Confidencial, Restringido), inventario de datasets, reglas de manejo por nivel para acceso/transmisión/almacenamiento y registro de excepciones. Incluye un ejemplo resuelto para un SaaS B2B.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "data-classification-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-classification-template/",
+    "https://www.iso.org/standard/27001",
+    "https://csrc.nist.gov/publications/detail/sp/800-60/volume-2-rev-1/final"
+  ],
+  "language": "bilingual",
+  "tags": ["data-classification", "security", "compliance", "privacy", "governance", "template", "dlp"],
+  "files": [
+    "data-classification-template.md",
+    "data-classification-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
