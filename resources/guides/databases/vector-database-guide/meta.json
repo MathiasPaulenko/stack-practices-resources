@@ -1,0 +1,32 @@
+{
+  "title": "Vector Database — pgvector RAG Pipeline",
+  "title_es": "Base de Datos Vectorial — Pipeline RAG con pgvector",
+  "description": "Runnable pgvector RAG pipeline: Postgres container, tuned HNSW index, chunked ingestion with OpenAI embeddings, and query script with source citations.",
+  "description_es": "Pipeline RAG ejecutable con pgvector: contenedor Postgres, índice HNSW ajustado, ingestión por chunks con embeddings de OpenAI y script de consulta con citas.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "vector-database-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/vector-database-guide/",
+    "https://stackpractices.com/es/guides/vector-database-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "vector-database",
+    "pgvector",
+    "rag",
+    "embeddings",
+    "openai",
+    "postgres",
+    "similarity-search"
+  ],
+  "files": [
+    "docker-compose.yml",
+    "schema.sql",
+    "ingest.py",
+    "query.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
