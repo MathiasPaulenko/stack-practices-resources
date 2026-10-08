@@ -1,0 +1,34 @@
+{
+    "topic": "file-handling",
+    "language": "multi",
+    "files": [
+        "xargs-parallel.sh",
+        "background-jobs.sh",
+        "semaphore.sh",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "Bash Parallel Execution: xargs, GNU Parallel, and Background Jobs",
+    "title_es": "Ejecución Paralela en Bash: xargs, GNU Parallel y Trabajos en Segundo Plano",
+    "type": "recipes",
+    "description": "Runnable examples of Bash fan-out/fan-in: xargs -P with exit-code reporting, a background-job pool that collects per-PID exit codes correctly, and GNU parallel's semaphore for rate-limited API calls.",
+    "description_es": "Ejemplos ejecutables de fan-out/fan-in en Bash: xargs -P con reporte de exit codes, un pool de jobs en segundo plano que recolecta exit codes por PID correctamente, y el semáforo de GNU parallel para llamadas a APIs con límite de tasa.",
+    "slug": "bash-parallel-execution",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/bash-parallel-execution/"
+    ],
+    "tags": [
+        "file-handling",
+        "bash",
+        "parallel",
+        "xargs",
+        "gnu-parallel",
+        "background-jobs",
+        "concurrency",
+        "semaphore",
+        "wait",
+        "exit-codes"
+    ],
+    "lastUpdated": "2026-10-08"
+}
