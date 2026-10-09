@@ -1,0 +1,27 @@
+{
+  "title": "On-Call Handoff Template — Companion Resources",
+  "title_es": "Plantilla de Handoff On-Call — Recursos complementarios",
+  "description": "Fillable markdown on-call handoff report (incidents, alerts, health, changes, escalation, access check) plus a complete worked shift example.",
+  "description_es": "Reporte markdown rellenable de entrega de guardia (incidentes, alertas, salud, cambios, escalamiento, verificación de accesos) más un ejemplo de turno completo.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "on-call-handoff-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/on-call-handoff-template/",
+    "https://stackpractices.com/es/docs/on-call-handoff-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "on-call",
+    "runbook",
+    "incident-management",
+    "sre",
+    "template"
+  ],
+  "files": [
+    "on-call-handoff-template.md",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
