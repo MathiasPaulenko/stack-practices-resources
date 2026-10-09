@@ -1,0 +1,27 @@
+{
+  "title": "Read Large Files in Node.js with Streams — Companion Resources",
+  "title_es": "Leer Archivos Grandes en Node.js con Streams — Recursos complementarios",
+  "description": "Runnable stream pipeline: CSV to JSONL with line buffering, pipeline error handling, and a readFile vs stream memory comparison.",
+  "description_es": "Pipeline de streams ejecutable: CSV a JSONL con buffer de líneas, manejo de errores con pipeline y comparación de memoria readFile vs stream.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "nodejs-read-large-file-stream",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-read-large-file-stream/",
+    "https://stackpractices.com/es/recipes/nodejs-read-large-file-stream/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "streams",
+    "files",
+    "readline",
+    "backpressure"
+  ],
+  "files": [
+    "csv-to-jsonl.js",
+    "memory-compare.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
