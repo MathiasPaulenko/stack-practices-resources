@@ -1,0 +1,23 @@
+{
+  "title": "How to Generate URL Slugs (Python, JS, Java)",
+  "title_es": "Cómo Generar Slugs para URLs (Python, JS, Java)",
+  "description": "Runnable slug generators in Python, JavaScript, Java, and Go: NFKD normalization, diacritic stripping, separator collapsing, and optional uniqueness suffixes.",
+  "description_es": "Generadores de slugs ejecutables en Python, JavaScript, Java y Go: normalización NFKD, eliminación de diacríticos, colapso de separadores y sufijos de unicidad opcionales.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "generate-slugs",
+  "source_urls": [
+    "https://stackpractices.com/recipes/generate-slugs/",
+    "https://stackpractices.com/es/recipes/generate-slugs/"
+  ],
+  "language": "multi",
+  "tags": ["slug", "url", "unicode", "sanitization", "python", "javascript", "java", "go"],
+  "files": [
+    "slug_generator.py",
+    "generate-slug.js",
+    "SlugGenerator.java",
+    "slug.go",
+    "README.md",
+    "README.es.md"
+  ]
+}
