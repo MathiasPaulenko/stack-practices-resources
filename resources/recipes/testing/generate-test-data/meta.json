@@ -1,0 +1,31 @@
+{
+  "title": "Generate Test Data (Faker + Factories) — Companion Resources",
+  "title_es": "Generar Datos de Test (Faker + Factories) — Recursos complementarios",
+  "description": "Runnable deterministic test data generators with Faker, factory-boy, Hypothesis, and DataFaker in Python, JavaScript, and Java.",
+  "description_es": "Generadores ejecutables de datos de test deterministas con Faker, factory-boy, Hypothesis y DataFaker en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "generate-test-data",
+  "source_urls": [
+    "https://stackpractices.com/recipes/generate-test-data/",
+    "https://stackpractices.com/es/recipes/generate-test-data/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "test-data",
+    "faker",
+    "factory-pattern",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "test_data.py",
+    "test-data.mjs",
+    "TestDataGenerator.java",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
