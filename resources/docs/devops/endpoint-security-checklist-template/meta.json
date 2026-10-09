@@ -1,0 +1,23 @@
+{
+  "title": "Endpoint Device Security Checklist Template",
+  "title_es": "Plantilla de Checklist de Seguridad para Endpoints",
+  "description": "Copy-paste endpoint hardening checklist plus osquery fleet-scan queries, an SSH passphrase audit script, and an Intune compliance PowerShell snippet.",
+  "description_es": "Checklist de endurecimiento de endpoints listo para copiar, más consultas osquery de escaneo de flota, un script de auditoría de passphrases SSH y un snippet PowerShell de cumplimiento Intune.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "endpoint-security-checklist-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/endpoint-security-checklist-template/",
+    "https://stackpractices.com/es/docs/endpoint-security-checklist-template/"
+  ],
+  "language": "multi",
+  "tags": ["endpoint-security", "hardening", "mdm", "edr", "osquery", "intune", "compliance", "checklist"],
+  "files": [
+    "checklist.md",
+    "endpoint-compliance.sql",
+    "ssh-passphrase-audit.sh",
+    "intune-compliance.ps1",
+    "README.md",
+    "README.es.md"
+  ]
+}
