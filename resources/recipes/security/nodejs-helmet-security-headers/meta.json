@@ -1,0 +1,23 @@
+{
+  "title": "Configure HTTP Security Headers with Helmet in Node.js",
+  "title_es": "Configura headers de seguridad HTTP con Helmet en Node.js",
+  "description": "Runnable Express app with Helmet 8 security headers (CSP, HSTS, X-Frame-Options, CORS) plus a supertest suite that verifies each header.",
+  "description_es": "App Express ejecutable con headers de seguridad de Helmet 8 (CSP, HSTS, X-Frame-Options, CORS) más una suite supertest que verifica cada header.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "nodejs-helmet-security-headers",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-helmet-security-headers/",
+    "https://stackpractices.com/es/recipes/nodejs-helmet-security-headers/"
+  ],
+  "language": "javascript",
+  "tags": ["nodejs", "express", "helmet", "security-headers", "csp", "hsts", "cors", "supertest"],
+  "files": [
+    "app.js",
+    "server.js",
+    "headers.test.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
