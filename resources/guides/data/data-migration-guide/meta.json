@@ -1,0 +1,30 @@
+{
+  "title": "Data Migration Guide — Companion Code",
+  "title_es": "Guía de migración de datos — Código complementario",
+  "description": "Runnable companion for the zero-downtime data migration guide: a sqlite-based backfill demo (dual-write, resumable checkpointing, idempotent re-runs, validation), expand-contract SQL, and a fill-in migration plan template.",
+  "description_es": "Complemento ejecutable de la guía de migración sin interrupción: demo de backfill en sqlite (doble escritura, checkpoints reanudables, re-ejecución idempotente, validación), SQL de expand-contract y plantilla de plan de migración.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "data-migration-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/data-migration-guide/",
+    "https://stackpractices.com/es/guides/data-migration-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "data-migration",
+    "zero-downtime",
+    "backfill",
+    "schema-evolution",
+    "python",
+    "postgresql",
+    "sqlite"
+  ],
+  "files": [
+    "backfill_demo.py",
+    "schema-evolution.sql",
+    "migration-plan-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

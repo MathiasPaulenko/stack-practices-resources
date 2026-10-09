@@ -1,0 +1,31 @@
+{
+  "title": "Identity Map Pattern — Companion Code",
+  "title_es": "Patrón Identity Map — Código complementario",
+  "description": "Runnable Identity Map implementations in Python, JavaScript, and Java: one lookup per primary key so each row maps to a single object per transaction.",
+  "description_es": "Implementaciones ejecutables del patrón Identity Map en Python, JavaScript y Java: una búsqueda por clave primaria para que cada fila corresponda a un solo objeto por transacción.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "identity-map-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/identity-map-pattern/",
+    "https://stackpractices.com/es/patterns/identity-map-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "identity-map",
+    "design-pattern",
+    "orm",
+    "caching",
+    "databases",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "identity_map.py",
+    "identity-map.js",
+    "IdentityMapDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

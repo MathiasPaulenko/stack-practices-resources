@@ -1,0 +1,33 @@
+{
+  "title": "MVC Pattern — Companion Code",
+  "title_es": "Patrón MVC — Código complementario",
+  "description": "Runnable MVC implementations in Python, JavaScript, and Java, plus a TypeScript dashboard with model-to-view subscriptions that updates itself.",
+  "description_es": "Implementaciones MVC ejecutables en Python, JavaScript y Java, más un dashboard TypeScript con suscripciones modelo→vista que se actualiza solo.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "mvc-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/mvc-pattern/",
+    "https://stackpractices.com/es/patterns/mvc-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "mvc",
+    "design-pattern",
+    "architecture",
+    "observer",
+    "separation-of-concerns",
+    "python",
+    "javascript",
+    "typescript",
+    "java"
+  ],
+  "files": [
+    "mvc.py",
+    "mvc.js",
+    "UserMvc.java",
+    "dashboard.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

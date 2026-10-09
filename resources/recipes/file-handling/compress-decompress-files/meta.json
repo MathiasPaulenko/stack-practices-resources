@@ -1,0 +1,34 @@
+{
+  "title": "Compress and Decompress Files — Companion Code",
+  "title_es": "Comprimir y Descomprimir Archivos — Código complementario",
+  "description": "Runnable archive utilities in Python, Node.js, Java, and Bash: streaming compression, component-wise zip-slip validation, zip-bomb size caps, and parallel gzip with pigz.",
+  "description_es": "Utilidades ejecutables de archivado en Python, Node.js, Java y Bash: compresión en streaming, validación zip-slip por componentes, límites de tamaño contra zip bombs y gzip paralelo con pigz.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "compress-decompress-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/compress-decompress-files/",
+    "https://stackpractices.com/es/recipes/compress-decompress-files/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "compression",
+    "zip",
+    "gzip",
+    "tar",
+    "zip-slip",
+    "python",
+    "nodejs",
+    "java",
+    "bash",
+    "file-handling"
+  ],
+  "files": [
+    "compress.py",
+    "compress.js",
+    "BatchCompressor.java",
+    "compress.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

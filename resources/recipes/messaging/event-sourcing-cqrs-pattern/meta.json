@@ -1,0 +1,25 @@
+{
+  "title": "Implement Event Sourcing with CQRS in Python",
+  "title_es": "Implementar Event Sourcing con CQRS en Python",
+  "description": "Runnable event-sourced bank account with CQRS separation in Python: event store on PostgreSQL, aggregate root, command handler, durable projections, snapshots and optimistic concurrency.",
+  "description_es": "Cuenta bancaria event-sourced ejecutable con separación CQRS en Python: event store sobre PostgreSQL, aggregate root, command handler, proyecciones durables, snapshots y concurrencia optimista.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "event-sourcing-cqrs-pattern",
+  "source_urls": ["https://stackpractices.com/recipes/event-sourcing-cqrs-pattern/"],
+  "language": "bilingual",
+  "tags": ["event-sourcing", "cqrs", "python", "postgresql", "event-store", "projections", "snapshots", "optimistic-concurrency"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "requirements.txt",
+    "events.py",
+    "aggregate.py",
+    "event_store.py",
+    "handlers.py",
+    "projectors.py",
+    "queries.py",
+    "snapshots.py",
+    "main.py"
+  ]
+}

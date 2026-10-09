@@ -1,0 +1,30 @@
+{
+  "title": "Database Indexing — Companion Code",
+  "title_es": "Indexación de bases de datos — Código complementario",
+  "description": "Runnable SQL for the database-indexing recipe: demo schema, the seven index types from the article, EXPLAIN ANALYZE queries to see each one used, and maintenance queries for unused indexes and missing FK indexes.",
+  "description_es": "SQL ejecutable para la receta de indexación: esquema de demo, los siete tipos de índice del artículo, consultas EXPLAIN ANALYZE para ver cada uno en acción y queries de mantenimiento para índices sin uso y claves foráneas sin indexar.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "database-indexing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/database-indexing/",
+    "https://stackpractices.com/es/recipes/database-indexing/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "mysql",
+    "indexing",
+    "query-optimization",
+    "explain-analyze",
+    "performance"
+  ],
+  "files": [
+    "schema.sql",
+    "indexes.sql",
+    "queries.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

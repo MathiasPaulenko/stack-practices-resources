@@ -1,0 +1,33 @@
+{
+  "title": "CDN Edge Caching — Companion Code",
+  "title_es": "CDN Edge Caching — Código complementario",
+  "description": "Multi-provider CDN caching configuration: Cloudflare cache rules via the Ruleset API, an AWS CloudFront Terraform module with a minimal cache key, Fastly VCL with surrogate keys, and purge scripts for all three.",
+  "description_es": "Configuración de caché CDN multi-proveedor: cache rules de Cloudflare vía la Ruleset API, un módulo Terraform de AWS CloudFront con clave de caché mínima, VCL de Fastly con surrogate keys y scripts de purga para los tres.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "cdn-edge-caching",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cdn-edge-caching/",
+    "https://stackpractices.com/es/recipes/cdn-edge-caching/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cdn",
+    "edge-caching",
+    "cloudflare",
+    "cloudfront",
+    "fastly",
+    "terraform",
+    "vcl",
+    "cache-invalidation",
+    "performance"
+  ],
+  "files": [
+    "cloudfront.tf",
+    "cloudflare-cache-rules.sh",
+    "fastly.vcl",
+    "purge.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

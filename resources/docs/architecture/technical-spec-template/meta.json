@@ -1,0 +1,28 @@
+{
+  "title": "Technical Specification Template — Companion Files",
+  "title_es": "Plantilla de especificación técnica — Archivos complementarios",
+  "description": "Ready-to-copy technical spec template (markdown) plus a fully filled-out example spec for an orders service v2 migration.",
+  "description_es": "Plantilla de spec técnica lista para copiar (markdown) más una spec de ejemplo completamente rellenada para una migración de servicio de pedidos v2.",
+  "type": "docs",
+  "topic": "architecture",
+  "slug": "technical-spec-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/technical-spec-template/",
+    "https://stackpractices.com/es/docs/technical-spec-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "technical-spec",
+    "design-doc",
+    "requirements",
+    "architecture",
+    "template",
+    "markdown"
+  ],
+  "files": [
+    "technical-spec-template.md",
+    "example-filled-spec.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

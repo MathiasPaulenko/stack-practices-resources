@@ -1,0 +1,30 @@
+{
+  "title": "Context Object Pattern — Companion Code",
+  "title_es": "Patrón Context Object — Código complementario",
+  "description": "Runnable context-object demos in Python (frozen dataclass + replace), Java (immutable builder), and JavaScript (Object.freeze). Each shows a RequestContext built once at the boundary and passed through the service layer.",
+  "description_es": "Demos ejecutables del patrón Context Object en Python (dataclass frozen + replace), Java (builder inmutable) y JavaScript (Object.freeze). Cada una muestra un RequestContext construido en el borde y pasado por la capa de servicio.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "context-object-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/context-object-pattern/",
+    "https://stackpractices.com/es/patterns/context-object-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "context-object",
+    "request-context",
+    "python",
+    "java",
+    "javascript",
+    "middleware",
+    "design-pattern"
+  ],
+  "files": [
+    "context_object.py",
+    "context-object.js",
+    "ContextObjectDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
