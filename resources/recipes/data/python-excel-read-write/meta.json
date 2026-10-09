@@ -1,0 +1,22 @@
+{
+  "title": "Read and Write Excel Files in Python (openpyxl + pandas)",
+  "title_es": "Leer y Escribir Excel en Python (openpyxl + pandas)",
+  "description": "Read, write, and format Excel spreadsheets in Python using pandas and openpyxl, with runnable examples for reports, formulas, and large files.",
+  "description_es": "Leer, escribir y formatear hojas de cálculo Excel en Python con pandas y openpyxl, con ejemplos ejecutables de reportes, fórmulas y archivos grandes.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "python-excel-read-write",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-excel-read-write/",
+    "https://openpyxl.readthedocs.io/",
+    "https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html"
+  ],
+  "language": "python",
+  "tags": ["excel", "python", "pandas", "openpyxl", "data-processing"],
+  "files": [
+    "excel_examples.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
