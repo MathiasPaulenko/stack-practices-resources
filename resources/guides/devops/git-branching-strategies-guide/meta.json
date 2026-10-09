@@ -1,0 +1,27 @@
+{
+  "title": "Git Branching Strategies Compared — Companion Resources",
+  "title_es": "Estrategias de Branching en Git Comparadas — Recursos complementarios",
+  "description": "Branch protection rules (GitHub API payload) and a GitHub Flow CI gate workflow that enforce the branching rules described in the guide.",
+  "description_es": "Reglas de protección de ramas (payload de la API de GitHub) y un workflow de gate CI de GitHub Flow que aplica las reglas de branching de la guía.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "git-branching-strategies-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/git-branching-strategies-guide/",
+    "https://stackpractices.com/es/guides/git-branching-strategies-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "git",
+    "branching",
+    "ci-cd",
+    "devops",
+    "github-actions"
+  ],
+  "files": [
+    "branch-protection-rules.json",
+    "github-flow-ci.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

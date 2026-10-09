@@ -1,0 +1,32 @@
+# GitHub Flow CI gate: tests must pass before merge to main.
+# Companion to the branching strategies guide — adapt job names to your stack.
+
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx eslint . --max-warnings 0
+
+# Branch protection: require "ci/tests" and "ci/lint" before merge,
+# 1 approving review, linear history (squash merge), no force pushes.
+# See branch-protection-rules.json for the API payload.
