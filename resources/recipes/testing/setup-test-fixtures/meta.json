@@ -1,0 +1,32 @@
+{
+  "title": "Set Up Test Fixtures (pytest, Jest, JUnit) — Companion Resources",
+  "title_es": "Configurar Fixtures de Test (pytest, Jest, JUnit) — Recursos complementarios",
+  "description": "Runnable fixture setups: pytest conftest.py with scopes and factory fixtures, Jest lifecycle hooks, and JUnit 5 lifecycle annotations.",
+  "description_es": "Setups de fixtures ejecutables: conftest.py de pytest con scopes y fixtures factory, hooks de ciclo de vida de Jest y anotaciones de JUnit 5.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "setup-test-fixtures",
+  "source_urls": [
+    "https://stackpractices.com/recipes/setup-test-fixtures/",
+    "https://stackpractices.com/es/recipes/setup-test-fixtures/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "fixtures",
+    "pytest",
+    "jest",
+    "junit",
+    "conftest"
+  ],
+  "files": [
+    "conftest.py",
+    "test_fixtures.py",
+    "factories.js",
+    "fixtures.test.js",
+    "TestFixtures.java",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
