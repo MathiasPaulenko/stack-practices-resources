@@ -1,0 +1,22 @@
+{
+  "title": "Concurrent HTTP Requests with asyncio.gather and aiohttp",
+  "title_es": "Peticiones HTTP concurrentes con asyncio.gather y aiohttp",
+  "description": "Runnable script fetching multiple HTTP endpoints concurrently with asyncio.gather, a semaphore limit, timeouts and per-result error handling.",
+  "description_es": "Script ejecutable que obtiene varios endpoints HTTP en paralelo con asyncio.gather, límite con semáforo, timeouts y manejo de errores por resultado.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "python-async-gather-concurrent-requests",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-async-gather-concurrent-requests/",
+    "https://docs.python.org/3/library/asyncio-task.html#asyncio.gather",
+    "https://docs.aiohttp.org/en/stable/client.html"
+  ],
+  "language": "python",
+  "tags": ["python", "asyncio", "aiohttp", "concurrency", "http"],
+  "files": [
+    "fetch_all.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
