@@ -1,0 +1,34 @@
+{
+  "title": "Session Management — Secure Sessions Examples",
+  "title_es": "Gestión de Sesiones — Ejemplos de Sesiones Seguras",
+  "description": "Server-side session implementations: Express.js with connect-redis, Spring Boot with @EnableRedisHttpSession, concurrent session limits in Python/Redis, and a FastAPI JWT variant.",
+  "description_es": "Implementaciones de sesiones server-side: Express.js con connect-redis, Spring Boot con @EnableRedisHttpSession, límite de sesiones concurrentes en Python/Redis, y una variante FastAPI con JWT.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "session-management",
+  "source_urls": [
+    "https://stackpractices.com/recipes/session-management/"
+  ],
+  "language": "multi",
+  "tags": [
+    "sessions",
+    "redis",
+    "express",
+    "spring-boot",
+    "fastapi",
+    "csrf",
+    "authentication",
+    "cookies"
+  ],
+  "files": [
+    "meta.json",
+    "express_sessions.js",
+    "concurrent_sessions.py",
+    "fastapi_jwt.py",
+    "SessionConfig.java",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

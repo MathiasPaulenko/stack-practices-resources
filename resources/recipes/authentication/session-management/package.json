@@ -1,0 +1,15 @@
+{
+  "name": "session-management",
+  "private": true,
+  "description": "Express.js session management with Redis (express-session + connect-redis).",
+  "main": "express_sessions.js",
+  "scripts": {
+    "start": "node express_sessions.js"
+  },
+  "dependencies": {
+    "connect-redis": "^7.1.0",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "redis": "^4.7.0"
+  }
+}
