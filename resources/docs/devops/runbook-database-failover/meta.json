@@ -1,0 +1,25 @@
+{
+  "title": "Database Failover Runbook",
+  "title_es": "Runbook de Failover de Base de Datos",
+  "description": "Ready-to-adapt database failover runbook: verification gates, replica promotion for PostgreSQL/MySQL/RDS, DNS and load balancer cutover, automated failover script, Patroni configuration, and post-failover consistency checks.",
+  "description_es": "Runbook de failover de base de datos listo para adaptar: puertas de verificación, promoción de réplicas en PostgreSQL/MySQL/RDS, cambio de DNS y balanceador de carga, script de failover automatizado, configuración de Patroni y verificaciones de consistencia post-failover.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "runbook-database-failover",
+  "source_urls": [
+    "https://stackpractices.com/docs/runbook-database-failover/",
+    "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html#USER_ReadRepl.Promote",
+    "https://patroni.readthedocs.io/en/latest/",
+    "https://www.postgresql.org/docs/current/warm-standby.html"
+  ],
+  "language": "bilingual",
+  "tags": ["database", "failover", "failback", "replication", "postgresql", "mysql", "rds", "patroni", "runbook", "disaster-recovery", "incident-response", "devops"],
+  "files": [
+    "failover-runbook.md",
+    "failover.sh",
+    "patroni.yml",
+    "verify-consistency.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

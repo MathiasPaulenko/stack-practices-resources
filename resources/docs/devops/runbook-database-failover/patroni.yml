@@ -1,0 +1,54 @@
+# patroni.yml
+name: postgres-cluster
+scope: pgsql
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: $(HOSTIP):8008
+
+etcd:
+  hosts: etcd1.internal:2379,etcd2.internal:2379,etcd3.internal:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 20
+    maximum_lag_on_failover: 1048576  # 1MB
+    maximum_lag_on_syncnode: 1048576
+    synchronous_mode: true
+    synchronous_mode_strict: false
+    postgresql:
+      use_pg_rewind: true
+      use_slots: true
+      parameters:
+        wal_level: replica
+        hot_standby: "on"
+        max_wal_senders: 10
+        max_replication_slots: 10
+        wal_keep_size: 128MB  # wal_keep_segments on PostgreSQL < 13
+        archive_mode: "on"
+        archive_timeout: 1800s
+      recovery_conf:
+        restore_command: "wal-g wal-fetch %f %p"
+
+postgresql:
+  listen: 0.0.0.0:5432
+  connect_address: $(HOSTIP):5432
+  data_dir: /var/lib/postgresql/data
+  bin_dir: /usr/lib/postgresql/bin
+  pg_hba:
+    - "replication replicator 0.0.0.0/0 md5"
+    - "host all all 0.0.0.0/0 md5"
+  replication:
+    username: replicator
+    password: "${REPLICATION_PASSWORD}"
+    network: 0.0.0.0/0
+  superuser:
+    username: postgres
+    password: "${POSTGRES_PASSWORD}"
+
+tags:
+  nofailover: false
+  noloadbalance: false
+  clonefrom: false
+  nosync: false
