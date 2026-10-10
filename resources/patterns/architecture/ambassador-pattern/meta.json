@@ -1,0 +1,34 @@
+{
+  "title": "Ambassador Pattern — Infrastructure Proxy Examples",
+  "title_es": "Patrón Ambassador — Ejemplos de Proxy de Infraestructura",
+  "description": "Runnable ambassador proxies for outbound calls: Envoy config, Python and Java implementations with retry, circuit breaking and metrics, plus an Nginx stream config for database pooling.",
+  "description_es": "Proxies ambassador ejecutables para llamadas salientes: config de Envoy, implementaciones en Python y Java con reintentos, circuit breaker y métricas, y una config de Nginx stream para pooling de base de datos.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "ambassador-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/ambassador-pattern/"
+  ],
+  "language": "multi",
+  "tags": [
+    "ambassador",
+    "proxy",
+    "envoy",
+    "nginx",
+    "circuit-breaker",
+    "connection-pooling",
+    "resilience",
+    "microservices"
+  ],
+  "files": [
+    "meta.json",
+    "ambassador_proxy.py",
+    "client_example.py",
+    "AmbassadorClient.java",
+    "envoy-ambassador.yaml",
+    "nginx-stream-ambassador.conf",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
