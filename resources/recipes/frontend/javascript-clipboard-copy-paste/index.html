@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clipboard API demo — StackPractices</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 1.5rem; }
+    button { padding: 0.4rem 0.9rem; cursor: pointer; }
+    input, textarea { width: 100%; padding: 0.4rem; }
+    #editor { min-height: 5rem; border: 1px solid #999; padding: 0.5rem; }
+    #status { color: #0a6; font-weight: 600; }
+    pre { background: #f4f4f4; padding: 0.75rem; }
+    img { display: block; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Clipboard API demo</h1>
+  <p>Serve this page over HTTPS or <code>localhost</code> — the API requires a secure context.</p>
+  <p id="status">Checking permission…</p>
+
+  <section>
+    <h2>Copy text</h2>
+    <input id="copy-input" value="https://example.com/share-link" />
+    <button id="copy-btn">Copy</button>
+  </section>
+
+  <section>
+    <h2>Read text</h2>
+    <button id="paste-btn">Read clipboard</button>
+    <textarea id="output" rows="3" readonly></textarea>
+  </section>
+
+  <section>
+    <h2>Read rich content</h2>
+    <button id="rich-btn">Read HTML / image</button>
+    <pre id="rich-out"></pre>
+    <img id="preview" alt="Pasted preview" />
+  </section>
+
+  <section>
+    <h2>Intercept paste</h2>
+    <div id="editor" contenteditable="true">Paste here — HTML is stripped, images render below.</div>
+    <div id="paste-area"></div>
+  </section>
+
+  <section>
+    <h2>Code block with copy button</h2>
+    <pre><code>const answer = 42;</code></pre>
+  </section>
+
+  <script type="module" src="src/demo.js"></script>
+</body>
+</html>

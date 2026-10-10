@@ -1,0 +1,22 @@
+{
+  "title": "JavaScript Clipboard Copy and Paste",
+  "title_es": "Copiar y Pegar con Clipboard en JavaScript",
+  "description": "Copy and paste text, HTML, and images with the Clipboard API: execCommand fallback, paste event handling, ClipboardItem, and browser permission quirks.",
+  "description_es": "Copia y pega texto, HTML e imágenes con la Clipboard API: fallback execCommand, manejo de eventos paste, ClipboardItem y quirks de permisos de cada navegador.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "javascript-clipboard-copy-paste",
+  "source_urls": [
+    "https://stackpractices.com/recipes/javascript-clipboard-copy-paste/",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API"
+  ],
+  "language": "bilingual",
+  "tags": ["javascript", "clipboard", "browser", "execcommand", "paste-event", "permissions-api"],
+  "files": [
+    "index.html",
+    "src/clipboard.js",
+    "src/demo.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
