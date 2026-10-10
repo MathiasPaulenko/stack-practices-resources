@@ -1,0 +1,12 @@
+{
+  "name": "message-queue-load-leveling-pattern",
+  "version": "1.0.0",
+  "description": "Load-leveling queue example with BullMQ and Redis",
+  "type": "module",
+  "scripts": {
+    "start": "node bullmq_worker.mjs"
+  },
+  "dependencies": {
+    "bullmq": "^5.21.0"
+  }
+}

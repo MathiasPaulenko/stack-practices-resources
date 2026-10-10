@@ -1,0 +1,25 @@
+{
+  "title": "Message Queue Load Leveling Pattern",
+  "title_es": "Patrón Message Queue Load Leveling",
+  "description": "Runnable load-leveling examples: Celery producer/consumer on Redis, BullMQ queue with rate limiter, and a Spring AMQP RabbitMQ listener — producers write at any rate while consumers drain at a controlled pace.",
+  "description_es": "Ejemplos ejecutables de load leveling: productor/consumidor Celery sobre Redis, cola BullMQ con rate limiter, y un listener Spring AMQP en RabbitMQ — el productor escribe a cualquier ritmo y el consumidor drena a ritmo controlado.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "message-queue-load-leveling-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/message-queue-load-leveling-pattern/",
+    "https://stackpractices.com/es/patterns/message-queue-load-leveling-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["message-queue", "load-leveling", "celery", "bullmq", "rabbitmq", "redis", "backpressure"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "celery_consumer.py",
+    "bullmq_worker.mjs",
+    "requirements.txt",
+    "package.json",
+    "pom.xml",
+    "src/main/java/OrderProcessor.java"
+  ]
+}
