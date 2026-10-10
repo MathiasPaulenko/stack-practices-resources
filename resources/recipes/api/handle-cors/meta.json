@@ -1,0 +1,25 @@
+{
+  "title": "Handle CORS in Express, Flask and Spring Boot",
+  "title_es": "Configurar CORS en Express, Flask y Spring Boot",
+  "description": "Runnable CORS middleware examples with an origin allowlist, preflight handling and credentials in Flask and Express, plus a curl script to verify the headers.",
+  "description_es": "Ejemplos ejecutables de middleware CORS con lista de orígenes, manejo de preflight y credenciales en Flask y Express, más un script curl para verificar los encabezados.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "handle-cors",
+  "source_urls": [
+    "https://stackpractices.com/recipes/handle-cors/",
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+    "https://github.com/expressjs/cors"
+  ],
+  "language": "python",
+  "tags": ["cors", "api", "express", "flask", "http", "security"],
+  "files": [
+    "cors_server.py",
+    "cors-server.mjs",
+    "verify-cors.sh",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
