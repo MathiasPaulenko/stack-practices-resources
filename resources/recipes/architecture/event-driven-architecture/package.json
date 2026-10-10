@@ -1,0 +1,15 @@
+{
+  "name": "event-driven-architecture",
+  "version": "1.0.0",
+  "description": "Event-driven architecture examples in Node.js (RabbitMQ consumer, AWS EventBridge producer)",
+  "type": "module",
+  "scripts": {
+    "rabbitmq": "node rabbitmq_consumer.mjs",
+    "eventbridge": "node eventbridge_producer.mjs"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "@aws-sdk/client-eventbridge": "^3.600.0",
+    "@aws-sdk/client-sqs": "^3.600.0"
+  }
+}

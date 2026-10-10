@@ -1,0 +1,28 @@
+{
+  "title": "Event-Driven Architecture — Event Buses and Brokers",
+  "title_es": "Arquitectura Event-Driven — Event Buses y Brokers",
+  "description": "Runnable producer and consumer examples for event-driven systems: Kafka with Python, RabbitMQ with Node.js, AWS EventBridge with Terraform and TypeScript, Kafka Streams event sourcing in Java, and Avro with Schema Registry.",
+  "description_es": "Ejemplos ejecutables de productores y consumidores para sistemas event-driven: Kafka con Python, RabbitMQ con Node.js, AWS EventBridge con Terraform y TypeScript, event sourcing con Kafka Streams en Java, y Avro con Schema Registry.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "event-driven-architecture",
+  "source_urls": [
+    "https://stackpractices.com/recipes/event-driven-architecture/",
+    "https://stackpractices.com/es/recipes/event-driven-architecture/"
+  ],
+  "language": "bilingual",
+  "tags": ["event-driven", "kafka", "rabbitmq", "eventbridge", "aws", "avro", "terraform", "architecture"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "kafka_publisher.py",
+    "schema_registry_avro.py",
+    "requirements.txt",
+    "rabbitmq_consumer.mjs",
+    "eventbridge_producer.mjs",
+    "package.json",
+    "eventbridge.tf",
+    "pom.xml",
+    "src/main/java/OrderEventStore.java"
+  ]
+}
