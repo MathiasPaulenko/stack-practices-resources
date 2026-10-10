@@ -1,0 +1,25 @@
+{
+  "title": "Parse PDF Files in Python, JavaScript and Java",
+  "title_es": "Extraer Texto de PDFs en Python, JavaScript y Java",
+  "description": "Extract text, tables and metadata from PDF files in Python and Node.js, including encrypted files, with runnable examples.",
+  "description_es": "Extrae texto, tablas y metadatos de archivos PDF en Python y Node.js, incluidos archivos cifrados, con ejemplos ejecutables.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-pdf-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-pdf-files/",
+    "https://pypdf.readthedocs.io/",
+    "https://github.com/jsvine/pdfplumber",
+    "https://pikepdf.readthedocs.io/"
+  ],
+  "language": "python",
+  "tags": ["pdf", "python", "javascript", "pypdf", "pdfplumber", "pikepdf"],
+  "files": [
+    "pdf_examples.py",
+    "pdf_examples.mjs",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
