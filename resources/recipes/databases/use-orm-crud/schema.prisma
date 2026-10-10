@@ -1,0 +1,29 @@
+// Prisma schema for the User/Post CRUD example.
+// Swap the datasource provider for sqlite/postgresql/mysql as needed.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  role  String  @default("user")
+  posts Post[]
+
+  @@index([role])
+}
+
+model Post {
+  id       Int    @id @default(autoincrement())
+  title    String
+  authorId Int
+  author   User   @relation(fields: [authorId], references: [id])
+
+  @@index([authorId])
+}

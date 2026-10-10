@@ -1,0 +1,21 @@
+{
+  "name": "use-orm-crud",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ORM CRUD examples: Prisma (JavaScript) and TypeORM (TypeScript)",
+  "scripts": {
+    "crud:prisma": "node javascript_prisma_crud.js",
+    "crud:typeorm": "ts-node typescript_typeorm_crud.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.0.0",
+    "better-sqlite3": "^11.0.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "prisma": "^6.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}

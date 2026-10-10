@@ -1,0 +1,30 @@
+{
+  "title": "ORM CRUD with SQLAlchemy, Prisma & Hibernate",
+  "title_es": "CRUD con ORM: SQLAlchemy, Prisma y Hibernate",
+  "description": "Runnable CRUD examples for the same User/Post model in SQLAlchemy (Python), Prisma (JavaScript), Hibernate/JPA (Java), plus Django ORM and TypeORM variants.",
+  "description_es": "Ejemplos CRUD ejecutables del mismo modelo User/Post en SQLAlchemy (Python), Prisma (JavaScript), Hibernate/JPA (Java), con variantes de Django ORM y TypeORM.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "use-orm-crud",
+  "source_urls": [
+    "https://stackpractices.com/recipes/use-orm-crud/",
+    "https://docs.sqlalchemy.org/en/20/orm/quickstart.html",
+    "https://www.prisma.io/docs/orm/prisma-client/queries/crud",
+    "https://docs.jboss.org/hibernate/orm/current/userguide/html_single/Hibernate_User_Guide.html"
+  ],
+  "language": ["python", "javascript", "java", "typescript", "prisma", "sql"],
+  "tags": ["database", "orm", "crud", "sqlalchemy", "prisma", "hibernate", "python", "javascript", "java"],
+  "files": [
+    "python_sqlalchemy_crud.py",
+    "javascript_prisma_crud.js",
+    "java_jpa_crud.java",
+    "django_orm_crud.py",
+    "typescript_typeorm_crud.ts",
+    "schema.prisma",
+    "sql_schema.sql",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
