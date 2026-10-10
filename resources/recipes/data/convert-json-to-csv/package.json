@@ -1,0 +1,13 @@
+{
+  "name": "convert-json-to-csv",
+  "version": "1.0.0",
+  "description": "JSON to CSV conversion examples in Node.js",
+  "type": "module",
+  "scripts": {
+    "manual": "node convert_json_manual.mjs",
+    "json2csv": "node convert_json_json2csv.mjs"
+  },
+  "dependencies": {
+    "@json2csv/plainjs": "^0.5.3"
+  }
+}

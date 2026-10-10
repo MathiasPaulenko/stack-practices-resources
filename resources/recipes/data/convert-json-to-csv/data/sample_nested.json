@@ -1,0 +1,5 @@
+[
+  {"user": {"name": "Alice", "country": "ES"}, "orders": [{"id": 1, "total": 99.5}]},
+  {"user": {"name": "Bob", "country": "AR"}, "orders": [{"id": 2, "total": 45.0}, {"id": 3, "total": 10.25}]},
+  {"user": {"name": "Carol", "country": "MX"}, "orders": []}
+]

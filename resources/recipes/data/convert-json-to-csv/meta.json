@@ -1,0 +1,32 @@
+{
+  "title": "Convert JSON to CSV",
+  "title_es": "Convertir JSON a CSV",
+  "description": "Runnable Python, JavaScript, and Java examples for converting JSON data to CSV: flat arrays, nested objects, JSON Lines, and streaming large files.",
+  "description_es": "Ejemplos ejecutables en Python, JavaScript y Java para convertir datos JSON a CSV: arrays planos, objetos anidados, JSON Lines y streaming de archivos grandes.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "convert-json-to-csv",
+  "source_urls": [
+    "https://stackpractices.com/recipes/convert-json-to-csv/",
+    "https://stackpractices.com/es/recipes/convert-json-to-csv/"
+  ],
+  "language": "bilingual",
+  "tags": ["json", "csv", "conversion", "python", "javascript", "java", "data-processing"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "data/sample.json",
+    "data/sample_nested.json",
+    "data/sample.jsonl",
+    "convert_json_std.py",
+    "convert_json_pandas.py",
+    "convert_json_stream.py",
+    "convert_jsonl_std.py",
+    "requirements.txt",
+    "convert_json_manual.mjs",
+    "convert_json_json2csv.mjs",
+    "package.json",
+    "pom.xml",
+    "src/main/java/JsonToCsv.java"
+  ]
+}
