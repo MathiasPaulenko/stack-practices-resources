@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notification client</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+    #status { font-weight: 600; }
+    #status.connected { color: #15803d; }
+    #status.disconnected { color: #b91c1c; }
+    ul { list-style: none; padding: 0; }
+    li { background: #f1f5f9; border-radius: 6px; padding: 0.5rem 0.75rem; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Notification client</h1>
+  <p>Status: <span id="status">connecting…</span></p>
+  <ul id="notifications"></ul>
+
+  <script>
+    // Room comes from ?room= in the page URL, defaulting to "orders".
+    const room = new URLSearchParams(location.search).get('room') || 'orders';
+    const statusEl = document.getElementById('status');
+    const list = document.getElementById('notifications');
+    let retries = 0;
+
+    function showNotification(text) {
+      const li = document.createElement('li');
+      li.textContent = `${new Date().toLocaleTimeString()} — ${text}`;
+      list.prepend(li);
+    }
+
+    function connect() {
+      const ws = new WebSocket(`ws://localhost:8080/ws?room=${room}`);
+      statusEl.textContent = 'connecting…';
+      statusEl.className = '';
+
+      ws.onopen = () => {
+        retries = 0;
+        statusEl.textContent = `connected to room "${room}"`;
+        statusEl.className = 'connected';
+      };
+      ws.onmessage = (event) => showNotification(event.data);
+      ws.onclose = () => {
+        statusEl.textContent = 'disconnected — retrying…';
+        statusEl.className = 'disconnected';
+        const delay = Math.min(1000 * 2 ** retries++, 30_000);
+        setTimeout(connect, delay);
+      };
+    }
+
+    connect();
+  </script>
+</body>
+</html>

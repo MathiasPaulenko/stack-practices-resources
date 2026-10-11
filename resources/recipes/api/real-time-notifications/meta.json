@@ -1,0 +1,30 @@
+{
+  "title": "Real-Time Notifications with WebSockets — Companion Resources",
+  "title_es": "Notificaciones en tiempo real con WebSockets — Recursos complementarios",
+  "description": "Runnable real-time notification demo: a Node.js WebSocket server with Redis pub/sub fan-out, a browser client with reconnection, and a docker-compose Redis for local testing.",
+  "description_es": "Demo ejecutable de notificaciones en tiempo real: servidor WebSocket en Node.js con fan-out por Redis pub/sub, cliente de navegador con reconexión y un docker-compose con Redis para pruebas locales.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "real-time-notifications",
+  "source_urls": [
+    "https://stackpractices.com/recipes/real-time-notifications/",
+    "https://stackpractices.com/es/recipes/real-time-notifications/"
+  ],
+  "language": "javascript",
+  "tags": [
+    "websockets",
+    "redis",
+    "pub-sub",
+    "real-time",
+    "notifications"
+  ],
+  "files": [
+    "server.js",
+    "client.html",
+    "publish.js",
+    "package.json",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

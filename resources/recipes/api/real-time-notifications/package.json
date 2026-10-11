@@ -1,0 +1,15 @@
+{
+  "name": "real-time-notifications",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebSocket + Redis pub/sub notification demo for the StackPractices recipe",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "publish": "node publish.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.0",
+    "ws": "^8.18.0"
+  }
+}
