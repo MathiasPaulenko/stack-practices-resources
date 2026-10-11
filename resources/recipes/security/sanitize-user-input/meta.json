@@ -1,0 +1,28 @@
+{
+  "title": "Sanitize User Input — Companion Resources",
+  "title_es": "Sanitizar Input de Usuario — Recursos complementarios",
+  "description": "Runnable input-sanitization demos: a Node.js path-traversal guard, a NoSQL query operator stripper, and a Python magic-byte upload validator.",
+  "description_es": "Demos ejecutables de sanitización de input: un guard de path traversal en Node.js, un limpiador de operadores NoSQL y un validador de uploads por magic bytes en Python.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "sanitize-user-input",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sanitize-user-input/",
+    "https://stackpractices.com/es/recipes/sanitize-user-input/"
+  ],
+  "language": "javascript",
+  "tags": [
+    "sanitization",
+    "input-validation",
+    "security",
+    "path-traversal",
+    "nosql-injection"
+  ],
+  "files": [
+    "path_traversal_guard.js",
+    "nosql_sanitize.js",
+    "validate_upload.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
