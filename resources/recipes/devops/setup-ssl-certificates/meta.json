@@ -1,0 +1,30 @@
+{
+  "title": "Setup SSL Certificates with Let's Encrypt — Companion Resources",
+  "title_es": "Configurar certificados SSL con Let's Encrypt — Recursos complementarios",
+  "description": "Runnable Let's Encrypt setup: docker-compose with nginx + certbot, an nginx.conf ready for the ACME challenge, a Cloudflare credentials template, and a cert-manager ClusterIssuer/Ingress example.",
+  "description_es": "Setup ejecutable de Let's Encrypt: docker-compose con nginx + certbot, un nginx.conf listo para el desafío ACME, una plantilla de credenciales de Cloudflare y un ejemplo de ClusterIssuer/Ingress de cert-manager.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "setup-ssl-certificates",
+  "source_urls": [
+    "https://stackpractices.com/recipes/setup-ssl-certificates/",
+    "https://stackpractices.com/es/recipes/setup-ssl-certificates/"
+  ],
+  "language": "yaml",
+  "tags": [
+    "ssl",
+    "tls",
+    "lets-encrypt",
+    "certbot",
+    "nginx",
+    "https"
+  ],
+  "files": [
+    "docker-compose.yml",
+    "nginx.conf",
+    "cloudflare.ini.example",
+    "cert-manager.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

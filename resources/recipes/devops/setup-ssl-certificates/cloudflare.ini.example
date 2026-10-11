@@ -1,0 +1,2 @@
+# Copy to ~/.secrets/cloudflare.ini and set permissions: chmod 600
+dns_cloudflare_api_token = your-api-token-here
