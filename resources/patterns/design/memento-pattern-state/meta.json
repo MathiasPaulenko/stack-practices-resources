@@ -1,0 +1,20 @@
+{
+  "title": "Memento Pattern for State Snapshot and Restoration",
+  "title_es": "Patrón Memento para Snapshots y Restauración de Estado",
+  "description": "Companion code for the Memento pattern: opaque snapshots with an Originator/Caretaker split — a text editor undo stack, a game checkpoint system, and a bounded multi-step form wizard, runnable with Node type stripping.",
+  "description_es": "Código companion del patrón Memento: snapshots opacos con separación Originator/Caretaker — pila de undo de editor de texto, sistema de checkpoints de juego y wizard de formulario acotado, ejecutable con type stripping de Node.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "memento-pattern-state",
+  "source_urls": [
+    "https://stackpractices.com/patterns/memento-pattern-state/"
+  ],
+  "language": "bilingual",
+  "tags": ["design", "memento", "state-snapshot", "undo-redo", "typescript", "behavioral-patterns", "node-test"],
+  "files": [
+    "memento_history.ts",
+    "test_memento_history.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
