@@ -1,0 +1,37 @@
+{
+  "title": "Graceful Shutdown Pattern — Companion Code",
+  "title_es": "Patrón Graceful Shutdown — Código complementario",
+  "description": "Graceful shutdown implementations for HTTP servers, background workers, and WebSocket services: signal handling, request draining, load balancer deregistration, Spring Boot config, Kubernetes manifests, and a phased shutdown variant.",
+  "description_es": "Implementaciones de graceful shutdown para servidores HTTP, workers en background y servicios WebSocket: manejo de señales, drenado de peticiones, baja del load balancer, config de Spring Boot, manifiestos de Kubernetes y una variante de shutdown por fases.",
+  "type": "patterns",
+  "topic": "resilience",
+  "slug": "graceful-shutdown-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/graceful-shutdown-pattern/",
+    "https://stackpractices.com/es/patterns/graceful-shutdown-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "javascript",
+    "java",
+    "spring-boot",
+    "kubernetes",
+    "graceful-shutdown",
+    "resilience",
+    "sigterm"
+  ],
+  "files": [
+    "shutdown/graceful.py",
+    "shutdown/graceful.js",
+    "shutdown/GracefulShutdownConfig.java",
+    "shutdown/ResourceCleanupHook.java",
+    "shutdown/worker.py",
+    "shutdown/deregister.py",
+    "shutdown/phased.py",
+    "shutdown/websocket.js",
+    "shutdown/k8s-graceful-shutdown.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
