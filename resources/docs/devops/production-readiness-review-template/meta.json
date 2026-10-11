@@ -1,0 +1,29 @@
+{
+  "title": "Production Readiness Review Template — Companion Resources",
+  "title_es": "Plantilla de Production Readiness Review — Recursos complementarios",
+  "description": "Blank fillable PRR checklist covering 10 operational domains (observability, reliability, deployment, security, data, docs, ops) plus a complete worked example with findings and sign-off.",
+  "description_es": "Checklist PRR rellenable que cubre 10 dominios operacionales (observabilidad, resiliencia, despliegue, seguridad, datos, docs, ops) más un ejemplo trabajado completo con hallazgos y sign-off.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "production-readiness-review-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/production-readiness-review-template/",
+    "https://stackpractices.com/es/docs/production-readiness-review-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "production-readiness",
+    "checklist",
+    "sre",
+    "deployment",
+    "template"
+  ],
+  "files": [
+    "production-readiness-review-template.md",
+    "production-readiness-review-template.es.md",
+    "example-filled.md",
+    "example-filled.es.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
