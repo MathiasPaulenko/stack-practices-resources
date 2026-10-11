@@ -1,0 +1,23 @@
+{
+  "title": "Structured Logging: Emit JSON Logs with Consistent Fields",
+  "title_es": "Structured Logging: logs JSON con campos consistentes",
+  "description": "Companion code for the structured logging pattern: a structlog setup with bound context and redaction, a zero-dependency stdlib JSON formatter, a non-blocking queue-based logger, and a pino example for Node.js.",
+  "description_es": "Código companion del patrón de structured logging: configuración de structlog con contexto bindeado y redacción, un formatter JSON de stdlib sin dependencias, un logger no bloqueante basado en queue, y un ejemplo con pino para Node.js.",
+  "type": "patterns",
+  "topic": "observability",
+  "slug": "structured-logging-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/structured-logging-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["observability", "structured-logging", "json-logs", "structlog", "pino", "logging", "python", "javascript"],
+  "files": [
+    "structlog_example.py",
+    "json_formatter.py",
+    "async_logging.py",
+    "logging_pino.js",
+    "test_structured_logging.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
