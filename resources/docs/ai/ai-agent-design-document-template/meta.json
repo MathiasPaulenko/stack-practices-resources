@@ -1,0 +1,20 @@
+{
+  "title": "AI Agent Design Document Template",
+  "title_es": "Plantilla de documento de diseño de agente IA",
+  "description": "Blank fillable template plus a filled example (OrderBot support agent) for the AI agent design document: architecture, tools, memory, guardrails, evaluation, and deployment sections.",
+  "description_es": "Plantilla rellenable en blanco más un ejemplo completo (agente de soporte OrderBot) del documento de diseño de agente IA: arquitectura, tools, memoria, guardrails, evaluación y despliegue.",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-agent-design-document-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/ai-agent-design-document-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["ai", "agents", "design-document", "template", "llm", "guideline"],
+  "files": [
+    "template.md",
+    "example-customer-support-agent.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
