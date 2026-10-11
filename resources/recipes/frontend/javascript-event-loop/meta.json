@@ -1,0 +1,28 @@
+{
+  "title": "JavaScript Event Loop — Companion Resources",
+  "title_es": "Event Loop de JavaScript — Recursos complementarios",
+  "description": "Runnable Node.js demos of event loop internals: scheduling order of microtasks vs macrotasks, chunked long-task processing, and an event-loop lag monitor.",
+  "description_es": "Demos ejecutables en Node.js del event loop: orden de scheduling de microtareas vs macrotareas, procesamiento por chunks de tareas largas y un monitor de lag del loop.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "javascript-event-loop",
+  "source_urls": [
+    "https://stackpractices.com/recipes/javascript-event-loop/",
+    "https://stackpractices.com/es/recipes/javascript-event-loop/"
+  ],
+  "language": "javascript",
+  "tags": [
+    "event-loop",
+    "async",
+    "microtask",
+    "node",
+    "performance"
+  ],
+  "files": [
+    "event_loop_order.js",
+    "chunked_processing.js",
+    "event_loop_lag.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
