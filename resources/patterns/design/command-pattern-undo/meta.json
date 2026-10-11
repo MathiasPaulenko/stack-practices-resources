@@ -1,0 +1,20 @@
+{
+  "title": "Command Pattern with Undo/Redo in TypeScript",
+  "title_es": "Command Pattern con Undo/Redo en TypeScript",
+  "description": "Companion code for the Command pattern with undo/redo: a two-stack CommandHistory, inverse commands for a text document, MacroCommand grouping, async CommandQueue, and bounded history — runnable with Node type stripping.",
+  "description_es": "Código companion del patrón Command con undo/redo: CommandHistory con dos pilas, comandos inversos para un documento de texto, MacroCommand, CommandQueue async e historial acotado — ejecutable con type stripping de Node.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "command-pattern-undo",
+  "source_urls": [
+    "https://stackpractices.com/patterns/command-pattern-undo/"
+  ],
+  "language": "bilingual",
+  "tags": ["design", "command-pattern", "undo-redo", "typescript", "behavioral-patterns", "node-test"],
+  "files": [
+    "command_history.ts",
+    "test_command_history.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
