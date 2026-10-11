@@ -1,0 +1,21 @@
+{
+  "title": "Event Sourcing in Serverless Architectures",
+  "title_es": "Event Sourcing en Arquitecturas Serverless",
+  "description": "Event sourcing with AWS Lambda and DynamoDB Streams: an append-only event store with optimistic concurrency, a stream-triggered projection handler, and aggregate reconstruction by event replay.",
+  "description_es": "Event sourcing con AWS Lambda y DynamoDB Streams: un event store append-only con concurrencia optimista, un handler de proyección disparado por el stream y reconstrucción del agregado por replay de eventos.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "event-sourcing-serverless",
+  "source_urls": [
+    "https://stackpractices.com/recipes/event-sourcing-serverless/",
+    "https://stackpractices.com/es/recipes/event-sourcing-serverless/"
+  ],
+  "language": "typescript,python",
+  "tags": ["serverless", "event-sourcing", "cqrs", "aws-lambda", "dynamodb", "faas"],
+  "files": [
+    "sourcing/eventstore.ts",
+    "sourcing/projection.ts",
+    "sourcing/aggregate.ts",
+    "sourcing/eventstore.py"
+  ]
+}
