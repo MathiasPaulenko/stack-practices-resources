@@ -1,0 +1,31 @@
+# GitHub Actions: Build and update GitOps repo
+name: Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and push image
+        run: |
+          docker build -t ghcr.io/myorg/api:${{ github.sha }} .
+          echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+          docker push ghcr.io/myorg/api:${{ github.sha }}
+
+      - name: Update GitOps repo
+        run: |
+          git clone https://github.com/myorg/k8s-manifests.git
+          cd k8s-manifests
+
+          # Update image tag in manifest
+          sed -i "s|ghcr.io/myorg/api:.*|ghcr.io/myorg/api:${{ github.sha }}|" production/api-service/deployment.yaml
+
+          git config user.name "CI Bot"
+          git config user.email "ci@stackpractices.com"
+          git add .
+          git commit -m "Deploy api:${{ github.sha }}"
+          git push

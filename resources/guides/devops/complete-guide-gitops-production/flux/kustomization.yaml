@@ -1,0 +1,33 @@
+# clusters/production/api-service.yaml
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: api-service
+  namespace: flux-system
+spec:
+  interval: 1m  # Reconcile every minute
+  path: ./production/api-service
+  sourceRef:
+    kind: GitRepository
+    name: k8s-manifests
+  prune: true  # Delete resources removed from Git
+  wait: true   # Wait for resources to be ready
+  timeout: 5m
+  targetNamespace: production
+
+  # Health checks
+  healthChecks:
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: api
+      namespace: production
+    - apiVersion: v1
+      kind: Service
+      name: api-service
+      namespace: production
+
+  # Post-build variable substitution
+  postBuild:
+    substitute:
+      cluster_name: production
+      cluster_region: us-east-1

@@ -1,0 +1,43 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: production
+  namespace: argocd
+spec:
+  description: Production environment applications
+
+  # Allowed source repositories
+  sourceRepos:
+    - https://github.com/myorg/k8s-manifests
+    - https://github.com/myorg/api-config
+
+  # Allowed destination namespaces
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: production
+    - server: https://kubernetes.default.svc
+      namespace: production-*
+
+  # Allowed cluster resources
+  clusterResourceWhitelist:
+    - group: ''
+      kind: Namespace
+    - group: rbac.authorization.k8s.io
+      kind: RoleBinding
+
+  # Denied resources
+  clusterResourceBlacklist:
+    - group: ''
+      kind: Node
+    - group: ''
+      kind: PersistentVolume
+
+  # Roles for team access
+  roles:
+    - name: platform-team
+      description: Platform team access
+      policies:
+        - p, proj:production:platform-team, applications, get, production/*, allow
+        - p, proj:production:platform-team, applications, sync, production/*, allow
+      groups:
+        - platform-team

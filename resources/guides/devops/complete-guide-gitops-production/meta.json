@@ -1,0 +1,29 @@
+{
+  "title": "Complete Guide to GitOps in Production",
+  "title_es": "Guía Completa de GitOps en Producción",
+  "description": "Production-ready GitOps manifests for ArgoCD and Flux: Application, AppProject, ApplicationSet, Kustomization, HelmRelease, SOPS secrets, canary rollouts and CI/CD workflow.",
+  "description_es": "Manifiestos GitOps listos para producción con ArgoCD y Flux: Application, AppProject, ApplicationSet, Kustomization, HelmRelease, secretos SOPS, rollouts canary y workflow de CI/CD.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-gitops-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-gitops-production/",
+    "https://stackpractices.com/es/guides/complete-guide-gitops-production/"
+  ],
+  "language": ["yaml", "bash"],
+  "tags": ["gitops", "argocd", "flux", "kubernetes", "sops", "progressive-delivery", "multi-cluster", "ci-cd"],
+  "files": [
+    "argocd/application.yaml",
+    "argocd/appproject-production.yaml",
+    "argocd/applicationset-multi-cluster.yaml",
+    "flux/gitrepository.yaml",
+    "flux/kustomization.yaml",
+    "flux/kustomization-sops.yaml",
+    "flux/helmrelease-redis.yaml",
+    "progressive-delivery/rollout-canary.yaml",
+    "progressive-delivery/analysis-template.yaml",
+    "progressive-delivery/flagger-canary.yaml",
+    "secrets/api-secrets.sops.yaml",
+    "ci/deploy-workflow.yaml"
+  ]
+}

@@ -1,0 +1,47 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: api
+  namespace: production
+spec:
+  replicas: 10
+  strategy:
+    canary:
+      canaryService: api-canary
+      stableService: api-stable
+      trafficRouting:
+        nginx:
+          stableIngress: api-stable-ingress
+      steps:
+        - setWeight: 10
+        - pause: { duration: 2m }
+        - setWeight: 25
+        - pause: { duration: 2m }
+        - setWeight: 50
+        - pause: { duration: 5m }
+        - setWeight: 75
+        - pause: { duration: 5m }
+      analysis:
+        templates:
+          - templateName: success-rate
+        startingStep: 2  # Start analysis after 25% canary
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          # CI sets the immutable tag on every release — never "latest"
+          image: ghcr.io/myorg/api:v1.4.2
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
