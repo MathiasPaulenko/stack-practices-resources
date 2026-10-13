@@ -1,0 +1,23 @@
+# docker-compose.profiles.yml — Optional services gated behind Compose profiles.
+# Start with: docker compose --profile debug --profile loadtest up
+services:
+  app:
+    image: my-app
+
+  db:
+    image: postgres:16
+
+  debug-tools:
+    # Only started with --profile debug
+    profiles:
+      - debug
+    image: nicolaka/netshoot
+    network_mode: "service:app"
+
+  load-test:
+    # Only started with --profile loadtest
+    profiles:
+      - loadtest
+    image: grafana/k6
+    volumes:
+      - ./tests:/scripts

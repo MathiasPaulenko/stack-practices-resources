@@ -1,0 +1,58 @@
+# docker-compose.prod.yml — Production overrides. Load explicitly:
+# docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+services:
+  app:
+    build:
+      target: production
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - LOG_LEVEL=warn
+      - DATABASE_URL=postgres://myapp:${DB_PASSWORD}@db:5432/myapp
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M
+        reservations:
+          cpus: "0.5"
+          memory: 256M
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    secrets:
+      - db-password
+      - api-key
+
+  db:
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+    secrets:
+      - db-password
+
+  redis:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+
+secrets:
+  db-password:
+    file: ./secrets/db-password.txt
+  api-key:
+    file: ./secrets/api-key.txt

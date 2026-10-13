@@ -1,0 +1,23 @@
+# docker-compose.test.yml — Test environment. Load explicitly:
+# docker compose -f docker-compose.yml -f docker-compose.test.yml up --abort-on-container-exit
+services:
+  app:
+    build:
+      target: test
+    environment:
+      - NODE_ENV=test
+      - DATABASE_URL=postgres://myapp:testpass@db:5432/testdb
+    command: npm test
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    environment:
+      POSTGRES_DB: testdb
+      POSTGRES_PASSWORD: testpass
+    # Drop the persistent volume — tests get an ephemeral database
+    volumes: !reset []
+
+  # redis doesn't exist in the test environment
+  redis: !reset null

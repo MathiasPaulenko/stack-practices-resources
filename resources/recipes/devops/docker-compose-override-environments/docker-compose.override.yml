@@ -1,0 +1,35 @@
+# docker-compose.override.yml — Auto-loaded by `docker compose up` for local dev.
+services:
+  app:
+    build:
+      target: dev  # Multi-stage build dev target
+    ports:
+      - "3000:3000"
+      - "9229:9229"  # Node.js debugger
+    environment:
+      - NODE_ENV=development
+      - LOG_LEVEL=debug
+    volumes:
+      - .:/app           # Hot reload
+      - /app/node_modules  # Prevent host overwrite
+    command: npm run dev  # Override entrypoint
+
+  db:
+    ports:
+      - "5432:5432"  # Expose for local tools
+    environment:
+      POSTGRES_PASSWORD: devpassword
+
+  # Dev-only services
+  mailhog:
+    image: mailhog/mailhog:latest
+    ports:
+      - "1025:1025"  # SMTP
+      - "8025:8025"  # Web UI
+
+  adminer:
+    image: adminer:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
