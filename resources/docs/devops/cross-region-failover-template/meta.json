@@ -1,0 +1,25 @@
+{
+  "title": "Cross-Region Failover Test Template",
+  "title_es": "Plantilla de Prueba de Failover Cross-Region",
+  "description": "Execution template for a cross-region failover drill: service metadata, roles, go/no-go gates, abort criteria, timed failover and failback steps, evidence capture, and a guarded Bash script for Aurora Global Database + Route 53.",
+  "description_es": "Plantilla de ejecución para un simulacro de failover entre regiones: metadatos del servicio, roles, puertas go/no-go, criterios de aborto, pasos de failover y failback cronometrados, captura de evidencias y un script Bash con guardas para Aurora Global Database + Route 53.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "cross-region-failover-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/cross-region-failover-template/",
+    "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html",
+    "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover.html",
+    "https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route-53-recovery.html",
+    "https://cloud.google.com/architecture/disaster-recovery"
+  ],
+  "language": "bilingual",
+  "tags": ["failover", "failback", "disaster-recovery", "multi-region", "rto", "rpo", "runbook", "aurora", "route53", "drill", "devops"],
+  "files": [
+    "failover-test-template.md",
+    "failover-test-example.md",
+    "failover.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
