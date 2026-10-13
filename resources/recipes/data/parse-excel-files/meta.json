@@ -1,0 +1,26 @@
+{
+  "title": "Parse Excel Files in Python, JavaScript, and Java",
+  "title_es": "Analizar Archivos Excel en Python, JavaScript y Java",
+  "description": "Read and write Excel (.xlsx) files in Python, JavaScript, and Java with openpyxl, SheetJS, and Apache POI, with runnable examples for each language.",
+  "description_es": "Leer y escribir archivos Excel (.xlsx) en Python, JavaScript y Java con openpyxl, SheetJS y Apache POI, con ejemplos ejecutables para cada lenguaje.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-excel-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-excel-files/",
+    "https://openpyxl.readthedocs.io/",
+    "https://docs.sheetjs.com/",
+    "https://poi.apache.org/"
+  ],
+  "language": "bilingual",
+  "tags": ["excel", "xlsx", "python", "javascript", "java", "openpyxl", "sheetjs", "apache-poi"],
+  "files": [
+    "excel_parse.py",
+    "excel_parse.mjs",
+    "ExcelParser.java",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
