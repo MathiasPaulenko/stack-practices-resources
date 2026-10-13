@@ -1,0 +1,22 @@
+{
+  "title": "Post-Deployment Verification Checklist Template",
+  "title_es": "Plantilla de Checklist Post-Deploy",
+  "description": "Post-deployment verification checklist template covering health checks, smoke tests, metrics validation, security and log review, rollback readiness, and sign-off. Includes a blank template and a filled example.",
+  "description_es": "Plantilla de checklist de verificación post-deploy con health checks, smoke tests, validación de métricas, revisión de seguridad y logs, preparación de rollback y sign-off. Incluye plantilla en blanco y ejemplo completado.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "post-deployment-checklist-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/post-deployment-checklist-template/",
+    "https://sre.google/workbook/release-engineering/",
+    "https://argoproj.github.io/rollouts/"
+  ],
+  "language": "bilingual",
+  "tags": ["post-deployment", "checklist", "devops", "verification", "rollback", "smoke-tests", "release"],
+  "files": [
+    "post-deployment-checklist-template.md",
+    "post-deployment-checklist-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
