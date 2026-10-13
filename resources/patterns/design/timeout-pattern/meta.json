@@ -1,0 +1,30 @@
+{
+  "title": "Timeout Pattern — Runnable Implementations",
+  "title_es": "Patrón Timeout — Implementaciones ejecutables",
+  "description": "Copy-paste ready timeout wrappers: decorator with deadline, budget propagation through a call chain, and real cancellation primitives.",
+  "description_es": "Wrappers de timeout listos para copiar: decorador con deadline, propagación de presupuesto por la cadena de llamadas y primitivas de cancelación real.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "timeout-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/timeout-pattern/",
+    "es": "https://stackpractices.com/es/patterns/timeout-pattern/"
+  },
+  "language": "bilingual",
+  "tags": [
+    "timeout",
+    "resilience",
+    "design-pattern",
+    "deadline",
+    "cancellation",
+    "python",
+    "async"
+  ],
+  "files": [
+    "with_timeout.py",
+    "deadline_budget.py",
+    "test_timeouts.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
