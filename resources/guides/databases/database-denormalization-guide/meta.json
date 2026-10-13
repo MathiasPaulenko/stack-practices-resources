@@ -1,0 +1,29 @@
+{
+  "title": "Database Denormalization Guide — Companion Files",
+  "title_es": "Guía de desnormalización de bases de datos — Archivos complementarios",
+  "description": "Runnable SQLite demo of denormalization patterns: a posts/likes counter kept consistent by a trigger, a stored computed column, an aggregate summary table, and the drift-check query that recomputes denormalized values from source. Mirrors the SQL examples in the guide, adapted to SQLite so it runs without a database server.",
+  "description_es": "Demo ejecutable en SQLite de los patrones de desnormalización: un contador de posts/likes mantenido consistente por un trigger, una columna computada materializada, una tabla resumen de agregados y la consulta de divergencias que recalcula los valores desnormalizados desde la fuente. Replica los ejemplos SQL de la guía, adaptados a SQLite para ejecutarse sin servidor de base de datos.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "database-denormalization-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/database-denormalization-guide/",
+    "https://stackpractices.com/es/guides/database-denormalization-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "denormalization",
+    "sql",
+    "sqlite",
+    "triggers",
+    "materialized-views",
+    "database-design",
+    "guide"
+  ],
+  "files": [
+    "denormalization_demo.sql",
+    "run_demo.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
