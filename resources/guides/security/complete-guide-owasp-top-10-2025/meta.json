@@ -1,0 +1,32 @@
+{
+  "title": "OWASP Top 10 2025 — Companion Files",
+  "title_es": "OWASP Top 10 2025 — Archivos complementarios",
+  "description": "Runnable mitigations for the OWASP Top 10 2025 categories: SSRF protection, server-side access control, security logging with alerting, fail-closed error handling, and pytest tests that exercise each control.",
+  "description_es": "Mitigaciones ejecutables para las categorías del OWASP Top 10 2025: protección SSRF, control de acceso del lado del servidor, logging de seguridad con alertas, manejo de errores fail-closed y tests de pytest que ejercitan cada control.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-owasp-top-10-2025",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-owasp-top-10-2025/",
+    "https://stackpractices.com/es/guides/complete-guide-owasp-top-10-2025/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "owasp",
+    "owasp-top-10-2025",
+    "security",
+    "ssrf",
+    "access-control",
+    "python",
+    "pytest"
+  ],
+  "files": [
+    "ssrf_protection.py",
+    "access_control.py",
+    "security_logging.py",
+    "fail_closed.py",
+    "test_mitigations.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
