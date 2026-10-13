@@ -1,0 +1,29 @@
+{
+  "title": "CDN Cache Invalidation Strategies — Companion Files",
+  "title_es": "Estrategias de invalidación de caché CDN — Archivos complementarios",
+  "description": "Runnable examples of CDN cache invalidation: Cloudflare URL and cache-tag purge, Fastly surrogate-key and soft purge, AWS CloudFront invalidations, a FastAPI webhook endpoint for CMS-triggered purges, and a deploy hook that invalidates everything.",
+  "description_es": "Ejemplos ejecutables de invalidación de caché CDN: purge por URL y por cache-tag en Cloudflare, surrogate keys y soft purge en Fastly, invalidaciones en AWS CloudFront, un webhook FastAPI para purges disparados por CMS y un hook de despliegue que invalida todo.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "cdn-cache-invalidation-strategies",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cdn-cache-invalidation-strategies/",
+    "https://stackpractices.com/es/recipes/cdn-cache-invalidation-strategies/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cdn",
+    "cache-invalidation",
+    "cloudflare",
+    "fastly",
+    "cloudfront",
+    "python",
+    "fastapi"
+  ],
+  "files": [
+    "cdn_invalidate.py",
+    "webhook_server.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
