@@ -1,0 +1,36 @@
+{
+  "title": "Content Security Policy — Companion Files",
+  "title_es": "Content Security Policy — Archivos complementarios",
+  "description": "Runnable CSP toolkit: per-request nonce middleware, a violation report endpoint that accepts both Reporting API and legacy report-uri payloads, a helmet config, and the documented Next.js middleware + Server Component nonce pattern.",
+  "description_es": "Kit ejecutable de CSP: middleware de nonce por request, endpoint de reportes que acepta payloads de la Reporting API y del legado report-uri, config de helmet y el patrón documentado de Next.js con middleware + Server Components.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-content-security-policy",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-content-security-policy/",
+    "https://stackpractices.com/es/guides/complete-guide-content-security-policy/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "csp",
+    "content-security-policy",
+    "security",
+    "xss",
+    "helmet",
+    "express",
+    "nextjs",
+    "typescript"
+  ],
+  "files": [
+    "app.ts",
+    "csp-nonce-middleware.ts",
+    "csp-report-endpoint.ts",
+    "helmet-csp.ts",
+    "nextjs-middleware.ts",
+    "nextjs-layout.tsx",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
