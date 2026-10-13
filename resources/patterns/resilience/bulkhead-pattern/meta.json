@@ -1,0 +1,36 @@
+{
+  "title": "Bulkhead Pattern — Companion Code",
+  "title_es": "Patrón Bulkhead — Código complementario",
+  "description": "Runnable bulkhead implementations: per-service thread pools, semaphore-based concurrency limits, isolated connection pools, per-tenant isolation, and a hybrid bulkhead with circuit breaker. Includes a resilience4j Java example and Kubernetes resource quotas.",
+  "description_es": "Implementaciones ejecutables del patrón bulkhead: thread pools por servicio, límites de concurrencia con semáforos, pools de conexión aislados, aislamiento por tenant y un bulkhead híbrido con circuit breaker. Incluye un ejemplo en Java con resilience4j y cuotas de recursos de Kubernetes.",
+  "type": "patterns",
+  "topic": "resilience",
+  "slug": "bulkhead-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/bulkhead-pattern/",
+    "https://stackpractices.com/es/patterns/bulkhead-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "java",
+    "kubernetes",
+    "bulkhead",
+    "resilience",
+    "isolation",
+    "thread-pool",
+    "circuit-breaker"
+  ],
+  "files": [
+    "exceptions.py",
+    "thread_pool.py",
+    "semaphore.py",
+    "connection_pools.py",
+    "per_tenant.py",
+    "hybrid.py",
+    "ServiceBulkheads.java",
+    "k8s-bulkhead.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
