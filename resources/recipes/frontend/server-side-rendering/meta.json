@@ -1,0 +1,31 @@
+{
+  "title": "Server-Side Rendering — Companion Files",
+  "title_es": "Renderizado en el servidor (SSR) — Archivos complementarios",
+  "description": "Working SSR examples across frameworks: a Next.js App Router page with streaming and ISR, an Astro page using islands architecture for partial hydration, and a minimal Express + React server that renders to string and hydrates on the client.",
+  "description_es": "Ejemplos funcionales de SSR en distintos frameworks: página de Next.js App Router con streaming e ISR, página de Astro con arquitectura de islas para hidratación parcial, y un servidor Express + React mínimo que renderiza a string e hidrata en el cliente.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "server-side-rendering",
+  "source_urls": [
+    "https://stackpractices.com/recipes/server-side-rendering/",
+    "https://stackpractices.com/es/recipes/server-side-rendering/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "ssr",
+    "server-side-rendering",
+    "hydration",
+    "nextjs",
+    "astro",
+    "react",
+    "express",
+    "frontend"
+  ],
+  "files": [
+    "nextjs-page.tsx",
+    "astro-island.astro",
+    "express-ssr.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

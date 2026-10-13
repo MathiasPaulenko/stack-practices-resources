@@ -1,0 +1,30 @@
+---
+// src/pages/dashboard.astro
+// The frontmatter runs on the server (or at build time for static pages).
+// Everything renders to HTML; only marked islands hydrate on the client.
+
+const response = await fetch('https://api.example.com/stats');
+if (!response.ok) throw new Error(`Stats API failed: ${response.status}`);
+const stats = await response.json();
+
+// An interactive island component (React/Vue/Svelte all work):
+// import LiveChart from '../components/LiveChart.jsx';
+---
+
+<html>
+  <body>
+    <h1>Dashboard</h1>
+
+    <!-- Plain HTML — zero JS shipped for this part -->
+    <p>Total Users: {stats.users}</p>
+    <p>Active Sessions: {stats.sessions}</p>
+
+    <!-- Only the chart hydrates. Pick the right directive:
+         client:load     — hydrate immediately on page load
+         client:idle     — hydrate when the browser is idle
+         client:visible  — hydrate when the component scrolls into view
+         client:only="react" — skip SSR entirely for this component
+    -->
+    <!-- <LiveChart client:visible data={stats.chart} /> -->
+  </body>
+</html>
