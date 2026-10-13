@@ -1,0 +1,31 @@
+{
+  "title": "Active Record Pattern — Companion Files",
+  "title_es": "Patrón Active Record — Archivos complementarios",
+  "description": "Runnable Active Record implementations: a Python class with save/delete/find methods over sqlite3, a Java JDBC version with generated-key handling, and a JavaScript async Active Record using an injected connection.",
+  "description_es": "Implementaciones ejecutables de Active Record: una clase Python con métodos save/delete/find sobre sqlite3, una versión Java con JDBC y manejo de claves generadas, y un Active Record asíncrono en JavaScript con conexión inyectada.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "active-record-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/active-record-pattern/",
+    "https://stackpractices.com/es/patterns/active-record-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "active-record",
+    "pattern",
+    "orm",
+    "persistence",
+    "database",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "active-record-python.py",
+    "ActiveRecordUser.java",
+    "active-record-javascript.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
