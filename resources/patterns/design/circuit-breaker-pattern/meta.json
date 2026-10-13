@@ -1,0 +1,31 @@
+{
+  "title": "Circuit Breaker Pattern — Companion Files",
+  "title_es": "Patrón Circuit Breaker — Archivos complementarios",
+  "description": "Runnable circuit breaker implementations: a Python class with exception classification and fallback, a Java thread-safe version with AtomicInteger, and an async JavaScript breaker with a failure predicate and fallback hook.",
+  "description_es": "Implementaciones ejecutables de circuit breaker: una clase Python con clasificación de excepciones y fallback, una versión Java thread-safe con AtomicInteger, y un breaker asíncrono en JavaScript con predicado de fallo y hook de fallback.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "circuit-breaker-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/circuit-breaker-pattern/",
+    "https://stackpractices.com/es/patterns/circuit-breaker-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "circuit-breaker",
+    "pattern",
+    "resilience",
+    "fault-tolerance",
+    "microservices",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "circuit_breaker.py",
+    "circuitBreaker.mjs",
+    "CircuitBreaker.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
