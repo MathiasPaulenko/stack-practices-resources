@@ -1,0 +1,31 @@
+{
+  "title": "Saga Pattern — Companion Files",
+  "title_es": "Patrón Saga — Archivos complementarios",
+  "description": "Runnable orchestrated saga implementations: the same travel-booking saga from the article in Python, JavaScript, and Java, each showing compensating transactions rolling back completed steps in reverse order.",
+  "description_es": "Implementaciones ejecutables de saga orquestada: la misma saga de reserva de viaje del artículo en Python, JavaScript y Java, cada una mostrando transacciones compensatorias revirtiendo los pasos completados en orden inverso.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "saga-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/saga-pattern/",
+    "https://stackpractices.com/es/patterns/saga-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "saga",
+    "pattern",
+    "distributed-transactions",
+    "compensation",
+    "microservices",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "saga_orchestrator.py",
+    "sagaOrchestrator.mjs",
+    "SagaOrchestrator.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
