@@ -1,0 +1,32 @@
+{
+  "title": "HTTP Cache-Control Headers — Companion Files",
+  "title_es": "Headers HTTP Cache-Control — Archivos complementarios",
+  "description": "Working examples of HTTP caching headers for static assets and API responses: nginx location block, an Express app with immutable assets, ETag/Last-Modified conditional requests and stale-while-revalidate, and a FastAPI app with a Cache-Control middleware.",
+  "description_es": "Ejemplos funcionales de headers de caché HTTP para assets estáticos y respuestas de API: bloque location de nginx, app Express con assets immutable, peticiones condicionales ETag/Last-Modified y stale-while-revalidate, y app FastAPI con middleware de Cache-Control.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "http-cache-control-headers",
+  "source_urls": [
+    "https://stackpractices.com/recipes/http-cache-control-headers/",
+    "https://stackpractices.com/es/recipes/http-cache-control-headers/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "http",
+    "caching",
+    "cache-control",
+    "etag",
+    "headers",
+    "cdn",
+    "nginx",
+    "express",
+    "fastapi"
+  ],
+  "files": [
+    "nginx.conf",
+    "express-cache-headers.js",
+    "fastapi-cache-headers.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
