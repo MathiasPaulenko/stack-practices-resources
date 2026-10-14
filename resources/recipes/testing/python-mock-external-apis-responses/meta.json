@@ -1,0 +1,21 @@
+{
+  "title": "Mock External APIs with responses Library",
+  "title_es": "Mockear APIs Externas con responses",
+  "description": "Runnable pytest suite for mocking HTTP calls with the responses library: basic mocks, matchers for query params and headers, error simulation, retry sequences, dynamic callbacks, request-body assertions, and a shared RequestsMock fixture.",
+  "description_es": "Suite pytest ejecutable para mockear llamadas HTTP con la librería responses: mocks básicos, matchers de query params y headers, simulación de errores, secuencias de retry, callbacks dinámicos, aserciones sobre el request body y un fixture RequestsMock compartido.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "python-mock-external-apis-responses",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-mock-external-apis-responses/"
+  ],
+  "language": "bilingual",
+  "tags": ["python", "pytest", "testing", "mocking", "http", "requests", "responses"],
+  "files": [
+    "requirements.txt",
+    "conftest.py",
+    "test_external_api.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

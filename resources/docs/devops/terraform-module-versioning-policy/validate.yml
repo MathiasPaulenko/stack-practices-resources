@@ -1,0 +1,37 @@
+# validate.yml — Pre-release validation on every PR
+# Matrix-builds across Terraform versions; fmt, validate, security and cost gates.
+# Copy to .github/workflows/validate.yml in your module repository.
+
+name: Terraform Module Validation
+on: [pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        terraform_version: ['1.5.0', '1.6.0', '1.7.0']
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ matrix.terraform_version }}
+
+      - name: Format check
+        run: terraform fmt -check -recursive
+
+      - name: Init
+        run: terraform init -backend=false
+
+      - name: Validate
+        run: terraform validate
+
+      - name: Security scan (tfsec)
+        uses: aquasecurity/tfsec-action@v1.0.0
+
+      - name: Cost estimation (infracost)
+        uses: infracost/infracost-action@v3
+        with:
+          path: examples/basic

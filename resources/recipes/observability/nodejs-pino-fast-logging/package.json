@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-pino-fast-logging",
+  "private": true,
+  "description": "Runnable examples for the pino fast logging recipe",
+  "scripts": {
+    "start:express": "node express-app.js",
+    "start:fastify": "node fastify-app.js",
+    "dev": "NODE_ENV=development node express-app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "fastify": "^4.28.0",
+    "pino": "^9.0.0",
+    "pino-http": "^10.0.0"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.0.0"
+  }
+}

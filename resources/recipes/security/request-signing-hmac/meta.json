@@ -1,0 +1,37 @@
+{
+  "title": "HMAC Request Signing — Companion Files",
+  "title_es": "Firma de peticiones HMAC — Archivos complementarios",
+  "description": "Runnable HMAC-SHA256 request signing: sign/verify pairs in Python, JavaScript, Java and Go, a full AWS Signature v4 signer, a webhook verifier with Redis nonce replay protection, and overlap-window key rotation.",
+  "description_es": "Firma de peticiones HMAC-SHA256 ejecutable: pares firma/verificación en Python, JavaScript, Java y Go, un firmante AWS Signature v4 completo, un verificador de webhooks con protección anti-replay por nonce en Redis y rotación de claves con solapamiento.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "request-signing-hmac",
+  "source_urls": [
+    "https://stackpractices.com/recipes/request-signing-hmac/",
+    "https://stackpractices.com/es/recipes/request-signing-hmac/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "hmac",
+    "request-signing",
+    "aws-signature-v4",
+    "webhooks",
+    "api-security",
+    "replay-protection",
+    "python",
+    "javascript",
+    "java",
+    "go"
+  ],
+  "files": [
+    "sign_request.py",
+    "sign-request.js",
+    "RequestSigner.java",
+    "sign-request.go",
+    "aws-sigv4.py",
+    "webhook-verify.js",
+    "key-rotation.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

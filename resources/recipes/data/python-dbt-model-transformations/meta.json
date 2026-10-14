@@ -1,0 +1,42 @@
+{
+  "title": "dbt Model Transformations — Companion Project",
+  "title_es": "Transformaciones con modelos dbt — Proyecto complementario",
+  "description": "Minimal runnable dbt Core project: staging/marts layout, sources with freshness, incremental fact with unique_key merge, schema tests, singular test, cents_to_dollars macro, SCD-2 snapshot, example profiles.yml, and an Airflow DAG using the schedule= API — accompanying the dbt transformations recipe.",
+  "description_es": "Proyecto mínimo ejecutable de dbt Core: layout staging/marts, sources con freshness, fact incremental con merge por unique_key, tests de esquema, test singular, macro cents_to_dollars, snapshot SCD-2, profiles.yml de ejemplo y un DAG de Airflow con la API schedule= — acompaña a la receta de transformaciones con dbt.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "python-dbt-model-transformations",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-dbt-model-transformations/",
+    "https://stackpractices.com/es/recipes/python-dbt-model-transformations/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "data",
+    "dbt",
+    "sql",
+    "data-warehouse",
+    "etl",
+    "analytics-engineering",
+    "incremental",
+    "snapshots",
+    "airflow",
+    "python"
+  ],
+  "files": [
+    "dbt_project.yml",
+    "profiles.yml.example",
+    "models/staging/stg_orders.sql",
+    "models/staging/stg_customers.sql",
+    "models/staging/schema.yml",
+    "models/marts/fct_orders.sql",
+    "models/marts/dim_customers.sql",
+    "models/marts/schema.yml",
+    "macros/cents_to_dollars.sql",
+    "snapshots/snap_customers.sql",
+    "tests/assert_no_negative_amounts.sql",
+    "dag_dbt.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

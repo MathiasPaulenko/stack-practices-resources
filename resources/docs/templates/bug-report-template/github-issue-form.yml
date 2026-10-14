@@ -1,0 +1,54 @@
+# GitHub Issue Form for bug reports.
+# Usage: copy this file to .github/ISSUE_TEMPLATE/bug-report.yml in your repository.
+# Syntax reference: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: One or two sentences. What did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps from a known starting state.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Observe the error
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: First version where you saw the bug.
+      options:
+        - v2.4.x
+        - v2.3.x
+        - older
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and evidence
+      description: Console errors, stack traces, request IDs. Remove credentials and personal data first.
+      render: shell

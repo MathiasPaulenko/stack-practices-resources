@@ -1,0 +1,24 @@
+# Canary Ingress — mirrors the production host/path but sends
+# canary-weight percent of traffic to the canary service.
+# Annotations give you the traffic split, not metric analysis or auto-rollback;
+# pair with a progressive delivery tool for that.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: canary-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "10"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: app.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: canary-service
+                port:
+                  number: 80

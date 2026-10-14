@@ -1,0 +1,29 @@
+{
+  "title": "Complete Guide to Kubernetes Ingress",
+  "title_es": "Guía Completa de Kubernetes Ingress",
+  "description": "Kubernetes Ingress manifests from the guide: single-service and path-based routing, virtual hosting, TLS with cert-manager, common ingress-nginx annotations, canary deployments, and production hardening (PDB, NetworkPolicy).",
+  "description_es": "Manifiestos de Kubernetes Ingress de la guía: enrutamiento por servicio y por path, virtual hosting, TLS con cert-manager, anotaciones comunes de ingress-nginx, despliegues canary y endurecimiento en producción (PDB, NetworkPolicy).",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-kubernetes-ingress",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-kubernetes-ingress/",
+    "https://stackpractices.com/es/guides/complete-guide-kubernetes-ingress/"
+  ],
+  "language": "bilingual",
+  "tags": ["kubernetes", "ingress", "nginx", "tls", "cert-manager", "routing", "canary", "networking"],
+  "files": [
+    "ingress/single-service.yaml",
+    "ingress/path-based-routing.yaml",
+    "ingress/name-based-vhost.yaml",
+    "ingress/default-backend.yaml",
+    "tls/clusterissuer-letsencrypt.yaml",
+    "tls/ingress-tls.yaml",
+    "tls/ingress-passthrough.yaml",
+    "annotations/common-annotations.yaml",
+    "annotations/basic-auth.yaml",
+    "advanced/canary-ingress.yaml",
+    "production/controller-pdb.yaml",
+    "production/controller-networkpolicy.yaml"
+  ]
+}

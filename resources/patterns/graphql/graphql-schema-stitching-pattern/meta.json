@@ -1,0 +1,33 @@
+{
+  "title": "GraphQL Schema Stitching Pattern — Companion Files",
+  "title_es": "Patrón de Schema Stitching en GraphQL — Archivos complementarios",
+  "description": "Runnable schema stitching example: users-api and posts-api subschemas merged behind a single gateway with @graphql-tools/stitch, link types, and delegateToSchema resolvers.",
+  "description_es": "Ejemplo ejecutable de schema stitching: subesquemas users-api y posts-api fusionados tras un único gateway con @graphql-tools/stitch, tipos de enlace y resolvers delegateToSchema.",
+  "type": "patterns",
+  "topic": "graphql",
+  "slug": "graphql-schema-stitching-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/graphql-schema-stitching-pattern/",
+    "https://stackpractices.com/es/patterns/graphql-schema-stitching-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graphql",
+    "schema-stitching",
+    "graphql-tools",
+    "api-gateway",
+    "microservices",
+    "typescript",
+    "apollo-server"
+  ],
+  "files": [
+    "users-service.ts",
+    "posts-service.ts",
+    "gateway.ts",
+    "client-query.graphql",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

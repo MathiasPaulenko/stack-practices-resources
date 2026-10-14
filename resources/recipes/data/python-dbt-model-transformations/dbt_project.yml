@@ -1,0 +1,17 @@
+name: my_project
+version: "1.0.0"
+profile: my_project
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+snapshot-paths: ["snapshots"]
+
+models:
+  my_project:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+      fct_orders:
+        +materialized: incremental

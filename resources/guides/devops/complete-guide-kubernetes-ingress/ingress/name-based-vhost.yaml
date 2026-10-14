@@ -1,0 +1,29 @@
+# Name-based virtual hosting — several hosts share the controller's external IP;
+# the Host header decides where traffic lands.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vhost-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: api.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: api-service
+                port:
+                  number: 8080
+    - host: blog.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: blog-service
+                port:
+                  number: 80

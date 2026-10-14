@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Completed orders with customer details"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: amount
+        tests:
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['completed', 'pending', 'cancelled']
+  - name: dim_customers
+    description: "One row per customer with aggregates"
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null

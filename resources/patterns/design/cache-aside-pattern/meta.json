@@ -1,0 +1,31 @@
+{
+  "title": "Cache-Aside Pattern — Companion Code",
+  "title_es": "Patrón Cache-Aside — Código complementario",
+  "description": "Runnable cache-aside implementations with Redis TTL, invalidate-on-write and stampede protection (per-key lock in Python, single-flight promise dedup in TypeScript), accompanying the Cache-Aside Pattern resource.",
+  "description_es": "Implementaciones ejecutables de cache-aside con TTL en Redis, invalidación en escritura y protección anti-stampede (lock por clave en Python, deduplicación de promesas en TypeScript), que acompañan al recurso del Patrón Cache-Aside.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "cache-aside-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/cache-aside-pattern/",
+    "https://stackpractices.com/es/patterns/cache-aside-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "caching",
+    "cache-aside",
+    "lazy-loading",
+    "redis",
+    "ttl",
+    "stampede-protection",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "cache_aside.py",
+    "cache-aside.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

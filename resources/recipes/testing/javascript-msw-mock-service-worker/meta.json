@@ -1,0 +1,30 @@
+{
+  "title": "MSW Mock Service Worker — Companion Project",
+  "title_es": "MSW Mock Service Worker — Proyecto complementario",
+  "description": "Runnable MSW 2.x setup accompanying the recipe: shared REST/GraphQL request handlers, Node.js server for Vitest, browser worker for development, and a complete test example.",
+  "description_es": "Setup ejecutable de MSW 2.x que acompaña a la receta: request handlers REST/GraphQL compartidos, servidor Node.js para Vitest, worker de navegador para desarrollo y un ejemplo de test completo.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "javascript-msw-mock-service-worker",
+  "source_urls": [
+    "https://stackpractices.com/recipes/javascript-msw-mock-service-worker/",
+    "https://stackpractices.com/es/recipes/javascript-msw-mock-service-worker/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "javascript",
+    "msw",
+    "mocking",
+    "vitest",
+    "graphql"
+  ],
+  "files": [
+    "src/mocks/handlers.ts",
+    "src/mocks/server.ts",
+    "src/mocks/browser.ts",
+    "src/users.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

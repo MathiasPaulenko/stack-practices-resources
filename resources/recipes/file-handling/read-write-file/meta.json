@@ -1,0 +1,31 @@
+{
+  "title": "Read and Write Files in Python, Node.js & Bash — Companion Resources",
+  "title_es": "Leer y Escribir Archivos en Python, Node.js y Bash — Recursos complementarios",
+  "description": "Runnable safe file I/O utilities in four languages: atomic writes via temp file + rename, graceful reads with defaults, streaming line transforms, and timestamped appends.",
+  "description_es": "Utilidades ejecutables de E/S de archivos segura en cuatro lenguajes: escritura atómica con archivo temporal + renombrado, lectura tolerante con valores por defecto, transformaciones en streaming por líneas y appends con timestamp.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "read-write-file",
+  "source_urls": [
+    "https://stackpractices.com/recipes/read-write-file/",
+    "https://stackpractices.com/es/recipes/read-write-file/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "files",
+    "io",
+    "atomic-write",
+    "python",
+    "nodejs",
+    "bash",
+    "java"
+  ],
+  "files": [
+    "safe_io.py",
+    "stream-file.js",
+    "FileOps.java",
+    "safe-file-ops.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

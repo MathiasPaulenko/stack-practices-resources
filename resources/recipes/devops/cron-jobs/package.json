@@ -1,0 +1,12 @@
+{
+  "name": "cron-jobs-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "node-cron example for the StackPractices cron-jobs recipe",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.3"
+  }
+}

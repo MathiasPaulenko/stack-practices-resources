@@ -1,0 +1,22 @@
+{
+  "title": "Bug Report Template (Markdown + Examples)",
+  "title_es": "Plantilla de Reporte de Bug (Markdown + Ejemplos)",
+  "description": "Copy-paste bug report template with reproduction steps, expected vs actual behavior, environment fields, severity levels, and a ready-to-use GitHub issue form.",
+  "description_es": "Plantilla de reporte de bug lista para copiar con pasos de reproducción, comportamiento esperado vs actual, campos de entorno, niveles de severidad y un formulario de issue de GitHub listo para usar.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "bug-report-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/bug-report-template/",
+    "https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms"
+  ],
+  "language": "bilingual",
+  "tags": ["bug-report", "template", "qa", "triage", "issue-tracking", "github"],
+  "files": [
+    "bug-report-template.md",
+    "github-issue-form.yml",
+    "gitlab-issue-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

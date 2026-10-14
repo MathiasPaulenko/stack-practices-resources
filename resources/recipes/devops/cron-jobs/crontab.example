@@ -1,0 +1,21 @@
+# Example crontab — install with: crontab crontab.example
+# Environment: cron runs with a minimal PATH and no shell profile.
+PATH=/usr/local/bin:/usr/bin:/bin
+SHELL=/bin/bash
+MAILTO=alerts@example.com
+
+# Every day at 3:00 AM — flock prevents overlapping runs,
+# output goes to a log file instead of cron mail.
+0 3 * * * /usr/bin/flock -n /tmp/backup.lock /usr/local/bin/backup.sh >> /var/log/backup.log 2>&1
+
+# Every 15 minutes
+*/15 * * * * /usr/local/bin/check-health.sh >> /var/log/health.log 2>&1
+
+# Every Monday at 9:00 AM
+0 9 * * 1 /usr/local/bin/weekly-report.sh >> /var/log/report.log 2>&1
+
+# First day of the month at midnight, killed after 1 hour
+0 0 1 * * timeout 3600 /usr/local/bin/monthly-cleanup.sh
+
+# Run once at startup instead of on a schedule
+@reboot /usr/local/bin/boot-init.sh

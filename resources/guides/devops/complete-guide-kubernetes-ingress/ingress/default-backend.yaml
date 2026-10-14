@@ -1,0 +1,13 @@
+# Default backend — requests matching no rule land here instead of the
+# controller's built-in 404 page.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: default-backend-ingress
+spec:
+  ingressClassName: nginx
+  defaultBackend:
+    service:
+      name: custom-404-service
+      port:
+        number: 80

@@ -1,0 +1,10 @@
+# /etc/systemd/system/disk-monitor.service
+[Unit]
+Description=Disk usage monitoring
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/disk-monitor.sh 80 admin@example.com
+StandardOutput=journal
+StandardError=journal

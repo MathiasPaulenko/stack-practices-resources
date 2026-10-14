@@ -1,0 +1,25 @@
+# Kubernetes CronJob — apply with: kubectl apply -f cronjob.yaml
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: database-backup
+spec:
+  schedule: "0 3 * * *"  # Every day at 3:00 AM (cluster timezone unless timeZone is set)
+  # timeZone: "Etc/UTC"  # Kubernetes 1.27+ supports an explicit timeZone field
+  concurrencyPolicy: Forbid  # Never run two copies at once
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 5
+  jobTemplate:
+    spec:
+      activeDeadlineSeconds: 3600  # Kill the Job after 1 hour
+      template:
+        spec:
+          containers:
+          - name: backup
+            image: backup-tool:v1.2
+            command: ["/bin/sh", "-c"]
+            args: ["pg_dump $DATABASE_URL > /backup/$(date +%Y%m%d).sql"]
+            envFrom:
+            - secretRef:
+                name: db-credentials
+          restartPolicy: OnFailure

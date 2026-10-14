@@ -1,0 +1,27 @@
+# Ingress with TLS via cert-manager.
+# The annotation tells cert-manager to issue the cert; the tls block tells the
+# controller which secret holds it. The secret is created in the same namespace
+# as the Ingress — anywhere else and TLS fails silently.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: tls-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - app.example.com
+      secretName: app-tls-secret
+  rules:
+    - host: app.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app-service
+                port:
+                  number: 80

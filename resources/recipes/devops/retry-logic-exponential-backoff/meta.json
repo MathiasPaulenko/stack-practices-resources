@@ -1,0 +1,24 @@
+{
+  "title": "Retry Logic with Exponential Backoff",
+  "title_es": "Retry con Backoff Exponencial",
+  "description": "Configurable retry with exponential backoff, jitter, exception filtering, circuit breaker integration, and idempotency keys. Runnable implementations in Python, JavaScript, Java, and Go, plus tests that verify the delay sequence with an injected fake sleep.",
+  "description_es": "Retry configurable con backoff exponencial, jitter, filtrado de excepciones, integración con circuit breaker y claves de idempotencia. Implementaciones ejecutables en Python, JavaScript, Java y Go, con tests que verifican la secuencia de delays mediante un sleep inyectado.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "retry-logic-exponential-backoff",
+  "source_urls": [
+    "https://stackpractices.com/recipes/retry-logic-exponential-backoff/",
+    "https://stackpractices.com/es/recipes/retry-logic-exponential-backoff/"
+  ],
+  "language": ["python", "javascript", "java", "go"],
+  "tags": ["devops", "retry", "exponential-backoff", "jitter", "circuit-breaker", "idempotency", "resilience", "python", "javascript", "java", "go"],
+  "files": [
+    "retry.py",
+    "test_retry.py",
+    "retry.js",
+    "Retry.java",
+    "retry.go",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Monitor Disk Usage",
+  "title_es": "Monitorear Uso de Disco",
+  "description": "Runnable disk monitoring toolkit: threshold-based alerting script, Slack webhook integration, per-partition thresholds, state-change alerting to avoid alert fatigue, inode monitoring, disk consumer diagnostics, systemd service+timer units, Prometheus alert rules, and an automatic cleanup script.",
+  "description_es": "Kit ejecutable de monitoreo de disco: script de alertas por umbral, integración con webhook de Slack, umbrales por partición, alertas por cambio de estado contra la fatiga, monitoreo de inodos, diagnóstico de consumo, unidades systemd service+timer, reglas de alertas Prometheus y script de limpieza automática.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "bash-monitoring-disk-usage",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-monitoring-disk-usage/"
+  ],
+  "language": "bilingual",
+  "tags": ["bash", "monitoring", "disk-usage", "alerts", "linux", "df", "systemd", "prometheus", "cron"],
+  "files": [
+    "disk-monitor.sh",
+    "slack-alert.sh",
+    "per-partition-thresholds.sh",
+    "state-change-alerts.sh",
+    "inode-monitor.sh",
+    "find-disk-consumers.sh",
+    "disk-cleanup.sh",
+    "disk-monitor.service",
+    "disk-monitor.timer",
+    "prometheus-alerts.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "complete-guide-encryption-at-rest",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Companion TypeScript modules for the encryption at rest guide",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.600.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}

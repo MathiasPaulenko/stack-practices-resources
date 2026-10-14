@@ -1,0 +1,23 @@
+{
+  "title": "Build a Slack Bot with OpenAI",
+  "title_es": "Bot de Slack con OpenAI",
+  "description": "Slack bot powered by OpenAI chat completions via Bolt Socket Mode. Handles channel mentions with threaded replies and direct messages with per-user conversation history, bot_id guards, and empty-text filtering. Node.js and Python implementations.",
+  "description_es": "Bot de Slack potenciado por chat completions de OpenAI vía Socket Mode de Bolt. Responde menciones de canal en hilos y mensajes directos con historial por usuario, guardas de bot_id y filtrado de texto vacío. Implementaciones en Node.js y Python.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "slack-bot-openai",
+  "source_urls": [
+    "https://stackpractices.com/recipes/slack-bot-openai/",
+    "https://stackpractices.com/es/recipes/slack-bot-openai/"
+  ],
+  "language": ["javascript", "python"],
+  "tags": ["ai", "chatbot", "openai", "slack", "bolt", "socket-mode", "llm", "javascript", "python"],
+  "files": [
+    "app.js",
+    "bot.py",
+    "tools.js",
+    ".env.example",
+    "README.md",
+    "README.es.md"
+  ]
+}

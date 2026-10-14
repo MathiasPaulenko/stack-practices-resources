@@ -1,0 +1,35 @@
+{
+  "title": "Fixture Setup/Teardown Pattern — Companion Code",
+  "title_es": "Patrón Fixture Setup/Teardown — Código complementario",
+  "description": "Runnable fixture lifecycle examples: pytest fixtures with function/module/session scopes, yield teardown, env-var restoration, a fixture object, a disposable Docker postgres, Jest nested describes with factory functions, and JUnit 5 lifecycle hooks — accompanying the Fixture Setup/Teardown pattern resource.",
+  "description_es": "Ejemplos ejecutables del ciclo de vida de fixtures: fixtures de pytest con scopes function/module/session, teardown con yield, restauración de variables de entorno, objeto fixture, postgres descartable en Docker, describes anidados en Jest con funciones fábrica y hooks de ciclo de vida de JUnit 5 — acompañan al recurso del patrón Fixture Setup/Teardown.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "fixture-setup-teardown-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/fixture-setup-teardown-pattern/",
+    "https://stackpractices.com/es/patterns/fixture-setup-teardown-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "testing",
+    "fixtures",
+    "setup-teardown",
+    "pytest",
+    "jest",
+    "junit",
+    "python",
+    "javascript",
+    "java",
+    "docker"
+  ],
+  "files": [
+    "conftest.py",
+    "test_users.py",
+    "jest_fixtures.test.js",
+    "UserServiceTest.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

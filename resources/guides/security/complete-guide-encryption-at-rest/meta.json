@@ -1,0 +1,35 @@
+{
+  "title": "Encryption at Rest — Companion Files",
+  "title_es": "Cifrado en Reposo — Archivos complementarios",
+  "description": "TypeScript modules for production encryption at rest: AES-256-GCM cipher, abstract KMS client with an AWS implementation, envelope encryption with DEK zeroing, transparent field-level encryption for repositories, and batch key rotation.",
+  "description_es": "Módulos TypeScript para cifrado en reposo en producción: cifrador AES-256-GCM, cliente KMS abstracto con implementación AWS, cifrado envolvente con borrado de la DEK, cifrado transparente a nivel de campo para repositorios y rotación de claves por lotes.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-encryption-at-rest",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-encryption-at-rest/",
+    "https://stackpractices.com/es/guides/complete-guide-encryption-at-rest/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "encryption",
+    "encryption-at-rest",
+    "aes-256-gcm",
+    "kms",
+    "envelope-encryption",
+    "key-rotation",
+    "security",
+    "typescript"
+  ],
+  "files": [
+    "aes-gcm.ts",
+    "kms-client.ts",
+    "envelope-encryption.ts",
+    "encrypted-field.ts",
+    "key-rotation.ts",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

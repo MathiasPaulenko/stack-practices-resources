@@ -1,0 +1,23 @@
+{
+  "title": "Fast Structured Logging with pino",
+  "title_es": "Logging Estructurado Rápido con pino",
+  "description": "Runnable pino logging examples: shared logger config with redaction and serializers, Express app with pino-http request logging and request ids, and Fastify app with built-in pino. Correct logger.info(obj, msg) ordering throughout.",
+  "description_es": "Ejemplos ejecutables de logging con pino: config compartida con redacción y serializers, app Express con pino-http y request ids, y app Fastify con pino integrado. Orden correcto logger.info(obj, msg) en todo el código.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "nodejs-pino-fast-logging",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-pino-fast-logging/",
+    "https://getpino.io/"
+  ],
+  "language": "bilingual",
+  "tags": ["nodejs", "pino", "logging", "observability", "express", "fastify"],
+  "files": [
+    "logger.js",
+    "express-app.js",
+    "fastify-app.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

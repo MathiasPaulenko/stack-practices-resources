@@ -1,0 +1,13 @@
+# /etc/systemd/system/backup.service
+# Pair with backup.timer. Install:
+#   sudo cp backup.service backup.timer /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now backup.timer
+[Unit]
+Description=Database Backup
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/backup.sh
+User=backup
+Environment=DATABASE_URL=postgres://localhost/mydb

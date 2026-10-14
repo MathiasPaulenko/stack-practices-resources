@@ -1,0 +1,25 @@
+{
+  "name": "graphql-schema-stitching-pattern",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Schema stitching companion: two GraphQL subschemas merged behind one gateway",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "users": "tsx users-service.ts",
+    "posts": "tsx posts-service.ts",
+    "gateway": "tsx gateway.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "@graphql-tools/executor-http": "^1.3.3",
+    "@graphql-tools/schema": "^10.0.0",
+    "@graphql-tools/stitch": "^9.0.0",
+    "graphql": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.0"
+  }
+}

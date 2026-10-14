@@ -1,0 +1,11 @@
+# /etc/systemd/system/disk-monitor.timer
+[Unit]
+Description=Run disk monitor every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+AccuracySec=30s
+
+[Install]
+WantedBy=timers.target

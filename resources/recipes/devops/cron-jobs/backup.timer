@@ -1,0 +1,12 @@
+# /etc/systemd/system/backup.timer
+# Persistent=true catches up runs missed while the machine was off —
+# the main advantage over a crontab entry.
+[Unit]
+Description=Run backup daily at 3:00 AM
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

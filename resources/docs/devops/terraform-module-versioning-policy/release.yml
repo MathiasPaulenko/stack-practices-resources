@@ -1,0 +1,50 @@
+# release.yml — Terraform module release pipeline
+# Fires on version tags (v*): format, validate, test, document, release.
+# Copy to .github/workflows/release.yml in your module repository.
+
+name: Terraform Module Release
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.7.0
+
+      - name: Terraform format check
+        run: terraform fmt -check -recursive
+
+      - name: Terraform validate
+        run: |
+          terraform init -backend=false
+          terraform validate
+
+      - name: Run Terratest
+        run: |
+          cd tests/
+          go test -v -timeout 30m
+
+      - name: Generate docs
+        uses: terraform-docs/terraform-docs@v1.0.0
+        with:
+          output-file: README.md
+          output-method: inject
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          generate_release_notes: true
+          body_path: CHANGELOG.md
+
+      - name: Notify teams
+        run: |
+          curl -X POST ${{ secrets.SLACK_WEBHOOK }} -d "{
+            \"text\": \"Terraform module ${{ github.ref_name }} released\"
+          }"

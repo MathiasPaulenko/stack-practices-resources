@@ -1,0 +1,32 @@
+{
+  "title": "Load Test Plan Template — Companion Files",
+  "title_es": "Plantilla de Plan de Pruebas de Carga — Archivos complementarios",
+  "description": "Ready-to-run companion for the load test plan template: fillable plan document, k6 script with threshold assertions, JMeter test plan (JMX), Locust load test with weighted tasks, and a one-page load test report template.",
+  "description_es": "Complemento listo para usar de la plantilla de plan de pruebas de carga: documento de plan rellenable, script de k6 con aserciones de umbrales, plan de pruebas JMeter (JMX), prueba de Locust con tareas ponderadas y plantilla de informe de una página.",
+  "type": "docs",
+  "topic": "performance",
+  "slug": "load-test-plan-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/load-test-plan-template/",
+    "https://stackpractices.com/es/docs/load-test-plan-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "load-testing",
+    "k6",
+    "jmeter",
+    "locust",
+    "performance",
+    "capacity-planning",
+    "template"
+  ],
+  "files": [
+    "load-test-plan-template.md",
+    "k6-load-test.js",
+    "load-test-plan.jmx",
+    "locustfile.py",
+    "report-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

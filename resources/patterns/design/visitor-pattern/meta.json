@@ -1,0 +1,30 @@
+{
+  "title": "Visitor Pattern — Companion Code",
+  "title_es": "Patrón Visitor — Código complementario",
+  "description": "Runnable visitor pattern implementations over an expression AST: eval, print and node-count visitors in Python, and a generic ExprVisitor<R> in TypeScript, accompanying the Visitor Pattern resource.",
+  "description_es": "Implementaciones ejecutables del patrón visitor sobre un AST de expresiones: visitors de evaluación, impresión y conteo de nodos en Python, y un ExprVisitor<R> genérico en TypeScript, que acompañan al recurso del Patrón Visitor.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "visitor-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/visitor-pattern/",
+    "https://stackpractices.com/es/patterns/visitor-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "visitor",
+    "design-pattern",
+    "behavioral",
+    "double-dispatch",
+    "ast",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "visitor_pattern.py",
+    "visitor-pattern.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

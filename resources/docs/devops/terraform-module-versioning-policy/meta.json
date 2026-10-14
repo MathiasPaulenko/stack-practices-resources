@@ -1,0 +1,26 @@
+{
+  "title": "Terraform Module Versioning Policy Template",
+  "title_es": "Plantilla de Política de Versionado de Módulos Terraform",
+  "description": "Ready-to-adopt module skeleton plus GitHub Actions release and validation pipelines, a semver changelog, and a migration guide for publishing shared Terraform modules.",
+  "description_es": "Esqueleto de módulo listo para adoptar más pipelines de release y validación en GitHub Actions, un changelog semver y una guía de migración para publicar módulos Terraform compartidos.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "terraform-module-versioning-policy",
+  "source_urls": [
+    "https://stackpractices.com/docs/terraform-module-versioning-policy/",
+    "https://stackpractices.com/es/docs/terraform-module-versioning-policy/"
+  ],
+  "language": "multi",
+  "tags": ["terraform", "versioning", "iac", "semver", "registry", "github-actions", "ci-cd", "modules"],
+  "files": [
+    "versions.tf",
+    "release.yml",
+    "validate.yml",
+    "CHANGELOG.md",
+    "MIGRATION-GUIDE.md",
+    "examples/basic/main.tf",
+    "examples/basic/README.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

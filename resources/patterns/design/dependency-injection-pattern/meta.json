@@ -1,0 +1,29 @@
+{
+  "title": "Dependency Injection Pattern — Companion Code",
+  "title_es": "Patrón Dependency Injection — Código complementario",
+  "description": "Runnable dependency injection examples: constructor injection with manual composition-root wiring plus a minimal typed DI container in Python and TypeScript, accompanying the Dependency Injection Pattern resource.",
+  "description_es": "Ejemplos ejecutables de dependency injection: inyección por constructor con cableado manual en el composition root más un contenedor DI tipado mínimo en Python y TypeScript, que acompañan al recurso del Patrón Dependency Injection.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "dependency-injection-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/dependency-injection-pattern/",
+    "https://stackpractices.com/es/patterns/dependency-injection-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "dependency-injection",
+    "inversion-of-control",
+    "di-container",
+    "decoupling",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "dependency_injection.py",
+    "dependency-injection.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

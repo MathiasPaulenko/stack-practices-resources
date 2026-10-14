@@ -1,0 +1,28 @@
+{
+  "title": "Cron Jobs: Schedule Tasks in Linux, Python & Node.js",
+  "title_es": "Cron: programar tareas en Linux, Python y Node.js",
+  "description": "Runnable cron scheduling examples: annotated crontab, a hardened backup.sh with flock, systemd service+timer units, a Kubernetes CronJob manifest, and in-app schedulers for Python (schedule, APScheduler), Node.js (node-cron), and Go (robfig/cron).",
+  "description_es": "Ejemplos ejecutables de programación con cron: crontab comentado, backup.sh robusto con flock, unidades systemd service+timer, manifiesto Kubernetes CronJob y planificadores in-app para Python (schedule, APScheduler), Node.js (node-cron) y Go (robfig/cron).",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "cron-jobs",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cron-jobs/"
+  ],
+  "language": "bilingual",
+  "tags": ["cron", "crontab", "systemd", "kubernetes", "node-cron", "apscheduler", "scheduling", "devops"],
+  "files": [
+    "crontab.example",
+    "backup.sh",
+    "backup.service",
+    "backup.timer",
+    "cronjob.yaml",
+    "schedule_example.py",
+    "apscheduler_example.py",
+    "app.js",
+    "main.go",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

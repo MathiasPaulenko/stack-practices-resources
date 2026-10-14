@@ -1,0 +1,43 @@
+# prometheus-alerts.yml
+groups:
+  - name: disk_usage
+    rules:
+      - alert: HighDiskUsage
+        expr: |
+          (1 - node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Disk usage high on {{ $labels.instance }}"
+          description: "{{ $labels.mountpoint }} is at {{ printf \"%.1f\" $value }}% usage"
+
+      - alert: CriticalDiskUsage
+        expr: |
+          (1 - node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 > 90
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Disk usage critical on {{ $labels.instance }}"
+          description: "{{ $labels.mountpoint }} is at {{ printf \"%.1f\" $value }}% usage"
+
+      - alert: HighInodeUsage
+        expr: |
+          (1 - node_filesystem_files_free / node_filesystem_files) * 100 > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Inode usage high on {{ $labels.instance }}"
+          description: "{{ $labels.mountpoint }} has {{ printf \"%.1f\" $value }}% inode usage"
+
+      - alert: DiskWillFillIn24h
+        expr: |
+          predict_linear(node_filesystem_avail_bytes[1h], 24 * 3600) < 0
+        for: 10m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Disk will fill within 24h on {{ $labels.instance }}"
+          description: "{{ $labels.mountpoint }} predicted to fill based on current rate"

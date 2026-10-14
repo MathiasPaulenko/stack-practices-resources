@@ -1,0 +1,29 @@
+# NetworkPolicy for the Ingress controller namespace — admit only the traffic
+# you expect: 80/443 from the load balancer plus metrics scraping.
+# Adjust podSelector and CIDRs to your environment.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: ingress-controller-ingress
+  namespace: ingress-nginx
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: ingress-nginx
+  policyTypes:
+    - Ingress
+  ingress:
+    # HTTP/HTTPS from anywhere (the cloud LB forwards client traffic)
+    - ports:
+        - port: 80
+          protocol: TCP
+        - port: 443
+          protocol: TCP
+    # Metrics endpoint — restrict to your monitoring subnet
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: monitoring
+      ports:
+        - port: 10254
+          protocol: TCP

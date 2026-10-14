@@ -1,0 +1,12 @@
+# PodDisruptionBudget for the Ingress controller — keeps at least one replica
+# serving during voluntary disruptions (node drains, cluster upgrades).
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: ingress-controller-pdb
+  namespace: ingress-nginx
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ingress-nginx
