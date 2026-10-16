@@ -1,0 +1,30 @@
+{
+  "title": "Connection Pooling Deep Dive — Companion Resources",
+  "title_es": "Guía de Pooling de Conexiones — Recursos complementarios",
+  "description": "Runnable companion configs for the connection pooling guide: PgBouncer transaction pooling, HikariCP reference config, SQLAlchemy pool, Prometheus pool metrics exporter, and a warm-reuse Lambda pool.",
+  "description_es": "Configuraciones ejecutables de la guía de pooling de conexiones: PgBouncer en modo transaction, configuración de referencia de HikariCP, pool de SQLAlchemy, exportador de métricas de pool a Prometheus y un pool de reutilización en caliente para Lambda.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "connection-pooling-deep-dive-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/connection-pooling-deep-dive-guide/",
+    "https://stackpractices.com/es/guides/connection-pooling-deep-dive-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "connection-pooling",
+    "pgbouncer",
+    "hikaricp",
+    "sqlalchemy",
+    "database-performance"
+  ],
+  "files": [
+    "pgbouncer.ini",
+    "HikariPoolConfig.java",
+    "pool_sqlalchemy.py",
+    "pool_monitor.py",
+    "lambda-pool.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

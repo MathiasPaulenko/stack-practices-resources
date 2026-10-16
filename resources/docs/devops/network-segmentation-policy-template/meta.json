@@ -1,0 +1,30 @@
+{
+  "title": "Network Segmentation Policy Template — Companion Resources",
+  "title_es": "Plantilla de Política de Segmentación de Red — Recursos complementarios",
+  "description": "Fillable markdown segmentation policy (zones, traffic matrix, controls, exceptions, roles) plus an AWS reachability validator, Calico NetworkPolicy manifests, and a Terraform security-group module.",
+  "description_es": "Política markdown rellenable de segmentación (zonas, matriz de tráfico, controles, excepciones, roles) más un validador de alcance en AWS, manifiestos Calico NetworkPolicy y un módulo Terraform de security groups.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "network-segmentation-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/network-segmentation-policy-template/",
+    "https://stackpractices.com/es/docs/network-segmentation-policy-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "network-segmentation",
+    "zero-trust",
+    "firewall",
+    "terraform",
+    "kubernetes",
+    "template"
+  ],
+  "files": [
+    "network-segmentation-policy.md",
+    "reachability-validator.py",
+    "calico-network-policies.yaml",
+    "segmentation-module.tf",
+    "README.md",
+    "README.es.md"
+  ]
+}

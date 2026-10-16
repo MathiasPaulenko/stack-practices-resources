@@ -1,0 +1,28 @@
+{
+  "title": "Serverless API Gateway — Companion Resources",
+  "title_es": "API Gateway Serverless — Recursos complementarios",
+  "description": "Runnable companion files for the serverless API Gateway recipe: Python and Node.js Lambda handlers plus a complete Terraform module (IAM role, AWS_PROXY integration, permission, deployment).",
+  "description_es": "Archivos ejecutables complementarios de la receta de API Gateway serverless: handlers Lambda en Python y Node.js más un módulo Terraform completo (rol IAM, integración AWS_PROXY, permiso, despliegue).",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-api-gateway",
+  "source_urls": [
+    "https://stackpractices.com/recipes/serverless-api-gateway/",
+    "https://stackpractices.com/es/recipes/serverless-api-gateway/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "serverless",
+    "api-gateway",
+    "aws-lambda",
+    "terraform",
+    "aws"
+  ],
+  "files": [
+    "handler.py",
+    "handler.js",
+    "main.tf",
+    "README.md",
+    "README.es.md"
+  ]
+}

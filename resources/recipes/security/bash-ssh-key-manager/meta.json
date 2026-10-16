@@ -1,0 +1,32 @@
+{
+  "title": "SSH Key Management in Bash — Companion Resources",
+  "title_es": "Gestión de Llaves SSH en Bash — Recursos complementarios",
+  "description": "Runnable companion scripts for the SSH key management recipe: ed25519 key generation, fleet distribution, verified rotation, authorized_keys CSV audit, CI/CD ssh-agent setup, sshd hardening, and a Python key manager.",
+  "description_es": "Scripts ejecutables complementarios de la receta de gestión de llaves SSH: generación ed25519, distribución en flota, rotación verificada, auditoría CSV de authorized_keys, setup de ssh-agent para CI/CD, hardening de sshd y un gestor en Python.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "bash-ssh-key-manager",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-ssh-key-manager/",
+    "https://stackpractices.com/es/recipes/bash-ssh-key-manager/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "bash",
+    "ssh",
+    "security",
+    "keys",
+    "automation"
+  ],
+  "files": [
+    "generate-key.sh",
+    "distribute-key.sh",
+    "rotate-key-verified.sh",
+    "audit-keys-fleet.sh",
+    "ssh-agent-ci.sh",
+    "sshd-hardening.sh",
+    "ssh-key-manager.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

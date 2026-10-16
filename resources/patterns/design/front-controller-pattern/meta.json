@@ -1,0 +1,22 @@
+{
+  "title": "Front Controller Pattern",
+  "title_es": "Patrón Front Controller",
+  "description": "Runnable Front Controller implementations: Java servlet with command objects, PHP index.php bootstrap, and Express middleware pipeline.",
+  "description_es": "Implementaciones ejecutables del patrón Front Controller: servlet Java con objetos comando, bootstrap PHP index.php y pipeline de middleware Express.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "front-controller-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/front-controller-pattern/",
+    "https://stackpractices.com/es/patterns/front-controller-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["front-controller", "design-pattern", "java", "php", "express", "mvc"],
+  "files": [
+    "java/FrontControllerServlet.java",
+    "php/index.php",
+    "node/app.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

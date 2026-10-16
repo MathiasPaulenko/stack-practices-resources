@@ -1,0 +1,30 @@
+{
+  "title": "Deployment Checklist Template — Companion Resources",
+  "title_es": "Plantilla de Checklist de Despliegue — Recursos complementarios",
+  "description": "Fillable markdown deployment checklist (pre/during/post release), a worked example, a canary deploy script for Kubernetes + Istio, and a deploy communication template.",
+  "description_es": "Checklist markdown rellenable de despliegue (pre/durante/post release), un ejemplo trabajado, un script de despliegue canary para Kubernetes + Istio y una plantilla de comunicación de despliegue.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "deployment-checklist-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/deployment-checklist-template/",
+    "https://stackpractices.com/es/docs/deployment-checklist-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "deployment",
+    "checklist",
+    "canary",
+    "devops",
+    "release",
+    "template"
+  ],
+  "files": [
+    "deployment-checklist-template.md",
+    "example-filled.md",
+    "canary-deploy.sh",
+    "deployment-communication.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

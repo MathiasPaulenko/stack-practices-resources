@@ -1,0 +1,21 @@
+=== Deployment Communication ===
+
+Channel: #deployments
+Deployer: alice@example.com
+Date: 2026-07-11 14:00 UTC
+
+Starting deployment: API v2.3.1
+  Risk level: MEDIUM
+  Changes: Bug fixes + performance improvements
+  Rollback: git revert + redeploy (est. 5 min)
+
+14:00 - Deploying to staging... DONE
+14:05 - Smoke tests in staging... PASS
+14:10 - Deploying canary (10% traffic)...
+14:20 - Canary metrics look good (error rate: 0.02%)
+14:25 - Promoting to full rollout...
+14:30 - Rollout complete. Monitoring for 30 min.
+15:00 - Deployment confirmed stable. Status: OPERATIONAL.
+
+If issues detected: contact #on-call, reference CHG-2026-07-11-001
+Rollback command: ./scripts/rollback.sh API v2.3.0
