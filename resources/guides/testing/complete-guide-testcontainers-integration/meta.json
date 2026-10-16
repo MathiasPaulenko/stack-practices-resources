@@ -1,0 +1,33 @@
+{
+  "title": "Testcontainers Integration Tests — Multi-Language",
+  "title_es": "Tests de integración con Testcontainers — Multi-Lenguaje",
+  "description": "Runnable Testcontainers examples in three stacks: JUnit 5 + Maven (PostgreSQL, Kafka, Redis, custom MockServer), pytest + SQLAlchemy, and vitest in Node.js, plus a GitHub Actions workflow that runs them in CI.",
+  "description_es": "Ejemplos ejecutables de Testcontainers en tres stacks: JUnit 5 + Maven (PostgreSQL, Kafka, Redis, MockServer personalizado), pytest + SQLAlchemy y vitest en Node.js, más un workflow de GitHub Actions que los corre en CI.",
+  "type": "guides",
+  "topic": "testing",
+  "slug": "complete-guide-testcontainers-integration",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-testcontainers-integration/",
+    "https://stackpractices.com/es/guides/complete-guide-testcontainers-integration/",
+    "https://testcontainers.com/"
+  ],
+  "language": "bilingual",
+  "tags": ["testcontainers", "integration-testing", "docker", "java", "python", "nodejs", "junit5", "pytest", "vitest"],
+  "files": [
+    "java/pom.xml",
+    "java/src/test/java/PostgresIntegrationTest.java",
+    "java/src/test/java/KafkaIntegrationTest.java",
+    "java/src/test/java/RedisIntegrationTest.java",
+    "java/src/test/java/CustomContainerTest.java",
+    "python/requirements.txt",
+    "python/tests/integration/test_postgres.py",
+    "python/tests/integration/test_redis.py",
+    "python/tests/integration/test_kafka.py",
+    "node/package.json",
+    "node/tests/integration/postgres.test.ts",
+    "node/tests/integration/redis.test.ts",
+    ".github/workflows/integration-tests.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

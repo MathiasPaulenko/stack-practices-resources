@@ -1,0 +1,33 @@
+# Reusable test suite — call it from any workflow with `uses`.
+# Example:
+#   jobs:
+#     test:
+#       uses: ./.github/workflows/test-suite.yml
+#       with:
+#         node-version: 22
+name: Test Suite
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: false
+        type: number
+        default: 20
+    secrets:
+      API_KEY:
+        required: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: npm
+      - run: npm ci
+      - run: npm test
+        env:
+          API_KEY: ${{ secrets.API_KEY }}

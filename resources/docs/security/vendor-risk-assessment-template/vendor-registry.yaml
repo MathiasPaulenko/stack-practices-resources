@@ -1,0 +1,11 @@
+# Vendor registry for continuous posture monitoring.
+# Keep this file in sync with your approved-vendor list.
+vendors:
+  - name: "Acme Cloud Services"
+    domain: "acmecloud.com"
+    risk_level: high
+    renewal_date: "2027-12-31"
+  - name: "Analytics Pro"
+    domain: "analyticspro.com"
+    risk_level: low
+    renewal_date: "2026-09-15"

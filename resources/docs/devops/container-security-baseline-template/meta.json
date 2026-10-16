@@ -1,0 +1,37 @@
+{
+  "title": "Container Security Baseline Template — Companion Code",
+  "title_es": "Plantilla de Línea Base de Seguridad de Contenedores — Código complementario",
+  "description": "Container security kit: Kyverno ClusterPolicies for non-root, privileged, and resource checks, Pod Security Admission namespace labels, default-deny NetworkPolicies, an External Secrets registry credential example, and an exception register template.",
+  "description_es": "Kit de seguridad de contenedores: ClusterPolicies de Kyverno para no-root, privilegiados y recursos, etiquetas de namespace de Pod Security Admission, NetworkPolicies de denegación por defecto, un ejemplo de credencial de registro con External Secrets y una plantilla de registro de excepciones.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "container-security-baseline-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/container-security-baseline-template/",
+    "https://stackpractices.com/es/docs/container-security-baseline-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "container-security",
+    "kubernetes",
+    "kyverno",
+    "pod-security-standards",
+    "networkpolicy",
+    "external-secrets",
+    "cosign",
+    "sbom",
+    "hardening",
+    "template"
+  ],
+  "files": [
+    "policies/kyverno-enforce-non-root.yaml",
+    "policies/kyverno-disallow-privileged.yaml",
+    "policies/kyverno-require-resources.yaml",
+    "policies/namespace-pod-security.yaml",
+    "network/default-deny-all.yaml",
+    "network/allow-frontend-to-backend.yaml",
+    "network/allow-dns-egress.yaml",
+    "secrets/external-secret-registry.yaml",
+    "exceptions/exception-register.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Complete Guide to CI/CD with GitHub Actions",
+  "title_es": "Guía completa de CI/CD con GitHub Actions",
+  "description": "Ready-to-use GitHub Actions workflows: full CI/CD pipeline, reusable test suite, concurrency and deployment gates.",
+  "description_es": "Workflows de GitHub Actions listos para usar: pipeline CI/CD completo, suite de tests reutilizable, concurrencia y puertas de despliegue.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-ci-cd-github-actions",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-ci-cd-github-actions/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-ci-cd-github-actions/"
+  },
+  "language": "bilingual",
+  "tags": ["github-actions", "ci-cd", "workflows", "pipeline", "devops", "yaml"],
+  "files": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/test-suite.yml",
+    "deploy.sh",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

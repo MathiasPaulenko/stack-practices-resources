@@ -1,0 +1,32 @@
+{
+  "title": "Helm Chart Templating: Package Kubernetes Manifests",
+  "title_es": "Templating con Helm: empaquetar manifiestos Kubernetes",
+  "description": "Complete runnable Helm chart: Chart.yaml with OCI dependencies, values.yaml plus per-environment overrides, templates for Deployment, Service, ConfigMap and Ingress, named helpers, a post-install hook Job, a SealedSecret example, .helmignore and NOTES.txt.",
+  "description_es": "Helm chart completo y ejecutable: Chart.yaml con dependencias OCI, values.yaml más overrides por entorno, templates para Deployment, Service, ConfigMap e Ingress, helpers nombrados, un Job de hook post-install, un ejemplo de SealedSecret, .helmignore y NOTES.txt.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "kubernetes-helm-chart-templating",
+  "source_urls": [
+    "https://stackpractices.com/recipes/kubernetes-helm-chart-templating/",
+    "https://stackpractices.com/es/recipes/kubernetes-helm-chart-templating/"
+  ],
+  "language": "bilingual",
+  "tags": ["helm", "kubernetes", "helm-chart", "templating", "devops", "yaml", "oci", "packaging"],
+  "files": [
+    "my-chart/Chart.yaml",
+    "my-chart/.helmignore",
+    "my-chart/values.yaml",
+    "my-chart/values/staging.yaml",
+    "my-chart/values/production.yaml",
+    "my-chart/templates/_helpers.tpl",
+    "my-chart/templates/deployment.yaml",
+    "my-chart/templates/service.yaml",
+    "my-chart/templates/configmap.yaml",
+    "my-chart/templates/ingress.yaml",
+    "my-chart/templates/post-install-job.yaml",
+    "my-chart/templates/sealedsecret.yaml",
+    "my-chart/templates/NOTES.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

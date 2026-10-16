@@ -1,0 +1,26 @@
+{
+  "title": "Distributed Tracing: OpenTelemetry, Jaeger, Zipkin",
+  "title_es": "Trazado distribuido: OpenTelemetry, Jaeger y Zipkin",
+  "description": "OpenTelemetry instrumentation examples (Python, Node.js, Java), OTel Collector config, Kafka context propagation, and a docker-compose Jaeger/Zipkin lab.",
+  "description_es": "Ejemplos de instrumentación con OpenTelemetry (Python, Node.js, Java), configuración del OTel Collector, propagación de contexto por Kafka y un laboratorio Jaeger/Zipkin con docker-compose.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "complete-guide-distributed-tracing",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-distributed-tracing/",
+    "https://stackpractices.com/es/guides/complete-guide-distributed-tracing/"
+  ],
+  "language": "python",
+  "tags": ["distributed-tracing", "opentelemetry", "jaeger", "zipkin", "otel-collector", "kafka", "docker-compose"],
+  "files": [
+    "instrumentation.py",
+    "order_service.py",
+    "tracing.ts",
+    "kafka_propagation.py",
+    "span_links.py",
+    "otel-collector-config.yaml",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

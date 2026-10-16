@@ -1,0 +1,23 @@
+{
+  "title": "CONTRIBUTING.md Template (English + Spanish)",
+  "title_es": "Plantilla de CONTRIBUTING.md (Inglés + Español)",
+  "description": "Copy-paste CONTRIBUTING.md template with ways to contribute, development setup, coding standards, pull request workflow, and private security reporting — plus a matching SECURITY.md snippet.",
+  "description_es": "Plantilla de CONTRIBUTING.md lista para copiar con formas de contribuir, configuración de desarrollo, estándares de código, flujo de pull request y reporte de seguridad privado — más un fragmento de SECURITY.md.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "contributing-guide",
+  "source_urls": [
+    "https://stackpractices.com/docs/contributing-guide/",
+    "https://stackpractices.com/es/docs/contributing-guide/",
+    "https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors"
+  ],
+  "language": "bilingual",
+  "tags": ["contributing", "template", "open-source", "onboarding", "community", "github", "security"],
+  "files": [
+    "CONTRIBUTING.md",
+    "CONTRIBUTING.es.md",
+    "SECURITY.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

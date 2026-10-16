@@ -1,0 +1,29 @@
+{
+  "title": "Prometheus and Grafana: Metrics, Dashboards, Alerting",
+  "title_es": "Prometheus y Grafana: métricas, dashboards y alertas",
+  "description": "Complete Prometheus + Grafana + Alertmanager lab: service instrumentation (Python, Node.js, Java), alerting and recording rules, Grafana provisioning, and a docker-compose stack.",
+  "description_es": "Laboratorio completo de Prometheus + Grafana + Alertmanager: instrumentación de servicios (Python, Node.js, Java), reglas de alerta y recording rules, aprovisionamiento de Grafana y stack con docker-compose.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "complete-guide-prometheus-grafana",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-prometheus-grafana/",
+    "https://stackpractices.com/es/guides/complete-guide-prometheus-grafana/"
+  ],
+  "language": "yaml",
+  "tags": ["prometheus", "grafana", "alertmanager", "promql", "monitoring", "alerting", "docker-compose", "observability"],
+  "files": [
+    "docker-compose.yml",
+    "prometheus.yml",
+    "alertmanager.yml",
+    "alerting_rules.yml",
+    "grafana/provisioning/datasources/datasource.yml",
+    "grafana/provisioning/dashboards/dashboards.yml",
+    "grafana/dashboards/order-service.json",
+    "metrics.py",
+    "metrics.ts",
+    "MetricsConfig.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

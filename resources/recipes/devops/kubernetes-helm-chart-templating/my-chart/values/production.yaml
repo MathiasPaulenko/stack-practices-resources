@@ -1,0 +1,25 @@
+replicaCount: 5
+
+image:
+  tag: "2.5.0-prod"
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 512Mi
+  limits:
+    cpu: 2000m
+    memory: 2Gi
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: my-app.production.com
+      paths:
+        - path: /
+          pathType: Prefix
+
+config:
+  LOG_LEVEL: warn
+  DATABASE_URL: "postgres://prod-db:5432/myapp"

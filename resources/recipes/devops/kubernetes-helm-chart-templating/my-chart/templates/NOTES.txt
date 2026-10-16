@@ -1,0 +1,17 @@
+{{ include "my-app.fullname" . }} has been installed.
+
+{{- if .Values.ingress.enabled }}
+Your app is reachable through the Ingress at:
+  {{- range .Values.ingress.hosts }}
+  https://{{ .host }}
+  {{- end }}
+{{- else }}
+Ingress is disabled. To reach the service from your machine:
+
+  kubectl port-forward svc/{{ include "my-app.fullname" . }} 8080:{{ .Values.service.port }}
+
+Then open http://localhost:8080
+{{- end }}
+
+Check the release status any time with:
+  helm status {{ .Release.Name }} -n {{ .Release.Namespace }}

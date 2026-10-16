@@ -1,0 +1,56 @@
+# Kubernetes deployment exercising all three probe types.
+# startupProbe grants up to 150s of boot time; while it runs,
+# liveness and readiness stay paused.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: health-check-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: health-check-demo
+  template:
+    metadata:
+      labels:
+        app: health-check-demo
+    spec:
+      containers:
+        - name: app
+          image: health-check-demo:1.0.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: DATABASE_URL
+              value: postgresql://postgres:postgres@postgres:5432/demo
+            - name: REDIS_URL
+              value: redis://redis:6379
+          startupProbe:
+            httpGet:
+              path: /health/startup
+              port: 8080
+            periodSeconds: 5
+            failureThreshold: 30
+          readinessProbe:
+            httpGet:
+              path: /health/ready
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 3
+            failureThreshold: 2
+          livenessProbe:
+            httpGet:
+              path: /health/live
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

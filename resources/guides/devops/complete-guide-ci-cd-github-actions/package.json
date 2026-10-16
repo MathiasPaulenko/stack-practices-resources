@@ -1,0 +1,11 @@
+{
+  "name": "ci-cd-github-actions-example",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Minimal Node project used by the GitHub Actions CI/CD workflows.",
+  "scripts": {
+    "lint": "echo \"lint: no linter configured in the example\"",
+    "test": "echo \"tests: no tests configured in the example\"",
+    "build": "mkdir -p dist && echo \"built at $(date)\" > dist/build.txt"
+  }
+}

@@ -1,0 +1,26 @@
+# Weekly vendor security posture check.
+# Place under .github/workflows/vendor-monitoring.yml in your repo,
+# next to vendor-registry.yaml, vendor_monitor.py and
+# vendor_security_check.py.
+name: Vendor Security Monitoring
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Mondays 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install requests pyyaml
+      - name: Run vendor checks
+        env:
+          HIBP_API_KEY: ${{ secrets.HIBP_API_KEY }}
+        run: python vendor_monitor.py --config vendor-registry.yaml

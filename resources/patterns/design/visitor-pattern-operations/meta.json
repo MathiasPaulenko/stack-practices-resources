@@ -1,0 +1,31 @@
+{
+  "title": "Visitor Pattern: Extensible Operations in TypeScript — Companion Code",
+  "title_es": "Patrón Visitor: Operaciones Extensibles en TypeScript — Código complementario",
+  "description": "Runnable visitor implementations over a TypeScript expression AST: evaluator, printer and JSON serializer visitors, plus a discriminated-union alternative, accompanying the Visitor Pattern: Extensible Operations resource.",
+  "description_es": "Implementaciones ejecutables de visitors sobre un AST de expresiones en TypeScript: evaluador, impresor y serializador JSON, más la alternativa con unión discriminada, que acompañan al recurso del Patrón Visitor: Operaciones Extensibles.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "visitor-pattern-operations",
+  "source_urls": [
+    "https://stackpractices.com/patterns/visitor-pattern-operations/",
+    "https://stackpractices.com/es/patterns/visitor-pattern-operations/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "visitor",
+    "design-pattern",
+    "behavioral",
+    "double-dispatch",
+    "ast",
+    "typescript",
+    "python"
+  ],
+  "files": [
+    "visitor-ast.ts",
+    "visitor_ast.py",
+    "discriminated-union.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

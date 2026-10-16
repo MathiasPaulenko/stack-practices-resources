@@ -1,0 +1,17 @@
+apiVersion: v2
+name: my-app
+description: A Helm chart for my application
+type: application
+version: 1.0.0          # Chart version
+appVersion: "2.5.0"     # App version
+keywords:
+  - web
+  - api
+maintainers:
+  - name: Mathias Paulenko
+    email: mathias@example.com
+dependencies:
+  - name: postgresql
+    version: 12.x.x
+    repository: oci://registry-1.docker.io/bitnamicharts
+    condition: postgresql.enabled

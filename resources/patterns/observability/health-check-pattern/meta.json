@@ -1,0 +1,25 @@
+{
+  "title": "Health Check Pattern: Expose Liveness and Readiness Probes",
+  "title_es": "Patrón Health Check: Sondeos de Liveness y Readiness",
+  "description": "Runnable FastAPI demo with /health/live, /health/ready and /health/startup endpoints, dependency checks with timeouts, graceful shutdown via lifespan, a Kubernetes deployment with all three probe types, and a docker-compose lab with PostgreSQL and Redis.",
+  "description_es": "Demo ejecutable en FastAPI con endpoints /health/live, /health/ready y /health/startup, chequeos de dependencias con timeouts, apagado elegante con lifespan, un Deployment de Kubernetes con los tres tipos de probe y un laboratorio docker-compose con PostgreSQL y Redis.",
+  "type": "patterns",
+  "topic": "observability",
+  "slug": "health-check-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/health-check-pattern/",
+    "https://stackpractices.com/es/patterns/health-check-pattern/"
+  ],
+  "language": "python",
+  "tags": ["health-check", "kubernetes", "liveness", "readiness", "startup-probe", "fastapi", "docker-compose"],
+  "files": [
+    "app.py",
+    "requirements.txt",
+    "Dockerfile",
+    "docker-compose.yml",
+    "k8s-deployment.yaml",
+    "worker_probe.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

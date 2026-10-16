@@ -1,0 +1,25 @@
+{
+  "title": "Vendor Risk Assessment Template",
+  "title_es": "Plantilla de Evaluación de Riesgos de Proveedores",
+  "description": "Assessment workbook, vendor security check script, risk scoring model, and CI monitoring workflow for third-party vendor evaluation.",
+  "description_es": "Libro de evaluación, script de comprobación de seguridad del proveedor, modelo de puntuación de riesgo y workflow de CI de monitorización para la evaluación de proveedores de terceros.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "vendor-risk-assessment-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/vendor-risk-assessment-template/",
+    "https://stackpractices.com/es/docs/vendor-risk-assessment-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "vendor-risk", "third-party", "soc2", "compliance", "python", "github-actions"],
+  "files": [
+    "assessment-workbook.md",
+    "vendor_security_check.py",
+    "vendor_risk_scorer.py",
+    "vendor_monitor.py",
+    "vendor-monitoring.yml",
+    "vendor-registry.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

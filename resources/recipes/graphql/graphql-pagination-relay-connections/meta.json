@@ -1,0 +1,25 @@
+{
+  "title": "GraphQL Relay Cursor Pagination — Runnable Server",
+  "title_es": "Paginación por cursores Relay en GraphQL — Servidor ejecutable",
+  "description": "Runnable Apollo Server implementing the Relay Connection spec: Connection/Edge/PageInfo types, base64 cursor encoding, bidirectional first/after + last/before resolver, and an in-memory post store to try queries immediately.",
+  "description_es": "Servidor Apollo ejecutable que implementa la especificación Relay Connection: tipos Connection/Edge/PageInfo, codificación de cursores base64, resolver bidireccional first/after + last/before y un store en memoria para probar queries al instante.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-pagination-relay-connections",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-pagination-relay-connections/",
+    "https://stackpractices.com/es/recipes/graphql-pagination-relay-connections/",
+    "https://relay.dev/graphql/connections.htm"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "pagination", "relay", "cursor", "apollo-server", "typescript"],
+  "files": [
+    "src/schema.ts",
+    "src/cursor.ts",
+    "src/resolvers.ts",
+    "src/server.ts",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

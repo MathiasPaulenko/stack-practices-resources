@@ -1,0 +1,24 @@
+{
+  "title": "Advanced iptables Firewall Rules and Hardening",
+  "title_es": "Reglas avanzadas de firewall con iptables",
+  "description": "Complete iptables hardening toolkit: baseline ruleset, IPv6 parity, DDoS mitigation with connlimit and SYNPROXY, rate-limited packet logging via rsyslog, fail2ban jail config, nftables migration config, and knockd port knocking.",
+  "description_es": "Kit completo de hardening con iptables: conjunto base, paridad IPv6, mitigación DDoS con connlimit y SYNPROXY, logging de paquetes con rate limit vía rsyslog, configuración de jail de fail2ban, configuración de nftables para migración y port knocking con knockd.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "bash-iptables-firewall-rules",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-iptables-firewall-rules/",
+    "https://stackpractices.com/es/recipes/bash-iptables-firewall-rules/"
+  ],
+  "language": "bash",
+  "tags": ["bash", "iptables", "firewall", "security", "linux", "nftables", "fail2ban"],
+  "files": [
+    "firewall-basic.sh",
+    "firewall-ipv6.sh",
+    "ddos-mitigation.sh",
+    "logging-setup.sh",
+    "nftables.conf",
+    "knockd.conf",
+    "fail2ban/jail.local"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "testcontainers-integration",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run tests/integration"
+  },
+  "devDependencies": {
+    "testcontainers": "^10.0.0",
+    "@testcontainers/postgresql": "^10.0.0",
+    "@testcontainers/redis": "^10.0.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "pg": "^8.13.0",
+    "ioredis": "^5.4.0"
+  }
+}

@@ -1,0 +1,44 @@
+# Lab for the Health Check Pattern: app + its real dependencies.
+# docker compose up --build, then:
+#   curl localhost:8080/health/live     -> always 200 while the process runs
+#   curl localhost:8080/health/ready    -> 503 until postgres and redis are up
+#   docker compose stop postgres        -> readiness flips to 503, liveness stays 200
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/demo
+      REDIS_URL: redis://redis:6379
+    # Docker-native liveness: hits the liveness endpoint, not readiness
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://localhost:8080/health/live')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+      start_period: 15s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: demo
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d demo"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10

@@ -1,0 +1,30 @@
+{
+  "title": "SQL Injection Prevention — Companion Code",
+  "title_es": "Prevención de inyección SQL — Código complementario",
+  "description": "Runnable parameterized-query examples in Python (sqlite3), Node.js (pg), and Java (JDBC PreparedStatement): safe queries, LIKE wildcard escaping, ORDER BY allowlists, and a sqlmap cheatsheet for your own staging environments.",
+  "description_es": "Ejemplos ejecutables de consultas parametrizadas en Python (sqlite3), Node.js (pg) y Java (JDBC PreparedStatement): consultas seguras, escape de comodines en LIKE, listas permitidas para ORDER BY y una chuleta de sqlmap para tus propios entornos de staging.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "sql-injection-prevention",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-injection-prevention/",
+    "https://stackpractices.com/es/recipes/sql-injection-prevention/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql-injection",
+    "parameterized-queries",
+    "prepared-statements",
+    "orm",
+    "owasp",
+    "database-security",
+    "sqlmap",
+    "recipe"
+  ],
+  "files": [
+    "python/parameterized_queries.py",
+    "node/parameterized_queries.js",
+    "java/PreparedStatementExample.java",
+    "testing/sqlmap-cheatsheet.sh"
+  ]
+}

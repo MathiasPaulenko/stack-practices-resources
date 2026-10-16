@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fact table containing all customer orders"
+    columns:
+      - name: order_id
+        description: "Unique order identifier"
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              values: ["ord_%"]
+              quote: false
+
+      - name: customer_id
+        description: "Customer reference"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+
+      - name: order_date
+        description: "Order placement timestamp"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "order_date <= CURRENT_TIMESTAMP"
+
+      - name: status
+        description: "Order status"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['pending', 'processing', 'completed', 'cancelled', 'refunded']
+
+      - name: total_amount
+        description: "Order total in original currency"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: "total_amount > 0"
+          - dbt_utils.expression_is_true:
+              expression: "total_amount < 100000"
+
+      - name: currency
+        description: "ISO 4217 currency code"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CHF', 'CNY', 'BRL', 'MXN']
+
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "status != 'completed' OR payment_method IS NOT NULL"
+          name: completed_orders_have_payment_method
+
+      - dbt_utils.expression_is_true:
+          expression: "status != 'refunded' OR refund_amount <= total_amount"
+          name: refund_does_not_exceed_original

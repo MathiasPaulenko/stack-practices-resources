@@ -1,0 +1,9 @@
+# Patterns to exclude from the packaged chart (.tgz)
+.git/
+.gitignore
+*.md
+*.tgz
+tests/
+ci/
+values/local*.yaml
+.DS_Store

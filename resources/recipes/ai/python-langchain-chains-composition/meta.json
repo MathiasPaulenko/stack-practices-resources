@@ -1,0 +1,23 @@
+{
+  "title": "Compose LCEL Chains in LangChain",
+  "title_es": "Componer cadenas LCEL en LangChain",
+  "description": "Runnable LCEL project: modular chain factories (basic, multi-step, parallel, custom lambdas, retry+fallback, routing) plus a main.py that invokes every variant.",
+  "description_es": "Proyecto LCEL ejecutable: factories de cadenas modulares (básica, multi-paso, paralela, lambdas personalizadas, retry+fallback, enrutamiento) más un main.py que invoca cada variante.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-langchain-chains-composition",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-langchain-chains-composition/",
+    "https://stackpractices.com/es/recipes/python-langchain-chains-composition/",
+    "https://python.langchain.com/docs/concepts/lcel/"
+  ],
+  "language": "bilingual",
+  "tags": ["python", "langchain", "lcel", "llm", "chains", "openai", "prompt-engineering"],
+  "files": [
+    "chains.py",
+    "main.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

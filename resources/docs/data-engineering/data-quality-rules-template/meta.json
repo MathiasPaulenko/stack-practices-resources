@@ -1,0 +1,26 @@
+{
+  "title": "Data Quality Rules Template",
+  "title_es": "Plantilla de Reglas de Calidad de Datos",
+  "description": "Companion files for the data quality rules template: the blank rules document, dbt schema tests, custom dbt SQL tests, and a Great Expectations suite for the fct_orders example.",
+  "description_es": "Archivos companion de la plantilla de reglas de calidad de datos: el documento de reglas en blanco, los tests de schema de dbt, los tests SQL personalizados de dbt y la suite de Great Expectations del ejemplo fct_orders.",
+  "type": "docs",
+  "topic": "data-engineering",
+  "slug": "data-quality-rules-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-quality-rules-template/",
+    "https://stackpractices.com/es/docs/data-quality-rules-template/",
+    "https://docs.getdbt.com/docs/build/data-tests",
+    "https://docs.greatexpectations.io/"
+  ],
+  "language": "bilingual",
+  "tags": ["data-quality", "dbt", "great-expectations", "sql", "testing", "data-engineering", "validation", "template"],
+  "files": [
+    "template/data-quality-rules-template.md",
+    "dbt/schema.yml",
+    "dbt/tests/assert_row_count_range.sql",
+    "dbt/tests/assert_data_freshness.sql",
+    "great-expectations/fct_orders_suite.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
