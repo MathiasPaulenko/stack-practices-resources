@@ -1,0 +1,29 @@
+{
+  "title": "Dead Letter Queues — Companion Resources",
+  "title_es": "Colas de mensajes fallidos (DLQ) — Recursos complementarios",
+  "description": "Runnable companion code for the dead letter queue recipe: AWS SQS redrive policy setup, a RabbitMQ dead-letter exchange consumer in Python (pika), and a KafkaJS consumer that republishes failed messages to a dead-letter topic.",
+  "description_es": "Código ejecutable de la receta de dead letter queues: configuración de la política de reenvío en AWS SQS, consumidor RabbitMQ con dead-letter exchange en Python (pika) y consumidor KafkaJS que republica los mensajes fallidos en un topic DLQ.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "dead-letter-queue",
+  "source_urls": [
+    "https://stackpractices.com/recipes/dead-letter-queue/",
+    "https://stackpractices.com/es/recipes/dead-letter-queue/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "dead-letter-queue",
+    "messaging",
+    "sqs",
+    "rabbitmq",
+    "kafka",
+    "error-handling"
+  ],
+  "files": [
+    "sqs-dlq-setup.sh",
+    "rabbitmq_dlq_consumer.py",
+    "kafka_dlq_consumer.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

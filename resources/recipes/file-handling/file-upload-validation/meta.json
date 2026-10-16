@@ -1,0 +1,32 @@
+{
+  "title": "File Upload Validation — Companion Resources",
+  "title_es": "Validación de Subida de Archivos — Recursos complementarios",
+  "description": "Runnable companion code for the file upload validation recipe: layered Werkzeug validator, multer + file-type setup, Spring Boot validator, Redis quotas, safe ZIP extraction, security-event logging, and nginx upload headers.",
+  "description_es": "Código ejecutable de la receta de validación de subidas: validador por capas con Werkzeug, setup de multer + file-type, validador Spring Boot, cuotas con Redis, extracción ZIP segura, logging de eventos de seguridad y headers nginx.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "file-upload-validation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/file-upload-validation/",
+    "https://stackpractices.com/es/recipes/file-upload-validation/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "file-upload",
+    "validation",
+    "security",
+    "mime-type",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "validate_upload.py",
+    "upload.js",
+    "UploadValidator.java",
+    "upload_quota.py",
+    "nginx-uploads.conf",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Network Security Documentation Template",
+  "title_es": "Plantilla de Documentación de Seguridad de Red",
+  "description": "Network security inventory template with a security group auditor (boto3), VPC flow log analyzer, baseline Kubernetes NetworkPolicies, and a default-deny coverage verifier.",
+  "description_es": "Plantilla de inventario de seguridad de red con auditor de security groups (boto3), analizador de flow logs de VPC, NetworkPolicies base para Kubernetes y verificador de cobertura default-deny.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "network-security-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/network-security-template/",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/security-groups.html",
+    "https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html",
+    "https://cloud.google.com/firewall/docs/firewalls",
+    "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+    "https://csrc.nist.gov/pubs/sp/800/41/r1/final"
+  ],
+  "language": "bilingual",
+  "tags": ["network-security", "security-groups", "vpc", "firewall", "nacl", "dns", "network-policy", "kubernetes", "boto3", "security-audit", "devops"],
+  "files": [
+    "network-security-inventory.md",
+    "sg_audit.py",
+    "flow_log_analysis.sh",
+    "k8s-networkpolicies.yaml",
+    "check_default_deny.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
