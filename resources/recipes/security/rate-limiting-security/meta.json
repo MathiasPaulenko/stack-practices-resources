@@ -1,0 +1,22 @@
+{
+  "slug": "rate-limiting-security",
+  "title": "Rate Limiting for API Security: Block Abuse and Brute Force",
+  "titleEs": "Rate Limiting contra Abuso y Ataques de Fuerza Bruta",
+  "type": "recipes",
+  "topic": "security",
+  "difficulty": "intermediate",
+  "description": "Rate limiting as a security control: atomic Redis token bucket, tiered Express middleware, Nginx edge limits, and a burst-test script.",
+  "descriptionEs": "Rate limiting como control de seguridad: token bucket atómico en Redis, middleware por niveles para Express, límites en el edge con Nginx y script de prueba.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-10-17",
+  "lastUpdated": "2026-10-17",
+  "files": [
+    "token_bucket.lua",
+    "rate_limiter.py",
+    "express_limiter.js",
+    "nginx-rate-limit.conf",
+    "test_limits.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

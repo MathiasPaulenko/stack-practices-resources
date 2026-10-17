@@ -1,0 +1,29 @@
+{
+  "title": "Microservices Communication Patterns — Code Examples",
+  "title_es": "Patrones de Comunicación entre Microservicios — Ejemplos de Código",
+  "description": "Runnable code examples for the microservices communication guide: REST aggregation, gRPC contract and client, RabbitMQ queue, Kafka pub/sub, transactional outbox, Kong gateway, Istio mesh, and idempotent HTTP client.",
+  "description_es": "Ejemplos de código ejecutables para la guía de comunicación entre microservicios: agregación REST, contrato y cliente gRPC, cola RabbitMQ, pub/sub Kafka, outbox transaccional, gateway Kong, mesh Istio y cliente HTTP idempotente.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "complete-guide-microservices-communication",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-microservices-communication/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-microservices-communication/"
+  },
+  "language": "bilingual",
+  "tags": ["microservices", "rest", "grpc", "rabbitmq", "kafka", "outbox", "api-gateway", "istio", "idempotency"],
+  "files": [
+    "rest/orders_summary.py",
+    "grpc/order.proto",
+    "grpc/order_client.py",
+    "queue/order_events.py",
+    "pubsub/order_events.js",
+    "outbox/OrderService.java",
+    "outbox/OutboxPublisher.java",
+    "gateway/kong.yaml",
+    "mesh/order-service.yaml",
+    "resilience/payment_client.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

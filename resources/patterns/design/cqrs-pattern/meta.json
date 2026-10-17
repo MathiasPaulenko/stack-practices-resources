@@ -1,0 +1,30 @@
+{
+  "title": "CQRS Pattern — Companion Resources",
+  "title_es": "Patrón CQRS — Recursos complementarios",
+  "description": "Runnable CQRS demos in Python, Java, and JavaScript plus an event-driven projection demo with idempotent consumers and replay.",
+  "description_es": "Demos ejecutables de CQRS en Python, Java y JavaScript más una demo de proyección por eventos con consumidores idempotentes y replay.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "cqrs-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/cqrs-pattern/",
+    "https://stackpractices.com/es/patterns/cqrs-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cqrs",
+    "design-pattern",
+    "event-sourcing",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "cqrs_demo.py",
+    "cqrs-demo.js",
+    "CqrsDemo.java",
+    "projection-demo.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

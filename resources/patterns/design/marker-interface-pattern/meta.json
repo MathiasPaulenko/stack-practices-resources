@@ -1,0 +1,28 @@
+{
+  "title": "Marker Interface Pattern — Companion Resources",
+  "title_es": "Patrón Marker Interface — Recursos complementarios",
+  "description": "Runnable marker-interface demos in Python (empty ABC + isinstance), Java (empty interfaces + instanceof), and JavaScript (Symbol keys + static checks).",
+  "description_es": "Demos ejecutables de marker interfaces en Python (ABC vacía + isinstance), Java (interfaces vacías + instanceof) y JavaScript (claves Symbol + checks estáticos).",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "marker-interface-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/marker-interface-pattern/",
+    "https://stackpractices.com/es/patterns/marker-interface-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "marker-interface",
+    "design-pattern",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "marker_demo.py",
+    "MarkerDemo.java",
+    "marker-demo.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

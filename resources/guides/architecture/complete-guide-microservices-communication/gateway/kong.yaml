@@ -1,0 +1,25 @@
+# Kong or NGINX API Gateway configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-routes
+data:
+  kong.yml: |
+    routes:
+      - name: order-service
+        paths:
+          - /orders
+        service:
+          name: order-service
+          url: http://order-service:8000
+      - name: payment-service
+        paths:
+          - /payments
+        service:
+          name: payment-service
+          url: http://payment-service:8000
+    plugins:
+      - name: rate-limiting
+        config:
+          minute: 100
+      - name: jwt

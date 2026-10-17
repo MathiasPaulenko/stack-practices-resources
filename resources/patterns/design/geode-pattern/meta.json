@@ -1,0 +1,20 @@
+{
+  "slug": "geode-pattern",
+  "title": "Geode Pattern: Partition Data Across Independent Nodes",
+  "titleEs": "Patrón Geode: Particionar Datos entre Nodos Independientes",
+  "type": "patterns",
+  "topic": "design",
+  "difficulty": "advanced",
+  "description": "Runnable Geode Pattern cluster in Python, JavaScript and Java: hash-based shard ownership, self-contained nodes, and isolated node failure.",
+  "descriptionEs": "Clúster del patrón Geode ejecutable en Python, JavaScript y Java: propiedad de shards por hash, nodos autocontenidos y fallo aislado de nodo.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-10-17",
+  "lastUpdated": "2026-10-17",
+  "files": [
+    "geode_cluster.py",
+    "geode_cluster.js",
+    "GeodeCluster.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Adapter Pattern — Code Examples",
+  "title_es": "Patrón Adapter — Ejemplos de Código",
+  "description": "Runnable Adapter Pattern examples in Python, JavaScript, and Java: object adapter wrapping a legacy printer, plus a two-way adapter variant.",
+  "description_es": "Ejemplos ejecutables del Patrón Adapter en Python, JavaScript y Java: adapter de objeto que envuelve una impresora legacy, más una variante bidireccional.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "adapter-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/adapter-pattern/",
+    "es": "https://stackpractices.com/es/patterns/adapter-pattern/"
+  },
+  "language": "bilingual",
+  "tags": ["adapter", "design-pattern", "structural", "python", "javascript", "java"],
+  "files": [
+    "python/printer_adapter.py",
+    "javascript/printer_adapter.js",
+    "java/PrinterAdapter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

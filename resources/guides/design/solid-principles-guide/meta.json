@@ -1,0 +1,30 @@
+{
+  "title": "SOLID Principles Guide — Companion Resources",
+  "title_es": "Principios SOLID — Recursos complementarios",
+  "description": "Before/after TypeScript refactor of a payment service applying all five SOLID principles: narrow interfaces, swappable gateways, dependency injection, and a fully mockable composition root.",
+  "description_es": "Refactor antes/después en TypeScript de un servicio de pagos aplicando los cinco principios SOLID: interfaces angostas, gateways intercambiables, inyección de dependencias y un composition root totalmente simulable.",
+  "type": "guides",
+  "topic": "design",
+  "slug": "solid-principles-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/solid-principles-guide/",
+    "https://stackpractices.com/es/guides/solid-principles-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "solid",
+    "typescript",
+    "dependency-injection",
+    "design-principles",
+    "refactoring"
+  ],
+  "files": [
+    "before/payment-processor.ts",
+    "after/interfaces.ts",
+    "after/implementations.ts",
+    "after/payment-processor.ts",
+    "after/composition.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
