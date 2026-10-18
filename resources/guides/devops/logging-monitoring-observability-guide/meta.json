@@ -1,0 +1,25 @@
+{
+  "title": "Observability Lab — Logging, Metrics, Tracing, Alerting",
+  "title_es": "Laboratorio de Observabilidad — Logging, Métricas, Tracing, Alertas",
+  "description": "Runnable observability stack lab: OpenTelemetry-instrumented payment service, OTel Collector config, Prometheus alert rules (including SLO burn rate), and a docker-compose setup with Jaeger, Prometheus, Loki and Grafana.",
+  "description_es": "Laboratorio ejecutable de observabilidad: servicio de pagos instrumentado con OpenTelemetry, configuración del OTel Collector, reglas de alerta de Prometheus (incluido burn rate de SLO) y un docker-compose con Jaeger, Prometheus, Loki y Grafana.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "logging-monitoring-observability-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/logging-monitoring-observability-guide/",
+    "https://stackpractices.com/es/guides/logging-monitoring-observability-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["observability", "opentelemetry", "prometheus", "jaeger", "loki", "grafana", "structured-logging", "slo", "alerting", "docker-compose"],
+  "files": [
+    "payment-service.js",
+    "logging_setup.py",
+    "otel-collector-config.yaml",
+    "prometheus-alerts.yaml",
+    "prometheus.yml",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

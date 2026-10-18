@@ -1,0 +1,20 @@
+{
+  "title": "Database Schema Documentation Template",
+  "title_es": "Plantilla de Documentación de Esquema de Base de Datos",
+  "description": "Fillable Markdown template for documenting database schemas (entities, relationships, indexes, enums, migration history) plus a DBML version of the example e-commerce schema.",
+  "description_es": "Plantilla Markdown rellenable para documentar esquemas de base de datos (entidades, relaciones, índices, enums, historial de migraciones) más una versión DBML del esquema de e-commerce de ejemplo.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "database-schema-documentation-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/database-schema-documentation-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["database", "schema", "documentation", "template", "dbml", "data-modeling"],
+  "files": [
+    "template.md",
+    "example-schema.dbml",
+    "README.md",
+    "README.es.md"
+  ]
+}

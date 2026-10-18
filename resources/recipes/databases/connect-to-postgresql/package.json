@@ -1,0 +1,12 @@
+{
+  "name": "connect-to-postgresql",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PostgreSQL connection examples with node-pg: pool, transactions, env-based config",
+  "scripts": {
+    "start": "node connect.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  }
+}

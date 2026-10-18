@@ -1,0 +1,25 @@
+{
+  "title": "Implement API Rate Limiting with Redis",
+  "title_es": "Implementar Rate Limiting de APIs con Redis",
+  "description": "Runnable companion for the Redis rate limiting recipe: Lua-atomic token bucket, sliding-window sorted-set limiter, Express middleware with RateLimit headers, and per-tier configuration.",
+  "description_es": "Companion ejecutable de la receta de rate limiting con Redis: token bucket atómico con Lua, limiter de ventana deslizante con sorted sets, middleware Express con headers RateLimit y configuración por tier.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "api-rate-limiting-redis",
+  "source_urls": [
+    "https://stackpractices.com/recipes/api-rate-limiting-redis/",
+    "https://redis.io/docs/latest/develop/programmability/eval-intro/",
+    "https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/",
+    "https://github.com/redis/ioredis"
+  ],
+  "language": "bilingual",
+  "tags": ["rate-limiting", "api", "redis", "token-bucket", "sliding-window", "lua", "express", "typescript", "ioredis"],
+  "files": [
+    "TokenBucket.ts",
+    "SlidingWindow.ts",
+    "TierConfig.ts",
+    "rateLimit.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

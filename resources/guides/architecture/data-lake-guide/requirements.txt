@@ -1,0 +1,5 @@
+pandas>=2.0
+pyarrow>=14.0
+# Optional — only needed for the Spark/Delta examples:
+# pyspark>=3.5
+# delta-spark>=3.2

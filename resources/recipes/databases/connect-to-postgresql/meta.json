@@ -1,0 +1,28 @@
+{
+  "title": "Connect to PostgreSQL — Python, JavaScript & Java",
+  "title_es": "Conectar a PostgreSQL — Python, JavaScript y Java",
+  "description": "Runnable PostgreSQL connection examples: psycopg2 pool with retry and COPY, node-pg Pool with transactions, and HikariCP for Java, plus a docker-compose Postgres instance.",
+  "description_es": "Ejemplos ejecutables de conexión a PostgreSQL: pool de psycopg2 con retry y COPY, Pool de node-pg con transacciones y HikariCP para Java, con Postgres en docker-compose.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "connect-to-postgresql",
+  "source_urls": [
+    "https://stackpractices.com/recipes/connect-to-postgresql/",
+    "https://www.psycopg.org/docs/",
+    "https://node-postgres.com/",
+    "https://github.com/brettwooldridge/HikariCP"
+  ],
+  "language": ["python", "javascript", "java", "sql", "yaml"],
+  "tags": ["database", "postgresql", "psycopg2", "node-pg", "jdbc", "hikaricp", "connection-pool", "python", "javascript", "java"],
+  "files": [
+    "docker-compose.yml",
+    "init.sql",
+    "connect.py",
+    "connect.js",
+    "PostgresPool.java",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

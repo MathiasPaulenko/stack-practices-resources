@@ -1,0 +1,23 @@
+{
+  "title": "Data Lake Medallion Pipeline",
+  "title_es": "Pipeline Medallion de Data Lake",
+  "description": "Runnable Bronze/Silver/Gold medallion pipeline: a pandas+pyarrow version that runs locally plus the Spark and Delta Lake jobs from the guide's e-commerce scenario, with hive-style partitioning.",
+  "description_es": "Pipeline medallion Bronze/Silver/Gold ejecutable: una versión con pandas+pyarrow que corre en local más los jobs de Spark y Delta Lake del escenario e-commerce de la guía, con particionamiento estilo hive.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "data-lake-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/data-lake-guide/",
+    "https://stackpractices.com/es/guides/data-lake-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["data-lake", "medallion-architecture", "parquet", "delta-lake", "pyspark", "elt", "partitioning", "pandas"],
+  "files": [
+    "medallion_pipeline.py",
+    "bronze_to_silver.py",
+    "delta_example.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
