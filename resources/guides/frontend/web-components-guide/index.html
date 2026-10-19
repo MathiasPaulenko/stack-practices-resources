@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Components Demo</title>
+    <script type="module" src="./src/user-card.js"></script>
+    <script type="module" src="./src/alert-box.js"></script>
+    <script type="module" src="./src/rating-input.js"></script>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; }
+      /* Theming crosses the shadow boundary via custom properties */
+      user-card { --card-title-color: #1d4ed8; }
+      .dark user-card { --card-border: #374151; --card-muted: #9ca3af; }
+    </style>
+  </head>
+  <body>
+    <h1>Web Components Demo</h1>
+
+    <alert-box type="success">
+      <h3 slot="title">Saved</h3>
+      <p>Your changes have been saved.</p>
+    </alert-box>
+
+    <h2>Team</h2>
+    <user-card name="Ada Lovelace" role="Engineer" user-id="u-1">
+      <span slot="bio">Wrote the first algorithm for a machine.</span>
+    </user-card>
+
+    <h2>Feedback form</h2>
+    <form id="feedback">
+      <rating-input name="rating" required></rating-input>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <output id="result"></output>
+
+    <script type="module">
+      // Events cross the shadow boundary only with composed: true
+      document.addEventListener('user-selected', (e) => {
+        console.log('selected:', e.detail.userId);
+      });
+
+      document.getElementById('feedback').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const data = new FormData(e.target);
+        document.getElementById('result').value =
+          'rating = ' + data.get('rating');
+      });
+    </script>
+  </body>
+</html>

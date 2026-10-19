@@ -1,0 +1,29 @@
+{
+  "title": "Read Replicas: Scale Reads Without Changing Your App",
+  "title_es": "Réplicas de Lectura: Escala Lecturas Sin Tocar tu App",
+  "description": "Production read-replica toolkit: streaming replication configs, read/write routers (psycopg2, SQLAlchemy, Django, Spring), lag-aware routing with primary fallback, PgBouncer/ProxySQL configs and monitoring queries for PostgreSQL and MySQL.",
+  "description_es": "Kit de producción para réplicas de lectura: configuración de streaming, enrutadores lectura/escritura (psycopg2, SQLAlchemy, Django, Spring), enrutamiento consciente del lag con fallback al primario, configs de PgBouncer/ProxySQL y consultas de monitoreo para PostgreSQL y MySQL.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "read-replica-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/read-replica-guide/",
+    "https://stackpractices.com/es/guides/read-replica-guide/"
+  ],
+  "language": ["python", "java", "sql", "yaml", "ini"],
+  "tags": ["read-replicas", "replication", "postgresql", "mysql", "scaling", "pgbouncer", "proxysql", "replication-lag", "failover"],
+  "files": [
+    "postgresql_primary.ini",
+    "postgresql_replica.ini",
+    "mysql_replication.cnf",
+    "read_write_router.py",
+    "sqlalchemy_router.py",
+    "django_router.py",
+    "SpringRoutingDataSource.java",
+    "lag_aware_router.py",
+    "pgbouncer.ini",
+    "proxysql_setup.sql",
+    "replication_monitoring.sql",
+    "prometheus_replication_alerts.yaml"
+  ]
+}

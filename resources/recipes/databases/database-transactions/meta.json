@@ -1,0 +1,22 @@
+{
+  "title": "Database Transactions in Python, JavaScript and Java",
+  "title_es": "Transacciones de base de datos en Python, JavaScript y Java",
+  "description": "Runnable transaction examples: BEGIN/COMMIT/ROLLBACK in psycopg2, Node.js pg and JDBC, deadlock retry with backoff, advisory locks, and lock monitoring queries.",
+  "description_es": "Ejemplos ejecutables de transacciones: BEGIN/COMMIT/ROLLBACK en psycopg2, Node.js pg y JDBC, reintentos por deadlock con backoff, advisory locks y consultas de monitoreo de locks.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "database-transactions",
+  "source_urls": ["https://stackpractices.com/recipes/database-transactions/"],
+  "language": "bilingual",
+  "tags": ["databases", "transactions", "acid", "postgresql", "python", "nodejs", "java", "psycopg2", "jdbc"],
+  "files": [
+    "transfer_psycopg2.py",
+    "deadlock_retry.py",
+    "transfer_node.js",
+    "TransferJDBC.java",
+    "advisory_locks.sql",
+    "transaction_monitoring.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

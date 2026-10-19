@@ -1,0 +1,23 @@
+{
+  "title": "Infrastructure as Code Review Template",
+  "title_es": "Plantilla de Revisión de Infrastructure as Code",
+  "description": "Runnable examples for reviewing IaC changes: a GitHub Actions workflow with Checkov + terraform plan posted to the PR, a custom Checkov policy, a Terratest module test, and a drift detector script.",
+  "description_es": "Ejemplos ejecutables para revisar cambios de IaC: un workflow de GitHub Actions con Checkov + terraform plan publicado en el PR, una política personalizada de Checkov, un test de Terratest y un detector de drift.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "infrastructure-as-code-review-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/infrastructure-as-code-review-template/",
+    "es": "https://stackpractices.com/es/docs/infrastructure-as-code-review-template/"
+  },
+  "language": ["yaml", "python", "go"],
+  "tags": ["terraform", "infrastructure-as-code", "checkov", "terratest", "ci-cd", "code-review"],
+  "files": [
+    "terraform-review.yml",
+    "aws_require_tags.py",
+    "infrastructure_test.go",
+    "drift_detector.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

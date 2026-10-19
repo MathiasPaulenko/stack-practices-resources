@@ -1,0 +1,24 @@
+{
+  "title": "Implement SSO with SAML 2.0 — Flask SP + Keycloak test IdP",
+  "title_es": "Implementar SSO con SAML 2.0 — SP en Flask + IdP de pruebas con Keycloak",
+  "description": "Runnable SAML 2.0 Service Provider in Flask (python3-saml) with ACS, SLS and SP metadata endpoints, plus a Keycloak docker-compose test IdP and a ready-to-edit saml settings file.",
+  "description_es": "Service Provider SAML 2.0 ejecutable en Flask (python3-saml) con endpoints ACS, SLS y metadatos SP, más un IdP de pruebas con Keycloak en docker-compose y un archivo de settings listo para editar.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "implement-sso-saml",
+  "source_urls": [
+    "https://stackpractices.com/recipes/implement-sso-saml/",
+    "https://github.com/SAML-Toolkits/python3-saml",
+    "https://www.keycloak.org/getting-started/getting-started-docker"
+  ],
+  "language": ["python", "json", "yaml"],
+  "tags": ["authentication", "saml", "sso", "identity-provider", "flask", "python3-saml", "keycloak", "python"],
+  "files": [
+    "app.py",
+    "saml_settings.json",
+    "requirements.txt",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

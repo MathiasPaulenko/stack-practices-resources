@@ -1,0 +1,24 @@
+{
+  "title": "Kubernetes Pod Disruption Budget Template",
+  "title_es": "Plantilla de Pod Disruption Budget de Kubernetes",
+  "description": "Pod Disruption Budget manifests, Helm template, Prometheus alerts, and drain scripts to control voluntary disruptions during node drains, upgrades, and maintenance windows.",
+  "description_es": "Manifiestos de Pod Disruption Budget, template de Helm, alertas de Prometheus y scripts de drenaje para controlar disrupciones voluntarias durante drenajes, actualizaciones y ventanas de mantenimiento.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "kubernetes-pod-disruption-budget-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/kubernetes-pod-disruption-budget-template/",
+    "es": "https://stackpractices.com/es/docs/kubernetes-pod-disruption-budget-template/"
+  },
+  "language": ["yaml", "bash"],
+  "tags": ["kubernetes", "pdb", "availability", "helm", "prometheus", "drain"],
+  "files": [
+    "pdb_minavailable.yaml",
+    "pdb_maxunavailable.yaml",
+    "pdb_percentage.yaml",
+    "pdb_statefulset.yaml",
+    "helm_pdb_template.yaml",
+    "prometheus_pdb_alerts.yaml",
+    "drain_node.sh"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "OpenAI API Guide: Python Examples for Production",
+  "title_es": "Guía de la API de OpenAI con ejemplos en Python",
+  "description": "Production-ready OpenAI API examples in Python: Responses API, chat completions, streaming with FastAPI/SSE, function calling, structured outputs, batch jobs, retry/backoff and cost tracking.",
+  "description_es": "Ejemplos de la API de OpenAI listos para producción en Python: Responses API, chat completions, streaming con FastAPI/SSE, function calling, salidas estructuradas, batch jobs, reintentos y control de costes.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-openai-api-mastery",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-openai-api-mastery/",
+    "https://stackpractices.com/es/guides/complete-guide-openai-api-mastery/"
+  ],
+  "language": ["python", "javascript"],
+  "tags": ["openai", "llm", "responses-api", "chat-completions", "streaming", "function-calling", "embeddings", "fine-tuning", "batch-api", "fastapi"],
+  "files": [
+    "responses_api.py",
+    "chat_client.py",
+    "streaming_sse.py",
+    "stream_node.js",
+    "function_calling.py",
+    "structured_outputs.py",
+    "retry_backoff.py",
+    "cost_tracker.py",
+    "batch_api.py"
+  ]
+}

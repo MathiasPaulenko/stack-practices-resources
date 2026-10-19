@@ -1,0 +1,23 @@
+# my.cnf — MySQL primary
+[mysqld]
+server-id = 1
+log_bin = /var/log/mysql/mysql-bin
+binlog_format = ROW
+expire_logs_days = 7
+max_binlog_size = 500M
+
+# my.cnf — MySQL replica
+# [mysqld]
+# server-id = 2
+# relay_log = /var/log/mysql/mysql-relay-bin
+# log_bin = /var/log/mysql/mysql-bin
+# read_only = 1
+
+-- Configure replication on the replica:
+-- CHANGE REPLICATION SOURCE TO
+--     SOURCE_HOST='primary-host',
+--     SOURCE_USER='replicator',
+--     SOURCE_PASSWORD='password',
+--     SOURCE_LOG_FILE='mysql-bin.000001',
+--     SOURCE_LOG_POS=0;
+-- START REPLICA;

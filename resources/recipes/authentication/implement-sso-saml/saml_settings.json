@@ -1,0 +1,40 @@
+{
+    "strict": true,
+    "debug": false,
+    "sp": {
+        "entityId": "https://localhost:5000/saml/metadata",
+        "assertionConsumerService": {
+            "url": "https://localhost:5000/saml/acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+        "singleLogoutService": {
+            "url": "https://localhost:5000/saml/sls",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress",
+        "x509cert": "",
+        "privateKey": ""
+    },
+    "idp": {
+        "entityId": "http://localhost:8080/realms/saml-demo",
+        "singleSignOnService": {
+            "url": "http://localhost:8080/realms/saml-demo/protocol/saml",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "singleLogoutService": {
+            "url": "http://localhost:8080/realms/saml-demo/protocol/saml",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "PASTE_IDP_SIGNING_CERT_HERE"
+    },
+    "security": {
+        "nameIdEncrypted": false,
+        "authnRequestsSigned": false,
+        "logoutRequestSigned": false,
+        "wantAssertionsSigned": true,
+        "wantMessagesSigned": true,
+        "wantNameId": true,
+        "requestedAuthnContext": false,
+        "signMetadata": false
+    }
+}

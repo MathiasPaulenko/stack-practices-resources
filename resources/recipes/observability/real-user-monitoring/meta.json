@@ -1,0 +1,26 @@
+{
+  "title": "Real User Monitoring (RUM) Setup with web-vitals",
+  "title_es": "Monitoreo de Usuarios Reales (RUM) con web-vitals",
+  "description": "Client-side RUM pipeline: Core Web Vitals collection with web-vitals v4 and sendBeacon, Sentry session replay, and custom PerformanceObserver metrics",
+  "description_es": "Pipeline de RUM del lado del cliente: recolección de Core Web Vitals con web-vitals v4 y sendBeacon, session replay de Sentry y métricas personalizadas con PerformanceObserver",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "real-user-monitoring",
+  "source_urls": [
+    "https://stackpractices.com/recipes/real-user-monitoring/",
+    "https://web.dev/articles/vitals",
+    "https://github.com/GoogleChrome/web-vitals",
+    "https://docs.sentry.io/platforms/javascript/session-replay/"
+  ],
+  "language": ["javascript"],
+  "tags": ["rum", "web-vitals", "performance", "observability", "sentry", "sendbeacon"],
+  "files": [
+    "vitals-collector.js",
+    "sentry-replay.js",
+    "performance-observer.js",
+    "ingest-server.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

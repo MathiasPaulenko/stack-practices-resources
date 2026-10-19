@@ -1,0 +1,19 @@
+groups:
+  - name: pdb-alerts
+    rules:
+      - alert: PDBBlocked
+        expr: kube_poddisruptionstatus_allowed_disruptions == 0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "PDB {{ $labels.pdb }} blocks all disruptions"
+          description: "No pods can be disrupted for {{ $labels.namespace }}/{{ $labels.pdb }}"
+      - alert: PDBBelowMinAvailable
+        expr: kube_poddisruptionstatus_current_healthy < kube_poddisruptionstatus_desired_healthy
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "PDB {{ $labels.pdb }} below min available"
+          description: "Only {{ $value }} healthy pods, need {{ $labels.desired_healthy }}"

@@ -1,0 +1,30 @@
+# Prometheus rules for replication monitoring
+groups:
+  - name: replication_alerts
+    rules:
+      - alert: HighReplicationLag
+        expr: |
+          pg_stat_replication_pg_wal_lsn_diff / 1024 / 1024 > 100
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Replication lag exceeds 100MB"
+
+      - alert: ReplicationStopped
+        expr: |
+          pg_stat_replication_state == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Replication has stopped"
+
+      - alert: ReplicaLagSeconds
+        expr: |
+          mysql_slave_lag_seconds > 10
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "MySQL replica lag > 10 seconds"

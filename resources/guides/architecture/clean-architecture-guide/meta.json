@@ -1,0 +1,34 @@
+{
+  "title": "Clean Architecture Explained: Layers & Dependency Rule",
+  "title_es": "Guía de Clean Architecture: Capas y Regla de Dependencia",
+  "description": "Runnable TypeScript example of Uncle Bob's Clean Architecture: a user registration use case split into domain, application, infrastructure, and presentation layers with in-memory fakes for tests.",
+  "description_es": "Ejemplo ejecutable en TypeScript de la Clean Architecture de Uncle Bob: un caso de uso de registro de usuario repartido en capas de dominio, aplicación, infraestructura y presentación con fakes en memoria para los tests.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "clean-architecture-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/clean-architecture-guide/",
+    "es": "https://stackpractices.com/es/guides/clean-architecture-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["clean-architecture", "dependency-rule", "typescript", "domain-driven-design", "testability", "ports-and-adapters"],
+  "files": [
+    "domain/entities/User.ts",
+    "domain/valueobjects/Email.ts",
+    "domain/valueobjects/UserId.ts",
+    "domain/valueobjects/UserStatus.ts",
+    "domain/repositories/UserRepository.ts",
+    "domain/services/EmailService.ts",
+    "application/dto/RegisterUserCommand.ts",
+    "application/results/Result.ts",
+    "application/usecases/RegisterUserUseCase.ts",
+    "infrastructure/persistence/InMemoryUserRepository.ts",
+    "infrastructure/persistence/PostgresUserRepository.ts",
+    "infrastructure/email/SpyEmailService.ts",
+    "presentation/controllers/UserController.ts",
+    "tests/User.test.ts",
+    "tests/RegisterUserUseCase.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

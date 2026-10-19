@@ -1,0 +1,24 @@
+{
+  "title": "Web Components — Custom Elements, Shadow DOM & Templates",
+  "title_es": "Web Components — Custom Elements, Shadow DOM y Templates",
+  "description": "Runnable Web Components mini-library: autonomous elements, shadow DOM, slots, theming with CSS custom properties, a form-associated rating input, and a demo page.",
+  "description_es": "Mini-librería ejecutable de Web Components: elementos autónomos, shadow DOM, slots, theming con CSS custom properties, un input de rating asociado a formularios y una página demo.",
+  "type": "guides",
+  "topic": "frontend",
+  "slug": "web-components-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/web-components-guide/",
+    "es": "https://stackpractices.com/es/guides/web-components-guide/"
+  },
+  "language": "multi",
+  "tags": ["web-components", "custom-elements", "shadow-dom", "javascript", "element-internals", "web-test-runner"],
+  "files": [
+    "index.html",
+    "src/user-card.js",
+    "src/alert-box.js",
+    "src/rating-input.js",
+    "test/user-card.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

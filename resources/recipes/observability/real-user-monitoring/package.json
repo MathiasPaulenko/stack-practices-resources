@@ -1,0 +1,12 @@
+{
+  "name": "real-user-monitoring-examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "node ingest-server.js"
+  },
+  "dependencies": {
+    "@sentry/browser": "^8.30.0",
+    "web-vitals": "^4.2.4"
+  }
+}

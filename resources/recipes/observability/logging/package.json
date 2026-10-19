@@ -1,0 +1,13 @@
+{
+  "name": "logging-recipe",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Winston structured logging example for the StackPractices logging recipe",
+  "main": "javascript_winston.js",
+  "scripts": {
+    "start": "node javascript_winston.js"
+  },
+  "dependencies": {
+    "winston": "^3.17.0"
+  }
+}

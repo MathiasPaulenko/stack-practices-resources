@@ -1,0 +1,27 @@
+{
+  "title": "Production Logging in Python, JavaScript and Java",
+  "title_es": "Logging en producción con Python, JavaScript y Java",
+  "description": "Structured, level-based logging with correlation IDs and secret redaction in Python (Loguru), JavaScript (Winston), and Java (SLF4J + Logback)",
+  "description_es": "Logging estructurado por niveles con IDs de correlación y enmascarado de secretos en Python (Loguru), JavaScript (Winston) y Java (SLF4J + Logback)",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "logging",
+  "source_urls": [
+    "https://stackpractices.com/recipes/logging/",
+    "https://loguru.readthedocs.io/",
+    "https://github.com/winstonjs/winston",
+    "https://www.slf4j.org/manual.html"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["logging", "observability", "structured-logging", "loguru", "winston", "slf4j"],
+  "files": [
+    "python_loguru.py",
+    "javascript_winston.js",
+    "java_slf4j.java",
+    "requirements.txt",
+    "package.json",
+    "pom.xml",
+    "README.md",
+    "README.es.md"
+  ]
+}

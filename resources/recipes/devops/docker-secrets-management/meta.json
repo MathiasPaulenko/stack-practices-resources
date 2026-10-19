@@ -1,0 +1,28 @@
+{
+  "title": "Docker Secrets Management Without Hardcoding Credentials",
+  "title_es": "Gestión de Secretos Docker Sin Hardcodear Credenciales",
+  "description": "Runnable examples of Docker secrets: Compose file-based secrets, the _FILE convention, BuildKit build-time mounts, HashiCorp Vault, and a Swarm rotation script",
+  "description_es": "Ejemplos ejecutables de secretos en Docker: secrets por archivo en Compose, la convención _FILE, montajes BuildKit en build, HashiCorp Vault y un script de rotación en Swarm",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-secrets-management",
+  "source_urls": [
+    "https://stackpractices.com/recipes/docker-secrets-management/",
+    "https://docs.docker.com/engine/swarm/secrets/",
+    "https://docs.docker.com/build/building/secrets/",
+    "https://developer.hashicorp.com/vault/docs"
+  ],
+  "language": ["python", "javascript", "yaml", "bash", "dockerfile"],
+  "tags": ["docker", "secrets", "security", "docker-compose", "swarm", "vault", "buildkit"],
+  "files": [
+    "docker-compose.yml",
+    "Dockerfile",
+    "app.py",
+    "get-secret.js",
+    "rotate-secrets.sh",
+    "wait-for-vault.sh",
+    ".env.example",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "API Gateway Design: Resilience, Routing, and Security",
+  "title_es": "Diseño de API Gateway: Resiliencia, Enrutamiento y Seguridad",
+  "description": "Runnable TypeScript gateway pipeline composing auth (JWT), token-bucket rate limiting, per-user response caching, and a circuit breaker in front of a stateless prefix router — framework-agnostic, tested with in-memory stores.",
+  "description_es": "Pipeline de gateway ejecutable en TypeScript que compone auth (JWT), rate limiting con token bucket, caché de respuestas por usuario y un circuit breaker delante de un router de prefijos sin estado — agnóstico de framework, testeado con stores en memoria.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "api-gateway-design-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/api-gateway-design-guide/",
+    "es": "https://stackpractices.com/es/guides/api-gateway-design-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["api-gateway", "middleware", "rate-limiting", "circuit-breaker", "jwt", "typescript", "edge-routing"],
+  "files": [
+    "pipeline/types.ts",
+    "pipeline/gateway.ts",
+    "middleware/auth.ts",
+    "middleware/rateLimit.ts",
+    "middleware/cache.ts",
+    "middleware/circuitBreaker.ts",
+    "routing/router.ts",
+    "stores/InMemoryTokenBucketStore.ts",
+    "stores/InMemoryResponseCache.ts",
+    "upstream/StubUpstream.ts",
+    "tests/gateway.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
