@@ -1,0 +1,42 @@
+# elasticsearch.yml — 3-node production cluster (Elasticsearch 8.x)
+# Apply to all three nodes, changing only node.name per host.
+# Companion to: https://stackpractices.com/guides/complete-guide-elasticsearch-cluster-setup/
+
+cluster.name: prod-es-cluster
+node.name: node-1                          # node-2, node-3 on the other hosts
+node.roles: [master, data, ingest]
+
+# Container/development only — in production bind the private interface
+# (e.g. _eth0_ or the node's private IP), not 0.0.0.0.
+network.host: 0.0.0.0
+
+# Nodes discover each other through these hosts at boot.
+discovery.seed_hosts: ["node-1", "node-2", "node-3"]
+
+# BOOTSTRAP ONLY — used once when the cluster first forms.
+# Remove or comment out after initial startup; a stale value on
+# restart is a classic way to split or break an existing cluster.
+cluster.initial_master_nodes: ["node-1", "node-2", "node-3"]
+
+# Security is on by default in ES 8 — see the enrollment flow in the guide.
+xpack.security.enabled: true
+
+# Keep the JVM out of swap. Requires OS prerequisites first:
+#   sysctl -w vm.max_map_count=262144  (persist in /etc/sysctl.conf)
+#   file descriptor limit >= 65535 for the elasticsearch user
+bootstrap.memory_lock: true
+
+# Disk watermarks — allocation stops at 85%, relocation at 90%,
+# indices go read-only at flood_stage. Leave real headroom.
+cluster.routing.allocation.disk.watermark.low: 85%
+cluster.routing.allocation.disk.watermark.high: 90%
+cluster.routing.allocation.disk.watermark.flood_stage: 95%
+
+# JVM heap goes in config/jvm.options, NOT here:
+#   -Xms16g
+#   -Xmx16g
+# 50% of RAM, capped ~31GB (compressed oops threshold).
+
+# NOTE: index-level defaults (index.refresh_interval, index.number_of_replicas)
+# do NOT exist as node settings in ES 8 — put them in an index template
+# (see index-template.json in this folder).

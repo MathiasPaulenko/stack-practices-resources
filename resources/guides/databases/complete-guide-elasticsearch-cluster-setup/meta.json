@@ -1,0 +1,31 @@
+{
+  "title": "Elasticsearch Cluster Setup — Production Configs",
+  "title_es": "Cluster de Elasticsearch — Configuraciones de Producción",
+  "description": "Production-ready Elasticsearch 8.x configs: commented 3-node elasticsearch.yml, docker-compose test cluster with security, ILM policy and index template for logs-*.",
+  "description_es": "Configuraciones listas para producción de Elasticsearch 8.x: elasticsearch.yml comentado de 3 nodos, docker-compose de prueba con seguridad, política ILM e index template para logs-*.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "complete-guide-elasticsearch-cluster-setup",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-elasticsearch-cluster-setup/",
+    "https://stackpractices.com/es/guides/complete-guide-elasticsearch-cluster-setup/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "elasticsearch",
+    "cluster",
+    "production",
+    "ilm",
+    "docker-compose",
+    "index-template",
+    "snapshots"
+  ],
+  "files": [
+    "elasticsearch.yml",
+    "docker-compose.yml",
+    "ilm-policy.json",
+    "index-template.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

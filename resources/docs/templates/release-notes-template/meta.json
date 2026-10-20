@@ -1,0 +1,23 @@
+{
+  "title": "Release Notes Template",
+  "title_es": "Plantilla de Release Notes",
+  "description": "Downloadable release notes templates: a blank release note, a filled SaaS example with release metrics, a hotfix format, and a conventional-commit to release-note mapping cheat sheet.",
+  "description_es": "Plantillas de release notes descargables: una nota en blanco, un ejemplo SaaS completo con métricas de release, un formato de hotfix y una chuleta de conversión de conventional commits a entradas.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "release-notes-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/release-notes-template/",
+    "es": "https://stackpractices.com/es/docs/release-notes-template/"
+  },
+  "language": ["markdown"],
+  "tags": ["release-notes", "changelog", "semver", "devops", "template", "versioning"],
+  "files": [
+    "release-notes-template.md",
+    "release-notes-example.md",
+    "hotfix-template.md",
+    "commit-to-note-mapping.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

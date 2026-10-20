@@ -1,0 +1,25 @@
+{
+  "title": "Module Pattern Examples",
+  "title_es": "Ejemplos del Patrón Module",
+  "description": "Runnable Module Pattern examples: IIFE closure, ES module, Python module, and Java class, plus a payment scenario showing private state enforcement.",
+  "description_es": "Ejemplos ejecutables del Patrón Module: closure IIFE, ES module, módulo Python y clase Java, más un escenario de pagos con estado privado forzado.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "module-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/module-pattern/",
+    "es": "https://stackpractices.com/es/patterns/module-pattern/"
+  },
+  "language": ["javascript", "typescript", "python", "java"],
+  "tags": ["module-pattern", "encapsulation", "iife", "es-modules", "javascript", "python", "java"],
+  "files": [
+    "iife-counter.js",
+    "esm-counter.js",
+    "esm-main.js",
+    "counter.py",
+    "Counter.java",
+    "payment-module.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

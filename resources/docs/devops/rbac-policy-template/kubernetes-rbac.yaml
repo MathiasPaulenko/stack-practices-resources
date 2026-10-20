@@ -1,0 +1,44 @@
+# Kubernetes RBAC example: read-only developers + platform RBAC manager
+# Apply with: kubectl apply -f kubernetes-rbac.yaml
+
+# Role: developer-read-only
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: developer-read-only
+  namespace: team-payments
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "services", "configmaps"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["apps"]
+    resources: ["deployments", "replicasets"]
+    verbs: ["get", "list", "watch"]
+---
+# RoleBinding: bind developers to the role
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: developers-read-only
+  namespace: team-payments
+subjects:
+  - kind: Group
+    name: team-payments-developers
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: developer-read-only
+  apiGroup: rbac.authorization.k8s.io
+---
+# ClusterRole: platform team manages RBAC objects cluster-wide
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: rbac-object-manager
+rules:
+  - apiGroups: [""]
+    resources: ["namespaces"]
+    verbs: ["get", "list", "watch"]
+  - apiGroups: ["rbac.authorization.k8s.io"]
+    resources: ["roles", "rolebindings"]
+    verbs: ["get", "list", "watch", "create", "update", "delete"]

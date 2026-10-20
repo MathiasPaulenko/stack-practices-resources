@@ -1,0 +1,23 @@
+=== Monthly Cost Report: YYYY-MM ===
+
+Total Cloud Spend: $XX,XXX (delta: +/-X% vs last month)
+
+By Team:
+  Platform:    $XX,XXX (XX%) [delta: +/-X%]
+  Data:        $XX,XXX (XX%) [delta: +/-X%]
+  Frontend:    $XX,XXX (XX%) [delta: +/-X%]
+  Mobile:      $XX,XXX (XX%) [delta: +/-X%]
+  Security:    $XX,XXX (XX%) [delta: +/-X%]
+
+Shared Services: $X,XXX (allocated by usage)
+
+Untagged Resources: $XXX (X% of total) [ACTION REQUIRED]
+
+Top 5 Cost Increases:
+  1. <resource> <team> +$XXX (reason)
+  2. <resource> <team> +$XXX (reason)
+
+Recommendations:
+  - Rightsizing: <instance> -> <instance> saves $XXX/mo
+  - Reserved Instance: <service> 1yr RI saves $XXX/mo
+  - Delete orphaned: <resource> saves $XXX/mo

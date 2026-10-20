@@ -1,0 +1,22 @@
+{
+  "title": "Dependency Injection Containers",
+  "title_es": "Contenedores de Inyección de Dependencias",
+  "description": "Lightweight DI containers in TypeScript and Python (transient/singleton/scoped lifecycles) plus a test-container pattern for fakes.",
+  "description_es": "Contenedores DI ligeros en TypeScript y Python (ciclos de vida transient/singleton/scoped) más un patrón de contenedor de test con fakes.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "dependency-injection",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/dependency-injection/",
+    "es": "https://stackpractices.com/es/recipes/dependency-injection/"
+  },
+  "language": ["typescript", "python"],
+  "tags": ["dependency-injection", "architecture", "typescript", "python", "testing"],
+  "files": [
+    "di-container.ts",
+    "di_container.py",
+    "test-container.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

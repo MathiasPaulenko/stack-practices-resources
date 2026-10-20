@@ -1,0 +1,43 @@
+# docker-compose.yml — local gRPC lab: two UserService instances behind Envoy L7.
+# Companion to: https://stackpractices.com/guides/grpc-microservices-guide/
+#
+#   docker compose up -d
+#   grpcurl -plaintext localhost:8080 list
+#
+# The images assume server.py + generated stubs are baked in via a Dockerfile;
+# for a quick test, mount the project and run `python server.py` as the command.
+
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.31-latest
+    command: ["-c", "/etc/envoy/envoy.yaml"]
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml:ro
+    ports:
+      - "8080:8080"
+    networks: [grpc]
+    depends_on: [user-service-1, user-service-2]
+
+  user-service-1:
+    image: python:3.12-slim
+    working_dir: /app
+    command: python server.py
+    volumes:
+      - .:/app:ro
+    networks:
+      grpc:
+        aliases: [user-service-1]
+
+  user-service-2:
+    image: python:3.12-slim
+    working_dir: /app
+    command: python server.py
+    volumes:
+      - .:/app:ro
+    networks:
+      grpc:
+        aliases: [user-service-2]
+
+networks:
+  grpc:
+    driver: bridge

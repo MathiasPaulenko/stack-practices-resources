@@ -1,0 +1,23 @@
+{
+  "title": "Change Management Template",
+  "title_es": "Plantilla de Gestión de Cambios",
+  "description": "Downloadable change management templates: a blank change request, a risk assessment matrix, a post-change review, and a fully worked example of a High-risk database change.",
+  "description_es": "Plantillas de gestión de cambios descargables: una solicitud de cambio en blanco, una matriz de evaluación de riesgo, una revisión post-cambio y un ejemplo completo de un cambio de base de datos de riesgo Alto.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "change-management-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/change-management-template/",
+    "es": "https://stackpractices.com/es/docs/change-management-template/"
+  },
+  "language": ["markdown"],
+  "tags": ["change-management", "cab", "rollback", "devops", "template", "itil"],
+  "files": [
+    "change-request-template.md",
+    "risk-assessment-matrix.md",
+    "post-change-review-template.md",
+    "change-request-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,6 @@
+Resource,Service,Direct Cost,Owner,Allocation Method,Allocated Cost
+api-prod-01,AWS EC2,$1200,Checkout team,Direct,$1200
+shared-k8s-cluster,AWS EKS,$5000,Platform team,Proportional (CPU),Split by namespace
+observability-ingest,Datadog,$3000,Platform team,Proportional (logs),Split by volume
+corporate-vpn,AWS Client VPN,$400,IT,Even distribution,$100 per team
+central-s3-bucket,AWS S3,$800,Data team,Usage-based,Split by GB used

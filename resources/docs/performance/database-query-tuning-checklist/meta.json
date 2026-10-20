@@ -1,0 +1,29 @@
+{
+  "title": "Database Query Tuning Checklist — SQL Triage Pack",
+  "title_es": "Checklist de Optimización de Consultas — Pack SQL de Triage",
+  "description": "Runnable SQL triage pack: pg_stat_statements top-slow-queries report, index audit (unused indexes, heavy seq scans, selectivity, duplicates), plus MySQL equivalents.",
+  "description_es": "Pack SQL de triage ejecutable: informe de consultas lentas con pg_stat_statements, auditoría de índices (sin uso, seq scans pesados, selectividad, duplicados), con equivalentes MySQL.",
+  "type": "docs",
+  "topic": "performance",
+  "slug": "database-query-tuning-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/database-query-tuning-checklist/",
+    "https://stackpractices.com/es/docs/database-query-tuning-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "mysql",
+    "query-optimization",
+    "pg-stat-statements",
+    "indexing",
+    "database-performance"
+  ],
+  "files": [
+    "top-slow-queries.sql",
+    "index-audit.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

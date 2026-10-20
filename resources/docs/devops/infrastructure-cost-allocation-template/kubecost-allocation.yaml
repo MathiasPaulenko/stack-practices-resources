@@ -1,0 +1,16 @@
+# Kubecost namespace allocation config
+# Allocates Kubernetes costs by namespace + labels and exposes idle cost explicitly.
+allocation:
+  aggregation:
+    - namespace
+    - label:app
+    - label:team
+  shared_costs:
+    - name: "Shared Load Balancers"
+      allocation: weighted_by_traffic
+    - name: "Shared Databases"
+      allocation: weighted_by_connection_count
+    - name: "Control Plane"
+      allocation: evenly_across_namespaces
+  idle_cost_allocation: evenly_across_namespaces
+  network_cost_allocation: weighted_by_egress_bytes

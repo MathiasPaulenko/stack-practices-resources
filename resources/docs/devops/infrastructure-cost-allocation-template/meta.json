@@ -1,0 +1,36 @@
+{
+  "title": "Cloud Cost Allocation Template",
+  "title_es": "Plantilla de Asignación de Costos en la Nube",
+  "description": "Companion kit for the cloud cost allocation template: AWS tag policy, Terraform tag enforcement, Kubecost allocation config, an untagged-spend detection script, a fillable monthly report, and a cost allocation worksheet.",
+  "description_es": "Kit complementario de la plantilla de asignación de costos en la nube: política de etiquetas de AWS, exigencia de etiquetas en Terraform, configuración de Kubecost, script de detección de gasto sin etiquetar, reporte mensual rellenable y hoja de trabajo de asignación.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "infrastructure-cost-allocation-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/infrastructure-cost-allocation-template/",
+    "https://stackpractices.com/es/docs/infrastructure-cost-allocation-template/",
+    "https://www.finops.org/framework/",
+    "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html",
+    "https://docs.kubecost.com/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cost-allocation",
+    "chargeback",
+    "finops",
+    "tagging",
+    "cloud-costs",
+    "devops",
+    "template"
+  ],
+  "files": [
+    "aws-tag-policy.yaml",
+    "terraform-tag-enforcement.hcl",
+    "kubecost-allocation.yaml",
+    "detect-untagged-resources.py",
+    "monthly-cost-report.txt",
+    "cost-allocation-worksheet.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

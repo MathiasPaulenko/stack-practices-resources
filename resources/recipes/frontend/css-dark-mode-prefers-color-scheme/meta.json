@@ -1,0 +1,22 @@
+{
+  "title": "Dark Mode with prefers-color-scheme Demo",
+  "title_es": "Demo de Modo Oscuro con prefers-color-scheme",
+  "description": "Runnable dark-mode demo: token-based CSS theming with data-theme, localStorage persistence, anti-FOUC inline script, and a system-preference listener.",
+  "description_es": "Demo ejecutable de modo oscuro: tematización CSS por tokens con data-theme, persistencia en localStorage, script inline anti-FOUC y listener de preferencia del sistema.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "css-dark-mode-prefers-color-scheme",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/css-dark-mode-prefers-color-scheme/",
+    "es": "https://stackpractices.com/es/recipes/css-dark-mode-prefers-color-scheme/"
+  },
+  "language": ["html", "css", "javascript"],
+  "tags": ["dark-mode", "prefers-color-scheme", "css", "theming", "css-variables"],
+  "files": [
+    "index.html",
+    "styles.css",
+    "theme.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

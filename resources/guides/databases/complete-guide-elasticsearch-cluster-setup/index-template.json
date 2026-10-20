@@ -1,0 +1,22 @@
+{
+  "_comment": "Index template for logs-* — settings + mappings + ILM hookup. Apply with: PUT /_index_template/logs (Elasticsearch 8.x). Companion to https://stackpractices.com/guides/complete-guide-elasticsearch-cluster-setup/",
+  "index_patterns": ["logs-*"],
+  "template": {
+    "settings": {
+      "number_of_shards": 3,
+      "number_of_replicas": 1,
+      "index.refresh_interval": "5s",
+      "index.lifecycle.name": "logs-policy"
+    },
+    "mappings": {
+      "properties": {
+        "@timestamp": { "type": "date" },
+        "level": { "type": "keyword" },
+        "message": { "type": "text" },
+        "service": { "type": "keyword" },
+        "host": { "type": "keyword" }
+      }
+    }
+  },
+  "priority": 100
+}

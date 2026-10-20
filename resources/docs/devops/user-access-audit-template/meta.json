@@ -1,0 +1,23 @@
+{
+  "title": "User Access Audit Template",
+  "title_es": "Plantilla de Auditoría de Acceso de Usuarios",
+  "description": "Downloadable access review resources: a blank certification template, Okta inactive-user report script, AWS IAM Access Analyzer findings exporter, and a GitHub org 2FA/role audit script.",
+  "description_es": "Recursos descargables de revisión de acceso: una plantilla de certificación en blanco, un script de informe de usuarios inactivos de Okta, un exportador de hallazgos de AWS IAM Access Analyzer y un script de auditoría de roles/2FA de una organización de GitHub.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "user-access-audit-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/user-access-audit-template/",
+    "es": "https://stackpractices.com/es/docs/user-access-audit-template/"
+  },
+  "language": ["markdown", "python", "bash", "javascript"],
+  "tags": ["access-review", "iam", "identity", "soc2", "compliance", "okta", "github", "aws", "template"],
+  "files": [
+    "user-access-audit-template.md",
+    "okta-access-review.py",
+    "aws-access-analyzer.sh",
+    "github-org-audit.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,18 @@
+# Recording rules — precompute SLI-style queries so dashboards load fast
+# and alerts reference a stable series name.
+groups:
+  - name: orders_sli
+    interval: 30s
+    rules:
+      - record: job_service:request_rate:5m
+        expr: sum(rate(http_requests_total[5m])) by (job, service)
+
+      - record: job:error_ratio:5m
+        expr: |
+          sum(rate(http_requests_total{status=~"5.."}[5m]))
+            / sum(rate(http_requests_total[5m]))
+
+      - record: job_service:latency_p95:5m
+        expr: |
+          histogram_quantile(0.95,
+            sum(rate(request_duration_seconds_bucket[5m])) by (le, job, service))

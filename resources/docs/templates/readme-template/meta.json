@@ -1,0 +1,21 @@
+{
+  "title": "README Template for Open-Source and Internal Projects",
+  "title_es": "Plantilla README para Proyectos Open-Source e Internos",
+  "description": "Downloadable README templates: a blank production-ready skeleton with bracketed placeholders and a filled internal payment-service example.",
+  "description_es": "Plantillas README descargables: un esqueleto listo para producción con marcadores entre corchetes y un ejemplo completo de servicio de pagos interno.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "readme-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/readme-template/",
+    "es": "https://stackpractices.com/es/docs/readme-template/"
+  },
+  "language": ["markdown"],
+  "tags": ["readme", "documentation", "markdown", "open-source", "template", "devops"],
+  "files": [
+    "readme-template.md",
+    "readme-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package userservice;
+
+// Companion to: https://stackpractices.com/guides/grpc-microservices-guide/
+// Generate stubs:
+//   python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. user_service.proto
+//   protoc -I. --go_out=. --go-grpc_out=. user_service.proto
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (User);
+  rpc ListUsers(ListUsersRequest) returns (stream User);
+  rpc StreamUpdates(stream UserEvent) returns (stream UpdateResponse);
+}
+
+message GetUserRequest { string user_id = 1; }
+
+message User {
+  string user_id = 1;
+  string name = 2;
+  string email = 3;
+  int64 created_at = 4;
+}
+
+message ListUsersRequest { int32 page_size = 1; }
+
+message UserEvent {
+  string user_id = 1;
+  EventType type = 2;
+  enum EventType {
+    CREATED = 0;
+    UPDATED = 1;
+    DELETED = 2;
+  }
+}
+
+message UpdateResponse {
+  bool success = 1;
+  string message = 2;
+}

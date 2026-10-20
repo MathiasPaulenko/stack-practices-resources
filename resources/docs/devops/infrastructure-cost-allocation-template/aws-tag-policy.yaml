@@ -1,0 +1,15 @@
+# AWS Tag Policy (Organization level)
+# Enforces required cost-allocation tags at resource creation.
+tag_policy:
+  enforce_on_create: true
+  enforce_on_update: true
+  required_tags:
+    - key: Team
+      allowed_values: ["platform", "data", "frontend", "mobile", "security"]
+    - key: Environment
+      allowed_values: ["production", "staging", "development", "sandbox"]
+    - key: Project
+      pattern: "^[a-z0-9-]+$"
+    - key: CostCenter
+      pattern: "^[A-Z]{2}-[0-9]{4}$"
+  non_compliant_action: alert_and_quarantine

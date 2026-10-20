@@ -1,0 +1,25 @@
+{
+  "title": "Singleton Pattern Examples",
+  "title_es": "Ejemplos del Patrón Singleton",
+  "description": "Runnable Singleton implementations: thread-safe Python __new__, Python module-level, Java enum singleton, double-checked locking, Bill Pugh holder, and a TypeScript registry with test reset.",
+  "description_es": "Implementaciones ejecutables de Singleton: __new__ thread-safe en Python, instancia a nivel de módulo, enum singleton de Java, double-checked locking, holder de Bill Pugh y un registro TypeScript con reset para tests.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "singleton-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/singleton-pattern/",
+    "es": "https://stackpractices.com/es/patterns/singleton-pattern/"
+  },
+  "language": ["python", "java", "typescript"],
+  "tags": ["singleton", "design-pattern", "creational", "thread-safety", "enum-singleton", "dependency-injection", "python", "java", "typescript"],
+  "files": [
+    "singleton.py",
+    "connection_pool.py",
+    "Configuration.java",
+    "CacheClient.java",
+    "Registry.java",
+    "registry.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

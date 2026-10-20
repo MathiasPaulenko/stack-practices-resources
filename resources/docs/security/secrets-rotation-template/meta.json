@@ -1,0 +1,23 @@
+{
+  "title": "Secrets Rotation Template",
+  "title_es": "Plantilla de Rotación de Secretos",
+  "description": "Downloadable secrets rotation resources: a blank rotation schedule, a zero-downtime database rotation runbook, a validation checklist, and a filled rotation log example.",
+  "description_es": "Recursos de rotación de secretos descargables: un programa de rotación en blanco, un runbook de rotación de base de datos sin downtime, una checklist de validación y un ejemplo de registro relleno.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "secrets-rotation-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/secrets-rotation-template/",
+    "es": "https://stackpractices.com/es/docs/secrets-rotation-template/"
+  },
+  "language": ["markdown", "bash"],
+  "tags": ["secrets", "rotation", "security", "vault", "credentials", "template"],
+  "files": [
+    "secrets-rotation-schedule.md",
+    "rotation-runbook-db.sh",
+    "rotation-validation-checklist.md",
+    "rotation-log-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dark mode demo — prefers-color-scheme + data-theme</title>
+  <script>
+    // Anti-FOUC: set data-theme before the stylesheet paints.
+    (function () {
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = saved || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Dark mode demo</h1>
+    <button id="theme-toggle" aria-label="Toggle theme">Toggle theme</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Card</h2>
+      <p>Every color on this page comes from a CSS custom property.
+         Flip the toggle or change your OS preference to watch the
+         tokens swap.</p>
+      <a href="#">A link styled with --color-accent</a>
+    </section>
+
+    <pre><code>:root {
+  --color-bg: #ffffff;
+}
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+}</code></pre>
+  </main>
+
+  <script src="theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "title": "Metrics and Dashboards Guide",
+  "title_es": "Guía de Métricas y Dashboards",
+  "description": "Runnable metrics stack artifacts: Prometheus scrape config with Kubernetes SD, SLI recording rules, symptom and burn-rate alert rules, Alertmanager routing with inhibition, a golden-signals Grafana dashboard, and an instrumented Flask example.",
+  "description_es": "Artefactos ejecutables del stack de métricas: config de scrape de Prometheus con SD de Kubernetes, reglas de grabación SLI, reglas de alerta por síntomas y burn rate, enrutado de Alertmanager con inhibición, un dashboard de señales doradas de Grafana y un ejemplo Flask instrumentado.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "metrics-and-dashboards-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/metrics-and-dashboards-guide/",
+    "es": "https://stackpractices.com/es/guides/metrics-and-dashboards-guide/"
+  },
+  "language": ["yaml", "json", "python"],
+  "tags": ["metrics", "prometheus", "grafana", "alertmanager", "observability", "sli", "slo", "dashboards"],
+  "files": [
+    "prometheus.yml",
+    "recording-rules.yml",
+    "alert-rules.yml",
+    "alertmanager.yml",
+    "dashboard-golden-signals.json",
+    "instrument-app.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

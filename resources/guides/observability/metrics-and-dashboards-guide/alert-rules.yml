@@ -1,0 +1,76 @@
+# Alerting rules — symptom-based alerts plus multi-window burn-rate alerts.
+groups:
+  - name: service_alerts
+    rules:
+      - alert: HighErrorRate
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[5m]))
+            /
+            sum(rate(http_requests_total[5m]))
+          ) > 0.01
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate in {{ $labels.service }}"
+          description: "Error rate is {{ $value | humanizePercentage }} over the last 5m."
+          runbook: "https://wiki.example.com/runbooks/high-error-rate"
+
+      - alert: LatencyDegradation
+        expr: |
+          histogram_quantile(0.95,
+            sum(rate(request_duration_seconds_bucket[5m])) by (le)
+          ) > 1.0
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Latency p95 above 1s"
+          runbook: "https://wiki.example.com/runbooks/latency-degradation"
+
+      - alert: ExporterDown
+        expr: absent(up{job="kubernetes-pods"} == 1)
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "No metrics targets up for kubernetes-pods"
+
+  # Multi-window, multi-burn-rate alerts for a 99.9% availability SLO.
+  # See the SRE workbook pattern: page on fast burn, ticket on slow burn.
+  - name: slo_burn_rate
+    rules:
+      - alert: ErrorBudgetBurnFast
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[1h]))
+              / sum(rate(http_requests_total[1h]))
+          ) > (14.4 * 0.001)
+          and
+          (
+            sum(rate(http_requests_total{status=~"5.."}[6h]))
+              / sum(rate(http_requests_total[6h]))
+          ) > (14.4 * 0.001)
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Fast error-budget burn in {{ $labels.service }} (14.4x, 1h+6h)"
+
+      - alert: ErrorBudgetBurnSlow
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[1d]))
+              / sum(rate(http_requests_total[1d]))
+          ) > (2 * 0.001)
+          and
+          (
+            sum(rate(http_requests_total{status=~"5.."}[3d]))
+              / sum(rate(http_requests_total[3d]))
+          ) > (2 * 0.001)
+        for: 1h
+        labels:
+          severity: warning
+        annotations:
+          summary: "Slow error-budget burn in {{ $labels.service }} (2x, 1d+3d)"

@@ -1,0 +1,21 @@
+{
+  "title": "Test Strategy Document Template",
+  "title_es": "Plantilla de Estrategia de Pruebas",
+  "description": "Downloadable test strategy resources: a blank 12-section strategy template and a filled payments-microservice example with pyramid split, CI gates, risks and metrics.",
+  "description_es": "Recursos de estrategia de pruebas descargables: una plantilla en blanco de 12 secciones y un ejemplo rellenado de un microservicio de pagos con pirámide, gates de CI, riesgos y métricas.",
+  "type": "docs",
+  "topic": "testing",
+  "slug": "test-strategy-document-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/test-strategy-document-template/",
+    "es": "https://stackpractices.com/es/docs/test-strategy-document-template/"
+  },
+  "language": ["markdown"],
+  "tags": ["testing", "test-strategy", "template", "ci-cd", "coverage", "test-pyramid"],
+  "files": [
+    "test-strategy-template.md",
+    "test-strategy-payments-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

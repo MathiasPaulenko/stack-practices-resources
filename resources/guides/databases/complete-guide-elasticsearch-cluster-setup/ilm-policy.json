@@ -1,0 +1,35 @@
+{
+  "_comment": "ILM policy for logs-* indices — hot/warm/cold/delete tiers. Apply with: PUT /_ilm/policy/logs-policy (Elasticsearch 8.x). Companion to https://stackpractices.com/guides/complete-guide-elasticsearch-cluster-setup/",
+  "policy": {
+    "phases": {
+      "hot": {
+        "actions": {
+          "rollover": {
+            "max_age": "7d",
+            "max_primary_shard_size": "50gb"
+          },
+          "set_priority": { "priority": 100 }
+        }
+      },
+      "warm": {
+        "min_age": "30d",
+        "actions": {
+          "shrink": { "number_of_shards": 1 },
+          "forcemerge": { "max_num_segments": 1 },
+          "set_priority": { "priority": 50 }
+        }
+      },
+      "cold": {
+        "min_age": "90d",
+        "actions": {
+          "set_priority": { "priority": 0 },
+          "allocate": { "require": { "data": "cold" } }
+        }
+      },
+      "delete": {
+        "min_age": "365d",
+        "actions": { "delete": {} }
+      }
+    }
+  }
+}

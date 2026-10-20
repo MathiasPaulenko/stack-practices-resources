@@ -1,0 +1,18 @@
+# OPA Gatekeeper constraint: block cluster-admin bindings outside platform/security teams
+# Requires a ConstraintTemplate that enforces opa-rolebinding-validation.rego
+apiVersion: constraints.gatekeeper.sh/v1
+kind: K8sRequiredRoleBindings
+metadata:
+  name: prevent-privilege-escalation
+spec:
+  match:
+    kinds:
+      - apiGroups: ["rbac.authorization.k8s.io"]
+        kinds: ["RoleBinding", "ClusterRoleBinding"]
+  parameters:
+    # Block bindings to cluster-admin for non-platform namespaces
+    forbiddenRoles:
+      - cluster-admin
+    allowedGroups:
+      - platform-team
+      - security-team

@@ -1,0 +1,81 @@
+# docker-compose.yml — 3-node Elasticsearch 8.x test cluster with security on.
+# For local testing, not a production recipe — production TLS should come
+# from the enrollment-token flow described in the guide.
+#
+#   docker compose up -d
+#   curl -u elastic:$ELASTIC_PASSWORD https://localhost:9200 -k
+#
+# Companion to: https://stackpractices.com/guides/complete-guide-elasticsearch-cluster-setup/
+
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    container_name: es01
+    environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es02,es03
+      - cluster.initial_master_nodes=es01,es02,es03   # bootstrap only
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=true
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-changeme}
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g                    # small heap for local test
+      - xpack.security.http.ssl.enabled=false         # HTTP for local curl tests
+      - xpack.security.enrollment.enabled=true
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    volumes:
+      - es01-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks: [es]
+
+  es02:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    container_name: es02
+    environment:
+      - node.name=es02
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es01,es03
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=true
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.enrollment.enabled=true
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    volumes:
+      - es02-data:/usr/share/elasticsearch/data
+    networks: [es]
+
+  es03:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+    container_name: es03
+    environment:
+      - node.name=es03
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=es01,es02
+      - cluster.initial_master_nodes=es01,es02,es03
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=true
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.http.ssl.enabled=false
+      - xpack.security.enrollment.enabled=true
+    ulimits:
+      memlock: { soft: -1, hard: -1 }
+      nofile: { soft: 65536, hard: 65536 }
+    volumes:
+      - es03-data:/usr/share/elasticsearch/data
+    networks: [es]
+
+volumes:
+  es01-data:
+  es02-data:
+  es03-data:
+
+networks:
+  es:
+    driver: bridge

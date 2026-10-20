@@ -1,0 +1,24 @@
+{
+  "title": "Incident Response Process: Step-by-Step Guide",
+  "title_es": "Respuesta a Incidentes: Proceso Paso a Paso",
+  "description": "Reusable incident response templates: declaration and resolution checklists, stakeholder status update template with cadence table, per-service runbook skeleton, and a worked Sev-1 timeline with roles and postmortem.",
+  "description_es": "Plantillas reutilizables de respuesta a incidentes: checklists de declaración y resolución, plantilla de actualización a stakeholders con cadencia por audiencia, esqueleto de runbook por servicio y un Sev-1 resuelto con roles y postmortem.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "incident-response-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/incident-response-guide/",
+    "https://stackpractices.com/es/guides/incident-response-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["incident-response", "incident-commander", "mttr", "on-call", "runbook", "postmortem", "sre"],
+  "files": [
+    "incident-declaration-checklist.md",
+    "status-update-template.md",
+    "incident-resolution-checklist.md",
+    "service-runbook-template.md",
+    "sev1-timeline-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

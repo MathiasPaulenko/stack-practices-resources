@@ -1,0 +1,24 @@
+{
+  "title": "RBAC Policy Template",
+  "title_es": "Plantilla de Política RBAC",
+  "description": "Downloadable RBAC policy artifacts: a complete policy document template, Kubernetes Role/RoleBinding/ClusterRole manifests, an AWS IAM least-privilege boundary policy, and an OPA Gatekeeper constraint that blocks cluster-admin escalation.",
+  "description_es": "Artefactos descargables de política RBAC: una plantilla completa de documento de política, manifiestos de Role/RoleBinding/ClusterRole de Kubernetes, una política de boundaries de privilegio mínimo de AWS IAM y una constraint de OPA Gatekeeper que bloquea la escalación a cluster-admin.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "rbac-policy-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/rbac-policy-template/",
+    "es": "https://stackpractices.com/es/docs/rbac-policy-template/"
+  },
+  "language": ["markdown", "yaml", "json", "rego"],
+  "tags": ["rbac", "access-control", "iam", "kubernetes", "aws", "opa", "security", "template"],
+  "files": [
+    "rbac-policy-template.md",
+    "kubernetes-rbac.yaml",
+    "aws-iam-boundary-policy.json",
+    "opa-prevent-privilege-escalation.yaml",
+    "opa-rolebinding-validation.rego",
+    "README.md",
+    "README.es.md"
+  ]
+}

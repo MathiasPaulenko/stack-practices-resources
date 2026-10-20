@@ -1,0 +1,33 @@
+{
+  "title": "gRPC Microservices — Contract, Server, Clients, Envoy",
+  "title_es": "Microservicios gRPC — Contrato, Servidor, Clientes, Envoy",
+  "description": "Runnable gRPC starter: user_service.proto contract, Python server with grpc.health.v1 check, Python and Go clients with deadlines, Envoy L7 config, docker-compose lab.",
+  "description_es": "Starter gRPC ejecutable: contrato user_service.proto, servidor Python con health check grpc.health.v1, clientes Python y Go con deadlines, config L7 de Envoy, lab docker-compose.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "grpc-microservices-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/grpc-microservices-guide/",
+    "https://stackpractices.com/es/guides/grpc-microservices-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "grpc",
+    "protobuf",
+    "microservices",
+    "envoy",
+    "python",
+    "go",
+    "load-balancing"
+  ],
+  "files": [
+    "user_service.proto",
+    "server.py",
+    "client.py",
+    "client.go",
+    "envoy.yaml",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
