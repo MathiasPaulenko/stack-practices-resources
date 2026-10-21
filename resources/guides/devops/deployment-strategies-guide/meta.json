@@ -1,0 +1,31 @@
+{
+  "title": "Deployment Strategies: Blue-Green, Canary & Rolling Compared — Companion Resources",
+  "title_es": "Estrategias de Despliegue: Blue-Green, Canary y Rolling — Recursos complementarios",
+  "description": "Runnable examples from the deployment strategies guide: a Flagger automated canary, an Argo Rollouts canary with Prometheus AnalysisTemplate, and a Terraform ALB blue-green setup.",
+  "description_es": "Ejemplos ejecutables de la guía de estrategias de despliegue: un canary automatizado con Flagger, un canary con Argo Rollouts y AnalysisTemplate de Prometheus, y un setup blue-green con ALB en Terraform.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "deployment-strategies-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/deployment-strategies-guide/",
+    "https://stackpractices.com/es/guides/deployment-strategies-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "deployment",
+    "canary",
+    "blue-green",
+    "flagger",
+    "argo-rollouts",
+    "terraform",
+    "kubernetes",
+    "devops"
+  ],
+  "files": [
+    "flagger-canary.yaml",
+    "rollout-canary.yaml",
+    "alb-bluegreen.tf",
+    "README.md",
+    "README.es.md"
+  ]
+}

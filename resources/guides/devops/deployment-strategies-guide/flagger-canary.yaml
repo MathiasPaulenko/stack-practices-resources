@@ -1,0 +1,28 @@
+# Flagger automated canary for a Kubernetes Deployment
+# Requires Flagger installed in the cluster (https://flagger.app/)
+apiVersion: flagger.app/v1beta1
+kind: Canary
+metadata:
+  name: api
+  namespace: default
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: api
+  service:
+    port: 80
+  analysis:
+    interval: 30s        # how often metrics are checked
+    threshold: 5         # max failed checks before rollback
+    maxWeight: 50        # peak traffic percentage to canary
+    stepWeight: 10       # traffic increase per interval
+    metrics:
+      - name: request-success-rate
+        thresholdRange:
+          min: 99        # % of non-5xx responses required
+        interval: 1m
+      - name: request-duration
+        thresholdRange:
+          max: 500       # ms at p99
+        interval: 30s
