@@ -1,0 +1,32 @@
+{
+  "title": "Caching with Redis — Companion",
+  "title_es": "Caching con Redis — Complementos",
+  "description": "Runnable Redis caching examples in three stacks: the cache-aside decorator (redis-py), lease-lock and early-refresh stampede defenses, an ioredis getCached helper with INCR/EXPIRE rate limiting, and a Jedis pool client.",
+  "description_es": "Ejemplos ejecutables de caching con Redis en tres stacks: el decorador cache-aside (redis-py), defensas contra stampede con lease lock y refresco temprano, un helper getCached en ioredis con rate limiting INCR/EXPIRE, y un cliente Jedis con pool.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "caching-redis",
+  "source_urls": [
+    "https://stackpractices.com/recipes/caching-redis/",
+    "https://stackpractices.com/es/recipes/caching-redis/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "redis",
+    "caching",
+    "cache-aside",
+    "python",
+    "nodejs",
+    "java",
+    "jedis",
+    "ioredis"
+  ],
+  "files": [
+    "python/cache_aside.py",
+    "python/stampede.py",
+    "node/cache.js",
+    "java/CacheClient.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
