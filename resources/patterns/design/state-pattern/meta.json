@@ -1,0 +1,22 @@
+{
+  "title": "State Pattern — Code Examples",
+  "title_es": "Patrón State — Ejemplos de Código",
+  "description": "Runnable State Pattern examples in Python, JavaScript, and Java: an order lifecycle (pending, paid, shipped, cancelled) with state-owned transitions, plus a table-driven variant and transition tests.",
+  "description_es": "Ejemplos ejecutables del Patrón State en Python, JavaScript y Java: ciclo de vida de un pedido (pending, paid, shipped, cancelled) con transiciones controladas por estado, además de una variante dirigida por tabla y tests de transiciones.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "state-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/state-pattern/",
+    "es": "https://stackpractices.com/es/patterns/state-pattern/"
+  },
+  "language": "bilingual",
+  "tags": ["state", "design-pattern", "behavioral", "finite-state-machine", "python", "javascript", "java"],
+  "files": [
+    "python/state_pattern.py",
+    "javascript/state_pattern.js",
+    "java/StatePatternDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
