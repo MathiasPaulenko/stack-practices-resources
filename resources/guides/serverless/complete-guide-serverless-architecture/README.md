@@ -8,7 +8,7 @@ Companion code for the [Complete Guide to Serverless Architecture](https://stack
 |------|---------|
 | `resize_handler.py` | S3-triggered Lambda: resizes the uploaded image (thumbnail/medium/large) and publishes the generated keys to SQS |
 | `metadata_handler.py` | SQS-triggered Lambda: writes per-version metadata to DynamoDB; returns `batchItemFailures` so only failed messages retry |
-| `main.tf` | Terraform for both Lambdas, the SQS queue + DLQ, the event source mapping, and the DynamoDB table |
+| `main.tf` | Terraform for the full stack: both Lambdas (zipped via `archive_file`), least-privilege IAM roles, S3 buckets + notification trigger, SQS queue + DLQ, event source mapping, and DynamoDB table |
 | `requirements.txt` | Python dependencies (`boto3`, `Pillow`) |
 
 ## Run locally
@@ -37,9 +37,13 @@ PY
 
 ## Deploy
 
+`main.tf` is a complete stack — it zips the handlers itself and wires IAM, the S3 trigger, and the event source mapping:
+
 ```bash
 terraform init
-terraform apply
+terraform apply \
+  -var="originals_bucket_name=my-originals-123" \
+  -var="resized_bucket_name=my-resized-123"
 ```
 
-Then package each handler (`zip` + `lambda update-function-code`) or deploy with SAM / Serverless Framework.
+Bucket names must be globally unique. After apply, dropping an image into `uploads/originals/` in the originals bucket runs the whole pipeline end to end.

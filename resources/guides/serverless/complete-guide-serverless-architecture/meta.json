@@ -1,6 +1,6 @@
 {
-  "title": "Serverless Image Processing Pipeline",
-  "title_es": "Pipeline Serverless de Procesamiento de Imágenes",
+  "title": "Complete Guide to Serverless Architecture",
+  "title_es": "Guía Completa de Arquitectura Serverless",
   "description": "Runnable event-driven pipeline from the guide's worked example: S3-triggered resize Lambda, SQS queue with DLQ, metadata Lambda writing to DynamoDB with batchItemFailures, plus Terraform for the full stack.",
   "description_es": "Pipeline event-driven ejecutable del ejemplo resuelto de la guía: Lambda de resize disparada por S3, cola SQS con DLQ, Lambda de metadata que escribe en DynamoDB con batchItemFailures, más Terraform para todo el stack.",
   "type": "guides",

@@ -8,7 +8,7 @@ Código companion de la [Guía Completa de Arquitectura Serverless](https://stac
 |---------|-----------|
 | `resize_handler.py` | Lambda disparada por S3: redimensiona la imagen subida (thumbnail/medium/large) y publica las claves generadas en SQS |
 | `metadata_handler.py` | Lambda disparada por SQS: escribe la metadata por versión en DynamoDB; devuelve `batchItemFailures` para que solo reintenten los mensajes fallidos |
-| `main.tf` | Terraform para ambas Lambdas, la cola SQS + DLQ, el event source mapping y la tabla DynamoDB |
+| `main.tf` | Terraform para todo el stack: ambas Lambdas (empaquetadas vía `archive_file`), roles IAM de mínimo privilegio, buckets S3 + trigger de notificación, cola SQS + DLQ, event source mapping y tabla DynamoDB |
 | `requirements.txt` | Dependencias Python (`boto3`, `Pillow`) |
 
 ## Ejecutar en local
@@ -33,13 +33,17 @@ print(metadata_handler.lambda_handler(event, None))
 PY
 ```
 
-`metadata_handler` corre sin credenciales AWS cuando `TABLE_NAME` está seteada y `boto3` está mockeado o apuntando a LocalStack. `resize_handler` necesita acceso a S3 (real o LocalStack) y Pillow.
+`metadata_handler` corre sin credenciales AWS cuando `TABLE_NAME` está configurada y `boto3` está mockeado o apuntando a LocalStack. `resize_handler` necesita acceso a S3 (real o LocalStack) y Pillow.
 
 ## Desplegar
 
+`main.tf` es un stack completo — empaqueta los handlers por su cuenta y conecta el IAM, el trigger de S3 y el event source mapping:
+
 ```bash
 terraform init
-terraform apply
+terraform apply \
+  -var="originals_bucket_name=my-originals-123" \
+  -var="resized_bucket_name=my-resized-123"
 ```
 
-Luego empaqueta cada handler (`zip` + `lambda update-function-code`) o despliega con SAM / Serverless Framework.
+Los nombres de bucket tienen que ser únicos globalmente. Tras el apply, soltar una imagen en `uploads/originals/` del bucket de originales corre el pipeline entero de punta a punta.

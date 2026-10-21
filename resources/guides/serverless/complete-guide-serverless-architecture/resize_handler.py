@@ -28,7 +28,11 @@ SIZES = {
 
 
 def lambda_handler(event, context):
-    record = event["Records"][0]
+    processed = [process_record(record) for record in event["Records"]]
+    return {"statusCode": 200, "body": json.dumps({"processed": len(processed)})}
+
+
+def process_record(record):
     bucket = record["s3"]["bucket"]["name"]
     key = record["s3"]["object"]["key"]
 
@@ -49,7 +53,7 @@ def lambda_handler(event, context):
         QueueUrl=os.environ["QUEUE_URL"],
         MessageBody=json.dumps({"originalKey": key, "imageId": str(uuid.uuid4()), **keys}),
     )
-    return {"statusCode": 200, "body": json.dumps({"processed": key})}
+    return key
 
 
 def read_object(bucket, key):
