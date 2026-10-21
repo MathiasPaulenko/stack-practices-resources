@@ -1,0 +1,30 @@
+{
+  "title": "Middleware — Companion",
+  "title_es": "Middleware — Complementos",
+  "description": "Runnable middleware chains in Express and FastAPI: logging, CORS-before-auth ordering, path-scoped auth middleware, and a four-argument error handler — mirroring the recipe's ordering rules.",
+  "description_es": "Cadenas de middleware ejecutables en Express y FastAPI: logging, orden CORS-antes-de-auth, middleware de auth por path y un error handler de cuatro argumentos — siguiendo las reglas de orden de la receta.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "middleware",
+  "source_urls": [
+    "https://stackpractices.com/recipes/middleware/",
+    "https://stackpractices.com/es/recipes/middleware/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "middleware",
+    "express",
+    "fastapi",
+    "api",
+    "authentication",
+    "cors"
+  ],
+  "files": [
+    "express/server.js",
+    "express/package.json",
+    "fastapi/main.py",
+    "fastapi/requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
