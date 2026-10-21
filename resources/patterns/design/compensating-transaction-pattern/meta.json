@@ -1,0 +1,22 @@
+{
+  "title": "Compensating Transaction Pattern",
+  "title_es": "Patrón Compensating Transaction",
+  "description": "Runnable saga orchestrator with compensating transactions: a successful order saga and a failing one that triggers reverse-order rollback across payment, inventory, and shipping services.",
+  "description_es": "Orquestador de saga ejecutable con transacciones compensatorias: una saga de orden exitosa y otra que falla disparando rollback en orden inverso sobre servicios de pago, inventario y envío.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "compensating-transaction-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/compensating-transaction-pattern/",
+    "https://stackpractices.com/es/patterns/compensating-transaction-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["pattern", "saga", "compensating-transaction", "distributed", "rollback", "eventual-consistency"],
+  "files": [
+    "python/compensating_transaction.py",
+    "javascript/compensating-transaction.js",
+    "java/CompensatingTransactionDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
