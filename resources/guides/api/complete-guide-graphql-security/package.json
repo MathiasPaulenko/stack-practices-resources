@@ -1,0 +1,26 @@
+{
+  "name": "graphql-security-hardened-server",
+  "version": "1.0.0",
+  "description": "Hardened Apollo Server 4 example for the Complete Guide to GraphQL Security",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.0",
+    "@escape.tech/graphql-armor-cost-limit": "^3.0.0",
+    "@escape.tech/graphql-armor-max-aliases": "^3.0.0",
+    "@escape.tech/graphql-armor-max-directives": "^3.0.0",
+    "@escape.tech/graphql-armor-max-tokens": "^3.0.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "@graphql-tools/utils": "^10.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.5.0",
+    "graphql": "^16.9.0",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-tag": "^2.12.6",
+    "ioredis": "^5.4.0"
+  }
+}

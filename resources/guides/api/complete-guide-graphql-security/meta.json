@@ -1,0 +1,24 @@
+{
+  "title": "Complete Guide to GraphQL Security",
+  "title_es": "Guía Completa de Seguridad en GraphQL",
+  "description": "Hardened Apollo Server 4 setup: introspection gate, depth/cost/alias limits, rate limiting, persisted queries, field-level auth directive, and error sanitization.",
+  "description_es": "Servidor Apollo Server 4 endurecido: introspección controlada, límites de profundidad/costo/alias, rate limiting, persisted queries, directiva de auth por campo y errores sanitizados.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "complete-guide-graphql-security",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-graphql-security/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-graphql-security/"
+  },
+  "language": "multi",
+  "tags": ["graphql", "security", "apollo-server", "rate-limiting", "authorization", "hardening"],
+  "files": [
+    "server.js",
+    "auth-directive.js",
+    "introspection-gate.js",
+    "cost-budget.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
