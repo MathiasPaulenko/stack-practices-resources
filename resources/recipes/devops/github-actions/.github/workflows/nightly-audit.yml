@@ -1,0 +1,19 @@
+# .github/workflows/nightly-audit.yml
+name: Nightly Audit
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # Every day at 03:00 UTC
+  workflow_dispatch:       # Allow manual runs from the Actions tab
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm audit --audit-level=high

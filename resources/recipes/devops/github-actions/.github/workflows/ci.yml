@@ -1,0 +1,34 @@
+# .github/workflows/ci.yml
+name: CI
+
+# Trigger: run on push and PR to main branch
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the repository code
+      - uses: actions/checkout@v4
+
+      # Set up Node.js with built-in npm caching
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # Install dependencies using lock file for reproducibility
+      - run: npm ci
+
+      # Run linting to catch style issues early
+      - run: npm run lint
+
+      # Execute the test suite
+      - run: npm run test
+
+      # Build the production artifact
+      - run: npm run build

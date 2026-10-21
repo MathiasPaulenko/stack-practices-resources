@@ -1,0 +1,35 @@
+{
+  "title": "GitHub Actions Workflow Examples",
+  "title_es": "Ejemplos de Workflows de GitHub Actions",
+  "description": "Runnable GitHub Actions workflow files for CI/CD: Node.js pipeline, build matrix, scheduled cron audit, environment-gated deploy, reusable lint workflow and a composite setup action.",
+  "description_es": "Workflows de GitHub Actions listos para usar en CI/CD: pipeline de Node.js, matriz de build, auditoría programada con cron, deploy con aprobación de environment, workflow reutilizable de lint y una action compuesta de setup.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "github-actions",
+  "source_urls": [
+    "https://stackpractices.com/recipes/github-actions/",
+    "https://stackpractices.com/es/recipes/github-actions/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "github-actions",
+    "ci-cd",
+    "workflow",
+    "yaml",
+    "matrix",
+    "secrets",
+    "environments",
+    "caching",
+    "cron"
+  ],
+  "files": [
+    ".github/workflows/ci.yml",
+    ".github/workflows/test-matrix.yml",
+    ".github/workflows/reusable-lint.yml",
+    ".github/workflows/deploy.yml",
+    ".github/workflows/nightly-audit.yml",
+    ".github/actions/setup-project/action.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
