@@ -1,0 +1,21 @@
+{
+  "title": "Webhook Security — Delivery, Verification, and Protection",
+  "title_es": "Seguridad de Webhooks — Entrega, Verificación y Protección",
+  "description": "Runnable webhook security examples: HMAC-SHA256 signing and verification, replay protection with timestamp + dedup, and a hardened FastAPI consumer endpoint.",
+  "description_es": "Ejemplos ejecutables de seguridad de webhooks: firma y verificación HMAC-SHA256, protección anti-replay con timestamp + deduplicación, y un endpoint consumidor endurecido con FastAPI.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "webhook-security-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/webhook-security-guide/",
+    "https://stackpractices.com/es/guides/webhook-security-guide/"
+  ],
+  "language": "multi",
+  "tags": ["webhook", "security", "hmac", "signature-verification", "replay-protection", "idempotency"],
+  "files": [
+    "python/webhook_security.py",
+    "javascript/stripe-verifier.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
