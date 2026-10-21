@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "OrderCreated",
+  "namespace": "com.example.orders",
+  "fields": [
+    {"name": "orderId", "type": "string"},
+    {"name": "customerId", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "currency", "type": ["null", "string"], "default": null},
+    {
+      "name": "legacyPaymentMethod",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "DEPRECATED — use paymentMethods. Removal planned for v3."
+    },
+    {"name": "paymentMethods", "type": {"type": "array", "items": "string"}, "default": []}
+  ]
+}

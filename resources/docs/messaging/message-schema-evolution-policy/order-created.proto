@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.orders;
+
+// OrderCreated v2 — backward compatible evolution of v1.
+// Rules applied: new field numbers only, optional fields, retired number reserved.
+message OrderCreated {
+  string order_id = 1;
+  string customer_id = 2;
+  double amount = 3;
+  optional string currency = 4;
+  string legacy_payment_method = 5 [deprecated = true];
+  reserved 6;  // retired field number — never reuse
+  repeated string payment_methods = 7;
+}

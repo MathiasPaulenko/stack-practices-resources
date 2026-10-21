@@ -1,0 +1,26 @@
+{
+  "title": "Message Schema Evolution Policy",
+  "title_es": "Política de Evolución de Esquemas de Mensajes",
+  "description": "Schema evolution policy companion: Avro and Protobuf schema pairs (v1/v2), consumer migration checklist, and a CI compatibility check script for Confluent Schema Registry.",
+  "description_es": "Complementos de la política de evolución de esquemas: pares de esquemas Avro y Protobuf (v1/v2), checklist de migración de consumidores y script de comprobación de compatibilidad en CI para Confluent Schema Registry.",
+  "type": "docs",
+  "topic": "messaging",
+  "slug": "message-schema-evolution-policy",
+  "source_urls": [
+    "https://stackpractices.com/docs/message-schema-evolution-policy/",
+    "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html",
+    "https://avro.apache.org/docs/current/spec.html",
+    "https://protobuf.dev/programming-guides/proto3/#updating"
+  ],
+  "language": "bilingual",
+  "tags": ["messaging", "schema-evolution", "avro", "protobuf", "kafka", "schema-registry", "ci"],
+  "files": [
+    "order-created-v1.avsc",
+    "order-created-v2.avsc",
+    "order-created.proto",
+    "schema-compatibility-check.sh",
+    "consumer-migration-checklist.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

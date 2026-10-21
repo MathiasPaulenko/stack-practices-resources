@@ -1,0 +1,24 @@
+{
+  "title": "Import Data from CSV/Excel — Companion",
+  "title_es": "Importar Datos desde CSV/Excel — Complementos",
+  "description": "Runnable importer scripts for the CSV/Excel import recipe: streaming CSV import with Pydantic validation, encoding detection, delimiter sniffing, batch inserts into SQLite, and a sample CSV to test against.",
+  "description_es": "Scripts de importación ejecutables para la receta de importación CSV/Excel: importación en streaming con validación Pydantic, detección de encoding, sniffing de delimitador, inserción por lotes en SQLite y un CSV de muestra.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "import-csv-excel",
+  "source_urls": [
+    "https://stackpractices.com/recipes/import-csv-excel/",
+    "https://pandas.pydata.org/docs/user_guide/io.html",
+    "https://commons.apache.org/proper/commons-csv/user-guide.html",
+    "https://www.rfc-editor.org/rfc/rfc4180"
+  ],
+  "language": "bilingual",
+  "tags": ["csv", "excel", "import", "pandas", "streaming", "validation", "batch-insert", "sqlite"],
+  "files": [
+    "import_csv.py",
+    "import_csv.js",
+    "sample-users.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

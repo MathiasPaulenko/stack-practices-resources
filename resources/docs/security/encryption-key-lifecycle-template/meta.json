@@ -1,0 +1,24 @@
+{
+  "title": "Encryption Key Lifecycle Template",
+  "title_es": "Plantilla de Ciclo de Vida de Claves de Cifrado",
+  "description": "Encryption key lifecycle management template with key classification, rotation policy, access control matrix, compromise response runbook, KMS configuration, and rotation audit script.",
+  "description_es": "Plantilla de gestión del ciclo de vida de claves de cifrado con clasificación de claves, política de rotación, matriz de control de acceso, runbook de respuesta a compromiso, configuración KMS y script de auditoría de rotación.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "encryption-key-lifecycle-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/encryption-key-lifecycle-template/",
+    "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final",
+    "https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "encryption", "key-management", "kms", "compliance", "aws", "yaml", "bash"],
+  "files": [
+    "kms-key-policy.yaml",
+    "key-rotation-audit.sh",
+    "key-compromise-runbook.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
