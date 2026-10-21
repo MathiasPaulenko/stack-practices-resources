@@ -1,0 +1,22 @@
+{
+  "title": "Template Method Pattern — Code Examples",
+  "title_es": "Patrón Template Method — Ejemplos de Código",
+  "description": "Runnable Template Method examples in Python, JavaScript, and Java: a data-import pipeline (fetch, parse, validate, save, onComplete) where the base class owns the sequence and subclasses implement the variable steps.",
+  "description_es": "Ejemplos ejecutables del Patrón Template Method en Python, JavaScript y Java: un pipeline de importación de datos (fetch, parse, validate, save, onComplete) donde la clase base controla la secuencia y las subclases implementan los pasos variables.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "template-method-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/template-method-pattern/",
+    "es": "https://stackpractices.com/es/patterns/template-method-pattern/"
+  },
+  "language": "bilingual",
+  "tags": ["template-method", "design-pattern", "behavioral", "inheritance", "hooks", "python", "javascript", "java"],
+  "files": [
+    "python/template_method.py",
+    "javascript/template-method.js",
+    "java/TemplateMethodDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
