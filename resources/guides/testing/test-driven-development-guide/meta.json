@@ -1,0 +1,33 @@
+{
+  "title": "Test-Driven Development (TDD) — A Practical Workflow",
+  "title_es": "Desarrollo Guiado por Pruebas (TDD)",
+  "description": "Runnable companion for the TDD guide: the ShoppingCart built cycle-by-cycle in pytest (five tests, one per red-green-refactor loop) plus a Jest + supertest suite for POST /api/transfers with wiring stubs ready to connect.",
+  "description_es": "Companion ejecutable de la guía TDD: el ShoppingCart construido ciclo a ciclo en pytest (cinco tests, uno por ciclo red-green-refactor) más una suite Jest + supertest para POST /api/transfers con stubs listos para conectar.",
+  "type": "guides",
+  "topic": "testing",
+  "slug": "test-driven-development-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/test-driven-development-guide/",
+    "https://stackpractices.com/es/guides/test-driven-development-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "tdd",
+    "test-driven-development",
+    "pytest",
+    "jest",
+    "supertest",
+    "unit-testing",
+    "python",
+    "nodejs"
+  ],
+  "files": [
+    "python/shopping_cart.py",
+    "python/test_shopping_cart.py",
+    "python/requirements.txt",
+    "node/transfers.test.js",
+    "node/package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

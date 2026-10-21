@@ -1,0 +1,12 @@
+{
+  "name": "tdd-transfers-example",
+  "private": true,
+  "description": "Jest + supertest suite from the StackPractices TDD guide (POST /api/transfers). Wire your Express app into the stubs before enabling the tests.",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^7.0.0"
+  }
+}
