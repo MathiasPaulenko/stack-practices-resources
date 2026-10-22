@@ -1,0 +1,29 @@
+{
+  "title": "API Security Review Template — Companion Resources",
+  "title_es": "Plantilla de Revisión de Seguridad de API — Recursos complementarios",
+  "description": "Fillable API security review checklist (authentication, authorization, input validation, rate limiting, secrets, OWASP API Security Top 10 2023) plus a complete worked example for a public REST API.",
+  "description_es": "Checklist rellenable de revisión de seguridad de API (autenticación, autorización, validación de entrada, rate limiting, secretos, OWASP API Security Top 10 2023) más un ejemplo completo para una API REST pública.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "api-security-review-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-security-review-template/",
+    "https://stackpractices.com/es/docs/api-security-review-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "api-security",
+    "owasp",
+    "security-review",
+    "checklist",
+    "authentication",
+    "rate-limiting",
+    "template"
+  ],
+  "files": [
+    "api-security-review-template.md",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

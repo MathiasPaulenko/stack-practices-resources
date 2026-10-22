@@ -1,0 +1,25 @@
+{
+  "title": "Implement a GraphQL API",
+  "title_es": "Implementar una API GraphQL",
+  "description": "Three runnable GraphQL servers for the recipe: Python (Strawberry + FastAPI), JavaScript (Apollo Server 4 standalone), and Java (Spring for GraphQL controller + SDL), plus an example query file with a query and a mutation to paste into GraphiQL.",
+  "description_es": "Tres servidores GraphQL ejecutables para la receta: Python (Strawberry + FastAPI), JavaScript (Apollo Server 4 standalone) y Java (controlador Spring for GraphQL + SDL), más un archivo de queries de ejemplo con una query y una mutación para pegar en GraphiQL.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "graphql-api",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/graphql-api/",
+    "es": "https://stackpractices.com/es/recipes/graphql-api/"
+  },
+  "language": "bilingual",
+  "tags": ["graphql", "apollo-server", "strawberry", "spring-graphql", "fastapi", "api"],
+  "files": [
+    "python/server.py",
+    "javascript/index.mjs",
+    "javascript/package.json",
+    "java/BookController.java",
+    "java/schema.graphqls",
+    "queries.graphql",
+    "README.md",
+    "README.es.md"
+  ]
+}

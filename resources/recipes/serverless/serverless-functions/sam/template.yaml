@@ -1,0 +1,24 @@
+# AWS SAM template from the recipe — local development workflow.
+#
+#   sam local invoke ProcessUpload --event events/s3-upload.json
+#   sam local generate-event s3 --bucket uploads --key data.csv > events/s3-upload.json
+#   sam local start-api   # for HTTP-triggered functions
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  ProcessUpload:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: app.handler
+      Runtime: python3.11
+      Events:
+        Upload:
+          Type: S3
+          Properties:
+            Bucket: !Ref UploadsBucket
+            Events: s3:ObjectCreated:*
+
+  UploadsBucket:
+    Type: AWS::S3::Bucket

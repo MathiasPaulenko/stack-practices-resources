@@ -1,0 +1,33 @@
+### URL shortener API contract (from the worked example in the guide).
+
+### Create a short URL
+POST https://s.io/api/v1/shorten
+Content-Type: application/json
+
+{
+  "url": "https://example.com/a/very/long/path",
+  "custom_alias": "my-link"
+}
+
+### Response
+# {
+#   "short_url": "https://s.io/my-link",
+#   "code": "my-link"
+# }
+
+### Redirect (permanent, edge-cacheable)
+GET https://s.io/my-link
+
+### Response
+# HTTP/1.1 301 Moved Permanently
+# Location: https://example.com/a/very/long/path
+# Cache-Control: public, max-age=31536000
+
+### Click analytics for a code
+GET https://s.io/api/v1/stats/my-link
+
+### Response
+# {
+#   "clicks": 12345,
+#   "unique_visitors": 8900
+# }

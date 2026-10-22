@@ -1,0 +1,13 @@
+{
+  "name": "jwt-authentication-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Runnable JWT demo for the StackPractices jwt-authentication recipe",
+  "main": "jwt_demo.js",
+  "scripts": {
+    "start": "node jwt_demo.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Background Jobs: Task Queues, Cron & Workers",
+  "title_es": "Tareas en Segundo Plano (Background Jobs)",
+  "description": "Runnable background job examples: a Celery task module with retries and Beat scheduling, a BullMQ worker with retry backoff and dead-letter handling, a Spring @Scheduled service, and a Docker Compose stack wiring Redis, worker, beat, and API.",
+  "description_es": "Ejemplos ejecutables de tareas en segundo plano: módulo de tareas Celery con reintentos y programación Beat, worker BullMQ con backoff y manejo de dead-letter, servicio Spring @Scheduled y stack Docker Compose con Redis, worker, beat y API.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "background-jobs",
+  "source_urls": [
+    "https://stackpractices.com/recipes/background-jobs/"
+  ],
+  "language": "bilingual",
+  "tags": ["background-jobs", "celery", "bullmq", "redis", "task-queue", "cron", "docker-compose", "devops"],
+  "files": [
+    "tasks.py",
+    "worker.js",
+    "JobService.java",
+    "docker-compose.yml",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

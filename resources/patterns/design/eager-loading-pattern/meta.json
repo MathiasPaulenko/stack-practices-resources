@@ -1,0 +1,31 @@
+{
+  "title": "Eager Loading Pattern — Companion Code",
+  "title_es": "Patrón Eager Loading — Código complementario",
+  "description": "Runnable Eager Loading demos in Python, JavaScript, and Java: the naive N+1 loop versus a single JOIN query and a two-query batch load, side by side with query counting.",
+  "description_es": "Demos ejecutables del patrón Eager Loading en Python, JavaScript y Java: el bucle N+1 ingenuo frente a una sola consulta JOIN y una carga por lotes de dos consultas, lado a lado con conteo de consultas.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "eager-loading-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/eager-loading-pattern/",
+    "https://stackpractices.com/es/patterns/eager-loading-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "eager-loading",
+    "design-pattern",
+    "orm",
+    "n-plus-one",
+    "databases",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "eager_loading.py",
+    "eager-loading.js",
+    "EagerLoadingDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

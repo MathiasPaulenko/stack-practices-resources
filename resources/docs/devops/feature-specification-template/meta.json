@@ -1,0 +1,31 @@
+{
+  "title": "Feature Spec Template",
+  "title_es": "Plantilla de Especificación de Funcionalidad",
+  "description": "Fillable feature specification template in Markdown (summary, goals and non-goals, user stories, functional and non-functional requirements, rollout, acceptance criteria, approvals table and changelog) plus a completed worked example for real-time order notifications.",
+  "description_es": "Plantilla rellenable de especificación de funcionalidad en Markdown (resumen, objetivos y no objetivos, historias de usuario, requisitos funcionales y no funcionales, rollout, criterios de aceptación, tabla de aprobaciones y registro de cambios) más un ejemplo completado para notificaciones de pedido en tiempo real.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "feature-specification-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/feature-specification-template/",
+    "https://stackpractices.com/es/docs/feature-specification-template/",
+    "https://standards.ieee.org/standard/29148-2018.html",
+    "https://github.com/github/spec-kit"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "feature-spec",
+    "specification",
+    "requirements",
+    "product-management",
+    "acceptance-criteria",
+    "user-stories",
+    "template"
+  ],
+  "files": [
+    "feature-specification-template.md",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

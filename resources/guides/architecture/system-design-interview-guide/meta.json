@@ -1,0 +1,23 @@
+{
+  "title": "System Design Interview: Framework, Examples & Practice",
+  "title_es": "Entrevistas de System Design: Framework, Ejemplos y Práctica",
+  "description": "Companion artifacts for the worked URL shortener example: a capacity-estimation script, the PostgreSQL and Cassandra schemas, the API contract, and a shard-capacity calculator you can reuse in interview practice.",
+  "description_es": "Artefactos del ejemplo resuelto del acortador de URLs: un script de estimación de capacidad, los esquemas PostgreSQL y Cassandra, el contrato de API y una calculadora de capacidad de shards reutilizable para practicar entrevistas.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "system-design-interview-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/system-design-interview-guide/",
+    "es": "https://stackpractices.com/es/guides/system-design-interview-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["system-design", "interview", "capacity-planning", "url-shortener", "sharding", "caching"],
+  "files": [
+    "capacity_estimator.py",
+    "schema.sql",
+    "click_events.cql",
+    "api.http",
+    "README.md",
+    "README.es.md"
+  ]
+}

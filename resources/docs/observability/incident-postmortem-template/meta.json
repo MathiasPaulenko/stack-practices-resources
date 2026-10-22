@@ -1,0 +1,28 @@
+{
+  "title": "Incident Postmortem Template — Companion Resources",
+  "title_es": "Plantilla de Postmortem de Incidentes — Recursos complementarios",
+  "description": "Fillable markdown postmortem template (summary, impact, timeline, five whys, action items) plus a complete worked P0 payment outage example.",
+  "description_es": "Plantilla markdown rellenable de postmortem (resumen, impacto, cronología, cinco porqués, acciones) más un ejemplo completo de caída de pagos P0.",
+  "type": "docs",
+  "topic": "observability",
+  "slug": "incident-postmortem-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/incident-postmortem-template/",
+    "https://stackpractices.com/es/docs/incident-postmortem-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "postmortem",
+    "incident",
+    "template",
+    "blameless",
+    "root-cause",
+    "sre"
+  ],
+  "files": [
+    "incident-postmortem-template.md",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

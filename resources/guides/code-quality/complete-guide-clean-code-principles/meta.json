@@ -1,0 +1,29 @@
+{
+  "title": "Clean Code Principles — Before & After Companion",
+  "title_es": "Principios de Código Limpio — Companion antes/después",
+  "description": "A real before/after refactoring exercise: a messy OrderManager (long functions, hidden side effects, magic numbers, null returns) refactored into small, single-responsibility classes, plus an ESLint config that enforces the principles from the guide.",
+  "description_es": "Ejercicio real de refactorización antes/después: un OrderManager desordenado (funciones largas, efectos secundarios ocultos, números mágicos, retornos null) refactorizado en clases pequeñas de responsabilidad única, más una configuración de ESLint que aplica los principios de la guía.",
+  "type": "guides",
+  "topic": "code-quality",
+  "slug": "complete-guide-clean-code-principles",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-clean-code-principles/",
+    "https://stackpractices.com/es/guides/complete-guide-clean-code-principles/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "clean-code",
+    "refactoring",
+    "typescript",
+    "eslint",
+    "code-quality",
+    "srp"
+  ],
+  "files": [
+    "before/order-manager.ts",
+    "after/order-processor.ts",
+    "eslint.config.mjs",
+    "README.md",
+    "README.es.md"
+  ]
+}

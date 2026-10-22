@@ -1,0 +1,24 @@
+{
+  "title": "CAP Theorem and Database Trade-offs",
+  "title_es": "Teorema CAP y Trade-offs de Bases de Datos",
+  "description": "Hands-on lab for the CAP theorem: a 3-node etcd cluster you can partition with one script, plus CP/AP configuration snippets for PostgreSQL, Cassandra and MongoDB.",
+  "description_es": "Lab práctico del teorema CAP: un clúster etcd de 3 nodos que puedes particionar con un script, más snippets de configuración CP/AP para PostgreSQL, Cassandra y MongoDB.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "cap-theorem-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/cap-theorem-guide/",
+    "https://stackpractices.com/es/guides/cap-theorem-guide/"
+  ],
+  "language": ["bash", "sql", "javascript", "yaml"],
+  "tags": ["cap-theorem", "distributed-systems", "etcd", "postgresql", "cassandra", "mongodb", "consistency", "docker"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "simulate-partition.sh",
+    "postgresql.conf",
+    "notifications.cql",
+    "mongo_consistency.js"
+  ]
+}

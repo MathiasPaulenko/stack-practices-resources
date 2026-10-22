@@ -1,0 +1,25 @@
+{
+  "title": "JWT Authentication",
+  "title_es": "Autenticación JWT",
+  "description": "Runnable JWT flows: sign and verify tokens, access/refresh token rotation, RS256 key pairs, and a Redis-style token blocklist in Python, JavaScript, and Java.",
+  "description_es": "Flujos JWT ejecutables: firma y verificación de tokens, rotación access/refresh, pares de claves RS256 y lista de bloqueo de tokens en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "jwt-authentication",
+  "source_urls": [
+    "https://stackpractices.com/recipes/jwt-authentication/",
+    "https://stackpractices.com/es/recipes/jwt-authentication/"
+  ],
+  "language": ["python", "javascript", "java", "bash"],
+  "tags": ["jwt", "authentication", "tokens", "hs256", "rs256", "refresh-token", "revocation"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "jwt_demo.py",
+    "jwt_demo.js",
+    "JwtUtil.java",
+    "generate_keys.sh",
+    "requirements.txt",
+    "package.json"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Caching Strategies — Companion Code",
+  "title_es": "Estrategias de Caché — Código complementario",
+  "description": "Runnable caching examples for every layer: Redis cache-aside and stampede protection in Node.js, stale-while-revalidate, multi-level caching and event-driven invalidation in Python, Nginx proxy cache config, a Service Worker for offline caching, and a PostgreSQL materialized view.",
+  "description_es": "Ejemplos ejecutables de caché para cada capa: cache-aside y protección anti-stampede con Redis en Node.js, stale-while-revalidate, caché multinivel e invalidación por eventos en Python, configuración de proxy_cache de Nginx, un Service Worker para caché offline y una vista materializada de PostgreSQL.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "caching-strategies",
+  "source_urls": [
+    "https://stackpractices.com/recipes/caching-strategies/",
+    "https://stackpractices.com/es/recipes/caching-strategies/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "caching",
+    "redis",
+    "cdn",
+    "nginx",
+    "service-worker",
+    "postgresql",
+    "cache-invalidation",
+    "performance"
+  ],
+  "files": [
+    "cache-aside.js",
+    "stampede-lock.js",
+    "swr.js",
+    "multi-level-cache.py",
+    "event-invalidation.py",
+    "cache-warming.py",
+    "nginx-cache.conf",
+    "sw.js",
+    "materialized-view.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

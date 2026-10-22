@@ -1,0 +1,29 @@
+{
+  "title": "RabbitMQ Queue Design Template — Companion",
+  "title_es": "Plantilla de Diseño de Colas RabbitMQ — Companion",
+  "description": "A minimal but complete pika project implementing the template's topology: exchange + queue declarations with DLX/TTL, a producer, and a consumer with a correct republish-based retry counter.",
+  "description_es": "Un proyecto pika mínimo pero completo que implementa la topología de la plantilla: declaraciones de exchange + cola con DLX/TTL, un productor y un consumidor con contador de reintentos correcto vía republicación.",
+  "type": "docs",
+  "topic": "messaging",
+  "slug": "rabbitmq-queue-design-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/rabbitmq-queue-design-template/",
+    "https://stackpractices.com/es/docs/rabbitmq-queue-design-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "rabbitmq",
+    "amqp",
+    "pika",
+    "python",
+    "dead-letter",
+    "messaging"
+  ],
+  "files": [
+    "declare_topology.py",
+    "producer.py",
+    "consumer.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,22 @@
+# Example operations for the books API — paste into GraphiQL / Apollo Sandbox.
+
+query ListBooks {
+  books {
+    title
+    author
+  }
+}
+
+mutation AddBook {
+  addBook(title: "Designing Data-Intensive Applications", author: "Martin Kleppmann", pages: 616) {
+    title
+    pages
+  }
+}
+
+# Field selection demo: same query, fewer fields — that's the GraphQL pitch.
+query TitlesOnly {
+  books {
+    title
+  }
+}

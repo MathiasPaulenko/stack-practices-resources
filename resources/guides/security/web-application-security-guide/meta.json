@@ -1,0 +1,23 @@
+{
+  "title": "Web Application Security (OWASP Top 10)",
+  "title_es": "Seguridad de Aplicaciones Web (OWASP Top 10)",
+  "description": "Runnable companion for the OWASP Top 10 guide: security headers server, SSRF-safe fetch with IP allowlist, and a dependency audit script.",
+  "description_es": "Companion ejecutable para la guía OWASP Top 10: servidor con security headers, fetch seguro contra SSRF con allowlist de IPs y script de auditoría de dependencias.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "web-application-security-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/web-application-security-guide/",
+    "https://stackpractices.com/es/guides/web-application-security-guide/"
+  ],
+  "language": ["javascript", "python", "bash", "nginx"],
+  "tags": ["owasp-top-10", "security-headers", "ssrf", "dependency-audit", "csp", "web-security"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "headers_server.js",
+    "ssrf_safe_fetch.py",
+    "security_headers.conf",
+    "dependency_scan.sh"
+  ]
+}

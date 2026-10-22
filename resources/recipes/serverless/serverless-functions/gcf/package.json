@@ -1,0 +1,11 @@
+{
+  "name": "serverless-functions-recipe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "functions-framework --target=helloHttp"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.0"
+  }
+}

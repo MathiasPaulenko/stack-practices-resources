@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "resource": "/hello",
+  "httpMethod": "GET",
+  "queryStringParameters": {
+    "name": "World"
+  },
+  "headers": {
+    "Host": "example.execute-api.us-east-1.amazonaws.com"
+  },
+  "requestContext": {
+    "requestId": "local-test-request",
+    "stage": "dev"
+  },
+  "isBase64Encoded": false
+}

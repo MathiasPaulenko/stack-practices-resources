@@ -1,0 +1,29 @@
+{
+  "title": "Test Coverage Report Template — Companion",
+  "title_es": "Plantilla de Reporte de Cobertura — Companion",
+  "description": "A filled example of the test coverage report template plus a Node.js script that aggregates a c8/coverage-summary.json file into the per-module breakdown table used by the template.",
+  "description_es": "Un ejemplo rellenado de la plantilla de reporte de cobertura más un script de Node.js que agrega un archivo c8/coverage-summary.json en la tabla de desglose por módulo que usa la plantilla.",
+  "type": "docs",
+  "topic": "testing",
+  "slug": "test-coverage-report-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/test-coverage-report-template/",
+    "https://stackpractices.com/es/docs/test-coverage-report-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "coverage",
+    "template",
+    "vitest",
+    "c8",
+    "ci"
+  ],
+  "files": [
+    "aggregate-coverage.mjs",
+    "coverage-summary-sample.json",
+    "example-report.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

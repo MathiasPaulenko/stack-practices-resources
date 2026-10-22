@@ -1,0 +1,26 @@
+{
+  "title": "Build Serverless Functions",
+  "title_es": "Construir funciones serverless",
+  "description": "Runnable serverless examples from the recipe: an AWS Lambda handler invocable locally with a sample API Gateway event, a Google Cloud Functions HTTP function (functions-framework), an AWS SAM template with a sample S3 event, and a locally verifiable S3-triggered event processor.",
+  "description_es": "Ejemplos serverless ejecutables de la receta: un handler de AWS Lambda invocable en local con un evento de muestra de API Gateway, una función HTTP de Google Cloud Functions (functions-framework), un template AWS SAM con un evento S3 de muestra, y un procesador de eventos S3 verificable en local.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-functions",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/serverless-functions/",
+    "es": "https://stackpractices.com/es/recipes/serverless-functions/"
+  },
+  "language": "bilingual",
+  "tags": ["serverless", "aws-lambda", "cloud-functions", "azure-functions", "sam", "faas"],
+  "files": [
+    "lambda/handler.py",
+    "lambda/event-api-gateway.json",
+    "gcf/index.js",
+    "gcf/package.json",
+    "sam/template.yaml",
+    "sam/events/s3-upload.json",
+    "python/event_processor.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
