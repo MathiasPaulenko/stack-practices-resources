@@ -7,6 +7,7 @@ Companion files for the [Backend Engineer Onboarding Checklist](https://stackpra
 | File | Format | Description |
 |------|--------|-------------|
 | `onboarding-checklist.md` | Markdown | The fillable two-week checklist: Day 1 setup, Week 1 codebase orientation, Week 2 production awareness and ownership, completion verification table, and feedback section |
+| `onboarding-guide-template.md` | Markdown | The general onboarding guide skeleton (Day 1 access, environment setup, codebase overview, first contributions, week 2+) for roles the backend checklist doesn't cover |
 | `30-60-90-plan.txt` | Text | The quarter-long plan with goals and check-ins at day 30 (contributing), 60 (owning), and 90 (independent) |
 | `onboarding-checklist-frontend-variant.md` | Markdown | Diff-only adaptations for frontend and QA engineer roles (environment, orientation, and production sections) |
 

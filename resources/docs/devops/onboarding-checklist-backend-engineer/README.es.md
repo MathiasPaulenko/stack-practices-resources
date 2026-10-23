@@ -7,6 +7,7 @@ Archivos complementarios de la [Checklist de Onboarding para Ingenieros Backend]
 | Archivo | Formato | Descripción |
 |---------|---------|-------------|
 | `onboarding-checklist.md` | Markdown | La checklist rellenable de dos semanas: configuración del Día 1, orientación al codebase en la Semana 1, conciencia de producción y titularidad en la Semana 2, tabla de verificación y sección de feedback |
+| `onboarding-guide-template.md` | Markdown | El esqueleto general de guía de onboarding (acceso del Día 1, configuración del entorno, visión del código, primeras contribuciones, semana 2+) para roles que la checklist de backend no cubre |
 | `30-60-90-plan.txt` | Texto | El plan trimestral con metas y check-ins en el día 30 (contribuyendo), 60 (poseyendo) y 90 (independiente) |
 | `onboarding-checklist-frontend-variant.md` | Markdown | Adaptaciones diff para roles de frontend y QA (secciones de entorno, orientación y producción) |
 
