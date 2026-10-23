@@ -1,0 +1,79 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Event-driven Lambda fan-out — companion to the event-driven-functions recipe
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 30
+
+Resources:
+  OrderPlacedRule:
+    Type: AWS::Events::Rule
+    Properties:
+      EventBusName: default
+      EventPattern:
+        source:
+          - order-service
+        detail-type:
+          - OrderPlaced
+      Targets:
+        - Arn: !GetAtt PaymentFunction.Arn
+          Id: payment-target
+        - Arn: !GetAtt NotificationFunction.Arn
+          Id: notification-target
+        - Arn: !GetAtt AnalyticsQueue.Arn
+          Id: analytics-target
+
+  PaymentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.lambda_handler
+      Environment:
+        Variables:
+          IDEMPOTENCY_TABLE: !Ref IdempotencyTable
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref IdempotencyTable
+
+  PaymentFunctionPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref PaymentFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt OrderPlacedRule.Arn
+
+  NotificationFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.lambda_handler
+
+  NotificationFunctionPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName: !Ref NotificationFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt OrderPlacedRule.Arn
+
+  AnalyticsQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt AnalyticsDLQ.Arn
+        maxReceiveCount: 3
+
+  AnalyticsDLQ:
+    Type: AWS::SQS::Queue
+
+  IdempotencyTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: eventId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: eventId
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST

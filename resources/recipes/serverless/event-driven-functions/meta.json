@@ -1,0 +1,34 @@
+{
+  "title": "Event-Driven Serverless Functions",
+  "title_es": "Funciones Serverless Event-Driven",
+  "description": "Runnable SAM project: EventBridge rule fanning out to two Lambda consumers plus an SQS analytics target, idempotent handler with partial batch response, DLQ wiring, and a Node.js event publisher.",
+  "description_es": "Proyecto SAM ejecutable: regla de EventBridge en fan-out a dos consumidores Lambda más un target SQS de analítica, handler idempotente con respuesta de batch parcial, cableado de DLQ y publicador de eventos en Node.js.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "event-driven-functions",
+  "source_urls": [
+    "https://stackpractices.com/recipes/event-driven-functions/",
+    "https://stackpractices.com/es/recipes/event-driven-functions/",
+    "https://docs.aws.amazon.com/eventbridge/",
+    "https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "serverless",
+    "event-driven",
+    "aws-lambda",
+    "eventbridge",
+    "sqs",
+    "sam",
+    "idempotency",
+    "dlq",
+    "fan-out"
+  ],
+  "files": [
+    "handler.py",
+    "template.yaml",
+    "publisher.mjs",
+    "README.md",
+    "README.es.md"
+  ]
+}
