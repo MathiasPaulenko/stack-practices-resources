@@ -1,0 +1,35 @@
+{
+  "title": "Time-Series Database Guide",
+  "title_es": "Guía de Bases de Datos de Series Temporales",
+  "description": "Runnable TimescaleDB companion: minimal hypertable setup with continuous aggregates and retention, plus the complete 10K-sensor IoT scenario and engine comparison notes (InfluxDB, TimescaleDB, ClickHouse).",
+  "description_es": "Companion ejecutable de TimescaleDB: setup mínimo de hypertable con agregados continuos y retención, el escenario IoT completo de 10K sensores y notas comparativas de motores (InfluxDB, TimescaleDB, ClickHouse).",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "time-series-database-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/time-series-database-guide/",
+    "https://stackpractices.com/es/guides/time-series-database-guide/",
+    "https://docs.timescale.com/",
+    "https://docs.influxdata.com/influxdb/",
+    "https://clickhouse.com/docs"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "time-series",
+    "timescaledb",
+    "influxdb",
+    "clickhouse",
+    "postgresql",
+    "metrics",
+    "iot",
+    "downsampling",
+    "retention"
+  ],
+  "files": [
+    "timescaledb-setup.sql",
+    "iot-timescaledb-scenario.sql",
+    "engine-comparison.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
