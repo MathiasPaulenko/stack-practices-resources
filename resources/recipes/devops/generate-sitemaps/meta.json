@@ -1,0 +1,23 @@
+{
+  "title": "Dynamic Sitemap Generator — Flask, Express, Spring Boot",
+  "title_es": "Generador de Sitemaps Dinámico — Flask, Express, Spring Boot",
+  "description": "Runnable sitemap generator in three stacks: Flask, Express, and Spring Boot. Includes URL escaping, sitemap index pagination for the 50k-URL/50MB limit, hreflang annotations, Redis caching decorator, and a robots.txt pointer.",
+  "description_es": "Generador de sitemaps ejecutable en tres stacks: Flask, Express y Spring Boot. Incluye escape de URLs, paginación con índice para el límite de 50k URLs/50MB, anotaciones hreflang, decorador de caché con Redis y un robots.txt de referencia.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "generate-sitemaps",
+  "source_urls": [
+    "https://stackpractices.com/recipes/generate-sitemaps/",
+    "https://stackpractices.com/es/recipes/generate-sitemaps/"
+  ],
+  "language": "bilingual",
+  "tags": ["sitemap", "seo", "xml", "flask", "express", "spring-boot", "hreflang", "redis"],
+  "files": [
+    "sitemap_flask.py",
+    "sitemap_express.js",
+    "SitemapController.java",
+    "robots.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,60 @@
+# otel-collector-config.yaml
+# Production-shaped Collector: OTLP receivers, batch + tail sampling,
+# resource detection, and exporters for Jaeger, Prometheus remote write,
+# and Loki (via native OTLP/HTTP).
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+processors:
+  batch:
+    timeout: 1s
+    send_batch_size: 1024
+  resourcedetection:
+    detectors: [env, system, docker]
+    timeout: 5s
+  tail_sampling:
+    decision_wait: 10s
+    policies:
+      - name: errors
+        type: status_code
+        status_code:
+          status_codes: [ERROR]
+      - name: slow-traces
+        type: latency
+        latency:
+          threshold_ms: 2000
+      - name: baseline
+        type: probabilistic
+        probabilistic:
+          sampling_percentage: 10
+
+exporters:
+  otlp/jaeger:
+    endpoint: jaeger:4317
+    tls:
+      insecure: true
+  prometheusremotewrite:
+    endpoint: http://mimir:9009/api/v1/push
+  otlphttp/loki:
+    endpoint: http://loki:3100/otlp
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [resourcedetection, batch, tail_sampling]
+      exporters: [otlp/jaeger]
+    metrics:
+      receivers: [otlp]
+      processors: [resourcedetection, batch]
+      exporters: [prometheusremotewrite]
+    logs:
+      receivers: [otlp]
+      processors: [resourcedetection, batch]
+      exporters: [otlphttp/loki]

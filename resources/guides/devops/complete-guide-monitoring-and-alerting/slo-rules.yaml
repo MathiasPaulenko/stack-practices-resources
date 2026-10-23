@@ -1,0 +1,39 @@
+# slo-rules.yaml — SLI/SLO recording rules + error-budget burn-rate alert
+groups:
+  - name: slo-tracking
+    interval: 30s
+    rules:
+      # SLI: request success rate (5m and 1h windows)
+      - record: job:slo_availability:ratio_rate5m
+        expr: |
+          sum(rate(http_requests_total{status!~"5.."}[5m])) by (job)
+          /
+          sum(rate(http_requests_total[5m])) by (job)
+
+      - record: job:slo_availability:ratio_rate1h
+        expr: |
+          sum(rate(http_requests_total{status!~"5.."}[1h])) by (job)
+          /
+          sum(rate(http_requests_total[1h])) by (job)
+
+      # SLI: latency SLO (P99 < 500ms)
+      - record: job:slo_latency:ratio_rate5m
+        expr: |
+          sum(rate(http_request_duration_seconds_bucket{le="0.5"}[5m])) by (job)
+          /
+          sum(rate(http_request_duration_seconds_count[5m])) by (job)
+
+      # Error budget burn rate (SLO 99.9%)
+      - record: job:error_budget_burn:ratio_rate1h
+        expr: |
+          (1 - job:slo_availability:ratio_rate1h) / (1 - 0.999)
+
+      # Alert: burning the 30-day budget too fast (>14.4x)
+      - alert: ErrorBudgetBurn
+        expr: job:error_budget_burn:ratio_rate1h > 14.4
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Error budget burning too fast for {{ $labels.job }}"
+          description: "Burning 1h of error budget every 5 minutes. SLO is at risk."

@@ -1,0 +1,22 @@
+{
+  "title": "Complete Guide to Database Sharding",
+  "title_es": "Guía Completa de Sharding de Bases de Datos",
+  "description": "Runnable companion for the sharding guide: a directory-based shard router, a tenant migration script, and the shard_directory schema used in the multi-tenant SaaS worked example.",
+  "description_es": "Companion ejecutable de la guía de sharding: un router de shards por directorio, un script de migración de tenants y el esquema de shard_directory del ejemplo multi-tenant.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "complete-guide-database-sharding",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-database-sharding/",
+    "https://stackpractices.com/es/guides/complete-guide-database-sharding/"
+  ],
+  "language": ["sql", "javascript"],
+  "tags": ["database-sharding", "partitioning", "multi-tenant", "postgresql", "nodejs", "resharding"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "shard-directory.sql",
+    "shard-router.js",
+    "migrate-tenant.js"
+  ]
+}

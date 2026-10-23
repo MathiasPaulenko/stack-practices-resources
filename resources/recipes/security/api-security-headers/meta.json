@@ -1,0 +1,29 @@
+{
+  "title": "Secure APIs with HTTP Security Headers — Companion Resources",
+  "title_es": "Proteger APIs con encabezados de seguridad HTTP — Recursos complementarios",
+  "description": "Audit script from the API security headers recipe: a Bash tool that checks a URL for missing security headers, weak CSP directives, and disabled HSTS.",
+  "description_es": "Script de auditoría de la receta de headers de seguridad: una herramienta Bash que verifica en una URL los headers de seguridad faltantes, directivas CSP débiles y un HSTS deshabilitado.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "api-security-headers",
+  "source_urls": [
+    "https://stackpractices.com/recipes/api-security-headers/",
+    "https://stackpractices.com/es/recipes/api-security-headers/",
+    "https://owasp.org/www-project-secure-headers/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "security-headers",
+    "hsts",
+    "content-security-policy",
+    "bash",
+    "curl",
+    "owasp",
+    "api-security"
+  ],
+  "files": [
+    "audit-headers.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

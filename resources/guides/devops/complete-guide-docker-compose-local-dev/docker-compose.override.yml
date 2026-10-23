@@ -1,0 +1,6 @@
+# docker-compose.override.yml — auto-loaded local dev overrides
+services:
+  backend:
+    environment:
+      - DEBUG=app:*
+      - LOG_LEVEL=debug

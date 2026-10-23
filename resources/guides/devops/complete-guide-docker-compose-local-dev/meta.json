@@ -1,0 +1,27 @@
+{
+  "title": "Docker Compose Local Dev — Full Stack",
+  "title_es": "Docker Compose Local Dev — Full Stack",
+  "description": "Runnable Docker Compose local-development stack: base/override/prod/test compose files, dev Dockerfile, health-checked startup script, seed script, and a Makefile wrapping the daily commands.",
+  "description_es": "Stack ejecutable de desarrollo local con Docker Compose: archivos compose base/override/prod/test, Dockerfile de desarrollo, script de arranque con healthcheck, script de seed y un Makefile con los comandos diarios.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-docker-compose-local-dev",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-docker-compose-local-dev/",
+    "https://stackpractices.com/es/guides/complete-guide-docker-compose-local-dev/"
+  ],
+  "language": "bilingual",
+  "tags": ["docker", "docker-compose", "local-development", "postgres", "redis", "nginx", "makefile"],
+  "files": [
+    "docker-compose.yml",
+    "docker-compose.override.yml",
+    "docker-compose.prod.yml",
+    "docker-compose.test.yml",
+    "Dockerfile.dev",
+    "start-dev.sh",
+    "seed-dev.sh",
+    "Makefile",
+    "README.md",
+    "README.es.md"
+  ]
+}

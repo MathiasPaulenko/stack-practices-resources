@@ -1,0 +1,21 @@
+# Local observability stack for the OpenTelemetry guide.
+# Jaeger all-in-one includes a UI on :16686 and ingests OTLP on :4317/:4318.
+
+services:
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:latest
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml:ro
+    ports:
+      - "4317:4317"   # OTLP gRPC
+      - "4318:4318"   # OTLP HTTP
+    depends_on:
+      - jaeger
+
+  jaeger:
+    image: jaegertracing/jaeger:latest
+    ports:
+      - "16686:16686" # Jaeger UI
+    environment:
+      COLLECTOR_OTLP_ENABLED: "true"

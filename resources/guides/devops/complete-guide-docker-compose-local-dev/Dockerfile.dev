@@ -1,0 +1,12 @@
+# Dockerfile.dev — minimal image for local development.
+# Source code arrives via bind mount; no COPY of app sources.
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

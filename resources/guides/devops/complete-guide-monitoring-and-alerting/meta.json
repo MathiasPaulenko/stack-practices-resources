@@ -1,0 +1,26 @@
+{
+  "title": "Monitoring & Alerting Stack — Prometheus, Grafana, AlertManager",
+  "title_es": "Stack de Monitoreo y Alertas — Prometheus, Grafana, AlertManager",
+  "description": "Production monitoring configuration pack: Prometheus Helm values with retention and scrape config, FastAPI metrics instrumentation, Grafana dashboard-as-code, Prometheus alert rules, AlertManager routing with inhibit rules, SLI/SLO recording rules with error-budget burn-rate alert, and a runbook example.",
+  "description_es": "Pack de configuración de monitoreo en producción: valores Helm de Prometheus con retención y scrape, instrumentación de métricas en FastAPI, dashboard de Grafana como código, reglas de alerta de Prometheus, routing de AlertManager con inhibit rules, recording rules de SLI/SLO con alerta de burn rate y un runbook de ejemplo.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-monitoring-and-alerting",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-monitoring-and-alerting/",
+    "https://stackpractices.com/es/guides/complete-guide-monitoring-and-alerting/"
+  ],
+  "language": "bilingual",
+  "tags": ["monitoring", "alerting", "prometheus", "grafana", "alertmanager", "slo", "runbook", "observability", "on-call"],
+  "files": [
+    "prometheus-values.yaml",
+    "metrics-instrumentation.py",
+    "dashboard-api-overview.json",
+    "alerting-rules.yaml",
+    "alertmanager.yaml",
+    "slo-rules.yaml",
+    "runbook-high-error-rate.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
