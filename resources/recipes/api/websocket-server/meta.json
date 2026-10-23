@@ -1,0 +1,34 @@
+{
+  "title": "Build a WebSocket Server — Chat Companion Resources",
+  "title_es": "Crea un servidor WebSocket — Recursos complementarios de chat",
+  "description": "Runnable chat application companion for the WebSocket server recipe: a `ws` server with rooms, presence, heartbeat, and Redis fan-out, a Socket.io variant, and a React hook with exponential-backoff reconnection.",
+  "description_es": "Aplicación de chat ejecutable de la receta de servidor WebSocket: servidor `ws` con salas, presencia, heartbeat y fan-out por Redis, variante con Socket.io y un hook de React con reconexión de backoff exponencial.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "websocket-server",
+  "source_urls": [
+    "https://stackpractices.com/recipes/websocket-server/",
+    "https://stackpractices.com/es/recipes/websocket-server/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "websocket",
+    "bidirectional",
+    "real-time",
+    "nodejs",
+    "react",
+    "redis",
+    "socket.io",
+    "chat"
+  ],
+  "files": [
+    "chat.ts",
+    "redis-broadcast.ts",
+    "typing.ts",
+    "useChat.ts",
+    "chat-io.ts",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

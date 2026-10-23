@@ -1,0 +1,22 @@
+{
+  "name": "websocket-bidirectional-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bidirectional WebSocket chat with rooms, presence, typing indicators, and Redis fan-out. Companion for https://stackpractices.com/recipes/websocket-bidirectional-chat/",
+  "scripts": {
+    "start": "tsx chat.ts",
+    "dev": "tsx watch chat.ts",
+    "start:io": "tsx chat-io.ts"
+  },
+  "dependencies": {
+    "redis": "^4.7.0",
+    "socket.io": "^4.8.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
