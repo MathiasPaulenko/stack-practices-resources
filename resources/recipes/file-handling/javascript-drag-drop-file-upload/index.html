@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drag and Drop File Upload — Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Drag and Drop File Upload</h1>
+        <p class="note">
+            Demo running in simulated mode — no real upload happens.
+            Point <code>uploadUrl</code> at your endpoint and switch
+            <code>SimulatedUploader</code> for <code>DragDropUploader</code>.
+        </p>
+
+        <div id="drop-zone" role="button" tabindex="0">
+            <strong>Drop files here</strong> or click to browse
+        </div>
+
+        <div id="upload-errors" aria-live="polite"></div>
+        <div id="upload-list"></div>
+        <div id="preview-grid"></div>
+    </main>
+
+    <script src="uploader.js"></script>
+    <script>
+        const list = document.getElementById("upload-list");
+        const errors = document.getElementById("upload-errors");
+
+        function addRow(file) {
+            const row = document.createElement("div");
+            row.className = "upload-item";
+            row.innerHTML = `<span>${file.name}</span><div class="progress-bar"><div class="progress-fill"></div></div>`;
+            list.appendChild(row);
+            return row;
+        }
+
+        // Use DragDropUploader with uploadUrl: "/api/upload" for a real backend.
+        const uploader = new SimulatedUploader("drop-zone", {
+            maxSize: 10 * 1024 * 1024,
+            allowedTypes: ["image/jpeg", "image/png", "image/webp", "application/pdf"],
+            onProgress: (file, percent) => {
+                const fill = rows.get(file);
+                if (fill) {
+                    fill.style.width = `${percent}%`;
+                    fill.textContent = `${percent}%`;
+                }
+            },
+            onComplete: (file) => rows.get(file)?.closest(".upload-item").classList.add("upload-complete"),
+            onError: (file, error) => {
+                errors.innerHTML += `<p>${file.name}: ${error}</p>`;
+            }
+        });
+
+        const rows = new Map();
+        const origHandle = uploader.handleFiles.bind(uploader);
+        uploader.handleFiles = (files) => {
+            for (const f of files) {
+                if (uploader.validate(f)) continue;
+                rows.set(f, addRow(f).querySelector(".progress-fill"));
+            }
+            origHandle(files);
+        };
+
+        // Prevent the browser from opening files dropped outside the zone.
+        window.addEventListener("dragover", (e) => e.preventDefault());
+        window.addEventListener("drop", (e) => e.preventDefault());
+    </script>
+</body>
+</html>

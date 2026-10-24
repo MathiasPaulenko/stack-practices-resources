@@ -1,0 +1,80 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    color: #0f172a;
+}
+
+main {
+    max-width: 40rem;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.note {
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+#drop-zone {
+    border: 2px dashed #94a3b8;
+    border-radius: 12px;
+    padding: 3rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    background: #fff;
+}
+
+#drop-zone.drag-over {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+#upload-errors p {
+    color: #b91c1c;
+    font-size: 0.875rem;
+    margin: 0.5rem 0 0;
+}
+
+.upload-item {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.progress-bar {
+    height: 1.25rem;
+    background: #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 0.25rem;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background: #2563eb;
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-align: center;
+    transition: width 0.15s;
+}
+
+.upload-complete .progress-fill {
+    background: #16a34a;
+}
+
+#preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+#preview-grid img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}

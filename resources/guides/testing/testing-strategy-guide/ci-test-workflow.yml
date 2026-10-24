@@ -1,0 +1,31 @@
+# GitHub Actions workflow implementing the layered strategy from the guide.
+# Copy to .github/workflows/test.yml and adapt the npm commands to your test scripts.
+name: Tests
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Fast layer first — unit tests with coverage.
+      - name: Unit tests
+        run: npm run test:unit -- --coverage
+
+      # Medium layer — integration tests (real DB via Testcontainers).
+      - name: Integration tests
+        run: npm run test:integration
+
+      # Expensive layer last — only critical user journeys.
+      - name: E2E tests
+        run: npm run test:e2e
+
+      # Regression gate: fail the PR if coverage dropped vs. the base commit,
+      # not against an arbitrary global target.
+      - name: Coverage regression gate
+        if: github.event_name == 'pull_request'
+        run: npm run test:coverage -- --check

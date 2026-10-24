@@ -1,0 +1,16 @@
+{
+  "title": "GDPR Compliance Guide — Companion Kit",
+  "title_es": "Guía de Cumplimiento GDPR — Kit Compañero",
+  "description": "SQL schema for GDPR consent tracking and DSAR request handling, ready to adapt to your database.",
+  "description_es": "Esquema SQL para tracking de consentimiento GDPR y gestión de solicitudes DSAR, listo para adaptar a tu base de datos.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "compliance-gdpr-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/compliance-gdpr-guide/",
+    "es": "https://stackpractices.com/es/guides/compliance-gdpr-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["gdpr", "compliance", "privacy", "consent", "dsar"],
+  "files": ["consent_schema.sql", "README.md", "README.es.md"]
+}

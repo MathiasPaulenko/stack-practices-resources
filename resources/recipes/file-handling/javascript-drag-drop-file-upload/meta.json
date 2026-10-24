@@ -1,0 +1,29 @@
+{
+  "title": "JavaScript Drag and Drop File Upload — Companion Resources",
+  "title_es": "Subida de Archivos Drag and Drop en JavaScript — Recursos complementarios",
+  "description": "Runnable companion demo for the drag and drop file upload recipe: a complete DragDropUploader class with validation, XHR progress, image previews, folder drop via webkitGetAsEntry, plus a simulated mode that runs without a backend.",
+  "description_es": "Demo ejecutable de la receta de subida drag and drop: clase DragDropUploader completa con validación, progreso XHR, previews de imagen, drop de carpetas con webkitGetAsEntry y un modo simulado que funciona sin backend.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "javascript-drag-drop-file-upload",
+  "source_urls": [
+    "https://stackpractices.com/recipes/javascript-drag-drop-file-upload/",
+    "https://stackpractices.com/es/recipes/javascript-drag-drop-file-upload/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "javascript",
+    "file-upload",
+    "html5",
+    "drag-and-drop",
+    "formdata",
+    "browser"
+  ],
+  "files": [
+    "index.html",
+    "uploader.js",
+    "styles.css",
+    "README.md",
+    "README.es.md"
+  ]
+}

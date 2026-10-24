@@ -1,0 +1,21 @@
+{
+  "title": "Disaster Recovery Plan Template — Companion Kit",
+  "title_es": "Plantilla de Plan de Recuperación ante Desastres — Kit Compañero",
+  "description": "Standalone DR plan template with RTO/RPO targets, failover procedures, recovery runbook, and testing schedule — ready to copy into your repo or wiki.",
+  "description_es": "Plantilla de plan DR independiente con objetivos RTO/RPO, procedimientos de failover, runbook de recuperación y calendario de tests — lista para copiar a tu repo o wiki.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "disaster-recovery-plan-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/disaster-recovery-plan-template/",
+    "es": "https://stackpractices.com/es/docs/disaster-recovery-plan-template/"
+  },
+  "language": "bilingual",
+  "tags": ["disaster-recovery", "rto-rpo", "failover", "devops", "template"],
+  "files": [
+    "dr-plan-template.md",
+    "failover-checklist.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

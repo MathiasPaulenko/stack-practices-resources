@@ -1,0 +1,21 @@
+{
+  "title": "Software Testing Strategy Guide — Companion Kit",
+  "title_es": "Guía de Estrategia de Testing de Software — Kit Compañero",
+  "description": "CI workflow and runnable test examples that implement the layered testing strategy from the guide: unit, integration, and E2E stages with a coverage regression gate.",
+  "description_es": "Workflow de CI y ejemplos de tests ejecutables que implementan la estrategia de testing en capas de la guía: etapas unit, integration y E2E con gate de regresión de coverage.",
+  "type": "guides",
+  "topic": "testing",
+  "slug": "testing-strategy-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/testing-strategy-guide/",
+    "es": "https://stackpractices.com/es/guides/testing-strategy-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["testing", "test-pyramid", "ci-cd", "pytest", "coverage"],
+  "files": [
+    "ci-test-workflow.yml",
+    "unit_tests_pytest.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
