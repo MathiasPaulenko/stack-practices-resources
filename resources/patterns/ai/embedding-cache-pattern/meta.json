@@ -1,0 +1,22 @@
+{
+  "title": "Embedding Cache Pattern — Runnable Implementations",
+  "title_es": "Patrón Embedding Cache — Implementaciones ejecutables",
+  "description": "Runnable embedding cache in three languages (Python, JavaScript, Java): SHA-256 + model-name keys, TTL expiry, batch get-or-compute for RAG pipelines, hit-rate stats, and per-model invalidation.",
+  "description_es": "Cache de embeddings ejecutable en tres lenguajes (Python, JavaScript, Java): claves SHA-256 + nombre de modelo, expiración por TTL, batch get-or-compute para pipelines RAG, estadísticas de hit rate e invalidación por modelo.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "embedding-cache-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/embedding-cache-pattern/",
+    "https://stackpractices.com/es/patterns/embedding-cache-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["ai", "embeddings", "cache", "pattern", "rag", "cost-optimization"],
+  "files": [
+    "src/embedding_cache.py",
+    "src/embedding-cache.js",
+    "src/EmbeddingCache.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

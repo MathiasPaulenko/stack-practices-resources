@@ -1,0 +1,20 @@
+{
+  "name": "graphql-n-1-query-detection",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.0",
+    "dataloader": "^2.2.2",
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

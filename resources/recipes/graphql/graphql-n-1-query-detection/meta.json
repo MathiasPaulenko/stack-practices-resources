@@ -1,0 +1,25 @@
+{
+  "title": "GraphQL N+1 Query Detection — Runnable Detector",
+  "title_es": "Detección de consultas N+1 en GraphQL — Detector ejecutable",
+  "description": "Runnable Apollo Server that counts database queries per request through an instrumented client, warns on N+1 suspects in willSendResponse, and fixes the pattern with request-scoped DataLoader batching over an in-memory store.",
+  "description_es": "Servidor Apollo ejecutable que cuenta las consultas a la base de datos por petición mediante un cliente instrumentado, alerta de sospechas de N+1 en willSendResponse y corrige el patrón con batching de DataLoader por petición sobre un store en memoria.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-n-1-query-detection",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-n-1-query-detection/",
+    "https://stackpractices.com/es/recipes/graphql-n-1-query-detection/"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "n-plus-one", "dataloader", "apollo-server", "performance", "typescript"],
+  "files": [
+    "src/instrumented.ts",
+    "src/queryLogger.ts",
+    "src/loaders.ts",
+    "src/resolvers.ts",
+    "src/server.ts",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

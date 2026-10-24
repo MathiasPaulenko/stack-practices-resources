@@ -1,0 +1,33 @@
+{
+  "title": "Design Patterns Guide — Companion Resources",
+  "title_es": "Guía de Design Patterns — Recursos complementarios",
+  "description": "Runnable TypeScript order pipeline wiring five design patterns together: Strategy for shipping, Factory Method for notifiers, Observer for order events, Decorator for product fetch, and Command for undoable cancellations.",
+  "description_es": "Pipeline de pedidos ejecutable en TypeScript que conecta cinco design patterns: Strategy para el envío, Factory Method para los notificadores, Observer para los eventos de pedido, Decorator para la búsqueda de productos y Command para cancelaciones reversibles.",
+  "type": "guides",
+  "topic": "design",
+  "slug": "design-patterns-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/design-patterns-guide/",
+    "https://stackpractices.com/es/guides/design-patterns-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-patterns",
+    "typescript",
+    "strategy",
+    "factory-method",
+    "observer",
+    "decorator",
+    "command"
+  ],
+  "files": [
+    "order-system/shipping.ts",
+    "order-system/notifications.ts",
+    "order-system/events.ts",
+    "order-system/products.ts",
+    "order-system/commands.ts",
+    "order-system/index.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

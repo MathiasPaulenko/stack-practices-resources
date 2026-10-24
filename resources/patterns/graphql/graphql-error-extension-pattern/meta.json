@@ -1,0 +1,36 @@
+{
+    "title": "GraphQL Error Extension Pattern",
+    "title_es": "Patrón de Extensión de Errores en GraphQL",
+    "description": "Attach structured metadata to GraphQL errors using extension codes: a shared error-code enum, a custom GraphQLError class, resolver usage, client-side handling, and Apollo Server formatError sanitization. TypeScript and JavaScript.",
+    "description_es": "Adjunta metadatos estructurados a errores GraphQL con códigos de extensión: enum de códigos compartido, clase GraphQLError personalizada, uso en resolvers, manejo en el cliente y sanitización con formatError de Apollo Server. TypeScript y JavaScript.",
+    "type": "patterns",
+    "topic": "graphql",
+    "slug": "graphql-error-extension-pattern",
+    "source_urls": [
+        "https://stackpractices.com/patterns/graphql-error-extension-pattern/",
+        "https://stackpractices.com/es/patterns/graphql-error-extension-pattern/"
+    ],
+    "language": "multi",
+    "tags": [
+        "graphql",
+        "error-handling",
+        "error-codes",
+        "apollo-server",
+        "typescript",
+        "api-design"
+    ],
+    "files": [
+        "error-codes.ts",
+        "extended-error.ts",
+        "resolvers.ts",
+        "format-error.ts",
+        "client.ts",
+        "error-codes.js",
+        "extended-error.js",
+        "resolvers.js",
+        "format-error.js",
+        "client.js",
+        "README.md",
+        "README.es.md"
+    ]
+}

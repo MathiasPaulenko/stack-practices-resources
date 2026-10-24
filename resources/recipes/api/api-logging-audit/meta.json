@@ -1,0 +1,22 @@
+{
+  "title": "API Logging and Audit Trails — Middleware Examples",
+  "title_es": "Logging y audit trails de API — Ejemplos de middleware",
+  "description": "Runnable audit-logging middleware in three stacks: FastAPI (Python), Express (JavaScript) and Spring (Java). Each assigns a request-scoped correlation ID, emits a structured JSON audit entry, and echoes X-Correlation-Id in the response.",
+  "description_es": "Middleware de audit logging ejecutable en tres stacks: FastAPI (Python), Express (JavaScript) y Spring (Java). Cada uno asigna un correlation ID por petición, emite una entrada de auditoría JSON estructurada y devuelve X-Correlation-Id en la respuesta.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "api-logging-audit",
+  "source_urls": [
+    "https://stackpractices.com/recipes/api-logging-audit/",
+    "https://stackpractices.com/es/recipes/api-logging-audit/"
+  ],
+  "language": "bilingual",
+  "tags": ["api", "logging", "audit-trail", "correlation-id", "middleware", "compliance"],
+  "files": [
+    "src/audit_middleware.py",
+    "src/audit-middleware.js",
+    "src/AuditFilter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

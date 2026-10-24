@@ -1,0 +1,21 @@
+{
+  "title": "Capacity Planning Template",
+  "title_es": "Plantilla de Planificación de Capacidad",
+  "description": "Fillable capacity plan template (baseline, growth projections, bottleneck analysis, scaling plan, review schedule) plus a product-launch preparation runbook.",
+  "description_es": "Plantilla rellenable de plan de capacidad (línea base, proyecciones, cuellos de botella, plan de escalado, revisiones) más un runbook de preparación para lanzamiento.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "capacity-planning-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/capacity-planning-template/",
+    "https://stackpractices.com/es/docs/capacity-planning-template/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["capacity-planning", "template", "scalability", "performance", "infrastructure", "devops"],
+  "files": [
+    "capacity-plan-template.md",
+    "launch-capacity-runbook.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

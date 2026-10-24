@@ -1,0 +1,22 @@
+{
+  "title": "Data Retention Policy Template",
+  "title_es": "Plantilla de Política de Retención de Datos",
+  "description": "Fillable data retention policy template with S3 lifecycle config and a scheduled PostgreSQL purge script.",
+  "description_es": "Plantilla rellenable de política de retención de datos con config de ciclo de vida S3 y script de purga PostgreSQL programado.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "data-retention-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-retention-policy-template/",
+    "https://stackpractices.com/es/docs/data-retention-policy-template/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["data", "compliance", "gdpr", "privacy", "governance", "s3", "postgresql"],
+  "files": [
+    "retention-policy-template.md",
+    "s3-lifecycle.json",
+    "purge.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

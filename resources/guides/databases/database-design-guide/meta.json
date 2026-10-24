@@ -1,0 +1,21 @@
+{
+  "title": "Database Design Guide",
+  "title_es": "Guía de Diseño de Bases de Datos",
+  "description": "Runnable PostgreSQL DDL examples from the database design guide: normalization fixes and a full e-commerce schema.",
+  "description_es": "DDL PostgreSQL ejecutable de la guía de diseño de bases de datos: correcciones de normalización y esquema e-commerce completo.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "database-design-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/database-design-guide/",
+    "https://stackpractices.com/es/guides/database-design-guide/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["database", "database-design", "database-normalization", "indexing", "sql", "postgresql"],
+  "files": [
+    "normalization-examples.sql",
+    "ecommerce-schema.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}
