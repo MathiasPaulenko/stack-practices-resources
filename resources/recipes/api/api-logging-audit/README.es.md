@@ -5,7 +5,7 @@ Compañero de la receta de StackPractices [Implementar logging y audit trails de
 Tres middlewares de auditoría equivalentes. Cada uno:
 
 - Asigna o respeta `X-Correlation-Id` y lo devuelve en la respuesta.
-- Emite una entrada de auditoría JSON estructurada por petición (timestamp en UTC, método, path, status, IP de cliente, user agent).
+- Emite una entrada JSON de petición por request, más un registro de auditoría (actor, acción, recurso, resultado) para operaciones que no son GET.
 - Mantiene la escritura de auditoría fuera del camino crítico (logger rápido / transporte async).
 
 ## Archivos

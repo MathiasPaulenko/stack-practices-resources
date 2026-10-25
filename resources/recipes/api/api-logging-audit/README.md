@@ -5,7 +5,7 @@ Companion to the StackPractices recipe [Implement API Logging and Audit Trails](
 Three equivalent audit middlewares. Each one:
 
 - Assigns or honors `X-Correlation-Id` and echoes it in the response.
-- Emits one structured JSON audit entry per request (timestamp in UTC, method, path, status, client IP, user agent).
+- Emits a structured JSON request entry per request, plus an audit record (actor, action, resource, outcome) for non-GET operations.
 - Keeps the audit write off the critical path (fast logger.info / async transport).
 
 ## Files

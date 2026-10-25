@@ -1,4 +1,4 @@
-"""FastAPI audit middleware: correlation ID + structured JSON audit entry per request."""
+"""FastAPI audit middleware: correlation ID + request log + audit record for non-GET ops."""
 import json
 import logging
 import uuid
@@ -8,7 +8,8 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.base import BaseHTTPMiddleware
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("api.audit")
+request_logger = logging.getLogger("api.requests")
+audit_logger = logging.getLogger("api.audit")
 
 
 class AuditMiddleware(BaseHTTPMiddleware):
@@ -18,7 +19,7 @@ class AuditMiddleware(BaseHTTPMiddleware):
 
         response = await call_next(request)
 
-        audit = {
+        request_logger.info(json.dumps({
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "correlation_id": correlation_id,
             "method": request.method,
@@ -26,8 +27,20 @@ class AuditMiddleware(BaseHTTPMiddleware):
             "status_code": response.status_code,
             "user_agent": request.headers.get("user-agent"),
             "client_ip": request.client.host if request.client else None,
-        }
-        logger.info(json.dumps(audit))
+        }))
+
+        # Audit record: only for state-changing or sensitive operations
+        if request.method not in ("GET", "HEAD", "OPTIONS"):
+            audit_logger.info(json.dumps({
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "correlation_id": correlation_id,
+                "actor": getattr(request.state, "user_id", "anonymous"),
+                "action": request.method,
+                "resource": request.url.path,
+                "outcome": "success" if response.status_code < 400 else "failure",
+                "client_ip": request.client.host if request.client else None,
+            }))
+
         response.headers["X-Correlation-Id"] = correlation_id
         return response
 
@@ -40,5 +53,10 @@ app.add_middleware(AuditMiddleware)
 def health():
     return {"status": "ok"}
 
+
+@app.post("/echo")
+def echo():
+    return {"status": "created"}
+
 # Run: uvicorn audit_middleware:app --reload
-# Try: curl -i http://127.0.0.1:8000/health  -> note X-Correlation-Id in response
+# Try: curl -i -X POST http://127.0.0.1:8000/echo -> note X-Correlation-Id and the api_audit entry
