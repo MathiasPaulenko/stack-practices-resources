@@ -1,0 +1,13 @@
+{
+  "title": "Date Formatting in Python, JavaScript & Java",
+  "title_es": "Formateo de Fechas en Python, JavaScript y Java",
+  "description": "Runnable examples of date formatting and timezone conversion: ISO 8601 output, localized display, and zone conversion across three languages.",
+  "description_es": "Ejemplos ejecutables de formateo de fechas y conversión de zona horaria: salida ISO 8601, formato localizado y conversión de zona en tres lenguajes.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "date-formatting",
+  "source_urls": ["https://stackpractices.com/recipes/date-formatting/"],
+  "language": ["python", "javascript", "java"],
+  "tags": ["datetime", "iso8601", "timezone", "strftime", "intl"],
+  "files": ["format_date.py", "format-date.mjs", "FormatDate.java", "README.md", "README.es.md"]
+}
