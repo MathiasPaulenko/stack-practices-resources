@@ -1,6 +1,6 @@
 {
-  "title": "Penetration Test Plan Template",
-  "title_es": "Plantilla de Plan de Pruebas de Penetración",
+  "title": "Penetration Test Report Template with Remediation",
+  "title_es": "Plantilla de Informe de Pruebas de Penetración",
   "description": "Document security assessment findings with this penetration test plan template, including risk ratings, reproduction steps, and actionable remediation guidance.",
   "description_es": "Plantilla de plan de pruebas de penetración con calificaciones de riesgo, pasos de reproducción y guías de remediación accionables.",
   "type": "docs",
@@ -15,7 +15,13 @@
     "https://www.first.org/cvss/calculator/3.1"
   ],
   "language": "bilingual",
-  "tags": ["security", "template", "vulnerabilities", "owasp", "pentest"],
+  "tags": [
+    "security",
+    "template",
+    "vulnerabilities",
+    "owasp",
+    "pentest"
+  ],
   "files": [
     "penetration-test-template.md",
     "example-report.md",

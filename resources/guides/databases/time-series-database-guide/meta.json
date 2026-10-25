@@ -1,6 +1,6 @@
 {
-  "title": "Time-Series Database Guide",
-  "title_es": "Guía de Bases de Datos de Series Temporales",
+  "title": "Time-Series Databases — InfluxDB, TimescaleDB, ClickHouse",
+  "title_es": "Guía TSDB: InfluxDB, TimescaleDB y ClickHouse",
   "description": "Runnable TimescaleDB companion: minimal hypertable setup with continuous aggregates and retention, plus the complete 10K-sensor IoT scenario and engine comparison notes (InfluxDB, TimescaleDB, ClickHouse).",
   "description_es": "Companion ejecutable de TimescaleDB: setup mínimo de hypertable con agregados continuos y retención, el escenario IoT completo de 10K sensores y notas comparativas de motores (InfluxDB, TimescaleDB, ClickHouse).",
   "type": "guides",

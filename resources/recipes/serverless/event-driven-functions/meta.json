@@ -1,6 +1,6 @@
 {
-  "title": "Event-Driven Serverless Functions",
-  "title_es": "Funciones Serverless Event-Driven",
+  "title": "Event-Driven Serverless Functions: Lambda & EventBridge",
+  "title_es": "Arquitecturas Event-Driven con Lambda y EventBridge",
   "description": "Runnable SAM project: EventBridge rule fanning out to two Lambda consumers plus an SQS analytics target, idempotent handler with partial batch response, DLQ wiring, and a Node.js event publisher.",
   "description_es": "Proyecto SAM ejecutable: regla de EventBridge en fan-out a dos consumidores Lambda más un target SQS de analítica, handler idempotente con respuesta de batch parcial, cableado de DLQ y publicador de eventos en Node.js.",
   "type": "recipes",

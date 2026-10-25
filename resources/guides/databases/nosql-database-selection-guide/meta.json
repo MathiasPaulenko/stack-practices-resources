@@ -1,6 +1,6 @@
 {
-  "title": "NoSQL Database Selection Guide",
-  "title_es": "Guía de Selección de Bases de Datos NoSQL",
+  "title": "NoSQL Database Selection — MongoDB, DynamoDB, Cassandra",
+  "title_es": "Guía de Selección NoSQL — MongoDB, DynamoDB, Cassandra",
   "description": "Runnable reference schemas for the four NoSQL families: MongoDB embedded documents, DynamoDB partition/sort-key access, Redis cache/rate-limit/feed commands, and Cassandra query-first CQL tables.",
   "description_es": "Esquemas de referencia ejecutables para las cuatro familias NoSQL: documentos embebidos en MongoDB, acceso por partition/sort key en DynamoDB, comandos de caché/rate-limit/feed en Redis, y tablas CQL query-first en Cassandra.",
   "type": "guides",

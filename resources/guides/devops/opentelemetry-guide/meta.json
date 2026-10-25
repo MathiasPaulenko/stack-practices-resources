@@ -1,6 +1,6 @@
 {
-  "title": "OpenTelemetry Guide: Traces, Metrics and Logs — Companion Resources",
-  "title_es": "Guía de OpenTelemetry: Trazas, Métricas y Logs — Recursos complementarios",
+  "title": "OpenTelemetry Guide: Traces, Metrics and Logs",
+  "title_es": "Guía de OpenTelemetry: Trazas, Métricas y Logs",
   "description": "Runnable examples from the OpenTelemetry guide: a production-shaped Collector pipeline with tail sampling, a working Python instrumentation script, and a docker-compose stack with the Collector and Jaeger.",
   "description_es": "Ejemplos ejecutables de la guía de OpenTelemetry: un pipeline del Collector con forma de producción y muestreo en cola, un script Python de instrumentación funcional y un stack docker-compose con el Collector y Jaeger.",
   "type": "guides",

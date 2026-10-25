@@ -1,6 +1,6 @@
 {
-  "title": "Secure APIs with HTTP Security Headers — Companion Resources",
-  "title_es": "Proteger APIs con encabezados de seguridad HTTP — Recursos complementarios",
+  "title": "Secure APIs with HTTP Security Headers",
+  "title_es": "Proteger APIs con encabezados de seguridad HTTP",
   "description": "Audit script from the API security headers recipe: a Bash tool that checks a URL for missing security headers, weak CSP directives, and disabled HSTS.",
   "description_es": "Script de auditoría de la receta de headers de seguridad: una herramienta Bash que verifica en una URL los headers de seguridad faltantes, directivas CSP débiles y un HSTS deshabilitado.",
   "type": "recipes",
