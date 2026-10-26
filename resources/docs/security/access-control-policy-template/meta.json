@@ -1,0 +1,22 @@
+{
+  "title": "Access Control Policy Template",
+  "title_es": "Plantilla de Política de Control de Acceso",
+  "description": "Ready-to-adapt access control policy (English and Spanish): authentication methods, RBAC/ABAC matrices, PAM, session management, provisioning SLAs, access reviews, and API key management — plus an exceptions register template.",
+  "description_es": "Política de control de acceso lista para adaptar (inglés y español): métodos de autenticación, matrices RBAC/ABAC, PAM, gestión de sesiones, SLAs de aprovisionamiento, revisiones de acceso y gestión de API keys — más una plantilla de registro de excepciones.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "access-control-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/access-control-policy-template/",
+    "https://stackpractices.com/es/docs/access-control-policy-template/"
+  ],
+  "language": "markdown",
+  "tags": ["security", "access-control", "rbac", "policy-template", "compliance", "soc2", "iso-27001"],
+  "files": [
+    "access-control-policy-template.md",
+    "access-control-policy-template.es.md",
+    "exceptions-register-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

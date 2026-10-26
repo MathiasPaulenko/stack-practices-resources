@@ -1,0 +1,24 @@
+{
+  "title": "Abstract Factory for Cross-Platform UI Component Families",
+  "title_es": "Abstract Factory para Familias de Componentes UI Multiplataforma",
+  "description": "Companion TypeScript for the Abstract Factory pattern applied to cross-platform UI families: UIFactory with Web and Mobile families, DI registry for runtime selection, config-driven dynamic loading, parameterized product creation and a lazy-initializing proxy.",
+  "description_es": "TypeScript companion del patrón Abstract Factory aplicado a familias UI multiplataforma: UIFactory con familias Web y Mobile, registro DI para selección en runtime, carga dinámica basada en configuración, creación de productos parametrizada y proxy de inicialización lazy.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "abstract-factory-cross-platform",
+  "source_urls": [
+    "https://stackpractices.com/patterns/abstract-factory-cross-platform/",
+    "https://stackpractices.com/es/patterns/abstract-factory-cross-platform/"
+  ],
+  "language": "typescript",
+  "tags": ["abstract-factory", "creational-patterns", "typescript", "cross-platform", "ui-components", "design-pattern"],
+  "files": [
+    "ui_factory.ts",
+    "factory_registry.ts",
+    "dynamic_factory_loader.ts",
+    "configurable_factory.ts",
+    "lazy_factory.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

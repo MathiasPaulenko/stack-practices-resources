@@ -1,0 +1,22 @@
+{
+  "title": "Accessibility Audit Checklist",
+  "title_es": "Checklist de Auditoría de Accesibilidad",
+  "description": "Downloadable WCAG 2.2 audit kit: a blank 86-criteria checklist template plus axe-core Playwright and pa11y-ci configs for the automated pass in CI.",
+  "description_es": "Kit descargable de auditoría WCAG 2.2: checklist en blanco de 86 criterios más configuraciones de axe-core Playwright y pa11y-ci para el pase automatizado en CI.",
+  "type": "docs",
+  "topic": "frontend",
+  "slug": "accessibility-audit-checklist",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/accessibility-audit-checklist/",
+    "es": "https://stackpractices.com/es/docs/accessibility-audit-checklist/"
+  },
+  "language": ["markdown", "typescript", "json"],
+  "tags": ["accessibility", "wcag", "a11y", "audit", "checklist", "axe-core", "playwright", "pa11y", "ci"],
+  "files": [
+    "accessibility-audit-checklist-template.md",
+    "axe-playwright.spec.ts",
+    ".pa11yci.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

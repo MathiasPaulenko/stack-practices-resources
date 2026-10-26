@@ -1,0 +1,22 @@
+{
+  "title": "Abstract Factory Pattern",
+  "title_es": "Patrón Abstract Factory",
+  "description": "Companion code for the Abstract Factory pattern: product families in Python (registry-based selection), JavaScript (lazy proxy) and Java (reflection-based dynamic loading).",
+  "description_es": "Código companion del patrón Abstract Factory: familias de productos en Python (selección por registro), JavaScript (proxy lazy) y Java (carga dinámica por reflexión).",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "abstract-factory-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/abstract-factory-pattern/",
+    "https://stackpractices.com/es/patterns/abstract-factory-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["abstract-factory", "creational-patterns", "design-pattern", "python", "javascript", "java"],
+  "files": [
+    "abstract_factory.py",
+    "ui_factory.js",
+    "UIFactory.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

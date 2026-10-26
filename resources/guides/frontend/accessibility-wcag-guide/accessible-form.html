@@ -1,0 +1,34 @@
+<form>
+  <!-- Every input has a label -->
+  <div>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required autocomplete="name" />
+  </div>
+
+  <!-- Required fields marked with text, not just color -->
+  <div>
+    <label for="email">
+      Email <span aria-hidden="true" class="required">*</span>
+      <span class="sr-only">(required)</span>
+    </label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      autocomplete="email"
+      aria-describedby="email-error"
+      aria-invalid="false"
+    />
+    <p id="email-error" class="error" role="alert"></p>
+  </div>
+
+  <!-- Grouped controls use fieldset/legend -->
+  <fieldset>
+    <legend>Notification Preferences</legend>
+    <label><input type="checkbox" name="notify" value="email" /> Email</label>
+    <label><input type="checkbox" name="notify" value="sms" /> SMS</label>
+  </fieldset>
+
+  <button type="submit">Create Account</button>
+</form>

@@ -1,0 +1,22 @@
+{
+  "title": "Access Control Review Template",
+  "title_es": "Plantilla de Revisión de Control de Acceso",
+  "description": "Downloadable access review scripts: AWS IAM user activity and unused-key report, GitHub org inactive-member audit, and Kubernetes RBAC over-privilege audit.",
+  "description_es": "Scripts descargables de revisión de acceso: informe de actividad y claves sin uso de AWS IAM, auditoría de miembros inactivos de una org de GitHub y auditoría de sobre-privilegios RBAC en Kubernetes.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "access-control-review-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/access-control-review-template/",
+    "es": "https://stackpractices.com/es/docs/access-control-review-template/"
+  },
+  "language": ["bash", "python"],
+  "tags": ["access-review", "iam", "rbac", "identity", "compliance", "soc2", "aws", "github", "kubernetes"],
+  "files": [
+    "aws-iam-access-analyzer.sh",
+    "github-org-access-audit.py",
+    "k8s-rbac-audit.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

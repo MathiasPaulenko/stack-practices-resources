@@ -1,0 +1,27 @@
+{
+  "title": "WCAG 2.2 Accessibility Guide",
+  "title_es": "Guía de Accesibilidad WCAG 2.2",
+  "description": "Copy-paste accessible component snippets: skip link, sr-only utility, accessible form and modal, roving-tabindex tabs, and an axe-core Playwright CI spec.",
+  "description_es": "Snippets accesibles listos para copiar: enlace de salto, utility sr-only, formulario y modal accesibles, pestañas con roving tabindex y un spec de axe-core con Playwright para CI.",
+  "type": "guides",
+  "topic": "frontend",
+  "slug": "accessibility-wcag-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/accessibility-wcag-guide/",
+    "es": "https://stackpractices.com/es/guides/accessibility-wcag-guide/"
+  },
+  "language": ["html", "css", "typescript"],
+  "tags": ["accessibility", "wcag", "a11y", "aria", "keyboard-navigation", "focus-management", "axe-core", "playwright"],
+  "files": [
+    "skip-link.css",
+    "sr-only.css",
+    "accessible-form.html",
+    "form-validation.ts",
+    "accessible-modal.html",
+    "accessible-modal.ts",
+    "roving-tabindex-tabs.ts",
+    "a11y-playwright.spec.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

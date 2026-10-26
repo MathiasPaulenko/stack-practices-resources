@@ -1,0 +1,31 @@
+{
+  "title": "Alert Management Guide",
+  "title_es": "Guía de Gestión de Alertas",
+  "description": "Companion files for the Alert Management guide: Prometheus alert rules, Alertmanager inhibit rules and a copy-ready runbook.",
+  "description_es": "Archivos complementarios de la guía de Gestión de Alertas: reglas de Prometheus, inhibit_rules de Alertmanager y un runbook listo para copiar.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "alert-management-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/alert-management-guide/",
+    "https://stackpractices.com/es/guides/alert-management-guide/"
+  ],
+  "language": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "alerting",
+    "on-call",
+    "prometheus",
+    "alertmanager",
+    "runbook"
+  ],
+  "files": [
+    "prometheus-alert-rules.yaml",
+    "alertmanager-inhibit-rules.yaml",
+    "runbook-servicedown.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

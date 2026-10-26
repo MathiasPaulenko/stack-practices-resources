@@ -1,0 +1,16 @@
+{
+  "title": "Aggregate Pattern",
+  "title_es": "Patrón Aggregate",
+  "description": "Runnable examples of the Aggregate pattern in Python, Java, and JavaScript: an Order aggregate root protects invariants across OrderLine entities and Address value objects.",
+  "description_es": "Ejemplos ejecutables del Patrón Aggregate en Python, Java y JavaScript: un Order aggregate root protege invariantes a través de entidades OrderLine y value objects Address.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "aggregate-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/aggregate-pattern/",
+    "https://stackpractices.com/es/patterns/aggregate-pattern/"
+  ],
+  "language": ["python", "java", "javascript"],
+  "tags": ["ddd", "aggregate-root", "domain-driven-design", "entity", "value-object"],
+  "files": ["src/aggregate_pattern.py", "src/aggregate-pattern.js", "src/Aggregate.java", "README.md", "README.es.md"]
+}

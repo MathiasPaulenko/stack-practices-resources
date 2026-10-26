@@ -1,0 +1,22 @@
+{
+  "title": "Agent Tool Selection Pattern — Runnable Implementations",
+  "title_es": "Patrón Agent Tool Selection — Implementaciones ejecutables",
+  "description": "Runnable tool selector for LLM agents in three languages (Python, JavaScript, Java): a tool registry, phase-based and keyword-based selection strategies, and prompt formatting for function calling.",
+  "description_es": "Selector de herramientas ejecutable para agentes LLM en tres lenguajes (Python, JavaScript, Java): registro de herramientas, selección por fase y por palabras clave, y formateo de definiciones para function calling.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "agent-tool-selection-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/agent-tool-selection-pattern/",
+    "https://stackpractices.com/es/patterns/agent-tool-selection-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["ai", "llm-agents", "tool-selection", "function-calling", "pattern", "mcp"],
+  "files": [
+    "src/agent_tool_selection.py",
+    "src/agent-tool-selection.js",
+    "src/AgentToolSelection.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

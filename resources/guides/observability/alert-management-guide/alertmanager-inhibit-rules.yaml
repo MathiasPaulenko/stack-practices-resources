@@ -1,0 +1,7 @@
+inhibit_rules:
+  - source_match:
+      alertname: ServiceDown
+      severity: critical
+    target_match:
+      severity: high
+    equal: ["service"]

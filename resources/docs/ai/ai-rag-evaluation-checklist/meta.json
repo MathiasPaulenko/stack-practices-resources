@@ -1,0 +1,13 @@
+{
+  "title": "AI RAG Evaluation Checklist",
+  "title_es": "Checklist de Evaluación de RAG",
+  "description": "Runnable scripts for evaluating RAG systems: RAGAS metrics (faithfulness, answer relevancy, context precision and recall) plus a custom LLM-as-judge evaluator for regression testing.",
+  "description_es": "Scripts ejecutables para evaluar sistemas RAG: métricas RAGAS (fidelidad, relevancia, precisión y recall de contexto) más un evaluador LLM-as-judge propio para pruebas de regresión.",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-rag-evaluation-checklist",
+  "source_urls": ["https://stackpractices.com/docs/ai-rag-evaluation-checklist/"],
+  "language": ["en", "es"],
+  "tags": ["ai", "rag", "evaluation", "ragas", "llm-judge", "metrics", "testing"],
+  "files": ["eval_ragas.py", "eval_llm_judge.py", "requirements.txt", "README.md", "README.es.md"]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "A/B Testing Guide: Design, Statistics and Pitfalls",
+  "title_es": "Guía de A/B Testing: Diseño, Estadística y Errores",
+  "description": "Runnable experimentation utilities: sample size calculator (scipy), deterministic user assignment by hash, two-proportion z-test analysis (statsmodels), and a hypothesis template.",
+  "description_es": "Utilidades de experimentación ejecutables: calculadora de tamaño de muestra (scipy), asignación determinista de usuarios por hash, análisis con z-test de dos proporciones (statsmodels) y plantilla de hipótesis.",
+  "type": "guides",
+  "topic": "deployment",
+  "slug": "a-b-testing-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/a-b-testing-guide/",
+    "https://stackpractices.com/es/guides/a-b-testing-guide/"
+  ],
+  "language": "python",
+  "tags": ["a-b-testing", "experimentation", "statistics", "sample-size", "z-test", "randomization", "python"],
+  "files": [
+    "sample_size.py",
+    "assignment.py",
+    "analyze.py",
+    "hypothesis-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

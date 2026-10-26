@@ -1,0 +1,15 @@
+{
+  "$comment": "pa11y-ci config: run `npx pa11y-ci --config .pa11yci.json` in CI. Pairs with the axe Playwright spec for the automated pass.",
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 500,
+    "actions": [],
+    "ignore": []
+  },
+  "urls": [
+    "http://localhost:4321/",
+    "http://localhost:4321/pricing",
+    "http://localhost:4321/checkout"
+  ]
+}
