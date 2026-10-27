@@ -1,0 +1,23 @@
+{
+  "title": "AWS Basics — Core Services for Developers",
+  "title_es": "AWS Básico — Servicios Core para Desarrolladores",
+  "description": "Runnable AWS CLI commands, Lambda handler, DynamoDB snippet, and IAM policy from the AWS Basics guide.",
+  "description_es": "Comandos AWS CLI ejecutables, handler de Lambda, snippet de DynamoDB y política IAM de la guía AWS Básico.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "aws-basics-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/aws-basics-guide/",
+    "https://stackpractices.com/es/guides/aws-basics-guide/"
+  ],
+  "language": "en+es",
+  "tags": ["aws", "cloud", "ec2", "s3", "lambda", "iam", "rds", "dynamodb", "vpc", "cloudwatch"],
+  "files": [
+    "aws-commands.sh",
+    "lambda_handler.py",
+    "dynamodb_basics.py",
+    "iam-policy.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

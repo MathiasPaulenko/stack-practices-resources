@@ -1,0 +1,32 @@
+{
+  "title": "API Authentication Design Template",
+  "title_es": "Plantilla de Diseño de Autenticación de API",
+  "description": "Code artifacts for the API authentication design template: JWT issuance and validation, OAuth2 PKCE flow, token refresh endpoint, and Redis revocation blocklist.",
+  "description_es": "Artefactos de código para la plantilla de autenticación API: emisión y validación JWT, flujo OAuth2 PKCE, endpoint de renovación y blocklist de revocación en Redis.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "api-authentication-design-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-authentication-design-template/",
+    "https://stackpractices.com/es/docs/api-authentication-design-template/"
+  ],
+  "language": [
+    "python",
+    "javascript"
+  ],
+  "tags": [
+    "authentication",
+    "jwt",
+    "oauth2",
+    "pkce",
+    "token-lifecycle"
+  ],
+  "files": [
+    "jwt_issuance.py",
+    "jwt_validation.py",
+    "pkce_flow.js",
+    "client_credentials.py",
+    "refresh_endpoint.py",
+    "blocklist_redis.py"
+  ]
+}

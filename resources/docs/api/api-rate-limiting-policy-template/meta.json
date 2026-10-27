@@ -1,0 +1,21 @@
+{
+  "title": "API Rate Limiting Policy Template",
+  "title_es": "Plantilla de Política de Rate Limiting de API",
+  "description": "Rate limiting policy template with tiered limits, Redis token bucket implementations (Node.js + Python), Express middleware, and a client retry pattern with backoff.",
+  "description_es": "Plantilla de política de rate limiting con límites por tier, implementaciones de token bucket en Redis (Node.js + Python), middleware Express y patrón de reintento con backoff.",
+  "type": "docs",
+  "topic": "api",
+  "slug": "api-rate-limiting-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-rate-limiting-policy-template/",
+    "https://stackpractices.com/es/docs/api-rate-limiting-policy-template/"
+  ],
+  "language": ["markdown", "javascript", "python"],
+  "tags": ["rate-limiting", "throttling", "api", "policy", "redis", "token-bucket", "express", "template"],
+  "files": [
+    "rate-limiting-policy-template.md",
+    "express_rate_limit.js",
+    "python_rate_limit.py",
+    "retry_client.js"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "API Error Handling Guideline",
+  "title_es": "Guía de Manejo de Errores de API",
+  "description": "Runnable error-handling standard: central Express and Flask error handlers, error code registry, RFC 9457 examples, and a typed client error consumer.",
+  "description_es": "Estándar de manejo de errores ejecutable: manejadores centrales en Express y Flask, registro de códigos, ejemplos RFC 9457 y consumidor de errores tipado.",
+  "type": "docs",
+  "topic": "api",
+  "slug": "api-error-handling-guideline",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-error-handling-guideline/",
+    "https://datatracker.ietf.org/doc/html/rfc9457"
+  ],
+  "language": "bilingual",
+  "tags": ["error-handling", "api", "rest", "express", "flask", "rfc9457"],
+  "files": ["error-handler-express.js", "error-handler-flask.py", "error-registry.json", "api-client-error.js", "README.md", "README.es.md"]
+}

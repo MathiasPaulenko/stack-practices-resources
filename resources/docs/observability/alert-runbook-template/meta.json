@@ -1,0 +1,21 @@
+{
+  "title": "Alert Runbook Template",
+  "title_es": "Plantilla de Runbook de Alertas",
+  "description": "Companion files for the Alert Runbook Template: a blank fillable runbook and a worked example for a payment-service error-rate alert.",
+  "description_es": "Archivos complementarios de la Plantilla de Runbook de Alertas: un runbook en blanco para rellenar y un ejemplo trabajado para una alerta de tasa de error.",
+  "type": "docs",
+  "topic": "observability",
+  "slug": "alert-runbook-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/alert-runbook-template/",
+    "https://stackpractices.com/es/docs/alert-runbook-template/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["runbook", "alerting", "on-call", "incident-response", "sre"],
+  "files": [
+    "alert-runbook-template.md",
+    "runbook-high-error-rate-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

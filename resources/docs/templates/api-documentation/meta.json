@@ -1,0 +1,16 @@
+{
+  "title": "API Documentation Template",
+  "title_es": "Plantilla de Documentación de API",
+  "description": "Fill-in-ready API documentation template: endpoint tables, error contract, auth options, pagination, webhooks, async jobs, deprecation sections, plus a matching OpenAPI fragment.",
+  "description_es": "Plantilla de documentación de API lista para rellenar: tablas de endpoints, contrato de errores, opciones de autenticación, paginación, webhooks, operaciones asíncronas, secciones de deprecación, más un fragmento OpenAPI equivalente.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "api-documentation",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-documentation/",
+    "https://spec.openapis.org/oas/latest.html"
+  ],
+  "language": "bilingual",
+  "tags": ["api-documentation", "template", "openapi", "rest", "docs-as-code"],
+  "files": ["api-documentation-template.md", "openapi-fragment.yaml", "README.md", "README.es.md"]
+}

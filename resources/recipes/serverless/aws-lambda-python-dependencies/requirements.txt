@@ -1,0 +1,11 @@
+# requirements.txt — function-level (small, changes often)
+boto3>=1.34.0
+aws-xray-sdk>=2.12.0
+
+# requirements-layer.txt — layer-level (large, changes rarely)
+requests>=2.31.0
+pydantic>=2.5.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+numpy>=1.26.0
+pandas>=2.1.0

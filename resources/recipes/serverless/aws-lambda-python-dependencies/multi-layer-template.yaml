@@ -1,0 +1,25 @@
+# SAM template with multiple layers
+Resources:
+  DataLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: data-deps
+      ContentUri: layers/data/
+      CompatibleRuntimes: [python3.11]
+
+  HttpLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: http-deps
+      ContentUri: layers/http/
+      CompatibleRuntimes: [python3.11]
+
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      CodeUri: src/
+      Layers:
+        - !Ref DataLayer
+        - !Ref HttpLayer

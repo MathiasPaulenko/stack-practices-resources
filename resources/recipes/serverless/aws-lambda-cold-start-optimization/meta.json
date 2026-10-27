@@ -1,0 +1,31 @@
+{
+  "title": "Reduce AWS Lambda Cold Start with Provisioned Concurrency",
+  "title_es": "Reducir Cold Start en AWS Lambda",
+  "description": "Runnable companion for the Lambda cold start recipe: measurement snippet, lazy init, connection reuse, Powertools logging, SAM/serverless.yml configs and packaging scripts.",
+  "description_es": "Proyecto ejecutable complementario de la receta de cold start de Lambda: snippet de medición, init lazy, reutilización de conexiones, logging con Powertools, configs SAM/serverless.yml y scripts de empaquetado.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "aws-lambda-cold-start-optimization",
+  "source_urls": [
+    "https://stackpractices.com/recipes/aws-lambda-cold-start-optimization/",
+    "https://stackpractices.com/es/recipes/aws-lambda-cold-start-optimization/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["aws", "lambda", "cold-start", "serverless", "python", "performance"],
+  "files": [
+    "measure_cold_start.py",
+    "lazy_init.py",
+    "reuse_connections.py",
+    "powertools_logging.py",
+    "minimal_handler.py",
+    "cloudwatch-insights-query.txt",
+    "template.yaml",
+    "snapstart-template.yaml",
+    "efs-template.yaml",
+    "serverless.yml",
+    "package-trim.sh",
+    "arm64-migration.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

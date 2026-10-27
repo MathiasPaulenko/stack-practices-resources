@@ -1,0 +1,31 @@
+{
+  "title": "Package Python Dependencies for AWS Lambda with Layers",
+  "title_es": "Empaquetar Dependencias Python para Lambda",
+  "description": "Runnable companion for the Lambda Layers recipe: manual and Docker-based layer builds, the automated build-layer.sh script, SAM and Serverless Framework configs, and packaging helpers.",
+  "description_es": "Proyecto ejecutable complementario de la receta de Lambda Layers: builds manuales y con Docker, el script build-layer.sh automatizado, configs de SAM y Serverless Framework, y helpers de empaquetado.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "aws-lambda-python-dependencies",
+  "source_urls": [
+    "https://stackpractices.com/recipes/aws-lambda-python-dependencies/",
+    "https://stackpractices.com/es/recipes/aws-lambda-python-dependencies/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["aws", "lambda", "python", "layers", "serverless", "deployment"],
+  "files": [
+    "manual-build.sh",
+    "docker-native-build.sh",
+    "build-layer.sh",
+    "deploy-with-layer.sh",
+    "lambda_function.py",
+    "template.yaml",
+    "serverless.yml",
+    "requirements.txt",
+    "multi-layer-template.yaml",
+    "arm64-build.sh",
+    "Dockerfile",
+    "strip-layer.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

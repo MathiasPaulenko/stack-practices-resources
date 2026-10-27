@@ -1,0 +1,22 @@
+{
+  "title": "API Rate Limiting — Design Fair and Useful Throttling",
+  "title_es": "Rate Limiting de APIs — Diseña Throttling Justo y Útil",
+  "description": "Rate limiting implementations: token bucket, sliding window log/counter in Python, Lua script for Redis, NGINX gateway config, and FastAPI limiter.",
+  "description_es": "Implementaciones de rate limiting: token bucket, ventana deslizante log/counter en Python, script Lua para Redis, config NGINX y limiter FastAPI.",
+  "type": "guides",
+  "topic": "planning",
+  "slug": "api-rate-limiting-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/api-rate-limiting-guide/",
+    "https://stackpractices.com/es/guides/api-rate-limiting-guide/"
+  ],
+  "language": ["python", "lua", "nginx"],
+  "tags": ["rate-limiting", "throttling", "api-gateway", "token-bucket", "sliding-window", "redis", "nginx", "fastapi"],
+  "files": [
+    "token_bucket.py",
+    "sliding_window.py",
+    "rate_limit.lua",
+    "nginx_rate_limit.conf",
+    "fastapi_rate_limit.py"
+  ]
+}

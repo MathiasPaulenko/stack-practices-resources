@@ -1,0 +1,13 @@
+{
+  "title": "Secure API Key Authentication",
+  "title_es": "Autenticación Segura con API Keys",
+  "description": "Runnable API key lifecycle: HMAC-signed key manager (Python), Express validation middleware, hash-at-rest helpers, and a rotation script.",
+  "description_es": "Ciclo de vida de API keys ejecutable: gestor de keys firmadas con HMAC (Python), middleware de validación Express, helpers de hash en reposo y script de rotación.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "api-key-authentication",
+  "source_urls": ["https://stackpractices.com/recipes/api-key-authentication/"],
+  "language": "bilingual",
+  "tags": ["api-key", "hmac", "authentication", "express", "python"],
+  "files": ["api-key-manager.py", "api-key-middleware.js", "key-hash.py", "rotate-keys.py", "README.md", "README.es.md"]
+}

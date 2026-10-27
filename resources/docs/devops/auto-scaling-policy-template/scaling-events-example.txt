@@ -1,0 +1,17 @@
+=== Scaling Event Log (Last 24h) ===
+
+Time         Direction   Trigger              From -> To   Duration
+02:15 UTC    Scale UP    CPU > 70% (2 min)    5 -> 7       45s warm-up
+02:45 UTC    Scale UP    CPU > 70% (2 min)    7 -> 9       42s warm-up
+04:30 UTC    Scale DOWN  CPU < 30% (10 min)   9 -> 8       15s drain
+08:00 UTC    Scale UP    RPS > 1000 (1 min)   8 -> 12      38s warm-up
+08:30 UTC    Scale UP    RPS > 1000 (1 min)   12 -> 16     41s warm-up
+10:00 UTC    Scale DOWN  CPU < 30% (10 min)   16 -> 14     12s drain
+14:00 UTC    Scale DOWN  CPU < 30% (10 min)   14 -> 10     18s drain
+18:00 UTC    Scale DOWN  CPU < 30% (10 min)   10 -> 8      15s drain
+22:00 UTC    Scale DOWN  CPU < 30% (10 min)   8 -> 5       20s drain
+
+Total scaling events: 9
+Scale-up events: 4 (avg warm-up: 41s)
+Scale-down events: 5 (avg drain: 16s)
+Thrashing detected: No (min 2h between opposing events)

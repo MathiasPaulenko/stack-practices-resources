@@ -1,0 +1,38 @@
+{
+  "title": "Anti-Corruption Layer — Legacy Translation Examples",
+  "title_es": "Anti-Corruption Layer — Ejemplos de Traducción Legacy",
+  "description": "Reference implementations of an anti-corruption layer: a Python facade and domain service, a Spring ACL in Java, event- and database-integration adapters, an HTTP gateway variant, a caching wrapper, and two worked legacy-to-domain translators.",
+  "description_es": "Implementaciones de referencia de una capa anti-corrupción: facade y servicio de dominio en Python, ACL en Java con Spring, adaptadores para eventos y base de datos, una variante de gateway HTTP, un wrapper con caché y dos traductores legacy-a-dominio trabajados.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "anti-corruption-layer-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/anti-corruption-layer-pattern/"
+  ],
+  "language": "multi",
+  "tags": [
+    "anti-corruption-layer",
+    "acl",
+    "ddd",
+    "legacy",
+    "migration",
+    "adapter",
+    "facade",
+    "strangler-fig"
+  ],
+  "files": [
+    "meta.json",
+    "customer_acl.py",
+    "customer_service.py",
+    "event_acl.py",
+    "database_acl.py",
+    "acl_gateway.py",
+    "acl_cached.py",
+    "CustomerACL.java",
+    "LegacyCustomerTranslator.ts",
+    "LegacyToClientTranslator.ts",
+    "legacy-customer.xml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "HTTP-Triggered Azure Functions in Python",
+  "title_es": "Azure Functions HTTP con Python",
+  "description": "Runnable companion for the Azure Functions recipe: HTTP triggers, Cosmos DB bindings, async handlers, error middleware, timer/queue/blob triggers, FastAPI ASGI integration and deploy scripts.",
+  "description_es": "Proyecto ejecutable complementario de la receta de Azure Functions: HTTP triggers, bindings de Cosmos DB, handlers async, middleware de errores, triggers de timer/cola/blob, integración FastAPI ASGI y scripts de despliegue.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "azure-functions-python-http",
+  "source_urls": [
+    "https://stackpractices.com/recipes/azure-functions-python-http/",
+    "https://stackpractices.com/es/recipes/azure-functions-python-http/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["azure", "functions", "python", "http-trigger", "serverless"],
+  "files": [
+    "function_app_http.py",
+    "function_app_bindings.py",
+    "function_app_async.py",
+    "function_app_services.py",
+    "function_app_errors.py",
+    "function_app_config.py",
+    "function_app_timer.py",
+    "function_app_triggers.py",
+    "function_app_blob.py",
+    "function_app_fastapi.py",
+    "local.settings.json",
+    "setup.sh",
+    "deploy.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

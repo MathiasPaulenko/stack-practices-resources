@@ -1,0 +1,84 @@
+<!-- Status Page Layout — host on a separate domain/infrastructure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Product] Status</title>
+</head>
+<body>
+    <header>
+        <h1>[Product] Status</h1>
+        <p>Real-time status of [Product] services and APIs.</p>
+        <!-- Subscribe buttons: Email, RSS, Slack, Webhook -->
+        <nav>
+            <a href="#current">Current Status</a>
+            <a href="#history">Incident History</a>
+            <a href="#uptime">Uptime Metrics</a>
+            <a href="#maintenance">Scheduled Maintenance</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="current">
+            <h2>Current Status</h2>
+            <div class="status-banner operational">All systems operational</div>
+            <div class="service-list">
+                <div class="service">
+                    <span class="name">API Gateway</span>
+                    <span class="status operational">Operational</span>
+                </div>
+                <div class="service">
+                    <span class="name">Authentication Service</span>
+                    <span class="status operational">Operational</span>
+                </div>
+                <div class="service">
+                    <span class="name">Database (Primary)</span>
+                    <span class="status operational">Operational</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="uptime">
+            <h2>Uptime (90 days)</h2>
+            <div class="uptime-grid">
+                <!-- 90 daily bars, colored by status -->
+                <div class="uptime-bar operational" title="2026-07-04: 100% uptime"></div>
+                <div class="uptime-bar degraded" title="2026-07-02: 99.2% uptime"></div>
+            </div>
+            <table class="uptime-table">
+                <tr><th>Service</th><th>90-day uptime</th><th>SLA target</th></tr>
+                <tr><td>API Gateway</td><td>99.98%</td><td>99.9%</td></tr>
+            </table>
+        </section>
+
+        <section id="history">
+            <h2>Incident History</h2>
+            <article class="incident resolved">
+                <h3>Database latency spike</h3>
+                <p class="date">July 2, 2026 — Resolved</p>
+                <p class="severity">Severity: Medium</p>
+                <div class="updates">
+                    <div class="update">
+                        <time>14:32 UTC</time>
+                        <p>Investigating elevated database latency on primary cluster.</p>
+                    </div>
+                    <div class="update">
+                        <time>15:30 UTC</time>
+                        <p>Resolved. Latency back to baseline.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="maintenance">
+            <h2>Scheduled Maintenance</h2>
+            <article class="maintenance upcoming">
+                <h3>Database migration to v16</h3>
+                <p class="date">July 15, 2026, 02:00–04:00 UTC</p>
+                <p>Impact: Brief API errors during failover (expected &lt; 2 minutes).</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

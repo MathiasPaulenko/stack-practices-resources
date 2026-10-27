@@ -1,0 +1,19 @@
+{
+  "title": "Architecture Decision Record (ADR) Template",
+  "title_es": "Plantilla de Architecture Decision Record (ADR)",
+  "description": "Fill-in ADR template plus a worked example (ADR-015 PostgreSQL migration) covering context, options, trade-offs, and consequences.",
+  "description_es": "Plantilla ADR para rellenar más un ejemplo resuelto (migración ADR-015 a PostgreSQL) con contexto, opciones, trade-offs y consecuencias.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "architecture-decision-record-adr-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/architecture-decision-record-adr-template/",
+    "https://stackpractices.com/es/docs/architecture-decision-record-adr-template/"
+  ],
+  "language": ["markdown"],
+  "tags": ["adr", "architecture", "documentation", "decision-log", "template"],
+  "files": [
+    "adr-template.md",
+    "adr-015-migrate-postgresql.md"
+  ]
+}

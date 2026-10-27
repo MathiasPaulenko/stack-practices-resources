@@ -1,0 +1,5 @@
+filter @type = "REPORT"
+| parse @message "* Duration: * ms Billed Duration: * ms Memory Size: * MB Max Memory Used: * MB*" as type, duration, billed, memory, maxMemory
+| parse @message "* Init Duration: * ms*" as type2, initDuration
+| filter ispresent(initDuration)
+| stats avg(initDuration), max(initDuration), count() by bin(1h)

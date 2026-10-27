@@ -1,0 +1,23 @@
+{
+  "title": "Test API Contracts with Consumer-Driven Contracts",
+  "title_es": "Pruebas de Contratos de API con Consumer-Driven Contracts",
+  "description": "Runnable contract testing examples: Pact V3 consumer test, provider verification with stateHandlers, async message pact, OpenAPI response validation, and a GitHub Actions pipeline with can-i-deploy gate.",
+  "description_es": "Ejemplos ejecutables de contract testing: test de consumidor con Pact V3, verificación de provider con stateHandlers, pact de mensajes asíncronos, validación OpenAPI de respuestas y pipeline de GitHub Actions con gate can-i-deploy.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "api-contract-testing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/api-contract-testing/",
+    "https://docs.pact.io/"
+  ],
+  "language": "bilingual",
+  "tags": ["contract-testing", "pact", "consumer-driven-contracts", "api-testing", "microservices", "ci-cd", "openapi"],
+  "files": [
+    "pact-consumer.test.js",
+    "pact-provider.verify.test.js",
+    "openapi-validate.py",
+    "contract-testing-ci.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

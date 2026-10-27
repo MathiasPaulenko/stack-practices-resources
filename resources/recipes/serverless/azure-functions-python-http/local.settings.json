@@ -1,0 +1,10 @@
+// local.settings.json (development)
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "CosmosDBConnection": "AccountEndpoint=https://...",
+    "API_KEY": "dev-key-123"
+  }
+}

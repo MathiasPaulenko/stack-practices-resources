@@ -1,0 +1,22 @@
+{
+  "title": "Async Task Cancellation Runbook — Python, JS, Go, Java",
+  "title_es": "Runbook de cancelación de tareas asíncronas — Python, JS, Go, Java",
+  "description": "Runnable examples for the async task cancellation runbook: cooperative cancellation, timeouts, cleanup budgets and graceful shutdown in Python, JavaScript (Node), Go and Java.",
+  "description_es": "Ejemplos ejecutables del runbook de cancelación de tareas asíncronas: cancelación cooperativa, timeouts, presupuesto de limpieza y apagado graceful en Python, JavaScript (Node), Go y Java.",
+  "type": "docs",
+  "topic": "concurrency",
+  "slug": "async-task-cancellation-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/async-task-cancellation-runbook/"
+  ],
+  "language": "bilingual",
+  "tags": ["async", "cancellation", "concurrency", "timeout", "graceful-shutdown", "runbook"],
+  "files": [
+    "python_cancel.py",
+    "node_cancel.mjs",
+    "go_cancel.go",
+    "JavaCancel.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

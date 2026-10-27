@@ -1,0 +1,9 @@
+# SAM template
+Resources:
+  JavaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: java21
+      Handler: com.example.Handler
+      SnapStart:
+        ApplyOn: PublishedVersions

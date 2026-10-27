@@ -1,0 +1,20 @@
+{
+  "title": "API Status Page Template for Incidents",
+  "title_es": "Plantilla de Página de Estado de API para Incidentes",
+  "description": "Ready-to-use API status page template: HTML layout with per-service status, uptime metrics, incident update and post-incident summary templates.",
+  "description_es": "Plantilla de página de estado de API lista para usar: layout HTML con estado por servicio, métricas de uptime, plantillas de update y resumen post-incidente.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "api-status-page-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-status-page-template/",
+    "https://stackpractices.com/es/docs/api-status-page-template/"
+  ],
+  "language": ["html", "markdown"],
+  "tags": ["status-page", "incident", "uptime", "sla", "api", "template"],
+  "files": [
+    "status-page.html",
+    "incident-update-template.md",
+    "post-incident-summary-template.md"
+  ]
+}

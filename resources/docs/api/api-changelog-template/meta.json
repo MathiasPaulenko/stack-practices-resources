@@ -1,0 +1,28 @@
+{
+  "title": "API Changelog Template",
+  "title_es": "Plantilla de Changelog de API",
+  "description": "Artifacts for the API changelog template: conventional-commits changelog generator and deprecation-header checks.",
+  "description_es": "Artefactos para la plantilla de changelog de API: generador de changelog desde conventional commits y verificación de headers de deprecación.",
+  "type": "docs",
+  "topic": "api",
+  "slug": "api-changelog-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-changelog-template/",
+    "https://stackpractices.com/es/docs/api-changelog-template/"
+  ],
+  "language": [
+    "javascript",
+    "python"
+  ],
+  "tags": [
+    "api",
+    "changelog",
+    "versioning",
+    "deprecation"
+  ],
+  "files": [
+    "changelog_generator.js",
+    "check_deprecation.py",
+    "check_deprecation.js"
+  ]
+}

@@ -1,0 +1,43 @@
+# Provider pipeline: verify every consumer pact, then gate the deploy.
+# can-i-deploy exits non-zero if any contract is unverified or failing.
+name: provider-verify
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+env:
+  PACT_BROKER_URL: ${{ secrets.PACT_BROKER_URL }}
+  PACT_BROKER_TOKEN: ${{ secrets.PACT_BROKER_TOKEN }}
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # Provider replays all published consumer contracts.
+      - name: Verify pacts
+        run: npm run test:pact:verify
+        env:
+          GIT_SHA: ${{ github.sha }}
+          GIT_BRANCH: ${{ github.head_ref || github.ref_name }}
+
+      # Merge/deploy gate: is this provider version safe to release?
+      - name: Can I deploy?
+        run: |
+          docker run --rm \
+            -e PACT_BROKER_BASE_URL \
+            -e PACT_BROKER_TOKEN \
+            pactfoundation/pact-cli:latest \
+            broker can-i-deploy \
+            --pacticipant user-service \
+            --version ${{ github.sha }} \
+            --to-environment production

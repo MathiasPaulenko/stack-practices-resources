@@ -1,0 +1,22 @@
+{
+  "title": "Ansible Playbook",
+  "title_es": "Playbook de Ansible",
+  "description": "Runnable companion project for the Ansible Playbook recipe: inventory, site.yml playbook and ansible.cfg for configuring web servers idempotently.",
+  "description_es": "Proyecto ejecutable complementario de la receta de Playbook de Ansible: inventario, playbook site.yml y ansible.cfg para configurar servidores web de forma idempotente.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "ansible-playbook",
+  "source_urls": [
+    "https://stackpractices.com/recipes/ansible-playbook/",
+    "https://stackpractices.com/es/recipes/ansible-playbook/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["ansible", "playbook", "infrastructure-as-code", "devops", "automation"],
+  "files": [
+    "inventory.ini",
+    "site.yml",
+    "ansible.cfg",
+    "README.md",
+    "README.es.md"
+  ]
+}

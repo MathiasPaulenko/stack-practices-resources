@@ -1,0 +1,24 @@
+{
+  "title": "Deploy Containers to AWS ECS with Fargate",
+  "title_es": "Desplegar Contenedores en ECS con Fargate",
+  "description": "Runnable Terraform + GitHub Actions companion for the ECS Fargate recipe: VPC with NAT, ECS cluster, task definition, ALB service, IAM roles, autoscaling and Secrets Manager wiring.",
+  "description_es": "Proyecto Terraform + GitHub Actions ejecutable para la receta de ECS Fargate: VPC con NAT, cluster ECS, definición de tarea, servicio con ALB, roles IAM, autoescalado e integración con Secrets Manager.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "aws-ecs-fargate",
+  "source_urls": [
+    "https://stackpractices.com/recipes/aws-ecs-fargate/",
+    "https://stackpractices.com/es/recipes/aws-ecs-fargate/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["aws", "ecs", "fargate", "terraform", "docker", "ci-cd", "devops"],
+  "files": [
+    "main.tf",
+    "iam.tf",
+    "autoscaling.tf",
+    "secrets.tf",
+    "deploy.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

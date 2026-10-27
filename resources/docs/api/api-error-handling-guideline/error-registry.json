@@ -1,0 +1,14 @@
+{
+  "codes": {
+    "INVALID_PARAMETER": { "status": 400, "retryable": false, "description": "Field validation failed" },
+    "MISSING_REQUIRED_FIELD": { "status": 400, "retryable": false, "description": "Required field not provided" },
+    "AUTHENTICATION_FAILED": { "status": 401, "retryable": false, "description": "Invalid or expired credentials" },
+    "PERMISSION_DENIED": { "status": 403, "retryable": false, "description": "Insufficient permissions" },
+    "QUOTA_EXCEEDED": { "status": 403, "retryable": false, "description": "Plan quota exhausted" },
+    "RESOURCE_NOT_FOUND": { "status": 404, "retryable": false, "description": "Requested resource missing" },
+    "DUPLICATE_RESOURCE": { "status": 409, "retryable": false, "description": "Resource already exists" },
+    "RATE_LIMIT_EXCEEDED": { "status": 429, "retryable": true, "description": "Too many requests; honor Retry-After" },
+    "INTERNAL_ERROR": { "status": 500, "retryable": true, "description": "Unexpected server error" },
+    "SERVICE_UNAVAILABLE": { "status": 503, "retryable": true, "description": "Temporary outage; honor Retry-After" }
+  }
+}

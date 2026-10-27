@@ -1,0 +1,21 @@
+{
+  "title": "API Testing Strategy Template",
+  "title_es": "Plantilla de Estrategia de Testing de API",
+  "description": "Layered API testing strategy: fill-in template, Pact contract test, supertest integration suite, and k6 load script with budget thresholds.",
+  "description_es": "Estrategia de testing de API por capas: plantilla para rellenar, test de contrato Pact, suite de integración supertest y script k6 con umbrales.",
+  "type": "docs",
+  "topic": "testing",
+  "slug": "api-testing-strategy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/api-testing-strategy-template/",
+    "https://stackpractices.com/es/docs/api-testing-strategy-template/"
+  ],
+  "language": ["markdown", "javascript"],
+  "tags": ["testing", "api", "contract", "integration", "load", "k6", "pact", "supertest", "template"],
+  "files": [
+    "api-testing-strategy-template.md",
+    "pact_contract_test.js",
+    "integration_test.js",
+    "load_test_k6.js"
+  ]
+}

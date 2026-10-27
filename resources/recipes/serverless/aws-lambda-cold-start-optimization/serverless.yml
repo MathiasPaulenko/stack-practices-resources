@@ -1,0 +1,22 @@
+# serverless.yml
+service: my-api
+
+provider:
+  name: aws
+  runtime: python3.11
+
+functions:
+  api:
+    handler: lambda_function.lambda_handler
+    events:
+      - http: { path: /data, method: get }
+
+plugins:
+  - serverless-plugin-warmup
+
+custom:
+  warmup:
+    warmerName: 'warmer'
+    schedule: 'rate(5 minutes)'
+    concurrency: 5
+    batchSize: 1

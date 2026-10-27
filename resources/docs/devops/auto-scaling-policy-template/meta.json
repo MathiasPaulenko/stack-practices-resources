@@ -1,0 +1,23 @@
+{
+  "title": "Auto-Scaling Policy Template",
+  "title_es": "Plantilla de Política de Auto-Scaling",
+  "description": "Copy-ready auto-scaling policy document with scale-up/down thresholds, cooldowns, cost controls, plus Terraform ASG and Kubernetes HPA examples.",
+  "description_es": "Documento de política de auto-scaling listo para copiar, con umbrales de scale-up/down, cooldowns, controles de costo, más ejemplos en Terraform ASG y Kubernetes HPA.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "auto-scaling-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/auto-scaling-policy-template/",
+    "https://stackpractices.com/es/docs/auto-scaling-policy-template/"
+  ],
+  "language": "en+es",
+  "tags": ["devops", "auto-scaling", "terraform", "kubernetes", "hpa", "cloud", "policy", "template"],
+  "files": [
+    "auto-scaling-policy-template.md",
+    "autoscaling.tf",
+    "hpa.yaml",
+    "scaling-events-example.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
