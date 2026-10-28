@@ -1,0 +1,29 @@
+{
+  "title": "Bridge Pattern for UI Themes — TypeScript Examples",
+  "title_es": "Patrón Bridge para Temas UI — Ejemplos TypeScript",
+  "description": "TypeScript implementations of the Bridge pattern for pluggable UI themes: renderer bridge, theme bridge, and runtime theme switching.",
+  "description_es": "Implementaciones TypeScript del patrón Bridge para temas UI intercambiables: bridge de renderizadores, bridge de temas y cambio de tema en runtime.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "bridge-pattern-ui-themes",
+  "source_urls": [
+    "https://stackpractices.com/patterns/bridge-pattern-ui-themes/",
+    "https://stackpractices.com/es/patterns/bridge-pattern-ui-themes/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "bridge",
+    "typescript",
+    "ui-themes",
+    "design-pattern",
+    "structural-pattern"
+  ],
+  "files": [
+    "src/renderer.ts",
+    "src/theme.ts",
+    "src/theme-switch.ts",
+    "src/dark-theme.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

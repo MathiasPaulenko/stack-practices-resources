@@ -1,0 +1,21 @@
+{
+  "title": "Cache Stampede Prevention Pattern — Runnable Simulations",
+  "title_es": "Patrón Cache Stampede Prevention — Simulaciones ejecutables",
+  "description": "Runnable cache stampede simulator in Python and TypeScript: 20 concurrent callers on an expired hot key, comparing naive cache-aside against single-flight, distributed lock and stale-while-revalidate. Stdlib only.",
+  "description_es": "Simulador ejecutable de cache stampede en Python y TypeScript: 20 llamadores concurrentes sobre una key caliente expirada, comparando cache-aside ingenuo contra single-flight, lock distribuido y stale-while-revalidate. Solo stdlib.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "cache-stampede-prevention-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/cache-stampede-prevention-pattern/",
+    "https://stackpractices.com/es/patterns/cache-stampede-prevention-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["cache-stampede", "thundering-herd", "distributed-lock", "redis", "single-flight", "stale-while-revalidate", "pattern", "caching"],
+  "files": [
+    "src/stampede_demo.py",
+    "src/stampede-demo.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,36 @@
+# .github/workflows/auto-triage.yml
+name: Auto-Triage Bug Reports
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for severity keywords
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || "";
+            const title = context.payload.issue.title || "";
+            const text = (title + " " + body).toLowerCase();
+
+            const severityRules = [
+              { label: "s1-critical", keywords: ["data loss", "payment", "login broken", "security", "production down"] },
+              { label: "s2-high", keywords: ["broken", "crash", "error 500", "not working", "failing"] },
+              { label: "s3-medium", keywords: ["slow", "incorrect", "wrong", "unexpected"] },
+              { label: "s4-low", keywords: ["typo", "cosmetic", "alignment", "color"] },
+            ];
+
+            for (const rule of severityRules) {
+              if (rule.keywords.some(kw => text.includes(kw))) {
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: context.payload.issue.number,
+                  labels: [rule.label, "needs-triage"],
+                });
+                break;
+              }
+            }

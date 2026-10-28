@@ -1,0 +1,16 @@
+{
+  "Rules": [
+    {
+      "ID": "reports-lifecycle",
+      "Status": "Enabled",
+      "Filter": { "Prefix": "reports/" },
+      "Transitions": [
+        { "Days": 30, "StorageClass": "STANDARD_IA" },
+        { "Days": 90, "StorageClass": "GLACIER" },
+        { "Days": 365, "StorageClass": "DEEP_ARCHIVE" }
+      ],
+      "AbortIncompleteMultipartUpload": { "DaysAfterInitiation": 7 },
+      "Expiration": { "Days": 2555 }
+    }
+  ]
+}

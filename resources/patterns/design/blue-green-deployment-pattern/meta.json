@@ -1,0 +1,22 @@
+{
+  "title": "Blue-Green Deployment Pattern — Runnable Implementations",
+  "title_es": "Patrón Blue-Green Deployment — Implementaciones ejecutables",
+  "description": "Runnable blue-green deployment simulation in three languages (Python, JavaScript, Java): environment state machine, smoke-test gate, instant traffic switch and one-step rollback.",
+  "description_es": "Simulación ejecutable del despliegue blue-green en tres lenguajes (Python, JavaScript, Java): máquina de estados de entornos, puerta de smoke tests, conmutación instantánea de tráfico y rollback en un paso.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "blue-green-deployment-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/blue-green-deployment-pattern/",
+    "https://stackpractices.com/es/patterns/blue-green-deployment-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["blue-green", "deployment", "zero-downtime", "rollback", "pattern", "devops"],
+  "files": [
+    "src/blue_green_deployment.py",
+    "src/blue-green-deployment.js",
+    "src/BlueGreenDeployment.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

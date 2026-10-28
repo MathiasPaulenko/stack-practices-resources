@@ -1,0 +1,24 @@
+{
+  "title": "Builder Pattern",
+  "title_es": "Patrón Builder: construcción de objetos paso a paso",
+  "description": "Companion code for the Builder pattern: fluent Pizza builders with validation and defaults in Python, JavaScript and Java, a conditional SQL QueryBuilder, and a TypeScript DatabaseConfigBuilder with environment presets.",
+  "description_es": "Código companion del patrón Builder: builders fluidos de Pizza con validación y valores por defecto en Python, JavaScript y Java, un QueryBuilder SQL condicional y un DatabaseConfigBuilder en TypeScript con presets por entorno.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "builder-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/builder-pattern/",
+    "https://stackpractices.com/es/patterns/builder-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["builder", "creational-patterns", "design-pattern", "python", "javascript", "java", "typescript"],
+  "files": [
+    "pizza_builder.py",
+    "query_builder.py",
+    "pizza-builder.js",
+    "Pizza.java",
+    "database-config-builder.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

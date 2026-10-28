@@ -1,0 +1,44 @@
+# .github/workflows/blue-green.yml
+name: Blue-Green Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to green
+        run: |
+          kubectl apply -f k8s/green-deployment.yaml
+          kubectl rollout status deployment/app-green --timeout=120s
+
+      - name: Smoke test green
+        run: |
+          GREEN_IP=$(kubectl get svc app-green -o jsonpath='{.spec.clusterIP}')
+          for i in $(seq 1 10); do
+            if curl -sf "http://$GREEN_IP:8080/health"; then
+              echo "Green healthy"
+              break
+            fi
+            sleep 5
+          done
+
+      - name: Switch traffic to green
+        run: |
+          kubectl patch svc app-active -p '{"spec":{"selector":{"version":"green"}}}'
+
+      - name: Verify production
+        run: |
+          sleep 30
+          if ! curl -sf https://api.example.com/health; then
+            kubectl patch svc app-active -p '{"spec":{"selector":{"version":"blue"}}}'
+            echo "Rollback triggered"
+            exit 1
+          fi
+
+      - name: Scale down blue
+        run: kubectl scale deployment app-blue --replicas=0

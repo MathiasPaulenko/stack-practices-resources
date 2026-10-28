@@ -1,0 +1,20 @@
+{
+  "title": "Cache Strategy Decision Template — Decision Record Generator",
+  "title_es": "Plantilla de Decisión de Estrategia de Caché — Generador de registro de decisión",
+  "description": "Interactive stdlib-only CLI that walks the cache strategy decision tree and emits a filled decision record ready to paste into service docs or an ADR.",
+  "description_es": "CLI interactivo solo-stdlib que recorre el árbol de decisión de estrategias de caché y emite un registro de decisión rellenado, listo para pegar en docs o un ADR.",
+  "type": "docs",
+  "topic": "caching",
+  "slug": "cache-strategy-decision-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/cache-strategy-decision-template/",
+    "https://stackpractices.com/es/docs/cache-strategy-decision-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["cache-strategy", "decision-template", "caching", "redis", "ttl", "invalidation", "adr"],
+  "files": [
+    "src/decision_generator.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

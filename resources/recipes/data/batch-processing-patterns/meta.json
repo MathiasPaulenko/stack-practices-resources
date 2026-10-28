@@ -1,0 +1,13 @@
+{
+  "title": "Batch Processing Patterns",
+  "title_es": "Patrones de Procesamiento por Lotes",
+  "description": "Runnable batch pipeline example: chunked processing, bounded retries, atomic checkpoints, dead-letter table and reconciliation schema.",
+  "description_es": "Ejemplo ejecutable de pipeline por lotes: procesamiento en chunks, reintentos acotados, checkpoints atómicos, tabla de dead letters y esquema de reconciliación.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "batch-processing-patterns",
+  "source_urls": ["https://stackpractices.com/recipes/batch-processing-patterns/"],
+  "language": ["python", "sql"],
+  "tags": ["batch-processing", "etl", "retry", "checkpoint", "dead-letter"],
+  "files": ["batch_processor.py", "schema.sql", "test_batch_processor.py", "README.md", "README.es.md"]
+}

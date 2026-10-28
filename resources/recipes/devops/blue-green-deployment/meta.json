@@ -1,0 +1,16 @@
+{
+  "title": "Blue-Green Deployment",
+  "title_es": "Despliegue Blue-Green",
+  "description": "Runnable blue-green deployment toolkit: Nginx traffic switch script with instant rollback, Kubernetes service-switch manifests, a GitHub Actions pipeline, and a post-switch monitoring script with automatic rollback.",
+  "description_es": "Kit ejecutable de despliegue blue-green: script de conmutación Nginx con rollback instantáneo, manifiestos de Kubernetes, pipeline de GitHub Actions y script de monitoreo post-conmutación con rollback automático.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "blue-green-deployment",
+  "source_urls": [
+    "https://stackpractices.com/recipes/blue-green-deployment/",
+    "https://stackpractices.com/es/recipes/blue-green-deployment/"
+  ],
+  "language": "bash",
+  "tags": ["blue-green", "deployment", "kubernetes", "nginx", "rollback", "ci-cd"],
+  "files": ["switch-traffic.sh", "monitor-post-switch.sh", "blue-green-workflow.yml", "k8s/service.yaml", "k8s/green-deployment.yaml"]
+}

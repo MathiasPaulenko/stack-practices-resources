@@ -1,0 +1,28 @@
+{
+  "title": "Cache Eviction Policy Template",
+  "title_es": "Plantilla de pol\u00edtica de eviction de cach\u00e9",
+  "description": "Companion code for the cache eviction policy template: Redis maxmemory-policy configurations, memory monitoring and eviction rate script.",
+  "description_es": "C\u00f3digo companion de la plantilla de pol\u00edtica de eviction: configuraciones maxmemory-policy de Redis y scripts de monitorizaci\u00f3n.",
+  "type": "docs",
+  "topic": "caching",
+  "slug": "cache-eviction-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/cache-eviction-policy-template/",
+    "https://stackpractices.com/es/docs/cache-eviction-policy-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "redis",
+    "cache",
+    "eviction",
+    "lru",
+    "monitoring"
+  ],
+  "files": [
+    "redis-local.conf",
+    "redis-cluster.conf",
+    "monitor_eviction.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

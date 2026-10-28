@@ -1,0 +1,16 @@
+{
+  "title": "Blob Storage: S3, GCS, and Azure Blob Patterns",
+  "title_es": "Almacenamiento Blob: patrones de S3, GCS y Azure",
+  "description": "Runnable examples for cloud blob storage: presigned URLs for direct browser uploads, automatic multipart uploads, and lifecycle policy configuration for S3, GCS, and Azure Blob.",
+  "description_es": "Ejemplos ejecutables de almacenamiento blob en la nube: URLs firmadas para subidas directas, multiparte automática y políticas de ciclo de vida para S3, GCS y Azure Blob.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "blob-storage-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/blob-storage-guide/",
+    "https://stackpractices.com/es/guides/blob-storage-guide/"
+  ],
+  "language": "python",
+  "tags": ["blob-storage", "s3", "gcs", "azure-blob", "presigned-url", "multipart"],
+  "files": ["s3_upload.py", "lifecycle.json", "cors.json"]
+}

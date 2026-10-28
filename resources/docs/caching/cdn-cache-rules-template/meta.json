@@ -1,0 +1,28 @@
+{
+  "title": "CDN Cache Rules Template",
+  "title_es": "Plantilla de reglas de cach\u00e9 de CDN",
+  "description": "Companion code for the CDN cache rules template: Cloudflare purge API helpers, post-deploy purge automation and nginx cache headers.",
+  "description_es": "C\u00f3digo companion de la plantilla de reglas de cach\u00e9 CDN: helpers de la API de purge de Cloudflare, purge autom\u00e1tico post-deploy y headers de cach\u00e9 en nginx.",
+  "type": "docs",
+  "topic": "caching",
+  "slug": "cdn-cache-rules-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/cdn-cache-rules-template/",
+    "https://stackpractices.com/es/docs/cdn-cache-rules-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cdn",
+    "cloudflare",
+    "cache",
+    "purge",
+    "nginx"
+  ],
+  "files": [
+    "cloudflare-purge.py",
+    "cdn-health-check.py",
+    "nginx-cache-headers.conf",
+    "README.md",
+    "README.es.md"
+  ]
+}

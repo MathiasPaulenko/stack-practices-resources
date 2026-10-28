@@ -1,0 +1,22 @@
+{
+  "title": "Business Delegate Pattern",
+  "title_es": "Patrón Business Delegate",
+  "description": "Companion code for the Business Delegate pattern: presentation-to-service decoupling with Service Locator lookup, cached references, and retry-with-backoff delegation in Python, Java, and JavaScript.",
+  "description_es": "Código companion del patrón Business Delegate: desacoplamiento presentación-servicio con búsqueda vía Service Locator, referencias en caché y delegación con reintentos y backoff en Python, Java y JavaScript.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "business-delegate-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/business-delegate-pattern/",
+    "https://stackpractices.com/es/patterns/business-delegate-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["business-delegate", "design-pattern", "service-locator", "decoupling", "python", "javascript", "java"],
+  "files": [
+    "order_delegate.py",
+    "OrderBusinessDelegate.java",
+    "order-delegate.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
