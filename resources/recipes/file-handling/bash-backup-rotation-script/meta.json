@@ -1,0 +1,37 @@
+{
+  "title": "Bash Backup Rotation: Retention and Integrity",
+  "title_es": "Rotación de backups en Bash: retención e integridad",
+  "description": "Runnable companion scripts for the Bash backup rotation recipe: tiered GFS retention, GPG encryption, rsync --link-dest increments, S3 checksum upload, integrity checks, pg_dump rotation, restore helper, disk-space pre-flight and performance tips.",
+  "description_es": "Scripts ejecutables complementarios de la receta de rotación de backups en Bash: retención escalonada GFS, cifrado GPG, incrementales con rsync --link-dest, subida a S3 con checksum, verificación de integridad, rotación pg_dump, restauración, chequeo de espacio y tips de rendimiento.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "bash-backup-rotation-script",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-backup-rotation-script/",
+    "https://stackpractices.com/es/recipes/bash-backup-rotation-script/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "bash",
+    "backup",
+    "retention",
+    "rotation",
+    "gfs",
+    "tar",
+    "gzip",
+    "gpg",
+    "rsync",
+    "s3"
+  ],
+  "files": [
+    "backup-rotation.sh",
+    "encrypted-backup-gpg.sh",
+    "incremental-backup-rsync.sh",
+    "s3-upload-checksum.sh",
+    "backup-integrity-check.sh",
+    "database-backup-pg-dump.sh",
+    "restore-backup.sh",
+    "disk-space-check.sh",
+    "performance-tips.sh"
+  ]
+}

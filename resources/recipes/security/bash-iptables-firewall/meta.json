@@ -1,0 +1,34 @@
+{
+  "title": "Configure iptables Firewall Rules with Bash",
+  "title_es": "Configurar Reglas de Firewall iptables con Bash",
+  "description": "Runnable companion scripts for the iptables firewall recipe: baseline ruleset with INVALID drop, SSH rate limiting, NAT port forwarding, IP/subnet rules, reboot persistence and firewall reset.",
+  "description_es": "Scripts ejecutables complementarios de la receta de firewall iptables: ruleset base con drop de INVALID, rate limiting de SSH, NAT y redirección de puertos, reglas por IP/subred, persistencia tras reinicio y restablecimiento del firewall.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "bash-iptables-firewall",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-iptables-firewall/",
+    "https://stackpractices.com/es/recipes/bash-iptables-firewall/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "bash",
+    "iptables",
+    "firewall",
+    "security",
+    "networking",
+    "linux",
+    "nat",
+    "nftables"
+  ],
+  "files": [
+    "basic-firewall-setup.sh",
+    "ssh-rate-limit.sh",
+    "nat-port-forwarding.sh",
+    "block-ip-addresses.sh",
+    "allow-subnet-only.sh",
+    "persist-rules.sh",
+    "firewall-reset.sh",
+    "list-verify-rules.sh"
+  ]
+}

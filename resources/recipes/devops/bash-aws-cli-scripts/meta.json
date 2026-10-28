@@ -1,0 +1,42 @@
+{
+  "title": "AWS CLI Bash Scripts",
+  "title_es": "Scripts de Bash para AWS CLI",
+  "description": "Runnable companion scripts for the AWS CLI Bash Scripts recipe: EC2 provisioning, ephemeral VPC with auto-cleanup, S3 lifecycle, tag compliance audit, EBS snapshot rotation, EBS cleanup, cost monitoring, CloudWatch dashboard and multi-account deployment.",
+  "description_es": "Scripts ejecutables complementarios de la receta Scripts de Bash para AWS CLI: aprovisionamiento EC2, VPC efímero con limpieza automática, ciclo de vida S3, auditoría de cumplimiento de tags, rotación de snapshots EBS, limpieza de volúmenes, monitoreo de costos, dashboard de CloudWatch y despliegue multi-cuenta.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "bash-aws-cli-scripts",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-aws-cli-scripts/",
+    "https://stackpractices.com/es/recipes/bash-aws-cli-scripts/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "bash",
+    "aws-cli",
+    "aws",
+    "automation",
+    "devops",
+    "ec2",
+    "s3",
+    "iam"
+  ],
+  "files": [
+    "provision-ec2-instance.sh",
+    "list-ec2-instances.sh",
+    "ephemeral-vpc.sh",
+    "s3-bucket-setup.sh",
+    "s3-sync-directory.sh",
+    "stop-ec2-by-tag.sh",
+    "iam-user-audit.sh",
+    "rds-snapshot-backup.sh",
+    "tag-compliance-audit.sh",
+    "ebs-snapshot-rotation.sh",
+    "cleanup-unattached-ebs.sh",
+    "cost-explorer-report.sh",
+    "cloudwatch-dashboard.sh",
+    "multi-account-deploy.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

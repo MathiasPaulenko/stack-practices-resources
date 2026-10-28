@@ -1,0 +1,35 @@
+{
+  "title": "Log Rotation and Compression in Bash",
+  "title_es": "Rotación y Compresión de Logs en Bash",
+  "description": "Runnable companion scripts and logrotate configs for the log rotation recipe: gzip/zstd/copytruncate configs, custom scripts, disk checks and S3 shipping.",
+  "description_es": "Scripts y configuraciones logrotate complementarios de la receta de rotación de logs: configs gzip/zstd/copytruncate, scripts propios, chequeos de disco y envío a S3.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "bash-log-rotation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/bash-log-rotation/",
+    "https://stackpractices.com/es/recipes/bash-log-rotation/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "bash",
+    "rotation",
+    "compression",
+    "logrotate",
+    "zstd",
+    "s3"
+  ],
+  "files": [
+    "logrotate-myapp.conf",
+    "logrotate-size-based.conf",
+    "logrotate-zstd.conf",
+    "logrotate-copytruncate.conf",
+    "custom-rotation.sh",
+    "signal-rotation.sh",
+    "parallel-compression.sh",
+    "disk-space-rotation.sh",
+    "logrotate-notify.conf",
+    "s3-log-shipping.sh",
+    "python-rotating-handler.py"
+  ]
+}

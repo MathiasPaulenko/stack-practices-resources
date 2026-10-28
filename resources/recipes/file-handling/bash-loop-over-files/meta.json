@@ -1,0 +1,36 @@
+{
+    "topic": "file-handling",
+    "language": "multi",
+    "files": [
+        "loop-glob.sh",
+        "find-print0-loop.sh",
+        "bulk-rename.sh",
+        "mapfile-read.sh",
+        "xargs-batch.sh",
+        "sort-by-mtime.sh",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "How to Loop Over Files in Bash",
+    "title_es": "Cómo Iterar sobre Archivos en Bash",
+    "type": "recipes",
+    "description": "Runnable scripts for safe file iteration in Bash: glob loops with no-match handling, find -print0 pipelines, bulk renaming, mapfile arrays, xargs batching, and mtime-sorted iteration.",
+    "description_es": "Scripts ejecutables para iterar archivos de forma segura en Bash: loops con glob y manejo de no-coincidencias, pipelines find -print0, renombrado por lotes, arrays con mapfile, lotes con xargs e iteración ordenada por fecha.",
+    "slug": "bash-loop-over-files",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/bash-loop-over-files/"
+    ],
+    "tags": [
+        "file-handling",
+        "bash",
+        "loops",
+        "globbing",
+        "nullglob",
+        "find-print0",
+        "xargs",
+        "mapfile",
+        "shell"
+    ],
+    "lastUpdated": "2026-10-28"
+}
