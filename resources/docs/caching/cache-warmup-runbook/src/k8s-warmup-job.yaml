@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cache-warmup
+spec:
+  ttlSecondsAfterFinished: 60
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - name: warmup
+        image: registry.internal/cache-warmup:latest
+        command: ["python3", "/app/warmup.py",
+                  "--keys", "/config/hot-keys.json",
+                  "--redis", "redis-cluster.internal:6379",
+                  "--tiers", "critical,high"]
+        env:
+        - name: REDIS_HOST
+          value: "redis-cluster.internal"
+        - name: REDIS_PORT
+          value: "6379"
+        volumeMounts:
+        - name: config
+          mountPath: /config
+      volumes:
+      - name: config
+        configMap:
+          name: cache-warmup-config

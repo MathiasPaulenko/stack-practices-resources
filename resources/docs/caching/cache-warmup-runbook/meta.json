@@ -1,0 +1,23 @@
+{
+  "title": "Cache Warmup Runbook — Hot-Key Extractor and Warmup Runner",
+  "title_es": "Runbook de precalentamiento de caché — Extractor de hot keys y runner de warmup",
+  "description": "Runnable companion scripts for the cache warmup runbook: hot-key extraction from access logs or Redis LFU stats, and a tiered warmup runner with health checks, chunked batches and hit-ratio verification.",
+  "description_es": "Scripts ejecutables del runbook de precalentamiento de caché: extracción de hot keys desde logs de acceso o stats LFU de Redis, y un runner de warmup por niveles con health checks, lotes y verificación del hit ratio.",
+  "type": "docs",
+  "topic": "caching",
+  "slug": "cache-warmup-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/cache-warmup-runbook/",
+    "https://stackpractices.com/es/docs/cache-warmup-runbook/"
+  ],
+  "language": "bilingual",
+  "tags": ["cache-warmup", "runbook", "caching", "redis", "hot-keys", "deployment", "incident-response"],
+  "files": [
+    "src/hot_keys.py",
+    "src/warmup.py",
+    "src/warmup-before-deploy.sh",
+    "src/k8s-warmup-job.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
