@@ -1,0 +1,6 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!      # New field — old clients ignore it
+  createdAt: String   # New field — nullable for backward compat
+}

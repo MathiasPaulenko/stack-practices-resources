@@ -1,0 +1,40 @@
+{
+  "title": "Complete Guide to API Versioning Strategies",
+  "title_es": "Guía Completa de Estrategias de Versionado de APIs",
+  "description": "Runnable API versioning examples: URI path, query param, header, and content-negotiation routers (FastAPI), GraphQL schema evolution snippets, deprecation/sunset headers, strangler-fig router, and parallel-run comparator.",
+  "description_es": "Ejemplos ejecutables de versionado de APIs: routers por URI, query param, header y negociación de contenido (FastAPI), evolución de esquema GraphQL, headers deprecation/sunset, router strangler-fig y comparador parallel-run.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "complete-guide-api-versioning-strategies",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-api-versioning-strategies/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-api-versioning-strategies/"
+  },
+  "language": [
+    "python",
+    "graphql",
+    "javascript"
+  ],
+  "tags": [
+    "api-versioning",
+    "rest",
+    "graphql",
+    "fastapi",
+    "deprecation",
+    "strangler-fig"
+  ],
+  "files": [
+    "uri_versioning.py",
+    "query_param_versioning.py",
+    "header_versioning.py",
+    "content_negotiation.py",
+    "graphql_additive.graphql",
+    "graphql_deprecation.graphql",
+    "graphql_schemas.js",
+    "deprecation_headers.py",
+    "strangler_fig_router.py",
+    "parallel_run.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Complete Guide to Application-Level Caching",
+  "title_es": "Guía Completa de Caching a Nivel Aplicación",
+  "description": "Runnable application-level caching examples: LRU+TTL, Redis/Memcached clients, two-tier L1/L2 cache, stampede lock, cache sizing, thread-safe caches (Python, Java, Node.js), warming, monitored cache.",
+  "description_es": "Ejemplos ejecutables de caching a nivel aplicación: LRU+TTL, clientes Redis/Memcached, caché dos niveles L1/L2, lock de stampede, dimensionado, cachés thread-safe (Python, Java, Node.js), warming y caché monitorizada.",
+  "type": "guides",
+  "topic": "caching",
+  "slug": "complete-guide-application-level-caching",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-application-level-caching/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-application-level-caching/"
+  },
+  "language": [
+    "python",
+    "javascript",
+    "java"
+  ],
+  "tags": [
+    "caching",
+    "redis",
+    "memcached",
+    "lru",
+    "ttl",
+    "two-tier",
+    "stampede",
+    "caffeine"
+  ],
+  "files": [
+    "lru_cache_decorator.py",
+    "lru_cache_ttl.py",
+    "lru_cache_node.js",
+    "caffeine_cache.java",
+    "redis_cache.py",
+    "memcached_cache.py",
+    "two_tier_cache.py",
+    "stampede_lock.py",
+    "cache_sizing.py",
+    "threadsafe_cache.py",
+    "concurrent_map.java",
+    "node_cache.js",
+    "cache_warming.py",
+    "resilient_cache.py",
+    "monitored_cache.py",
+    "docker-compose.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

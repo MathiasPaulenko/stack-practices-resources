@@ -1,0 +1,38 @@
+{
+  "title": "Complete Guide to Cache Invalidation",
+  "title_es": "Guía Completa de Invalidación de Caché",
+  "description": "Runnable Redis invalidation patterns: TTL with jitter, write-then-delete, pub/sub multi-instance invalidation, versioned keys with byte-safe decoding, tag-based purging, multi-tier L1+L2 propagation, delayed double-delete and lock-based race handling.",
+  "description_es": "Patrones ejecutables de invalidación en Redis: TTL con jitter, escribir-luego-borrar, invalidación multi-instancia por pub/sub, claves versionadas con decodificación segura de bytes, purgado por tags, propagación L1+L2 multi-nivel, doble borrado diferido y manejo de carreras con locks.",
+  "type": "guides",
+  "topic": "caching",
+  "slug": "complete-guide-cache-invalidation",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-cache-invalidation/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-cache-invalidation/"
+  },
+  "language": [
+    "python"
+  ],
+  "tags": [
+    "caching",
+    "invalidation",
+    "redis",
+    "ttl",
+    "pubsub",
+    "versioned-keys",
+    "tag-based",
+    "consistency"
+  ],
+  "files": [
+    "ttl_cache.py",
+    "event_driven.py",
+    "versioned_keys.py",
+    "tag_based.py",
+    "multi_tier.py",
+    "race_safe.py",
+    "test_invalidation.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Complete Guide to API Security",
+  "title_es": "Guía Completa de Seguridad de APIs",
+  "description": "Runnable API security controls: token-bucket and Redis rate limiters, Pydantic v2 validation, file-upload checks, CORS, SQL-injection prevention, mass-assignment protection, gateway middleware, pagination hardening, audit logging, and a pytest security suite.",
+  "description_es": "Controles de seguridad de API ejecutables: rate limiters token-bucket y Redis, validación Pydantic v2, comprobación de subidas, CORS, prevención de inyección SQL, protección contra mass assignment, middleware de gateway, endurecimiento de paginación, audit logging y suite pytest de seguridad.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-api-security",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-api-security/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-api-security/"
+  },
+  "language": [
+    "python"
+  ],
+  "tags": [
+    "api-security",
+    "rate-limiting",
+    "fastapi",
+    "pydantic",
+    "cors",
+    "sql-injection",
+    "mass-assignment",
+    "audit-logging"
+  ],
+  "files": [
+    "token_bucket_limiter.py",
+    "redis_rate_limiter.py",
+    "tiered_limiter.py",
+    "pydantic_validation.py",
+    "file_upload_validation.py",
+    "cors_config.py",
+    "sql_injection_prevention.py",
+    "mass_assignment_protection.py",
+    "gateway_middleware.py",
+    "pagination_security.py",
+    "audit_logging.py",
+    "test_api_security.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

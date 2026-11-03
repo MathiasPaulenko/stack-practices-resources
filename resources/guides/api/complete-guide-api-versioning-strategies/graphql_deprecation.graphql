@@ -1,0 +1,6 @@
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  username: String @deprecated(reason: "Use email instead")
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Complete Guide to AWS Lambda in Production",
+  "title_es": "Guía Completa de AWS Lambda en Producción",
+  "description": "Runnable Lambda production building blocks: cold-start init instrumentation, structured JSON logging, X-Ray subsegments, RDS Proxy connection handling, Secrets Manager caching, SQS batch handlers with partial failures, idempotency keys, and a SAM template with canary deploy + rollback alarms.",
+  "description_es": "Bloques ejecutables de Lambda en producción: instrumentación de cold start, logging JSON estructurado, subsegmentos X-Ray, manejo de conexiones vía RDS Proxy, caché de Secrets Manager, handlers SQS por lotes con fallos parciales, claves de idempotencia y plantilla SAM con canary + alarmas de rollback.",
+  "type": "guides",
+  "topic": "serverless",
+  "slug": "complete-guide-aws-lambda-production",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-aws-lambda-production/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-aws-lambda-production/"
+  },
+  "language": [
+    "python",
+    "yaml",
+    "bash"
+  ],
+  "tags": [
+    "aws-lambda",
+    "serverless",
+    "cold-start",
+    "rds-proxy",
+    "xray",
+    "observability",
+    "idempotency",
+    "sam"
+  ],
+  "files": [
+    "cold_start_tracker.py",
+    "structured_logger.py",
+    "rds_proxy_client.py",
+    "secrets_cache.py",
+    "idempotent_handler.py",
+    "sqs_batch_handler.py",
+    "template.yaml",
+    "deploy-canary.sh",
+    "test_lambda_patterns.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

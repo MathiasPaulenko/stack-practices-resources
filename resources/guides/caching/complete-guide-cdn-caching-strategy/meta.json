@@ -1,0 +1,41 @@
+{
+  "title": "Complete Guide to CDN Caching Strategy",
+  "title_es": "Guía Completa de Estrategia de Caché en CDN",
+  "description": "Runnable CDN caching building blocks: nginx header matrix, Cloudflare Worker cache-key normalizer, surrogate-key purge clients for Fastly/Cloudflare, event-driven invalidation hook, cache-hit-ratio calculator and multi-CDN DNS failover script.",
+  "description_es": "Bloques ejecutables de caché en CDN: matriz de headers para nginx, Worker de Cloudflare normalizador de claves, clientes de purga por surrogate keys para Fastly/Cloudflare, hook de invalidación por eventos, calculadora de hit ratio y script de failover DNS multi-CDN.",
+  "type": "guides",
+  "topic": "caching",
+  "slug": "complete-guide-cdn-caching-strategy",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-cdn-caching-strategy/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-cdn-caching-strategy/"
+  },
+  "language": [
+    "nginx",
+    "javascript",
+    "python",
+    "bash"
+  ],
+  "tags": [
+    "cdn",
+    "caching",
+    "edge",
+    "cache-keys",
+    "surrogate-keys",
+    "cloudflare",
+    "fastly",
+    "invalidation"
+  ],
+  "files": [
+    "nginx-cache-headers.conf",
+    "worker-cache-key-normalizer.js",
+    "surrogate_key_purge.py",
+    "event_purge.py",
+    "hit_ratio.py",
+    "cdn_failover.sh",
+    "test_hit_ratio.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

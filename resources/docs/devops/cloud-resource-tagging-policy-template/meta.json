@@ -1,0 +1,21 @@
+{
+  "title": "Cloud Resource Tagging Policy — Runnable Tools",
+  "title_es": "Política de Etiquetado de Recursos Cloud — Herramientas ejecutables",
+  "description": "Companion tools for the tagging policy template: a Python script that scans EC2/S3/RDS for missing required tags (with NoSuchTagSet handling), and a Terraform locals pattern that enforces a lowercase-hyphen required-tag set on AWS resources.",
+  "description_es": "Herramientas companion de la plantilla de política de etiquetado: un script Python que escanea EC2/S3/RDS en busca de etiquetas requeridas faltantes (con manejo de NoSuchTagSet) y un patrón de Terraform locals que impone etiquetas obligatorias en minúsculas con guiones.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "cloud-resource-tagging-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/cloud-resource-tagging-policy-template/",
+    "https://stackpractices.com/es/docs/cloud-resource-tagging-policy-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["tagging", "governance", "cost-management", "policy", "terraform", "boto3"],
+  "files": [
+    "src/detect-untagged.py",
+    "src/tag-policy.tf",
+    "README.md",
+    "README.es.md"
+  ]
+}

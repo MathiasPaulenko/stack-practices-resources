@@ -1,0 +1,22 @@
+{
+  "title": "Claim Check Pattern — Runnable Implementations",
+  "title_es": "Patrón Claim Check — Implementaciones ejecutables",
+  "description": "Runnable claim check simulation in three languages (Python, JavaScript, Java): in-memory blob storage, a lightweight broker, and a producer/consumer pair that exchanges a 1MB+ report through a claim token.",
+  "description_es": "Simulación ejecutable de claim check en tres lenguajes (Python, JavaScript, Java): blob storage en memoria, un broker ligero y una pareja productor/consumidor que intercambia un reporte de 1MB+ mediante un token.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "claim-check-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/claim-check-pattern/",
+    "https://stackpractices.com/es/patterns/claim-check-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["claim-check", "messaging", "pattern", "storage", "payload", "broker"],
+  "files": [
+    "src/claim_check.py",
+    "src/claim-check.js",
+    "src/ClaimCheck.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

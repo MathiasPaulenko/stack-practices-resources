@@ -1,0 +1,42 @@
+{
+  "title": "Complete Guide to Authentication Patterns",
+  "title_es": "Guía Completa de Patrones de Autenticación",
+  "description": "Runnable authentication building blocks: JWT service with RS256, refresh token rotation with revocation, Redis session manager with absolute TTL, OAuth2 Authorization Code client, WebAuthn passkeys, TOTP MFA with hashed backup codes, and an ABAC policy evaluator.",
+  "description_es": "Bloques de autenticación ejecutables: servicio JWT con RS256, rotación de refresh tokens con revocación, gestor de sesiones Redis con TTL absoluto, cliente OAuth2 Authorization Code, passkeys WebAuthn, MFA TOTP con códigos de respaldo hasheados y evaluador de políticas ABAC.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-authentication-patterns",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-authentication-patterns/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-authentication-patterns/"
+  },
+  "language": [
+    "python"
+  ],
+  "tags": [
+    "authentication",
+    "jwt",
+    "oauth2",
+    "sessions",
+    "passkeys",
+    "webauthn",
+    "mfa",
+    "rbac",
+    "abac",
+    "oidc"
+  ],
+  "files": [
+    "jwt_service.py",
+    "token_rotation.py",
+    "session_manager.py",
+    "oauth2_client.py",
+    "passkey_manager.py",
+    "mfa_service.py",
+    "abac_evaluator.py",
+    "oidc_provider.py",
+    "test_authentication.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

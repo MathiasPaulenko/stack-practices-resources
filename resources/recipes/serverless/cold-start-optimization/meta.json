@@ -1,0 +1,24 @@
+{
+  "title": "Cold Start Optimization: AWS Lambda, Azure, Cloud Run",
+  "title_es": "Optimización de Cold Start: AWS Lambda, Azure, Cloud Run",
+  "description": "Runnable companion for the multi-cloud cold start recipe: Terraform provisioned concurrency, SnapStart Java handler, Azure Premium deploy, Cloud Run min instances and Python lazy init.",
+  "description_es": "Proyecto ejecutable complementario de la receta multi-cloud de cold start: Terraform de concurrencia aprovisionada, handler Java para SnapStart, deploy Azure Premium, instancias mínimas en Cloud Run e init lazy en Python.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "cold-start-optimization",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cold-start-optimization/",
+    "https://stackpractices.com/es/recipes/cold-start-optimization/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["aws", "lambda", "azure-functions", "cloud-run", "cold-start", "serverless", "snapstart"],
+  "files": [
+    "src/provisioned-concurrency.tf",
+    "src/OrderHandler.java",
+    "src/azure-premium-deploy.sh",
+    "src/deploy-cloudrun.sh",
+    "src/lazy-init.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

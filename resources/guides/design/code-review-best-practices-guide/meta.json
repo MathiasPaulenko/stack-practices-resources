@@ -1,0 +1,21 @@
+{
+  "title": "Code Review Best Practices — Checklists and Comment Examples",
+  "title_es": "Mejores Prácticas de Code Review — Checklists y ejemplos de comentarios",
+  "description": "Printable review checklist by change category (functionality, design, readability, testing, security, performance) plus BAD/GOOD review-comment examples ready to paste into PR templates or team wikis.",
+  "description_es": "Checklist de revisión imprimible por categoría (funcionalidad, diseño, legibilidad, testing, seguridad, rendimiento) más ejemplos de comentarios BIEN/MAL listos para pegar en plantillas de PR o wikis del equipo.",
+  "type": "guides",
+  "topic": "design",
+  "slug": "code-review-best-practices-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/code-review-best-practices-guide/",
+    "https://stackpractices.com/es/guides/code-review-best-practices-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["code-review", "checklist", "pull-request", "best-practices", "template"],
+  "files": [
+    "src/review-checklist.md",
+    "src/comment-examples.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

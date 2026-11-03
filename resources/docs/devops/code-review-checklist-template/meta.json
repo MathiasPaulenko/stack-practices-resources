@@ -1,0 +1,30 @@
+{
+  "title": "Code Review Checklist Template — Companion Files",
+  "title_es": "Plantilla de Checklist para Code Review — Archivos Companion",
+  "description": "Standalone files from the code review checklist template: the copy-paste markdown checklist, a GitHub Actions workflow with CodeQL and PR-size checks, a Python checklist validator, and a review metrics script.",
+  "description_es": "Archivos independientes de la plantilla de checklist de code review: la checklist en markdown lista para copiar, un workflow de GitHub Actions con CodeQL y verificación de tamaño de PR, un validador de checklist en Python y un script de métricas de revisión.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "code-review-checklist-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/code-review-checklist-template/",
+    "https://stackpractices.com/es/docs/code-review-checklist-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "code-review",
+    "checklist",
+    "devops",
+    "github-actions",
+    "codeql",
+    "python"
+  ],
+  "files": [
+    "src/code-review-checklist.md",
+    "src/code-review-automation.yml",
+    "src/pr-checklist-validator.py",
+    "src/review-metrics.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

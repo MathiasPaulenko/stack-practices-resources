@@ -1,0 +1,41 @@
+{
+  "title": "Apache Airflow: DAGs, Operators, Scheduling",
+  "title_es": "Apache Airflow: DAGs, Operadores y Scheduling",
+  "description": "Runnable Airflow DAG examples: classic and TaskFlow ETL, operators, branching, sensors, XCom patterns, scheduling, pools, connections/variables, and DagBag CI tests.",
+  "description_es": "Ejemplos DAG de Airflow ejecutables: ETL clásico y TaskFlow, operadores, branching, sensores, patrones XCom, scheduling, pools, connections/variables y tests DagBag para CI.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "complete-guide-apache-airflow",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-apache-airflow/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-apache-airflow/"
+  },
+  "language": [
+    "python"
+  ],
+  "tags": [
+    "airflow",
+    "dag",
+    "etl",
+    "taskflow",
+    "sensors",
+    "xcom",
+    "scheduling",
+    "data-engineering"
+  ],
+  "files": [
+    "core_dag.py",
+    "taskflow_dag.py",
+    "common_operators.py",
+    "branching_dag.py",
+    "sensors.py",
+    "xcom_patterns.py",
+    "scheduled_dag.py",
+    "connections_variables.py",
+    "pool_example.py",
+    "test_dags.py",
+    "docker-compose.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Complete Guide to AI Agents in Production",
+  "title_es": "Guía Completa de Agentes de IA en Producción",
+  "description": "Runnable AI agent skeletons: ReAct loop, plan-and-execute, supervisor and collaborative multi-agent, short/long-term memory, human-in-the-loop approvals, safety layer, and run tracing.",
+  "description_es": "Esqueletos ejecutables de agentes de IA: bucle ReAct, plan-and-execute, supervisor y multi-agente colaborativo, memoria de corto/largo plazo, aprobaciones human-in-the-loop, capa de seguridad y trazado.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-ai-agents-production",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-ai-agents-production/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-ai-agents-production/"
+  },
+  "language": [
+    "python"
+  ],
+  "tags": [
+    "ai-agents",
+    "react-pattern",
+    "multi-agent",
+    "function-calling",
+    "human-in-the-loop",
+    "observability",
+    "safety",
+    "openai"
+  ],
+  "files": [
+    "react_agent.py",
+    "plan_execute_agent.py",
+    "supervisor_agent.py",
+    "collaborative_agents.py",
+    "short_term_memory.py",
+    "long_term_memory.py",
+    "human_in_the_loop.py",
+    "safety_layer.py",
+    "agent_trace.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

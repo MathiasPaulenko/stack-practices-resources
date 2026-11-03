@@ -1,0 +1,22 @@
+{
+  "title": "Command Pattern — Companion Files",
+  "title_es": "Patrón Command — Archivos Companion",
+  "description": "Runnable companion for the Command pattern: a JobQueue invoker with undo history, SendEmailCommand and EmailService receiver in Python, JavaScript and Java.",
+  "description_es": "Proyecto ejecutable complementario del patrón Command: un invoker JobQueue con historial de undo, SendEmailCommand y receiver EmailService en Python, JavaScript y Java.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "command-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/command-pattern/",
+    "https://stackpractices.com/es/patterns/command-pattern/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["command", "design-pattern", "behavioral", "undo", "job-queue", "python", "javascript", "java"],
+  "files": [
+    "src/command_queue.py",
+    "src/command_queue.js",
+    "src/CommandQueue.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
