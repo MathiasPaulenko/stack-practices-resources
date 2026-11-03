@@ -1,0 +1,13 @@
+{
+  "title": "CI/CD Pipeline Setup — Companion Code",
+  "title_es": "Configuración de Pipelines CI/CD — Código complementario",
+  "description": "Ready-to-adapt CI/CD workflows from the recipe: GitHub Actions test+security+deploy pipeline, GitLab CI equivalent, multi-environment gates, Docker build, blue-green and canary deploys.",
+  "description_es": "Workflows CI/CD listos para adaptar de la receta: pipeline de GitHub Actions con test+seguridad+deploy, equivalente en GitLab CI, gates multi-entorno, build Docker y despliegues blue-green y canary.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "cicd-pipeline-setup",
+  "source_urls": ["https://stackpractices.com/recipes/cicd-pipeline-setup/", "https://stackpractices.com/es/recipes/cicd-pipeline-setup/"],
+  "language": "bilingual",
+  "tags": ["ci-cd","github-actions","gitlab-ci","deployment","blue-green","canary","docker","automation"],
+  "files": ["ci/deploy.yml", "ci/gitlab-ci.yml", "ci/blue-green.yml", "ci/rollout-canary.yaml"]
+}

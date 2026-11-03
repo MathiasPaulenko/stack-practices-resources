@@ -1,0 +1,25 @@
+{
+  "title": "Chaos Engineering — Fault Injection Scripts and Game Day Kit",
+  "title_es": "Chaos Engineering — Scripts de inyección de fallos y kit de game day",
+  "description": "Runnable chaos engineering assets: Litmus ChaosEngine manifest, tc latency injection, Toxiproxy network chaos, Gremlin attacks, a steady-state SLO checker in Python and a game day runbook template.",
+  "description_es": "Recursos ejecutables de chaos engineering: manifiesto Litmus ChaosEngine, inyección de latencia con tc, caos de red con Toxiproxy, ataques Gremlin, verificador de steady state SLO en Python y plantilla de runbook de game day.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "chaos-engineering",
+  "source_urls": [
+    "https://stackpractices.com/recipes/chaos-engineering/",
+    "https://stackpractices.com/es/recipes/chaos-engineering/"
+  ],
+  "language": "bilingual",
+  "tags": ["chaos-engineering", "resilience", "fault-injection", "litmus", "toxiproxy", "gremlin", "kubernetes", "devops"],
+  "files": [
+    "src/litmus-pod-delete.yaml",
+    "src/inject-latency.sh",
+    "src/toxiproxy-setup.sh",
+    "src/gremlin-attacks.sh",
+    "src/steady-state-check.py",
+    "src/game-day-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

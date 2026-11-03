@@ -1,0 +1,31 @@
+{
+  "title": "CI/CD Pipeline Design Template — Companion Code",
+  "title_es": "Plantilla de Diseño de Pipeline CI/CD — Código complementario",
+  "description": "CI/CD pipeline design kit: a fill-in design document with stage and gate tables, a complete GitHub Actions workflow implementing the design, a GitLab CI equivalent, and a tested rollback script.",
+  "description_es": "Kit de diseño de pipeline CI/CD: documento de diseño rellenable con tablas de etapas y gates, un workflow completo de GitHub Actions que implementa el diseño, su equivalente en GitLab CI y un script de rollback probado.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "ci-cd-pipeline-design-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/ci-cd-pipeline-design-template/",
+    "https://stackpractices.com/es/docs/ci-cd-pipeline-design-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "ci-cd",
+    "github-actions",
+    "gitlab-ci",
+    "kubernetes",
+    "blue-green",
+    "canary",
+    "rollback",
+    "devops",
+    "template"
+  ],
+  "files": [
+    "pipeline/ci-cd-pipeline-design-template.md",
+    "ci/github-actions-pipeline.yml",
+    "ci/gitlab-ci.yml",
+    "scripts/rollback.sh"
+  ]
+}

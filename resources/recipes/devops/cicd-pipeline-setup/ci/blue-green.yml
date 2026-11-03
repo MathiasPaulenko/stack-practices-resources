@@ -1,0 +1,34 @@
+# .github/workflows/blue-green.yml
+deploy:
+  needs: [test, security]
+  runs-on: ubuntu-latest
+  if: github.ref == 'refs/heads/main'
+  steps:
+    - uses: actions/checkout@v4
+    - name: Determine active environment
+      id: active
+      run: |
+        ACTIVE=$(kubectl get service app -o jsonpath='{.spec.selector.color}')
+        echo "active=$ACTIVE" >> $GITHUB_OUTPUT
+        if [ "$ACTIVE" = "blue" ]; then
+          echo "target=green" >> $GITHUB_OUTPUT
+        else
+          echo "target=blue" >> $GITHUB_OUTPUT
+        fi
+    - name: Deploy to inactive environment
+      run: |
+        kubectl set image deployment/app-${{ steps.active.outputs.target }} \
+          app=ghcr.io/org/app:${{ github.sha }}
+        kubectl rollout status deployment/app-${{ steps.active.outputs.target }}
+    - name: Switch traffic
+      run: |
+        kubectl patch service app -p \
+          '{"spec":{"selector":{"color":"${{ steps.active.outputs.target }}"}}}'
+    - name: Run smoke tests
+      run: |
+        ./scripts/smoke-test.sh https://example.com/health
+        if [ $? -ne 0 ]; then
+          kubectl patch service app -p \
+            '{"spec":{"selector":{"color":"${{ steps.active.outputs.active }}"}}}'
+          exit 1
+        fi

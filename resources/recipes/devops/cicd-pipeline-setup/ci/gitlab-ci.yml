@@ -1,0 +1,26 @@
+# .gitlab-ci.yml
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  NODE_VERSION: "20"
+
+test:
+  stage: test
+  image: node:$NODE_VERSION
+  script:
+    - npm ci
+    - npm run test:ci
+  coverage: '/All files[^|]\|[^|]\s+([\d.]+)/'
+
+deploy_prod:
+  stage: deploy
+  script:
+    - npm run deploy:production
+  only:
+    - main
+  environment:
+    name: production
+    url: https://api.example.com

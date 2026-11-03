@@ -1,0 +1,22 @@
+{
+  "title": "Chain of Responsibility Pattern — Runnable Implementations",
+  "title_es": "Patrón Chain of Responsibility — Implementaciones ejecutables",
+  "description": "Runnable Chain of Responsibility handler chain in Python, JavaScript and Java: auth, rate-limit and data handlers with fluent setNext wiring, short-circuit rejections (401/429) and a default fall-through case.",
+  "description_es": "Cadena de handlers Chain of Responsibility ejecutable en Python, JavaScript y Java: handlers de auth, rate limit y datos con encadenamiento fluido setNext, rechazos por cortocircuito (401/429) y caso final por defecto.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "chain-of-responsibility-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/chain-of-responsibility-pattern/",
+    "https://stackpractices.com/es/patterns/chain-of-responsibility-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["chain-of-responsibility", "design-pattern", "behavioral", "python", "javascript", "java", "handler-chain", "gof"],
+  "files": [
+    "src/chain.py",
+    "src/chain.js",
+    "src/Chain.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

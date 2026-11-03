@@ -1,0 +1,22 @@
+{
+  "title": "CDC Pattern — Debezium, Kafka and Consumer Examples",
+  "title_es": "Patrón CDC — Debezium, Kafka y Ejemplos de Consumidor",
+  "description": "Runnable CDC stack: docker-compose with PostgreSQL, Kafka and Debezium, connector config, a Python consumer syncing Elasticsearch, an outbox relay, and a reconciliation checker.",
+  "description_es": "Stack CDC ejecutable: docker-compose con PostgreSQL, Kafka y Debezium, configuración del conector, un consumidor Python que sincroniza Elasticsearch, un relay de outbox y un verificador de reconciliación.",
+  "type": "patterns",
+  "topic": "data",
+  "slug": "cdc-change-data-capture-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/cdc-change-data-capture-pattern/",
+    "https://stackpractices.com/es/patterns/cdc-change-data-capture-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["cdc", "debezium", "kafka", "postgres", "outbox", "streaming"],
+  "files": [
+    "docker-compose.yml",
+    "register-postgres-connector.json",
+    "src/cdc_consumer.py",
+    "src/outbox_relay.py",
+    "src/reconciliation.py"
+  ]
+}

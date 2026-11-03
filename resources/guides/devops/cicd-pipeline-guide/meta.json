@@ -1,0 +1,13 @@
+{
+  "title": "CI/CD Pipeline Guide — Companion Code",
+  "title_es": "Guía de Pipelines CI/CD — Código complementario",
+  "description": "Production-ready CI/CD kit: a GitHub Actions pipeline with test/security gates, staging and approval-gated production deploys, plus a tested rollback script.",
+  "description_es": "Kit CI/CD listo para producción: pipeline de GitHub Actions con gates de test/seguridad, despliegue a staging y producción con aprobación, más un script de rollback probado.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "cicd-pipeline-guide",
+  "source_urls": ["https://stackpractices.com/guides/cicd-pipeline-guide/", "https://stackpractices.com/es/guides/cicd-pipeline-guide/"],
+  "language": "bilingual",
+  "tags": ["ci-cd","github-actions","pipeline","deployment","rollback","devops","github-actions-workflow"],
+  "files": ["ci/cicd-pipeline.yml", "scripts/rollback.sh"]
+}

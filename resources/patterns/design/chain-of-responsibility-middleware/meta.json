@@ -1,0 +1,23 @@
+{
+  "title": "Chain of Responsibility Middleware — Runnable Implementations",
+  "title_es": "Middleware Chain of Responsibility — Implementaciones ejecutables",
+  "description": "Runnable middleware pipeline in TypeScript and JavaScript: class-based handler chain (auth, rate limit, validation, logging) plus an Express/Koa-style compose() dispatch loop with short-circuit and double-next guard.",
+  "description_es": "Pipeline de middleware ejecutable en TypeScript y JavaScript: cadena de handlers basada en clases (auth, rate limit, validación, logging) más un dispatch estilo Express/Koa con cortocircuito y guarda de double-next.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "chain-of-responsibility-middleware",
+  "source_urls": [
+    "https://stackpractices.com/patterns/chain-of-responsibility-middleware/",
+    "https://stackpractices.com/es/patterns/chain-of-responsibility-middleware/"
+  ],
+  "language": "bilingual",
+  "tags": ["chain-of-responsibility", "middleware", "pipeline", "express", "koa", "typescript", "nodejs", "design-pattern"],
+  "files": [
+    "src/middleware-chain.js",
+    "src/express-compose.js",
+    "src/middleware-chain.ts",
+    "src/AuthFilter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

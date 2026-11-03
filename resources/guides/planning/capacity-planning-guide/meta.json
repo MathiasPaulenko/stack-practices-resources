@@ -1,0 +1,19 @@
+{
+  "title": "Capacity Planning — Load Test and Bottleneck Analyzer",
+  "title_es": "Planificación de Capacidad — Prueba de Carga y Analizador de Cuellos de Botella",
+  "description": "Runnable k6 load test script and a Python bottleneck analyzer that computes per-resource headroom and identifies which resource saturates first.",
+  "description_es": "Script ejecutable de prueba de carga con k6 y un analizador de cuellos de botella en Python que calcula el margen por recurso e identifica cuál se satura primero.",
+  "type": "guides",
+  "topic": "planning",
+  "slug": "capacity-planning-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/capacity-planning-guide/",
+    "https://stackpractices.com/es/guides/capacity-planning-guide/"
+  ],
+  "language": "multi",
+  "tags": ["capacity-planning", "k6", "load-testing", "python", "devops", "forecasting"],
+  "files": [
+    "src/capacity-test.js",
+    "src/bottleneck_analyzer.py"
+  ]
+}

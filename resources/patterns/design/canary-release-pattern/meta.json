@@ -1,0 +1,22 @@
+{
+  "title": "Canary Release Pattern — Runnable Implementations",
+  "title_es": "Patrón Canary Release — Implementaciones ejecutables",
+  "description": "Runnable canary release simulation in three languages (Python, JavaScript, Java): staged traffic shifting, health-metric gates per stage, automatic rollback and final promotion to stable.",
+  "description_es": "Simulación ejecutable de un canary release en tres lenguajes (Python, JavaScript, Java): reparto gradual del tráfico, puertas de métricas de salud por etapa, rollback automático y promoción final a estable.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "canary-release-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/canary-release-pattern/",
+    "https://stackpractices.com/es/patterns/canary-release-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["canary", "deployment", "progressive-delivery", "rollback", "pattern", "devops"],
+  "files": [
+    "src/canary_release.py",
+    "src/canary-release.js",
+    "src/CanaryRelease.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

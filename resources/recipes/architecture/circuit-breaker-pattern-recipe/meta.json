@@ -1,0 +1,27 @@
+{
+  "title": "Circuit Breaker Pattern Recipe — Companion Code",
+  "title_es": "Receta del Patrón Circuit Breaker — Código complementario",
+  "description": "Runnable circuit breaker implementations in multiple languages from the recipe, with state machine, fallback hooks, and half-open probes.",
+  "description_es": "Implementaciones ejecutables del circuit breaker en varios lenguajes de la receta, con máquina de estados, fallbacks y pruebas half-open.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "circuit-breaker-pattern-recipe",
+  "source_urls": [
+    "https://stackpractices.com/recipes/circuit-breaker-pattern-recipe/",
+    "https://stackpractices.com/es/recipes/circuit-breaker-pattern-recipe/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "circuit-breaker",
+    "resilience",
+    "microservices",
+    "fault-tolerance",
+    "fallback",
+    "patterns"
+  ],
+  "files": [
+    "impl/circuit-breaker.py",
+    "impl/circuit-breaker.java",
+    "impl/circuit-breaker.ts"
+  ]
+}

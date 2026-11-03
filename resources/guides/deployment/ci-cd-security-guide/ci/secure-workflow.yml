@@ -1,0 +1,62 @@
+# Hardened GitHub Actions workflow from the CI/CD Security Guide.
+# Demonstrates: SHA-pinned actions, minimal permissions, OIDC auth,
+# Trivy scanning, cosign signing, environment approval.
+name: Secure CI/CD
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.build.outputs.image }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+      - name: Build container
+        id: build
+        run: |
+          docker build -t app:${{ github.sha }} .
+          echo "image=app:${{ github.sha }}" >> $GITHUB_OUTPUT
+      - name: Scan with Trivy
+        run: trivy image --exit-code 1 --severity HIGH,CRITICAL app:${{ github.sha }}
+      - name: Sign with cosign
+        env:
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_KEY }}
+        run: cosign sign --key env://COSIGN_PRIVATE_KEY registry.example.com/app:${{ github.sha }}
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+      - name: SAST with Semgrep
+        run: semgrep ci --config=p/owasp-top-ten
+      - name: Dependency scan
+        run: npm audit --audit-level=high
+      - name: Secret scanning
+        run: trivy fs --scanners secret .
+
+  deploy:
+    needs: [build, test]
+    runs-on: ubuntu-latest
+    environment: production   # manual approval gate
+    permissions:
+      contents: read
+      id-token: write          # OIDC token for cloud auth
+    steps:
+      - name: Auth AWS with OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::123456789012:role/github-actions
+          aws-region: us-east-1
+      - name: Verify signature and deploy
+        run: |
+          cosign verify --key cosign.pub registry.example.com/app:${{ github.sha }}
+          kubectl set image deployment/app container=registry.example.com/app:${{ github.sha }}
+          kubectl rollout status deployment/app --timeout=5m

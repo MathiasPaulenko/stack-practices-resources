@@ -1,0 +1,16 @@
+{
+  "title": "CI/CD Security Guide — Companion Code",
+  "title_es": "Guía de Seguridad CI/CD — Código complementario",
+  "description": "Hardened CI/CD reference files: a security-hardened GitHub Actions workflow with OIDC, SHA-pinned actions, Trivy scanning, cosign signing, and a runner hardening checklist.",
+  "description_es": "Archivos de referencia CI/CD endurecidos: workflow de GitHub Actions con OIDC, actions fijadas por SHA, escaneo Trivy, firma cosign y checklist de endurecimiento de runners.",
+  "type": "guides",
+  "topic": "deployment",
+  "slug": "ci-cd-security-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/ci-cd-security-guide/",
+    "https://stackpractices.com/es/guides/ci-cd-security-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["ci-cd","security","github-actions","oidc","cosign","trivy","hardening","supply-chain"],
+  "files": ["ci/secure-workflow.yml", "ci/runner-hardening-checklist.md"]
+}

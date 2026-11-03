@@ -1,0 +1,77 @@
+# GitLab CI equivalent of the GitHub Actions pipeline design.
+# Same gates, same order: build -> test/lint/security in parallel ->
+# staging deploy -> integration tests -> manual prod approval.
+
+stages: [build, test, security, package, deploy-staging, integration, deploy-prod]
+
+build:
+  stage: build
+  script:
+    - npm ci --frozen-lockfile
+    - npm run build
+  artifacts:
+    paths: [dist/]
+
+test:unit:
+  stage: test
+  script:
+    - npm ci --frozen-lockfile
+    - npm run test:unit -- --coverage --reporter=json
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+
+lint:
+  stage: test
+  script:
+    - npm ci --frozen-lockfile
+    - npm run lint
+    - npm run format:check
+
+security:
+  stage: security
+  script:
+    - npm ci --frozen-lockfile
+    - npm audit --audit-level=high
+  allow_failure: false
+
+package:
+  stage: package
+  script:
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+
+deploy-staging:
+  stage: deploy-staging
+  environment:
+    name: staging
+    url: https://staging.example.com
+  only: [main]
+  script:
+    - kubectl set image deployment/app app=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --namespace staging
+    - kubectl rollout status deployment/app --namespace staging --timeout=5m
+
+integration-tests:
+  stage: integration
+  script:
+    - npm ci --frozen-lockfile
+    - npx playwright test --project=integration
+  variables:
+    BASE_URL: https://staging.example.com
+
+deploy-prod:
+  stage: deploy-prod
+  environment:
+    name: production
+    url: https://example.com
+  when: manual   # the manual approval gate
+  only: [main]
+  script:
+    # Deploy to green
+    - kubectl set image deployment/app-green app=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA --namespace production
+    - kubectl rollout status deployment/app-green --namespace production --timeout=5m
+    # Smoke tests on green
+    - npm run test:smoke -- --base-url=https://green.example.com
+    # Switch traffic blue -> green
+    - kubectl patch service/app --namespace production -p '{"spec":{"selector":{"version":"green"}}}'
+    # Verify
+    - sleep 60
+    - npm run test:smoke -- --base-url=https://example.com
