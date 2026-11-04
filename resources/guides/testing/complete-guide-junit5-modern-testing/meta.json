@@ -1,0 +1,39 @@
+{
+  "title": "JUnit 5: Extensions, Parameterized Tests, Dynamic Tests",
+  "title_es": "JUnit 5: Extensiones, Tests Parametrizados y Dinámicos",
+  "description": "Runnable JUnit 5 examples: lifecycle, assertions, parameterized tests with CSV/MethodSource, a retry InvocationInterceptor, dynamic tests via @TestFactory, a contract-test interface, and nested tests — with a Maven Surefire setup.",
+  "description_es": "Ejemplos ejecutables de JUnit 5: ciclo de vida, aserciones, tests parametrizados con CSV/MethodSource, un InvocationInterceptor de retry, tests dinámicos con @TestFactory, una interfaz de test de contrato y tests anidados — con configuración Maven Surefire.",
+  "type": "guides",
+  "topic": "testing",
+  "slug": "complete-guide-junit5-modern-testing",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-junit5-modern-testing/",
+    "https://stackpractices.com/es/guides/complete-guide-junit5-modern-testing/"
+  ],
+  "language": "java",
+  "tags": ["testing", "junit5", "java", "maven", "parameterized-tests", "extensions", "dynamic-tests"],
+  "files": [
+    "pom.xml",
+    "src/test/resources/junit-platform.properties",
+    "src/main/java/domain/Calculator.java",
+    "src/main/java/domain/EmailValidator.java",
+    "src/main/java/domain/Order.java",
+    "src/main/java/domain/OrderRequest.java",
+    "src/main/java/domain/OrderService.java",
+    "src/main/java/domain/OrderStatus.java",
+    "src/main/java/domain/Person.java",
+    "src/main/java/domain/ValidationException.java",
+    "src/test/java/LifecycleTest.java",
+    "src/test/java/BasicAssertionsTest.java",
+    "src/test/java/BasicParameterizedTest.java",
+    "src/test/java/RetryExtension.java",
+    "src/test/java/FlakyServiceTest.java",
+    "src/test/java/DynamicTestsTest.java",
+    "src/test/java/ComparableContract.java",
+    "src/test/java/StringComparableTest.java",
+    "src/test/java/NestedOrderServiceTest.java",
+    "src/test/java/TaggedOrderServiceTest.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

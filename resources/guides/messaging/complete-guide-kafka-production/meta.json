@@ -1,0 +1,25 @@
+{
+  "title": "Complete Guide to Apache Kafka in Production",
+  "title_es": "Guía Completa de Apache Kafka en Producción",
+  "description": "Runnable Kafka production configs: KRaft docker-compose cluster, tuned producer/consumer clients, topic creation and health-check scripts.",
+  "description_es": "Configs de producción de Kafka ejecutables: cluster KRaft con docker-compose, clientes producer/consumer tuneados, scripts de creación de topics y health checks.",
+  "type": "guides",
+  "topic": "messaging",
+  "slug": "complete-guide-kafka-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-kafka-production/",
+    "https://stackpractices.com/es/guides/complete-guide-kafka-production/"
+  ],
+  "language": "python",
+  "tags": ["kafka", "messaging", "streaming", "docker", "python", "production"],
+  "files": [
+    "docker-compose.yml",
+    "config/server-production.properties",
+    "config/producer-tuning.py",
+    "config/consumer-tuning.py",
+    "scripts/create-topics.sh",
+    "scripts/check-health.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

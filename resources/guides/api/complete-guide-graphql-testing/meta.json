@@ -1,0 +1,26 @@
+{
+  "title": "Complete Guide to GraphQL Testing",
+  "title_es": "Guía Completa de Testing en GraphQL",
+  "description": "Test suite layout for GraphQL: resolver unit tests, schema integration tests, contract validation, shared mock context, and package scripts for CI layering.",
+  "description_es": "Estructura de suite de tests para GraphQL: tests unitarios de resolvers, integración del esquema, validación de contrato, contexto mock compartido y scripts para CI por capas.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "complete-guide-graphql-testing",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-graphql-testing/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-graphql-testing/"
+  },
+  "language": "multi",
+  "tags": ["graphql", "testing", "vitest", "integration-testing", "contract-testing"],
+  "files": [
+    "package.json",
+    "src/typeDefs.js",
+    "src/resolvers.js",
+    "tests/unit/user.resolver.test.js",
+    "tests/integration/schema.test.js",
+    "tests/contract/persisted-operations.test.js",
+    "tests/helpers/mock-context.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

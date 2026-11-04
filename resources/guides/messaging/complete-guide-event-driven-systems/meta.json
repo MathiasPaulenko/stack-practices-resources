@@ -1,0 +1,22 @@
+{
+  "title": "Complete Guide to Event-Driven Systems",
+  "title_es": "Guía Completa de Sistemas Event-Driven",
+  "description": "Event-driven production patterns: outbox table + relay, saga orchestrator, idempotent consumer with dedup, and a DLQ worker.",
+  "description_es": "Patrones event-driven de producción: tabla outbox + relay, orquestador de saga, consumer idempotente con dedup y worker de DLQ.",
+  "type": "guides",
+  "topic": "messaging",
+  "slug": "complete-guide-event-driven-systems",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-event-driven-systems/",
+    "https://stackpractices.com/es/guides/complete-guide-event-driven-systems/"
+  ],
+  "language": ["python", "sql", "yaml"],
+  "tags": ["event-driven", "event-sourcing", "cqrs", "saga", "outbox", "idempotency", "dlq"],
+  "files": [
+    "outbox.sql",
+    "saga_orchestrator.py",
+    "idempotent_consumer.py",
+    "dlq_worker.py",
+    "docker-compose.yml"
+  ]
+}

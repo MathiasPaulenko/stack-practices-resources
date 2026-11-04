@@ -1,0 +1,45 @@
+# Highly available Apollo Router deployment.
+# The health endpoint lives on port 8088, not the GraphQL port.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: graphql-router
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: graphql-router
+  template:
+    metadata:
+      labels:
+        app: graphql-router
+    spec:
+      containers:
+        - name: router
+          image: ghcr.io/apollographql/router:v1.40.0
+          env:
+            - name: APOLLO_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: apollo-secrets
+                  key: key
+            - name: APOLLO_GRAPH_REF
+              value: my-graph@production
+          ports:
+            - containerPort: 4000
+            - containerPort: 8088
+          livenessProbe:
+            httpGet:
+              path: /health?live
+              port: 8088
+          readinessProbe:
+            httpGet:
+              path: /health?ready
+              port: 8088
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "1"
+              memory: "512Mi"

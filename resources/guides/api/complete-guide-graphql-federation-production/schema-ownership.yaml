@@ -1,0 +1,18 @@
+# Machine-readable schema ownership.
+# Review changes like code; keep deprecated-field removals on a date.
+types:
+  User:
+    owner: team-identity
+    fields:
+      id: team-identity
+      name: team-identity
+      email: team-identity
+      orders: team-commerce
+  Order:
+    owner: team-commerce
+    fields:
+      id: team-commerce
+      total: team-commerce
+      user: team-commerce
+  Product:
+    owner: team-catalog

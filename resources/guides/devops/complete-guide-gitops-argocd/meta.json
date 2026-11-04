@@ -1,0 +1,22 @@
+{
+  "title": "Complete Guide to GitOps with ArgoCD",
+  "title_es": "Guía Completa de GitOps con ArgoCD",
+  "description": "ArgoCD manifests: Application, multi-env ApplicationSet, AppProject RBAC, notifications config, and a Kustomize overlay example.",
+  "description_es": "Manifiestos de ArgoCD: Application, ApplicationSet multi-entorno, AppProject RBAC, config de notificaciones y ejemplo de overlay Kustomize.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-gitops-argocd",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-gitops-argocd/",
+    "https://stackpractices.com/es/guides/complete-guide-gitops-argocd/"
+  ],
+  "language": ["yaml"],
+  "tags": ["gitops", "argocd", "kubernetes", "applicationset", "appproject", "rbac"],
+  "files": [
+    "application.yaml",
+    "applicationset-multi-env.yaml",
+    "appproject-rbac.yaml",
+    "notifications-cm.yaml",
+    "sync-windows.yaml"
+  ]
+}

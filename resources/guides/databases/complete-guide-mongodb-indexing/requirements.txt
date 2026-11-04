@@ -1,0 +1,2 @@
+# Node examples need mongodb driver; decide_index.py is stdlib-only
+# npm: mongodb>=6.0

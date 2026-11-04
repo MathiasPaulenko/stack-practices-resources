@@ -1,0 +1,22 @@
+{
+  "title": "Complete Guide to GraphQL Schema Design",
+  "title_es": "Guía Completa de Diseño de Esquemas GraphQL",
+  "description": "Reference SDL, linter config, and resolver patterns for the schema design guide: interfaces, connections, mutation payloads, and DataLoader batching.",
+  "description_es": "SDL de referencia, config de linter y patrones de resolvers para la guía de diseño de esquemas: interfaces, connections, payloads de mutación y batching con DataLoader.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "complete-guide-graphql-schema-design",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-graphql-schema-design/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-graphql-schema-design/"
+  },
+  "language": "multi",
+  "tags": ["graphql", "schema-design", "connections", "mutations", "dataloader", "deprecation"],
+  "files": [
+    "schema.graphql",
+    ".graphql-schema-linterrc",
+    "resolvers.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,31 @@
+# otel-collector-config.yaml — tail sampling: errors + 10% of the rest
+receivers:
+  otlp:
+    protocols:
+      http:
+      grpc:
+
+processors:
+  tail_sampling:
+    decision_wait: 10s
+    policies:
+      - name: keep-errors
+        type: status_code
+        status_code: { status_codes: [ERROR] }
+      - name: keep-slow
+        type: latency
+        latency: { threshold_ms: 2000 }
+      - name: keep-10-percent
+        type: probabilistic
+        probabilistic: { sampling_percentage: 10 }
+
+exporters:
+  otlphttp:
+    endpoint: http://tempo:4318/v1/traces
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [tail_sampling]
+      exporters: [otlphttp]

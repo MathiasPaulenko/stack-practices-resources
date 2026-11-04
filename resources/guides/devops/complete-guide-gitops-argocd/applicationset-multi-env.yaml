@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: my-app-multi-env
+  namespace: argocd
+spec:
+  generators:
+    - list:
+        elements:
+          - env: dev
+            cluster: https://dev-cluster:6443
+          - env: staging
+            cluster: https://staging-cluster:6443
+          - env: prod
+            cluster: https://prod-cluster:6443
+  template:
+    metadata:
+      name: "my-app-{{env}}"
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/example/my-app-deploy
+        targetRevision: main
+        path: "manifests/{{env}}"
+      destination:
+        server: "{{cluster}}"
+        namespace: my-app
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+          - CreateNamespace=true

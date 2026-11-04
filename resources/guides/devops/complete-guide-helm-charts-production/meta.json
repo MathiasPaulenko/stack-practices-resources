@@ -1,0 +1,26 @@
+{
+  "title": "Helm Charts in Production: Structure, Templating, Registry",
+  "title_es": "Helm Charts en Producción: Estructura, Templating, Registry",
+  "description": "Complete example chart for the Helm production guide: Chart.yaml, layered values, helpers, deployment template, migration hook, and helm-unittest assertions.",
+  "description_es": "Chart de ejemplo completo para la guía de Helm en producción: Chart.yaml, values por capas, helpers, plantilla de deployment, hook de migración y aserciones helm-unittest.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-helm-charts-production",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-helm-charts-production/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-helm-charts-production/"
+  },
+  "language": "multi",
+  "tags": ["helm", "kubernetes", "charts", "templating", "oci", "production"],
+  "files": [
+    "Chart.yaml",
+    "values.yaml",
+    "values-prod.yaml",
+    "templates/_helpers.tpl",
+    "templates/deployment.yaml",
+    "templates/hooks/post-install-job.yaml",
+    "tests/deployment_test.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

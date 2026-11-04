@@ -1,0 +1,23 @@
+# Baseline isolation: deny all ingress and egress in the namespace.
+# WARNING: the egress deny also blocks DNS — pair it with an explicit
+# allow for UDP and TCP port 53 to kube-system (see micro-segmentation.yaml).
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-ingress
+  namespace: production
+spec:
+  podSelector: {}  # All pods in the namespace
+  policyTypes:
+    - Ingress
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-egress
+  namespace: production
+spec:
+  podSelector: {}
+  policyTypes:
+    - Egress

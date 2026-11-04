@@ -1,0 +1,25 @@
+{
+  "title": "Complete Guide to AWS Cost Optimization",
+  "title_es": "Guía Completa de Optimización de Costos en AWS",
+  "description": "Runnable scripts and configs for AWS cost optimization: S3 lifecycle policy, EC2 Fleet spot config, mixed ASG + VPC endpoints (Terraform), RDS snapshot cleanup, monthly cost report Lambda, Spot interruption checker, and budget alerts.",
+  "description_es": "Scripts y configs ejecutables para la optimización de costos en AWS: política de ciclo de vida de S3, config de EC2 Fleet con Spot, ASG mixto + VPC endpoints (Terraform), limpieza de snapshots de RDS, Lambda de informe mensual de costos, comprobación de interrupciones Spot y alertas de presupuesto.",
+  "type": "guides",
+  "topic": "infrastructure",
+  "slug": "complete-guide-cost-optimization-aws",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-cost-optimization-aws/"
+  ],
+  "language": "bilingual",
+  "tags": ["aws", "cost-optimization", "ec2", "spot-instances", "s3", "rds", "terraform"],
+  "files": [
+    "budget-alert.sh",
+    "s3-lifecycle-policy.json",
+    "ec2-fleet-spot.json",
+    "spot-asg-vpc-endpoints.tf",
+    "spot-interruption-check.py",
+    "rds-snapshot-cleanup.py",
+    "cost-report-lambda.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

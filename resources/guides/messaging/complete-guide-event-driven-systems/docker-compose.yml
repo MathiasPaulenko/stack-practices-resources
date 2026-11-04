@@ -1,0 +1,15 @@
+version: "3.9"
+# Local playground: Redis for dedup keys, Postgres for the outbox table.
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: eda
+      POSTGRES_PASSWORD: eda
+    ports: ["5432:5432"]
+    volumes:
+      - ./outbox.sql:/docker-entrypoint-initdb.d/outbox.sql:ro

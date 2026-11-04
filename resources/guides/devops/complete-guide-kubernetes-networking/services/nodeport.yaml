@@ -1,0 +1,15 @@
+# NodePort Service — static port (30000-32767) on every node IP.
+# Fine for dev clusters or as a target for an external load balancer;
+# avoid direct client access in production (no TLS, no ACL).
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-nodeport
+spec:
+  type: NodePort
+  selector:
+    app: api
+  ports:
+    - port: 80
+      targetPort: 8000
+      nodePort: 30080  # Optional: K8s assigns one if omitted

@@ -1,0 +1,128 @@
+# Reference SDL for the guide "Complete Guide to GraphQL Schema Design"
+# Covers: interfaces, enums, connections, input/payload mutations, deprecation
+
+interface Node {
+  id: ID!
+}
+
+interface Timestamped {
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+scalar DateTime
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+enum ErrorCode {
+  VALIDATION
+  NOT_FOUND
+  UNAUTHORIZED
+  CONFLICT
+  INTERNAL
+}
+
+type User implements Node & Timestamped {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  name: String!
+  email: String
+  avatarUrl: String
+  avatar: String @deprecated(reason: "Use avatarUrl. Removed in v3.")
+  posts(first: Int = 10, after: String): PostConnection!
+}
+
+type Post implements Node & Timestamped {
+  id: ID!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  title: String!
+  body: String!
+  author: User!
+}
+
+type UserConnection {
+  edges: [UserEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type UserEdge {
+  node: User!
+  cursor: String!
+}
+
+type PostConnection {
+  edges: [PostEdge!]!
+  pageInfo: PageInfo!
+}
+
+type PostEdge {
+  node: Post!
+  cursor: String!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+input CreateUserInput {
+  name: String!
+  email: String!
+  role: UserRole = MEMBER
+}
+
+input UpdateUserInput {
+  id: ID!
+  name: String
+  email: String
+  role: UserRole
+}
+
+enum UserRole {
+  ADMIN
+  MEMBER
+}
+
+type UserError {
+  field: String
+  message: String!
+  code: ErrorCode!
+}
+
+type CreateUserPayload {
+  user: User
+  errors: [UserError!]!
+}
+
+type UpdateUserPayload {
+  user: User
+  errors: [UserError!]!
+}
+
+type DeleteUserPayload {
+  deletedId: ID
+  errors: [UserError!]!
+}
+
+type Query {
+  node(id: ID!): Node
+  user(id: ID!): User
+  users(first: Int = 10, after: String): UserConnection!
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): CreateUserPayload!
+  updateUser(input: UpdateUserInput!): UpdateUserPayload!
+  deleteUser(input: DeleteUserInput!): DeleteUserPayload!
+}

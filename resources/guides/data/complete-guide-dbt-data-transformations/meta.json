@@ -1,0 +1,28 @@
+{
+  "title": "dbt: Models, Tests, Macros, Materializations",
+  "title_es": "dbt: Modelos, Tests, Macros y Materializaciones",
+  "description": "A runnable mini dbt project: staging/intermediate/marts models, schema and singular tests, Jinja macros, seeds, and SCD Type 2 snapshots.",
+  "description_es": "Mini proyecto dbt ejecutable: modelos staging/intermediate/marts, tests de esquema y singulares, macros Jinja, seeds y snapshots SCD tipo 2.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "complete-guide-dbt-data-transformations",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-dbt-data-transformations/",
+    "https://stackpractices.com/es/guides/complete-guide-dbt-data-transformations/"
+  ],
+  "language": ["sql", "yaml", "jinja"],
+  "tags": ["dbt", "data-transformations", "sql", "analytics-engineering", "elt", "data-modeling"],
+  "files": [
+    "dbt_project.yml",
+    "packages.yml",
+    "models/staging/sources.yml",
+    "models/staging/schema.yml",
+    "models/staging/stg_orders.sql",
+    "models/intermediate/int_orders_enriched.sql",
+    "models/marts/core/fct_orders.sql",
+    "macros/cents_to_dollars.sql",
+    "seeds/country_codes.csv",
+    "snapshots/snap_customers.sql",
+    "tests/assert_positive_revenue.sql"
+  ]
+}

@@ -1,0 +1,22 @@
+# prometheus.yml — scrape config
+global:
+  scrape_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ["alertmanager:9093"]
+
+rule_files:
+  - alert_rules.yml
+
+scrape_configs:
+  - job_name: "services"
+    metrics_path: "/metrics"
+    static_configs:
+      - targets: ["app:8080"]
+        labels:
+          environment: "production"
+  - job_name: "node-exporter"
+    static_configs:
+      - targets: ["node-exporter:9100"]

@@ -1,0 +1,68 @@
+# Apollo Router production configuration
+# Reference: https://www.apollographql.com/docs/graphos/routing/configuration/yaml
+
+supergraph:
+  listen: 0.0.0.0:4000
+  introspection: false
+  query_planning:
+    cache:
+      in_memory:
+        limit: 512
+
+# Health endpoint for load balancers and Kubernetes probes.
+# GET /health, /health?live, /health?ready
+health_check:
+  listen: 0.0.0.0:8088
+  enabled: true
+
+# Timeouts and request deduplication
+traffic_shaping:
+  router:
+    timeout: 30s
+  all:
+    timeout: 10s
+    deduplicate_query: true
+    compression: br
+
+# Persisted operations with safelisting.
+# Keep log_unknown on for a few weeks before enabling safelist.require_id.
+persisted_queries:
+  enabled: true
+  log_unknown: true
+  safelist:
+    enabled: true
+    require_id: true
+
+# Query cost guardrails
+limits:
+  max_depth: 15
+  max_aliases: 10
+  max_root_fields: 20
+  parser_max_tokens: 15000
+  warn_only: false
+
+# CSRF protection for browser clients
+csrf:
+  required_headers:
+    - x-apollo-operation-name
+    - apollo-require-preflight
+
+# Forward the auth header so subgraphs can authorize
+headers:
+  all:
+    request:
+      - propagate:
+          named: "authorization"
+
+# Surface subgraph error details to clients (scope carefully)
+include_subgraph_errors:
+  all: true
+
+# OpenTelemetry export to a collector
+telemetry:
+  exporters:
+    tracing:
+      otlp:
+        enabled: true
+        endpoint: http://otel-collector:4317
+        protocol: grpc

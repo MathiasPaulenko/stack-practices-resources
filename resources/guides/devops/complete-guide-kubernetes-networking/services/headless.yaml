@@ -1,0 +1,14 @@
+# Headless Service (clusterIP: None) — DNS returns pod IPs directly.
+# Required for StatefulSet pod identity and client-side load balancing
+# (e.g., gRPC clients).
+apiVersion: v1
+kind: Service
+metadata:
+  name: database-headless
+spec:
+  clusterIP: None
+  selector:
+    app: postgres
+  ports:
+    - port: 5432
+      targetPort: 5432

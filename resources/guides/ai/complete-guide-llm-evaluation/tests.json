@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"id": "t1", "input": "What is 2+2?", "expected_output": "4", "min_score": 0.8, "category": "math"},
+    {"id": "t2", "input": "Capital of France?", "expected_output": "Paris", "min_score": 0.7, "category": "geo"},
+    {"id": "t3", "input": "Refund policy?", "expected_output": "30 days money back", "min_score": 0.6, "category": "policy"}
+  ]
+}

@@ -1,0 +1,36 @@
+# AppProject — per-team fence (repos, clusters, namespaces)
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: dev
+  namespace: argocd
+spec:
+  sourceRepos:
+    - 'https://github.com/example/*'
+  destinations:
+    - server: '*'
+      namespace: 'dev-*'
+  clusterResourceWhitelist:
+    - group: ''
+      kind: Namespace
+  syncWindows:
+    - kind: deny
+      schedule: '0 0 * * SAT,SUN'
+      duration: 24h
+      applications: ['*']
+---
+# RBAC — Casbin policy (argocd-rbac-cm)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-rbac-cm
+  namespace: argocd
+data:
+  policy.default: role:readonly
+  policy.csv: |
+    p, role:dev-team, applications, sync, dev/*, allow
+    p, role:dev-team, applications, get, dev/*, allow
+    p, role:dev-team, applications, action/override, dev/*, deny
+    p, role:ops-team, applications, *, */*, allow
+    g, dev-team, role:dev-team
+    g, ops-team, role:ops-team

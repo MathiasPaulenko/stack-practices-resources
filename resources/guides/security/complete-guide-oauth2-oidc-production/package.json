@@ -1,0 +1,19 @@
+{
+  "name": "oauth2-oidc-production",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Runnable OAuth2/OIDC production modules: PKCE, JWKS validation, refresh rotation, scopes, discovery, revocation, introspection.",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "typescript": "^5.5.4"
+  }
+}

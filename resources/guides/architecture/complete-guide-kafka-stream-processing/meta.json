@@ -1,0 +1,34 @@
+{
+  "title": "Complete Guide to Kafka Stream Processing",
+  "title_es": "Guía Completa de Kafka Stream Processing",
+  "description": "Runnable Kafka stream processing setup: 3-broker KRaft cluster plus Schema Registry, a Kafka Streams topology, aiokafka/KafkaJS clients, Connect configs, and topic scripts.",
+  "description_es": "Setup de stream processing con Kafka ejecutable: cluster KRaft de 3 brokers más Schema Registry, una topología Kafka Streams, clientes aiokafka/KafkaJS, configs de Connect y scripts de topics.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "complete-guide-kafka-stream-processing",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-kafka-stream-processing/",
+    "https://stackpractices.com/es/guides/complete-guide-kafka-stream-processing/"
+  ],
+  "language": "java",
+  "tags": [
+    "kafka",
+    "kafka-streams",
+    "kafka-connect",
+    "stream-processing",
+    "docker",
+    "schema-registry"
+  ],
+  "files": [
+    "docker-compose.yml",
+    "src/main/java/OrderStreamProcessor.java",
+    "config/producer-aiokafka.py",
+    "config/consumer-kafkajs.js",
+    "config/producer-avro.py",
+    "config/jdbc-source-connector.json",
+    "config/elasticsearch-sink-connector.json",
+    "scripts/create-topics.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

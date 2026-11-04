@@ -1,0 +1,25 @@
+{
+  "title": "Complete Guide to MongoDB Indexing",
+  "title_es": "Guía Completa de Indexación en MongoDB",
+  "description": "Runnable index workflows from the guide: index creation by query pattern, ESR-ordered compound indexes, partial/TTL/text/wildcard indexes, index-stats audit, hide-before-drop safety, and a decision harness mapping query shapes to index types.",
+  "description_es": "Flujos de índices ejecutables de la guía: creación por patrón de consulta, compuestos ordenados por ESR, parciales/TTL/text/wildcard, auditoría con index-stats, ocultar-antes-de-borrar y un harness de decisión que mapea formas de consulta a tipos de índice.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "complete-guide-mongodb-indexing",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-mongodb-indexing/",
+    "https://stackpractices.com/es/guides/complete-guide-mongodb-indexing/"
+  ],
+  "language": "bilingual",
+  "tags": ["mongodb", "indexing", "esr-rule", "explain-plan", "partial-index", "ttl", "atlas-search", "performance"],
+  "files": [
+    "indexes.js",
+    "explain_plan.js",
+    "index_audit.js",
+    "decide_index.py",
+    "queries.json",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Complete Guide to Observability with the Grafana Stack",
+  "title_es": "Guía Completa de Observabilidad con el Stack de Grafana",
+  "description": "Runnable LGTM stack: one docker-compose with Prometheus, Loki, Tempo, Alloy, Grafana and Alertmanager, Alloy log collection config, datasources/dashboard provisioning with signal correlation, alert rules with SLO burn rate, and OTel instrumentation for Flask and Node.",
+  "description_es": "Stack LGTM ejecutable: un docker-compose con Prometheus, Loki, Tempo, Alloy, Grafana y Alertmanager, config de recolección de logs con Alloy, provisioning de datasources/dashboards con correlación de señales, reglas de alerta con burn rate de SLO e instrumentación OTel para Flask y Node.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "complete-guide-observability-grafana-stack",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-observability-grafana-stack/",
+    "https://stackpractices.com/es/guides/complete-guide-observability-grafana-stack/"
+  ],
+  "language": "yaml",
+  "tags": [
+    "observability",
+    "grafana",
+    "lgtm",
+    "prometheus",
+    "loki",
+    "tempo",
+    "grafana-alloy",
+    "opentelemetry",
+    "docker-compose"
+  ],
+  "files": [
+    "docker-compose.yml",
+    "prometheus.yml",
+    "alert_rules.yml",
+    "alertmanager.yml",
+    "tempo.yaml",
+    "alloy/config.alloy",
+    "grafana/provisioning/datasources/datasources.yml",
+    "grafana/provisioning/dashboards/dashboards.yml",
+    "grafana/dashboards/red-metrics.json",
+    "otel_tracing.py",
+    "otel_tracing.js",
+    "otel-collector-config.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Complete Guide to Docker in Production",
+  "title_es": "Guía Completa de Docker en Producción",
+  "description": "Production Docker assets: multi-stage Dockerfiles, distroless runtime, hardened docker-compose, .dockerignore, and a Trivy scan script.",
+  "description_es": "Assets Docker de producción: Dockerfiles multi-stage, runtime distroless, docker-compose endurecido, .dockerignore y script de escaneo Trivy.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-docker-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-docker-production/",
+    "https://stackpractices.com/es/guides/complete-guide-docker-production/"
+  ],
+  "language": ["dockerfile", "yaml", "bash", "text"],
+  "tags": ["docker", "production", "multi-stage", "distroless", "container-security", "trivy"],
+  "files": [
+    "Dockerfile.python-multi-stage",
+    "Dockerfile.node-multi-stage",
+    "Dockerfile.distroless-go",
+    "docker-compose.prod.yml",
+    ".dockerignore",
+    "scan-image.sh"
+  ]
+}

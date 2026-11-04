@@ -1,0 +1,30 @@
+{
+  "title": "Data Quality Guide",
+  "title_es": "Guía de Calidad de Datos",
+  "description": "Runnable data-quality assets: GX 1.x suite, Pandera schema, Soda checks YAML, Airflow quality-gate DAG, anomaly detection, profiling.",
+  "description_es": "Assets de calidad de datos ejecutables: suite GX 1.x, schema Pandera, checks Soda YAML, DAG Airflow con puertas, detección de anomalías, profiling.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "complete-guide-data-quality",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-data-quality/",
+    "https://stackpractices.com/es/guides/complete-guide-data-quality/"
+  ],
+  "language": "python",
+  "tags": [
+    "data-quality",
+    "great-expectations",
+    "pandera",
+    "soda",
+    "airflow",
+    "validation"
+  ],
+  "files": [
+    "orders_suite.py",
+    "pandera_schemas.py",
+    "orders_checks.yml",
+    "anomaly_detection.py",
+    "pipeline_with_quality.py",
+    "profile_dataset.py"
+  ]
+}

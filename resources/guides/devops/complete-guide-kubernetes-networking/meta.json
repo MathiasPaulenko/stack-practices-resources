@@ -1,0 +1,30 @@
+{
+  "title": "Complete Guide to Kubernetes Networking",
+  "title_es": "Guía Completa de Networking en Kubernetes",
+  "description": "Kubernetes networking manifests from the guide: ClusterIP, NodePort, LoadBalancer and headless Services, NGINX Ingress with cert-manager TLS, layered NetworkPolicies, custom DNS, Istio mTLS and canary routing, plus an ordered debug workflow.",
+  "description_es": "Manifiestos de networking en Kubernetes de la guía: Services ClusterIP, NodePort, LoadBalancer y headless, Ingress NGINX con TLS de cert-manager, NetworkPolicies por capas, DNS personalizado, mTLS y enrutado canary de Istio, más un flujo de depuración ordenado.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-kubernetes-networking",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-kubernetes-networking/",
+    "https://stackpractices.com/es/guides/complete-guide-kubernetes-networking/"
+  ],
+  "language": "bilingual",
+  "tags": ["kubernetes", "networking", "service", "ingress", "network-policy", "cni", "dns", "istio", "mtls"],
+  "files": [
+    "services/clusterip.yaml",
+    "services/nodeport.yaml",
+    "services/loadbalancer-local.yaml",
+    "services/headless.yaml",
+    "ingress/ingress-nginx.yaml",
+    "ingress/ingress-cert-manager.yaml",
+    "network-policies/default-deny.yaml",
+    "network-policies/allow-ingress-controller.yaml",
+    "network-policies/micro-segmentation.yaml",
+    "dns/custom-dns-pod.yaml",
+    "istio/peer-authentication-mtls.yaml",
+    "istio/virtualservice-canary.yaml",
+    "troubleshooting/debug-commands.sh"
+  ]
+}

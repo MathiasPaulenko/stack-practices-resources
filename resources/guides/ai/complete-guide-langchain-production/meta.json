@@ -1,0 +1,24 @@
+{
+  "title": "Complete Guide to LangChain in Production",
+  "title_es": "Guía Completa de LangChain en Producción",
+  "description": "Runnable LangChain project from the guide: LCEL chains, parallel composition, RAG with Chroma, a bounded tool-calling agent, a FastAPI SSE endpoint, and unit tests with FakeListChatModel.",
+  "description_es": "Proyecto LangChain ejecutable de la guía: chains LCEL, composición paralela, RAG con Chroma, agente tool-calling acotado, endpoint FastAPI con SSE y tests unitarios con FakeListChatModel.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-langchain-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-langchain-production/",
+    "https://stackpractices.com/es/guides/complete-guide-langchain-production/"
+  ],
+  "language": "bilingual",
+  "tags": ["langchain", "lcel", "agents", "rag", "streaming", "fastapi", "testing"],
+  "files": [
+    "chain.py",
+    "parallel_chain.py",
+    "rag.py",
+    "agent.py",
+    "app.py",
+    "test_chain.py",
+    "requirements.txt"
+  ]
+}

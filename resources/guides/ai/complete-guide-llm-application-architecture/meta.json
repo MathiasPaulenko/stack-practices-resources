@@ -1,0 +1,25 @@
+{
+  "title": "Complete Guide to LLM Application Architecture",
+  "title_es": "Guía Completa de Arquitectura de Aplicaciones LLM",
+  "description": "Production LLM app layers from the guide: FastAPI SSE endpoint, YAML prompt registry, exact + semantic Redis caches, input/output guardrails, metrics, model router with retry/fallback, and offline unit tests.",
+  "description_es": "Capas de una app LLM en producción de la guía: endpoint FastAPI con SSE, registry de prompts en YAML, cachés exacta y semántica en Redis, guardrails de entrada/salida, métricas, router de modelos con retry/fallback y tests unitarios offline.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-llm-application-architecture",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-llm-application-architecture/",
+    "https://stackpractices.com/es/guides/complete-guide-llm-application-architecture/"
+  ],
+  "language": "bilingual",
+  "tags": ["llm", "architecture", "fastapi", "sse", "caching", "guardrails", "observability", "testing"],
+  "files": [
+    "app.py",
+    "prompts.py",
+    "cache.py",
+    "guardrails.py",
+    "metrics.py",
+    "router.py",
+    "test_layers.py",
+    "requirements.txt"
+  ]
+}

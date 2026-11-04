@@ -1,0 +1,20 @@
+{
+  "TargetCapacitySpecification": {
+    "TotalTargetCapacity": 10,
+    "DefaultTargetCapacityType": "spot"
+  },
+  "LaunchTemplateConfigs": [{
+    "LaunchTemplateSpecification": {
+      "LaunchTemplateId": "lt-0123456789abcdef0",
+      "Version": "$Latest"
+    },
+    "Overrides": [
+      {"InstanceType": "t3.medium", "SubnetId": "subnet-12345678"},
+      {"InstanceType": "t3.large",  "SubnetId": "subnet-87654321"},
+      {"InstanceType": "t3a.medium", "SubnetId": "subnet-12345678"}
+    ]
+  }],
+  "SpotOptions": {
+    "AllocationStrategy": "capacity-optimized"
+  }
+}

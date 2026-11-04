@@ -1,0 +1,26 @@
+{
+  "title": "Complete Guide to LLM Evaluation",
+  "title_es": "Guía Completa de Evaluación de LLM",
+  "description": "Eval suite from the guide: LLM judge + unbiased pairwise, RAGAS runner, regression test suite, CI gate, hallucination checks, A/B z-test + kappa, offline tests.",
+  "description_es": "Suite de evaluación de la guía: LLM judge + pairwise sin sesgo, runner de RAGAS, suite de regresión, gate de CI, chequeos de alucinación, z-test A/B + kappa, tests offline.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-llm-evaluation",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-llm-evaluation/",
+    "https://stackpractices.com/es/guides/complete-guide-llm-evaluation/"
+  ],
+  "language": "bilingual",
+  "tags": ["llm", "evaluation", "ragas", "llm-as-judge", "hallucination", "ab-testing", "ci"],
+  "files": [
+    "judge.py",
+    "ragas_eval.py",
+    "regression_suite.py",
+    "ci_gate.py",
+    "hallucination.py",
+    "ab_test.py",
+    "test_eval.py",
+    "tests.json",
+    "requirements.txt"
+  ]
+}

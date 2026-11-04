@@ -1,0 +1,22 @@
+{
+  "title": "Complete Guide to Java Concurrency",
+  "title_es": "Guía Completa de Concurrencia en Java",
+  "description": "Runnable Java examples: bounded ThreadPoolExecutor with backpressure, graceful shutdown, virtual-thread executor, circuit breaker, and contention tests.",
+  "description_es": "Ejemplos Java ejecutables: ThreadPoolExecutor acotado con backpressure, apagado limpio, executor de virtual threads, circuit breaker y tests de contención.",
+  "type": "guides",
+  "topic": "concurrency",
+  "slug": "complete-guide-java-concurrency",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-java-concurrency/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-java-concurrency/"
+  },
+  "language": "multi",
+  "tags": ["java", "concurrency", "threads", "virtual-threads", "completablefuture", "executorservice"],
+  "files": [
+    "src/ExecutorExamples.java",
+    "src/CircuitBreaker.java",
+    "tests/ConcurrencyTest.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

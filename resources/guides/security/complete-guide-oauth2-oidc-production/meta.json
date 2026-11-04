@@ -1,0 +1,44 @@
+{
+  "title": "OAuth2 and OIDC: Authorization Code, PKCE, Token Validation",
+  "title_es": "OAuth2 y OIDC: flujo con PKCE y validación de tokens",
+  "description": "Runnable TypeScript modules for OAuth2/OIDC in production: PKCE pair generation, authorization URL, callback exchange, JWKS access-token and ID-token validation, refresh rotation, scope middleware, OIDC discovery, client credentials, revocation and introspection.",
+  "description_es": "Módulos TypeScript ejecutables de OAuth2/OIDC en producción: par PKCE, URL de autorización, intercambio en callback, validación de access e ID tokens contra JWKS, rotación de refresh, middleware de scopes, OIDC discovery, client credentials, revocación e introspección.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-oauth2-oidc-production",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-oauth2-oidc-production/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-oauth2-oidc-production/"
+  },
+  "language": [
+    "typescript"
+  ],
+  "tags": [
+    "oauth2",
+    "oidc",
+    "pkce",
+    "jwt",
+    "jwks",
+    "refresh-tokens",
+    "express",
+    "authentication"
+  ],
+  "files": [
+    "pkce.ts",
+    "env.ts",
+    "authorize.ts",
+    "callback.ts",
+    "jwt.ts",
+    "oidc.ts",
+    "refresh.ts",
+    "scopes.ts",
+    "discovery.ts",
+    "clientCredentials.ts",
+    "revoke.ts",
+    "introspect.ts",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

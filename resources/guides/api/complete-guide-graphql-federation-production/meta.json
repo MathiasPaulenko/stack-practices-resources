@@ -1,0 +1,26 @@
+{
+  "title": "GraphQL Federation in Production",
+  "title_es": "GraphQL Federation en Producción",
+  "description": "Production configs for a federated GraphQL deployment: Apollo Router YAML, supergraph composition, Kubernetes manifests, schema checks in CI, and schema ownership.",
+  "description_es": "Configuraciones de producción para un despliegue GraphQL federado: YAML de Apollo Router, composición del supergraph, manifiestos de Kubernetes, checks de esquema en CI y propiedad de esquema.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "complete-guide-graphql-federation-production",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-graphql-federation-production/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-graphql-federation-production/"
+  },
+  "language": "multi",
+  "tags": ["graphql", "federation", "apollo-router", "supergraph", "kubernetes", "production"],
+  "files": [
+    "router.yaml",
+    "supergraph.yaml",
+    "docker-compose.yml",
+    "k8s/deployment.yaml",
+    "schema-ownership.yaml",
+    "src/users-subgraph.js",
+    "ci/check-schema.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,14 @@
+# helm-unittest assertions on rendered manifests
+suite: deployment defaults
+templates:
+  - deployment.yaml
+tests:
+  - it: sets non-root security context
+    asserts:
+      - equal:
+          path: spec.template.spec.containers[0].securityContext.runAsNonRoot
+          value: true
+  - it: sets resource limits
+    asserts:
+      - notIsNull:
+          path: spec.template.spec.containers[0].resources.limits.cpu

@@ -1,0 +1,22 @@
+{
+  "title": "Event Sourcing and CQRS: Event Store, Projections",
+  "title_es": "Event Sourcing y CQRS: Event Store, Proyecciones",
+  "description": "Event sourcing + CQRS implementation: Postgres event store with optimistic concurrency, aggregate root, projections, snapshots, and schema for a banking ledger.",
+  "description_es": "Implementación de event sourcing + CQRS: event store Postgres con optimistic concurrency, aggregate root, proyecciones, snapshots y esquema de un ledger bancario.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "complete-guide-event-sourcing-cqrs",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-event-sourcing-cqrs/",
+    "https://stackpractices.com/es/guides/complete-guide-event-sourcing-cqrs/"
+  ],
+  "language": ["typescript", "sql", "csharp"],
+  "tags": ["event-sourcing", "cqrs", "event-store", "projections", "snapshots", "ddd"],
+  "files": [
+    "event-store-schema.sql",
+    "EventStore.ts",
+    "OrderAggregate.ts",
+    "OrderProjection.ts",
+    "SnapshotStore.ts"
+  ]
+}

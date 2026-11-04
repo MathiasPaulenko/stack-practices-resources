@@ -1,0 +1,13 @@
+[
+  {"id": "q-esr", "query": {"equality": true, "sort": true, "range": true}, "expected_index": "compound (ESR)"},
+  {"id": "q-covered", "query": {"equality": true, "covers_projection": true}, "expected_index": "compound (covered)"},
+  {"id": "q-text-basic", "query": {"text_search": true, "needs_fuzzy": false}, "expected_index": "text"},
+  {"id": "q-text-fuzzy", "query": {"text_search": true, "needs_fuzzy": true}, "expected_index": "atlas_search"},
+  {"id": "q-partial", "query": {"equality": true, "partial": true}, "expected_index": "partial"},
+  {"id": "q-ttl", "query": {"ttl": true}, "expected_index": "ttl"},
+  {"id": "q-geo", "query": {"geo": true}, "expected_index": "2dsphere"},
+  {"id": "q-wildcard", "query": {"dynamic_schema": true}, "expected_index": "wildcard"},
+  {"id": "q-hashed", "query": {"shard_key_even": true}, "expected_index": "hashed"},
+  {"id": "q-single", "query": {"equality": true}, "expected_index": "compound"},
+  {"id": "q-range-only", "query": {"range": true}, "expected_index": "compound"}
+]

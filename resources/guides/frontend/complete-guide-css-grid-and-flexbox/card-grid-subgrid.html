@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Aligned Cards — Subgrid</title>
+<style>
+body { font-family:system-ui,sans-serif; padding:1rem; }
+.product-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:1rem; }
+.product-card { display:grid; grid-template-rows:subgrid; grid-row:span 3; gap:0; border:1px solid #ddd; border-radius:8px; overflow:hidden; }
+.product-card .title { grid-row:1; padding:.75rem; font-weight:600; background:#f8fafc; }
+.product-card .image { grid-row:2; aspect-ratio:16/9; object-fit:cover; width:100%; background:#e2e8f0; }
+.product-card .price { grid-row:3; padding:.75rem; font-size:1.25rem; color:#0369a1; }
+</style></head><body><div class="product-grid">
+<div class="product-card"><div class="title">Short title</div><div class="image"></div><div class="price">9</div></div>
+<div class="product-card"><div class="title">A much longer product title that wraps to two lines</div><div class="image"></div><div class="price">29</div></div>
+<div class="product-card"><div class="title">Medium product</div><div class="image"></div><div class="price">9</div></div>
+</div></body></html>

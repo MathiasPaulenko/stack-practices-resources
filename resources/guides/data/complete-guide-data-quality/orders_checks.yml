@@ -1,0 +1,17 @@
+checks for orders:
+  - row_count > 0
+  - row_count < 1000000
+  - missing_count(order_id) = 0
+  - duplicate_count(order_id) = 0
+  - missing_count(customer_id) = 0
+  - invalid_count(email) = 0:
+      valid regex: ^[^@]+@[^@]+\.[^@]+$
+  - invalid_count(status) = 0:
+      valid values: [pending, processing, shipped, completed, cancelled]
+  - min(total_amount) >= 0
+  - schema:
+      warn: when forbidden column present [ssn, credit_card_number]
+      fail: when required column missing [order_id, customer_id, status]
+  - freshness(created_at) < 1d
+  - anomaly_score for row_count:
+      default threshold: 3

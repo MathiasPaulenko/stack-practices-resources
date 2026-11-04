@@ -1,0 +1,26 @@
+# mTLS posture with Istio PeerAuthentication: STRICT for the namespace,
+# PERMISSIVE on port 9090 so Prometheus can scrape without mesh certs.
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: production
+spec:
+  mtls:
+    mode: STRICT
+
+---
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: api-mtls
+  namespace: production
+spec:
+  selector:
+    matchLabels:
+      app: api
+  mtls:
+    mode: STRICT
+  portLevelMtls:
+    9090:
+      mode: PERMISSIVE  # Plaintext scrape endpoint during migration

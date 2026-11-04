@@ -1,0 +1,34 @@
+{
+  "title": "Kubernetes Config Management Guide",
+  "title_es": "Guía de Gestión de Configuración en Kubernetes",
+  "description": "Runnable Kubernetes config management manifests: ConfigMap, Secret, Deployment with env+volume injection, ExternalSecret, scoped RBAC, and a kind cluster setup script.",
+  "description_es": "Manifiestos ejecutables de gestión de configuración en Kubernetes: ConfigMap, Secret, Deployment con inyección env+volumen, ExternalSecret, RBAC acotado y script de cluster kind.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-kubernetes-config-management",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-kubernetes-config-management/",
+    "https://stackpractices.com/es/guides/complete-guide-kubernetes-config-management/"
+  ],
+  "language": "yaml",
+  "tags": [
+    "kubernetes",
+    "configmap",
+    "secrets",
+    "external-secrets",
+    "sealed-secrets",
+    "devops"
+  ],
+  "files": [
+    "manifests/configmap.yaml",
+    "manifests/secret.yaml",
+    "manifests/deployment.yaml",
+    "manifests/externalsecret.yaml",
+    "manifests/secretstore.yaml",
+    "manifests/sealedsecret.yaml",
+    "manifests/rbac.yaml",
+    "scripts/kind-setup.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

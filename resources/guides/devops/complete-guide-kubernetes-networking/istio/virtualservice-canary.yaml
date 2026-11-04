@@ -1,0 +1,53 @@
+# Canary traffic split with Istio VirtualService + DestinationRule:
+# header-matched requests go to v2 first, then a 90/10 weighted split
+# for everyone else.
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: api-virtualservice
+  namespace: production
+spec:
+  hosts:
+    - api.stackpractices.com
+  gateways:
+    - istio-system/ingress-gateway
+  http:
+    - match:
+        - headers:
+            x-canary:
+              exact: "true"
+      route:
+        - destination:
+            host: api-service
+            subset: v2
+            port:
+              number: 80
+    - route:
+        - destination:
+            host: api-service
+            subset: v1
+            port:
+              number: 80
+          weight: 90
+        - destination:
+            host: api-service
+            subset: v2
+            port:
+              number: 80
+          weight: 10
+
+---
+apiVersion: networking.istio.io/v1
+kind: DestinationRule
+metadata:
+  name: api-destination
+  namespace: production
+spec:
+  host: api-service
+  subsets:
+    - name: v1
+      labels:
+        version: v1
+    - name: v2
+      labels:
+        version: v2

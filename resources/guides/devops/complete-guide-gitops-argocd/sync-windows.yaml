@@ -1,0 +1,11 @@
+# syncWindows inside AppProject spec — no deploys outside business hours
+spec:
+  syncWindows:
+    - kind: deny
+      schedule: '0 0 * * SAT,SUN'   # no weekend deploys
+      duration: 24h
+      applications: ['*']
+    - kind: allow
+      schedule: '0 9-17 * * MON-FRI'
+      duration: 8h
+      applications: ['*']

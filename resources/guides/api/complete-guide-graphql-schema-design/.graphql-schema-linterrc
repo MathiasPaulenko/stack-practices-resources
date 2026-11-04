@@ -1,0 +1,8 @@
+rules:
+  - types-have-descriptions
+  - fields-have-descriptions
+  - enum-values-have-descriptions
+  - input-object-values-have-descriptions
+  - deprecations-have-a-reason
+  - enum-values-sorted-alphabetically
+  - type-fields-sorted-alphabetically

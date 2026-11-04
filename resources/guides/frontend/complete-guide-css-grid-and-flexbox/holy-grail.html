@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Holy Grail — CSS Grid</title>
+<style>
+body { margin:0; font-family:system-ui,sans-serif; }
+.holy-grail { display:grid; grid-template:"header header header" auto "nav main aside" 1fr "footer footer footer" auto / 200px 1fr 200px; min-height:100vh; gap:1rem; padding:1rem; }
+.holy-grail > * { padding:1rem; border-radius:8px; background:#e0f2fe; }
+header { grid-area:header; } nav { grid-area:nav; } main { grid-area:main; background:#fff; border:1px solid #ccc; } aside { grid-area:aside; } footer { grid-area:footer; }
+@media (max-width:768px){ .holy-grail{ grid-template:"header" auto "main" 1fr "nav" auto "aside" auto "footer" auto / 1fr; } }
+</style></head><body><div class="holy-grail">
+<header>Header</header><nav>Nav</nav><main>Main content</main><aside>Aside</aside><footer>Footer</footer>
+</div></body></html>

@@ -1,0 +1,28 @@
+{
+  "title": "Complete Guide to LLM Security",
+  "title_es": "Guía Completa de Seguridad en LLMs",
+  "description": "Runnable security layers from the guide: prompt-injection tripwire, document sanitizer, jailbreak detector, PII output validator, URL/code output filter, token-aware rate limiter, tool-call validator, and a static attack-corpus harness.",
+  "description_es": "Capas de seguridad ejecutables de la guía: tripwire de inyección de prompts, sanitizador de documentos, detector de jailbreaks, validador de PII en salida, filtro de URLs/código, rate limiter consciente de tokens, validador de llamadas a herramientas y un harness con corpus estático de ataques.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-llm-security",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-llm-security/",
+    "https://stackpractices.com/es/guides/complete-guide-llm-security/"
+  ],
+  "language": "bilingual",
+  "tags": ["llm-security", "prompt-injection", "jailbreak", "owasp", "guardrails", "red-teaming", "pii"],
+  "files": [
+    "injection_guard.py",
+    "document_sanitizer.py",
+    "jailbreak_detector.py",
+    "output_filter.py",
+    "rate_limiter.py",
+    "tool_validator.py",
+    "security_harness.py",
+    "attack_corpus.json",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

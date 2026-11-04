@@ -1,0 +1,30 @@
+{
+  "title": "Complete Guide to CSS Grid and Flexbox",
+  "title_es": "Guía Completa de CSS Grid y Flexbox",
+  "description": "Runnable HTML/CSS layout patterns: holy grail grid, subgrid cards, flexbox navbar, auto-fit responsive grid, container-query card.",
+  "description_es": "Patrones de layout HTML/CSS ejecutables: holy grail, tarjetas con subgrid, navbar flexbox, grid auto-fit responsive, tarjeta con container query.",
+  "type": "guides",
+  "topic": "frontend",
+  "slug": "complete-guide-css-grid-and-flexbox",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-css-grid-and-flexbox/",
+    "https://stackpractices.com/es/guides/complete-guide-css-grid-and-flexbox/"
+  ],
+  "language": "css",
+  "tags": [
+    "css",
+    "grid",
+    "flexbox",
+    "subgrid",
+    "container-queries",
+    "layout",
+    "responsive-design"
+  ],
+  "files": [
+    "holy-grail.html",
+    "card-grid-subgrid.html",
+    "navbar-flexbox.html",
+    "responsive-auto-grid.html",
+    "container-query-card.html"
+  ]
+}

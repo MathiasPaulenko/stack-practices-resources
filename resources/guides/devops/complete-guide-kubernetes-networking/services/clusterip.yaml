@@ -1,0 +1,23 @@
+# ClusterIP Service — internal-only VIP with named ports.
+# Named ports let Deployments change container ports without breaking the
+# Service, and are required for Istio protocol detection.
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-service
+  namespace: production
+  labels:
+    app: api
+spec:
+  type: ClusterIP
+  selector:
+    app: api
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP
+    - name: metrics
+      port: 9090
+      targetPort: 9090
+      protocol: TCP

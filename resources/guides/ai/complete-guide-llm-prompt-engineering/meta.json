@@ -1,0 +1,28 @@
+{
+  "title": "Complete Guide to LLM Prompt Engineering",
+  "title_es": "Guía Completa de Prompt Engineering para LLMs",
+  "description": "Runnable prompt engineering examples from the guide: system prompt contracts, delimiters, few-shot, self-consistency, JSON mode + Pydantic validation, RAG grounding, function calling loop, and an offline-capable evaluation harness with a golden dataset.",
+  "description_es": "Ejemplos ejecutables de prompt engineering de la guía: contratos de system prompt, delimitadores, few-shot, self-consistency, modo JSON + validación con Pydantic, grounding con RAG, bucle de function calling y un harness de evaluación con dataset dorado.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-llm-prompt-engineering",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-llm-prompt-engineering/",
+    "https://stackpractices.com/es/guides/complete-guide-llm-prompt-engineering/"
+  ],
+  "language": "bilingual",
+  "tags": ["llm", "prompt-engineering", "openai", "few-shot", "chain-of-thought", "rag", "function-calling", "evaluation"],
+  "files": [
+    "prompts.py",
+    "few_shot.py",
+    "self_consistency.py",
+    "structured_output.py",
+    "rag_grounding.py",
+    "function_calling.py",
+    "eval_harness.py",
+    "tests.json",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Container Query Card</title>
+<style>
+body { font-family:system-ui,sans-serif; padding:1rem; display:grid; grid-template-columns:280px 1fr; gap:1rem; }
+aside, main { container-type:inline-size; border:1px dashed #94a3b8; padding:1rem; }
+.card { border:1px solid #ddd; border-radius:8px; overflow:hidden; }
+@container (min-width:400px){
+  .card { display:grid; grid-template-columns:120px 1fr; gap:1rem; }
+}
+@container (max-width:399px){
+  .card { display:flex; flex-direction:column; }
+}
+.card img { aspect-ratio:16/9; width:100%; object-fit:cover; background:#e2e8f0; }
+.card .body { padding:1rem; }
+</style></head><body>
+<aside><div class="card"><img src="" alt=""><div class="body">Sidebar slot: stacked</div></div></aside>
+<main><div class="card"><img src="" alt=""><div class="body">Wide slot: side-by-side</div></div></main>
+</body></html>

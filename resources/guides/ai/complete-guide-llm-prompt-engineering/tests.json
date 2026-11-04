@@ -1,0 +1,10 @@
+[
+  {"id": "pos-1", "input": "Amazing product, fast delivery!", "expected": "positive"},
+  {"id": "neg-1", "input": "Worst purchase ever.", "expected": "negative"},
+  {"id": "neu-1", "input": "It works as expected.", "expected": "neutral"},
+  {"id": "neg-2", "input": "The product arrived late and the quality was terrible.", "expected": "negative"},
+  {"id": "pos-2", "input": "Support answered in minutes and fixed everything.", "expected": "positive"},
+  {"id": "neu-2", "input": "Does what it says, nothing more.", "expected": "neutral"},
+  {"id": "edge-1", "input": "Great design but broke after two days.", "expected": "negative"},
+  {"id": "edge-2", "input": "Not bad for the price, honestly.", "expected": "positive"}
+]

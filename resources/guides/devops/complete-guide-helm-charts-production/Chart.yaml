@@ -1,0 +1,18 @@
+apiVersion: v2
+name: my-app
+description: A production web application chart
+type: application
+version: 1.2.3
+appVersion: "2.1.0"
+home: https://github.com/example/my-app
+sources:
+  - https://github.com/example/my-app
+keywords:
+  - web
+  - api
+  - microservice
+dependencies:
+  - name: postgresql
+    version: "12.12.10"
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled

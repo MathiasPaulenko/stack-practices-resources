@@ -1,0 +1,32 @@
+{
+  "title": "Complete Guide to LLM Cost Optimization",
+  "title_es": "Guía Completa de Optimización de Costes LLM",
+  "description": "LLM cost toolkit from the guide: model router + cascading fallback, exact and semantic caches, daily budget guard, Batch API script, tiktoken counter and offline tests.",
+  "description_es": "Toolkit de costes LLM de la guía: router de modelos + fallback en cascada, cachés exacta y semántica, guardia de presupuesto diario, script de Batch API, contador con tiktoken y tests offline.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-llm-cost-optimization",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-llm-cost-optimization/",
+    "https://stackpractices.com/es/guides/complete-guide-llm-cost-optimization/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "llm",
+    "cost-optimization",
+    "model-routing",
+    "caching",
+    "batch-api",
+    "budgets",
+    "tiktoken"
+  ],
+  "files": [
+    "router.py",
+    "cache.py",
+    "budget.py",
+    "batch_job.py",
+    "token_counter.py",
+    "test_cost.py",
+    "requirements.txt"
+  ]
+}

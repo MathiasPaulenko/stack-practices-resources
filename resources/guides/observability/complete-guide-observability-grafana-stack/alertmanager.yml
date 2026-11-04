@@ -1,0 +1,17 @@
+# alertmanager.yml — route warnings to Slack, criticals to on-call
+route:
+  receiver: slack
+  group_by: ["service", "severity"]
+  group_wait: 30s
+  repeat_interval: 4h
+  routes:
+    - match: {severity: critical}
+      receiver: pagerduty
+receivers:
+  - name: slack
+    slack_configs:
+      - api_url: "https://hooks.slack.com/services/XXX"   # your webhook
+        channel: "#alerts"
+  - name: pagerduty
+    pagerduty_configs:
+      - service_key: "XXX"
