@@ -1,0 +1,28 @@
+{
+  "title": "Complete Guide to RAG in Production",
+  "title_es": "Guía Completa de RAG en Producción",
+  "description": "RAG production companion from the guide: 4 chunking strategies, local/OpenAI embeddings, Chroma/Pinecone/pgvector stores, hybrid search + RRF, cross-encoder/Cohere rerankers, tiktoken context assembly, full async pipeline, RAGAS eval, offline tests.",
+  "description_es": "Companion de RAG en producción de la guía: 4 estrategias de chunking, embeddings locales/OpenAI, stores Chroma/Pinecone/pgvector, hybrid search + RRF, rerankers cross-encoder/Cohere, ensamblado de contexto con tiktoken, pipeline async completo, eval con RAGAS, tests offline.",
+  "type": "guides",
+  "topic": "ai",
+  "slug": "complete-guide-rag-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-rag-production/",
+    "https://stackpractices.com/es/guides/complete-guide-rag-production/"
+  ],
+  "language": "bilingual",
+  "tags": ["rag", "embeddings", "vector-search", "hybrid-search", "reranking", "chunking", "ragas"],
+  "files": [
+    "chunking.py",
+    "embeddings.py",
+    "vector_stores.py",
+    "hybrid_search.py",
+    "rerankers.py",
+    "context_assembly.py",
+    "rag_pipeline.py",
+    "evaluation.py",
+    "test_rag.py",
+    "tests.json",
+    "requirements.txt"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Strangler Fig Migration: Incremental Legacy Replacement",
+  "title_es": "Migración Strangler Fig: Reemplazo Incremental de Sistemas Legacy",
+  "description": "Runnable TypeScript and Python examples from the guide: the StranglerRouter with feature-flag rollout, shadow traffic comparison, dual-write with retry queue, automatic rollback thresholds, CDC sync consumer, and API gateway routing config.",
+  "description_es": "Ejemplos TypeScript y Python ejecutables de la guía: el StranglerRouter con rollout por feature flags, comparación de shadow traffic, dual-write con cola de reintentos, umbrales de rollback automático, consumidor de sincronización CDC y configuración de routing del API gateway.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "complete-guide-strangler-fig-migration",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-strangler-fig-migration/",
+    "https://stackpractices.com/es/guides/complete-guide-strangler-fig-migration/"
+  ],
+  "language": "bilingual",
+  "tags": ["strangler-fig", "legacy-migration", "feature-flags", "shadow-traffic", "canary-release", "cdc", "dual-write", "api-gateway", "rollback", "typescript", "python", "kafka"],
+  "files": [
+    "strangler_router.ts",
+    "shadow_traffic.ts",
+    "feature_flags.ts",
+    "dual_write.ts",
+    "rollback_manager.ts",
+    "cdc_sync.py",
+    "kong_routes.yaml",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Complete Guide to PostgreSQL Replication",
+  "title_es": "Guía Completa de Replicación en PostgreSQL",
+  "description": "Runnable companion for the PostgreSQL replication guide: a docker-compose streaming replica setup, production config files, a Patroni cluster template, and the monitoring queries from the guide.",
+  "description_es": "Companion ejecutable de la guía de replicación de PostgreSQL: un setup docker-compose con réplica streaming, archivos de configuración de producción, una plantilla de cluster Patroni y las consultas de monitorización de la guía.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "complete-guide-postgresql-replication",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-postgresql-replication/",
+    "https://stackpractices.com/es/guides/complete-guide-postgresql-replication/"
+  ],
+  "language": ["sql", "yaml", "bash"],
+  "tags": ["postgresql", "replication", "streaming-replication", "patroni", "failover", "docker-compose"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "postgresql-primary.conf",
+    "postgresql-replica.conf",
+    "pg_hba.conf",
+    "01-create-replication-user.sql",
+    "patroni.yml",
+    "monitoring-queries.sql"
+  ]
+}

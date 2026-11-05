@@ -1,0 +1,16 @@
+{
+  "title": "Complete Guide to Secrets Management — Companion Scripts",
+  "title_es": "Guía Completa de Gestión de Secretos — Scripts",
+  "description": "Companion scripts for the secrets management guide: zero-downtime rotation script, git secret scanning script, and External Secrets Operator example.",
+  "description_es": "Scripts compañeros de la guía de gestión de secretos: rotación sin downtime, escaneo de secretos en git y ejemplo de External Secrets Operator.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-secrets-management",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-secrets-management/",
+    "https://stackpractices.com/es/guides/complete-guide-secrets-management/"
+  ],
+  "language": "bilingual",
+  "tags": ["secrets-management", "vault", "aws", "kubernetes", "rotation", "security"],
+  "files": ["README.md", "README.es.md", "rotate_secret.sh", "scan_secrets.sh", "external-secret.yaml"]
+}

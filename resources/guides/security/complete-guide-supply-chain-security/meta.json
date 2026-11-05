@@ -1,0 +1,25 @@
+{
+  "title": "Complete Guide to Supply Chain Security",
+  "title_es": "Guía Completa de Seguridad de la Cadena de Suministro",
+  "description": "Supply chain security assets: SBOM validator, typosquat detector, SLSA v1.0 provenance generator, hardened GitHub Actions workflow, SCA pipeline, and dependency confusion configs.",
+  "description_es": "Assets de seguridad de cadena de suministro: validador de SBOM, detector de typosquatting, generador de procedencia SLSA v1.0, workflow endurecido de GitHub Actions, pipeline SCA y configs contra dependency confusion.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-supply-chain-security",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-supply-chain-security/",
+    "https://stackpractices.com/es/guides/complete-guide-supply-chain-security/"
+  ],
+  "language": ["python", "yaml", "text"],
+  "tags": ["sbom", "slsa", "sigstore", "cosign", "dependency-confusion", "typosquatting", "sca", "github-actions", "supply-chain"],
+  "files": [
+    "sbom_validator.py",
+    "typosquat_detector.py",
+    "generate_provenance.py",
+    "secure-build.yml",
+    "sca-pipeline.yml",
+    "npmrc.example",
+    "pip.conf.example",
+    "requirements-hashed.txt"
+  ]
+}

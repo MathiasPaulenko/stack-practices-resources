@@ -1,0 +1,32 @@
+{
+  "title": "Structured Logging: JSON Logs, Correlation IDs, Aggregation",
+  "title_es": "Logging Estructurado: JSON, IDs de Correlación y Agregación",
+  "description": "Runnable examples from the guide: structlog configuration with service/env injection, Starlette correlation-ID middleware, pino setup with AsyncLocalStorage, Express middleware, Java MDC filter, Logback config, and ready-to-run ELK and Loki docker-compose stacks with promtail/logstash pipelines.",
+  "description_es": "Ejemplos ejecutables de la guía: configuración de structlog con inyección de service/env, middleware de ID de correlación para Starlette, setup de pino con AsyncLocalStorage, middleware de Express, filtro MDC para Java, configuración de Logback y stacks ELK y Loki listos para correr con pipelines de promtail/logstash.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "complete-guide-structured-logging",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-structured-logging/",
+    "https://stackpractices.com/es/guides/complete-guide-structured-logging/"
+  ],
+  "language": "bilingual",
+  "tags": ["structured-logging", "json-logs", "correlation-id", "structlog", "pino", "slf4j", "logback", "mdc", "elk", "loki", "promtail", "observability", "python", "typescript", "java"],
+  "files": [
+    "logging_config.py",
+    "middleware.py",
+    "order_service.py",
+    "logger.ts",
+    "middleware.ts",
+    "service.ts",
+    "CorrelationIdFilter.java",
+    "logback.xml",
+    "docker-compose-elk.yml",
+    "docker-compose-loki.yml",
+    "promtail-config.yml",
+    "logstash.conf",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

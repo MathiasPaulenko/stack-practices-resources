@@ -1,0 +1,24 @@
+{
+  "title": "Production Pytest Configs",
+  "title_es": "Configuraciones de Pytest para Producción",
+  "description": "Production-ready pytest setup: conftest.py with scoped fixtures, pytest.ini with markers and coverage, test factories, xdist config, and CI workflow.",
+  "description_es": "Configuración de pytest para producción: conftest.py con fixtures por scope, pytest.ini con markers y cobertura, factorías de tests, configuración de xdist y workflow de CI.",
+  "type": "guides",
+  "topic": "testing",
+  "slug": "complete-guide-pytest-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-pytest-production/",
+    "https://stackpractices.com/es/guides/complete-guide-pytest-production/"
+  ],
+  "language": "mixed",
+  "tags": ["pytest", "fixtures", "xdist", "coverage", "ci", "testing"],
+  "files": [
+    "conftest.py",
+    "pytest.ini",
+    "coveragerc",
+    "factories.py",
+    "tests.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

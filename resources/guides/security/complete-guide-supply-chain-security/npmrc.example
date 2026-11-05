@@ -1,0 +1,5 @@
+# .npmrc — force scoped packages to the internal registry so an
+# attacker can't dependency-confuse them on the public registry.
+@myorg:registry=https://npm.internal.myorg.com
+registry=https://registry.npmjs.org
+always-auth=true

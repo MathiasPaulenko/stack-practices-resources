@@ -1,0 +1,29 @@
+{
+  "title": "Complete Guide to SQL Query Optimization",
+  "title_es": "Guía Completa de Optimización de Consultas SQL",
+  "description": "Runnable SQL and Python examples from the guide: pg_stat_statements and slow-log discovery queries, covering/partial/composite/trigram indexes, bad-vs-good rewrite pairs, materialized views, partitioning, an offline N+1 demo, connection pooling, and Redis query caching.",
+  "description_es": "Ejemplos SQL y Python ejecutables de la guía: consultas de descubrimiento con pg_stat_statements y slow log, índices de cobertura/parciales/compuestos/trigramas, pares de reescritura mal-vs-bien, vistas materializadas, particionamiento, demo offline de N+1, pooling de conexiones y caché de consultas en Redis.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "complete-guide-sql-query-optimization",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-sql-query-optimization/",
+    "https://stackpractices.com/es/guides/complete-guide-sql-query-optimization/"
+  ],
+  "language": "bilingual",
+  "tags": ["sql", "postgresql", "mysql", "query-optimization", "indexing", "explain-plan", "n-plus-1", "materialized-view", "partitioning", "connection-pooling", "redis", "performance"],
+  "files": [
+    "schema.sql",
+    "slow_queries.sql",
+    "indexes.sql",
+    "rewrites.sql",
+    "materialized_view.sql",
+    "partitioning.sql",
+    "n_plus_one.py",
+    "pooling.py",
+    "redis_cache.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

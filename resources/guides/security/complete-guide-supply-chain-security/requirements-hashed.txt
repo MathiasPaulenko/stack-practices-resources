@@ -1,0 +1,9 @@
+# requirements.txt with hashes — install with:
+#   pip install --require-hashes -r requirements.txt
+# Generate hashes with: pip hash requests-2.32.0-py3-none-any.whl
+# or pip-compile --generate-hashes (pip-tools).
+requests==2.32.0 \
+    --hash=sha256:1234abc... \
+    --hash=sha256:5678def...
+flask==3.0.3 \
+    --hash=sha256:abcd123...

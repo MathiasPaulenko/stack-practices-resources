@@ -1,0 +1,26 @@
+{
+  "title": "Refactoring Techniques — Companion Examples",
+  "title_es": "Técnicas de Refactoring — Ejemplos",
+  "description": "Runnable JavaScript before/after refactoring examples for the StackPractices guide: guard clauses, extract method, named constants and move function with an equivalence smoke test.",
+  "description_es": "Ejemplos JavaScript ejecutables de refactoring antes/después para la guía StackPractices: guard clauses, extract method, constantes con nombre y move function con prueba de equivalencia.",
+  "type": "guides",
+  "topic": "code-quality",
+  "slug": "complete-guide-refactoring-techniques",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-refactoring-techniques/",
+    "https://stackpractices.com/es/guides/complete-guide-refactoring-techniques/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "refactoring",
+    "code-quality",
+    "clean-code",
+    "javascript",
+    "technical-debt"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "refactoring_examples.js"
+  ]
+}

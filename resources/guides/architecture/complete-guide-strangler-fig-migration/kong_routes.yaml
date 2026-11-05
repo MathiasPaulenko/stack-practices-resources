@@ -1,0 +1,14 @@
+# Kong / NGINX / API Gateway configuration
+# Route specific endpoints to the new system, everything else to legacy.
+routes:
+  - name: user-service-new
+    paths:
+      - /api/v2/users
+    upstream: new-user-service:3000
+    strip_path: false
+
+  - name: legacy-system
+    paths:
+      - /api
+    upstream: legacy-monolith:8080
+    strip_path: false

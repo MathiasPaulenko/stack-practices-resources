@@ -1,0 +1,22 @@
+# GitHub Actions — runs both Python (Hypothesis) and TypeScript (fast-check) suites.
+name: Property Tests
+on: [push, pull_request]
+
+jobs:
+  property-tests:
+    runs-on: ubuntu-latest
+    env:
+      HYPOTHESIS_PROFILE: ci
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: pip install hypothesis pytest
+      - run: pytest test_*.py -v --hypothesis-show-statistics
+      - run: npm ci
+      - run: npx vitest run properties.test.ts

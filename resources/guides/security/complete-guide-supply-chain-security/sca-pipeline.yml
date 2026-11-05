@@ -1,0 +1,46 @@
+# Software Composition Analysis workflow — copy to .github/workflows/sca.yml
+name: Software Composition Analysis
+on: [push, pull_request]
+
+jobs:
+  sca:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Python dependency audit
+        run: |
+          pip install pip-audit
+          pip-audit --strict --require-hashes
+
+      - name: npm audit
+        run: |
+          npm audit --audit-level=high
+          npm audit signatures  # Verify package signatures
+
+      - name: Trivy filesystem scan
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: fs
+          scan-ref: .
+          severity: HIGH,CRITICAL
+          format: json
+          output: trivy-report.json
+
+      - name: Snyk scan
+        uses: snyk/actions/python@0.4.0  # pin a release or SHA in production
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --severity-threshold=high
+
+      - name: Generate SBOM
+        run: |
+          pip install cyclonedx-bom
+          cyclonedx-py requirements -i requirements.txt -o sbom.json
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: sbom.json

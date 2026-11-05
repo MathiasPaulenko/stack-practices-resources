@@ -1,0 +1,16 @@
+{
+  "title": "Complete Guide to Serverless Databases — Companion Examples",
+  "title_es": "Guía Completa de Bases de Datos Serverless — Ejemplos",
+  "description": "Companion examples: DynamoDB access-pattern-first design and the Lambda warm-connection reuse pattern for serverless databases.",
+  "description_es": "Ejemplos compañeros: diseño por patrones de acceso en DynamoDB y el patrón de reutilización de conexiones calientes en Lambda.",
+  "type": "guides",
+  "topic": "serverless",
+  "slug": "complete-guide-serverless-databases",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-serverless-databases/",
+    "https://stackpractices.com/es/guides/complete-guide-serverless-databases/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "dynamodb", "aurora", "databases", "aws", "lambda"],
+  "files": ["README.md", "README.es.md", "dynamodb_example.js", "lambda_warm_connection.js"]
+}

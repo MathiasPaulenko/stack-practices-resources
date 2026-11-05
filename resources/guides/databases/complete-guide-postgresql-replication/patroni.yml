@@ -1,0 +1,46 @@
+# patroni.yml — 3-node HA cluster template (node-specific values per host).
+# Requires an etcd cluster reachable on port 2379.
+scope: pg_cluster
+name: node1                       # node2 / node3 on the other hosts
+
+restapi:
+  listen: 0.0.0.0:8008
+  connect_address: 10.0.1.10:8008
+
+etcd:
+  hosts: 10.0.1.100:2379,10.0.1.101:2379,10.0.1.102:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576   # refuse to promote replicas lagging >1MB
+    synchronous_mode: true
+    postgresql:
+      use_pg_rewind: true              # rejoin old primary without full rebase
+      parameters:
+        wal_level: replica
+        hot_standby: on
+        max_wal_senders: 10
+        max_replication_slots: 10
+        wal_keep_size: 1024
+
+postgresql:
+  listen: 0.0.0.0:5432
+  connect_address: 10.0.1.10:5432
+  data_dir: /var/lib/postgresql/16/data
+  bin_dir: /usr/lib/postgresql/16/bin
+  authentication:
+    replication:
+      username: replicator
+      password: change_me_before_production
+    superuser:
+      username: postgres
+      password: change_me_too
+
+tags:
+  nofailover: false
+  noloadbalance: false
+  clonefrom: false
+  nosync: false

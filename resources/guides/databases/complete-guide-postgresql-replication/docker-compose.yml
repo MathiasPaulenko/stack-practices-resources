@@ -1,0 +1,59 @@
+# Streaming replication lab: one primary + one hot-standby replica.
+#
+# Usage:
+#   docker compose up -d
+#   docker compose exec primary psql -U postgres -c "SELECT * FROM pg_stat_replication;"
+#
+# The replica bootstraps itself with pg_basebackup on first start.
+# PGPASSWORD must match the password in 01-create-replication-user.sql.
+
+services:
+  primary:
+    image: postgres:16
+    container_name: pg_primary
+    environment:
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - primary_data:/var/lib/postgresql/data
+      - ./postgresql-primary.conf:/etc/postgresql/postgresql.conf:ro
+      - ./pg_hba.conf:/etc/postgresql/pg_hba.conf:ro
+      - ./01-create-replication-user.sql:/docker-entrypoint-initdb.d/01-create-replication-user.sql:ro
+    command: >
+      postgres
+      -c config_file=/etc/postgresql/postgresql.conf
+      -c hba_file=/etc/postgresql/pg_hba.conf
+    ports:
+      - "5432:5432"
+    networks:
+      - pgnet
+
+  replica:
+    image: postgres:16
+    container_name: pg_replica
+    depends_on:
+      - primary
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      PGPASSWORD: change_me_before_production
+    volumes:
+      - replica_data:/var/lib/postgresql/data
+      - ./postgresql-replica.conf:/etc/postgresql/postgresql.conf:ro
+    entrypoint: >
+      bash -c "
+        rm -rf /var/lib/postgresql/data/pgdata ;
+        until pg_basebackup -h primary -U replicator -D /var/lib/postgresql/data/pgdata -Fp -Xs -P -R ; do
+          echo 'waiting for primary...' ; sleep 2 ;
+        done ;
+        cp /etc/postgresql/postgresql.conf /var/lib/postgresql/data/pgdata/postgresql.conf ;
+        exec docker-entrypoint.sh postgres -c config_file=/var/lib/postgresql/data/pgdata/postgresql.conf
+      "
+    networks:
+      - pgnet
+
+volumes:
+  primary_data:
+  replica_data:
+
+networks:
+  pgnet:

@@ -1,0 +1,113 @@
+# Hardened GitHub Actions workflow — copy to .github/workflows/secure-build.yml
+# Key controls: full-SHA action pinning, least-privilege token, isolated
+# build with vendored deps, SBOM + scan + keyless sign + provenance.
+name: Secure Build
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  secure-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write  # For OIDC (keyless cosign)
+      packages: write
+    outputs:
+      image-digest: ${{ steps.push.outputs.digest }}
+
+    steps:
+      # Pin actions to the full commit SHA, not tags (tags can be moved —
+      # see tj-actions/changed-files, March 2025)
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          fetch-depth: 0  # Full history for analysis
+
+      # Verify commit signatures
+      - name: Verify commits
+        run: |
+          git log --pretty=format:'%H %G?' main..HEAD | while read hash signed; do
+            if [ "$signed" != "G" ] && [ "$signed" != "B" ]; then
+              echo "Unsigned commit: $hash"
+              exit 1
+            fi
+          done
+
+      # Fetch dependencies WITH network — lockfile gives integrity.
+      # The isolated step below has no network, so deps must be vendored first.
+      - name: Install dependencies
+        run: npm ci
+
+      # Run the build in an isolated environment: no network, read-only
+      # root, writes only to /build. node_modules is already vendored above.
+      - name: Build in container
+        run: |
+          docker run --rm \
+            --network=none \
+            --read-only \
+            --tmpfs /tmp \
+            -v $(pwd):/src:ro \
+            -v $(pwd)/build:/build \
+            myorg/builder:latest \
+            /bin/sh -c "cd /src && npm run build -- --outDir /build"
+
+      # Generate SBOM
+      - name: Generate SBOM
+        run: |
+          npx cyclonedx-bom -o build/sbom.json
+
+      # Scan for vulnerabilities
+      - name: Trivy scan
+        uses: aquasecurity/trivy-action@0.20.0
+        with:
+          scan-type: fs
+          scan-ref: ./build
+          severity: HIGH,CRITICAL
+          exit-code: 1  # Fail build on critical vulns
+
+      # Sign artifacts
+      - uses: sigstore/cosign-installer@v3
+      - name: Sign artifacts
+        run: |
+          cosign sign-blob --yes build/app.tar.gz --output-signature build/app.sig
+          cosign sign-blob --yes build/sbom.json --output-signature build/sbom.sig
+
+      # Attach provenance as an in-toto attestation via cosign.
+      # For automated L3 provenance, use the slsa-github-generator
+      # reusable workflow at JOB level — see the provenance job below.
+      - name: Generate provenance
+        run: |
+          cosign attest --yes \
+            --predicate provenance.json \
+            --type slsaprovenance \
+            build/app.tar.gz
+
+      # Upload with attestation
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-outputs
+          path: |
+            build/app.tar.gz
+            build/app.sig
+            build/sbom.json
+            build/sbom.sig
+            provenance.json
+
+  # SLSA's reusable generator produces platform-signed provenance (L3).
+  # It must be called as a job (uses: at job level), never inside steps.
+  # For container images:
+  # provenance:
+  #   needs: [secure-build]
+  #   permissions:
+  #     actions: read      # to fetch build metadata
+  #     id-token: write    # to sign the provenance
+  #     packages: write    # to publish to the registry
+  #   uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v2.1.0
+  #   with:
+  #     image: ghcr.io/myorg/myapp
+  #     digest: ${{ needs.secure-build.outputs.image-digest }}
+  #     registry-username: ${{ github.actor }}
+  #   secrets:
+  #     registry-password: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,25 @@
+{
+  "title": "PostgreSQL Tuning Configs",
+  "title_es": "Configuraciones de Optimización de PostgreSQL",
+  "description": "Ready-made postgresql.conf profiles by RAM size, PgBouncer config, pgbench baseline script, and monitoring queries from the PostgreSQL tuning guide.",
+  "description_es": "Archivos postgresql.conf por tamaño de RAM, configuración de PgBouncer, script de benchmark con pgbench y consultas de monitorización de la guía de optimización de PostgreSQL.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "complete-guide-postgresql-tuning",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-postgresql-tuning/",
+    "https://stackpractices.com/es/guides/complete-guide-postgresql-tuning/"
+  ],
+  "language": "mixed",
+  "tags": ["postgresql", "tuning", "performance", "pgbouncer", "configuration", "monitoring"],
+  "files": [
+    "postgresql-4gb.conf",
+    "postgresql-16gb.conf",
+    "postgresql-64gb.conf",
+    "pgbouncer.ini",
+    "pgbench-baseline.sh",
+    "monitoring-queries.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

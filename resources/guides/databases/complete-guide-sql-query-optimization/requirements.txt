@@ -1,0 +1,5 @@
+# Only needed for pooling.py and redis_cache.py (live PostgreSQL/Redis).
+# n_plus_one.py runs on the standard library alone.
+psycopg2-binary>=2.9.9
+asyncpg>=0.29.0
+redis>=5.0.0

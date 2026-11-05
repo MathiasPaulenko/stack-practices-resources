@@ -1,0 +1,26 @@
+{
+  "title": "Property-Based Testing Examples",
+  "title_es": "Ejemplos de Property-Based Testing",
+  "description": "Runnable property-based tests with Hypothesis (Python) and fast-check (TypeScript): composite strategies, stateful testing, CI workflows and troubleshooting config.",
+  "description_es": "Tests de propiedades ejecutables con Hypothesis (Python) y fast-check (TypeScript): estrategias compuestas, tests con estado, workflows de CI y configuración.",
+  "type": "guides",
+  "topic": "testing",
+  "slug": "complete-guide-property-based-testing",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-property-based-testing/",
+    "https://stackpractices.com/es/guides/complete-guide-property-based-testing/"
+  ],
+  "language": "mixed",
+  "tags": ["property-based-testing", "hypothesis", "fast-check", "pytest", "vitest", "testing"],
+  "files": [
+    "test_string_properties.py",
+    "test_user_properties.py",
+    "test_stack_stateful.py",
+    "conftest.py",
+    "properties.test.ts",
+    "package.json",
+    "property-tests.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

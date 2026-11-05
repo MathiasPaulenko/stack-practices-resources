@@ -1,0 +1,31 @@
+{
+  "question": [
+    "How do I configure SSO for the admin panel?",
+    "What are the rate limits on the export API?",
+    "Can I get a refund for a digital download?"
+  ],
+  "answer": [
+    "SSO is configured under Admin > Security > Identity providers using SAML or OIDC.",
+    "The export API allows 100 requests per minute per API key.",
+    "No — digital products are non-refundable once downloaded."
+  ],
+  "contexts": [
+    [
+      "Admin > Security > Identity providers lets you connect SAML or OIDC for single sign-on.",
+      "General admin settings live under Admin > Settings."
+    ],
+    [
+      "Rate limits: export endpoints are limited to 100 req/min per API key.",
+      "Import endpoints allow 1000 req/min per API key."
+    ],
+    [
+      "Refund policy: customers can request a refund within 30 days of purchase.",
+      "Digital products are non-refundable once downloaded."
+    ]
+  ],
+  "ground_truth": [
+    "SSO setup is done in Admin > Security > Identity providers via SAML or OIDC.",
+    "Export API rate limit is 100 requests per minute per API key.",
+    "Digital downloads are non-refundable once downloaded; other purchases allow refunds within 30 days."
+  ]
+}

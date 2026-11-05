@@ -1,0 +1,7 @@
+# pip.conf — prefer the internal index; better yet, use a virtual
+# repository (Artifactory, Nexus, CodeArtifact) as the single ingress:
+#   index-url = https://artifactory.internal.myorg.com/api/pypi/pypi-virtual/simple
+[global]
+index-url = https://pypi.internal.myorg.com/simple
+extra-index-url = https://pypi.org/simple
+trusted-host = pypi.internal.myorg.com

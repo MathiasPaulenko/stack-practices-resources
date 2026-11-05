@@ -1,0 +1,25 @@
+{
+  "title": "Production Asyncio Patterns",
+  "title_es": "Patrones de Asyncio para Producción",
+  "description": "Production asyncio patterns: graceful shutdown application, token bucket rate limiter, event loop watchdog, connection pool, health check server, and pytest-asyncio tests.",
+  "description_es": "Patrones de asyncio para producción: aplicación con apagado limpio, rate limiter token bucket, watchdog del event loop, pool de conexiones, servidor de health checks y tests pytest-asyncio.",
+  "type": "guides",
+  "topic": "concurrency",
+  "slug": "complete-guide-python-asyncio-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-python-asyncio-production/",
+    "https://stackpractices.com/es/guides/complete-guide-python-asyncio-production/"
+  ],
+  "language": "mixed",
+  "tags": ["python", "asyncio", "event-loop", "cancellation", "backpressure", "concurrency"],
+  "files": [
+    "graceful_shutdown.py",
+    "token_bucket.py",
+    "watchdog.py",
+    "http_pool.py",
+    "health_server.py",
+    "test_asyncio_patterns.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

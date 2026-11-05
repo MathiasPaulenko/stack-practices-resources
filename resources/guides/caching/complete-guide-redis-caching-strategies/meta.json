@@ -1,0 +1,21 @@
+{
+  "title": "Redis Caching Strategies — Companion Examples",
+  "title_es": "Estrategias de Caché con Redis — Ejemplos",
+  "description": "Runnable Python examples for the five Redis caching patterns: cache-aside with stampede lock, read-through, write-through, write-behind with batch flush, and refresh-ahead.",
+  "description_es": "Ejemplos en Python ejecutables de los cinco patrones de caché Redis: cache-aside con lock anti-estampida, read-through, write-through, write-behind con flush por lotes y refresh-ahead.",
+  "type": "guides",
+  "topic": "caching",
+  "slug": "complete-guide-redis-caching-strategies",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-redis-caching-strategies/",
+    "https://stackpractices.com/es/guides/complete-guide-redis-caching-strategies/"
+  ],
+  "language": "bilingual",
+  "tags": ["redis", "caching", "cache-aside", "write-through", "write-behind", "refresh-ahead", "python"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "caching_patterns.py",
+    "requirements.txt"
+  ]
+}
