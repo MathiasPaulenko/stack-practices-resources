@@ -1,0 +1,16 @@
+# GitLab CI equivalent of the GitHub Actions gate
+container_scan:
+  stage: test
+  image:
+    name: aquasec/trivy:latest
+    entrypoint: [""]
+  variables:
+    TRIVY_NO_PROGRESS: "true"
+    TRIVY_CACHE_DIR: ".trivycache/"
+  cache:
+    key: trivy
+    paths: [.trivycache/]
+  script:
+    - docker build -t app:$CI_COMMIT_SHA .
+    - trivy image --exit-code 1 --severity CRITICAL,HIGH --ignore-unfixed app:$CI_COMMIT_SHA
+  allow_failure: false

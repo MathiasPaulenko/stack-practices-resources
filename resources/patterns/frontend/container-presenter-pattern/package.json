@@ -1,0 +1,22 @@
+{
+  "name": "container-presenter-pattern",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Container-Presenter pattern examples: custom hook container, pure presenter, legacy class container, isolation tests",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.4.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "typescript": "^5.5.0"
+  }
+}

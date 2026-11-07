@@ -1,0 +1,8 @@
+service,resource_type,count,cost_usd_month,pct_of_total,tagged,notes
+EC2,compute,8,3200,40,partial,"4 instances under 20% p95 CPU"
+RDS PostgreSQL,database,1,1500,19,yes,"already reserved, properly sized"
+ElastiCache,cache,1,800,10,no,"hot path — do not touch"
+S3,storage,10TB,600,8,yes,"lifecycle policy candidate"
+ALB + NAT,network,2,500,6,no,"VPC endpoint removes NAT fees"
+Lambda,serverless,several,400,5,yes,"memory 1GB -> 512MB candidate"
+Other,misc,-,1000,12,no,"unallocated — tagging gap"

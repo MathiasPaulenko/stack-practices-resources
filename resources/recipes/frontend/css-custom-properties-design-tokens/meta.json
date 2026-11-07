@@ -1,0 +1,29 @@
+{
+  "title": "Design Tokens with CSS Custom Properties",
+  "title_es": "Design Tokens con custom properties de CSS",
+  "description": "Complete design token system from the CSS custom properties recipe: a layered tokens.css (raw scale, semantic tokens, dark theme, fluid type, spacing, z-index) plus a demo page with runtime theme toggle.",
+  "description_es": "Sistema completo de design tokens de la receta de custom properties: un tokens.css por capas (escala base, tokens semánticos, tema oscuro, tipografía fluida, espaciado, z-index) más una página demo con cambio de tema en tiempo de ejecución.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "css-custom-properties-design-tokens",
+  "source_urls": [
+    "https://stackpractices.com/recipes/css-custom-properties-design-tokens/",
+    "https://stackpractices.com/es/recipes/css-custom-properties-design-tokens/",
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "css",
+    "design-tokens",
+    "custom-properties",
+    "theming",
+    "dark-mode",
+    "frontend"
+  ],
+  "files": [
+    "tokens.css",
+    "demo.html",
+    "README.md",
+    "README.es.md"
+  ]
+}

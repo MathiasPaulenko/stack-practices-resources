@@ -1,0 +1,16 @@
+{
+  "title": "SOC 2 Compliance Guide — Companion Kit",
+  "title_es": "Guía de Cumplimiento SOC 2 — Kit Compañero",
+  "description": "Evidence map, access review diff script, PR approval exporter, and vendor due-diligence checklist for SOC 2 Type II audits.",
+  "description_es": "Mapa de evidencias, script de diff de revisiones de acceso, exportador de aprobaciones de PR y lista de diligencia de proveedores para auditorías SOC 2 Tipo II.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "compliance-soc2-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/compliance-soc2-guide/",
+    "es": "https://stackpractices.com/es/guides/compliance-soc2-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["soc2", "compliance", "audit", "evidence", "vendor"],
+  "files": ["soc2-evidence-map.md", "access_review_diff.py", "pr_approval_export.py", "vendor-due-diligence-checklist.md", "README.md", "README.es.md"]
+}

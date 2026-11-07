@@ -1,0 +1,20 @@
+Prop,Type,Default,Required,Description
+variant,"'primary' | 'secondary' | 'ghost' | 'danger' | 'link'","'primary'",No,Visual style variant
+size,"'sm' | 'md' | 'lg'","'md'",No,Button size
+disabled,boolean,false,No,Disables interaction and applies disabled styles
+loading,boolean,false,No,Shows loading spinner and disables interaction
+fullWidth,boolean,false,No,Makes button take full width of container
+icon,ReactNode,undefined,No,Icon element rendered before children
+iconPosition,"'left' | 'right'","'left'",No,Position of icon relative to text
+type,"'button' | 'submit' | 'reset'","'button'",No,Native button type attribute
+as,"'button' | 'a' | React.ElementType","'button'",No,Polymorphic rendering element
+href,string,undefined,No,"URL when as=""a""; required for link rendering"
+target,string,undefined,No,"Link target attribute when as=""a"""
+rel,string,undefined,No,"Link rel attribute when as=""a"""
+ariaLabel,string,undefined,No,Accessible label for icon-only buttons
+testId,string,undefined,No,"Data attribute for testing: data-testid"
+className,string,undefined,No,Additional CSS classes
+style,CSSProperties,undefined,No,Inline styles
+onClick,(e: MouseEvent) => void,undefined,No,Click handler
+onFocus,(e: FocusEvent) => void,undefined,No,Focus handler
+onBlur,(e: FocusEvent) => void,undefined,No,Blur handler

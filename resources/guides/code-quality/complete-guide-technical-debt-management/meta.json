@@ -1,0 +1,30 @@
+{
+  "title": "Technical Debt Management — Prioritizer, Metrics & Templates",
+  "title_es": "Gestión de deuda técnica — Priorizador, métricas y plantillas",
+  "description": "A runnable debt prioritizer (impact + interest − effort scoring), a portable metrics snapshot script (TODOs, outdated deps, coverage, duplication), plus copy-ready debt-register and stakeholder-report templates.",
+  "description_es": "Un priorizador de deuda ejecutable (puntuación de impacto + interés − esfuerzo), un script portable de métricas (TODOs, dependencias, cobertura, duplicación), más plantillas listas de registro de deuda y reporte a stakeholders.",
+  "type": "guides",
+  "topic": "code-quality",
+  "slug": "complete-guide-technical-debt-management",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-technical-debt-management/",
+    "https://stackpractices.com/es/guides/complete-guide-technical-debt-management/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "technical-debt",
+    "debt-register",
+    "code-quality",
+    "prioritization",
+    "metrics",
+    "javascript"
+  ],
+  "files": [
+    "debt-prioritizer.js",
+    "measure-debt.js",
+    "templates/debt-register.md",
+    "templates/stakeholder-report.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

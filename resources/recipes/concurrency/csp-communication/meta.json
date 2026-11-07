@@ -1,0 +1,23 @@
+{
+  "title": "CSP Communication — Channels, Select and Fan-out",
+  "title_es": "Comunicación CSP — Canales, Select y Fan-out",
+  "description": "Runnable CSP examples: Go pipeline (generator, stages, fan-out/fan-in workers), select with timeout and context cancellation, Rust tokio mpsc channel, and a TypeScript async-generator pipeline.",
+  "description_es": "Ejemplos CSP ejecutables: pipeline en Go (generator, etapas, workers fan-out/fan-in), select con timeout y cancelación por contexto, canal mpsc de tokio en Rust y pipeline con generadores async en TypeScript.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "csp-communication",
+  "source_urls": [
+    "https://stackpractices.com/recipes/csp-communication/",
+    "https://stackpractices.com/es/recipes/csp-communication/"
+  ],
+  "language": "go",
+  "tags": ["csp", "channels", "goroutines", "select", "fan-out", "tokio", "async-generators"],
+  "files": [
+    "pipeline.go",
+    "select_timeout.go",
+    "rust_mpsc.rs",
+    "ts_pipeline.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

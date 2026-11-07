@@ -1,0 +1,34 @@
+{
+  "title": "CQRS Recipe — Companion Resources",
+  "title_es": "Receta CQRS — Recursos complementarios",
+  "description": "CQRS building blocks in TypeScript, Python, SQL and Node.js: a command handler with event publishing, SQL and Redis read-model projections, event sourcing and snapshotting.",
+  "description_es": "Piezas de CQRS en TypeScript, Python, SQL y Node.js: manejador de comandos con publicación de eventos, proyecciones de lectura en SQL y Redis, event sourcing y snapshotting.",
+  "type": "recipes",
+  "topic": "design",
+  "slug": "cqrs-pattern-recipe",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cqrs-pattern-recipe/",
+    "https://stackpractices.com/es/recipes/cqrs-pattern-recipe/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cqrs",
+    "design-pattern",
+    "event-sourcing",
+    "typescript",
+    "python",
+    "sql",
+    "redis",
+    "nodejs"
+  ],
+  "files": [
+    "command-handler.ts",
+    "order-projection.sql",
+    "order-projection.js",
+    "event-sourcing.py",
+    "snapshotting.ts",
+    "redis-read-model.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

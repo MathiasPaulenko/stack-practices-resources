@@ -1,0 +1,14 @@
+=== External: Status Page Update ===
+
+[INVESTIGATING] We are investigating a security incident affecting
+[SYSTEM]. We have taken affected systems offline and are working to
+determine the scope. We will update this page every [INTERVAL] until
+resolved.
+
+[IDENTIFIED] We have identified the cause of the security incident
+and contained the threat. Affected systems are being restored with
+enhanced security measures. We will notify affected users directly.
+
+[RESOLVED] The security incident has been resolved. All affected
+systems are secure and operational. A detailed post-incident report
+will be published on [DATE].

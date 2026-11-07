@@ -1,0 +1,13 @@
+=== Internal: Initial Breach Alert (Slack/Email) ===
+
+SUBJECT: [SEV-SECURITY] Suspected data breach — [SYSTEM]
+
+Incident commander: [NAME]
+Bridge: [PHONE/VIDEO LINK]
+Status: Investigating
+Summary: [BRIEF DESCRIPTION — what was detected, when, by whom]
+Impact: [UNKNOWN / CONFIRMED — what systems/data may be affected]
+Next steps: [CONTAINMENT / FORENSICS / NOTIFICATION]
+
+Do NOT discuss details in public channels.
+Use the incident bridge and #sec-incident-private only.

@@ -1,0 +1,30 @@
+{
+  "title": "Content Delivery Network (CDN) Pattern — Companion Code",
+  "title_es": "Patrón Content Delivery Network (CDN) — Código complementario",
+  "description": "Runnable CDN snippets: CloudFront invalidation in Node, a Python cache warmup/purge manager, a Terraform distribution, and Cache-Control header recipes.",
+  "description_es": "Snippets ejecutables de CDN: invalidación de CloudFront en Node, un gestor Python de warmup/purge de cache, una distribución en Terraform y recetas de headers Cache-Control.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "content-delivery-network-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/content-delivery-network-pattern/",
+    "https://stackpractices.com/es/patterns/content-delivery-network-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cdn",
+    "cloudfront",
+    "edge-caching",
+    "terraform",
+    "cache-control",
+    "invalidation"
+  ],
+  "files": [
+    "invalidate_cache.mjs",
+    "cdn_manager.py",
+    "cloudfront.tf",
+    "cache-control-headers.http",
+    "README.md",
+    "README.es.md"
+  ]
+}

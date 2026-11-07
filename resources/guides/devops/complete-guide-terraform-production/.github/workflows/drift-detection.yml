@@ -1,0 +1,38 @@
+# .github/workflows/drift-detection.yml — daily drift check.
+# `plan -refresh-only -detailed-exitcode` exit 2 = real drift only.
+name: Terraform Drift Detection
+on:
+  schedule:
+    - cron: "0 8 * * *"   # daily, 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  drift-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::123456789012:role/GitHubTerraformPlan
+          aws-region: us-east-1
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+      - name: Detect drift
+        working-directory: terraform/environments/production
+        run: |
+          terraform init -input=false
+          set +e
+          terraform plan -refresh-only -detailed-exitcode -out=refresh.tfplan
+          CODE=$?
+          set -e
+          if [ $CODE -eq 2 ]; then
+            terraform show -no-color refresh.tfplan | head -100
+            echo "::warning title=drift::Infrastructure drifted from Terraform state"
+            exit 1
+          fi
+          exit $CODE

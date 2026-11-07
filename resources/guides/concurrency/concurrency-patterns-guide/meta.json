@@ -1,0 +1,28 @@
+{
+  "title": "Concurrency Patterns Guide",
+  "title_es": "Guía de Patrones de Concurrencia",
+  "description": "Runnable examples: asyncio producer-consumer with bounded queue, semaphore rate limiter, circuit breaker, order pipeline composition, Go channels, Java bounded pool, and an Elixir GenServer.",
+  "description_es": "Ejemplos ejecutables: producer-consumer asyncio con cola acotada, rate limiter con semáforo, circuit breaker, pipeline de pedidos, canales en Go, pool acotado en Java y un GenServer en Elixir.",
+  "type": "guides",
+  "topic": "concurrency",
+  "slug": "concurrency-patterns-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/concurrency-patterns-guide/",
+    "es": "https://stackpractices.com/es/guides/concurrency-patterns-guide/"
+  },
+  "language": "multi",
+  "tags": ["concurrency", "asyncio", "threads", "producer-consumer", "semaphore", "circuit-breaker", "go", "java", "elixir"],
+  "files": [
+    "src/producer_consumer.py",
+    "src/rate_limiter.py",
+    "src/circuit_breaker.py",
+    "src/order_pipeline.py",
+    "src/producer_consumer.go",
+    "src/ConcurrencyBasics.java",
+    "src/fetch_all.mjs",
+    "src/counter.ex",
+    "tests/test_concurrency.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

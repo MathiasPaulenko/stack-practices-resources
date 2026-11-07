@@ -1,0 +1,34 @@
+{
+  "title": "Terraform Modules — VPC Module, Tests & Composition Examples",
+  "title_es": "Módulos de Terraform — Módulo de VPC, pruebas y ejemplos de composición",
+  "description": "A complete VPC module (for_each subnets, NAT gateway, validation blocks), a runnable examples/basic, a native terraform test suite (.tftest.hcl), and a Terratest Go test — matching the guide's canonical layout.",
+  "description_es": "Un módulo de VPC completo (subnets con for_each, NAT gateway, bloques de validación), un examples/basic ejecutable, una suite nativa de terraform test (.tftest.hcl) y una prueba de Terratest en Go — siguiendo la estructura canónica de la guía.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-terraform-modules",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-terraform-modules/",
+    "https://stackpractices.com/es/guides/complete-guide-terraform-modules/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "modules",
+    "infrastructure-as-code",
+    "aws",
+    "vpc",
+    "terratest",
+    "tftest"
+  ],
+  "files": [
+    "modules/vpc/main.tf",
+    "modules/vpc/variables.tf",
+    "modules/vpc/outputs.tf",
+    "modules/vpc/versions.tf",
+    "modules/vpc/examples/basic/main.tf",
+    "modules/vpc/tests/vpc.tftest.hcl",
+    "test/vpc_test.go",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Complete Guide to Web Security Headers",
+  "title_es": "Guía completa de cabeceras de seguridad web",
+  "description": "Runnable Express + Helmet project matching the guide: CSP directives with nonces and strict-dynamic notes, HSTS preload config, cross-origin isolation headers, and both CSP violation report endpoints (legacy report-uri and the Reporting API), verified by supertest assertions.",
+  "description_es": "Proyecto ejecutable de Express + Helmet que refleja la guía: directivas CSP con nonces y strict-dynamic, configuración de HSTS con preload, cabeceras de aislamiento entre orígenes y ambos endpoints de reportes de violaciones CSP (report-uri heredado y la Reporting API), verificados con aserciones de supertest.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "complete-guide-web-security-headers",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-web-security-headers/",
+    "https://stackpractices.com/es/guides/complete-guide-web-security-headers/"
+  ],
+  "language": "javascript",
+  "tags": ["security", "security-headers", "csp", "helmet", "express", "hsts", "supertest"],
+  "files": [
+    "package.json",
+    "src/app.js",
+    "src/server.js",
+    "tests/headers.test.js",
+    ".github/workflows/test.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

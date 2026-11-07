@@ -1,0 +1,14 @@
+{
+  "name": "typescript-advanced-types-playground",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Runnable playground for the StackPractices guide 'TypeScript Advanced Types: The Complete Guide'.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.0"
+  }
+}

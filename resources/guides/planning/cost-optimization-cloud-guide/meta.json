@@ -1,0 +1,28 @@
+{
+  "title": "Cloud Cost Optimization Guide — Companion Files",
+  "title_es": "Guía de optimización de costos cloud — Archivos complementarios",
+  "description": "Right-sizing analyzer using p95 CPU metrics and a cost inventory template from the worked example in the guide.",
+  "description_es": "Analizador de right-sizing con métricas p95 de CPU y plantilla de inventario de costos del ejemplo trabajado de la guía.",
+  "type": "guides",
+  "topic": "planning",
+  "slug": "cost-optimization-cloud-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/cost-optimization-cloud-guide/",
+    "https://stackpractices.com/es/guides/cost-optimization-cloud-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cost-optimization",
+    "finops",
+    "right-sizing",
+    "aws",
+    "cloud-costs",
+    "inventory"
+  ],
+  "files": [
+    "rightsize_report.py",
+    "cost-inventory.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

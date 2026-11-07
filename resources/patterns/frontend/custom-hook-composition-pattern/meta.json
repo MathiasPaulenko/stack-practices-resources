@@ -1,0 +1,30 @@
+{
+  "title": "Custom Hook Composition — React Examples",
+  "title_es": "Composición de custom hooks — Ejemplos en React",
+  "description": "Runnable custom React hooks: debounce, fetch with enabled/no-op support, sort, pagination, composed useUserTable, context-aware useAuth guard, and renderHook tests.",
+  "description_es": "Custom hooks de React ejecutables: debounce, fetch con soporte enabled/no-op, ordenación, paginación, useUserTable compuesto, guarda de contexto en useAuth y tests con renderHook.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "custom-hook-composition-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/custom-hook-composition-pattern/",
+    "https://stackpractices.com/es/patterns/custom-hook-composition-pattern/",
+    "https://react.dev/learn/reusing-logic-with-custom-hooks",
+    "https://react.dev/reference/rules/rules-of-hooks"
+  ],
+  "language": ["javascript"],
+  "tags": ["pattern", "frontend", "react", "custom-hooks", "composition", "testing-library"],
+  "files": [
+    "useDebounce.js",
+    "useFetch.js",
+    "useSort.js",
+    "usePagination.js",
+    "useUserTable.js",
+    "useAuth.js",
+    "useProtectedFetch.js",
+    "useDebounce.test.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Container Security: Scan, Harden, and Sign Docker Images",
+  "title_es": "Seguridad en imágenes Docker: escanea, endurece y firma",
+  "description": "Scan container images for CVEs, secrets, and misconfigurations with Trivy and Grype. Hardened Dockerfiles, SBOM generation, Cosign signing, and CI enforcement.",
+  "description_es": "Escanea imágenes de contenedor en busca de CVEs, secretos y configuraciones inseguras con Trivy y Grype. Dockerfiles endurecidos, generación de SBOM, firma con Cosign y control en CI.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "container-security",
+  "source_urls": [
+    "https://stackpractices.com/recipes/container-security/",
+    "https://stackpractices.com/es/recipes/container-security/"
+  ],
+  "language": "bilingual",
+  "tags": ["container-security", "docker", "trivy", "grype", "sbom", "cosign", "kyverno", "devsecops"],
+  "files": [
+    "Dockerfile",
+    "Dockerfile.alpine",
+    "security-scan.yml",
+    ".gitlab-ci.yml",
+    "trivy.yaml",
+    ".trivyignore",
+    "k8s-deployment.yaml",
+    "kyverno-policy.yaml",
+    "scan.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

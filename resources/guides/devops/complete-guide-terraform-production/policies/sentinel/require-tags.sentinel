@@ -1,0 +1,22 @@
+# policies/sentinel/require-tags.sentinel
+# Requires HCP Terraform or Terraform Enterprise — Sentinel does NOT run
+# in the open-source CLI. For OSS pipelines use OPA/Conftest or `check` blocks.
+import "tfplan/v2" as tfplan
+import "strings"
+
+mandatory_tags = {"Project", "Environment", "ManagedBy", "Owner"}
+
+aws_resources = filter tfplan.resource_changes as _, rc {
+    strings.has_prefix(rc.type, "aws_") and
+    rc.change.actions contains "create" or
+    rc.change.actions contains "update"
+}
+
+main = rule {
+    all aws_resources as _, rc {
+        all mandatory_tags as t {
+            # default_tags land in tags_all; resources may have no tags at all
+            (rc.change.after.tags_all else {}) contains t
+        }
+    }
+}

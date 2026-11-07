@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Design Tokens Demo</title>
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-text);
+    padding: var(--space-page);
+    transition: background var(--transition-base), color var(--transition-base);
+  }
+
+  h1 { font-size: var(--text-heading); margin-bottom: var(--space-2); }
+  .sub { color: var(--color-text-muted); margin-bottom: var(--space-8); font-size: var(--text-sm); }
+
+  .toolbar { margin-bottom: var(--space-6); }
+
+  /* Component-scoped tokens: variants override values, not declarations */
+  .button {
+    --button-bg: var(--color-accent);
+    --button-text: var(--color-white);
+    --button-padding-x: var(--space-4);
+    --button-padding-y: var(--space-2);
+
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: var(--button-padding-y) var(--button-padding-x);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+  }
+
+  .button:hover { background: var(--color-accent-hover); transform: translateY(-1px); }
+
+  .button--secondary {
+    --button-bg: var(--color-surface-hover);
+    --button-text: var(--color-text);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-4);
+  }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card__title { font-size: var(--text-fluid-lg); margin-bottom: var(--space-2); }
+  .card__body { color: var(--color-text-muted); font-size: var(--text-fluid-base); line-height: var(--line-height-normal); }
+
+  .chip {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-white);
+    border-radius: var(--radius-full);
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-xs);
+    margin-top: var(--space-3);
+  }
+</style>
+</head>
+<body>
+  <h1>Design Tokens Demo</h1>
+  <p class="sub">Every color, space and font size on this page comes from tokens.css. Toggle the theme — only the semantic layer changes.</p>
+
+  <div class="toolbar">
+    <button class="button" onclick="toggleTheme()">Toggle theme</button>
+    <button class="button button--secondary" onclick="resetTheme()">Reset</button>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <h2 class="card__title">Semantic colors</h2>
+      <p class="card__body">This card reads --color-surface, --color-text and --color-border. The dark theme remaps them without touching the card.</p>
+      <span class="chip">var(--color-accent)</span>
+    </article>
+    <article class="card">
+      <h2 class="card__title">Fluid type</h2>
+      <p class="card__body">Headings use --text-fluid-* tokens with clamp(). Resize the window — no breakpoints involved.</p>
+      <span class="chip">var(--text-fluid-lg)</span>
+    </article>
+    <article class="card">
+      <h2 class="card__title">Spacing scale</h2>
+      <p class="card__body">Padding and gaps come from --space-*. --space-page also steps up at 768px and 1280px via media queries.</p>
+      <span class="chip">var(--space-6)</span>
+    </article>
+  </div>
+
+<script>
+  const saved = localStorage.getItem("theme");
+  if (saved) document.documentElement.setAttribute("data-theme", saved);
+
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute("data-theme");
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  }
+
+  function resetTheme() {
+    localStorage.removeItem("theme");
+    document.documentElement.setAttribute("data-theme", "light");
+  }
+</script>
+</body>
+</html>

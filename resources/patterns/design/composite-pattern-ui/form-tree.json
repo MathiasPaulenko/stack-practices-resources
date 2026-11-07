@@ -1,0 +1,25 @@
+{
+  "type": "section",
+  "id": "root",
+  "title": "User Profile",
+  "children": [
+    {
+      "type": "section",
+      "id": "personal",
+      "title": "Personal Information",
+      "children": [
+        { "type": "field", "id": "firstName", "label": "First Name", "inputType": "text" },
+        { "type": "field", "id": "lastName", "label": "Last Name", "inputType": "text" }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "address",
+      "title": "Address",
+      "children": [
+        { "type": "field", "id": "street", "label": "Street", "inputType": "text" },
+        { "type": "field", "id": "city", "label": "City", "inputType": "text" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+/* Design tokens — copy this file and adapt the scales to your brand.
+   Layer model: raw scale -> semantic tokens -> component tokens. */
+
+:root {
+  /* ---- Raw color scales ---- */
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-900: #1e3a8a;
+
+  --color-white: #ffffff;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-500: #6b7280;
+  --color-gray-900: #111827;
+  --color-black: #000000;
+
+  /* ---- Semantic tokens (components read only these) ---- */
+  --color-bg: var(--color-white);
+  --color-text: var(--color-gray-900);
+  --color-text-muted: var(--color-gray-500);
+  --color-border: var(--color-gray-200);
+  --color-accent: var(--color-primary-500);
+  --color-accent-hover: var(--color-primary-600);
+  --color-surface: var(--color-white);
+  --color-surface-hover: var(--color-gray-100);
+
+  /* ---- Spacing scale (base 0.25rem) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-page: var(--space-4);
+
+  /* ---- Typography ---- */
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Fluid type scale (no breakpoints needed) */
+  --text-fluid-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-fluid-lg: clamp(1.25rem, 1rem + 1vw, 1.5rem);
+  --text-fluid-xl: clamp(1.5rem, 1.2rem + 1.5vw, 2rem);
+  --text-fluid-2xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  --text-heading: var(--text-xl);
+
+  /* ---- Radius ---- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+  /* ---- Z-index ---- */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms ease-out;
+  --transition-base: 250ms ease-out;
+  --transition-slow: 400ms ease-out;
+}
+
+/* Dark theme: only the semantic layer is remapped. */
+[data-theme="dark"] {
+  --color-bg: #0f172a;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-border: #1e293b;
+  --color-surface: #1e293b;
+  --color-surface-hover: #334155;
+  --color-accent-hover: var(--color-primary-500);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive spacing: one token, all components follow. */
+@media (min-width: 768px) {
+  :root {
+    --space-page: var(--space-8);
+    --text-heading: var(--text-2xl);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --space-page: var(--space-12);
+  }
+}

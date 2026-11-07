@@ -1,0 +1,32 @@
+{
+  "title": "Data Access Object (DAO) Pattern — Companion Files",
+  "title_es": "Patrón Data Access Object (DAO) — Archivos complementarios",
+  "description": "Runnable DAO implementations: a Python class over sqlite3 with constructor-injected connection and a FakeUserDao for tests, a Java JDBC version with interface, generated-key handling and a DataAccessException wrapper, and an async JavaScript DAO over the sqlite package.",
+  "description_es": "Implementaciones ejecutables de DAO: una clase Python sobre sqlite3 con conexión inyectada en el constructor y un FakeUserDao para tests, una versión Java con JDBC, interfaz, manejo de claves generadas y envoltorio DataAccessException, y un DAO asíncrono en JavaScript sobre el paquete sqlite.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "data-access-object-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/data-access-object-pattern/",
+    "https://stackpractices.com/es/patterns/data-access-object-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "dao",
+    "data-access-object",
+    "pattern",
+    "persistence",
+    "database",
+    "sql",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "dao-python.py",
+    "SqlUserDao.java",
+    "dao-javascript.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

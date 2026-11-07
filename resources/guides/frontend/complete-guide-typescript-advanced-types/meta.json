@@ -1,0 +1,41 @@
+{
+  "title": "TypeScript Advanced Types — Playground",
+  "title_es": "Tipos Avanzados de TypeScript — Playground",
+  "description": "Runnable strict-mode TypeScript playground with the guide's corrected patterns: conditional types, infer, mapped types, template literals, satisfies, variance, typed emitter, API client, state machine, and branded types — verified by compile-time assertions.",
+  "description_es": "Playground ejecutable de TypeScript en modo strict con los patrones corregidos de la guía: tipos condicionales, infer, mapped types, template literals, satisfies, varianza, emitter tipado, cliente de API, máquina de estados y tipos branded — verificados con aserciones en tiempo de compilación.",
+  "type": "guides",
+  "topic": "frontend",
+  "slug": "complete-guide-typescript-advanced-types",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/complete-guide-typescript-advanced-types/",
+    "es": "https://stackpractices.com/es/guides/complete-guide-typescript-advanced-types/"
+  },
+  "language": "typescript",
+  "tags": [
+    "typescript",
+    "conditional-types",
+    "mapped-types",
+    "template-literal-types",
+    "infer",
+    "satisfies",
+    "type-safety",
+    "branded-types"
+  ],
+  "files": [
+    "package.json",
+    "tsconfig.json",
+    "src/conditional-types.ts",
+    "src/mapped-types.ts",
+    "src/template-literals.ts",
+    "src/satisfies-const.ts",
+    "src/narrowing.ts",
+    "src/variance.ts",
+    "src/typed-emitter.ts",
+    "src/api-client.ts",
+    "src/state-machine.ts",
+    "src/branded-types.ts",
+    "test/types.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

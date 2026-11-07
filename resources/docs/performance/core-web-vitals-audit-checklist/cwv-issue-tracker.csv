@@ -1,0 +1,6 @@
+id,page,metric,current,target,issue,status,owner,due_date
+001,/,LCP,3.2s,2.5s,Hero image not preloaded,Fixed,Alice,2026-07-06
+002,/,CLS,0.15,0.1,Font swap causing shift,In progress,Bob,2026-07-08
+003,/products,INP,280ms,200ms,Search handler blocking,Open,Carol,2026-07-08
+004,/checkout,LCP,2.8s,2.5s,Render-blocking CSS,Fixed,Alice,2026-07-06
+005,/blog/*,CLS,0.12,0.1,Image dimensions missing,Open,Dan,2026-07-10

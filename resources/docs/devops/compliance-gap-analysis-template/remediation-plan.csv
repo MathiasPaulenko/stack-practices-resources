@@ -1,0 +1,7 @@
+Gap ID,Description,Action,Owner,Due Date,Priority,Evidence Needed
+GAP-01,MFA missing for admin roles,Enforce MFA on all privileged accounts,IAM team,2026-08-15,High,MFA enrollment report
+GAP-02,No vulnerability remediation SLA,Define and approve SLA by severity,Security team,2026-09-01,High,SLA document
+GAP-03,Access reviews not documented,Use quarterly access review template,Engineering managers,2026-07-30,Medium,Signed attestations
+GAP-04,No formal vendor assessment,Adopt vendor assessment template,Procurement,2026-10-01,Medium,Completed assessments
+,,,,,,
+,,,,,,

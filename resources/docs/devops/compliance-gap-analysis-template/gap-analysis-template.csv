@@ -1,0 +1,9 @@
+Requirement ID,Control Objective,Current Control,Evidence,Status,Gap,Owner,Due Date
+CC6.1,Logical access,RBAC policy enforced,RBAC policy doc; IAM config,Partial,MFA not enforced for all admin roles,IAM team,2026-08-15
+CC6.6,System monitoring,Logs centralized in SIEM,SIEM dashboard; retention policy,Met,None,Security team,N/A
+CC7.1,Vulnerability management,Quarterly scans,Scanner report,Partial,No SLA for remediation,Vuln management team,2026-09-01
+A.12.3.1,Information backup,Backup policy exists,Backup policy; restore test,Met,None,DevOps team,N/A
+A.9.2.3,Access rights,Access review process,Quarterly access reviews,Partial,Reviews not documented,Engineering managers,2026-07-30
+,,,,,,,
+,,,,,,,
+,,,,,,,

@@ -1,0 +1,14 @@
+# Cache-Control recipes for CDN edge caching.
+# Apply at the origin; the CDN reads these to decide what to store and for how long.
+
+# --- Static, fingerprinted assets (app.a3f8b2.js) — safe to cache "forever"
+Cache-Control: public, max-age=31536000, immutable
+
+# --- HTML pages — browsers revalidate, but the CDN may keep a short copy
+Cache-Control: public, max-age=0, s-maxage=300, stale-while-revalidate=60
+
+# --- Personalized responses — never store at the edge
+Cache-Control: private, no-store
+
+# --- API responses with short-lived data — small edge TTL, stale fallback on origin trouble
+Cache-Control: public, max-age=0, s-maxage=60, stale-if-error=300

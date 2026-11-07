@@ -1,0 +1,30 @@
+{
+  "title": "Data Governance Policy Template — Companion Resources",
+  "title_es": "Plantilla de Política de Gobernanza de Datos — Recursos complementarios",
+  "description": "Fillable data governance policy with classification levels, retention schedules, RBAC, GDPR/CCPA privacy procedures, security controls, data quality standards and incident response — plus a quarterly access review checklist.",
+  "description_es": "Política de gobernanza de datos rellenable con niveles de clasificación, calendarios de retención, RBAC, procedimientos de privacidad GDPR/CCPA, controles de seguridad, estándares de calidad y respuesta a incidentes — más una checklist de revisión trimestral de accesos.",
+  "type": "docs",
+  "topic": "data-engineering",
+  "slug": "data-governance-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-governance-policy-template/",
+    "https://stackpractices.com/es/docs/data-governance-policy-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "data-governance",
+    "data-classification",
+    "data-retention",
+    "access-control",
+    "compliance",
+    "gdpr",
+    "ccpa",
+    "policy"
+  ],
+  "files": [
+    "data-governance-policy-template.md",
+    "access-review-checklist.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

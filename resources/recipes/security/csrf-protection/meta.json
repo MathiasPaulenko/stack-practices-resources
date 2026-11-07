@@ -1,0 +1,30 @@
+{
+  "title": "CSRF Protection for Web Forms",
+  "title_es": "Protección CSRF para formularios web",
+  "description": "Express CSRF middleware from the CSRF protection recipe: signed double-submit cookie pattern with HMAC verification, constant-time token comparison, and a runnable demo server.",
+  "description_es": "Middleware CSRF para Express de la receta de protección CSRF: patrón de cookie double-submit firmada con verificación HMAC, comparación de tokens en tiempo constante y un servidor demo ejecutable.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "csrf-protection",
+  "source_urls": [
+    "https://stackpractices.com/recipes/csrf-protection/",
+    "https://stackpractices.com/es/recipes/csrf-protection/",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "csrf",
+    "express",
+    "nodejs",
+    "security",
+    "owasp",
+    "middleware",
+    "web-security"
+  ],
+  "files": [
+    "csrf-middleware.js",
+    "demo-server.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

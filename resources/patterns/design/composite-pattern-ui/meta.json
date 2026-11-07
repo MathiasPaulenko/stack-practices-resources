@@ -1,0 +1,33 @@
+{
+  "title": "Composite Pattern for UI Trees: React children and Data-Driven Rendering",
+  "title_es": "Patrón Composite para Árboles UI: children de React y Renderizado por Datos",
+  "description": "Runnable Composite Pattern examples for React UI trees: a UINode discriminated-union tree, a recursive Node renderer, a nested navigation tree, and a JSON round-trip serialization test.",
+  "description_es": "Ejemplos ejecutables del Patrón Composite para árboles UI en React: un árbol UINode de unión discriminada, un renderer recursivo Node, un árbol de navegación anidado y un test de serialización ida y vuelta a JSON.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "composite-pattern-ui",
+  "source_urls": [
+    "https://stackpractices.com/patterns/composite-pattern-ui/",
+    "https://stackpractices.com/es/patterns/composite-pattern-ui/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "structural",
+    "composite",
+    "react",
+    "typescript",
+    "tsx",
+    "ui-tree",
+    "children",
+    "form-builder"
+  ],
+  "files": [
+    "ui-node.tsx",
+    "form-tree.json",
+    "nav-tree.tsx",
+    "serialization.test.mjs",
+    "README.md",
+    "README.es.md"
+  ]
+}

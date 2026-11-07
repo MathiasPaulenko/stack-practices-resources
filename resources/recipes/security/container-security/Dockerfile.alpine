@@ -1,0 +1,16 @@
+# Alternative hardened Dockerfile — keeps a shell for debugging
+# Use when distroless is too restrictive: still non-root, minimal surface.
+
+FROM node:20-alpine
+
+RUN apk add --no-cache dumb-init \
+  && addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
+
+WORKDIR /app
+COPY --chown=nextjs:nodejs package*.json ./
+RUN npm ci --omit=dev && npm cache clean --force
+COPY --chown=nextjs:nodejs . .
+
+USER nextjs
+EXPOSE 3000
+CMD ["dumb-init", "node", "server.js"]

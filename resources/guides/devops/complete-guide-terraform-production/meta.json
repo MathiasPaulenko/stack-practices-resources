@@ -1,0 +1,37 @@
+{
+  "title": "Terraform in Production — State Backend, Drift, CI/CD & Policy",
+  "title_es": "Terraform en Producción — Backend de estado, drift, CI/CD y políticas",
+  "description": "The operational layer for Terraform: S3 backend with native use_lockfile, environment root module, refresh-only drift detection script, a reviewed-plan GitHub Actions pipeline with OIDC and an approval gate, Sentinel policy, and a native check-block alternative.",
+  "description_es": "La capa operativa de Terraform: backend S3 con use_lockfile nativo, módulo raíz por entorno, script de detección de drift con refresh-only, pipeline de GitHub Actions que aplica el plan revisado con OIDC y aprobación, política Sentinel y alternativa con bloque check nativo.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "complete-guide-terraform-production",
+  "source_urls": [
+    "https://stackpractices.com/guides/complete-guide-terraform-production/",
+    "https://stackpractices.com/es/guides/complete-guide-terraform-production/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "production",
+    "state-locking",
+    "drift-detection",
+    "ci-cd",
+    "github-actions",
+    "sentinel",
+    "oidc"
+  ],
+  "files": [
+    "bootstrap/main.tf",
+    "environments/production/backend.tf",
+    "environments/production/main.tf",
+    "environments/production/variables.tf",
+    "policies/sentinel/require-tags.sentinel",
+    "policies/checks.tf",
+    "scripts/drift-check.sh",
+    ".github/workflows/terraform.yml",
+    ".github/workflows/drift-detection.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

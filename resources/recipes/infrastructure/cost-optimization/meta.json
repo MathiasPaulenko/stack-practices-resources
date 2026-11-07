@@ -1,0 +1,30 @@
+{
+  "title": "Cloud Cost Optimization — Companion Files",
+  "title_es": "Optimización de costos cloud — Archivos complementarios",
+  "description": "Executable cost optimization artifacts: orphaned resource sweep script, AWS Budgets alerts, dev environment scheduling, and an Infracost CI workflow.",
+  "description_es": "Artefactos ejecutables de optimización de costos: script de barrido de recursos huérfanos, alertas de AWS Budgets, scheduling de entornos dev y workflow de Infracost para CI.",
+  "type": "recipes",
+  "topic": "infrastructure",
+  "slug": "cost-optimization",
+  "source_urls": [
+    "https://stackpractices.com/recipes/cost-optimization/",
+    "https://stackpractices.com/es/recipes/cost-optimization/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cost-optimization",
+    "finops",
+    "aws",
+    "terraform",
+    "budgets",
+    "infracost"
+  ],
+  "files": [
+    "find-orphaned-resources.sh",
+    "budget-alerts.tf",
+    "dev-schedule.tf",
+    "infracost-ci.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

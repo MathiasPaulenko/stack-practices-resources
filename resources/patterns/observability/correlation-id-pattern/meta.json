@@ -1,0 +1,30 @@
+{
+  "title": "Correlation ID Pattern — Companion Files",
+  "title_es": "Patrón Correlation ID — Archivos complementarios",
+  "description": "Runnable correlation ID middleware and propagation examples: FastAPI, Express with AsyncLocalStorage, RabbitMQ publisher/consumer, and a Spring Boot filter with MDC.",
+  "description_es": "Ejemplos ejecutables de middleware y propagación de correlation ID: FastAPI, Express con AsyncLocalStorage, publisher/consumer RabbitMQ y filtro Spring Boot con MDC.",
+  "type": "patterns",
+  "topic": "observability",
+  "slug": "correlation-id-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/correlation-id-pattern/",
+    "https://stackpractices.com/es/patterns/correlation-id-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "correlation-id",
+    "observability",
+    "distributed-tracing",
+    "microservices",
+    "logging",
+    "middleware"
+  ],
+  "files": [
+    "correlation_middleware.py",
+    "correlation-middleware.mjs",
+    "rabbitmq_correlation.py",
+    "CorrelationIdFilter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

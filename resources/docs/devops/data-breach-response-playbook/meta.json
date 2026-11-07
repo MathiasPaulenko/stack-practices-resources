@@ -1,0 +1,30 @@
+{
+  "title": "Data Breach Response Playbook — Companion Resources",
+  "title_es": "Playbook de Respuesta a Violaciones de Datos — Recursos complementarios",
+  "description": "Fillable 6-phase breach response playbook (detection, containment, evidence, notification, remediation, post-incident) plus three communication templates: internal alert, customer notification email and status page updates.",
+  "description_es": "Playbook rellenable de respuesta a violaciones en 6 fases (detección, contención, evidencia, notificación, remediación, post-incidente) más tres plantillas de comunicación: alerta interna, email de notificación al cliente y actualizaciones de página de estado.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "data-breach-response-playbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-breach-response-playbook/",
+    "https://stackpractices.com/es/docs/data-breach-response-playbook/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "data-breach",
+    "incident-response",
+    "playbook",
+    "security",
+    "compliance",
+    "notification"
+  ],
+  "files": [
+    "data-breach-response-playbook.md",
+    "internal-breach-alert.txt",
+    "customer-notification-email.txt",
+    "status-page-update.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

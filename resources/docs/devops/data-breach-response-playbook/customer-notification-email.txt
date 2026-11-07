@@ -1,0 +1,33 @@
+=== External: Customer Notification Email ===
+
+Subject: Important Security Notice — [COMPANY NAME]
+
+Dear [CUSTOMER_NAME],
+
+We are writing to inform you of a security incident that may have
+affected your account information. We discovered the incident on
+[DATE] and took immediate action to secure our systems.
+
+What happened:
+  [BRIEF, NON-TECHNICAL DESCRIPTION]
+
+What data was involved:
+  [LIST OF DATA TYPES — e.g., name, email, hashed password]
+
+What we have done:
+  - Contained the breach and secured affected systems
+  - Engaged forensic investigators and notified authorities
+  - [ADDITIONAL STEPS]
+
+What you should do:
+  - Change your password immediately
+  - Enable two-factor authentication
+  - Monitor your account for suspicious activity
+  - [ADDITIONAL RECOMMENDATIONS]
+
+We take the security of your data seriously and apologize for any
+concern this may cause. We will provide updates as we learn more.
+
+Contact: [SUPPORT_EMAIL / DEDICATED PHONE]
+
+[COMPANY_NAME] Security Team

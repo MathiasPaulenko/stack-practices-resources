@@ -1,0 +1,35 @@
+{
+  "title": "Composite Pattern: File System and Expression Tree Examples",
+  "title_es": "Patrón Composite: Ejemplos de Sistema de Archivos y Árbol de Expresiones",
+  "description": "Runnable Composite Pattern examples: a File/Folder file-system tree in Python, JavaScript and Java, an arithmetic expression-tree variant in TypeScript, and a cycle-checking test for safe add() methods.",
+  "description_es": "Ejemplos ejecutables del Patrón Composite: un árbol de File/Folder en Python, JavaScript y Java, una variante de árbol de expresiones aritméticas en TypeScript y un test de detección de ciclos para métodos add() seguros.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "composite-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/composite-pattern/",
+    "https://stackpractices.com/es/patterns/composite-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "structural",
+    "composite",
+    "tree",
+    "part-whole",
+    "gof",
+    "python",
+    "java",
+    "javascript",
+    "typescript"
+  ],
+  "files": [
+    "file_system.py",
+    "file-system.js",
+    "FileSystem.java",
+    "expression-tree.ts",
+    "test_cycle_check.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "C# async/await & Task.Run Recipe — Companion Resources",
+  "title_es": "Receta C# async/await y Task.Run — Recursos complementarios",
+  "description": "Runnable C# concurrency examples: Task.WhenAll fan-out, WhenAny with proper cancellation, Channels producer-consumer with backpressure, Parallel.ForEachAsync and SemaphoreSlim bounded parallelism, and IAsyncEnumerable async streams.",
+  "description_es": "Ejemplos ejecutables de concurrencia en C#: fan-out con Task.WhenAll, WhenAny con cancelación correcta, productor-consumidor con Channels y backpressure, paralelismo acotado con Parallel.ForEachAsync y SemaphoreSlim, y streams async con IAsyncEnumerable.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "csharp-async-await-task-run",
+  "source_urls": [
+    "https://stackpractices.com/recipes/csharp-async-await-task-run/",
+    "https://stackpractices.com/es/recipes/csharp-async-await-task-run/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "csharp",
+    "dotnet",
+    "async",
+    "concurrency",
+    "channels",
+    "task-run"
+  ],
+  "files": [
+    "AsyncFanOut.cs",
+    "ChannelPipeline.cs",
+    "BoundedParallelism.cs",
+    "CancellationDemo.cs",
+    "AsyncStreams.cs",
+    "README.md",
+    "README.es.md"
+  ]
+}

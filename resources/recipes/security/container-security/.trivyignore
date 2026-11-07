@@ -1,0 +1,3 @@
+# Reviewed CVEs — each entry needs a justification and a review date.
+# Example:
+# CVE-2023-1234  # False positive: vulnerable function is not reachable. Review 2027-02

@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Card snapshots > matches snapshot with content 1`] = `
+<div
+  class="card"
+>
+  <h3>
+    Test Title
+  </h3>
+  <p>
+    Test Description
+  </p>
+</div>
+`;
+
+exports[`Card snapshots > matches snapshot with image 1`] = `
+<div
+  class="card"
+>
+  <h3>
+    With Image
+  </h3>
+  <img
+    alt="With Image"
+    src="/test.jpg"
+  />
+</div>
+`;

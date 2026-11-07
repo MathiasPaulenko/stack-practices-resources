@@ -1,0 +1,31 @@
+{
+  "title": "Contract Testing Pattern — Companion Code",
+  "title_es": "Patrón Contract Testing — Código complementario",
+  "description": "Runnable contract-testing artifacts: Pact consumer tests and provider verification in Node, a pact-python consumer example, a GitHub Actions broker publish/verify workflow, and a can-i-deploy gate script.",
+  "description_es": "Artefactos ejecutables de contract testing: tests de consumidor y verificación de proveedor con Pact en Node, un ejemplo de consumidor con pact-python, un workflow de GitHub Actions para publicar/verificar en el broker y un script de puerta can-i-deploy.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "contract-testing-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/contract-testing-pattern/",
+    "https://stackpractices.com/es/patterns/contract-testing-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "contract-testing",
+    "pact",
+    "pact-broker",
+    "microservices",
+    "ci-cd",
+    "testing"
+  ],
+  "files": [
+    "consumer.pact.test.js",
+    "provider.verify.test.js",
+    "consumer_pact_test.py",
+    "contract-tests.yml",
+    "can-i-deploy.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

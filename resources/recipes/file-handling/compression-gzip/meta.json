@@ -1,0 +1,31 @@
+{
+  "title": "Gzip and Brotli Compression: Streaming, Integrity Checks and Ratio Benchmark",
+  "title_es": "Compresión Gzip y Brotli: Streaming, Verificación de Integridad y Benchmark de Ratios",
+  "description": "Runnable compression examples: streaming Gzip with SHA256 integrity verification in Python, Node.js Brotli/Gzip pipeline, a Bash pre-compression script for static assets, and a compression-ratio benchmark.",
+  "description_es": "Ejemplos ejecutables de compresión: Gzip en streaming con verificación de integridad SHA256 en Python, pipeline Brotli/Gzip en Node.js, script Bash de pre-compresión para assets estáticos y un benchmark de ratios de compresión.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "compression-gzip",
+  "source_urls": [
+    "https://stackpractices.com/recipes/compression-gzip/",
+    "https://stackpractices.com/es/recipes/compression-gzip/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "gzip",
+    "brotli",
+    "zlib",
+    "compression",
+    "content-encoding",
+    "streaming",
+    "file-handling"
+  ],
+  "files": [
+    "gzip_streaming.py",
+    "compress-brotli.js",
+    "precompress.sh",
+    "ratio_benchmark.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "connect-to-redis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Redis connection examples with ioredis: URL config, retry strategy, sorted sets, pub/sub",
+  "scripts": {
+    "start": "node connect.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.0"
+  }
+}

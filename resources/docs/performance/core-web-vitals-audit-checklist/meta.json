@@ -1,0 +1,29 @@
+{
+  "title": "Core Web Vitals Audit Checklist — Companion Files",
+  "title_es": "Checklist de Auditoría de Core Web Vitals — Archivos complementarios",
+  "description": "Downloadable Core Web Vitals audit artifacts: an issue-tracker CSV, a ready-to-fill audit report template, and a web-vitals RUM collection snippet.",
+  "description_es": "Artefactos descargables de auditoría Core Web Vitals: un CSV de seguimiento de issues, una plantilla de informe lista para rellenar y un snippet RUM con la librería web-vitals.",
+  "type": "docs",
+  "topic": "performance",
+  "slug": "core-web-vitals-audit-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/core-web-vitals-audit-checklist/",
+    "https://stackpractices.com/es/docs/core-web-vitals-audit-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "core-web-vitals",
+    "lcp",
+    "inp",
+    "cls",
+    "audit",
+    "rum"
+  ],
+  "files": [
+    "cwv-issue-tracker.csv",
+    "audit-report-template.md",
+    "web-vitals-rum.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

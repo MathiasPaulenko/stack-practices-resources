@@ -1,0 +1,35 @@
+{
+  "title": "Component API Documentation Template",
+  "title_es": "Plantilla de Documentación de API de Componentes",
+  "description": "Companion kit for the component API documentation template: a fillable Markdown template (props, events, slots, methods, a11y, migration), a react-docgen drift-check script, a props CSV, and a Storybook autodocs example.",
+  "description_es": "Kit complementario de la plantilla de documentación de API de componentes: una plantilla Markdown rellenable (props, eventos, slots, métodos, a11y, migración), un script de chequeo de deriva con react-docgen, un CSV de props y un ejemplo de autodocs de Storybook.",
+  "type": "docs",
+  "topic": "frontend",
+  "slug": "component-api-documentation-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/component-api-documentation-template/",
+    "https://stackpractices.com/es/docs/component-api-documentation-template/",
+    "https://github.com/reactjs/react-docgen",
+    "https://storybook.js.org/docs/writing-docs/autodocs",
+    "https://www.w3.org/WAI/ARIA/apg/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "component-api",
+    "documentation",
+    "design-system",
+    "typescript",
+    "react-docgen",
+    "storybook",
+    "frontend",
+    "template"
+  ],
+  "files": [
+    "component-api-doc.md",
+    "docgen_drift_check.py",
+    "props-table.csv",
+    "storybook-autodocs.mdx",
+    "README.md",
+    "README.es.md"
+  ]
+}

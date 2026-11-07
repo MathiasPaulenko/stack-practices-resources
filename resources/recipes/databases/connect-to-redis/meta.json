@@ -1,0 +1,29 @@
+{
+  "title": "Connect to Redis — Python, JavaScript & Java",
+  "title_es": "Conectar a Redis — Python, JavaScript y Java",
+  "description": "Runnable Redis connection examples: redis-py from_url with pool and pipeline, ioredis with retry strategy and pub/sub, and JedisPooled with a Lua rate limiter, plus a docker-compose Redis 7 instance.",
+  "description_es": "Ejemplos ejecutables de conexión a Redis: redis-py from_url con pool y pipeline, ioredis con retry strategy y pub/sub, y JedisPooled con un limitador de tasa en Lua, con Redis 7 en docker-compose.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "connect-to-redis",
+  "source_urls": [
+    "https://stackpractices.com/recipes/connect-to-redis/",
+    "https://redis.io/docs/latest/",
+    "https://github.com/redis/ioredis",
+    "https://redis-py.readthedocs.io/",
+    "https://github.com/redis/jedis"
+  ],
+  "language": ["python", "javascript", "java", "yaml"],
+  "tags": ["database", "redis", "redis-py", "ioredis", "jedis", "cache", "pub-sub", "rate-limiting", "python", "javascript", "java"],
+  "files": [
+    "docker-compose.yml",
+    "redis.conf",
+    "connect.py",
+    "connect.js",
+    "RedisExample.java",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

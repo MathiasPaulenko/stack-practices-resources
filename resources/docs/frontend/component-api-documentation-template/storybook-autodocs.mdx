@@ -1,0 +1,39 @@
+import { Meta, Primary, Controls, Stories } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+
+{/*
+  Autodocs page: prop tables come from react-docgen via Controls,
+  so they can't drift from the TypeScript source. Hand-written
+  narrative lives in this MDX — that's the split this doc recommends.
+*/}
+
+<Meta of={ButtonStories} title="Components/Button" />
+
+# Button
+
+A versatile button component with multiple variants, sizes, icons,
+loading states, and full keyboard navigation.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+{/* Narrative the generator can't produce: */}
+
+## When to use which variant
+
+- `primary` — the single main action on a page
+- `secondary` — alternative actions alongside a primary
+- `ghost` — tertiary actions, filters, overflow triggers
+- `danger` — destructive actions that need confirmation context
+- `link` — navigation that looks like a link but keeps button sizing
+
+## Accessibility
+
+Icon-only usage requires `ariaLabel`. Keyboard: Enter and Space fire
+`onClick`; the component renders a native `<button>`, so focus and
+screen-reader behavior come for free.
+
+<Stories />

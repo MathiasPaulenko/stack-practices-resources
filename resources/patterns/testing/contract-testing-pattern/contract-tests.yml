@@ -1,0 +1,54 @@
+# .github/workflows/contract-tests.yml
+# Consumer publishes pacts -> provider verifies against the broker.
+name: Contract Tests
+
+on: [push, pull_request]
+
+jobs:
+  consumer-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run consumer tests
+        run: npx jest --testPathPattern=contract
+      - name: Publish pacts to broker
+        run: |
+          npx pact-broker publish pacts/ \
+            --consumer-app-version ${{ github.sha }} \
+            --broker-base-url ${{ secrets.PACT_BROKER_URL }} \
+            --broker-token ${{ secrets.PACT_BROKER_TOKEN }}
+
+  provider-verify:
+    needs: consumer-test
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Start provider
+        run: |
+          npm run start &
+          sleep 5
+      - name: Verify pacts from broker
+        run: |
+          npx pact-broker verify \
+            --broker-base-url ${{ secrets.PACT_BROKER_URL }} \
+            --broker-token ${{ secrets.PACT_BROKER_TOKEN }} \
+            --provider-base-url http://localhost:3000 \
+            --provider user-service \
+            --provider-app-version ${{ github.sha }}

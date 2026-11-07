@@ -1,0 +1,28 @@
+{
+  "title": "Connect to MySQL — Python, JavaScript & Java",
+  "title_es": "Conectar a MySQL — Python, JavaScript y Java",
+  "description": "Runnable MySQL connection examples: mysql-connector-python pool with retry, mysql2 Pool with transactions and keepalive, and HikariCP for Java, plus a docker-compose MySQL 8 instance.",
+  "description_es": "Ejemplos ejecutables de conexión a MySQL: pool de mysql-connector-python con retry, Pool de mysql2 con transacciones y keepalive, y HikariCP para Java, con MySQL 8 en docker-compose.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "connect-to-mysql",
+  "source_urls": [
+    "https://stackpractices.com/recipes/connect-to-mysql/",
+    "https://dev.mysql.com/doc/connector-python/en/",
+    "https://github.com/sidorares/node-mysql2",
+    "https://github.com/brettwooldridge/HikariCP"
+  ],
+  "language": ["python", "javascript", "java", "sql", "yaml"],
+  "tags": ["database", "mysql", "mysql-connector-python", "mysql2", "jdbc", "hikaricp", "connection-pool", "python", "javascript", "java"],
+  "files": [
+    "docker-compose.yml",
+    "init.sql",
+    "connect.py",
+    "connect.js",
+    "MySQLPool.java",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

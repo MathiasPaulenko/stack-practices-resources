@@ -1,0 +1,23 @@
+{
+  "title": "Compliance Gap Analysis Template",
+  "title_es": "Plantilla de Análisis de Brechas de Cumplimiento",
+  "description": "Downloadable gap analysis files: control mapping and remediation plan CSVs, an AWS evidence collection script, and a multi-framework mapping generator (SOC 2 / ISO 27001 / PCI-DSS).",
+  "description_es": "Archivos descargables de análisis de brechas: CSV de mapeo de controles y plan de remediación, script de recolección de evidencia en AWS y generador de matriz multi-marco (SOC 2 / ISO 27001 / PCI-DSS).",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "compliance-gap-analysis-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/compliance-gap-analysis-template/",
+    "es": "https://stackpractices.com/es/docs/compliance-gap-analysis-template/"
+  },
+  "language": ["bash", "python", "csv"],
+  "tags": ["compliance", "soc2", "iso-27001", "pci-dss", "audit", "gap-analysis", "evidence", "aws"],
+  "files": [
+    "gap-analysis-template.csv",
+    "remediation-plan.csv",
+    "collect-evidence.sh",
+    "generate-mapping.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

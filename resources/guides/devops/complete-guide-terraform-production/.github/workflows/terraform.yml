@@ -1,0 +1,82 @@
+# .github/workflows/terraform.yml
+# Two invariants: (1) the plan reviewed in the PR is the plan applied after
+# merge — apply downloads the artifact, never re-plans; (2) production
+# applies require a human gate (environment: production + required reviewers).
+name: Terraform Pipeline
+on:
+  pull_request:
+    paths: ["terraform/**"]
+  push:
+    branches: [main]
+    paths: ["terraform/**"]
+
+permissions:
+  id-token: write      # OIDC — no long-lived AWS keys in secrets
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: terraform-production
+  cancel-in-progress: false   # never interrupt an apply
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+      - run: terraform fmt -check -recursive
+        working-directory: terraform
+      - run: terraform init -input=false -backend=false && terraform validate
+        working-directory: terraform/environments/production
+
+  plan:
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::123456789012:role/GitHubTerraformPlan
+          aws-region: us-east-1
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+      - run: terraform init -input=false
+        working-directory: terraform/environments/production
+      - run: terraform plan -no-color -out=plan.tfplan
+        working-directory: terraform/environments/production
+        env:
+          TF_VAR_db_password: ${{ secrets.TF_DB_PASSWORD }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: terraform-plan
+          path: terraform/environments/production/plan.tfplan
+          retention-days: 5   # plan files can contain secrets
+
+  apply:
+    needs: plan
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    environment: production   # required reviewers gate this job
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::123456789012:role/GitHubTerraformApply
+          aws-region: us-east-1
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.9.8"
+      - uses: actions/download-artifact@v4
+        with:
+          name: terraform-plan
+          path: terraform/environments/production
+      - run: terraform init -input=false
+        working-directory: terraform/environments/production
+      - run: terraform apply -no-color plan.tfplan
+        working-directory: terraform/environments/production
+        env:
+          TF_VAR_db_password: ${{ secrets.TF_DB_PASSWORD }}

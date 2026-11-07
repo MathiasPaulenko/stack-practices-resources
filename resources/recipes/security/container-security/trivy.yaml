@@ -1,0 +1,7 @@
+# Trivy configuration — gate on what has fixes, skip non-production dirs
+scan:
+  severity: [CRITICAL, HIGH]
+  ignore-unfixed: true
+  skip-dirs:
+    - /tests
+    - /docs

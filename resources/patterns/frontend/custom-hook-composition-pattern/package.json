@@ -1,0 +1,17 @@
+{
+  "name": "custom-hook-composition-pattern",
+  "private": true,
+  "type": "module",
+  "description": "Runnable examples for the custom hook composition pattern.",
+  "scripts": {
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "jest": "^29.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Cryptography Basics Guide — Companion Resources",
+  "title_es": "Guía de Bases de Criptografía — Recursos complementarios",
+  "description": "Runnable cryptography examples in Python and Node.js: AES-256-GCM with AAD, Argon2id and bcrypt password hashing, HMAC-SHA256 verification, RSA-PSS and Ed25519 signatures, and KMS envelope encryption.",
+  "description_es": "Ejemplos criptográficos ejecutables en Python y Node.js: AES-256-GCM con AAD, hashing de contraseñas con Argon2id y bcrypt, verificación HMAC-SHA256, firmas RSA-PSS y Ed25519, y cifrado de sobre con KMS.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "cryptography-basics-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/cryptography-basics-guide/",
+    "https://stackpractices.com/es/guides/cryptography-basics-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "cryptography",
+    "encryption",
+    "hashing",
+    "security",
+    "python",
+    "nodejs",
+    "kms"
+  ],
+  "files": [
+    "aes-gcm-encrypt.py",
+    "password-hashing.py",
+    "hmac-verify.py",
+    "rsa-sign-verify.py",
+    "envelope-kms.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
