@@ -1,0 +1,23 @@
+{
+  "title": "Data Validation with Zod — Companion Examples",
+  "title_es": "Validación de Datos con Zod — Ejemplos Companion",
+  "description": "Zod 4 schemas for user input, environment variables, discriminated-union webhooks, and an Express validation middleware with field-level error formatting.",
+  "description_es": "Esquemas de Zod 4 para input de usuario, variables de entorno, webhooks con uniones discriminadas y un middleware de Express con formateo de errores por campo.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "data-validation-zod",
+  "source_urls": [
+    "https://stackpractices.com/recipes/data-validation-zod/",
+    "https://stackpractices.com/es/recipes/data-validation-zod/"
+  ],
+  "language": "typescript",
+  "tags": ["zod", "typescript", "data-validation", "express", "schema"],
+  "files": [
+    "schemas/user.ts",
+    "schemas/env.ts",
+    "schemas/webhook.ts",
+    "middleware/validate-body.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

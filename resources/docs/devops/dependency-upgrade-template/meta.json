@@ -1,0 +1,22 @@
+{
+  "title": "Dependency Upgrade Runbook — Runnable Simulation",
+  "title_es": "Runbook de Actualización de Dependencias — Simulación ejecutable",
+  "description": "Runnable simulation of the five-phase dependency upgrade runbook in three languages (JavaScript, Python, Java): prepare, upgrade, validate, rollback on failure, and monitor.",
+  "description_es": "Simulación ejecutable del runbook de actualización de dependencias en tres lenguajes (JavaScript, Python, Java): preparar, actualizar, validar, revertir si falla y monitorear.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "dependency-upgrade-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/dependency-upgrade-template/",
+    "https://stackpractices.com/es/docs/dependency-upgrade-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["dependency-upgrade", "runbook", "devops", "maintenance", "rollback"],
+  "files": [
+    "src/upgrade-runbook.js",
+    "src/upgrade_runbook.py",
+    "src/UpgradeRunbook.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "eventType": "START",
+  "eventTime": "2026-07-05T10:00:00.000Z",
+  "run": {
+    "runId": "abc-123-def",
+    "facets": {
+      "nominalTime": {
+        "_producer": "https://github.com/OpenLineage/OpenLineage",
+        "_schemaURL": "https://openlineage.io/schema/facets/1.0/nominalTime.json",
+        "nominalStartTime": "2026-07-05T10:00:00.000Z",
+        "nominalEndTime": "2026-07-05T10:05:00.000Z"
+      }
+    }
+  },
+  "job": {
+    "namespace": "shop",
+    "name": "etl.customers_daily",
+    "facets": {
+      "sql": {
+        "query": "SELECT id, email, status FROM source.customers WHERE updated_at >= ?"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "namespace": "postgres://source-db",
+      "name": "shop.public.customers",
+      "facets": {
+        "schema": {
+          "fields": [
+            {"name": "id", "type": "long"},
+            {"name": "email", "type": "string"},
+            {"name": "status", "type": "string"}
+          ]
+        }
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "namespace": "postgres://warehouse",
+      "name": "warehouse.customers",
+      "facets": {
+        "schema": {
+          "fields": [
+            {"name": "id", "type": "long"},
+            {"name": "email", "type": "string"},
+            {"name": "status", "type": "string"},
+            {"name": "is_active", "type": "boolean"}
+          ]
+        },
+        "columnLineage": {
+          "fields": {
+            "is_active": {
+              "inputFields": [
+                {"namespace": "postgres://source-db", "name": "shop.public.customers", "field": "status"}
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

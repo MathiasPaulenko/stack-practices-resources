@@ -1,0 +1,24 @@
+{
+  "title": "Data Pipeline Design Document Template",
+  "title_es": "Plantilla de Documento de Diseño de Data Pipeline",
+  "description": "Companion files for the data pipeline design document template: the blank fill-in document, the three dbt models (dedup, enrich, daily metrics) with the corrected is_enterprise reference, and the Airflow 2.x DAG skeleton.",
+  "description_es": "Archivos companion de la plantilla de documento de diseño de data pipeline: el documento rellenable en blanco, los tres modelos dbt (dedup, enrich, métricas diarias) con la referencia is_enterprise corregida, y el esqueleto de DAG Airflow 2.x.",
+  "type": "docs",
+  "topic": "data-engineering",
+  "slug": "data-pipeline-design-document-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/data-pipeline-design-document-template/",
+    "https://stackpractices.com/es/docs/data-pipeline-design-document-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["data-pipeline", "design-document", "dbt", "airflow", "etl", "data-engineering", "template"],
+  "files": [
+    "template/pipeline-design-document-template.md",
+    "dbt/models/int_orders_dedup.sql",
+    "dbt/models/int_orders_enriched.sql",
+    "dbt/models/fct_order_metrics.sql",
+    "airflow/orders_etl_dag.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

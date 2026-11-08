@@ -1,0 +1,22 @@
+{
+  "title": "Dead Letter Channel Pattern — Runnable Implementations",
+  "title_es": "Patrón Dead Letter Channel — Implementaciones ejecutables",
+  "description": "Runnable dead letter channel simulation in three languages (Python, JavaScript, Java): an in-memory broker with a main queue, a retry queue, and a dead letter queue where a poison message lands after exhausting retries.",
+  "description_es": "Simulación ejecutable de dead letter channel en tres lenguajes (Python, JavaScript, Java): un broker en memoria con cola principal, cola de reintento y cola de mensajes muertos donde aterriza un mensaje tóxico tras agotar los reintentos.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "dead-letter-channel-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/dead-letter-channel-pattern/",
+    "https://stackpractices.com/es/patterns/dead-letter-channel-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["dead-letter-queue", "dlq", "messaging", "pattern", "error-handling", "poison-message"],
+  "files": [
+    "src/dead_letter_channel.py",
+    "src/dead-letter-channel.js",
+    "src/DeadLetterChannel.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

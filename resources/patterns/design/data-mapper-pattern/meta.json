@@ -1,0 +1,33 @@
+{
+  "title": "Data Mapper Pattern — Companion Files",
+  "title_es": "Patrón Data Mapper — Archivos complementarios",
+  "description": "Runnable Data Mapper implementations: a Python UserMapper over sqlite3 with sqlite3.Row named-column access, a single-file Java JDBC demo (User + UserMapper + Main) with generated-key handling, and a JavaScript version on Node's built-in node:sqlite — plus the users table schema.",
+  "description_es": "Implementaciones ejecutables del patrón Data Mapper: un UserMapper en Python sobre sqlite3 con acceso a columnas por nombre vía sqlite3.Row, una demo Java en un solo archivo con JDBC (User + UserMapper + Main) y manejo de claves generadas, y una versión JavaScript sobre node:sqlite integrado en Node — más el esquema de la tabla users.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "data-mapper-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/data-mapper-pattern/",
+    "https://stackpractices.com/es/patterns/data-mapper-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "data-mapper",
+    "pattern",
+    "orm",
+    "persistence",
+    "database",
+    "sql",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "src/user_mapper.py",
+    "src/DataMapperDemo.java",
+    "src/user-mapper.js",
+    "schema.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

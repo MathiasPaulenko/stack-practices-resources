@@ -1,0 +1,24 @@
+{
+  "title": "Data Privacy and GDPR Compliance",
+  "title_es": "Privacidad de Datos y Cumplimiento GDPR",
+  "description": "Runnable GDPR technical controls: consent schema, HMAC pseudonymization, consent management API, data portability export, and retention cleanup job.",
+  "description_es": "Controles técnicos GDPR ejecutables: esquema de consentimiento, seudonimización HMAC, API de gestión de consentimientos, exportación de portabilidad y job de limpieza por retención.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "data-privacy-gdpr",
+  "source_urls": [
+    "https://stackpractices.com/recipes/data-privacy-gdpr/",
+    "https://stackpractices.com/es/recipes/data-privacy-gdpr/"
+  ],
+  "language": "multi",
+  "tags": ["gdpr", "privacy", "compliance", "consent-management", "security"],
+  "files": [
+    "schema.sql",
+    "pseudonymize.py",
+    "consent_api.js",
+    "retention_cleanup.py",
+    "export_user_data.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

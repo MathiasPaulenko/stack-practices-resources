@@ -1,0 +1,20 @@
+{
+  "title": "Debounce and Throttle — Event Burst Simulation",
+  "title_es": "Debounce y Throttle — Simulación de Ráfagas de Eventos",
+  "description": "Runnable simulation feeding a burst of events into debounce and throttle implementations to show how each limits execution frequency.",
+  "description_es": "Simulación ejecutable que alimenta una ráfaga de eventos a implementaciones de debounce y throttle para mostrar cómo cada una limita la frecuencia de ejecución.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "debounce-throttle",
+  "source_urls": [
+    "https://stackpractices.com/recipes/debounce-throttle/",
+    "https://stackpractices.com/es/recipes/debounce-throttle/"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["debounce", "throttle", "performance", "events", "rate-limiting"],
+  "files": [
+    "src/debounce_throttle_simulation.py",
+    "src/debounce-throttle-simulation.js",
+    "src/DebounceThrottleSimulation.java"
+  ]
+}

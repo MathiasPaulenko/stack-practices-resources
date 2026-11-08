@@ -1,0 +1,22 @@
+{
+  "title": "Dead Letter Queue Runbook — Runnable Simulation",
+  "title_es": "Runbook de Dead Letter Queue — Simulación ejecutable",
+  "description": "Runnable DLQ operations simulation in three languages (Python, JavaScript, Java): an in-memory broker that routes a poison message through retries into a dead letter queue, inspects and categorizes failures, then replays messages after the fix deploys.",
+  "description_es": "Simulación ejecutable de operaciones con DLQ en tres lenguajes (Python, JavaScript, Java): un broker en memoria que encamina un mensaje tóxico por reintentos hasta la dead letter queue, inspecciona y categoriza los fallos y luego reprocesa los mensajes tras desplegar el fix.",
+  "type": "docs",
+  "topic": "messaging",
+  "slug": "dead-letter-queue-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/dead-letter-queue-runbook/",
+    "https://stackpractices.com/es/docs/dead-letter-queue-runbook/"
+  ],
+  "language": "bilingual",
+  "tags": ["dead-letter-queue", "dlq", "messaging", "runbook", "replay", "error-handling", "kafka", "rabbitmq"],
+  "files": [
+    "src/dlq_runbook_simulation.py",
+    "src/dlq-runbook-simulation.js",
+    "src/DlqRunbookSimulation.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

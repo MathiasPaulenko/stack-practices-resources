@@ -1,0 +1,20 @@
+{
+  "title": "SQL Deadlock Prevention — Lock Ordering Simulation",
+  "title_es": "Prevención de Deadlocks SQL — Simulación de Orden de Bloqueos",
+  "description": "Runnable simulation showing how inconsistent lock ordering produces a deadlock and how sorted ordering plus retry-with-jitter resolves it.",
+  "description_es": "Simulación ejecutable que muestra cómo un orden de bloqueo inconsistente produce un deadlock y cómo el ordenamiento más el reintento con jitter lo resuelve.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "deadlock-prevention-sql",
+  "source_urls": [
+    "https://stackpractices.com/recipes/deadlock-prevention-sql/",
+    "https://stackpractices.com/es/recipes/deadlock-prevention-sql/"
+  ],
+  "language": ["python", "javascript", "java"],
+  "tags": ["deadlocks", "concurrency", "sql", "lock-ordering", "retry"],
+  "files": [
+    "src/deadlock_simulation.py",
+    "src/deadlock-simulation.js",
+    "src/DeadlockSimulation.java"
+  ]
+}

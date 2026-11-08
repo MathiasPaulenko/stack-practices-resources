@@ -1,0 +1,22 @@
+{
+  "title": "Decorator Pattern — Runnable Implementations",
+  "title_es": "Patrón Decorator — Implementaciones ejecutables",
+  "description": "Runnable decorator stack simulation in three languages (Python, JavaScript, Java): a Coffee component wrapped by Milk, Sugar and Whip decorators, showing runtime composition, delegated calls, and how layer order changes the result.",
+  "description_es": "Simulación ejecutable de pila de decoradores en tres lenguajes (Python, JavaScript, Java): un componente Coffee envuelto por decoradores de leche, azúcar y nata, mostrando composición en tiempo de ejecución, llamadas delegadas y cómo el orden de capas cambia el resultado.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "decorator-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/decorator-pattern/",
+    "https://stackpractices.com/es/patterns/decorator-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["decorator-pattern", "design-pattern", "structural", "gof", "composition", "wrapping"],
+  "files": [
+    "src/decorator_stack.py",
+    "src/decorator-stack.js",
+    "src/DecoratorStack.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

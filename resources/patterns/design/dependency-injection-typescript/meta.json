@@ -1,0 +1,22 @@
+{
+  "title": "Dependency Injection Container — Runnable Implementations",
+  "title_es": "Contenedor de Dependency Injection — Implementaciones ejecutables",
+  "description": "Runnable DI container in three languages (JavaScript, Python, Java): token registration, singleton/transient/scoped lifetimes, and a resolved UserService → UserRepository → Database/Logger graph.",
+  "description_es": "Contenedor DI ejecutable en tres lenguajes (JavaScript, Python, Java): registro por tokens, lifetimes singleton/transient/scoped y un grafo resuelto UserService → UserRepository → Database/Logger.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "dependency-injection-typescript",
+  "source_urls": [
+    "https://stackpractices.com/patterns/dependency-injection-typescript/",
+    "https://stackpractices.com/es/patterns/dependency-injection-typescript/"
+  ],
+  "language": "bilingual",
+  "tags": ["dependency-injection", "di-container", "typescript", "design-pattern", "inversion-of-control"],
+  "files": [
+    "src/di-container.js",
+    "src/di_container.py",
+    "src/DiContainer.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

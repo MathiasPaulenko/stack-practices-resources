@@ -1,0 +1,22 @@
+{
+  "title": "Validate and Sanitize User Input Data",
+  "title_es": "Validar y Sanitizar Datos de Entrada del Usuario",
+  "description": "Runnable user-input validators in three stacks: Zod (TypeScript), Pydantic v2 (Python), and Joi (Node.js) — same schema, three implementations.",
+  "description_es": "Validadores de entrada de usuario ejecutables en tres stacks: Zod (TypeScript), Pydantic v2 (Python) y Joi (Node.js) — mismo esquema, tres implementaciones.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "data-validation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/data-validation/",
+    "https://stackpractices.com/es/recipes/data-validation/"
+  ],
+  "language": "multi",
+  "tags": ["data-validation", "zod", "pydantic", "joi", "input-validation"],
+  "files": [
+    "user_schema.ts",
+    "user_model.py",
+    "user_schema.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

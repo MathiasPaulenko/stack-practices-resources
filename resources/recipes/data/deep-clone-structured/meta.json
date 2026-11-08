@@ -1,0 +1,22 @@
+{
+  "title": "Deep Clone Strategies — Runnable Implementations",
+  "title_es": "Estrategias de deep clone — Implementaciones ejecutables",
+  "description": "Runnable deep clone comparison in three languages (Python, JavaScript, Java): a JSON round-trip that silently loses types versus a proper deep clone that preserves dates, sets, maps, and circular references.",
+  "description_es": "Comparación ejecutable de deep clone en tres lenguajes (Python, JavaScript, Java): un round-trip JSON que pierde tipos en silencio frente a un clonado profundo real que preserva fechas, sets, mapas y referencias circulares.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "deep-clone-structured",
+  "source_urls": [
+    "https://stackpractices.com/recipes/deep-clone-structured/",
+    "https://stackpractices.com/es/recipes/deep-clone-structured/"
+  ],
+  "language": "bilingual",
+  "tags": ["deep-clone", "structuredclone", "json", "circular-references", "data", "javascript"],
+  "files": [
+    "src/deep_clone.py",
+    "src/deep-clone.js",
+    "src/DeepClone.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

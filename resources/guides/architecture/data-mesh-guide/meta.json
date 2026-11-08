@@ -1,0 +1,23 @@
+{
+  "title": "Data Mesh Data Product Contract",
+  "title_es": "Contrato de Data Product en Data Mesh",
+  "description": "Data product spec and Avro schema from the Data Mesh guide: the machine-readable contract between the orders domain and its consumers, plus a stdlib validator that checks spec/schema consistency.",
+  "description_es": "Spec de data product y esquema Avro de la guía Data Mesh: el contrato legible por máquina entre el dominio de pedidos y sus consumidores, más un validador stdlib que chequea la consistencia spec/esquema.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "data-mesh-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/data-mesh-guide/",
+    "https://stackpractices.com/es/guides/data-mesh-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["data-mesh", "data-product", "avro", "schema-registry", "data-contract", "governance"],
+  "files": [
+    "data-product.yaml",
+    "schemas/order_event.avsc",
+    "validate_product.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

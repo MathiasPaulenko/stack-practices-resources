@@ -1,0 +1,26 @@
+{
+  "title": "Data Lineage Tracking — OpenLineage, Marquez and Column-Level Extraction",
+  "title_es": "Seguimiento de Linaje de Datos — OpenLineage, Marquez y Extracción a Nivel de Columna",
+  "description": "Runnable lineage stack: docker-compose with Marquez and PostgreSQL, an OpenLineage event emitter for Python pipelines, sqlglot-based column-level extraction, a recursive impact-analysis query, and an Airflow DAG example.",
+  "description_es": "Stack de linaje ejecutable: docker-compose con Marquez y PostgreSQL, un emisor de eventos OpenLineage para pipelines en Python, extracción a nivel de columna con sqlglot, una consulta recursiva de análisis de impacto y un DAG de Airflow de ejemplo.",
+  "type": "patterns",
+  "topic": "data",
+  "slug": "data-lineage-tracking-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/data-lineage-tracking-pattern/",
+    "https://stackpractices.com/es/patterns/data-lineage-tracking-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["openlineage", "marquez", "data-lineage", "sqlglot", "airflow", "governance"],
+  "files": [
+    "docker-compose.yml",
+    "openlineage_event.json",
+    "src/lineage_tracker.py",
+    "src/etl_with_lineage.py",
+    "src/column_lineage.py",
+    "src/table_lineage.py",
+    "src/impact_analysis.sql",
+    "src/airflow_lineage.py",
+    "src/LineageEmitter.java"
+  ]
+}

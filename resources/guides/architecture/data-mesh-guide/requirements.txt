@@ -1,0 +1,5 @@
+# Spec validation (optional — validate_product.py degrades gracefully without it)
+pyyaml>=6.0
+
+# Publisher example — needs a real Kafka + Schema Registry to run
+# confluent-kafka[avro]>=2.5

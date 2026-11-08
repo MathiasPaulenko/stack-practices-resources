@@ -1,0 +1,22 @@
+{
+  "type": "record",
+  "name": "OrderEvent",
+  "namespace": "orders",
+  "doc": "Order lifecycle event published by the orders domain team.",
+  "fields": [
+    { "name": "order_id", "type": "string", "doc": "Unique order identifier (UUID)." },
+    {
+      "name": "event_type",
+      "type": {
+        "type": "enum",
+        "name": "OrderEventType",
+        "symbols": ["placed", "paid", "shipped", "delivered", "cancelled"]
+      },
+      "doc": "Type of order event."
+    },
+    { "name": "customer_id", "type": "string", "doc": "Customer identifier (pseudonymous)." },
+    { "name": "total", "type": "double", "doc": "Order total in account currency." },
+    { "name": "occurred_at", "type": "string", "doc": "ISO-8601 event timestamp." },
+    { "name": "customer_email", "type": ["null", "string"], "default": null, "doc": "PII — masked by platform policy." }
+  ]
+}
