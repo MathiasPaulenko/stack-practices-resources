@@ -1,0 +1,28 @@
+{
+  "title": "Docker for Developers — Companion Files",
+  "title_es": "Docker para Desarrolladores — Archivos complementarios",
+  "description": "Multi-stage production Dockerfile, a dev docker-compose stack (api + postgres + redis with healthcheck), and a .dockerignore — the working files from the Docker for Developers guide.",
+  "description_es": "Dockerfile multi-etapa para producción, un stack docker-compose de desarrollo (api + postgres + redis con healthcheck) y un .dockerignore — los archivos de la guía Docker para Desarrolladores.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "docker-for-developers-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/docker-for-developers-guide/",
+    "https://stackpractices.com/es/guides/docker-for-developers-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "docker",
+    "dockerfile",
+    "docker-compose",
+    "containers",
+    "devops"
+  ],
+  "files": [
+    "Dockerfile",
+    "docker-compose.yml",
+    ".dockerignore",
+    "README.md",
+    "README.es.md"
+  ]
+}
