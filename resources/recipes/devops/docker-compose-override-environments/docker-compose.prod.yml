@@ -4,8 +4,8 @@ services:
   app:
     build:
       target: production
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"  # internal only — replicas conflict on a fixed host port; ingress via proxy
     environment:
       - NODE_ENV=production
       - LOG_LEVEL=warn

@@ -1,0 +1,35 @@
+# docker-compose.staging.yml — Staging mirrors prod at smaller scale. Load explicitly:
+# docker compose --env-file .env.staging -f docker-compose.yml -f docker-compose.staging.yml up -d
+services:
+  app:
+    build:
+      target: production
+    ports:
+      - "8080:3000"  # staging listens on its own host port
+    environment:
+      - NODE_ENV=staging
+      - LOG_LEVEL=info
+      - SENTRY_DSN=${SENTRY_DSN}
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  db:
+    environment:
+      POSTGRES_PASSWORD: ${STAGING_DB_PASSWORD}
+    volumes:
+      - db-data-staging:/var/lib/postgresql/data
+
+volumes:
+  db-data-staging:

@@ -1,8 +1,8 @@
 {
   "title": "Docker Compose Override Environments — Companion Files",
   "title_es": "Docker Compose Override por Entorno — Archivos complementarios",
-  "description": "Complete set of Docker Compose files for per-environment configuration: base, auto-loaded dev override, production, test with !reset removal, and a profiles example. Includes per-environment .env files.",
-  "description_es": "Conjunto completo de archivos Docker Compose por entorno: base, override de dev de carga automática, producción, test con eliminación vía !reset y un ejemplo de profiles. Incluye archivos .env por entorno.",
+  "description": "Complete set of Docker Compose files for per-environment configuration: base, auto-loaded dev override, production, staging, test with !reset removal, and a profiles example. Includes per-environment .env files, a Makefile, and a GitHub Actions deploy workflow.",
+  "description_es": "Conjunto completo de archivos Docker Compose por entorno: base, override de dev de carga automática, producción, staging, test con eliminación vía !reset y un ejemplo de profiles. Incluye archivos .env por entorno, un Makefile y un workflow de despliegue con GitHub Actions.",
   "type": "recipes",
   "topic": "devops",
   "slug": "docker-compose-override-environments",
@@ -25,9 +25,13 @@
     "docker-compose.override.yml",
     "docker-compose.prod.yml",
     "docker-compose.test.yml",
+    "docker-compose.staging.yml",
     "docker-compose.profiles.yml",
     ".env.dev",
+    ".env.staging",
     ".env.prod",
+    "Makefile",
+    "deploy.yml",
     "README.md",
     "README.es.md"
   ]

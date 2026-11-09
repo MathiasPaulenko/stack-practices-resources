@@ -9,11 +9,14 @@ Artículo fuente: [Sobrescribe la Configuración de Docker Compose por Entorno](
 | Archivo | Rol |
 |---------|-----|
 | `docker-compose.yml` | Configuración base: app + postgres + redis, con valores por defecto de producción. |
-| `docker-compose.override.yml` | Lo carga `docker compose up` automáticamente: hot reload, puerto de debugger, Mailhog + Adminer para dev. |
+| `docker-compose.override.yml` | Lo carga `docker compose up` automáticamente: hot reload, puerto de debugger, Mailpit + Adminer para dev. |
 | `docker-compose.prod.yml` | Réplicas, límites de recursos, restart policy, logging JSON y Docker secrets. Se carga explícitamente. |
 | `docker-compose.test.yml` | Comando `npm test`, base de datos efímera (`volumes: !reset []`), redis eliminado (`!reset null`). |
+| `docker-compose.staging.yml` | Configuración de prod a menor escala: 1 réplica, límites ajustados, volumen propio. |
 | `docker-compose.profiles.yml` | Servicios opcionales `debug-tools` y `load-test` detrás de flags `--profile`. |
-| `.env.dev` / `.env.prod` | Archivos de variables por entorno que se cargan con `--env-file`. |
+| `.env.dev` / `.env.staging` / `.env.prod` | Archivos de variables por entorno que se cargan con `--env-file`. |
+| `Makefile` | Atajos `make dev|staging|prod|test|down|logs|config` para las cadenas de `-f`. |
+| `deploy.yml` | Workflow de GitHub Actions: rama → archivo override (`main`→prod, `staging`→staging). |
 
 ## Uso
 
@@ -23,6 +26,9 @@ docker compose up
 
 # Producción
 docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+# Staging
+docker compose --env-file .env.staging -f docker-compose.yml -f docker-compose.staging.yml up -d
 
 # Tests
 docker compose -f docker-compose.yml -f docker-compose.test.yml up --abort-on-container-exit

@@ -1,0 +1,30 @@
+# deploy.yml — branch-based deploy via -f overrides + --env-file
+# Place under .github/workflows/deploy.yml
+name: Deploy
+
+on:
+  push:
+    branches: [main, staging]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and deploy
+        run: |
+          if [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            ENV=prod
+          else
+            ENV=staging
+          fi
+          docker compose --env-file .env.${ENV} \
+            -f docker-compose.yml -f docker-compose.${ENV}.yml \
+            up -d --build
+
+      - name: Verify health
+        run: |
+          sleep 15
+          docker compose -f docker-compose.yml -f docker-compose.${ENV}.yml ps
+          curl -f http://localhost:3000/health
