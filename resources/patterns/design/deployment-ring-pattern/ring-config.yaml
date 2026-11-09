@@ -1,0 +1,44 @@
+# Deployment Ring Pattern — example ring configuration
+# Define rings, audiences, bake windows and the health-gate thresholds
+# each ring must pass before the rollout expands.
+
+version: "2.4.0"
+
+rings:
+  - id: 0
+    name: internal
+    audience: employees
+    percentage: 1
+    bake_minutes: 30
+    promotion: automatic        # automatic | manual
+  - id: 1
+    name: early-adopters
+    audience: beta_opt_ins
+    percentage: 5
+    bake_minutes: 30
+    promotion: automatic
+  - id: 2
+    name: canary
+    audience: random_sample
+    percentage: 25
+    bake_minutes: 120
+    promotion: manual           # human sign-off before the last ring
+  - id: 3
+    name: general
+    audience: everyone
+    percentage: 100
+    bake_minutes: 0
+    promotion: automatic
+
+health_gate:
+  max_error_rate: 0.05          # 5% — gate trips above this
+  max_p95_latency_ms: 500
+  min_requests: 1000            # statistical floor before evaluating
+  business_metrics:             # at least one non-technical signal
+    - name: checkout_conversion
+      max_relative_drop: 0.02   # 2% relative drop trips the gate
+
+rollback:
+  scope: all_completed_rings    # never roll back only the failed ring
+  keep_previous_version_warm: true
+  notify_on_rollback: ["#deployments", "oncall@example.com"]

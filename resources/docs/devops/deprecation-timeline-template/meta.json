@@ -1,0 +1,24 @@
+{
+  "title": "Deprecation Timeline Template — Fillable Files",
+  "title_es": "Plantilla de Línea de Tiempo de Deprecación — Archivos rellenables",
+  "description": "Blank timeline template, filled payments-api v1 example, migration tracker CSV, and ready-to-use Deprecation/Sunset HTTP header snippets for Express and nginx.",
+  "description_es": "Plantilla de línea de tiempo en blanco, ejemplo rellenado de payments-api v1, CSV de seguimiento de migración y snippets listos para cabeceras HTTP Deprecation/Sunset en Express y nginx.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "deprecation-timeline-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/deprecation-timeline-template/",
+    "https://stackpractices.com/es/docs/deprecation-timeline-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["deprecation", "api-sunset", "migration", "http-headers", "lifecycle"],
+  "files": [
+    "deprecation-timeline-template.md",
+    "filled-example.md",
+    "migration-tracker.csv",
+    "express-deprecation-headers.js",
+    "nginx-deprecation-headers.conf",
+    "README.md",
+    "README.es.md"
+  ]
+}

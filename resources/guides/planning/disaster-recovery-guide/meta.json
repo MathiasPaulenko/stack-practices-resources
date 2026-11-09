@@ -1,0 +1,21 @@
+{
+  "title": "Disaster Recovery — RTO, RPO, and Resilient Recovery Runbooks",
+  "title_es": "Recuperación ante Desastres — RTO, RPO y Runbooks Resilientes",
+  "description": "Disaster recovery building blocks: service-tier RTO/RPO config, PostgreSQL WAL + base backup script, a backup-restore integrity check, and a copy-ready database failover runbook.",
+  "description_es": "Piezas de recuperación ante desastres: config de RTO/RPO por niveles, script de backup PostgreSQL con WAL + base, verificación de restauración y un runbook de failover listo para copiar.",
+  "type": "guides",
+  "topic": "planning",
+  "slug": "disaster-recovery-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/disaster-recovery-guide/",
+    "https://stackpractices.com/es/guides/disaster-recovery-guide/"
+  ],
+  "language": ["bash", "python", "yaml", "markdown"],
+  "tags": ["disaster-recovery", "rto", "rpo", "backup", "failover", "postgres", "runbook", "multi-region"],
+  "files": [
+    "dr-tiers.yaml",
+    "postgres-backup.sh",
+    "test-backup-restore.py",
+    "failover-runbook.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Disaster Recovery Test Plan — Companion Kit",
+  "title_es": "Plan de Pruebas de Recuperación ante Desastres — Kit Compañero",
+  "description": "Runnable DR test kit: a six-section test plan template, a boto3-based automated test runner, a chaos game-day script, integrity-check SQL, and a quarterly test calendar.",
+  "description_es": "Kit de pruebas DR ejecutable: plantilla de seis secciones, runner automatizado con boto3, script de game day de caos, SQL de verificación de integridad y calendario trimestral.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "disaster-recovery-test-plan",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/disaster-recovery-test-plan/",
+    "es": "https://stackpractices.com/es/docs/disaster-recovery-test-plan/"
+  },
+  "language": "bilingual",
+  "tags": ["disaster-recovery", "rto-rpo", "failover", "chaos-engineering", "testing"],
+  "files": [
+    "dr-test-plan-template.md",
+    "dr_test_runner.py",
+    "game-day.sh",
+    "dependency-checks.sh",
+    "integrity-checks.sql",
+    "dr-test-calendar.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

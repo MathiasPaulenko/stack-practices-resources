@@ -1,0 +1,46 @@
+# OpenTelemetry Collector config: OTLP in, Jaeger/Zipkin/Tempo out.
+# The dedicated `jaeger` exporter was removed in collector v0.86.0 —
+# Jaeger >=1.35 receives OTLP directly on 4317 via `otlp/jaeger`.
+# `tls.insecure: true` is for local/demo setups only; use real TLS in prod.
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+processors:
+  batch:
+    timeout: 5s
+  # Tail sampling: decide after the whole trace is collected.
+  # Keeps every error and every trace slower than 500 ms, samples the rest.
+  tail_sampling:
+    decision_wait: 10s
+    policies:
+      - name: keep-errors
+        type: status_code
+        status_code: { status_codes: [ERROR] }
+      - name: keep-slow
+        type: latency
+        latency: { threshold_ms: 500 }
+
+exporters:
+  otlp/jaeger:
+    endpoint: jaeger:4317
+    tls:
+      insecure: true
+  zipkin:
+    endpoint: http://zipkin:9411/api/v2/spans
+  otlp/tempo:
+    endpoint: tempo:4317
+    tls:
+      insecure: true
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch, tail_sampling]
+      exporters: [otlp/jaeger, zipkin, otlp/tempo]

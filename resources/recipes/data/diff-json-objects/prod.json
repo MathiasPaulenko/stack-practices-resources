@@ -1,0 +1,6 @@
+{
+  "db": { "host": "prod.db.local", "pool": 5 },
+  "cache": true,
+  "features": ["search", "beta-ui"],
+  "logLevel": "warn"
+}

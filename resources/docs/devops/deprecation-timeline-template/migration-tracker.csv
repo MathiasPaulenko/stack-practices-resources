@@ -1,0 +1,8 @@
+consumer,type,status,last_contact,risk_level,owner,notes
+Team A (api),internal,migrated,2027-03-15,low,alice,Completed early
+Team B (web),internal,in_progress,2027-04-20,medium,bob,Needs schema help
+Team C (mobile),internal,not_started,2027-04-01,high,carol,No response in 3 weeks
+Team D (data),internal,migrated,2027-03-30,low,dave,Completed
+Team E (infra),internal,in_progress,2027-04-25,medium,erin,Testing in staging
+Acme Corp,enterprise,in_progress,2027-04-22,medium,account-manager,Contract requires 9mo notice
+Globex Inc,enterprise,migrated,2027-04-10,low,account-manager,White-glove migration done

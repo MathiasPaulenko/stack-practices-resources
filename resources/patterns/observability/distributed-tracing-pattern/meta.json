@@ -1,0 +1,31 @@
+{
+  "title": "Distributed Tracing Pattern — Companion Files",
+  "title_es": "Patrón de Trazado Distribuido — Archivos complementarios",
+  "description": "Runnable trace-context propagation examples: shared OpenTelemetry setup, FastAPI service with extract/inject middleware, RabbitMQ producer/consumer, and an OTLP collector pipeline with tail sampling.",
+  "description_es": "Ejemplos ejecutables de propagación de contexto de traza: setup compartido de OpenTelemetry, servicio FastAPI con middleware de extract/inject, productor/consumidor RabbitMQ y pipeline OTLP del collector con muestreo de cola.",
+  "type": "patterns",
+  "topic": "observability",
+  "slug": "distributed-tracing-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/distributed-tracing-pattern/",
+    "https://stackpractices.com/es/patterns/distributed-tracing-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "distributed-tracing",
+    "opentelemetry",
+    "observability",
+    "trace-context",
+    "microservices",
+    "jaeger"
+  ],
+  "files": [
+    "otel_setup.py",
+    "fastapi_traced_app.py",
+    "rabbitmq_propagation.py",
+    "otel-collector-config.yaml",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

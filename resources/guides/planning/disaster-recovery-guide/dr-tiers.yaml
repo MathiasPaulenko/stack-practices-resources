@@ -1,0 +1,21 @@
+# Recovery objectives by service tier.
+# Map every production service to exactly one tier; review quarterly.
+tiers:
+  - name: tier_1_critical
+    examples: [payment-processing, user-authentication]
+    rto: "5 minutes"
+    rpo: "0 minutes"
+    strategy: "active-active"
+    notes: "Synchronous replica in a second region; automated failover."
+  - name: tier_2_important
+    examples: [reporting, analytics]
+    rto: "4 hours"
+    rpo: "1 hour"
+    strategy: "warm-standby"
+    notes: "Scaled-down replica; manual promotion with a runbook."
+  - name: tier_3_standard
+    examples: [internal-tools, staging]
+    rto: "24 hours"
+    rpo: "24 hours"
+    strategy: "backup-restore"
+    notes: "Nightly backups to a second region; documented restore steps."

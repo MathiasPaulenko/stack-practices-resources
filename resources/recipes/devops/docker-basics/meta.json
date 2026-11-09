@@ -1,0 +1,24 @@
+{
+  "title": "Docker Basics: Dockerfile, Compose & Commands",
+  "title_es": "Fundamentos de Docker: Dockerfile, Compose y Comandos",
+  "description": "Copy-paste Dockerfiles for Node.js, Python, and Java, a Docker Compose web+database setup, and the essential day-to-day Docker commands.",
+  "description_es": "Dockerfiles listos para copiar en Node.js, Python y Java, una configuración de Docker Compose web+base de datos, y los comandos esenciales de Docker del día a día.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-basics",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/docker-basics/",
+    "es": "https://stackpractices.com/es/recipes/docker-basics/"
+  },
+  "language": ["dockerfile", "yaml", "bash"],
+  "tags": ["docker", "dockerfile", "compose", "containers", "multi-stage", "beginner"],
+  "files": [
+    "Dockerfile.node",
+    "Dockerfile.python",
+    "Dockerfile.java",
+    "docker-compose.yml",
+    ".dockerignore",
+    "README.md",
+    "README.es.md"
+  ]
+}

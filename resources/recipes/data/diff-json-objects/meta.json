@@ -1,0 +1,24 @@
+{
+  "title": "Diff JSON Objects — Runnable Examples",
+  "title_es": "Comparar objetos JSON — Ejemplos ejecutables",
+  "description": "Runnable JSON diff implementations in Python, JavaScript, and Java with sample staging/prod payloads: categorized report and RFC 6902 patch modes.",
+  "description_es": "Implementaciones ejecutables de diff JSON en Python, JavaScript y Java con payloads de ejemplo staging/prod: informe categorizado y modo parche RFC 6902.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "diff-json-objects",
+  "source_urls": [
+    "https://stackpractices.com/recipes/diff-json-objects/",
+    "https://stackpractices.com/es/recipes/diff-json-objects/"
+  ],
+  "language": "bilingual",
+  "tags": ["json", "diff", "rfc-6902", "deepdiff", "json-patch"],
+  "files": [
+    "json_diff.py",
+    "diff-json.js",
+    "JsonDiff.java",
+    "staging.json",
+    "prod.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Deployment Ring Pattern — Runnable Implementations",
+  "title_es": "Patrón Deployment Ring — Implementaciones ejecutables",
+  "description": "Runnable deployment-ring rollout simulation in three languages (Python, JavaScript, Java): ring state machine, health gates with bake time, sequential expansion and full rollback of completed rings. Includes an example ring configuration file.",
+  "description_es": "Simulación ejecutable del despliegue por anillos en tres lenguajes (Python, JavaScript, Java): máquina de estados de anillos, puertas de salud con bake time, expansión secuencial y rollback completo de los anillos ya completados. Incluye un archivo de configuración de anillos de ejemplo.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "deployment-ring-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/deployment-ring-pattern/",
+    "https://stackpractices.com/es/patterns/deployment-ring-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["deployment-rings", "progressive-delivery", "canary", "rollback", "pattern", "devops"],
+  "files": [
+    "src/ring_deployment.py",
+    "src/ring-deployment.js",
+    "src/RingDeployment.java",
+    "ring-config.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
