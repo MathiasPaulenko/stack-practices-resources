@@ -1,0 +1,41 @@
+{
+  "title": "Distroless Docker Images with Multi-Stage Builds — Companion Files",
+  "title_es": "Imágenes Docker Distroless con Multi-Stage Builds — Archivos complementarios",
+  "description": "Runnable multi-stage Dockerfiles landing on distroless bases: Go on distroless/static with a binary-driven HEALTHCHECK, Node on nodejs22-debian12, Python and Java pragmatic slim/JRE stages, an Alpine alternative, a size-verification script, and a .dockerignore.",
+  "description_es": "Dockerfiles multi-stage ejecutables sobre bases distroless: Go en distroless/static con HEALTHCHECK por binario, Node en nodejs22-debian12, etapas slim/JRE pragmáticas para Python y Java, una alternativa Alpine, un script de verificación de tamaños y un .dockerignore.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-multi-stage-build-distroless",
+  "source_urls": [
+    "https://stackpractices.com/recipes/docker-multi-stage-build-distroless/",
+    "https://stackpractices.com/es/recipes/docker-multi-stage-build-distroless/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "docker",
+    "distroless",
+    "multi-stage-build",
+    "containers",
+    "security",
+    "optimization",
+    "devops"
+  ],
+  "files": [
+    "Dockerfile.go",
+    "Dockerfile.go-healthcheck",
+    "Dockerfile.node",
+    "Dockerfile.python",
+    "Dockerfile.java",
+    "Dockerfile.alpine",
+    "server.go",
+    "go.mod",
+    "index.js",
+    "package.json",
+    "app.py",
+    "pyproject.toml",
+    ".dockerignore",
+    "verify-size.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

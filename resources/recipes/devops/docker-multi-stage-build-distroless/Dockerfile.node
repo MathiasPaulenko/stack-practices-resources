@@ -1,0 +1,20 @@
+# Node.js multi-stage build on the distroless nodejs runtime.
+# Build: docker build -f Dockerfile.node -t nodeapp:distroless .
+FROM node:22 AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --omit=dev
+COPY . .
+
+FROM gcr.io/distroless/nodejs22-debian12:nonroot
+
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/index.js ./
+COPY --from=builder /app/package.json ./
+
+EXPOSE 3000
+
+# The distroless node image entrypoint is already `node` — pass only the script.
+CMD ["index.js"]
