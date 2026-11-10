@@ -1,0 +1,22 @@
+{
+  "title": "Event-Carried State Transfer Pattern — Runnable Implementations",
+  "title_es": "Patrón Event-Carried State Transfer — Implementaciones ejecutables",
+  "description": "Runnable event-carried state transfer simulation in three languages (Python, JavaScript, Java): a source service publishes events carrying the full entity state and a consumer applies them to a local replica that serves reads without calling the source.",
+  "description_es": "Simulación ejecutable de event-carried state transfer en tres lenguajes (Python, JavaScript, Java): un servicio origen publica eventos con el estado completo de la entidad y un consumidor los aplica a una réplica local que sirve lecturas sin llamar al origen.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "event-carried-state-transfer-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/event-carried-state-transfer-pattern/",
+    "https://stackpractices.com/es/patterns/event-carried-state-transfer-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["event-carried-state-transfer", "ecst", "messaging", "pattern", "kafka", "state-replication"],
+  "files": [
+    "src/ecst.py",
+    "src/ecst.js",
+    "src/EventCarriedStateTransfer.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
