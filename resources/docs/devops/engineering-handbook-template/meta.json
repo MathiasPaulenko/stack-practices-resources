@@ -1,0 +1,27 @@
+{
+  "title": "Engineering Handbook Template — Companion Resources",
+  "title_es": "Plantilla de Manual de Ingeniería — Recursos complementarios",
+  "description": "Fillable engineering handbook covering philosophy, workflows, technical standards, on-call, career levels and onboarding, plus a filled example for a mid-size team.",
+  "description_es": "Manual de ingeniería rellenable con filosofía, flujos de trabajo, estándares técnicos, guardias, niveles de carrera y onboarding, más un ejemplo rellenado para un equipo mediano.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "engineering-handbook-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/engineering-handbook-template/",
+    "https://stackpractices.com/es/docs/engineering-handbook-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "handbook",
+    "team-culture",
+    "engineering-standards",
+    "documentation",
+    "onboarding"
+  ],
+  "files": [
+    "engineering-handbook-template.md",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
