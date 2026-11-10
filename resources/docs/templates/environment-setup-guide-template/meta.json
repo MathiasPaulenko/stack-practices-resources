@@ -1,0 +1,30 @@
+{
+  "title": "Environment Setup Guide Template — Companion Resources",
+  "title_es": "Plantilla de Guía de Configuración de Entorno — Recursos complementarios",
+  "description": "Fillable environment setup guide with prerequisites, quick start, env vars, verification and troubleshooting, plus a Makefile, devcontainer.json, .env.example and a filled example.",
+  "description_es": "Guía de configuración de entorno rellenable con prerequisitos, inicio rápido, variables de entorno, verificación y troubleshooting, más Makefile, devcontainer.json, .env.example y ejemplo rellenado.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "environment-setup-guide-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/environment-setup-guide-template/",
+    "https://stackpractices.com/es/docs/environment-setup-guide-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "devops",
+    "onboarding",
+    "template",
+    "automation",
+    "documentation"
+  ],
+  "files": [
+    "environment-setup-guide-template.md",
+    "Makefile",
+    "devcontainer.json",
+    ".env.example",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

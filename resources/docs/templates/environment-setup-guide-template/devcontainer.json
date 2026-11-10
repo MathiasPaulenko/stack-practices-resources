@@ -1,0 +1,9 @@
+{
+  "name": "Project Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "postCreateCommand": "npm ci && npm run db:migrate",
+  "forwardPorts": [4321, 5432, 6379]
+}
