@@ -1,0 +1,32 @@
+{
+  "title": "ETL Job Runbook — Fill-in Template, Health Checks and Airflow Cheatsheet",
+  "title_es": "Runbook de Job ETL — Plantilla rellenable, health checks y chuleta de Airflow",
+  "description": "Fill-in ETL job runbook template, an executable pre-run health-check script (Airflow, API, bucket, warehouse, dbt), a verified Airflow 2.x CLI cheat sheet with removed commands, a dbt schema.yml with the quality-gate tests, and a game-day drill checklist.",
+  "description_es": "Plantilla rellenable de runbook de job ETL, script ejecutable de health checks pre-corrida (Airflow, API, bucket, warehouse, dbt), chuleta verificada de la CLI de Airflow 2.x con los comandos eliminados, un schema.yml de dbt con los tests del quality gate y un checklist de simulacro game day.",
+  "type": "docs",
+  "topic": "data-engineering",
+  "slug": "etl-job-runbook-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/etl-job-runbook-template/",
+    "https://stackpractices.com/es/docs/etl-job-runbook-template/"
+  ],
+  "language": "multi",
+  "tags": [
+    "etl",
+    "runbook",
+    "airflow",
+    "data-engineering",
+    "on-call",
+    "incident-response",
+    "dbt",
+    "bash",
+    "template"
+  ],
+  "files": [
+    "runbook/etl-job-runbook-template.md",
+    "scripts/health-checks.sh",
+    "monitoring/airflow-commands.md",
+    "monitoring/dbt-tests-schema.yml",
+    "checklists/game-day-drill.md"
+  ]
+}

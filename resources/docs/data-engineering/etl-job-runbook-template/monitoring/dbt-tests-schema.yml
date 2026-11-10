@@ -1,0 +1,45 @@
+# dbt tests for the quality_checks task (failure scenario F4 in the runbook).
+# Place as models/schema.yml next to the marts models. `dbt test --select fct_orders+`
+# runs all of these; --store-failures materializes the offending rows into the
+# `audit` schema so the diagnostic step 2 in F4 works.
+
+version: 2
+
+models:
+  - name: fct_orders
+    description: Orders fact table loaded by the ETL pipeline.
+    columns:
+      - name: order_id
+        description: Primary key — must be unique and present on every row.
+        tests:
+          - not_null
+          - unique
+      - name: customer_email
+        description: Normalized in the transform stage; empty means transform skipped.
+        tests:
+          - not_null
+      - name: status
+        description: Raw status from the source API.
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['pending', 'paid', 'shipped', 'cancelled', 'refunded']
+      - name: is_active
+        description: Derived from status — consistency check between the two.
+      - name: full_name
+        description: first_name + last_name built in transform.
+      - name: order_date
+        description: Used by the post-run freshness check.
+        tests:
+          - not_null
+      - name: _ingested_at
+        description: Warehouse ingestion timestamp — freshness SLA relies on it.
+        tests:
+          - not_null
+
+    # Table-level tests: what the post-run health check verifies.
+    tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "order_date <= current_date"
+            name: fct_orders_no_future_order_date
