@@ -1,0 +1,15 @@
+# Pre-built communication template for checkout-service
+# When an incident fires, the comms lead edits 2-3 fields instead of writing from scratch.
+service: checkout-service
+severity: SEV 1
+affected_components:
+  - api-gateway
+  - checkout-api
+  - payment-processor
+default_impact: "Customers unable to complete checkout. Payment processing affected."
+status_page_components:
+  - "chk8wxy1"  # your status page tool's component ID
+stakeholders:
+  - "#payments-oncall"
+  - "#engineering-leads"
+  - "exec-team@company.com"

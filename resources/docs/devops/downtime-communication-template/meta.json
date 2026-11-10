@@ -1,0 +1,29 @@
+{
+  "title": "Incident & Downtime Communication Template — Companion Resources",
+  "title_es": "Plantilla de Comunicación de Incidentes y Caídas — Recursos complementarios",
+  "description": "Fillable incident communication template with audience matrix, severity timing, approval checklist, status page lifecycle messages, and a pre-filled service YAML.",
+  "description_es": "Plantilla de comunicación de incidentes rellenable con matriz de audiencias, tiempos por severidad, checklist de aprobación, mensajes de página de estado y YAML de servicio pre-llenado.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "downtime-communication-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/downtime-communication-template/",
+    "https://stackpractices.com/es/docs/downtime-communication-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "incident-management",
+    "communication",
+    "outage",
+    "status-page",
+    "template"
+  ],
+  "files": [
+    "downtime-communication-template.md",
+    "status-page-messages.md",
+    "service-template-checkout.yaml",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
