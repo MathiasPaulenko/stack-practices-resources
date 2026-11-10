@@ -1,0 +1,32 @@
+{
+  "title": "Event Bus Pattern — Companion Files",
+  "title_es": "Patrón Event Bus — Archivos complementarios",
+  "description": "Runnable in-memory Event Bus in three languages: thread-safe Python bus with unsubscribe closures, a Map-based JavaScript version, and a lock-free Java implementation with CopyOnWriteArrayList. Includes pytest and node:test suites covering fan-out, unsubscribe, failure isolation, and unsubscribe-during-dispatch.",
+  "description_es": "Event Bus en memoria ejecutable en tres lenguajes: bus Python thread-safe con funciones de desuscripción, versión JavaScript basada en Map, e implementación Java sin locks con CopyOnWriteArrayList. Incluye suites pytest y node:test que cubren fan-out, desuscripción, aislamiento de fallos y desuscripción durante el dispatch.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "event-bus-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/event-bus-pattern/",
+    "https://stackpractices.com/es/patterns/event-bus-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "event-bus",
+    "pub-sub",
+    "design-pattern",
+    "event-driven",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "event_bus.py",
+    "test_event_bus.py",
+    "event_bus.js",
+    "event_bus.test.js",
+    "EventBus.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
