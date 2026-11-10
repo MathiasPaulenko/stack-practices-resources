@@ -1,0 +1,24 @@
+{
+  "title": "ETL Pattern — Pipeline, Watermarks, SQL and Airflow DAG",
+  "title_es": "Patrón ETL — Pipeline, Watermarks, SQL y DAG de Airflow",
+  "description": "Runnable ETL pipeline: extract to staging, transform, delete+insert load, incremental watermarks, pure-SQL variant (PostgreSQL 15+ MERGE), Airflow DAG, SQLite demo and pytest suite.",
+  "description_es": "Pipeline ETL ejecutable: extracción a staging, transformación, carga delete+insert, watermarks incrementales, variante en SQL puro (MERGE de PostgreSQL 15+), DAG de Airflow, demo en SQLite y suite pytest.",
+  "type": "patterns",
+  "topic": "data",
+  "slug": "etl-extract-transform-load-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/etl-extract-transform-load-pattern/",
+    "https://stackpractices.com/es/patterns/etl-extract-transform-load-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["etl", "pipeline", "staging", "watermark", "airflow", "spring-batch", "pandas", "sql"],
+  "files": [
+    "etl_pipeline.py",
+    "incremental_etl.py",
+    "etl_customers.sql",
+    "etl_dag.py",
+    "CustomerEtlJob.java",
+    "demo.py",
+    "test_etl_pipeline.py"
+  ]
+}
