@@ -1,0 +1,30 @@
+{
+  "title": "Execute Raw SQL",
+  "title_es": "Ejecutar SQL Crudo",
+  "description": "Runnable demos of safe raw SQL execution: parameterized queries, dynamic IN clauses, identifier whitelisting, and bulk inserts. Uses sqlite3 / node:sqlite so everything runs with zero external services.",
+  "description_es": "Demos ejecutables de SQL crudo seguro: consultas parametrizadas, cláusulas IN dinámicas, whitelist de identificadores e inserts masivos. Usa sqlite3 / node:sqlite para correr todo sin servicios externos.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "execute-raw-sql",
+  "source_urls": [
+    "https://stackpractices.com/recipes/execute-raw-sql/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "databases",
+    "parameterized-queries",
+    "sql-injection",
+    "sqlite",
+    "python",
+    "nodejs",
+    "java"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "raw_sql.py",
+    "raw_sql.js",
+    "RawSQL.java"
+  ]
+}
