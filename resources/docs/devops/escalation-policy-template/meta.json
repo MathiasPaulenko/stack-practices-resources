@@ -1,0 +1,34 @@
+{
+  "title": "Escalation Policy Template — Companion Code",
+  "title_es": "Plantilla de Política de Escalamiento — Código complementario",
+  "description": "Escalation kit: a fill-in escalation policy document with SEV matrix and L1–L4 timed paths, PagerDuty and Opsgenie configuration examples, incident communication templates, a post-incident review with escalation feedback loop, and a quarterly drill checklist.",
+  "description_es": "Kit de escalamiento: documento de política para completar con matriz SEV y rutas temporizadas L1–L4, ejemplos de configuración para PagerDuty y Opsgenie, plantillas de comunicación de incidentes, revisión post-incidente con feedback al escalamiento y checklist de simulacro trimestral.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "escalation-policy-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/escalation-policy-template/",
+    "https://stackpractices.com/es/docs/escalation-policy-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "escalation",
+    "on-call",
+    "incident-response",
+    "devops",
+    "sre",
+    "pagerduty",
+    "opsgenie",
+    "severity",
+    "template",
+    "checklist"
+  ],
+  "files": [
+    "policy/escalation-policy-template.md",
+    "config/pagerduty-escalation-policy.yaml",
+    "config/opsgenie-escalation.json",
+    "templates/incident-communications.md",
+    "templates/post-incident-review.md",
+    "checklists/escalation-drill.md"
+  ]
+}

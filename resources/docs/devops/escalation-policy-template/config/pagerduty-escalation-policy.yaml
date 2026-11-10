@@ -1,0 +1,52 @@
+# PagerDuty-style escalation policy for SEV 1.
+# Maps to the PagerDuty REST API escalation_policy object.
+# escalation_delay_in_minutes = timeout for THAT rule (how long the level has
+# to ack/resolve before the incident moves to the next rule), not a wait
+# before the first notification. The first rule fires immediately.
+# num_loops repeats the whole policy if nobody acknowledges (max 9 — use 1–2).
+
+escalation_policy:
+  name: "Platform Team - SEV1"
+  description: "SEV 1 escalation path for the platform team: L1 on-call, backup, team lead, engineering manager."
+  num_loops: 2
+  rules:
+    - escalation_delay_in_minutes: 5
+      targets:
+        - type: user
+          id: "L1-primary"          # replace with your paging-tool schedule or user id
+    - escalation_delay_in_minutes: 10
+      targets:
+        - type: user
+          id: "L1-backup"
+    - escalation_delay_in_minutes: 15
+      targets:
+        - type: user
+          id: "L2-team-lead"
+    - escalation_delay_in_minutes: 30
+      targets:
+        - type: user
+          id: "L3-engineering-manager"
+  on_call_handoff_time: "08:00:00"
+  on_call_handoff_timezone: "UTC"
+
+# SEV 2 variant — wider windows, stops at L3.
+sev2_escalation_policy:
+  name: "Platform Team - SEV2"
+  num_loops: 1
+  rules:
+    - escalation_delay_in_minutes: 15
+      targets:
+        - type: user
+          id: "L1-primary"
+    - escalation_delay_in_minutes: 30
+      targets:
+        - type: user
+          id: "L1-backup"
+    - escalation_delay_in_minutes: 60
+      targets:
+        - type: user
+          id: "L2-team-lead"
+    - escalation_delay_in_minutes: 90
+      targets:
+        - type: user
+          id: "L3-engineering-manager"

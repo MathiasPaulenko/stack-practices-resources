@@ -1,0 +1,62 @@
+{
+  "comment": "Opsgenie-style escalation payload (POST /v2/escalations). 'if-not-acked' means the rule fires when the alert stays unacknowledged past the delay. notifyType 'all' pages every recipient on that step; 'next' pages one at a time. 'repeat' re-runs the chain if nobody acknowledges.",
+  "name": "Platform Team - SEV1",
+  "description": "SEV 1 escalation path for the platform team.",
+  "ownerTeam": {
+    "name": "Platform"
+  },
+  "rules": [
+    {
+      "condition": "if-not-acked",
+      "notifyType": "all",
+      "delay": {
+        "timeAmount": 0,
+        "timeUnit": "minutes"
+      },
+      "recipient": {
+        "type": "schedule",
+        "name": "l1-oncall-schedule"
+      }
+    },
+    {
+      "condition": "if-not-acked",
+      "notifyType": "all",
+      "delay": {
+        "timeAmount": 10,
+        "timeUnit": "minutes"
+      },
+      "recipient": {
+        "type": "user",
+        "username": "l1-backup@example.com"
+      }
+    },
+    {
+      "condition": "if-not-acked",
+      "notifyType": "default",
+      "delay": {
+        "timeAmount": 20,
+        "timeUnit": "minutes"
+      },
+      "recipient": {
+        "type": "user",
+        "username": "l2-team-lead@example.com"
+      }
+    },
+    {
+      "condition": "if-not-acked",
+      "notifyType": "default",
+      "delay": {
+        "timeAmount": 45,
+        "timeUnit": "minutes"
+      },
+      "recipient": {
+        "type": "user",
+        "username": "l3-eng-manager@example.com"
+      }
+    }
+  ],
+  "repeat": {
+    "waitInterval": 10,
+    "count": 2
+  }
+}
