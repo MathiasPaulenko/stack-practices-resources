@@ -1,0 +1,17 @@
+FROM node:20-alpine
+
+WORKDIR /app
+COPY worker.js .
+
+# Health check for a worker without an HTTP listener:
+# probe the heartbeat file's age instead of an endpoint.
+HEALTHCHECK --interval=60s --timeout=10s --retries=3 --start-period=30s \
+    CMD node -e " \
+        const fs = require('fs'); \
+        const stats = fs.statSync('/tmp/worker.heartbeat'); \
+        const age = (Date.now() - stats.mtimeMs) / 1000; \
+        if (age > 120) { console.error('Heartbeat stale: ' + age + 's'); process.exit(1); } \
+        console.log('Heartbeat OK: ' + age + 's'); \
+    "
+
+CMD ["node", "worker.js"]

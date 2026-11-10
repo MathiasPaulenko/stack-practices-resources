@@ -1,0 +1,40 @@
+{
+  "title": "Docker Health Check Configuration — Companion Files",
+  "title_es": "Configuración de Docker Health Check — Archivos complementarios",
+  "description": "Runnable HEALTHCHECK examples: Dockerfiles for Node and Python, simple/multi-step/logged health check scripts, a Docker Compose stack with depends_on service_healthy, a production override, a heartbeat-based worker check, and a Spring Boot health endpoint.",
+  "description_es": "Ejemplos ejecutables de HEALTHCHECK: Dockerfiles para Node y Python, scripts de health check simple/de varios pasos/con logging, un stack de Docker Compose con depends_on service_healthy, un override de producción, un check de worker basado en heartbeat y un endpoint de health de Spring Boot.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-health-check-configuration",
+  "source_urls": [
+    "https://stackpractices.com/recipes/docker-health-check-configuration/",
+    "https://stackpractices.com/es/recipes/docker-health-check-configuration/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "docker",
+    "healthcheck",
+    "docker-compose",
+    "containers",
+    "reliability",
+    "devops"
+  ],
+  "files": [
+    "Dockerfile",
+    "Dockerfile.python",
+    "Dockerfile.worker",
+    "server.js",
+    "app.py",
+    "requirements.txt",
+    "worker.js",
+    "healthcheck.sh",
+    "healthcheck-advanced.sh",
+    "healthcheck-logged.sh",
+    "docker-compose.yml",
+    "docker-compose.prod.yml",
+    "HealthController.java",
+    "application.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
