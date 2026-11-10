@@ -1,0 +1,43 @@
+{
+  "title": "Docker Multi-Stage Build Optimization — Companion Files",
+  "title_es": "Optimización de Multi-Stage Builds en Docker — Archivos complementarios",
+  "description": "Runnable multi-stage Dockerfiles covering image-size and build-speed optimization: Node, Python on distroless via pip --target, Go on scratch, Gradle to JRE Alpine, Rust, a deps/test/build/production CI pipeline, BuildKit cache mounts, multi-arch buildx, a size-verification script, and a .dockerignore.",
+  "description_es": "Dockerfiles multi-stage ejecutables para optimizar tamaño e velocidad de build: Node, Python en distroless con pip --target, Go en scratch, Gradle a JRE Alpine, Rust, un pipeline CI deps/test/build/production, cache mounts de BuildKit, buildx multi-arch, un script de verificación de tamaños y un .dockerignore.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-multi-stage-build-optimization",
+  "source_urls": [
+    "https://stackpractices.com/recipes/docker-multi-stage-build-optimization/",
+    "https://stackpractices.com/es/recipes/docker-multi-stage-build-optimization/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "docker",
+    "multi-stage-build",
+    "optimization",
+    "buildkit",
+    "containers",
+    "dockerfile",
+    "devops"
+  ],
+  "files": [
+    "Dockerfile.node",
+    "Dockerfile.python",
+    "Dockerfile.go",
+    "Dockerfile.java",
+    "Dockerfile.rust",
+    "Dockerfile.test-stages",
+    "Dockerfile.multiarch",
+    "Dockerfile.cache-mounts",
+    "server.go",
+    "go.mod",
+    "index.js",
+    "package.json",
+    "app.py",
+    "requirements.txt",
+    ".dockerignore",
+    "verify-size.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

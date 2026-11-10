@@ -1,0 +1,24 @@
+# Stage 1: Build dependencies
+FROM python:3.11-slim AS builder
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --target=/opt/deps -r requirements.txt
+
+# Stage 2: Runtime
+# Match builder interpreter version (distroless python3 = 3.11 on debian12)
+FROM gcr.io/distroless/python3-debian12 AS runtime
+
+WORKDIR /app
+
+COPY --from=builder /opt/deps /opt/deps
+COPY app.py .
+
+ENV PYTHONPATH=/opt/deps
+
+USER nonroot:nonroot
+
+EXPOSE 8000
+
+CMD ["app.py"]

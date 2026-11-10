@@ -1,0 +1,2 @@
+# No third-party deps needed for the demo app — add yours here.
+# The Dockerfile installs with: pip install --target=/opt/deps -r requirements.txt
