@@ -1,0 +1,30 @@
+{
+  "title": "Event-Driven Microservices",
+  "title_es": "Microservicios Event-Driven",
+  "description": "Runnable demos of the three core event-driven patterns: an event-sourced order aggregate, the transactional outbox with a relay, and saga orchestration with compensation.",
+  "description_es": "Demos ejecutables de los tres patrones event-driven centrales: un agregado de pedido event-sourced, el outbox transaccional con relay y la orquestación de sagas con compensación.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "event-driven-microservices",
+  "source_urls": [
+    "https://stackpractices.com/recipes/event-driven-microservices/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "event-driven",
+    "microservices",
+    "event-sourcing",
+    "outbox-pattern",
+    "saga",
+    "kafka",
+    "python",
+    "nodejs"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "event_sourcing.py",
+    "outbox.js",
+    "order_saga.js"
+  ]
+}
