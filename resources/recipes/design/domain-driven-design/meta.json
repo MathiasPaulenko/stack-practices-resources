@@ -1,0 +1,33 @@
+{
+  "title": "Domain-Driven Design Tactical Patterns — Companion Files",
+  "title_es": "Patrones Tácticos de Domain-Driven Design — Archivos complementarios",
+  "description": "Runnable tactical DDD examples: a Money value object, an Order aggregate with domain events, repository + Unit of Work + application service with in-memory persistence, a cross-aggregate pricing domain service, composable specifications, and a Java anti-corruption layer.",
+  "description_es": "Ejemplos tácticos de DDD ejecutables: un value object Money, un aggregate Order con domain events, repository + Unit of Work + application service con persistencia en memoria, un domain service de pricing cross-aggregate, specifications componibles y un anti-corruption layer en Java.",
+  "type": "recipes",
+  "topic": "design",
+  "slug": "domain-driven-design",
+  "source_urls": [
+    "https://stackpractices.com/recipes/domain-driven-design/",
+    "https://stackpractices.com/es/recipes/domain-driven-design/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "ddd",
+    "domain-driven-design",
+    "design-pattern",
+    "aggregates",
+    "typescript",
+    "python",
+    "java"
+  ],
+  "files": [
+    "money.ts",
+    "order_aggregate.py",
+    "order_repository.py",
+    "pricing_service.ts",
+    "specifications.ts",
+    "OrderToShipmentAdapter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
