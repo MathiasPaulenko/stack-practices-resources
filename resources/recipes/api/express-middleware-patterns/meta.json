@@ -1,0 +1,27 @@
+{
+  "title": "Express Middleware Composition Patterns",
+  "title_es": "Patrones de Composición de Middleware en Express",
+  "description": "Dependency-free demo of the five middleware composition patterns — async wrapper, composable factory, AsyncLocalStorage context, unified error handling, and schema validation — plus a test file that drives a real HTTP pipeline.",
+  "description_es": "Demo sin dependencias de los cinco patrones de composición de middleware — wrapper async, factory componible, contexto con AsyncLocalStorage, manejo de errores unificado y validación por schema — más un test que ejercita un pipeline HTTP real.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "express-middleware-patterns",
+  "source_urls": [
+    "https://stackpractices.com/recipes/express-middleware-patterns/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "express",
+    "nodejs",
+    "middleware",
+    "async-localstorage",
+    "error-handling",
+    "validation"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "middleware_pipeline.js",
+    "pipeline.test.js"
+  ]
+}
