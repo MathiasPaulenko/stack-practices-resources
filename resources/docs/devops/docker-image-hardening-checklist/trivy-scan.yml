@@ -1,0 +1,36 @@
+# GitHub Actions — build, scan (gate on HIGH/CRITICAL), SBOM, sign.
+# Save as .github/workflows/trivy-scan.yml
+name: Container Security
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image
+        run: docker build -t myapp:${{ github.sha }} .
+
+      - name: Trivy scan — fails on fixable HIGH/CRITICAL
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: myapp:${{ github.sha }}
+          format: json
+          output: trivy-report.json
+          exit-code: 1
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+
+      - name: Generate SBOM (CycloneDX)
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: myapp:${{ github.sha }}
+          format: cyclonedx
+          output: sbom.json
+
+      - name: Sign image with Cosign (keyless via OIDC)
+        run: cosign sign --yes myapp:${{ github.sha }}

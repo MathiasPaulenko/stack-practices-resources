@@ -1,0 +1,37 @@
+{
+  "title": "Docker Image Hardening Checklist — Companion Files",
+  "title_es": "Checklist de Hardening de Imágenes Docker — Archivos complementarios",
+  "description": "Runnable hardening kit: multi-stage hardened Dockerfile with non-root user and BuildKit secrets, a production Compose stack with read-only rootfs and dropped capabilities, a seccomp allowlist profile, a Trivy+Cosign CI pipeline, and scripts to run and verify every control.",
+  "description_es": "Kit de hardening ejecutable: Dockerfile multi-etapa endurecido con usuario no-root y secretos BuildKit, un stack de Compose de producción con rootfs read-only y capabilities eliminadas, un perfil seccomp de lista blanca, un pipeline de CI con Trivy+Cosign, y scripts para ejecutar y verificar cada control.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "docker-image-hardening-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/docker-image-hardening-checklist/",
+    "https://stackpractices.com/es/docs/docker-image-hardening-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "docker",
+    "container-security",
+    "hardening",
+    "seccomp",
+    "trivy",
+    "cosign",
+    "devops"
+  ],
+  "files": [
+    "Dockerfile",
+    ".dockerignore",
+    "docker-compose.hardened.yml",
+    "seccomp-profile.json",
+    "trivy-scan.yml",
+    "run-hardened.sh",
+    "verify-hardening.sh",
+    "package.json",
+    "src/server.js",
+    "secrets/db-password.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

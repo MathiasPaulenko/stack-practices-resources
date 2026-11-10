@@ -1,0 +1,78 @@
+# Hardened Compose stack: network isolation, resource limits, secrets,
+# read-only rootfs, dropped capabilities.
+networks:
+  frontend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+  backend:
+    driver: bridge
+    internal: true   # no external access
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      secrets:
+        - npmrc
+    image: myapp:hardened
+    user: "1001:1001"
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    tmpfs:
+      - /tmp
+      - /app/cache
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "127.0.0.1:8080:8080"   # localhost only
+    secrets:
+      - db-password
+    environment:
+      DB_PASSWORD_FILE: /run/secrets/db-password
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 512M
+          pids: 100
+        reservations:
+          cpus: "0.5"
+          memory: 256M
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O-", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  database:
+    image: postgres:16-alpine
+    networks:
+      - backend   # internal only — nothing published
+    ports: []
+    environment:
+      POSTGRES_PASSWORD_FILE: /run/secrets/db-password
+    secrets:
+      - db-password
+
+secrets:
+  npmrc:
+    file: ${HOME}/.npmrc
+  db-password:
+    file: ./secrets/db-password.txt
