@@ -1,0 +1,36 @@
+{
+  "title": "Docker Logging with Fluentd — Companion Files",
+  "title_es": "Logging en Docker con Fluentd — Archivos complementarios",
+  "description": "Runnable Fluentd setup: forward-input config with parser filters and @type copy fan-out to Elasticsearch and stdout, a tail-based sidecar config, an S3 output variant, a full Docker Compose stack (Fluentd + ES + Kibana + demo app), structured-JSON demo apps in Node and Python, and an end-to-end verification script.",
+  "description_es": "Setup ejecutable de Fluentd: config con input forward, filtros parser y fan-out con @type copy a Elasticsearch y stdout, config sidecar con tail, variante de output a S3, stack completo de Docker Compose (Fluentd + ES + Kibana + app demo), apps demo con JSON estructurado en Node y Python, y un script de verificación de punta a punta.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "docker-logging-fluentd",
+  "source_urls": [
+    "https://stackpractices.com/recipes/docker-logging-fluentd/",
+    "https://stackpractices.com/es/recipes/docker-logging-fluentd/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "docker",
+    "fluentd",
+    "logging",
+    "elasticsearch",
+    "docker-compose",
+    "observability",
+    "devops"
+  ],
+  "files": [
+    "fluentd.conf",
+    "fluentd-sidecar.conf",
+    "fluentd-s3.conf",
+    "docker-compose.yml",
+    "docker-compose.sidecar.yml",
+    "Dockerfile",
+    "server.js",
+    "app.py",
+    "verify-pipeline.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

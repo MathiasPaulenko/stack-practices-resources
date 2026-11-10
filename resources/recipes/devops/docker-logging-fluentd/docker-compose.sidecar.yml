@@ -1,0 +1,17 @@
+# Sidecar variant: the app writes to a file, Fluentd tails it from a shared volume.
+services:
+    api:
+        build: .
+        volumes:
+            - api-logs:/var/log/app
+
+    fluentd-sidecar:
+        image: fluent/fluentd:v1.16
+        volumes:
+            - api-logs:/var/log/app:ro
+            - ./fluentd-sidecar.conf:/fluentd/etc/fluent.conf
+        depends_on:
+            - api
+
+volumes:
+    api-logs:

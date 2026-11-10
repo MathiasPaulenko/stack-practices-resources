@@ -1,0 +1,56 @@
+# Full stack: Fluentd + Elasticsearch + Kibana + demo app using the fluentd driver.
+services:
+    fluentd:
+        image: fluent/fluentd:v1.16
+        ports:
+            - "24224:24224"
+            - "24224:24224/udp"
+        volumes:
+            - ./fluentd.conf:/fluentd/etc/fluent.conf
+        depends_on:
+            - elasticsearch
+        networks:
+            - logging
+        deploy:
+            resources:
+                limits:
+                    memory: 512M
+
+    elasticsearch:
+        image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
+        environment:
+            - discovery.type=single-node
+            - xpack.security.enabled=false
+        ports:
+            - "9200:9200"
+        networks:
+            - logging
+
+    kibana:
+        image: docker.elastic.co/kibana/kibana:8.13.0
+        ports:
+            - "5601:5601"
+        environment:
+            - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+        depends_on:
+            - elasticsearch
+        networks:
+            - logging
+
+    api:
+        build: .
+        logging:
+            driver: fluentd
+            options:
+                fluentd-address: localhost:24224
+                tag: docker.api
+                mode: non-blocking
+                max-buffer-size: 4m
+        depends_on:
+            - fluentd
+        networks:
+            - logging
+
+networks:
+    logging:
+        driver: bridge
