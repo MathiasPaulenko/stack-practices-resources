@@ -1,0 +1,30 @@
+{
+  "title": "Domain Event Pattern — Companion Files",
+  "title_es": "Patrón Domain Event — Archivos complementarios",
+  "description": "Runnable Domain Event pattern in three languages: immutable event object, an Order aggregate that collects and drains events, and an in-memory publisher with real subscribers (email + analytics) in Python, JavaScript, and Java.",
+  "description_es": "Patrón Domain Event ejecutable en tres lenguajes: objeto de evento inmutable, un aggregate Order que acumula y drena eventos, y un publisher in-memory con suscriptores reales (email + analíticas) en Python, JavaScript y Java.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "domain-event-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/domain-event-pattern/",
+    "https://stackpractices.com/es/patterns/domain-event-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "ddd",
+    "domain-event",
+    "design-pattern",
+    "event-driven",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "domain_events.py",
+    "domain_events.js",
+    "DomainEvents.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
