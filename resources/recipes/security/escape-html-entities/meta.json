@@ -1,0 +1,30 @@
+{
+  "title": "Escape HTML Entities — Companion Resources",
+  "title_es": "Escapar Entidades HTML — Recursos complementarios",
+  "description": "Runnable context-aware escaping helpers: HTML body/attribute escaping, JSON-in-<script> serialization, and javascript:-rejecting URL validation in Python, JavaScript, and Java.",
+  "description_es": "Helpers ejecutables de escapado por contexto: escapado de cuerpo/atributo HTML, serialización JSON para <script> y validación de URLs que rechaza javascript: en Python, JavaScript y Java.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "escape-html-entities",
+  "source_urls": [
+    "https://stackpractices.com/recipes/escape-html-entities/",
+    "https://stackpractices.com/es/recipes/escape-html-entities/"
+  ],
+  "language": "python",
+  "tags": [
+    "html-escaping",
+    "xss-prevention",
+    "output-encoding",
+    "security",
+    "context-aware"
+  ],
+  "files": [
+    "escape_html.py",
+    "test_escape_html.py",
+    "escapeHtml.js",
+    "escapeHtml.test.js",
+    "HtmlEscaper.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
