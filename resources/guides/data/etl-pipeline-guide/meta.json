@@ -1,0 +1,33 @@
+{
+  "title": "ETL Pipeline Guide — Companion Code",
+  "title_es": "Guía de pipelines ETL — Código complementario",
+  "description": "Runnable companion for the ETL pipelines guide: incremental extractor with watermarks, validator/transform pipeline, idempotent upsert loader (sqlite), a reference Airflow 2.x DAG, and SCD Type 2 SQL.",
+  "description_es": "Complemento ejecutable de la guía de pipelines ETL: extractor incremental con watermarks, pipeline de validadores/transformaciones, cargador upsert idempotente (sqlite), un DAG de referencia de Airflow 2.x y SQL de SCD Tipo 2.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "etl-pipeline-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/etl-pipeline-guide/",
+    "https://stackpractices.com/es/guides/etl-pipeline-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "etl",
+    "data-pipeline",
+    "incremental-load",
+    "airflow",
+    "scd",
+    "python",
+    "postgresql",
+    "sqlite"
+  ],
+  "files": [
+    "etl_pipeline.py",
+    "demo.py",
+    "test_etl_pipeline.py",
+    "daily_etl_dag.py",
+    "scd-type2.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}
