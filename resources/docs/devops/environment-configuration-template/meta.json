@@ -1,0 +1,29 @@
+{
+  "title": "Environment Configuration Template — Companion Resources",
+  "title_es": "Plantilla de Configuración de Entornos — Recursos complementarios",
+  "description": "Fillable environment configuration template covering variables, endpoints, infrastructure, secrets and change log, plus a Kubernetes ConfigMap/Secret example, rotation schedule and a filled example.",
+  "description_es": "Plantilla de configuración de entornos rellenable con variables, endpoints, infraestructura, secretos y registro de cambios, más ejemplo de ConfigMap/Secret en Kubernetes, calendario de rotación y ejemplo rellenado.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "environment-configuration-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/environment-configuration-template/",
+    "https://stackpractices.com/es/docs/environment-configuration-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "configuration",
+    "environments",
+    "secrets",
+    "devops",
+    "documentation"
+  ],
+  "files": [
+    "environment-configuration-template.md",
+    "configmap-secret-example.yaml",
+    "secret-rotation-schedule.txt",
+    "example-filled.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
