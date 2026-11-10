@@ -1,0 +1,32 @@
+{
+  "title": "Entity-Component-System (ECS) Pattern — Companion Resources",
+  "title_es": "Patrón Entity-Component-System (ECS) — Recursos complementarios",
+  "description": "Runnable minimal ECS world in three languages: entities as IDs, pure-data components, systems that query by component type, plus a runtime component-attachment demo.",
+  "description_es": "Mundo ECS mínimo ejecutable en tres lenguajes: entidades como IDs, componentes de datos puros, sistemas que consultan por tipo de componente, más una demo de adjuntar componentes en runtime.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "entity-component-system-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/entity-component-system-pattern/",
+    "https://stackpractices.com/es/patterns/entity-component-system-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "architectural",
+    "ecs",
+    "entity-component-system",
+    "game-dev",
+    "composition",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "ecs_world.py",
+    "EcsWorld.java",
+    "ecs-world.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
