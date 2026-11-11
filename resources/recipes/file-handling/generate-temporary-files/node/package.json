@@ -1,0 +1,13 @@
+{
+  "name": "generate-temporary-files",
+  "version": "1.0.0",
+  "description": "Runnable companion for the Generate Temporary Files recipe (StackPractices).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node temp_files.js"
+  },
+  "dependencies": {
+    "tmp": "^0.2.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Generate Temporary Files — safe temp files in Python, Node.js, Java and Bash",
+  "title_es": "Generar Archivos Temporales — temporales seguros en Python, Node.js, Java y Bash",
+  "description": "Runnable companion for the Generate Temporary Files recipe: tempfile context managers, mkstemp and atomic rename with fsync (Python), fs.mkdtemp + crypto-random exclusive create and the tmp package (Node.js), Files.createTempFile/createTempDirectory with a closed Files.walk (Java), and mktemp with a single status-preserving EXIT trap (Bash).",
+  "description_es": "Proyecto ejecutable complementario de la receta Generar Archivos Temporales: context managers de tempfile, mkstemp y rename atómico con fsync (Python), fs.mkdtemp + creación exclusiva crypto-aleatoria y el paquete tmp (Node.js), Files.createTempFile/createTempDirectory con Files.walk cerrado (Java), y mktemp con un único trap EXIT que preserva el estado de salida (Bash).",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "generate-temporary-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/generate-temporary-files/",
+    "https://stackpractices.com/es/recipes/generate-temporary-files/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["tempfile", "mktemp", "mkdtemp", "tmp", "atomic-write", "fsync", "cleanup", "trap", "nio", "file-handling"],
+  "files": [
+    "python/temp_files.py",
+    "node/temp_files.js",
+    "node/package.json",
+    "java/TempFileExample.java",
+    "bash/temp_files.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
