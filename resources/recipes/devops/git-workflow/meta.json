@@ -1,0 +1,30 @@
+{
+  "title": "Team Git Workflow — Practice Demo",
+  "title_es": "Flujo de trabajo Git en equipo — Demo de práctica",
+  "description": "Demo script that builds a throwaway git repo and walks the full GitHub Flow loop: feature branch, squash merge, release tag, and a hotfix cherry-pick back to main.",
+  "description_es": "Script de demo que construye un repo git desechable y recorre todo el ciclo de GitHub Flow: rama de feature, squash merge, tag de release y un cherry-pick de hotfix de vuelta a main.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "git-workflow",
+  "source_urls": [
+    "https://stackpractices.com/recipes/git-workflow/",
+    "https://stackpractices.com/es/recipes/git-workflow/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "git",
+    "git-workflow",
+    "github-flow",
+    "feature-branch",
+    "squash-merge",
+    "cherry-pick",
+    "conventional-commits",
+    "demo",
+    "bash"
+  ],
+  "files": [
+    "demo.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
