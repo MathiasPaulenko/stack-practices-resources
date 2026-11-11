@@ -1,0 +1,20 @@
+{
+  "title": "Full-Text Search Guide: PostgreSQL tsvector + Elasticsearch",
+  "title_es": "Guía de Búsqueda de Texto Completo: tsvector de PostgreSQL + Elasticsearch",
+  "description": "Companion code for the full-text search guide: PostgreSQL tsvector/GIN/trigger setup with weighted fields and ranked queries, Elasticsearch 8 index mapping with a custom analyzer and completion suggester, and a psycopg2 + elasticsearch-py 8 sync script (single upsert, bulk reindex, bool search).",
+  "description_es": "Código de acompañamiento de la guía de búsqueda de texto completo: setup de PostgreSQL con tsvector/GIN/trigger y campos ponderados, mapping de Elasticsearch 8 con analyzer personalizado y completion suggester, y un script de sincronización con psycopg2 + elasticsearch-py 8 (upsert individual, reindexación bulk, búsqueda bool).",
+  "type": "guides",
+  "topic": "data",
+  "slug": "full-text-search-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/full-text-search-guide/",
+    "https://stackpractices.com/es/guides/full-text-search-guide/"
+  ],
+  "language": ["sql", "json", "python"],
+  "tags": ["full-text-search", "postgresql", "tsvector", "gin-index", "elasticsearch", "sync", "cdc", "autocomplete", "pg_trgm", "relevance"],
+  "files": [
+    "postgresql_fts.sql",
+    "elasticsearch_setup.json",
+    "search_sync.py"
+  ]
+}

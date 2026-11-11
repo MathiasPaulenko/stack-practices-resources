@@ -1,0 +1,42 @@
+{
+  "_comment": "Elasticsearch 8 index setup for the products search example. Apply with: curl -X PUT localhost:9200/products -H 'Content-Type: application/json' -d @elasticsearch_setup.json  (strip this _comment and the // comments below first, or use the Kibana Dev Tools console)",
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "custom_english": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "english_stop", "english_stemmer", "synonym_filter"]
+        }
+      },
+      "filter": {
+        "english_stop": { "type": "stop", "stopwords": "_english_" },
+        "english_stemmer": { "type": "stemmer", "language": "english" },
+        "synonym_filter": {
+          "type": "synonym",
+          "synonyms": ["laptop, notebook, portable computer"]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text",
+        "analyzer": "custom_english",
+        "fields": {
+          "keyword": { "type": "keyword" },
+          "suggest": { "type": "completion" }
+        }
+      },
+      "description": { "type": "text", "analyzer": "custom_english" },
+      "category": { "type": "keyword" },
+      "price": { "type": "float" },
+      "tags": { "type": "keyword" },
+      "in_stock": { "type": "boolean" },
+      "popularity_score": { "type": "float" }
+    }
+  }
+}
