@@ -1,0 +1,29 @@
+{
+  "title": "Interactive Git Rebase — Practice Demo",
+  "title_es": "Rebase interactivo de Git — Demo de práctica",
+  "description": "Demo script that builds a toy git repo with 5 messy commits (combined commit, WIP noise, debug commit, bad message) to practice every interactive rebase action: squash, fixup, reword, edit, drop, split and autosquash.",
+  "description_es": "Script de demo que construye un repo git de juguete con 5 commits desordenados (commit combinado, ruido WIP, commit de depuración, mensaje pobre) para practicar cada acción del rebase interactivo: squash, fixup, reword, edit, drop, split y autosquash.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "git-rebase-interactive-tutorial",
+  "source_urls": [
+    "https://stackpractices.com/recipes/git-rebase-interactive-tutorial/",
+    "https://stackpractices.com/es/recipes/git-rebase-interactive-tutorial/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "git",
+    "rebase",
+    "interactive-rebase",
+    "squash",
+    "fixup",
+    "commit-history",
+    "demo",
+    "bash"
+  ],
+  "files": [
+    "demo.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
