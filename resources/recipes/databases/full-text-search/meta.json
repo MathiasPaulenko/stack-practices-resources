@@ -1,0 +1,23 @@
+{
+  "title": "Full-Text Search (PostgreSQL, Meilisearch, Elasticsearch)",
+  "title_es": "Búsqueda de Texto Completo (PostgreSQL, Meilisearch, Elasticsearch)",
+  "description": "Runnable full-text search examples: PostgreSQL tsvector with SQLAlchemy 2.x and websearch_to_tsquery, Meilisearch typo-tolerant search with faceting, and the Elasticsearch 8 Java API Client. Includes docker-compose for Postgres and Meilisearch.",
+  "description_es": "Ejemplos ejecutables de búsqueda de texto completo: tsvector de PostgreSQL con SQLAlchemy 2.x y websearch_to_tsquery, búsqueda con tolerancia a errores en Meilisearch con facetado, y el Java API Client de Elasticsearch 8. Incluye docker-compose para Postgres y Meilisearch.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "full-text-search",
+  "source_urls": [
+    "https://stackpractices.com/recipes/full-text-search/",
+    "https://stackpractices.com/es/recipes/full-text-search/"
+  ],
+  "language": "multi",
+  "tags": ["full-text-search", "postgresql", "elasticsearch", "meilisearch", "tsvector", "python", "javascript", "java"],
+  "files": [
+    "full_text_search.py",
+    "meilisearch-search.js",
+    "ArticleSearch.java",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
