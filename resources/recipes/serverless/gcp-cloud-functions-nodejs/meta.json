@@ -1,0 +1,24 @@
+{
+  "title": "HTTP Cloud Functions on Google Cloud with Node.js",
+  "title_es": "Cloud Functions HTTP en Google Cloud con Node.js",
+  "description": "Runnable companion for the GCP Cloud Functions recipe: Express API on Functions Framework Gen 2, Firestore CRUD, Secret Manager caching, CORS, error handling, local dev setup and gcloud deploy scripts including a real Cloud Scheduler cron job.",
+  "description_es": "Proyecto ejecutable complementario de la receta de Cloud Functions en GCP: API Express sobre Functions Framework Gen 2, CRUD con Firestore, cacheo de Secret Manager, CORS, manejo de errores, ejecución local y scripts de despliegue con gcloud incluido un job real de Cloud Scheduler.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "gcp-cloud-functions-nodejs",
+  "source_urls": [
+    "https://stackpractices.com/recipes/gcp-cloud-functions-nodejs/",
+    "https://stackpractices.com/es/recipes/gcp-cloud-functions-nodejs/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["gcp", "cloud-functions", "nodejs", "express", "http-trigger", "cloud-scheduler", "serverless"],
+  "files": [
+    "index.js",
+    "scheduled.js",
+    "package.json",
+    "deploy.sh",
+    "deploy-scheduled.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
