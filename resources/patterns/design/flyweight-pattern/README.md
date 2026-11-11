@@ -9,6 +9,7 @@ Companion code for the [Flyweight pattern resource](https://stackpractices.com/p
 | `flyweight_python.py` | Python implementation with WeakValueDictionary cache |
 | `flyweight_javascript.js` | JavaScript implementation with Map cache |
 | `FlyweightJava.java` | Java implementation with ConcurrentHashMap |
+| `flyweight_text.ts` | TypeScript text-rendering example: document editor with shared `CharacterStyle` flyweights (the canonical GoF case) |
 | `test_flyweight.py` | Unit tests for the Python implementation (pytest) |
 
 ## Setup
@@ -23,6 +24,7 @@ pip install pytest
 python flyweight_python.py
 node flyweight_javascript.js
 javac FlyweightJava.java && java FlyweightJava
+npx tsx flyweight_text.ts
 ```
 
 ## Running the Tests
