@@ -1,0 +1,32 @@
+{
+  "title": "Gateway Routing Pattern",
+  "title_es": "Patrón de Enrutamiento de Gateway",
+  "description": "Route client requests to multiple backend services through a single entry point. Express and NGINX gateway examples with correlation IDs, health checks, and a runnable Docker Compose demo.",
+  "description_es": "Enruta solicitudes de clientes a múltiples servicios backend a través de un único punto de entrada. Ejemplos de gateway en Express y NGINX con IDs de correlación, health checks y demo ejecutable con Docker Compose.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "gateway-routing-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/gateway-routing-pattern/",
+    "https://stackpractices.com/es/patterns/gateway-routing-pattern/"
+  ],
+  "language": "multi",
+  "tags": [
+    "gateway-routing",
+    "api-gateway",
+    "reverse-proxy",
+    "microservices",
+    "nginx",
+    "express",
+    "typescript",
+    "docker"
+  ],
+  "files": [
+    "gateway.ts",
+    "nginx.conf",
+    "docker-compose.yml",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,38 @@
+# Gateway Routing Pattern — runnable demo.
+# Three echo upstreams behind an NGINX gateway.
+#
+#   docker compose up
+#   curl http://localhost:8080/users     -> handled by users-service
+#   curl http://localhost:8080/orders    -> handled by orders-service
+#   curl http://localhost:8080/inventory -> handled by inventory-service
+#   curl http://localhost:8080/healthz   -> gateway health
+
+services:
+  gateway:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - users-service
+      - orders-service
+      - inventory-service
+
+  users-service:
+    image: ealen/echo-server
+    environment:
+      PORT: 8080
+      ECHO_RESPONSE: users-service
+
+  orders-service:
+    image: ealen/echo-server
+    environment:
+      PORT: 8080
+      ECHO_RESPONSE: orders-service
+
+  inventory-service:
+    image: ealen/echo-server
+    environment:
+      PORT: 8080
+      ECHO_RESPONSE: inventory-service
