@@ -1,0 +1,25 @@
+{
+  "title": "Factory Pattern — Code Examples",
+  "title_es": "Patrón Factory — Ejemplos de Código",
+  "description": "Runnable Factory Pattern examples in Python, JavaScript, and Java: a canonical notification factory plus a production-style registry-based database connection factory.",
+  "description_es": "Ejemplos ejecutables del Patrón Factory en Python, JavaScript y Java: una fábrica canónica de notificaciones más una fábrica de conexiones a bases de datos basada en registro, estilo producción.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "factory-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/factory-pattern/",
+    "es": "https://stackpractices.com/es/patterns/factory-pattern/"
+  },
+  "language": "bilingual",
+  "tags": ["factory", "design-pattern", "creational", "python", "javascript", "java"],
+  "files": [
+    "python/notification_factory.py",
+    "python/database_factory.py",
+    "javascript/notification_factory.js",
+    "javascript/database_factory.js",
+    "java/NotificationFactory.java",
+    "java/DatabaseFactory.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
