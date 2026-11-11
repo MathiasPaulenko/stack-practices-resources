@@ -1,0 +1,31 @@
+{
+  "title": "GitHub Actions Matrix Strategy — Runnable Workflows",
+  "title_es": "Matrix de GitHub Actions — Workflows ejecutables",
+  "description": "Three ready-to-run GitHub Actions workflows: a static OS x Node matrix with exclude/include and per-cell cache keys, a services matrix (PostgreSQL/MySQL), and a dynamic matrix driven by supported-versions.json with an empty-matrix guard.",
+  "description_es": "Tres workflows de GitHub Actions listos para usar: una matrix estática de SO × Node con exclude/include y claves de caché por celda, una matrix de servicios (PostgreSQL/MySQL) y una matrix dinámica dirigida por supported-versions.json con guarda anti-matrix-vacía.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "github-actions-matrix-strategy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/github-actions-matrix-strategy/",
+    "https://stackpractices.com/es/recipes/github-actions-matrix-strategy/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "github-actions",
+    "ci-cd",
+    "matrix",
+    "testing",
+    "workflow",
+    "yaml",
+    "monorepo"
+  ],
+  "files": [
+    ".github/workflows/matrix-static.yml",
+    ".github/workflows/matrix-services.yml",
+    ".github/workflows/matrix-dynamic.yml",
+    ".github/supported-versions.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

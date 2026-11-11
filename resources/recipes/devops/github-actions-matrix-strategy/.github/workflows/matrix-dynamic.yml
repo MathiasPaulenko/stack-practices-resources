@@ -1,0 +1,38 @@
+name: Matrix — dynamic
+
+on: [push, pull_request]
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: set-matrix
+        run: |
+          # Read the axis from a config file — single source of truth
+          VERSIONS=$(cat .github/supported-versions.json)
+          # Guard: an empty matrix silently produces zero jobs
+          if [ "$VERSIONS" = "[]" ] || [ -z "$VERSIONS" ]; then
+            echo "supported-versions.json is empty — refusing to build an empty matrix"
+            exit 1
+          fi
+          echo "matrix=$VERSIONS" >> "$GITHUB_OUTPUT"
+
+  test:
+    name: Test (Node ${{ matrix.node-version }})
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - run: npm test
