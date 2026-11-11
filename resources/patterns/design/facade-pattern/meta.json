@@ -1,0 +1,25 @@
+{
+  "title": "Facade Pattern — Code Examples",
+  "title_es": "Patrón Facade — Ejemplos de Código",
+  "description": "Runnable Facade Pattern examples in Python, JavaScript, and Java: a canonical video-conversion facade plus a production-style checkout facade with injected services.",
+  "description_es": "Ejemplos ejecutables del Patrón Facade en Python, JavaScript y Java: un facade canónico de conversión de video más un facade de checkout estilo producción con servicios inyectados.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "facade-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/facade-pattern/",
+    "es": "https://stackpractices.com/es/patterns/facade-pattern/"
+  },
+  "language": "bilingual",
+  "tags": ["facade", "design-pattern", "structural", "python", "javascript", "java"],
+  "files": [
+    "python/video_converter.py",
+    "python/checkout_facade.py",
+    "javascript/video_converter.js",
+    "javascript/checkout_facade.js",
+    "java/VideoConverter.java",
+    "java/CheckoutFacade.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
