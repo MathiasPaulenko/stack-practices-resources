@@ -1,0 +1,22 @@
+{
+  "title": "How to Format Phone Numbers (Python, JS, Java)",
+  "title_es": "Cómo Formatear Números de Teléfono (Python, JS, Java)",
+  "description": "Runnable phone number parsing, validation, and formatting with libphonenumber ports: region hints, possible vs valid checks, E.164/national/RFC3966 output, extensions, and as-you-type formatting.",
+  "description_es": "Ejemplos ejecutables de parseo, validación y formateo de números de teléfono con ports de libphonenumber: hints de región, chequeos possible vs valid, salida E.164/nacional/RFC3966, extensiones y formateo en vivo.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "format-phone-numbers",
+  "source_urls": [
+    "https://stackpractices.com/recipes/format-phone-numbers/",
+    "https://stackpractices.com/es/recipes/format-phone-numbers/"
+  ],
+  "language": "multi",
+  "tags": ["phone", "formatting", "validation", "e164", "libphonenumber", "python", "javascript", "java"],
+  "files": [
+    "format_phone.py",
+    "format-phone.js",
+    "PhoneFormatter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
