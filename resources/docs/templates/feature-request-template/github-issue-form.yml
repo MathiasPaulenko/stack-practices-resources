@@ -1,0 +1,39 @@
+name: Feature Request
+description: Propose a new capability
+title: "[FR]: "
+labels: ["feature-request", "triage"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One-sentence description of the capability
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this solve? Who has it and how often?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the capability. Mockups welcome.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: What does "done" look like? One testable item per line.
+    validations:
+      required: true
+  - type: dropdown
+    id: pain
+    attributes:
+      label: Pain level
+      options: [Blocking, Annoying, Nice-to-have]
+    validations:
+      required: true
+

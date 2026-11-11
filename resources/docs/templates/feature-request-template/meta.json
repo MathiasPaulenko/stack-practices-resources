@@ -1,0 +1,21 @@
+{
+  "title": "Feature Request Template",
+  "title_es": "Plantilla de Solicitud de Feature",
+  "description": "Blank fillable template, a filled CSV-export example, and a GitHub issue form for structured feature requests: problem statement, acceptance criteria, user value, and priority.",
+  "description_es": "Plantilla rellenable en blanco, un ejemplo completo de exportación CSV y un issue form de GitHub para solicitudes de features estructuradas: problema, criterios de aceptación, valor y prioridad.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "feature-request-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/feature-request-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["docs", "template", "feature-request", "product-management", "issue-form"],
+  "files": [
+    "feature-request-template.md",
+    "filled-example-csv-export.md",
+    "github-issue-form.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
