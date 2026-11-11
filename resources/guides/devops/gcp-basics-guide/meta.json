@@ -1,0 +1,24 @@
+{
+  "title": "GCP Basics — Core Services for Developers",
+  "title_es": "GCP Básico — Servicios Core para Desarrolladores",
+  "description": "Runnable gcloud CLI commands, BigQuery query, Firestore snippet, and IAM policy from the GCP Basics guide.",
+  "description_es": "Comandos gcloud ejecutables, consulta de BigQuery, snippet de Firestore y política IAM de la guía GCP Básico.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "gcp-basics-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/gcp-basics-guide/",
+    "https://stackpractices.com/es/guides/gcp-basics-guide/"
+  ],
+  "language": "en+es",
+  "tags": ["gcp", "cloud", "gcloud", "compute-engine", "gke", "cloud-run", "cloud-storage", "cloud-sql", "firestore", "bigquery", "iam", "vpc"],
+  "files": [
+    "gcloud-setup.sh",
+    "gcloud-services.sh",
+    "bigquery_names.sql",
+    "iam-policy.yaml",
+    "firestore_example.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

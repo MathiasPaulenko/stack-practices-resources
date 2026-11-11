@@ -1,0 +1,12 @@
+# Least-privilege IAM binding for a workload service account.
+# Predefined roles scoped to the service — never basic roles (Owner/Editor).
+# Apply with: gcloud projects set-iam-policy my-project iam-policy.yaml
+#   (prefer `gcloud <resource> add-iam-policy-binding` for single additions)
+
+bindings:
+  - members:
+      - serviceAccount:my-app@project.iam.gserviceaccount.com
+    role: roles/storage.objectViewer
+  - members:
+      - serviceAccount:my-app@project.iam.gserviceaccount.com
+    role: roles/cloudsql.client
