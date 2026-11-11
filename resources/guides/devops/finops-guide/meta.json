@@ -1,0 +1,33 @@
+{
+  "title": "FinOps: Cloud Cost Optimization and Financial Ops",
+  "title_es": "FinOps: Optimización de Costos Cloud",
+  "description": "FinOps toolkit: daily Cost Explorer anomaly detector, Terraform mandatory-tagging module, and the worked SaaS bill-reduction example from the guide.",
+  "description_es": "Kit FinOps: detector diario de anomalías con Cost Explorer, módulo Terraform de etiquetado obligatorio y el ejemplo trabajado de reducción de factura SaaS.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "finops-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/finops-guide/",
+    "es": "https://stackpractices.com/es/guides/finops-guide/"
+  },
+  "language": [
+    "python",
+    "hcl"
+  ],
+  "tags": [
+    "finops",
+    "cost-optimization",
+    "aws",
+    "cost-explorer",
+    "tagging",
+    "terraform",
+    "anomaly-detection"
+  ],
+  "files": [
+    "cost_anomaly_detection.py",
+    "tagging_policy.tf",
+    "saas_optimization_example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
