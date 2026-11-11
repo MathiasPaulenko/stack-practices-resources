@@ -1,0 +1,33 @@
+{
+  "title": "Factory Pattern Recipe — Companion Resources",
+  "title_es": "Receta Patrón Factory — Recursos complementarios",
+  "description": "Runnable factory pattern examples: factory method notifications (TypeScript), simple factory payment providers (Python), abstract factory UI themes (Java), a minimal DI container (TypeScript), a factory+builder combo (TypeScript) and an async pooled connection factory (Python/asyncpg).",
+  "description_es": "Ejemplos ejecutables del patrón factory: factory method de notificaciones (TypeScript), simple factory de proveedores de pago (Python), abstract factory de temas UI (Java), contenedor DI mínimo (TypeScript), combo factory+builder (TypeScript) y factory async con pool de conexiones (Python/asyncpg).",
+  "type": "recipes",
+  "topic": "design",
+  "slug": "factory-pattern-recipe",
+  "source_urls": [
+    "https://stackpractices.com/recipes/factory-pattern-recipe/",
+    "https://stackpractices.com/es/recipes/factory-pattern-recipe/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "factory-pattern",
+    "factory-method",
+    "abstract-factory",
+    "dependency-injection",
+    "typescript",
+    "java",
+    "python"
+  ],
+  "files": [
+    "notification-factory.ts",
+    "payment-factory.py",
+    "UIFactoryDemo.java",
+    "di-container.ts",
+    "notification-builder.ts",
+    "async-db-factory.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
