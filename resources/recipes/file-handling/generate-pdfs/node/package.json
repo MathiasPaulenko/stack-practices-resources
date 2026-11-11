@@ -1,0 +1,14 @@
+{
+  "name": "generate-pdfs-node",
+  "version": "1.0.0",
+  "description": "HTML-to-PDF invoice generation with Puppeteer + Handlebars (StackPractices companion).",
+  "private": true,
+  "main": "generate_pdf.js",
+  "scripts": {
+    "generate": "node generate_pdf.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "puppeteer": "^23.0.0"
+  }
+}

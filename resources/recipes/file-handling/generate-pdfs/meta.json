@@ -1,0 +1,25 @@
+{
+  "title": "Generate PDFs — HTML-to-PDF in Python, Node.js and Java",
+  "title_es": "Generar PDFs — HTML-a-PDF en Python, Node.js y Java",
+  "description": "Runnable companion for the Generate PDFs recipe: the same invoice rendered to PDF with WeasyPrint + Jinja2 (Python), Puppeteer + Handlebars with timeouts and browser reuse (Node.js), and Thymeleaf + Flying Saucer / OpenPDF (Java), plus a pypdf merge utility.",
+  "description_es": "Proyecto ejecutable complementario de la receta Generar PDFs: la misma factura renderizada a PDF con WeasyPrint + Jinja2 (Python), Puppeteer + Handlebars con timeouts y reutilización del navegador (Node.js), y Thymeleaf + Flying Saucer / OpenPDF (Java), más una utilidad de fusión con pypdf.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "generate-pdfs",
+  "source_urls": [
+    "https://stackpractices.com/recipes/generate-pdfs/",
+    "https://stackpractices.com/es/recipes/generate-pdfs/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["pdf", "weasyprint", "puppeteer", "openpdf", "thymeleaf", "jinja2", "handlebars", "pypdf", "html-to-pdf", "file-handling"],
+  "files": [
+    "python/generate_pdf.py",
+    "python/merge_pdfs.py",
+    "python/requirements.txt",
+    "node/generate_pdf.js",
+    "node/package.json",
+    "java/PdfGenerator.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
