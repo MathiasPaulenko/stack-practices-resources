@@ -1,0 +1,22 @@
+{
+  "title": "Git Branching Strategy Document",
+  "title_es": "Documento de Estrategia de Branching en Git",
+  "description": "Downloadable Git branching strategy templates: a blank GitFlow-based template with branch types, workflows, conventional commits, merge requirements, tagging, rollback and protection rules, plus a worked example.",
+  "description_es": "Plantillas de estrategia de branching Git descargables: una plantilla en blanco basada en GitFlow con tipos de ramas, flujos de trabajo, conventional commits, requisitos de merge, tagging, rollback y reglas de protección, más un ejemplo completo.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "git-branching-strategy-document",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/git-branching-strategy-document/",
+    "es": "https://stackpractices.com/es/docs/git-branching-strategy-document/"
+  },
+  "language": ["markdown", "bash"],
+  "tags": ["git", "gitflow", "branching", "workflow", "conventional-commits", "semver", "devops", "template"],
+  "files": [
+    "branching-strategy-template.md",
+    "branching-strategy-template-es.md",
+    "branching-strategy-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
