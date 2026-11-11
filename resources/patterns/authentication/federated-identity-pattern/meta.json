@@ -1,0 +1,21 @@
+{
+  "title": "Federated Identity Pattern",
+  "title_es": "Patrón Federated Identity",
+  "description": "OAuth2/OIDC authorization-code flow in Python (FastAPI + PyJWKClient), JavaScript (express-openid-connect), and Java (Spring Security), with real JWKS signature validation and IdP-propagated logout.",
+  "description_es": "Flujo OAuth2/OIDC authorization-code en Python (FastAPI + PyJWKClient), JavaScript (express-openid-connect) y Java (Spring Security), con validación de firma JWKS real y logout propagado al IdP.",
+  "type": "patterns",
+  "topic": "authentication",
+  "slug": "federated-identity-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/federated-identity-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["patterns", "authentication", "oauth2", "oidc", "sso", "jwt", "jwks", "fastapi", "express", "spring-security"],
+  "files": [
+    "python/federated_identity.py",
+    "javascript/federated_identity.js",
+    "java/FederatedIdentityApp.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
