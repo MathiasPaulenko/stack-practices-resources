@@ -1,0 +1,24 @@
+{
+  "title": "GraphQL DataLoader Batching — Runnable N+1 Fix Demo",
+  "title_es": "GraphQL DataLoader Batching — Demo ejecutable del arreglo N+1",
+  "description": "Runnable TypeScript demo of DataLoader batching and per-request caching: a counting mock database proves N+1 vs batched query counts, loadMany alignment, per-key errors, and mutation cache invalidation.",
+  "description_es": "Demo TypeScript ejecutable del agrupamiento y la caché por petición de DataLoader: una base de datos simulada que cuenta consultas demuestra N+1 frente a lotes, alineación de loadMany, errores por clave e invalidación de caché tras mutaciones.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-dataloader-batching",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-dataloader-batching/",
+    "https://stackpractices.com/es/recipes/graphql-dataloader-batching/"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "dataloader", "n-plus-one", "batching", "typescript", "performance"],
+  "files": [
+    "src/mock-db.ts",
+    "src/loaders.ts",
+    "src/context.ts",
+    "src/demo.ts",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
