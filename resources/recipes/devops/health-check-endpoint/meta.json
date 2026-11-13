@@ -1,0 +1,35 @@
+{
+  "title": "Health Check Endpoint",
+  "title_es": "Endpoint de Health Check",
+  "description": "Runnable liveness, readiness and startup health check endpoints in Python (FastAPI), JavaScript (Express), Go (net/http) and Java (Spring Boot Actuator), plus Kubernetes probe and Docker Compose manifests.",
+  "description_es": "Endpoints de health check de liveness, readiness y startup ejecutables en Python (FastAPI), JavaScript (Express), Go (net/http) y Java (Spring Boot Actuator), más manifiestos de probes de Kubernetes y Docker Compose.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "health-check-endpoint",
+  "source_urls": [
+    "https://stackpractices.com/recipes/health-check-endpoint/"
+  ],
+  "language": "multi",
+  "tags": [
+    "devops",
+    "health-check",
+    "kubernetes",
+    "monitoring",
+    "liveness",
+    "readiness",
+    "python",
+    "javascript",
+    "java",
+    "go"
+  ],
+  "files": [
+    "health_check.py",
+    "health_check.js",
+    "main.go",
+    "DatabaseHealthIndicator.java",
+    "k8s-deployment.yaml",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
