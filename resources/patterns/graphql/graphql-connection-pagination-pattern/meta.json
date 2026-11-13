@@ -1,0 +1,30 @@
+{
+    "title": "GraphQL Connection Pagination Pattern",
+    "title_es": "Patrón de Paginación Connection en GraphQL",
+    "description": "Runnable demos of Relay-style connection pagination: an offset-cursor resolver and a keyset (sort-key) cursor resolver over an in-memory query-counting table, with full edges/pageInfo/totalCount output. Node.js (ESM), zero dependencies.",
+    "description_es": "Demos ejecutables de paginación connection estilo Relay: un resolver con cursor de offset y otro con cursor keyset (clave de orden) sobre una tabla en memoria que cuenta consultas, con salida completa de edges/pageInfo/totalCount. Node.js (ESM), sin dependencias.",
+    "type": "patterns",
+    "topic": "graphql",
+    "slug": "graphql-connection-pagination-pattern",
+    "source_urls": [
+        "https://stackpractices.com/patterns/graphql-connection-pagination-pattern/",
+        "https://stackpractices.com/es/patterns/graphql-connection-pagination-pattern/"
+    ],
+    "language": "multi",
+    "tags": [
+        "graphql",
+        "pagination",
+        "relay",
+        "cursor",
+        "nodejs",
+        "api-design"
+    ],
+    "files": [
+        "mock-db.mjs",
+        "offset-cursor.mjs",
+        "keyset-cursor.mjs",
+        "package.json",
+        "README.md",
+        "README.es.md"
+    ]
+}

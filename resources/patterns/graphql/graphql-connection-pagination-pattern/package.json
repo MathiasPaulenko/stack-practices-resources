@@ -1,0 +1,10 @@
+{
+  "name": "graphql-connection-pagination-pattern",
+  "private": true,
+  "type": "module",
+  "description": "Runnable demos for the GraphQL Connection Pagination pattern: offset-cursor and keyset resolvers over a query-counting in-memory table.",
+  "scripts": {
+    "offset": "node offset-cursor.mjs",
+    "keyset": "node keyset-cursor.mjs"
+  }
+}
