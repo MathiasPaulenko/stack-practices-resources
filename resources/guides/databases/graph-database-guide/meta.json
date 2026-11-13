@@ -1,0 +1,36 @@
+{
+  "title": "Graph Databases (Neo4j) — Companion Files",
+  "title_es": "Bases de Datos de Grafos (Neo4j) — Archivos complementarios",
+  "description": "All Cypher examples from the guide as runnable scripts plus a docker-compose that brings up Neo4j 5 with the Graph Data Science plugin.",
+  "description_es": "Todos los ejemplos Cypher de la guía como scripts ejecutables, más un docker-compose que levanta Neo4j 5 con el plugin Graph Data Science.",
+  "type": "guides",
+  "topic": "databases",
+  "slug": "graph-database-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/graph-database-guide/",
+    "https://stackpractices.com/es/guides/graph-database-guide/"
+  ],
+  "language": ["cypher", "yaml"],
+  "tags": [
+    "graph-database",
+    "neo4j",
+    "cypher",
+    "property-graph",
+    "recommendations",
+    "fraud-detection",
+    "gds",
+    "docker"
+  ],
+  "files": [
+    "docker-compose.yml",
+    "01-cypher-basics.cypher",
+    "02-recommendation-engine.cypher",
+    "03-fraud-detection.cypher",
+    "04-access-control.cypher",
+    "05-hierarchies.cypher",
+    "06-social-network-model.cypher",
+    "07-social-network-queries.cypher",
+    "README.md",
+    "README.es.md"
+  ]
+}
