@@ -1,0 +1,57 @@
+# GitHub Actions workflow — automated Helm chart review gate
+# Runs the review checklist automatically on every chart change.
+name: Helm Chart Review
+
+on:
+  pull_request:
+    paths:
+      - 'charts/**'
+      - 'Chart.yaml'
+      - 'values*.yaml'
+      - 'templates/**'
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: '3.14.0'
+
+      # Section 2 — values schema validation
+      - name: Lint chart (structure + values schema)
+        run: helm lint ./charts/my-app
+
+      # Section 3 — template review: rendered manifests must be valid
+      - name: Render templates
+        run: helm template ./charts/my-app > /tmp/rendered.yaml
+
+      # Sections 4-6 — security, resources, probes on rendered manifests
+      - name: kube-score on rendered manifests
+        run: |
+          curl -sSL https://github.com/zegl/kube-score/releases/download/v1.18.0/kube-score_1.18.0_linux_amd64.tar.gz \
+            | tar xz -C /usr/local/bin kube-score
+          kube-score score /tmp/rendered.yaml --exit-one-on-warning
+
+      # Section 4 — no :latest tags, no secrets in values
+      - name: No :latest image tags
+        run: |
+          if grep -nE 'image:.*:latest' /tmp/rendered.yaml; then
+            echo "::error::Found :latest image tag — pin a version or digest"
+            exit 1
+          fi
+
+      - name: No plaintext secrets in values
+        run: |
+          if grep -nE '(password|secret|token|apikey|api_key)\s*:\s*[^\s].*' ./charts/my-app/values.yaml \
+             | grep -v '^.*#' | grep -vE '^\s*$'; then
+            echo "::error::Possible plaintext secret in values.yaml"
+            exit 1
+          fi
+
+      # Section 8 — dry-run upgrade against a staging cluster
+      - name: Dry-run upgrade
+        run: helm upgrade --install --dry-run my-app ./charts/my-app

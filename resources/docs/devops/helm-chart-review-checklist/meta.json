@@ -1,0 +1,29 @@
+{
+  "title": "Helm Chart Review Checklist — Companion Files",
+  "title_es": "Checklist de Revisión de Helm Charts — Archivos Companion",
+  "description": "Standalone files from the Helm chart review checklist doc: the copy-paste markdown checklist covering structure, values, templates, security, resources, probes, deployment and testing, plus a GitHub Actions workflow that automates the review with helm lint, helm template, and kube-score.",
+  "description_es": "Archivos independientes de la doc de checklist de revisión de Helm charts: la checklist en markdown lista para copiar cubriendo estructura, values, templates, seguridad, recursos, probes, despliegue y testing, más un workflow de GitHub Actions que automatiza la revisión con helm lint, helm template y kube-score.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "helm-chart-review-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/helm-chart-review-checklist/",
+    "https://stackpractices.com/es/docs/helm-chart-review-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "helm",
+    "kubernetes",
+    "checklist",
+    "code-review",
+    "devops",
+    "github-actions",
+    "kube-score"
+  ],
+  "files": [
+    "src/helm-chart-review-checklist.md",
+    "src/chart-review-ci.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
