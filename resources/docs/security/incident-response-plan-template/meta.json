@@ -1,0 +1,28 @@
+{
+  "title": "Incident Response Plan Template — Companion Resources",
+  "title_es": "Plantilla de Plan de Respuesta a Incidentes — Recursos complementarios",
+  "description": "Fillable incident response plan in markdown: severity classification, IR team roster, six-phase lifecycle, communication plan, regulatory notification deadlines, metrics and tabletop exercises. English and Spanish versions included.",
+  "description_es": "Plan de respuesta a incidentes rellenable en markdown: clasificación de severidad, roster del equipo IR, ciclo de vida en seis fases, plan de comunicación, plazos de notificación regulatoria, métricas y ejercicios de simulación. Versiones en inglés y español.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "incident-response-plan-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/incident-response-plan-template/",
+    "https://stackpractices.com/es/docs/incident-response-plan-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "incident-response",
+    "security",
+    "runbook",
+    "compliance",
+    "severity",
+    "template"
+  ],
+  "files": [
+    "incident-response-plan-template.md",
+    "incident-response-plan-template.es.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
