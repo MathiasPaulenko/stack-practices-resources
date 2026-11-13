@@ -1,0 +1,19 @@
+{
+  "name": "graphql-vs-rest-guide-companion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node demo.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.5.2",
+    "@graphql-tools/schema": "^10.0.4",
+    "dataloader": "^2.2.2",
+    "graphql": "^16.11.0",
+    "graphql-tag": "^2.12.6"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.9"
+  }
+}

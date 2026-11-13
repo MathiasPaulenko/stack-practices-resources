@@ -1,0 +1,35 @@
+{
+  "title": "GraphQL vs REST Migration — Companion Code",
+  "title_es": "Migración de GraphQL vs REST — Código complementario",
+  "description": "Runnable N+1 vs DataLoader demonstration: a fake REST API with a request counter, a GraphQL proxy layer over it (phase 1 of the migration), naive resolvers that fan out into 11 REST calls vs a DataLoader batch that costs 2, plus a persisted-query hash example and vitest coverage.",
+  "description_es": "Demostración ejecutable de N+1 vs DataLoader: una API REST simulada con contador de requests, una capa proxy GraphQL encima (fase 1 de la migración), resolvers ingenuos que se despliegan en 11 llamadas REST frente a un batch con DataLoader que cuesta 2, más un ejemplo de hash de persisted query y tests vitest.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "graphql-vs-rest-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/graphql-vs-rest-guide/",
+    "https://stackpractices.com/es/guides/graphql-vs-rest-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graphql",
+    "rest",
+    "api",
+    "dataloader",
+    "n-plus-1",
+    "apollo-server",
+    "migration",
+    "architecture"
+  ],
+  "files": [
+    "rest-server.mjs",
+    "api.mjs",
+    "schema.mjs",
+    "resolvers.mjs",
+    "server.mjs",
+    "demo.mjs",
+    "tests/dataloader.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
