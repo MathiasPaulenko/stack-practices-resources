@@ -1,0 +1,12 @@
+{
+  "name": "graphql-dataloader-pattern",
+  "private": true,
+  "type": "module",
+  "description": "Runnable demo of the DataLoader library contract: per-tick dedup, positional order, per-key errors, prime/clear, loadMany and cacheKeyFn.",
+  "scripts": {
+    "demo": "node contract.mjs"
+  },
+  "dependencies": {
+    "dataloader": "^2.2.3"
+  }
+}

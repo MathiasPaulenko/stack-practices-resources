@@ -1,0 +1,22 @@
+{
+  "title": "GraphQL DataLoader Pattern",
+  "title_es": "Patrón DataLoader en GraphQL",
+  "description": "Runnable demo of the DataLoader library contract: per-tick dedup, positional order, per-key errors, prime/clear, loadMany and cacheKeyFn.",
+  "description_es": "Demo ejecutable del contrato de la librería DataLoader: deduplicación por tick, orden posicional, errores por clave, prime/clear, loadMany y cacheKeyFn.",
+  "type": "patterns",
+  "topic": "graphql",
+  "slug": "graphql-dataloader-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/graphql-dataloader-pattern/",
+    "https://stackpractices.com/es/patterns/graphql-dataloader-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["graphql", "dataloader", "batching", "caching", "n-plus-1"],
+  "files": [
+    "mock-db.mjs",
+    "contract.mjs",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
