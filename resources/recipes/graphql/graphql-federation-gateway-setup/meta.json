@@ -1,0 +1,25 @@
+{
+  "title": "GraphQL Federation Gateway — Two-Subgraph Runnable Demo",
+  "title_es": "Gateway de GraphQL Federation — Demo ejecutable de dos subgrafos",
+  "description": "Runnable TypeScript demo of an Apollo Federation gateway: a users subgraph owning the User entity, a posts subgraph extending it, and an ApolloGateway with IntrospectAndCompose executing a real cross-subgraph query through _entities.",
+  "description_es": "Demo TypeScript ejecutable de un gateway de Apollo Federation: un subgrafo de users que posee la entidad User, un subgrafo de posts que la extiende y un ApolloGateway con IntrospectAndCompose ejecutando una consulta real entre subgrafos vía _entities.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-federation-gateway-setup",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-federation-gateway-setup/",
+    "https://stackpractices.com/es/recipes/graphql-federation-gateway-setup/"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "federation", "apollo-gateway", "subgraph", "supergraph", "typescript"],
+  "files": [
+    "src/users-service.ts",
+    "src/posts-service.ts",
+    "src/gateway.ts",
+    "src/demo.ts",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
