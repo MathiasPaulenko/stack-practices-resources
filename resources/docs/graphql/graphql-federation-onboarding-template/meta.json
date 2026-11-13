@@ -1,0 +1,37 @@
+{
+  "title": "GraphQL Federation Onboarding Template — Companion Code",
+  "title_es": "Plantilla de Onboarding en GraphQL Federation — Código complementario",
+  "description": "Federation onboarding kit: a products subgraph (SDL schema, DataLoader-backed entity resolvers, standalone server), a reviews subgraph that extends the Product entity, an Apollo Gateway configuration with header-forwarding data source, a supergraph.yaml for rover compose, and entity-resolution tests.",
+  "description_es": "Kit de onboarding a federación: un subgraph de products (schema SDL, entity resolvers con DataLoader, servidor standalone), un subgraph de reviews que extiende la entidad Product, configuración de Apollo Gateway con data source que reenvía headers, un supergraph.yaml para rover compose y pruebas de resolución de entidades.",
+  "type": "docs",
+  "topic": "graphql",
+  "slug": "graphql-federation-onboarding-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/graphql-federation-onboarding-template/",
+    "https://stackpractices.com/es/docs/graphql-federation-onboarding-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graphql",
+    "apollo-federation",
+    "subgraph",
+    "gateway",
+    "entity-resolver",
+    "dataloader",
+    "rover",
+    "template"
+  ],
+  "files": [
+    "subgraphs/products/products.graphqls",
+    "subgraphs/products/resolvers.js",
+    "subgraphs/products/server.js",
+    "subgraphs/reviews/reviews.graphqls",
+    "subgraphs/reviews/resolvers.js",
+    "gateway/index.js",
+    "gateway/authenticated-data-source.js",
+    "supergraph.yaml",
+    "tests/product-entity.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

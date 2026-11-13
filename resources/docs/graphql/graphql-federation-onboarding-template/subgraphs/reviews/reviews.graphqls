@@ -1,0 +1,45 @@
+# reviews-subgraph.graphqls
+# Extends the Product entity owned by the products subgraph
+
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.0",
+        import: ["@key", "@external", "@extends"])
+
+extend type Product @key(fields: "id") {
+  id: ID! @external
+  reviews: [Review!]!
+  averageRating: Float!
+  reviewCount: Int!
+}
+
+type Review @key(fields: "id") {
+  id: ID!
+  productId: ID!
+  userId: ID!
+  rating: Int!
+  comment: String!
+  createdAt: DateTime!
+}
+
+type Query {
+  reviews(productId: ID!, first: Int = 10, after: String): ReviewConnection!
+}
+
+type ReviewConnection {
+  edges: [ReviewEdge!]!
+  pageInfo: PageInfo!
+}
+
+type ReviewEdge {
+  node: Review!
+  cursor: String!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+scalar DateTime

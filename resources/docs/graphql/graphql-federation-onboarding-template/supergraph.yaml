@@ -1,0 +1,18 @@
+federation_version: =2.0.0
+subgraphs:
+  products:
+    routing_url: https://products-service.internal/graphql
+    schema:
+      file: ./subgraphs/products/products.graphqls
+  reviews:
+    routing_url: https://reviews-service.internal/graphql
+    schema:
+      file: ./subgraphs/reviews/reviews.graphqls
+  users:
+    routing_url: https://users-service.internal/graphql
+    schema:
+      file: ./subgraphs/users/users.graphqls
+  orders:
+    routing_url: https://orders-service.internal/graphql
+    schema:
+      file: ./subgraphs/orders/orders.graphqls

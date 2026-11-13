@@ -1,0 +1,78 @@
+# products-subgraph.graphqls
+
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.0",
+        import: ["@key", "@external", "@extends", "@shareable"])
+
+type Product @key(fields: "id") {
+  id: ID!
+  name: String!
+  description: String!
+  price: Float!
+  currency: String!
+  categoryId: ID!
+  inStock: Boolean!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Category @key(fields: "id") {
+  id: ID!
+  name: String!
+  productCount: Int! @shareable
+}
+
+type Query {
+  product(id: ID!): Product
+  products(first: Int = 20, after: String): ProductConnection!
+  category(id: ID!): Category
+}
+
+type Mutation {
+  createProduct(input: CreateProductInput!): CreateProductPayload!
+  updateProduct(input: UpdateProductInput!): UpdateProductPayload!
+}
+
+input CreateProductInput {
+  name: String!
+  description: String!
+  price: Float!
+  currency: String!
+  categoryId: ID!
+}
+
+type CreateProductPayload {
+  product: Product!
+}
+
+input UpdateProductInput {
+  id: ID!
+  name: String
+  description: String
+  price: Float
+  inStock: Boolean
+}
+
+type UpdateProductPayload {
+  product: Product!
+}
+
+type ProductConnection {
+  edges: [ProductEdge!]!
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type ProductEdge {
+  node: Product!
+  cursor: String!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+scalar DateTime
