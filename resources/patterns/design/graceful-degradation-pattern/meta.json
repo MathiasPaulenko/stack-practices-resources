@@ -1,0 +1,32 @@
+{
+  "title": "Graceful Degradation Pattern — Companion Files",
+  "title_es": "Patrón Graceful Degradation — Archivos complementarios",
+  "description": "Runnable graceful degradation implementations: primary call, TTL-bounded cache fallback, and default values, each returning a ServiceResult that marks responses as healthy, degraded, or down.",
+  "description_es": "Implementaciones ejecutables de degradación elegante: llamada principal, alternativa de caché acotada por TTL y valores por defecto, devolviendo un ServiceResult que marca las respuestas como healthy, degraded o down.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "graceful-degradation-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/graceful-degradation-pattern/",
+    "https://stackpractices.com/es/patterns/graceful-degradation-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graceful-degradation",
+    "pattern",
+    "resilience",
+    "fault-tolerance",
+    "fallback",
+    "cache",
+    "python",
+    "java",
+    "javascript"
+  ],
+  "files": [
+    "graceful_degradation.py",
+    "gracefulDegradation.mjs",
+    "GracefulDegradation.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
