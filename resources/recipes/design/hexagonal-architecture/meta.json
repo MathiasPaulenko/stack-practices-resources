@@ -1,0 +1,33 @@
+{
+  "title": "Hexagonal Architecture — Companion Files",
+  "title_es": "Arquitectura Hexagonal — Archivos complementarios",
+  "description": "Runnable ports-and-adapters example: a user-registration domain service with repository and email ports, PostgreSQL and in-memory adapters, a composition root with an Express route, Vitest unit tests, a Unit of Work port for transactions, and a Python variant.",
+  "description_es": "Ejemplo ejecutable de ports y adapters: un domain service de registro de usuarios con ports de repository y email, adapters PostgreSQL y en memoria, raíz de composición con ruta Express, tests unitarios con Vitest, un port Unit of Work para transacciones y una variante en Python.",
+  "type": "recipes",
+  "topic": "design",
+  "slug": "hexagonal-architecture",
+  "source_urls": [
+    "https://stackpractices.com/recipes/hexagonal-architecture/",
+    "https://stackpractices.com/es/recipes/hexagonal-architecture/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "hexagonal-architecture",
+    "ports-and-adapters",
+    "design-pattern",
+    "typescript",
+    "python",
+    "vitest"
+  ],
+  "files": [
+    "ports.ts",
+    "user-registration-service.ts",
+    "adapters.ts",
+    "unit-of-work.ts",
+    "main.ts",
+    "user-registration-service.test.ts",
+    "hexagonal.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
