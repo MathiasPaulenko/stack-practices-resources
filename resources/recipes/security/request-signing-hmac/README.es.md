@@ -16,7 +16,10 @@ nonce y rotación de claves con solapamiento.
 | `sign-request.go` | `SignRequest`/`VerifyRequest` en Go con chequeo de frescura de 5 minutos y `hmac.Equal`. |
 | `aws-sigv4.py` | Firmante AWS Signature v4 completo: petición canónica, query normalizado y ordenado, cadena de derivación de clave, header `Authorization`. |
 | `webhook-verify.js` | Verificador de webhooks en Express: ventana de frescura de timestamp + unicidad de nonce con `SET NX` en Redis + chequeo HMAC. |
+| `webhook-stripe-verify.js` | Verificador estilo Stripe — parsea el header de firma `t=...,v1=...`, chequea cada `v1` (rotación) y protege `timingSafeEqual` con un chequeo de longitud. |
+| `nonce-cache.py` | Cache LRU de nonces en memoria — protección contra replay sin Redis para servicios de un solo proceso. |
 | `key-rotation.py` | Dataclass `KeyRotation` — el secreto viejo y el nuevo verifican durante una hora de solapamiento. |
+| `key-rotator.py` | `KeyRotator` — las firmas llevan la versión de la clave (`v2:<hex>`) así la verificación elige el secreto correcto directamente. |
 
 ## Ejecutar
 
@@ -24,7 +27,10 @@ nonce y rotación de claves con solapamiento.
 python sign_request.py       # ida y vuelta firma + verificación
 python aws-sigv4.py          # imprime un header Authorization SigV4
 python key-rotation.py       # muestra ambas claves válidas en el solapamiento
+python key-rotator.py        # firmas con versión a lo largo de una rotación
+python nonce-cache.py        # demo de replay con nonces
 node sign-request.js         # ida y vuelta en JS
+node webhook-stripe-verify.js  # firma + verificación en el formato de header de Stripe
 go run sign-request.go       # compila el par en Go
 
 # El verificador de webhook necesita express + redis

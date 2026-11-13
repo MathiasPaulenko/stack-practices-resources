@@ -15,7 +15,10 @@ verifier with nonce replay protection, and overlap-window key rotation.
 | `sign-request.go` | Go `SignRequest`/`VerifyRequest` with a 5-minute freshness check and `hmac.Equal`. |
 | `aws-sigv4.py` | Full AWS Signature v4 signer: canonical request, normalized+sorted query string, derived signing key chain, `Authorization` header. |
 | `webhook-verify.js` | Express webhook verifier: timestamp freshness window + Redis `SET NX` nonce uniqueness + HMAC check. |
+| `webhook-stripe-verify.js` | Stripe-style verifier — parses the `t=...,v1=...` signature header, checks every `v1` (rotation) and guards `timingSafeEqual` with a length check. |
+| `nonce-cache.py` | In-memory LRU nonce cache — replay protection without Redis for single-process services. |
 | `key-rotation.py` | `KeyRotation` dataclass — old and new secrets both verify during a 1-hour overlap. |
+| `key-rotator.py` | `KeyRotator` — signatures carry the key version (`v2:<hex>`) so verification picks the right secret directly. |
 
 ## Run
 
@@ -23,7 +26,10 @@ verifier with nonce replay protection, and overlap-window key rotation.
 python sign_request.py       # sign + verify round-trip
 python aws-sigv4.py          # prints a SigV4 Authorization header
 python key-rotation.py       # shows both keys valid during overlap
+python key-rotator.py        # version-tagged signatures across a rotation
+python nonce-cache.py        # nonce replay demo
 node sign-request.js         # JS round-trip
+node webhook-stripe-verify.js  # sign + verify in Stripe's header format
 go run sign-request.go       # compiles the Go pair
 
 # Webhook verifier needs express + redis

@@ -1,8 +1,8 @@
 {
   "title": "HMAC Request Signing — Companion Files",
   "title_es": "Firma de peticiones HMAC — Archivos complementarios",
-  "description": "Runnable HMAC-SHA256 request signing: sign/verify pairs in Python, JavaScript, Java and Go, a full AWS Signature v4 signer, a webhook verifier with Redis nonce replay protection, and overlap-window key rotation.",
-  "description_es": "Firma de peticiones HMAC-SHA256 ejecutable: pares firma/verificación en Python, JavaScript, Java y Go, un firmante AWS Signature v4 completo, un verificador de webhooks con protección anti-replay por nonce en Redis y rotación de claves con solapamiento.",
+  "description": "Runnable HMAC-SHA256 request signing: sign/verify pairs in Python, JavaScript, Java and Go, a full AWS Signature v4 signer, webhook verifiers with Redis nonce and Stripe-style t=,v1= headers, an in-memory nonce cache, and overlap-window plus version-tagged key rotation.",
+  "description_es": "Firma de peticiones HMAC-SHA256 ejecutable: pares firma/verificación en Python, JavaScript, Java y Go, un firmante AWS Signature v4 completo, verificadores de webhooks con nonce en Redis y formato Stripe t=,v1=, una cache de nonces en memoria y rotación de claves por solapamiento y por versión.",
   "type": "recipes",
   "topic": "security",
   "slug": "request-signing-hmac",
@@ -30,7 +30,10 @@
     "sign-request.go",
     "aws-sigv4.py",
     "webhook-verify.js",
+    "webhook-stripe-verify.js",
+    "nonce-cache.py",
     "key-rotation.py",
+    "key-rotator.py",
     "README.md",
     "README.es.md"
   ]
