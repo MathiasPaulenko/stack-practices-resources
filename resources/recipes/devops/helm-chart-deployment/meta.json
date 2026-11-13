@@ -1,0 +1,28 @@
+{
+  "title": "Deploy Applications to Kubernetes with Helm Charts",
+  "title_es": "Despliegue de Aplicaciones en Kubernetes con Helm Charts",
+  "description": "Runnable Helm chart with value overrides, template helpers, lifecycle hooks, and a CI/CD deploy workflow.",
+  "description_es": "Helm chart ejecutable con overrides de values, helpers de template, hooks de ciclo de vida y un workflow de despliegue CI/CD.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "helm-chart-deployment",
+  "source_urls": [
+    "https://stackpractices.com/recipes/helm-chart-deployment/",
+    "https://stackpractices.com/es/recipes/helm-chart-deployment/"
+  ],
+  "language": "yaml",
+  "tags": ["kubernetes", "helm", "devops", "ci-cd"],
+  "files": [
+    "myapp/Chart.yaml",
+    "myapp/values.yaml",
+    "myapp/values.prod.yaml",
+    "myapp/templates/_helpers.tpl",
+    "myapp/templates/deployment.yaml",
+    "myapp/templates/service.yaml",
+    "myapp/templates/hooks/pre-install-hook.yaml",
+    "myapp/templates/hooks/post-install-test.yaml",
+    ".github/workflows/helm-deploy.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

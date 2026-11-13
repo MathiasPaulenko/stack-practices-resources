@@ -1,0 +1,32 @@
+replicaCount: 2
+
+image:
+  repository: myregistry/myapp
+  tag: ""
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+
+database:
+  url: "postgres://localhost:5432/myapp"
+
+postgresql:
+  enabled: true
+  auth:
+    postgresPassword: "secretpass"
+  primary:
+    persistence:
+      size: 20Gi
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi

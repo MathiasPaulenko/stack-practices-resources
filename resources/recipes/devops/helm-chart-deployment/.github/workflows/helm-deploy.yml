@@ -1,0 +1,29 @@
+name: Helm Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure kubectl
+        uses: azure/setup-kubectl@v3
+      - name: Configure Helm
+        uses: azure/setup-helm@v3
+      - name: Login to cluster
+        run: |
+          echo "${{ secrets.KUBE_CONFIG }}" > kubeconfig
+          export KUBECONFIG=kubeconfig
+      - name: Lint chart
+        run: helm lint ./charts/my-app
+      - name: Deploy
+        run: |
+          helm upgrade --install my-app ./charts/my-app \
+            -f values-prod.yaml \
+            --atomic \
+            --timeout 5m \
+            --wait
+      - name: Verify
+        run: helm test my-app
