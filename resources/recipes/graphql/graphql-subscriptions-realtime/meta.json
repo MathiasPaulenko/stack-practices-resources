@@ -1,0 +1,32 @@
+{
+  "title": "GraphQL Subscriptions over WebSockets \u2014 Companion Code",
+  "title_es": "Suscripciones GraphQL sobre WebSockets \u2014 C\u00f3digo complementario",
+  "description": "Runnable Apollo Server + graphql-ws + PubSub setup: real HTTP and WebSocket servers on one port, createPost/updatePost mutations publishing events, a withFilter per-subscriber filter, an end-to-end demo that subscribes over WS and triggers mutations over HTTP, and vitest coverage.",
+  "description_es": "Montaje ejecutable con Apollo Server + graphql-ws + PubSub: servidores HTTP y WebSocket reales en un puerto, mutaciones createPost/updatePost que publican eventos, filtro por suscriptor con withFilter, demo end-to-end que se suscribe por WS y dispara mutaciones por HTTP, y tests vitest.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-subscriptions-realtime",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-subscriptions-realtime/",
+    "https://stackpractices.com/es/recipes/graphql-subscriptions-realtime/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graphql",
+    "subscriptions",
+    "websockets",
+    "graphql-ws",
+    "pubsub",
+    "apollo-server",
+    "realtime"
+  ],
+  "files": [
+    "server.mjs",
+    "schema.mjs",
+    "resolvers.mjs",
+    "demo.mjs",
+    "tests/subscriptions.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}
