@@ -1,0 +1,16 @@
+{
+  "name": "graphql-schema-review-checklist",
+  "private": true,
+  "type": "module",
+  "description": "Runnable companion for the GraphQL Schema Review Checklist: an SDL checker that automates the naming, pagination, mutation-payload and deprecation rules, plus good/bad example schemas and tests.",
+  "scripts": {
+    "demo": "node demo.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
+}

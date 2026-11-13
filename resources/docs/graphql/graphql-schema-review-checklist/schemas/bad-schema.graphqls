@@ -1,0 +1,31 @@
+# Schema that should FAIL the automated review checks.
+# Every violation maps to a checklist item in the doc.
+
+type users {
+  id: String
+  first_name: String
+  active: Boolean
+  created: String
+  orders: [orders]
+}
+
+type orders {
+  id: String
+  status: Status
+  total: Float
+}
+
+enum Status {
+  pending
+  SHIPPED
+}
+
+type Query {
+  users(offset: Int, limit: Int): [users]
+  allOrders: [orders]
+  oldField: String @deprecated
+}
+
+type Mutation {
+  save(firstName: String, email: String): users
+}

@@ -1,0 +1,32 @@
+{
+  "title": "GraphQL Schema Review Checklist — Companion Code",
+  "title_es": "Checklist de Revisión de Esquemas GraphQL — Código complementario",
+  "description": "Automated schema review checker: an SDL parser (graphql-js) that runs the automatable checks from the checklist — PascalCase types, camelCase fields, Boolean verb prefixes, ID typing, cursor pagination, mutation input/payload shape, enum casing, and @deprecated reasons — against a passing and a failing example schema, with a demo report and vitest coverage.",
+  "description_es": "Checker automatizado de revisión de esquemas: un parser de SDL (graphql-js) que ejecuta los checks automatizables del checklist — tipos en PascalCase, campos en camelCase, prefijos de verbo en Boolean, tipado ID, paginación por cursor, forma input/payload de mutaciones, mayúsculas de enums y reasons de @deprecated — contra un esquema que pasa y otro que falla, con demo y tests vitest.",
+  "type": "docs",
+  "topic": "graphql",
+  "slug": "graphql-schema-review-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/graphql-schema-review-checklist/",
+    "https://stackpractices.com/es/docs/graphql-schema-review-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "graphql",
+    "schema",
+    "checklist",
+    "api-design",
+    "lint",
+    "code-review",
+    "sdl"
+  ],
+  "files": [
+    "review.mjs",
+    "demo.mjs",
+    "schemas/good-schema.graphqls",
+    "schemas/bad-schema.graphqls",
+    "tests/review.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,94 @@
+# Schema that should pass the automated review checks.
+
+scalar DateTime
+
+type User implements Node {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  email: String!
+  isActive: Boolean!
+  createdAt: DateTime!
+  orderCount: Int!
+  orders(first: Int, after: String, last: Int, before: String): OrderConnection!
+}
+
+interface Node {
+  id: ID!
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  SHIPPED
+  DELIVERED
+  CANCELLED
+}
+
+type Order implements Node {
+  id: ID!
+  status: OrderStatus!
+  total: Float!
+  user: User!
+}
+
+type OrderEdge {
+  node: Order!
+  cursor: String!
+}
+
+type OrderConnection {
+  edges: [OrderEdge!]!
+  pageInfo: PageInfo!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+input CreateUserInput {
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+type UserError {
+  field: String
+  message: String!
+  code: UserErrorCode!
+}
+
+enum UserErrorCode {
+  INVALID_EMAIL
+  DUPLICATE_EMAIL
+  UNAUTHORIZED
+}
+
+type CreateUserPayload {
+  user: User
+  userErrors: [UserError!]!
+}
+
+type Query {
+  node(id: ID!): Node
+  user(id: ID!): User
+  users(first: Int, after: String, last: Int, before: String): UserConnection!
+  legacyName: String @deprecated(reason: "Use user.firstName instead")
+}
+
+type UserEdge {
+  node: User!
+  cursor: String!
+}
+
+type UserConnection {
+  edges: [UserEdge!]!
+  pageInfo: PageInfo!
+}
+
+type Mutation {
+  createUser(input: CreateUserInput!): CreateUserPayload!
+}
