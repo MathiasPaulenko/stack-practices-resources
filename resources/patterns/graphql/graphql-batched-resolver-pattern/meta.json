@@ -1,0 +1,31 @@
+{
+    "title": "GraphQL Batched Resolver Pattern",
+    "title_es": "Patrón de Resolvers Agrupados en GraphQL",
+    "description": "Runnable demos of the GraphQL Batched Resolver pattern: an N+1 baseline, DataLoader batching with per-request loaders, and a zero-dependency manual batcher over an in-memory query-counting database. Node.js (ESM).",
+    "description_es": "Demos ejecutables del patrón de resolvers agrupados en GraphQL: una base N+1, agrupación con DataLoader y loaders por petición, y un agrupador manual sin dependencias sobre una base de datos en memoria que cuenta consultas. Node.js (ESM).",
+    "type": "patterns",
+    "topic": "graphql",
+    "slug": "graphql-batched-resolver-pattern",
+    "source_urls": [
+        "https://stackpractices.com/patterns/graphql-batched-resolver-pattern/",
+        "https://stackpractices.com/es/patterns/graphql-batched-resolver-pattern/"
+    ],
+    "language": "multi",
+    "tags": [
+        "graphql",
+        "dataloader",
+        "n-plus-1",
+        "batching",
+        "nodejs",
+        "performance"
+    ],
+    "files": [
+        "mock-db.mjs",
+        "n-plus-one.mjs",
+        "batched-resolver.mjs",
+        "manual-batch.mjs",
+        "package.json",
+        "README.md",
+        "README.es.md"
+    ]
+}

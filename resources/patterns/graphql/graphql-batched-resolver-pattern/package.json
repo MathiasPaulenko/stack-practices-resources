@@ -1,0 +1,14 @@
+{
+  "name": "graphql-batched-resolver-pattern",
+  "private": true,
+  "type": "module",
+  "description": "Runnable demos for the GraphQL Batched Resolver pattern: N+1 baseline, DataLoader batching, and a zero-dependency manual batcher.",
+  "scripts": {
+    "n-plus-one": "node n-plus-one.mjs",
+    "batched": "node batched-resolver.mjs",
+    "manual": "node manual-batch.mjs"
+  },
+  "dependencies": {
+    "dataloader": "^2.2.3"
+  }
+}
