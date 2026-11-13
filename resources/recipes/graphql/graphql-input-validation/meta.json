@@ -1,0 +1,28 @@
+{
+  "title": "GraphQL Input Validation — Zod Schemas at the Resolver Boundary",
+  "title_es": "Validación de Inputs en GraphQL — Schemas Zod en la frontera del resolver",
+  "description": "Runnable TypeScript example of centralized GraphQL input validation: Zod 4 schemas, a validateInput helper returning {field, message} errors, a ValidationException class, resolvers that validate at the boundary, and Apollo Server 4 formatError with unwrapResolverError.",
+  "description_es": "Ejemplo TypeScript ejecutable de validación centralizada de inputs en GraphQL: schemas Zod 4, un helper validateInput que devuelve errores {field, message}, una clase ValidationException, resolvers que validan en la frontera y formatError de Apollo Server 4 con unwrapResolverError.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-input-validation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-input-validation/",
+    "https://stackpractices.com/es/recipes/graphql-input-validation/"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "validation", "zod", "sanitization", "apollo-server", "typescript"],
+  "files": [
+    "src/schema.ts",
+    "src/schemas.ts",
+    "src/errors.ts",
+    "src/resolvers.ts",
+    "src/server.ts",
+    "src/demo.ts",
+    "tests/schemas.test.ts",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
