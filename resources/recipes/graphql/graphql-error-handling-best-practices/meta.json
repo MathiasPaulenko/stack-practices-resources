@@ -1,0 +1,25 @@
+{
+  "title": "GraphQL Error Handling — Structured Extension Codes Demo",
+  "title_es": "Manejo de errores GraphQL — Demo de códigos de extensión estructurados",
+  "description": "Runnable TypeScript demo of structured GraphQL errors: custom AppError classes with extensions.code, Apollo Server 4 formatError masking of INTERNAL_SERVER_ERROR, and real JSON responses for UNAUTHENTICATED, FORBIDDEN, NOT_FOUND, VALIDATION_ERROR, and CONFLICT.",
+  "description_es": "Demo TypeScript ejecutable de errores GraphQL estructurados: clases AppError con extensions.code, enmascarado de INTERNAL_SERVER_ERROR en formatError de Apollo Server 4 y respuestas JSON reales para UNAUTHENTICATED, FORBIDDEN, NOT_FOUND, VALIDATION_ERROR y CONFLICT.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-error-handling-best-practices",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-error-handling-best-practices/",
+    "https://stackpractices.com/es/recipes/graphql-error-handling-best-practices/"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "apollo-server", "error-handling", "extensions", "formaterror", "typescript"],
+  "files": [
+    "src/errors.ts",
+    "src/schema.ts",
+    "src/server.ts",
+    "src/demo.ts",
+    "package.json",
+    "tsconfig.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
