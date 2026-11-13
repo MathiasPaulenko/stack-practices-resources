@@ -1,0 +1,19 @@
+# .github/workflows/release.yml
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  build:
+    uses: ./.github/workflows/reusable-build-with-output.yml
+    with:
+      app-name: my-app
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use output
+        run: echo "Artifact at ${{ needs.build.outputs.artifact-url }}"

@@ -1,0 +1,25 @@
+# .github/workflows/reusable-test-matrix.yml
+name: Reusable Test Matrix
+
+on:
+  workflow_call:
+    inputs:
+      node-versions:
+        type: string
+        required: false
+        default: '["18", "20", "22"]'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ${{ fromJSON(inputs.node-versions) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - run: npm ci
+      - run: npm test

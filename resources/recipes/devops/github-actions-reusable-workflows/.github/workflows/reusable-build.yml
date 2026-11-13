@@ -1,0 +1,33 @@
+# .github/workflows/reusable-build.yml
+name: Reusable Build
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        type: string
+        required: false
+        default: "20"
+      run-tests:
+        type: boolean
+        required: false
+        default: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Run tests
+        if: ${{ inputs.run-tests }}
+        run: npm test

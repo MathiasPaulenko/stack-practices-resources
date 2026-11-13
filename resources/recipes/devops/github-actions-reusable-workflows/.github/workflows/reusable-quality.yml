@@ -1,0 +1,21 @@
+# .github/workflows/reusable-quality.yml
+name: Reusable Quality Checks
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        type: string
+        default: "20"
+
+jobs:
+  build:
+    uses: ./.github/workflows/reusable-build.yml
+    with:
+      node-version: ${{ inputs.node-version }}
+      run-tests: false
+
+  test:
+    uses: ./.github/workflows/reusable-test-matrix.yml
+    with:
+      node-versions: '["${{ inputs.node-version }}"]'

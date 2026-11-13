@@ -1,0 +1,25 @@
+# .github/workflows/deploy.yml
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-staging:
+    uses: ./.github/workflows/reusable-deploy.yml
+    with:
+      environment: staging
+    secrets:
+      deploy-token: ${{ secrets.STAGING_DEPLOY_TOKEN }}
+      registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+
+  deploy-production:
+    needs: deploy-staging
+    if: github.ref == 'refs/heads/main'
+    uses: ./.github/workflows/reusable-deploy.yml
+    with:
+      environment: production
+    secrets:
+      deploy-token: ${{ secrets.PROD_DEPLOY_TOKEN }}
+      registry-password: ${{ secrets.REGISTRY_PASSWORD }}

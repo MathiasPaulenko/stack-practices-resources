@@ -1,0 +1,27 @@
+# .github/workflows/reusable-deploy.yml
+name: Reusable Deploy
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+        required: true
+        description: "Deployment environment (staging or production)"
+    secrets:
+      deploy-token:
+        required: true
+      registry-password:
+        required: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy
+        run: |
+          echo "Deploying to ${{ inputs.environment }}"
+          ./deploy.sh --token ${{ secrets.deploy-token }}

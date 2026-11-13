@@ -1,0 +1,39 @@
+{
+  "title": "GitHub Actions Reusable Workflow Examples",
+  "title_es": "Ejemplos de Workflows Reutilizables de GitHub Actions",
+  "description": "Runnable reusable GitHub Actions workflows and their callers: workflow_call with typed inputs, secrets mapping and inherit, JSON matrix with fromJSON, conditional jobs, outputs, nesting, and a Docker build variant.",
+  "description_es": "Workflows reutilizables de GitHub Actions listos para usar junto a sus callers: workflow_call con inputs tipados, mapeo de secrets e inherit, matrix JSON con fromJSON, jobs condicionales, outputs, anidamiento y una variante de build de Docker.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "github-actions-reusable-workflows",
+  "source_urls": [
+    "https://stackpractices.com/recipes/github-actions-reusable-workflows/",
+    "https://stackpractices.com/es/recipes/github-actions-reusable-workflows/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "github-actions",
+    "ci-cd",
+    "reusable-workflows",
+    "workflow-call",
+    "yaml",
+    "secrets",
+    "matrix",
+    "environments",
+    "docker"
+  ],
+  "files": [
+    ".github/workflows/reusable-build.yml",
+    ".github/workflows/reusable-deploy.yml",
+    ".github/workflows/reusable-test-matrix.yml",
+    ".github/workflows/reusable-ci.yml",
+    ".github/workflows/reusable-build-with-output.yml",
+    ".github/workflows/reusable-docker-build.yml",
+    ".github/workflows/reusable-quality.yml",
+    ".github/workflows/ci.yml",
+    ".github/workflows/deploy.yml",
+    ".github/workflows/release.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

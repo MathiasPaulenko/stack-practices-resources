@@ -1,0 +1,19 @@
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    uses: ./.github/workflows/reusable-build.yml
+    with:
+      node-version: "22"
+      run-tests: true
+
+  test-matrix:
+    uses: ./.github/workflows/reusable-test-matrix.yml
+    with:
+      node-versions: '["20", "22"]'

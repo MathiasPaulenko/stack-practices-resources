@@ -1,0 +1,38 @@
+# .github/workflows/reusable-ci.yml
+name: Reusable CI
+
+on:
+  workflow_call:
+    inputs:
+      skip-lint:
+        type: boolean
+        required: false
+        default: false
+      deploy:
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  lint:
+    if: ${{ !inputs.skip-lint }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm test
+
+  deploy:
+    if: ${{ inputs.deploy }}
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./deploy.sh
