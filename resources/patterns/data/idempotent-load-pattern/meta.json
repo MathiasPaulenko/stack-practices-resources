@@ -1,0 +1,29 @@
+{
+  "title": "Idempotent Load Pattern — Companion Files",
+  "title_es": "Patrón Carga Idempotente — Archivos complementarios",
+  "description": "Runnable idempotent load pieces: a canonical MERGE upsert and a self-contained SQLite demo of the load-ID plus staging plus upsert pattern you can re-run safely.",
+  "description_es": "Piezas ejecutables de carga idempotente: un upsert MERGE canónico y una demo SQLite autocontenida del patrón load ID + staging + upsert que podés re-ejecutar sin riesgo.",
+  "type": "patterns",
+  "topic": "data",
+  "slug": "idempotent-load-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/idempotent-load-pattern/",
+    "https://stackpractices.com/es/patterns/idempotent-load-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "idempotency",
+    "etl",
+    "merge",
+    "upsert",
+    "data-quality",
+    "python",
+    "sql"
+  ],
+  "files": [
+    "idempotent_upsert.sql",
+    "idempotent_load.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
