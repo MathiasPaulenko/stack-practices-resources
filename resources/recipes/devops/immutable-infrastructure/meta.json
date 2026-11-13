@@ -1,0 +1,16 @@
+{
+  "title": "Immutable Infrastructure",
+  "title_es": "Infraestructura Inmutable",
+  "description": "Static checker that audits Docker Compose and Kubernetes manifests for immutability violations: latest tags, missing digest pins, writable root filesystems, exposed SSH, hostPath volumes, privileged containers.",
+  "description_es": "Checker estático que audita manifests de Docker Compose y Kubernetes buscando violaciones de inmutabilidad: tags latest, digests sin fijar, root filesystems escribibles, SSH expuesto, volúmenes hostPath, contenedores privilegiados.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "immutable-infrastructure",
+  "source_urls": [
+    "https://stackpractices.com/recipes/immutable-infrastructure/",
+    "https://stackpractices.com/es/recipes/immutable-infrastructure/"
+  ],
+  "language": "python",
+  "tags": ["infrastructure", "devops", "docker", "ci-cd", "automation"],
+  "files": ["check_immutable.py"]
+}
