@@ -1,0 +1,31 @@
+{
+  "title": "GraphQL Interface Polymorphism Pattern",
+  "title_es": "Patrón de Polimorfismo en GraphQL",
+  "description": "Runnable demo of the GraphQL interface polymorphism pattern: Node and Searchable interfaces in SDL, discriminator-based __resolveType via __typename, inline fragments, and a Relay-style node(id) global lookup, verified by real graphql-js execution.",
+  "description_es": "Demo ejecutable del patrón de polimorfismo con interfaces en GraphQL: interfaces Node y Searchable en SDL, __resolveType basado en discriminador vía __typename, inline fragments y búsqueda global node(id) estilo Relay, verificado con ejecución real de graphql-js.",
+  "type": "patterns",
+  "topic": "graphql",
+  "slug": "graphql-interface-polymorphism-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/graphql-interface-polymorphism-pattern/",
+    "https://stackpractices.com/es/patterns/graphql-interface-polymorphism-pattern/"
+  ],
+  "language": "javascript",
+  "tags": [
+    "graphql",
+    "interfaces",
+    "polymorphism",
+    "resolveType",
+    "relay-node",
+    "schema-design"
+  ],
+  "files": [
+    "schema.mjs",
+    "resolvers.mjs",
+    "demo.mjs",
+    "tests/polymorphism.test.mjs",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "graphql-interface-polymorphism-pattern",
+  "private": true,
+  "type": "module",
+  "description": "Runnable demo of the GraphQL interface polymorphism pattern: Node and Searchable interfaces, discriminator-based __resolveType, inline fragments, and Relay-style node(id) lookup.",
+  "scripts": {
+    "demo": "node demo.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  }
+}
