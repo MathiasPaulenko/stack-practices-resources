@@ -1,0 +1,21 @@
+{
+  "title": "Generate Images Programmatically with AI Models",
+  "title_es": "Generar Imágenes Programáticamente con Modelos de IA",
+  "description": "Batch prompt renderer with cache-key hashing for AI image generation (DALL-E, Stable Diffusion).",
+  "description_es": "Renderizador de prompts por lotes con hash de clave de caché para generación de imágenes con IA (DALL-E, Stable Diffusion).",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "image-generation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/image-generation/",
+    "https://stackpractices.com/es/recipes/image-generation/"
+  ],
+  "language": "python",
+  "tags": ["ai", "dall-e", "stable-diffusion", "batch-processing", "prompt-engineering"],
+  "files": [
+    "batch_generate.py",
+    "prompt_templates.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
