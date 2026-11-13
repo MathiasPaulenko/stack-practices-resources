@@ -1,0 +1,27 @@
+{
+  "title": "Custom GraphQL Scalar Types — Runnable Implementations",
+  "title_es": "Tipos escalares GraphQL personalizados — Implementaciones ejecutables",
+  "description": "Runnable TypeScript implementations of Date, Email, URL, JSON, and PositiveInt GraphQL scalars with serialize/parseValue/parseLiteral, a schema wiring example, and a demo script that exercises every direction.",
+  "description_es": "Implementaciones TypeScript ejecutables de escalares GraphQL Date, Email, URL, JSON y PositiveInt con serialize/parseValue/parseLiteral, un ejemplo de conexión al schema y un script demo que ejercita cada dirección.",
+  "type": "recipes",
+  "topic": "graphql",
+  "slug": "graphql-custom-scalar-types",
+  "source_urls": [
+    "https://stackpractices.com/recipes/graphql-custom-scalar-types/",
+    "https://stackpractices.com/es/recipes/graphql-custom-scalar-types/"
+  ],
+  "language": "bilingual",
+  "tags": ["graphql", "scalars", "typescript", "validation", "graphql-scalars"],
+  "files": [
+    "src/scalars/Date.ts",
+    "src/scalars/Email.ts",
+    "src/scalars/JSON.ts",
+    "src/scalars/URL.ts",
+    "src/scalars/PositiveInt.ts",
+    "src/schema.ts",
+    "src/demo.ts",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
