@@ -1,6 +1,6 @@
 {
-  "title": "Implement ABAC",
-  "title_es": "Implementar ABAC",
+  "title": "Implement ABAC: Attribute-Based Access Control",
+  "title_es": "Implementar ABAC: Control de Acceso por Atributos",
   "description": "Minimal ABAC policy evaluator in pure stdlib Python: first-match JSON policies, attribute references, comparators, deny-by-default, with example policy and scenario runner.",
   "description_es": "Evaluador mínimo de políticas ABAC en Python stdlib: políticas JSON con first-match, referencias de atributos, comparadores, deny por defecto, con política de ejemplo y escenarios.",
   "type": "recipes",
@@ -10,7 +10,7 @@
     "https://stackpractices.com/recipes/implement-abac/",
     "https://stackpractices.com/es/recipes/implement-abac/"
   ],
-  "language": "python",
+  "language": "bilingual",
   "tags": ["authentication", "security", "authorization", "policy", "abac"],
   "files": ["evaluate_policy.py", "policy.json"]
 }

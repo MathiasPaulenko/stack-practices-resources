@@ -1,0 +1,16 @@
+{
+  "title": "Implement RBAC: Role-Based Access Control",
+  "title_es": "Implementar RBAC: Control de Acceso Basado en Roles",
+  "description": "Minimal RBAC evaluator in pure stdlib Python: role hierarchy via parent chains, recursive permission resolution, deny-by-default, with built-in roles and check scenarios.",
+  "description_es": "Evaluador mínimo de RBAC en Python stdlib: jerarquía de roles por cadena de padres, resolución recursiva de permisos, deny por defecto, con roles y escenarios de ejemplo.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "implement-rbac",
+  "source_urls": [
+    "https://stackpractices.com/recipes/implement-rbac/",
+    "https://stackpractices.com/es/recipes/implement-rbac/"
+  ],
+  "language": "bilingual",
+  "tags": ["authentication", "security", "authorization", "rbac", "roles"],
+  "files": ["check_rbac.py"]
+}
