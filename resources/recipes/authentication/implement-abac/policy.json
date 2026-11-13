@@ -1,0 +1,28 @@
+{
+  "version": "2026-11-13",
+  "default": "deny",
+  "rules": [
+    {
+      "name": "deny-top-secret-outside-office",
+      "effect": "deny",
+      "when": {
+        "resource.classification": "top-secret",
+        "environment.network_zone": "external"
+      }
+    },
+    {
+      "name": "business-hours-only",
+      "effect": "deny",
+      "when": { "environment.hour_lt": 6 }
+    },
+    {
+      "name": "editors-read-own-department",
+      "effect": "allow",
+      "when": {
+        "subject.role": "editor",
+        "action": "read",
+        "resource.department": "${subject.department}"
+      }
+    }
+  ]
+}
