@@ -1,0 +1,20 @@
+{
+  "title": "Image Optimization: Resize, Compress, Convert to WebP",
+  "title_es": "Optimización de Imágenes: Redimensionar, Comprimir, WebP",
+  "description": "Batch image optimizer: resize planning via header parsing (stdlib) and Pillow-powered WebP/JPEG conversion.",
+  "description_es": "Optimizador de imágenes por lotes: planificación de resize por parsing de headers (stdlib) y conversión WebP/JPEG con Pillow.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "image-optimization",
+  "source_urls": [
+    "https://stackpractices.com/recipes/image-optimization/",
+    "https://stackpractices.com/es/recipes/image-optimization/"
+  ],
+  "language": "python",
+  "tags": ["images", "optimization", "webp", "pillow", "batch-processing"],
+  "files": [
+    "optimize_batch.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
