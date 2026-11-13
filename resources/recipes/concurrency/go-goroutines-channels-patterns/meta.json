@@ -1,0 +1,40 @@
+{
+  "title": "Go Goroutines & Channels Patterns Recipe — Companion Resources",
+  "title_es": "Receta de patrones con goroutines y canales de Go — Recursos complementarios",
+  "description": "Runnable Go concurrency examples: goroutines and channels with WaitGroup, worker pool, fan-out/fan-in, multi-stage pipeline, context cancellation, rate limiting with tickers, select multiplexing, errgroup, semaphore-bounded parallelism, done-channel cancellation, and a generic tee.",
+  "description_es": "Ejemplos ejecutables de concurrencia en Go: goroutines y canales con WaitGroup, pool de trabajadores, fan-out/fan-in, pipeline de varias etapas, cancelación con context, limitación de frecuencia con tickers, multiplexación con select, errgroup, paralelismo acotado con semáforo, cancelación con canal done y un tee genérico.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "go-goroutines-channels-patterns",
+  "source_urls": [
+    "https://stackpractices.com/recipes/go-goroutines-channels-patterns/",
+    "https://stackpractices.com/es/recipes/go-goroutines-channels-patterns/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "go",
+    "golang",
+    "goroutines",
+    "channels",
+    "concurrency",
+    "worker-pool",
+    "pipeline",
+    "errgroup"
+  ],
+  "files": [
+    "01-basic-goroutines.go",
+    "02-worker-pool.go",
+    "03-fan-out-fan-in.go",
+    "04-pipeline.go",
+    "05-context-timeout.go",
+    "06-rate-limiting.go",
+    "07-select-channels.go",
+    "08-errgroup.go",
+    "09-bounded-semaphore.go",
+    "10-done-channel.go",
+    "11-tee-channel.go",
+    "go.mod",
+    "README.md",
+    "README.es.md"
+  ]
+}
