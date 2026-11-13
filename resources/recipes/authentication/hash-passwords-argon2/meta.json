@@ -1,0 +1,34 @@
+{
+  "title": "Hash Passwords with Argon2",
+  "title_es": "Hash de Contraseñas con Argon2",
+  "description": "Runnable Argon2id password hashing and verification examples in Python, Node.js and Java (Bouncy Castle), plus a hybrid bcrypt-to-Argon2 migration.",
+  "description_es": "Ejemplos ejecutables de hashing y verificación de contraseñas con Argon2id en Python, Node.js y Java (Bouncy Castle), más una migración híbrida de bcrypt a Argon2.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "hash-passwords-argon2",
+  "source_urls": [
+    "https://stackpractices.com/recipes/hash-passwords-argon2/"
+  ],
+  "language": "multi",
+  "tags": [
+    "authentication",
+    "argon2",
+    "argon2id",
+    "bcrypt",
+    "security",
+    "python",
+    "nodejs",
+    "java"
+  ],
+  "files": [
+    "hash_argon2.py",
+    "migrate_bcrypt.py",
+    "hash_argon2.js",
+    "HashArgon2.java",
+    "pom.xml",
+    "requirements.txt",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
