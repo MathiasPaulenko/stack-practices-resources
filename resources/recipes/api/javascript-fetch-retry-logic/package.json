@@ -1,0 +1,13 @@
+{
+  "name": "javascript-fetch-retry-logic",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Companion code for the StackPractices recipe: fetch retry with backoff, jitter, timeouts and circuit breaker",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "JavaScript Fetch Retry Logic with Exponential Backoff",
+  "title_es": "Lógica de Reintento en JavaScript Fetch con Backoff",
+  "description": "Retry failed fetch() calls with exponential backoff, full jitter, AbortSignal timeouts, a circuit breaker, and idempotency-safe POSTs.",
+  "description_es": "Reintenta llamadas fetch() fallidas con backoff exponencial, jitter completo, timeouts con AbortSignal, un circuit breaker y POSTs idempotentes.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "javascript-fetch-retry-logic",
+  "source_urls": [
+    "https://www.rfc-editor.org/rfc/rfc9110.html#name-retry-after",
+    "https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/timeout_static",
+    "https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/",
+    "https://undici.nodejs.org/#/docs/api/RetryHandler.md"
+  ],
+  "language": ["javascript"],
+  "tags": ["javascript", "fetch", "retry", "exponential-backoff", "circuit-breaker", "idempotency", "http"],
+  "files": [
+    "fetch_with_retry.js",
+    "fetch_retry_breaker.js",
+    "post_with_retry.js",
+    "fetch_retry.test.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
