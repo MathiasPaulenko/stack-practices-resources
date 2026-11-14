@@ -1,0 +1,40 @@
+{
+  "title": "Custom Health Checks with Spring Boot Actuator",
+  "title_es": "Health Checks Personalizados con Spring Boot Actuator",
+  "description": "Custom Spring Boot Actuator HealthIndicator implementations: payment gateway, PostgreSQL, Redis, external API with timeouts, queue depth with degraded status, reactive variant, ApplicationAvailability listeners, plus application.yml groups and Kubernetes liveness/readiness probes.",
+  "description_es": "Implementaciones personalizadas de HealthIndicator para Spring Boot Actuator: pasarela de pago, PostgreSQL, Redis, API externa con timeouts, profundidad de cola con estado degradado, variante reactiva, listeners de ApplicationAvailability, más grupos en application.yml y probes de liveness/readiness en Kubernetes.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "java-actuator-health-checks",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-actuator-health-checks/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "java",
+    "spring-boot",
+    "actuator",
+    "health-check",
+    "kubernetes",
+    "liveness",
+    "readiness",
+    "observability"
+  ],
+  "files": [
+    "PaymentGatewayHealthIndicator.java",
+    "DatabaseHealthIndicator.java",
+    "RedisHealthIndicator.java",
+    "ExternalApiHealthIndicator.java",
+    "QueueDepthHealthIndicator.java",
+    "AvailabilityService.java",
+    "ReactiveApiHealthIndicator.java",
+    "CustomStatusIndicator.java",
+    "PaymentGatewayClient.java",
+    "PaymentGatewayStatus.java",
+    "MessageQueueService.java",
+    "application.yml",
+    "kubernetes-deployment.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

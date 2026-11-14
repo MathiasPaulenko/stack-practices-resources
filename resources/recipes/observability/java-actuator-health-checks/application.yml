@@ -1,0 +1,38 @@
+# Spring Boot Actuator health configuration
+# Covers every YAML block from the recipe:
+# https://stackpractices.com/recipes/java-actuator-health-checks/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      # when-authorized hides details from anonymous callers;
+      # never use "always" on a public endpoint
+      show-details: when-authorized
+      # creates /actuator/health/liveness and /actuator/health/readiness
+      probes:
+        enabled: true
+      group:
+        infrastructure:
+          include: db,redis
+        external:
+          include: paymentGateway,externalApi
+        # add expensive checks to readiness explicitly, never to liveness
+        readiness:
+          include: readinessState,db,redis
+      status:
+        http-mapping:
+          down: 503
+          out-of-service: 503
+          warning: 200
+  health:
+    # disable built-ins that don't apply to your deployment
+    db:
+      enabled: true
+    redis:
+      enabled: true
+    diskspace:
+      enabled: false
