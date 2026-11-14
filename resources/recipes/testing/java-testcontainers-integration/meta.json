@@ -1,0 +1,25 @@
+{
+  "title": "Java Testcontainers Integration Tests",
+  "title_es": "Tests de integración con Testcontainers en Java",
+  "description": "Spin up real Postgres, Redis, and Kafka containers in JUnit5 tests with Testcontainers 1.21.x, including the shared static container pattern and a ready-to-use CI job.",
+  "description_es": "Levanta contenedores reales de Postgres, Redis y Kafka en tests JUnit5 con Testcontainers 1.21.x, incluyendo el patrón de contenedor estático compartido y un job de CI listo para usar.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "java-testcontainers-integration",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-testcontainers-integration/",
+    "https://stackpractices.com/es/recipes/java-testcontainers-integration/"
+  ],
+  "language": "java",
+  "tags": ["testing", "integration-tests", "java", "junit5", "testcontainers", "docker", "maven", "postgres", "redis", "kafka"],
+  "files": [
+    "pom.xml",
+    "src/test/java/PostgresIntegrationTest.java",
+    "src/test/java/RedisIntegrationTest.java",
+    "src/test/java/KafkaIntegrationTest.java",
+    "src/test/java/BaseIntegrationTest.java",
+    "github-actions/testcontainers.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,24 @@
+name: Integration Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # Pre-pull images so the first test doesn't pay the cold-pull cost
+      - name: Pre-pull container images
+        run: |
+          docker pull postgres:16-alpine
+          docker pull redis:7-alpine
+          docker pull confluentinc/cp-kafka:7.6.1
+
+      - name: Run integration tests
+        run: mvn -B verify
