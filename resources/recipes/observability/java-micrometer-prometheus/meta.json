@@ -1,0 +1,38 @@
+{
+  "title": "Expose Metrics with Micrometer and Prometheus",
+  "title_es": "Exponer Métricas con Micrometer y Prometheus",
+  "description": "Micrometer + Prometheus examples: Counter, Gauge with weak-reference caveat, Timer with publishPercentiles and manual Timer.Sample on a field, DistributionSummary, @Counted/@Timed with CountedAspect bean, MeterBinder with injected state, standalone PrometheusMeterRegistry with the Prometheus client 1.x HTTPServer builder, plus application.yml and prometheus.yml scrape config.",
+  "description_es": "Ejemplos de Micrometer + Prometheus: Counter, Gauge con advertencia de referencia débil, Timer con publishPercentiles y Timer.Sample manual sobre un campo, DistributionSummary, @Counted/@Timed con bean CountedAspect, MeterBinder con estado inyectado, PrometheusMeterRegistry standalone con el builder HTTPServer del cliente Prometheus 1.x, más application.yml y config de scrape prometheus.yml.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "java-micrometer-prometheus",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-micrometer-prometheus/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "java",
+    "spring-boot",
+    "micrometer",
+    "prometheus",
+    "metrics",
+    "actuator",
+    "observability"
+  ],
+  "files": [
+    "OrderService.java",
+    "ConnectionPoolMonitor.java",
+    "PaymentService.java",
+    "DatabaseQueryExecutor.java",
+    "OrderSizeTracker.java",
+    "UserService.java",
+    "MetricsConfig.java",
+    "CustomMetrics.java",
+    "StandaloneApp.java",
+    "Models.java",
+    "application.yml",
+    "prometheus.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

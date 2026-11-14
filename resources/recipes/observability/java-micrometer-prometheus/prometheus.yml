@@ -1,0 +1,6 @@
+# Scrape config pointing at the Actuator Prometheus endpoint.
+scrape_configs:
+  - job_name: "user-service"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["localhost:8080"]

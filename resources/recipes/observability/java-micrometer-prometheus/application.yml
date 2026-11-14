@@ -1,0 +1,11 @@
+# Enable the Prometheus scrape endpoint and set common tags.
+# Common tags land on every meter — they become Prometheus labels.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  metrics:
+    tags:
+      application: user-service
+      environment: ${spring.profiles.active:default}
