@@ -1,0 +1,21 @@
+{
+  "title": "Incident Response Playbook Template",
+  "title_es": "Plantilla de Playbook de Respuesta a Incidentes",
+  "description": "A step-by-step playbook template for handling security incidents, structured around the five NIST SP 800-61 phases with P1-P4 severity classification.",
+  "description_es": "Plantilla de playbook paso a paso para manejar incidentes de seguridad, estructurada en torno a las cinco fases de NIST SP 800-61 con clasificación de severidad P1-P4.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "incident-response-playbook-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/incident-response-playbook-template/",
+    "es": "https://stackpractices.com/es/docs/incident-response-playbook-template/"
+  },
+  "language": "bilingual",
+  "tags": ["security", "incident-response", "playbook", "template", "compliance"],
+  "files": [
+    "incident-response-playbook-template.md",
+    "incident-response-playbook-template.es.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
