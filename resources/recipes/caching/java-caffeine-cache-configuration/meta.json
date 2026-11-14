@@ -1,0 +1,34 @@
+{
+  "title": "Caffeine Cache Configuration — Companion Files",
+  "title_es": "Configuración de Caffeine Cache — Archivos complementarios",
+  "description": "Runnable Java examples for Caffeine cache: every eviction policy (size, time, weight, references, refresh), a Spring Boot CaffeineCacheManager config, @Cacheable service, cache statistics, and an L1 Caffeine + L2 Redis multi-level cache.",
+  "description_es": "Ejemplos Java ejecutables para Caffeine cache: todas las políticas de expulsión (tamaño, tiempo, peso, referencias, refresco), configuración de CaffeineCacheManager en Spring Boot, servicio con @Cacheable, estadísticas de caché y un caché multinivel L1 Caffeine + L2 Redis.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "java-caffeine-cache-configuration",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-caffeine-cache-configuration/",
+    "https://stackpractices.com/es/recipes/java-caffeine-cache-configuration/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "java",
+    "caching",
+    "caffeine",
+    "eviction",
+    "spring-boot",
+    "redis",
+    "in-memory"
+  ],
+  "files": [
+    "EvictionPolicies.java",
+    "CacheConfig.java",
+    "UserService.java",
+    "User.java",
+    "UserRepository.java",
+    "MultiLevelCache.java",
+    "application.properties",
+    "README.md",
+    "README.es.md"
+  ]
+}
