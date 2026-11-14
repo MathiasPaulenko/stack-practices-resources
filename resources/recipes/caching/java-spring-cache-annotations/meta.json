@@ -1,0 +1,36 @@
+{
+  "title": "Spring Cache Annotations with Redis — Companion Files",
+  "title_es": "Anotaciones de caché de Spring con Redis — Archivos complementarios",
+  "description": "Runnable Spring Boot files for Spring Cache annotations with Redis: RedisCacheManager with per-cache TTLs, correct SpEL usage for @Cacheable/@CachePut/@CacheEvict/@Caching/@CacheConfig, a CacheErrorHandler for Redis outages, a custom KeyGenerator, and an L1 Caffeine + L2 Redis multi-level cache.",
+  "description_es": "Archivos Spring Boot ejecutables para las anotaciones de caché de Spring con Redis: RedisCacheManager con TTL por caché, uso correcto de SpEL en @Cacheable/@CachePut/@CacheEvict/@Caching/@CacheConfig, un CacheErrorHandler para caídas de Redis, un KeyGenerator personalizado y una caché multinivel L1 Caffeine + L2 Redis.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "java-spring-cache-annotations",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-spring-cache-annotations/",
+    "https://stackpractices.com/es/recipes/java-spring-cache-annotations/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "java",
+    "spring-boot",
+    "caching",
+    "redis",
+    "cacheable",
+    "spel",
+    "aop"
+  ],
+  "files": [
+    "CacheConfig.java",
+    "UserService.java",
+    "MultiLevelCache.java",
+    "User.java",
+    "UserDto.java",
+    "UserRepository.java",
+    "application.properties",
+    "docker-compose.yml",
+    "pom.xml",
+    "README.md",
+    "README.es.md"
+  ]
+}
