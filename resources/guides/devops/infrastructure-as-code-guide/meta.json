@@ -1,0 +1,36 @@
+{
+  "title": "Infrastructure as Code — VPC Module, Multi-Environment Layout & CI Pipeline",
+  "title_es": "Infrastructure as Code — Módulo de VPC, layout multi-entorno y pipeline CI",
+  "description": "A runnable VPC module (private + public subnets across 3 AZs), a directory-per-environment layout (dev/staging/production with S3 backends and native locking), a GitHub Actions plan/apply pipeline, and a scheduled drift-check script — matching the guide's canonical structure.",
+  "description_es": "Un módulo de VPC ejecutable (subnets privadas + públicas en 3 AZs), un layout de directorio-por-entorno (dev/staging/production con backends S3 y locking nativo), un pipeline plan/apply de GitHub Actions y un script programado de detección de drift — siguiendo la estructura canónica de la guía.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "infrastructure-as-code-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/infrastructure-as-code-guide/",
+    "https://stackpractices.com/es/guides/infrastructure-as-code-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "infrastructure-as-code",
+    "aws",
+    "vpc",
+    "multi-environment",
+    "ci-cd",
+    "drift-detection"
+  ],
+  "files": [
+    "modules/vpc/main.tf",
+    "modules/vpc/variables.tf",
+    "modules/vpc/outputs.tf",
+    "modules/vpc/versions.tf",
+    "environments/dev/main.tf",
+    "environments/staging/main.tf",
+    "environments/production/main.tf",
+    ".github/workflows/iac.yml",
+    "scripts/check-drift.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
