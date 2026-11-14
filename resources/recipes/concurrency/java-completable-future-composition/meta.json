@@ -1,0 +1,37 @@
+{
+  "title": "Java CompletableFuture Composition — Companion Resources",
+  "title_es": "Composición con Java CompletableFuture — Recursos complementarios",
+  "description": "Runnable Java 17+ examples: thenCompose sequential pipelines, thenCombine/allOf parallel fan-out, anyOf replica racing, error handling with exceptionally/handle/whenComplete, custom executors, timeouts, and async retry with delayedExecutor backoff.",
+  "description_es": "Ejemplos ejecutables en Java 17+: pipelines secuenciales con thenCompose, fan-out paralelo con thenCombine/allOf, competencia de réplicas con anyOf, manejo de errores con exceptionally/handle/whenComplete, executors personalizados, timeouts y reintentos asíncronos con delayedExecutor.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "java-completable-future-composition",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-completable-future-composition/",
+    "https://stackpractices.com/es/recipes/java-completable-future-composition/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "java",
+    "concurrency",
+    "async",
+    "completablefuture",
+    "composition",
+    "httpclient"
+  ],
+  "files": [
+    "AsyncApiClient.java",
+    "UserService.java",
+    "SequentialPipeline.java",
+    "ParallelCombination.java",
+    "AllOfPattern.java",
+    "AnyOfPattern.java",
+    "ErrorHandling.java",
+    "CustomExecutorExample.java",
+    "TimeoutExample.java",
+    "RetryWithBackoff.java",
+    "Models.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
