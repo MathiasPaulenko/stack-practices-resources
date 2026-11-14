@@ -1,0 +1,30 @@
+{
+  "title": "Interpreter for Expression Languages — Companion Code",
+  "title_es": "Interpreter para Lenguajes de Expresión — Código complementario",
+  "description": "A runnable TypeScript rule engine built on the Interpreter pattern: composable expression trees evaluated against a context, a recursive-descent formula parser with correct precedence, and a JSON rules factory with variable whitelisting, accompanying the Interpreter for Expression Languages resource.",
+  "description_es": "Un motor de reglas ejecutable en TypeScript construido sobre el patrón Interpreter: árboles de expresiones componibles evaluados contra un contexto, un parser de fórmulas por descenso recursivo con precedencia correcta y una factory de reglas JSON con whitelist de variables, que acompañan al recurso Interpreter para Lenguajes de Expresión.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "interpreter-pattern-expressions",
+  "source_urls": [
+    "https://stackpractices.com/patterns/interpreter-pattern-expressions/",
+    "https://stackpractices.com/es/patterns/interpreter-pattern-expressions/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "interpreter",
+    "design-pattern",
+    "behavioral",
+    "rule-engine",
+    "dsl",
+    "ast",
+    "typescript"
+  ],
+  "files": [
+    "rule-engine.ts",
+    "rules-factory.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
