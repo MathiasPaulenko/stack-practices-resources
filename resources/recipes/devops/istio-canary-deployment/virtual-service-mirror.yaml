@@ -1,0 +1,19 @@
+# Mirror 100% of traffic to v2 without affecting responses
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: api-mirror
+spec:
+  hosts:
+  - api
+  http:
+  - route:
+    - destination:
+        host: api
+        subset: v1
+      weight: 100
+    mirror:
+      host: api
+      subset: v2
+    mirrorPercentage:
+      value: 100.0

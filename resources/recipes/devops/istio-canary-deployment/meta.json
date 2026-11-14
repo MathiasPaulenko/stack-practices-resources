@@ -1,0 +1,38 @@
+{
+  "title": "Canary Deployments with Istio — Companion Manifests",
+  "title_es": "Despliegues Canary con Istio — Manifiestos complementarios",
+  "description": "Complete Istio canary deployment setup: versioned Deployments, DestinationRule subsets with outlier detection, weighted VirtualService routing, header-based and traffic-mirroring variants, circuit breaking, a progressive rollout script, and a Flagger Canary resource for automated metric-gated promotion, accompanying the Istio canary deployment recipe.",
+  "description_es": "Configuración completa de despliegue canary con Istio: Deployments versionados, subsets de DestinationRule con outlier detection, enrutado ponderado con VirtualService, variantes por cabecera y de espejado de tráfico, circuit breaking, un script de rollout progresivo y un recurso Canary de Flagger para promoción automática basada en métricas, que acompañan a la receta de despliegue canary con Istio.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "istio-canary-deployment",
+  "source_urls": [
+    "https://stackpractices.com/recipes/istio-canary-deployment/",
+    "https://stackpractices.com/es/recipes/istio-canary-deployment/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "istio",
+    "kubernetes",
+    "canary",
+    "service-mesh",
+    "flagger",
+    "progressive-delivery",
+    "yaml",
+    "bash"
+  ],
+  "files": [
+    "deployment-v1.yaml",
+    "deployment-v2.yaml",
+    "destination-rule.yaml",
+    "virtual-service-canary.yaml",
+    "virtual-service-header-routing.yaml",
+    "virtual-service-mirror.yaml",
+    "destination-rule-circuit-breaker.yaml",
+    "canary-analysis.yaml",
+    "canary-rollout.sh",
+    "cleanup-old-version.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}
