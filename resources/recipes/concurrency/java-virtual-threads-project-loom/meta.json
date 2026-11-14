@@ -1,0 +1,36 @@
+{
+  "title": "Java Virtual Threads — Companion Resources",
+  "title_es": "Hilos Virtuales de Java — Recursos complementarios",
+  "description": "Runnable JDK 21+/25 examples: Thread.ofVirtual, newVirtualThreadPerTaskExecutor, StructuredTaskScope.open() with Joiner policies, ScopedValue, platform/virtual mix, locking without pinning, and bounded fan-out with Semaphore.",
+  "description_es": "Ejemplos ejecutables en JDK 21+/25: Thread.ofVirtual, newVirtualThreadPerTaskExecutor, StructuredTaskScope.open() con políticas Joiner, ScopedValue, mezcla plataforma/virtual, locks sin pinning y fan-out acotado con Semaphore.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "java-virtual-threads-project-loom",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-virtual-threads-project-loom/",
+    "https://stackpractices.com/es/recipes/java-virtual-threads-project-loom/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "java",
+    "concurrency",
+    "virtual-threads",
+    "project-loom",
+    "structured-concurrency",
+    "scoped-values",
+    "jdk25"
+  ],
+  "files": [
+    "BasicVirtualThread.java",
+    "VirtualThreadExecutor.java",
+    "VirtualThreadIO.java",
+    "StructuredConcurrency.java",
+    "FirstResultPattern.java",
+    "ScopedValueExample.java",
+    "MixedThreads.java",
+    "LockingExample.java",
+    "BoundedVirtualThreads.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
