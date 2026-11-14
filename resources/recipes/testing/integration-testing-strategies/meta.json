@@ -1,0 +1,25 @@
+{
+  "title": "Integration Testing Strategies",
+  "title_es": "Estrategias de Testing de Integración",
+  "description": "Runnable companion examples for the Integration Testing Strategies recipe: Testcontainers in Java and Python, consumer-driven contract testing with Pact in TypeScript, WireMock stubs for external APIs, and a CI workflow.",
+  "description_es": "Ejemplos ejecutables complementarios de la receta de Estrategias de Testing de Integración: Testcontainers en Java y Python, contract testing consumer-driven con Pact en TypeScript, stubs WireMock para APIs externas y un workflow de CI.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "integration-testing-strategies",
+  "source_urls": [
+    "https://stackpractices.com/recipes/integration-testing-strategies/",
+    "https://stackpractices.com/es/recipes/integration-testing-strategies/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["testing", "integration-testing", "testcontainers", "pact", "contract-testing", "wiremock", "pytest", "spring-boot"],
+  "files": [
+    "OrderServiceIntegrationTest.java",
+    "PaymentGatewayIntegrationTest.java",
+    "order-api.pact.spec.ts",
+    "test_orders.py",
+    "requirements.txt",
+    "integration-tests.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}
