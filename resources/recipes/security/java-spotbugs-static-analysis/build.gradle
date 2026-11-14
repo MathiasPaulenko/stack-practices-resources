@@ -1,0 +1,31 @@
+plugins {
+  id 'java'
+  id 'com.github.spotbugs' version '6.5.13'
+}
+
+repositories {
+  mavenCentral()
+}
+
+spotbugs {
+  effort = 'max'
+  reportLevel = 'medium'
+  excludeFilter = file('spotbugs-exclude.xml')
+}
+
+spotbugsMain {
+  reports {
+    html {
+      required = true
+      outputLocation = file("$buildDir/reports/spotbugs/main/spotbugs.html")
+    }
+    xml {
+      required = true
+      outputLocation = file("$buildDir/reports/spotbugs/main/spotbugs.xml")
+    }
+  }
+}
+
+dependencies {
+  spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.14.0'
+}

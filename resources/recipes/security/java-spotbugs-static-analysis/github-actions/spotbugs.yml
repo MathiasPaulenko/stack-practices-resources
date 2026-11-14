@@ -1,0 +1,39 @@
+name: SpotBugs Analysis
+
+on: [push, pull_request]
+
+jobs:
+  spotbugs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run SpotBugs
+        run: mvn spotbugs:check -Dspotbugs.threshold=medium
+
+      - name: Generate report
+        if: always()
+        run: mvn spotbugs:spotbugs
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: spotbugs-report
+          path: target/spotbugsXml.xml
+
+      # SARIF variant — results land in the GitHub Security tab.
+      # Uncomment and set up code scanning to use it.
+      # - name: Run SpotBugs with SARIF output
+      #   run: mvn spotbugs:spotbugs -Dspotbugs.sarifOutput=true -Dspotbugs.sarifOutputFilename=spotbugs.sarif
+      # - name: Upload SARIF
+      #   if: always()
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: target/spotbugs.sarif

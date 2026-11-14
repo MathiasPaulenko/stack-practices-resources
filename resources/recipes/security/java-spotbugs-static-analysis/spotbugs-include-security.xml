@@ -1,0 +1,7 @@
+<!-- Run only security-relevant categories — swap into the build config as
+     includeFilterFile (Maven) or includeFilter (Gradle) for a security-only gate -->
+<FindBugsFilter>
+  <Match>
+    <Bug category="SECURITY,CORRECTNESS,MALICIOUS_CODE"/>
+  </Match>
+</FindBugsFilter>

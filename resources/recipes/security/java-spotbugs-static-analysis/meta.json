@@ -1,0 +1,41 @@
+{
+  "title": "Detect Bugs in Java with SpotBugs Static Analysis",
+  "title_es": "Detectar bugs en Java con SpotBugs Static Analysis",
+  "description": "Runnable SpotBugs demo project from the static analysis recipe: one source tree that builds with Maven or Gradle, Find Security Bugs enabled, exclude and include filters, a CI workflow, and four classes with intentional bugs mapped to the patterns in the recipe.",
+  "description_es": "Proyecto demo ejecutable de SpotBugs de la receta de análisis estático: un solo árbol de fuentes que compila con Maven o Gradle, Find Security Bugs activado, filtros de exclusión e inclusión, un workflow de CI y cuatro clases con bugs intencionales mapeados a los patrones de la receta.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "java-spotbugs-static-analysis",
+  "source_urls": [
+    "https://stackpractices.com/recipes/java-spotbugs-static-analysis/",
+    "https://stackpractices.com/es/recipes/java-spotbugs-static-analysis/",
+    "https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html",
+    "https://github.com/find-sec-bugs/find-sec-bugs"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "spotbugs",
+    "findbugs",
+    "find-sec-bugs",
+    "static-analysis",
+    "java",
+    "maven",
+    "gradle",
+    "ci-cd",
+    "code-quality"
+  ],
+  "files": [
+    "pom.xml",
+    "build.gradle",
+    "settings.gradle",
+    "spotbugs-exclude.xml",
+    "spotbugs-include-security.xml",
+    "github-actions/spotbugs.yml",
+    "src/main/java/com/example/spotbugsdemo/NullPathBug.java",
+    "src/main/java/com/example/spotbugsdemo/ExposedRep.java",
+    "src/main/java/com/example/spotbugsdemo/UnclosedResource.java",
+    "src/main/java/com/example/spotbugsdemo/SqlConcat.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

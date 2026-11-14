@@ -1,0 +1,31 @@
+<FindBugsFilter>
+  <!-- Exclude test classes -->
+  <Match>
+    <Class name="~.*Test"/>
+  </Match>
+
+  <!-- Exclude generated code -->
+  <Match>
+    <Class name="~.*Generated.*"/>
+  </Match>
+
+  <!-- Exclude a bug pattern in one class -->
+  <Match>
+    <Class name="com.example.legacy.LegacyService"/>
+    <Bug pattern="EI_EXPOSE_REP"/>
+  </Match>
+
+  <!-- Exclude a bug pattern everywhere (uncomment to try it) -->
+  <!--
+  <Match>
+    <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+  </Match>
+  -->
+
+  <!-- Exclude by category and priority -->
+  <!--
+  <Match>
+    <Bug category="PERFORMANCE" priority="3"/>
+  </Match>
+  -->
+</FindBugsFilter>
