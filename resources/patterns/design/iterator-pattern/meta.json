@@ -1,0 +1,32 @@
+{
+  "title": "Iterator Pattern: Traversal Without Exposing Internals",
+  "title_es": "Patrón Iterator: Recorrido Sin Exponer la Estructura Interna",
+  "description": "Runnable Iterator pattern examples: BookCollection on Python's __iter__, JavaScript's Symbol.iterator and Java's Iterable, plus in-order and BFS tree iterators behind one Iterator contract in TypeScript.",
+  "description_es": "Ejemplos ejecutables del patrón Iterator: BookCollection sobre __iter__ de Python, Symbol.iterator de JavaScript e Iterable de Java, más iteradores de árbol in-order y BFS tras un solo contrato Iterator en TypeScript.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "iterator-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/iterator-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "behavioral",
+    "iterator",
+    "python",
+    "javascript",
+    "java",
+    "typescript",
+    "tree-traversal"
+  ],
+  "files": [
+    "book_collection.py",
+    "book-collection.js",
+    "BookCollection.java",
+    "tree-iterators.ts",
+    "tree-iterators.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}
