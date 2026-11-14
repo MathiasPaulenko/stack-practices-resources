@@ -1,0 +1,14 @@
+{
+  "name": "javascript-infinite-scroll-pagination",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Companion code for the StackPractices recipe: infinite scroll with IntersectionObserver",
+  "scripts": {
+    "start": "node mock_server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

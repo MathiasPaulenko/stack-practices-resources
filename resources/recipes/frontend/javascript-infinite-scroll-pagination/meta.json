@@ -1,0 +1,26 @@
+{
+  "title": "JavaScript Infinite Scroll Pagination",
+  "title_es": "Paginación con Scroll Infinito en JavaScript",
+  "description": "Scroll-based data loading with IntersectionObserver: sentinel detection, fetch, loading and error states, AbortController teardown, and a runnable demo.",
+  "description_es": "Carga de datos por scroll con IntersectionObserver: detección por centinela, fetch, estados de carga y error, AbortController al desmontar y demo ejecutable.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "javascript-infinite-scroll-pagination",
+  "source_urls": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API",
+    "https://web.dev/articles/intersectionobserver",
+    "https://caniuse.com/intersectionobserver"
+  ],
+  "language": ["javascript", "jsx", "html"],
+  "tags": ["javascript", "pagination", "intersection-observer", "infinite-scroll", "lazy-loading", "react"],
+  "files": [
+    "infinite_scroll.js",
+    "use_infinite_scroll.jsx",
+    "demo.html",
+    "mock_server.js",
+    "mock_server.test.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
