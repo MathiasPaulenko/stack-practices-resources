@@ -1,0 +1,13 @@
+# Sample topic list for naming-lint.sh — valid and invalid names mixed
+prod.orders.order-created.v1
+prod.payments.payment-processed.v1
+staging.inventory.stock-updated
+prod.users.user-profile.snapshot
+prod.orders.order-created.dlq
+dev.analytics.click.v2
+# invalid examples below
+Prod.orders.order-created.v1
+prod.orders.order_created.v1
+orders.order-created.v1
+prod..order-created.v1
+prod.orders.order-created.v1.extra.stuff.here

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-subpath
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-subpath
+  template:
+    metadata:
+      labels:
+        app: my-app-subpath
+    spec:
+      containers:
+        - name: app
+          image: my-app:latest
+          volumeMounts:
+            - name: config-volume
+              mountPath: /app/config.yaml
+              subPath: config.yaml
+              readOnly: true
+      volumes:
+        - name: config-volume
+          configMap:
+            name: app-config

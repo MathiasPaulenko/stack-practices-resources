@@ -1,0 +1,34 @@
+{
+  "title": "Load Balancing — Companion Code",
+  "title_es": "Balanceo de carga — Código complementario",
+  "description": "Runnable load balancing algorithm implementations in Python, JavaScript and Java: a consistent-hash ring showing ~1/N remapping on node removal, a least-response-time selector with health gating, and the Nginx smooth weighted round-robin, that accompany the Load Balancing recipe.",
+  "description_es": "Implementaciones ejecutables de algoritmos de balanceo en Python, JavaScript y Java: un anillo de hash consistente que muestra el remapeo de ~1/N al retirar un nodo, un selector de menor tiempo de respuesta con control de salud, y el round-robin ponderado suave de Nginx, que acompañan a la receta de balanceo de carga.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "load-balancing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/load-balancing/",
+    "https://stackpractices.com/es/recipes/load-balancing/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "recipe",
+    "architecture",
+    "load-balancing",
+    "round-robin",
+    "least-connections",
+    "consistent-hashing",
+    "scalability",
+    "high-availability",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "load_balancer.py",
+    "load-balancer.js",
+    "SmoothWeightedBalancer.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

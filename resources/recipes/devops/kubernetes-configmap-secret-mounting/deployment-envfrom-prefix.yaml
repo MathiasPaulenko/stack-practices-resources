@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-prefix
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-prefix
+  template:
+    metadata:
+      labels:
+        app: my-app-prefix
+    spec:
+      containers:
+        - name: app
+          image: my-app:latest
+          envFrom:
+            - configMapRef:
+                name: app-config
+              prefix: APP_
+            - secretRef:
+                name: app-secrets
+              prefix: SECRET_

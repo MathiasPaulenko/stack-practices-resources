@@ -1,0 +1,14 @@
+{
+  "name": "kafka-event-streaming",
+  "version": "1.0.0",
+  "description": "Runnable KafkaJS producer/consumer demo for the StackPractices kafka-event-streaming recipe",
+  "type": "module",
+  "scripts": {
+    "produce": "node producer.js",
+    "consume": "node consumer.js",
+    "consume-dlq": "node dlq-consumer.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

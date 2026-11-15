@@ -1,0 +1,11 @@
+{
+    "name": "javascript-localstorage-expiration",
+    "version": "1.0.0",
+    "description": "localStorage wrapper with TTL expiration, quota handling, memory fallback, and stale-while-revalidate — companion code for the StackPractices recipe",
+    "type": "module",
+    "scripts": {
+        "test": "node --test",
+        "demo": "node -e \"console.log('Open demo.html in a browser — it is an ES module, serve the folder: npx serve .')\""
+    },
+    "license": "MIT"
+}

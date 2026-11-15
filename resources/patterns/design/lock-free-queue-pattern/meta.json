@@ -1,0 +1,27 @@
+{
+  "title": "Lock-Free Queue Pattern",
+  "title_es": "Patrón Lock-Free Queue",
+  "description": "Runnable lock-free queue implementations: SPSC ring buffer in Python and JavaScript (Atomics + SharedArrayBuffer), batched variant, Java ConcurrentLinkedQueue demo, Rust MPMC via crossbeam ArrayQueue, and a throughput benchmark.",
+  "description_es": "Implementaciones ejecutables de colas lock-free: ring buffer SPSC en Python y JavaScript (Atomics + SharedArrayBuffer), variante por lotes, demo de ConcurrentLinkedQueue en Java, MPMC en Rust con ArrayQueue de crossbeam y un benchmark de rendimiento.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "lock-free-queue-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/lock-free-queue-pattern/",
+    "https://www.cs.rochester.edu/~scott/papers/1996_PODC_queues.pdf",
+    "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html",
+    "https://docs.rs/crossbeam/latest/crossbeam/queue/struct.ArrayQueue.html"
+  ],
+  "language": "bilingual",
+  "tags": ["concurrency", "lock-free", "ring-buffer", "spsc", "mpmc", "cas", "atomics"],
+  "files": [
+    "spsc_ring_buffer.py",
+    "spsc_ring_buffer_batched.py",
+    "spsc_ring_buffer.js",
+    "ConcurrentLinkedQueueDemo.java",
+    "mpmc_array_queue.rs",
+    "benchmark_spsc.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Load Testing APIs with k6 and JMeter",
+  "title_es": "Pruebas de Carga en APIs con k6 y JMeter",
+  "description": "Runnable load testing assets: baseline k6 script with staged ramp and thresholds, advanced k6 script with token reuse + SharedArray CSV + weighted scenarios, complete JMeter test plan, GitHub Actions pipeline, and a pre-flight checklist.",
+  "description_es": "Recursos ejecutables de pruebas de carga: script base de k6 con rampas y umbrales, script avanzado de k6 con reutilización de token + SharedArray CSV + escenarios ponderados, plan de pruebas JMeter completo, pipeline de GitHub Actions y checklist previo.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "load-testing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/load-testing/",
+    "https://k6.io/docs/",
+    "https://jmeter.apache.org/"
+  ],
+  "language": "bilingual",
+  "tags": ["load-testing", "k6", "jmeter", "performance", "api-testing", "ci-cd", "thresholds"],
+  "files": [
+    "k6-load-test.js",
+    "k6-advanced.js",
+    "users.csv",
+    "jmeter-test-plan.jmx",
+    "load-test-ci.yml",
+    "load-test-checklist.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

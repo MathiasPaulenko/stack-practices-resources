@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LastLogin renders a stable timestamp 1`] = `
+<p
+  class="last-login"
+>
+  User 
+  7
+   last logged in at 
+  2026-01-15T09:30:00.000Z
+</p>
+`;

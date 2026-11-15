@@ -1,0 +1,25 @@
+{
+  "title": "Kubernetes Advanced Guide — Companion Manifests",
+  "title_es": "Guía Avanzada de Kubernetes — Manifiestos Companion",
+  "description": "Apply-ready Kubernetes manifests: a validated CRD, Pod Security restricted namespace, a hardened pod, default-deny NetworkPolicy, least-privilege RBAC, and an ArgoCD ApplicationSet for multi-cluster rollout.",
+  "description_es": "Manifiestos de Kubernetes listos para aplicar: un CRD validado, namespace con Pod Security restricted, un pod endurecido, NetworkPolicy de denegación por defecto, RBAC de mínimo privilegio y un ApplicationSet de ArgoCD para despliegue multi-cluster.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "kubernetes-advanced-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/kubernetes-advanced-guide/",
+    "https://stackpractices.com/es/guides/kubernetes-advanced-guide/"
+  ],
+  "language": "yaml",
+  "tags": ["kubernetes", "crd", "pod-security", "network-policy", "rbac", "argocd", "multi-cluster", "devops"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "crd-database.yaml",
+    "namespace-restricted.yaml",
+    "secure-pod.yaml",
+    "network-policy.yaml",
+    "rbac-ci.yaml",
+    "applicationset.yaml"
+  ]
+}

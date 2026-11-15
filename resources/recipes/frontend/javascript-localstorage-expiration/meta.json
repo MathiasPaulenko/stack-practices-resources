@@ -1,0 +1,23 @@
+{
+    "title": "JavaScript LocalStorage with TTL Expiration",
+    "title_es": "LocalStorage con Expiración TTL en JavaScript",
+    "description": "localStorage wrapper with TTL expiration, quota handling, memory fallback, stale-while-revalidate, and cross-tab sync",
+    "description_es": "Wrapper de localStorage con expiración TTL, manejo de cuota, respaldo en memoria, stale-while-revalidate y sincronización entre pestañas",
+    "type": "recipes",
+    "topic": "frontend",
+    "slug": "javascript-localstorage-expiration",
+    "source_urls": [
+        "https://stackpractices.com/recipes/javascript-localstorage-expiration/",
+        "https://stackpractices.com/es/recipes/javascript-localstorage-expiration/"
+    ],
+    "language": "javascript",
+    "tags": ["javascript", "localstorage", "ttl", "caching", "browser", "storage"],
+    "files": [
+        "ttl_storage.js",
+        "swr_storage.js",
+        "storage_mock.js",
+        "ttl_storage.test.js",
+        "demo.html",
+        "package.json"
+    ]
+}

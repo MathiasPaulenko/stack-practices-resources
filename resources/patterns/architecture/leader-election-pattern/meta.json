@@ -1,0 +1,34 @@
+{
+  "title": "Leader Election Pattern — Companion Code",
+  "title_es": "Patrón de Elección de Líder — Código complementario",
+  "description": "Runnable leader election implementations with atomic CAS, TTL leases and fencing tokens, covering an in-memory demo, etcd transactions, Kubernetes client-go and Redis SET NX PX + Lua, that accompany the Leader Election Pattern resource.",
+  "description_es": "Implementaciones ejecutables de elección de líder con CAS atómico, leases TTL y fencing tokens — demo en memoria, transacciones etcd, client-go de Kubernetes y Redis SET NX PX + Lua — que acompañan al recurso del Patrón de Elección de Líder.",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "leader-election-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/leader-election-pattern/",
+    "https://stackpractices.com/es/patterns/leader-election-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "distributed-systems",
+    "leader-election",
+    "consensus",
+    "etcd",
+    "kubernetes",
+    "redis",
+    "python",
+    "go"
+  ],
+  "files": [
+    "leader_election.py",
+    "leader-election-etcd.py",
+    "leader-election-redis.py",
+    "leader-election-k8s.go",
+    "lease.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

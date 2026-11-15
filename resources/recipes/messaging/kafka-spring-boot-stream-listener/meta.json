@@ -1,0 +1,26 @@
+{
+  "title": "Kafka Stream Listener with Spring Boot",
+  "title_es": "Kafka Stream Listener con Spring Boot",
+  "description": "Runnable Spring Boot 3 consumer: @KafkaListener with manual acks, @RetryableTopic non-blocking retries and a @DltHandler dead-letter sink on a KRaft broker.",
+  "description_es": "Consumer Spring Boot 3 ejecutable: @KafkaListener con acks manuales, reintentos no bloqueantes con @RetryableTopic y sink dead-letter con @DltHandler sobre un broker KRaft.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "kafka-spring-boot-stream-listener",
+  "source_urls": [
+    "https://stackpractices.com/recipes/kafka-spring-boot-stream-listener/",
+    "https://stackpractices.com/es/recipes/kafka-spring-boot-stream-listener/"
+  ],
+  "language": "java",
+  "tags": ["kafka", "spring-boot", "spring-kafka", "java", "kafkalistener", "retryable-topic", "dlq", "docker-compose", "messaging"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "pom.xml",
+    "src/main/resources/application.yml",
+    "src/main/java/com/example/kafka/KafkaListenerApplication.java",
+    "src/main/java/com/example/kafka/OrderEvent.java",
+    "src/main/java/com/example/kafka/OrderConsumer.java",
+    "src/main/java/com/example/kafka/SampleOrderProducer.java"
+  ]
+}

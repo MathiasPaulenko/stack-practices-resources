@@ -1,0 +1,27 @@
+# Alert: namespace approaching CPU quota limit
+- alert: NamespaceCPUQuotaNearLimit
+  expr: |
+    sum(kube_pod_container_resource_requests{resource="cpu", namespace="team-payments"})
+    /
+    sum(kube_resourcequota{resource="requests.cpu", namespace="team-payments", type="hard"})
+    > 0.85
+  for: 10m
+  labels:
+    severity: warning
+    team: payments
+  annotations:
+    summary: "Namespace {{ $labels.namespace }} CPU quota near limit"
+    description: "CPU requests at {{ $value | humanizePercentage }} of quota"
+
+# Alert: namespace exceeding memory limit
+- alert: NamespaceMemoryQuotaExceeded
+  expr: |
+    sum(kube_pod_container_resource_limits{resource="memory", namespace="team-payments"})
+    >
+    sum(kube_resourcequota{resource="limits.memory", namespace="team-payments", type="hard"})
+  for: 5m
+  labels:
+    severity: critical
+    team: payments
+  annotations:
+    summary: "Namespace {{ $labels.namespace }} memory quota exceeded"

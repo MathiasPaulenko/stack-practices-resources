@@ -1,0 +1,10 @@
+# Template consumed by the init container in deployment-init-container.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config-template
+data:
+  config.yaml.tpl: |
+    server:
+      port: 8080
+      environment: ${APP_ENV}

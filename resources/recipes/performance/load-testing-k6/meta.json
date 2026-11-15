@@ -1,0 +1,27 @@
+{
+  "title": "Load Testing APIs with k6 and Threshold-Based Assertions",
+  "title_es": "Testing de Carga de APIs con k6 y Aserciones de Umbral",
+  "description": "Runnable k6 scripts: staged ramp with composite thresholds, arrival-rate scenario, OAuth2 authenticated workflow, SharedArray CSV data, CI smoke gate, and GitHub Actions pipeline.",
+  "description_es": "Scripts k6 ejecutables: rampa por etapas con umbrales compuestos, escenario de tasa de llegada, flujo autenticado OAuth2, datos CSV con SharedArray, gate de smoke para CI y pipeline de GitHub Actions.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "load-testing-k6",
+  "source_urls": [
+    "https://stackpractices.com/recipes/load-testing-k6/",
+    "https://k6.io/docs/using-k6/thresholds/",
+    "https://k6.io/docs/using-k6/scenarios/"
+  ],
+  "language": "bilingual",
+  "tags": ["load-testing", "k6", "performance", "api-testing", "thresholds", "ci-cd"],
+  "files": [
+    "basic.js",
+    "scenario.js",
+    "authenticated.js",
+    "data.js",
+    "users.csv",
+    "smoke.js",
+    "load-test-ci.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

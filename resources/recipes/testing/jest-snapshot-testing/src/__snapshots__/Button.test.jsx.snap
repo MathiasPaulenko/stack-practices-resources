@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly when disabled 1`] = `
+<button
+  class="btn btn--primary"
+  disabled=""
+>
+  Loading
+</button>
+`;
+
+exports[`Button renders correctly with default props 1`] = `
+<button
+  class="btn btn--primary"
+>
+  Click me
+</button>
+`;
+
+exports[`Button renders correctly with variant prop 1`] = `
+<button
+  class="btn btn--danger"
+>
+  Delete
+</button>
+`;

@@ -1,0 +1,26 @@
+{
+  "title": "Lakehouse Architecture — Companion Pipeline Scripts",
+  "title_es": "Arquitectura Lakehouse — Scripts Companion del Pipeline",
+  "description": "Runnable medallion pipeline scripts: Bronze-to-Silver merge, Silver-to-Gold aggregates, Delta maintenance (OPTIMIZE/Z-ORDER/VACUUM/manifest), Iceberg setup with partition evolution, and Hudi upserts with incremental reads.",
+  "description_es": "Scripts ejecutables del pipeline medallion: merge Bronze-a-Silver, agregados Silver-a-Gold, mantenimiento Delta (OPTIMIZE/Z-ORDER/VACUUM/manifest), setup de Iceberg con evolución de particiones y upserts de Hudi con lecturas incrementales.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "lakehouse-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/lakehouse-guide/",
+    "https://stackpractices.com/es/guides/lakehouse-guide/"
+  ],
+  "language": "python",
+  "tags": ["lakehouse", "delta-lake", "apache-iceberg", "apache-hudi", "medallion", "spark", "data-engineering", "architecture"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "bronze_to_silver_delta.py",
+    "silver_to_gold_delta.py",
+    "delta_maintenance.py",
+    "iceberg_setup.py",
+    "hudi_upsert.py",
+    "spark_submit.sh",
+    "requirements.txt"
+  ]
+}

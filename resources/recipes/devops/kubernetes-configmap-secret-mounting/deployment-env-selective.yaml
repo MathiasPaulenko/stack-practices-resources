@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-selective
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-selective
+  template:
+    metadata:
+      labels:
+        app: my-app-selective
+    spec:
+      containers:
+        - name: app
+          image: my-app:latest
+          env:
+            - name: LOG_LEVEL
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: LOG_LEVEL
+            - name: APP_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: APP_PORT
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: DATABASE_PASSWORD
+                  optional: false

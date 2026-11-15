@@ -1,0 +1,26 @@
+{
+  "title": "Kubernetes Resource Quotas Template",
+  "title_es": "Plantilla de Kubernetes Resource Quotas",
+  "description": "ResourceQuota and LimitRange manifests for multi-tenant namespaces: compute, storage and object-count quotas, tier sizes, priority-scoped quotas, a full namespace bundle, Prometheus alerts, and a quota audit script.",
+  "description_es": "Manifiestos de ResourceQuota y LimitRange para namespaces multi-equipo: quotas de cómputo, almacenamiento y conteo de objetos, niveles por tamaño, quotas por prioridad, paquete completo de namespace, alertas de Prometheus y un script de auditoría de quotas.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "kubernetes-resource-quotas-template",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/kubernetes-resource-quotas-template/",
+    "es": "https://stackpractices.com/es/docs/kubernetes-resource-quotas-template/"
+  },
+  "language": ["yaml", "bash"],
+  "tags": ["kubernetes", "resourcequota", "limitrange", "multi-tenant", "namespace", "prometheus"],
+  "files": [
+    "resourcequota_standard.yaml",
+    "limitrange_defaults.yaml",
+    "quota_tier_small.yaml",
+    "quota_tier_large.yaml",
+    "priorityclasses.yaml",
+    "quota_scoped_priority.yaml",
+    "namespace_bundle.yaml",
+    "prometheus_quota_alerts.yaml",
+    "check_quota.sh"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "LLM Fallback Pattern — Companion Code",
+  "title_es": "Patrón LLM Fallback — Código complementario",
+  "description": "Runnable LLM fallback chain implementations in Python, JavaScript and Java with per-provider retry budgets, a retryable/non-retryable error taxonomy, circuit breaker integration and a static last-resort response, that accompany the LLM Fallback Pattern resource.",
+  "description_es": "Implementaciones ejecutables de la cadena de fallback LLM en Python, JavaScript y Java con presupuestos de reintento por proveedor, taxonomía de errores reintentables/no reintentables, integración de circuit breaker y respuesta estática de último recurso, que acompañan al recurso del Patrón LLM Fallback.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "llm-fallback-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/llm-fallback-pattern/",
+    "https://stackpractices.com/es/patterns/llm-fallback-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "ai",
+    "llm",
+    "fallback",
+    "resilience",
+    "error-handling",
+    "retry",
+    "circuit-breaker",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "llm_fallback.py",
+    "llm-fallback.js",
+    "LLMFallbackChain.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

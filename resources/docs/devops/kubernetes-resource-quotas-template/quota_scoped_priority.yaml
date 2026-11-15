@@ -1,0 +1,34 @@
+# Slice reserved for high-priority pods
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: high-priority-quota
+  namespace: team-payments
+spec:
+  hard:
+    requests.cpu: "15"
+    requests.memory: 30Gi
+    pods: "25"
+  scopeSelector:
+    matchExpressions:
+      - scopeName: PriorityClass
+        operator: In
+        values: ["high-priority", "critical"]
+
+---
+# Slice for low-priority batch work
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: low-priority-quota
+  namespace: team-payments
+spec:
+  hard:
+    requests.cpu: "5"
+    requests.memory: 10Gi
+    pods: "15"
+  scopeSelector:
+    matchExpressions:
+      - scopeName: PriorityClass
+        operator: In
+        values: ["low-priority"]

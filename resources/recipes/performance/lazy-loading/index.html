@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lazy Loading Demo — IntersectionObserver</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+    img { display: block; width: 100%; border-radius: 8px; margin-bottom: 1rem; background: #e2e8f0; }
+    .counter { position: fixed; top: 8px; right: 12px; background: #0f172a; color: #2dd4bf; padding: 6px 12px; border-radius: 8px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Lazy Loading Demo</h1>
+  <p>Open DevTools → Network, throttle to Slow 3G, and scroll. Images below the fold should only fetch when they approach the viewport.</p>
+  <div class="counter" id="counter">fetched: 0</div>
+
+  <!-- Above the fold: eager. Always provide width/height to avoid CLS. -->
+  <img src="images/img-0.svg" alt="Hero — loads immediately" width="640" height="360" loading="eager" fetchpriority="high">
+
+  <!-- Below the fold: deferred by IntersectionObserver (see lazy-load.js).
+       data-src keeps the real URL out of src so nothing downloads early. -->
+  <img data-src="images/img-1.svg"  alt="Lazy image 1"  width="640" height="360">
+  <img data-src="images/img-2.svg"  alt="Lazy image 2"  width="640" height="360">
+  <img data-src="images/img-3.svg"  alt="Lazy image 3"  width="640" height="360">
+  <img data-src="images/img-4.svg"  alt="Lazy image 4"  width="640" height="360">
+  <img data-src="images/img-5.svg"  alt="Lazy image 5"  width="640" height="360">
+  <img data-src="images/img-6.svg"  alt="Lazy image 6"  width="640" height="360">
+  <img data-src="images/img-7.svg"  alt="Lazy image 7"  width="640" height="360">
+  <img data-src="images/img-8.svg"  alt="Lazy image 8"  width="640" height="360">
+  <img data-src="images/img-9.svg"  alt="Lazy image 9"  width="640" height="360">
+  <img data-src="images/img-10.svg" alt="Lazy image 10" width="640" height="360">
+  <img data-src="images/img-11.svg" alt="Lazy image 11" width="640" height="360">
+
+  <!-- Fallback for no-JS / ancient browsers: all images get their real src -->
+  <noscript><style>img[data-src]{display:none}</style><p>Enable JavaScript to see the lazy loading demo.</p></noscript>
+
+  <script src="intersection-observer.js"></script>
+</body>
+</html>

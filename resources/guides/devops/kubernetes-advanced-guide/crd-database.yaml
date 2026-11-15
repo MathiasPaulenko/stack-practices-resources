@@ -1,0 +1,32 @@
+# CustomResourceDefinition with OpenAPI v3 validation.
+# Apply: kubectl apply -f crd-database.yaml
+# Verify: kubectl get crd databases.mycompany.com
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: databases.mycompany.com
+spec:
+  group: mycompany.com
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                engine:
+                  type: string
+                  enum: ["postgres", "mysql"]
+                replicas:
+                  type: integer
+                  minimum: 1
+                  maximum: 5
+  scope: Namespaced
+  names:
+    plural: databases
+    singular: database
+    kind: Database

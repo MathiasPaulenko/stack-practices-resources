@@ -1,0 +1,34 @@
+{
+  "title": "LLM Router Pattern — Companion Code",
+  "title_es": "Patrón LLM Router — Código complementario",
+  "description": "Runnable LLM router implementations in Python, JavaScript and Java with a rules-based complexity classifier, confidence scoring, one-shot tier routing, quality-gated cascade escalation and cost tracking against an always-large baseline, that accompany the LLM Router Pattern resource.",
+  "description_es": "Implementaciones ejecutables del router LLM en Python, JavaScript y Java con un clasificador de complejidad por reglas, puntuación de confianza, enrutamiento de un disparo por tiers, escalado en cascada con puerta de calidad y seguimiento de coste contra una línea base de siempre-grande, que acompañan al recurso del Patrón LLM Router.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "llm-router-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/llm-router-pattern/",
+    "https://stackpractices.com/es/patterns/llm-router-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "ai",
+    "llm",
+    "routing",
+    "classification",
+    "cost-optimization",
+    "model-selection",
+    "cascade",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "llm_router.py",
+    "llm-router.js",
+    "LLMRouterCascade.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

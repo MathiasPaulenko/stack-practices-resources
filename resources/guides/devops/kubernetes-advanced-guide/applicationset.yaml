@@ -1,0 +1,26 @@
+# ArgoCD ApplicationSet: deploys the same app to every registered
+# cluster (the modern replacement for archived KubeFed).
+# Requires ArgoCD installed in the management cluster.
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: frontend
+  namespace: argocd
+spec:
+  generators:
+    - clusters: {}   # one Application per registered cluster
+  template:
+    metadata:
+      name: 'frontend-{{name}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/myorg/frontend-config.git
+        targetRevision: main
+        path: overlays/prod
+      destination:
+        server: '{{server}}'
+        namespace: frontend
+      syncPolicy:
+        automated:
+          selfHeal: true

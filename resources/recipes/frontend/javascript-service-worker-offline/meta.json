@@ -1,0 +1,24 @@
+{
+    "title": "JavaScript Service Worker Offline Caching",
+    "title_es": "Service Worker Offline Caching en JavaScript",
+    "description": "Minimal PWA offline demo: service worker registration, app-shell precache, cache-first fetch with navigation fallback, and background sync replay of a queued form over IndexedDB",
+    "description_es": "Demo mínima de PWA offline: registro del service worker, precaché del app shell, fetch cache-first con respaldo de navegación y reintento por background sync de un formulario encolado en IndexedDB",
+    "type": "recipes",
+    "topic": "frontend",
+    "slug": "javascript-service-worker-offline",
+    "source_urls": [
+        "https://stackpractices.com/recipes/javascript-service-worker-offline/",
+        "https://stackpractices.com/es/recipes/javascript-service-worker-offline/"
+    ],
+    "language": "javascript",
+    "tags": ["javascript", "service-worker", "pwa", "offline", "cache-api", "indexeddb", "background-sync"],
+    "files": [
+        "sw.js",
+        "main.js",
+        "db.js",
+        "index.html",
+        "offline.html",
+        "styles.css",
+        "package.json"
+    ]
+}

@@ -1,0 +1,56 @@
+# Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: team-payments
+  labels:
+    team: payments
+    environment: production
+    quota-tier: standard
+
+---
+# Resource quota
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-quota
+  namespace: team-payments
+spec:
+  hard:
+    requests.cpu: "10"
+    requests.memory: 20Gi
+    limits.cpu: "20"
+    limits.memory: 40Gi
+
+---
+# Limit range
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: default-limits
+  namespace: team-payments
+spec:
+  limits:
+    - type: Container
+      default:
+        cpu: 500m
+        memory: 512Mi
+      defaultRequest:
+        cpu: 100m
+        memory: 128Mi
+      max:
+        cpu: 2000m
+        memory: 4Gi
+
+---
+# Network policy — deny all ingress by default
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-all-ingress
+  namespace: team-payments
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+  ingress: []

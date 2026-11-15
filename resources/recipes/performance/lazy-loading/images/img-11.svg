@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360">
+  <rect width="640" height="360" fill="#0f766e"/>
+  <text x="320" y="180" font-family="system-ui, sans-serif" font-size="42"
+        font-weight="600" fill="#f1f5f9" text-anchor="middle"
+        dominant-baseline="middle">Image 11</text>
+</svg>

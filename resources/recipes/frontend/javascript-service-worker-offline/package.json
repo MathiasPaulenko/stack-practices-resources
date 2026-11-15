@@ -1,0 +1,9 @@
+{
+    "name": "javascript-service-worker-offline",
+    "version": "1.0.0",
+    "description": "Service worker offline demo (precache, cache-first, offline fallback, background sync) — companion code for the StackPractices recipe",
+    "scripts": {
+        "demo": "npx serve ."
+    },
+    "license": "MIT"
+}

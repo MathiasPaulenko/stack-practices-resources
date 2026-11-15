@@ -1,0 +1,23 @@
+{
+  "title": "Kafka Consumer Groups with Python",
+  "title_es": "Consumer Groups de Kafka con Python",
+  "description": "Runnable consumer-group demo: single-node KRaft broker, keyed producer and workers with rebalance callbacks using confluent-kafka.",
+  "description_es": "Demo ejecutable de consumer groups: broker KRaft de un nodo, producer con keys y workers con callbacks de rebalanceo usando confluent-kafka.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "kafka-python-consumer-groups",
+  "source_urls": [
+    "https://stackpractices.com/recipes/kafka-python-consumer-groups/",
+    "https://stackpractices.com/es/recipes/kafka-python-consumer-groups/"
+  ],
+  "language": "python",
+  "tags": ["kafka", "python", "consumer-groups", "confluent-kafka", "event-driven", "messaging", "docker-compose", "rebalancing"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "requirements.txt",
+    "producer.py",
+    "consumer_worker.py"
+  ]
+}

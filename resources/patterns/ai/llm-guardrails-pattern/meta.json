@@ -1,0 +1,34 @@
+{
+  "title": "LLM Guardrails Pattern — Companion Code",
+  "title_es": "Patrón LLM Guardrails — Código complementario",
+  "description": "Runnable LLM guardrail pipeline implementations in Python, JavaScript and Java with ordered input checks (prompt injection, prohibited content, PII), output checks (toxicity, secrets), fail-fast semantics and a full audit trail, that accompany the LLM Guardrails Pattern resource.",
+  "description_es": "Implementaciones ejecutables del pipeline de guardrails LLM en Python, JavaScript y Java con verificaciones ordenadas de entrada (prompt injection, contenido prohibido, PII), verificaciones de salida (toxicidad, secretos), semántica fail-fast y pista de auditoría completa, que acompañan al recurso del Patrón LLM Guardrails.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "llm-guardrails-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/llm-guardrails-pattern/",
+    "https://stackpractices.com/es/patterns/llm-guardrails-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "ai",
+    "llm",
+    "guardrails",
+    "security",
+    "prompt-injection",
+    "content-moderation",
+    "input-validation",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "llm_guardrails.py",
+    "llm-guardrails.js",
+    "LLMGuardrailPipeline.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

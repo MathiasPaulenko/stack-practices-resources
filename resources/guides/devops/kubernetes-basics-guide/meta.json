@@ -1,0 +1,26 @@
+{
+  "title": "Kubernetes Basics Guide — Companion Manifests",
+  "title_es": "Guía Básica de Kubernetes — Manifiestos Companion",
+  "description": "Apply-ready Kubernetes manifests for beginners: a Pod, a Deployment with Service, ConfigMap and Secret usage, health-check probes, and a full production example with HPA and PodDisruptionBudget.",
+  "description_es": "Manifiestos de Kubernetes listos para aplicar para principiantes: un Pod, un Deployment con Service, uso de ConfigMap y Secret, probes de health checks, y un ejemplo completo de producción con HPA y PodDisruptionBudget.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "kubernetes-basics-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/kubernetes-basics-guide/",
+    "https://stackpractices.com/es/guides/kubernetes-basics-guide/"
+  ],
+  "language": "yaml",
+  "tags": ["kubernetes", "pods", "deployments", "services", "configmap", "hpa", "beginner", "devops"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "pod.yaml",
+    "deployment.yaml",
+    "service.yaml",
+    "configmap.yaml",
+    "production-deployment.yaml",
+    "hpa.yaml",
+    "pdb.yaml"
+  ]
+}

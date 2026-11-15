@@ -1,0 +1,23 @@
+{
+  "title": "Kafka Topic Naming Convention — Companion Files",
+  "title_es": "Convención de Nombres de Tópicos de Kafka — Archivos Companion",
+  "description": "Bash linter for the <env>.<domain>.<entity>.<type>[.<version>] topic naming convention, a topic-request ticket template, and Terraform kafka_topic examples.",
+  "description_es": "Linter en bash para la convención <entorno>.<dominio>.<entidad>.<tipo>[.<versión>], plantilla de ticket de solicitud y ejemplos de kafka_topic en Terraform.",
+  "type": "docs",
+  "topic": "messaging",
+  "slug": "kafka-topic-naming-convention-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/kafka-topic-naming-convention-template/",
+    "https://stackpractices.com/es/docs/kafka-topic-naming-convention-template/"
+  ],
+  "language": "bash",
+  "tags": ["kafka", "topic-naming", "governance", "terraform", "bash", "lint", "messaging"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "naming-lint.sh",
+    "topics.txt",
+    "kafka-topics.tf",
+    "topic-request-template.md"
+  ]
+}

@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-init
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-init
+  template:
+    metadata:
+      labels:
+        app: my-app-init
+    spec:
+      initContainers:
+        - name: config-renderer
+          image: busybox:1.36
+          env:
+            - name: APP_ENV
+              value: "production"
+          volumeMounts:
+            - name: config-template
+              mountPath: /templates
+            - name: rendered-config
+              mountPath: /output
+          command:
+            - sh
+            - -c
+            - |
+              envsubst < /templates/config.yaml.tpl > /output/config.yaml
+      containers:
+        - name: app
+          image: my-app:latest
+          volumeMounts:
+            - name: rendered-config
+              mountPath: /etc/app/config
+              readOnly: true
+      volumes:
+        - name: config-template
+          configMap:
+            name: app-config-template
+        - name: rendered-config
+          emptyDir: {}

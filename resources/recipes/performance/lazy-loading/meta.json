@@ -1,0 +1,24 @@
+{
+  "title": "Lazy Loading — Companion Demo & Snippets",
+  "title_es": "Lazy Loading — Demo y Snippets Companion",
+  "description": "Runnable lazy loading demo: an offline IntersectionObserver image gallery with generated placeholders, a React.lazy + Suspense example with error boundary, and a TanStack Query infinite scroll hook with cursor pagination.",
+  "description_es": "Demo ejecutable de lazy loading: galería de imágenes offline con IntersectionObserver y placeholders generados, ejemplo de React.lazy + Suspense con error boundary, y hook de infinite scroll con TanStack Query y paginación por cursor.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "lazy-loading",
+  "source_urls": [
+    "https://stackpractices.com/recipes/lazy-loading/",
+    "https://stackpractices.com/es/recipes/lazy-loading/"
+  ],
+  "language": "javascript",
+  "tags": ["lazy-loading", "intersection-observer", "react", "suspense", "tanstack-query", "core-web-vitals", "performance"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "index.html",
+    "intersection-observer.js",
+    "make-placeholders.py",
+    "LazyComponents.jsx",
+    "use-infinite-list.jsx"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Jest Snapshot Testing — Companion Project",
+  "title_es": "Jest Snapshot Testing — Proyecto complementario",
+  "description": "Runnable Jest + React Testing Library project accompanying the recipe: five components with file and inline snapshots, fake timers for deterministic output, a manual __mocks__ stub for a third-party component, and committed .snap files.",
+  "description_es": "Proyecto ejecutable de Jest + React Testing Library que acompaña a la receta: cinco componentes con snapshots en archivo e inline, fake timers para salida determinista, un stub manual en __mocks__ para un componente de terceros y archivos .snap commiteados.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "jest-snapshot-testing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/jest-snapshot-testing/",
+    "https://stackpractices.com/es/recipes/jest-snapshot-testing/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "javascript",
+    "jest",
+    "react",
+    "snapshot-testing",
+    "react-testing-library"
+  ],
+  "files": [
+    "package.json",
+    "package-lock.json",
+    "babel.config.js",
+    "jest.config.js",
+    "jest.setup.js",
+    ".gitignore",
+    "src/Button.jsx",
+    "src/Button.test.jsx",
+    "src/Card.jsx",
+    "src/Card.test.jsx",
+    "src/Badge.jsx",
+    "src/Badge.test.jsx",
+    "src/UserProfile.jsx",
+    "src/UserProfile.test.jsx",
+    "src/LastLogin.jsx",
+    "src/LastLogin.test.jsx",
+    "src/Dashboard.jsx",
+    "src/Dashboard.test.jsx",
+    "src/lib/Chart.jsx",
+    "src/lib/__mocks__/Chart.jsx",
+    "src/__snapshots__/Button.test.jsx.snap",
+    "src/__snapshots__/Card.test.jsx.snap",
+    "src/__snapshots__/Dashboard.test.jsx.snap",
+    "src/__snapshots__/LastLogin.test.jsx.snap",
+    "src/__snapshots__/UserProfile.test.jsx.snap",
+    "README.md",
+    "README.es.md"
+  ]
+}

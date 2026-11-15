@@ -1,0 +1,24 @@
+{
+  "title": "Event Streaming with Apache Kafka and Node.js",
+  "title_es": "Event Streaming con Apache Kafka y Node.js",
+  "description": "Runnable KafkaJS demo: single-node KRaft broker, keyed producer, consumer group and dead-letter queue handling.",
+  "description_es": "Demo ejecutable con KafkaJS: broker KRaft de un nodo, producer con keys, consumer group y manejo de dead-letter queue.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "kafka-event-streaming",
+  "source_urls": [
+    "https://stackpractices.com/recipes/kafka-event-streaming/",
+    "https://stackpractices.com/es/recipes/kafka-event-streaming/"
+  ],
+  "language": "javascript",
+  "tags": ["kafka", "kafkajs", "event-driven", "messaging", "consumer-groups", "dead-letter-queue", "docker-compose", "node.js"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "docker-compose.yml",
+    "package.json",
+    "producer.js",
+    "consumer.js",
+    "dlq-consumer.js"
+  ]
+}

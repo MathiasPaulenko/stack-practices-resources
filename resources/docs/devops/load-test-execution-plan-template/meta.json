@@ -1,0 +1,30 @@
+{
+  "title": "Load Test Execution Plan Template — Companion Files",
+  "title_es": "Plantilla de Plan de Ejecución de Pruebas de Carga — Archivos complementarios",
+  "description": "Ready-to-use companion for the load test execution plan template: fillable plan document, printable test-day checklist, a runnable k6 script with a custom failure-rate threshold, and a Locust load test with weighted tasks.",
+  "description_es": "Complemento listo para usar de la plantilla de plan de ejecución de pruebas de carga: documento de plan rellenable, checklist imprimible del día de la prueba, script de k6 ejecutable con umbral de tasa de fallos personalizada y prueba de Locust con tareas ponderadas.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "load-test-execution-plan-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/load-test-execution-plan-template/",
+    "https://stackpractices.com/es/docs/load-test-execution-plan-template/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "load-testing",
+    "k6",
+    "performance",
+    "devops",
+    "capacity-planning",
+    "template"
+  ],
+  "files": [
+    "load-test-execution-plan-template.md",
+    "execution-checklist.md",
+    "k6-load-test.js",
+    "locustfile.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

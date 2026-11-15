@@ -1,0 +1,34 @@
+# GitHub Actions: cheap smoke test on every PR, full run on release branches.
+# The thresholds inside the k6 script are what gate the merge.
+name: Load Test
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [release/*]
+
+jobs:
+  k6-smoke:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: grafana/k6-action@v0.3.1
+        with:
+          filename: k6-load-test.js
+        env:
+          BASE_URL: https://staging.example.com
+          K6_CLOUD_PROJECT_ID: ${{ secrets.K6_CLOUD_PROJECT_ID }}
+
+  k6-full:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: grafana/k6-action@v0.3.1
+        with:
+          filename: k6-advanced.js
+        env:
+          BASE_URL: https://staging.example.com
+          CLIENT_SECRET: ${{ secrets.LOAD_TEST_CLIENT_SECRET }}

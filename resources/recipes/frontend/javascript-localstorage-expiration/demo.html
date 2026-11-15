@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>localStorage TTL — demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+  #log { background: #0f172a; color: #7dd3fc; padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 13px; min-height: 200px; white-space: pre-wrap; }
+  button { margin: 0.25rem 0.25rem 0 0; padding: 0.5rem 0.9rem; cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>localStorage with TTL — live demo</h1>
+<p>Writes a key with a 5-second TTL, then reads it back on demand.</p>
+<button id="set">set("greeting", …, 5s TTL)</button>
+<button id="get">get("greeting")</button>
+<button id="cleanup">cleanup()</button>
+<div id="log"></div>
+
+<script type="module">
+import { TTLStorage } from "./ttl_storage.js";
+
+const cache = new TTLStorage("demo:");
+const log = (msg) => document.getElementById("log").textContent += msg + "\n";
+
+document.getElementById("set").onclick = () => {
+    cache.set("greeting", { text: "hello", at: new Date().toISOString() }, 5000);
+    log('set greeting with 5s TTL');
+};
+document.getElementById("get").onclick = () => {
+    const v = cache.get("greeting");
+    log(v ? `get → ${JSON.stringify(v)}` : "get → null (missing or expired)");
+};
+document.getElementById("cleanup").onclick = () => {
+    cache.cleanup();
+    log(`cleanup() done — ${cache.size()} demo: keys left`);
+};
+</script>
+</body>
+</html>

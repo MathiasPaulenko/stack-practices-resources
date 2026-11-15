@@ -1,0 +1,10 @@
+# Namespace enforcing the `restricted` Pod Security Standard.
+# Safe rollout: keep warn+audit first, fix flagged workloads, then enforce.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/warn: restricted
+    pod-security.kubernetes.io/audit: restricted

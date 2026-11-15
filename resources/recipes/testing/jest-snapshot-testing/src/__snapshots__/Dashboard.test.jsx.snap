@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard replaces the third-party chart with a stable stub 1`] = `
+<section
+  class="dashboard"
+>
+  <h2
+    class="dashboard__title"
+  >
+    Sales
+  </h2>
+  <div
+    data-testid="chart-stub"
+  />
+</section>
+`;

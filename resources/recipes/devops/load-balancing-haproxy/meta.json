@@ -1,0 +1,33 @@
+{
+  "title": "Load Balancing with HAProxy — Companion Code",
+  "title_es": "Balanceo de carga con HAProxy — Código complementario",
+  "description": "Runnable simulations of HAProxy's health-check state machine in Python, JavaScript and Java: fall/rise probe gating that removes a flapping backend and a leastconn dispatcher that steers traffic to a recovered server, accompanying the HAProxy load balancing recipe.",
+  "description_es": "Simulaciones ejecutables de la máquina de estados de health checks de HAProxy en Python, JavaScript y Java: el control fall/rise que retira un backend inestable y un dispatcher leastconn que dirige tráfico al servidor recuperado, que acompañan a la receta de balanceo con HAProxy.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "load-balancing-haproxy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/load-balancing-haproxy/",
+    "https://stackpractices.com/es/recipes/load-balancing-haproxy/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "recipe",
+    "devops",
+    "haproxy",
+    "load-balancing",
+    "health-checks",
+    "least-connections",
+    "high-availability",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "health_check_fsm.py",
+    "health-check-fsm.js",
+    "HealthCheckFsm.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

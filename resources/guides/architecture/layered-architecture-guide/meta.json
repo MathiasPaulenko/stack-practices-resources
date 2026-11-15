@@ -1,0 +1,33 @@
+{
+  "title": "Layered Architecture — Companion C# Solution Layout",
+  "title_es": "Arquitectura por Capas — Layout Companion de Solución C#",
+  "description": "Runnable .NET-style layout of the four-layer e-commerce example from the guide: Presentation (thin controller + DI wiring), Application (orchestrating service + DTOs), Domain (entities with real rules, repository interfaces), Infrastructure (EF Core repositories), plus xUnit + Moq tests that mock the layer below.",
+  "description_es": "Layout ejecutable estilo .NET del ejemplo e-commerce de cuatro capas de la guía: Presentación (controlador delgado + wiring DI), Aplicación (servicio orquestador + DTOs), Dominio (entidades con reglas reales, interfaces de repositorio), Infraestructura (repositorios EF Core), más tests xUnit + Moq que mockean la capa inferior.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "layered-architecture-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/layered-architecture-guide/",
+    "es": "https://stackpractices.com/es/guides/layered-architecture-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["layered-architecture", "n-tier", "csharp", "dotnet", "entity-framework", "repository-pattern", "dependency-injection", "xunit", "architecture"],
+  "files": [
+    "Domain/Entities/Order.cs",
+    "Domain/Entities/Product.cs",
+    "Domain/Interfaces/IOrderRepository.cs",
+    "Domain/Interfaces/IProductRepository.cs",
+    "Application/Interfaces/IOrderService.cs",
+    "Application/Dtos/OrderDto.cs",
+    "Application/Exceptions/BusinessException.cs",
+    "Application/Services/OrderService.cs",
+    "Infrastructure/Persistence/AppDbContext.cs",
+    "Infrastructure/Persistence/Repositories/OrderRepository.cs",
+    "Infrastructure/Persistence/Repositories/ProductRepository.cs",
+    "Presentation/Controllers/OrderController.cs",
+    "Presentation/Program.cs",
+    "Tests/OrderServiceTests.cs",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,43 @@
+# GitHub Actions: smoke test per PR, full load test on demand.
+# Threshold breaches exit non-zero, so the job fails on its own.
+
+name: Load Testing
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      script:
+        description: 'k6 script to run'
+        required: true
+        default: 'basic.js'
+        type: choice
+        options: [basic.js, scenario.js, authenticated.js, data.js]
+
+jobs:
+  smoke:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: grafana/setup-k6-action@v1
+      - name: Smoke test
+        working-directory: resources/recipes/performance/load-testing-k6
+        env:
+          BASE_URL: ${{ secrets.STAGING_API_URL }}
+        run: k6 run smoke.js
+
+  load:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: grafana/setup-k6-action@v1
+      - name: Load test
+        working-directory: resources/recipes/performance/load-testing-k6
+        env:
+          BASE_URL: ${{ secrets.STAGING_API_URL }}
+          CLIENT_ID: ${{ secrets.K6_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.K6_CLIENT_SECRET }}
+        run: k6 run ${{ github.event.inputs.script }}

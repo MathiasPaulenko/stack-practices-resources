@@ -1,0 +1,36 @@
+{
+  "title": "ConfigMap & Secret Mounting — Kubernetes Manifests",
+  "title_es": "Montaje de ConfigMaps y Secrets — Manifiestos Kubernetes",
+  "description": "Complete manifest set for mounting ConfigMaps and Secrets into Kubernetes pods: env vars (envFrom, keyRef, prefixes), volume mounts, projected volumes, subPath, TLS secrets, imagePullSecrets, immutable config, init-container rendering, External Secrets Operator and SealedSecrets.",
+  "description_es": "Conjunto completo de manifiestos para montar ConfigMaps y Secrets en pods de Kubernetes: variables de entorno (envFrom, keyRef, prefijos), volúmenes, volúmenes proyectados, subPath, secrets TLS, imagePullSecrets, configuración inmutable, renderizado con init container, External Secrets Operator y SealedSecrets.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "kubernetes-configmap-secret-mounting",
+  "source_urls": [
+    "https://stackpractices.com/recipes/kubernetes-configmap-secret-mounting/",
+    "https://stackpractices.com/es/recipes/kubernetes-configmap-secret-mounting/"
+  ],
+  "language": "bilingual",
+  "tags": ["kubernetes", "configmap", "secrets", "volumes", "projected-volumes", "external-secrets", "sealed-secrets", "devops", "yaml"],
+  "files": [
+    "configmap.yaml",
+    "secret.yaml",
+    "configmap-immutable.yaml",
+    "configmap-template.yaml",
+    "deployment-env-vars.yaml",
+    "deployment-envfrom-prefix.yaml",
+    "deployment-env-selective.yaml",
+    "deployment-config-volume.yaml",
+    "deployment-secret-volume.yaml",
+    "deployment-projected.yaml",
+    "deployment-subpath.yaml",
+    "tls-secret.yaml",
+    "deployment-tls-volume.yaml",
+    "deployment-image-pull-secret.yaml",
+    "deployment-init-container.yaml",
+    "externalsecret.yaml",
+    "sealedsecret.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}
