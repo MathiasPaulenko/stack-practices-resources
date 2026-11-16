@@ -1,0 +1,10 @@
+model,cost_per_query_usd,cost_per_1k_queries_usd,monthly_10k_per_day_usd
+GPT-5,0.00688,6.88,2062.50
+GPT-5-mini,0.00138,1.38,412.50
+GPT-5-nano,0.00028,0.28,82.50
+Claude Sonnet 4.5,0.01200,12.00,3600.00
+Claude Haiku 4.5,0.00400,4.00,1200.00
+Gemini 2.5 Pro,0.00688,6.88,2062.50
+Gemini 2.5 Flash,0.00170,1.70,510.00
+Llama 4 Maverick,0.00060,0.60,180.00
+Mistral Medium 3,0.00160,1.60,480.00

@@ -1,0 +1,24 @@
+{
+  "title": "AI Model Selection Matrix",
+  "title_es": "Matriz de Selección de Modelos de IA",
+  "description": "Companion files for the AI model selection matrix: a pricing comparison CSV for nine current LLMs, a cost-per-1000-queries worksheet, the weighted decision scorecard template, and the pre-commit selection checklist.",
+  "description_es": "Archivos complementarios de la matriz de selección de modelos de IA: un CSV comparativo de precios de nueve LLM actuales, una hoja de costo por 1000 consultas, la plantilla de scorecard ponderada de decisión y el checklist de selección previo al compromiso.",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-model-selection-matrix",
+  "source_urls": [
+    "https://stackpractices.com/docs/ai-model-selection-matrix/",
+    "https://openai.com/pricing",
+    "https://www.anthropic.com/pricing"
+  ],
+  "language": "bilingual",
+  "tags": ["llm", "model-selection", "benchmark", "scorecard", "pricing", "template", "ai"],
+  "files": [
+    "model-pricing-comparison.csv",
+    "cost-per-1000-queries.csv",
+    "weighted-scorecard-template.md",
+    "model-selection-checklist.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
