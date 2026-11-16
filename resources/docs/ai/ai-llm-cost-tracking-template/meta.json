@@ -1,0 +1,24 @@
+{
+  "title": "AI LLM Cost Tracking Template",
+  "title_es": "Plantilla de Tracking de Costos de LLM",
+  "description": "Companion files for the LLM cost tracking template: a runnable cost monitor (Python), the budget config with alert thresholds and per-feature budgets (YAML), the storage schema for usage logs and daily rollups (SQL), and the monthly cost report template (Markdown).",
+  "description_es": "Archivos complementarios de la plantilla de tracking de costos de LLM: un monitor de costos ejecutable (Python), la configuración de presupuesto con umbrales de alerta y presupuestos por funcionalidad (YAML), el esquema de almacenamiento para logs de uso y rollups diarios (SQL) y la plantilla de reporte mensual de costos (Markdown).",
+  "type": "docs",
+  "topic": "ai",
+  "slug": "ai-llm-cost-tracking-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/ai-llm-cost-tracking-template/",
+    "https://openai.com/pricing",
+    "https://www.anthropic.com/pricing"
+  ],
+  "language": "bilingual",
+  "tags": ["llm", "cost-tracking", "budget", "monitoring", "finops", "template", "ai"],
+  "files": [
+    "budget_config.yaml",
+    "llm_cost_monitor.py",
+    "schema.sql",
+    "llm-cost-report-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

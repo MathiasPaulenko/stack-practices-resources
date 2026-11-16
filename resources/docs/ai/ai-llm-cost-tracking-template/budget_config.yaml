@@ -1,0 +1,40 @@
+# Budget configuration for the LLM cost monitor.
+# Feed this to llm_cost_monitor.py — tune the numbers to your real bill.
+monthly_budget: 1000.00  # USD
+
+alert_thresholds:
+  - percentage: 50
+    action: "notify"
+    recipients: ["ai-team@company.com"]
+  - percentage: 75
+    action: "notify"
+    recipients: ["ai-team@company.com", "finance@company.com"]
+  - percentage: 90
+    action: "notify"
+    recipients: ["ai-team@company.com", "finance@company.com", "cto@company.com"]
+  - percentage: 100
+    action: "throttle"
+    message: "Monthly LLM budget exceeded. Non-critical features disabled."
+    disabled_features:
+      - sentiment-analysis
+      - image-description
+
+per_feature_budgets:
+  chat-completion: 400.00
+  document-qa: 300.00
+  code-review: 150.00
+  text-classification: 50.00
+  embedding-generation: 50.00
+  sentiment-analysis: 30.00
+  image-description: 20.00
+
+per_user_limits:
+  free-tier:
+    daily_cost: 0.05
+    daily_requests: 50
+  pro-tier:
+    daily_cost: 1.00
+    daily_requests: 500
+  enterprise:
+    daily_cost: 10.00
+    daily_requests: 5000
