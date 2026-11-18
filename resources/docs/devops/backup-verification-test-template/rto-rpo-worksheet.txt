@@ -1,0 +1,32 @@
+=== RTO/RPO Backup Verification Worksheet ===
+
+Test date: 2026-07-11
+Service: production-database
+Backup Type: Full + WAL streaming
+
+RPO Measurement:
+  - Last successful backup:    2026-07-11 02:00 UTC
+  - Last archived WAL:         2026-07-11 10:45 UTC
+  - Restore point:             2026-07-11 11:00 UTC
+  - Data loss:                 15 minutes
+  - RPO target:                30 minutes
+  - RPO status:                PASS (15 min < 30 min)
+
+RTO Measurement:
+  - Restore started:           11:00 UTC
+  - DB available:              11:08 UTC
+  - App connected:             11:10 UTC
+  - Smoke tests passed:        11:12 UTC
+  - Total RTO:                 12 minutes
+  - RTO target:                30 minutes
+  - RTO status:                PASS (12 min < 30 min)
+
+Issues Found:
+  - 3-minute WAL gap during 09:30-09:33
+  - Hard-coded path in restore script (BVT-001)
+  - Missing secret rotation step (BVT-002)
+
+Remediation:
+  - Investigate WAL gap root cause
+  - Fix hard-coded paths by 2026-07-04
+  - Add secret rotation step to runbook by 2026-07-11

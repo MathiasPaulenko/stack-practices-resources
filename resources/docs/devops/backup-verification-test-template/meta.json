@@ -1,0 +1,22 @@
+{
+  "title": "Backup Verification Test Template",
+  "title_es": "Plantilla de Prueba de Verificación de Backups",
+  "description": "Fill-in backup verification test record (scope, restore steps, validation checklist, RTO/RPO results, issue log) plus a runnable PostgreSQL restore-verification script and an RTO/RPO measurement worksheet.",
+  "description_es": "Registro rellenable de prueba de verificación de backups (alcance, pasos de restauración, checklist de validación, resultados RTO/RPO, registro de problemas) más un script ejecutable de verificación de restauración PostgreSQL y una hoja de medición RTO/RPO.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "backup-verification-test-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/backup-verification-test-template/",
+    "https://stackpractices.com/es/docs/backup-verification-test-template/"
+  ],
+  "language": ["markdown", "bash"],
+  "tags": ["backup", "disaster-recovery", "verification", "restore", "rto", "rpo", "postgresql", "runbook", "template"],
+  "files": [
+    "backup-verification-test-template.md",
+    "postgres-restore-verify.sh",
+    "rto-rpo-worksheet.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

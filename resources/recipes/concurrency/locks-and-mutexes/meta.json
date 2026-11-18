@@ -1,0 +1,20 @@
+{
+  "title": "Coordinate Shared Access with Locks, Mutexes, and Semaphores",
+  "title_es": "Coordinar acceso compartido con locks, mutexes y semáforos",
+  "description": "Runnable examples of mutexes, read-write locks, semaphores, and atomic counters in Java, Python, and C++.",
+  "description_es": "Ejemplos ejecutables de mutexes, read-write locks, semáforos y contadores atómicos en Java, Python y C++.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "locks-and-mutexes",
+  "source_urls": ["https://stackpractices.com/recipes/locks-and-mutexes/"],
+  "language": "java,python,cpp",
+  "tags": ["concurrency", "mutex", "semaphore", "read-write-lock", "atomic-operations", "threads", "java", "python", "cpp"],
+  "files": [
+    "BankAccount.java",
+    "CachedData.java",
+    "ConnectionPool.py",
+    "AtomicCounter.cpp",
+    "README.md",
+    "README.es.md"
+  ]
+}
