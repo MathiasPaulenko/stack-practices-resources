@@ -1,5 +1,5 @@
 {
-  "title": "CSRF Protection for Web Forms",
+  "title": "CSRF Protection: How to Secure Web Forms",
   "title_es": "Protección CSRF para formularios web",
   "description": "Express CSRF middleware from the CSRF protection recipe: signed double-submit cookie pattern with HMAC verification, constant-time token comparison, and a runnable demo server.",
   "description_es": "Middleware CSRF para Express de la receta de protección CSRF: patrón de cookie double-submit firmada con verificación HMAC, comparación de tokens en tiempo constante y un servidor demo ejecutable.",
