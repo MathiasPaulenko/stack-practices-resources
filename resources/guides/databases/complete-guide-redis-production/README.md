@@ -1,12 +1,12 @@
-# Redis in Production — Companion Configs
+# Redis in Production â€” Companion Configs
 
 Production configuration files for [Complete Guide to Redis in Production](https://stackpractices.com/guides/complete-guide-redis-production/).
 
 ## Files
 
--  — hardened redis.conf: bind, auth, maxmemory+eviction, AOF+RDB, dangerous commands renamed.
--  — minimal 3-sentinel quorum setup for automatic failover.
--  — health snapshot: memory, hit rate, evictions, replication lag, slow log.
--  — BGSAVE on a replica + copy off the box.
+- `redis-prod.conf` â€” hardened redis.conf: bind, auth, maxmemory+eviction, AOF+RDB, dangerous commands renamed.
+- `sentinel.conf` â€” minimal 3-sentinel quorum setup for automatic failover.
+- `monitor.sh` â€” health snapshot: memory, hit rate, evictions, replication lag, slow log.
+- `backup.sh` â€” BGSAVE on a replica + copy off the box.
 
-Adjust , , , and hostnames before use.
+Adjust `requirepass`, `maxmemory`, `bind`, and hostnames before use.

@@ -1,8 +1,8 @@
 {
-  "title": "Redis in Production ó Companion Configs",
-  "title_es": "Redis en ProducciÛn ó Configuraciones",
+  "title": "Complete Guide to Redis in Production",
+  "title_es": "Gu√≠a de Redis en Producci√≥n: Persistencia, HA y Seguridad",
   "description": "Production-ready Redis configuration files: redis.conf, sentinel.conf, ACL setup, monitoring script and backup script for the StackPractices guide.",
-  "description_es": "Archivos de configuraciÛn Redis listos para producciÛn: redis.conf, sentinel.conf, ACL, script de monitoreo y script de backup de la guÌa StackPractices.",
+  "description_es": "Archivos de configuraci√≥n Redis listos para producci√≥n: redis.conf, sentinel.conf, ACL, script de monitoreo y script de backup de la gu√≠a StackPractices.",
   "type": "guides",
   "topic": "databases",
   "slug": "complete-guide-redis-production",

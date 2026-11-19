@@ -1,12 +1,12 @@
-# Redis en Producción — Configuraciones
+# Redis en ProducciÃ³n â€” Configuraciones
 
-Archivos de configuración de producción para la [Guía de Redis en Producción](https://stackpractices.com/es/guides/complete-guide-redis-production/).
+Archivos de configuraciÃ³n de producciÃ³n para la [GuÃ­a de Redis en ProducciÃ³n](https://stackpractices.com/es/guides/complete-guide-redis-production/).
 
 ## Archivos
 
--  — redis.conf endurecido: bind, auth, maxmemory+expulsión, AOF+RDB, comandos peligrosos renombrados.
--  — configuración mínima de quórum de 3 sentinels para failover automático.
--  — snapshot de salud: memoria, hit rate, expulsiones, lag de replicación, slow log.
--  — BGSAVE en una réplica + copia fuera de la máquina.
+- `redis-prod.conf` â€” redis.conf endurecido: bind, auth, maxmemory+expulsiÃ³n, AOF+RDB, comandos peligrosos renombrados.
+- `sentinel.conf` â€” configuraciÃ³n mÃ­nima de quÃ³rum de 3 procesos Sentinel para failover automÃ¡tico.
+- `monitor.sh` â€” snapshot de salud: memoria, hit rate, expulsiones, lag de replicaciÃ³n, slow log.
+- `backup.sh` â€” BGSAVE en una rÃ©plica + copia fuera de la mÃ¡quina.
 
-Ajusta , ,  y los hostnames antes de usar.
+Ajusta `requirepass`, `maxmemory`, `bind` y los hostnames antes de usar.
