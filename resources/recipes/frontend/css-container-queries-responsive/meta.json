@@ -1,6 +1,6 @@
 {
-  "title": "CSS Container Queries Demo",
-  "title_es": "Demo de CSS Container Queries",
+  "title": "CSS Container Queries for Responsive Components",
+  "title_es": "Container Queries de CSS para componentes responsivos",
   "description": "Self-contained HTML demo from the CSS container queries recipe: one card component adapting to two differently-sized containers, using container-type, named containers, @container breakpoints and cqi units.",
   "description_es": "Demo HTML autocontenida de la receta de container queries: un mismo componente de tarjeta adaptándose a dos contenedores de tamaño distinto, con container-type, contenedores con nombre, breakpoints @container y unidades cqi.",
   "type": "recipes",
