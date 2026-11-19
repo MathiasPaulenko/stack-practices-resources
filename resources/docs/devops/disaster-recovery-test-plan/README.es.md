@@ -7,13 +7,21 @@ Archivos independientes de la plantilla [Plan de Pruebas de Recuperación ante D
 | Archivo | Qué es |
 |---------|--------|
 | `dr-test-plan-template.md` | Plan de pruebas de seis secciones: objetivos, alcance, escenarios, cronología de ejecución, integridad de datos e informe post-prueba con firmas |
-| `dr_test_runner.py` | Runner con boto3 que restaura un snapshot de RDS en la región de DR, ejecuta smoke tests, verifica la integridad de datos y mide el RTO real |
-| `game-day.sh` | Script de ingeniería del caos con escenarios `network`, `disk`, `cpu` y `full` sobre un cluster de Kubernetes |
+| `dr_test_runner.py` | Restaura un snapshot RDS ya disponible en la región de DR, prueba una URL de aplicación separada, compara conteos, registra el RTO tras las pruebas y deja el RPO sin calcular |
+| `game-day.sh` | Simulacros controlados de fallas en Kubernetes, con simulación predeterminada, ejecución explícita, contexto identificado y limpieza |
 | `dependency-checks.sh` | Verificaciones de DNS, CDN y circuit breaker de APIs externas para ejecutar tras el cambio de tráfico |
-| `integrity-checks.sql` | Consultas de conteo de transacciones, checksums, lag de replicación y seguimiento de RTO/RPO |
+| `integrity-checks.sql` | Consultas PostgreSQL de informe sobre métricas de replicación exportadas y resultados registrados de pruebas DR |
 | `dr-test-calendar.md` | Rotación trimestral de escenarios con reglas de cadencia y hoja de seguimiento |
 
 ## Uso
+
+Configura `KUBE_CONTEXT` con un clúster de pruebas dedicado. El primer comando solo simula; añade `--execute` después de revisar el destino y el alcance. El escenario `full` también requiere `PRIMARY_REGION` y una confirmación escrita. El escenario `disk` requiere un `FILL_SIZE` elegido para el sistema de archivos de prueba.
+
+```bash
+KUBE_CONTEXT="sustituye-por-el-contexto-de-prueba" ./game-day.sh --scenario network
+KUBE_CONTEXT="sustituye-por-el-contexto-de-prueba" ./game-day.sh --scenario network --execute
+```
+
 
 ```bash
 # Verificación de sintaxis antes de ejecutar nada destructivo
@@ -25,6 +33,6 @@ python -m py_compile dr_test_runner.py
 
 **Advertencia:** `game-day.sh --scenario full` acordona y drena todos los nodos con la etiqueta de región primaria. Ejecútalo solo en clusters que puedas permitirte tumbar, y nunca como primer ejercicio.
 
-`DRTestRunner` necesita credenciales de AWS con permiso para restaurar snapshots de RDS en la región de DR, `psql` en el PATH para la consulta de integridad y `kubectl` configurado para los escenarios de game day.
+Antes de ejecutar `DRTestRunner`, copia el snapshot de RDS a la región de destino y espera a que esté disponible. Proporciona credenciales de AWS, el grupo de subredes de destino, una URL de prueba aislada y las URL de conexión mediante configuración aprobada o un gestor de secretos. El ejecutor solo compara conteos; no calcula el RPO. `psql` debe estar en PATH y `kubectl` debe apuntar a un clúster aprobado para el simulacro.
 
 Fuente: [stackpractices.com/es/docs/disaster-recovery-test-plan](https://stackpractices.com/es/docs/disaster-recovery-test-plan/)

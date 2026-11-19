@@ -1,20 +1,20 @@
 # DR Test Calendar
 
-Rotating quarterly scenarios keep every failure mode exercised within a 12-month window.
+Set the exercise cadence from service risk, recovery objectives, change rate, and applicable requirements. A quarterly rotation is one possible schedule, not a universal rule.
 
 | Quarter | Scenario | Owner | Target RTO | Last Tested |
 |---------|----------|-------|------------|-------------|
-| Q1 | Primary region failure | Platform team | 4 hours | ______ |
-| Q2 | Database corruption | DBA team | 2 hours | ______ |
-| Q3 | Network partition | Network team | 1 hour | ______ |
-| Q4 | Full region + backup restore | SRE team | 8 hours | ______ |
+| `<period>` | `<scenario>` | `<owner>` | `<approved target>` | `<date or pending>` |
+| `<period>` | `<scenario>` | `<owner>` | `<approved target>` | `<date or pending>` |
+| `<period>` | `<scenario>` | `<owner>` | `<approved target>` | `<date or pending>` |
+| `<period>` | `<scenario>` | `<owner>` | `<approved target>` | `<date or pending>` |
 
 ## Cadence rules
 
 1. **Walk the timeline on paper first.** Run a tabletop pass over the execution schedule before touching infrastructure — gaps in ownership and access show up for free.
 2. **Include third-party dependency tests.** DR depends on DNS providers, CDNs, and external APIs. Run `dependency-checks.sh` during every cutover.
-3. **One named test lead per drill.** Rotating ownership between quarters is fine; a test without a single accountable lead produces a report nobody reads.
-4. **After any infrastructure change**, schedule a targeted drill for the changed component instead of waiting for the next quarter.
+3. **One named test lead per drill.** Rotating ownership between exercises is fine; a test without a single accountable lead produces a report nobody reads.
+4. **After any infrastructure change**, schedule a targeted drill for the changed component instead of waiting for the next scheduled exercise.
 
 ## Tracking sheet
 

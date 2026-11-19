@@ -1,5 +1,5 @@
--- Prometheus query for RPO tracking (replication lag over time)
--- Use in Grafana dashboard
+-- PostgreSQL example over a table populated from exported metrics.
+-- Replication lag is a proxy, not a measured RPO for every workload.
 SELECT
   date_trunc('day', timestamp) as day,
   avg(value) as avg_lag_seconds,
