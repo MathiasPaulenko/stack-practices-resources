@@ -1,52 +1,55 @@
-# PagerDuty-style escalation policy for SEV 1.
-# Maps to the PagerDuty REST API escalation_policy object.
-# escalation_delay_in_minutes = timeout for THAT rule (how long the level has
-# to ack/resolve before the incident moves to the next rule), not a wait
-# before the first notification. The first rule fires immediately.
-# num_loops repeats the whole policy if nobody acknowledges (max 9 — use 1–2).
-
+# Each YAML document below is a PagerDuty API request body.
+# Replace every <...> with an ID from your PagerDuty account before sending it.
+# Timeouts are per rule; the first target is notified immediately.
+# The final rule's timeout has no effect while num_loops is 0.
 escalation_policy:
+  type: escalation_policy
   name: "Platform Team - SEV1"
-  description: "SEV 1 escalation path for the platform team: L1 on-call, backup, team lead, engineering manager."
-  num_loops: 2
-  rules:
+  description: "Example SEV 1 path: L1 primary, backup, team lead, manager, executive"
+  num_loops: 0
+  escalation_rules:
     - escalation_delay_in_minutes: 5
       targets:
-        - type: user
-          id: "L1-primary"          # replace with your paging-tool schedule or user id
+        - id: "<L1_PRIMARY_USER_ID>"
+          type: user_reference
+    - escalation_delay_in_minutes: 5
+      targets:
+        - id: "<L1_BACKUP_USER_ID>"
+          type: user_reference
     - escalation_delay_in_minutes: 10
       targets:
-        - type: user
-          id: "L1-backup"
-    - escalation_delay_in_minutes: 15
+        - id: "<L2_TEAM_LEAD_USER_ID>"
+          type: user_reference
+    - escalation_delay_in_minutes: 25
       targets:
-        - type: user
-          id: "L2-team-lead"
-    - escalation_delay_in_minutes: 30
+        - id: "<L3_ENGINEERING_MANAGER_USER_ID>"
+          type: user_reference
+    - escalation_delay_in_minutes: 1
       targets:
-        - type: user
-          id: "L3-engineering-manager"
-  on_call_handoff_time: "08:00:00"
-  on_call_handoff_timezone: "UTC"
-
-# SEV 2 variant — wider windows, stops at L3.
-sev2_escalation_policy:
+        - id: "<L4_EXECUTIVE_USER_ID>"
+          type: user_reference
+---
+# SEV 2 profile: L1 at minute 0, backup at 15, L2 at 30, and L3 at 60.
+# Delays are 15 + 15 + 30 minutes; the final target is L3.
+escalation_policy:
+  type: escalation_policy
   name: "Platform Team - SEV2"
-  num_loops: 1
-  rules:
+  description: "Example SEV 2 path: L1 primary, backup, team lead, manager"
+  num_loops: 0
+  escalation_rules:
     - escalation_delay_in_minutes: 15
       targets:
-        - type: user
-          id: "L1-primary"
+        - id: "<L1_PRIMARY_USER_ID>"
+          type: user_reference
+    - escalation_delay_in_minutes: 15
+      targets:
+        - id: "<L1_BACKUP_USER_ID>"
+          type: user_reference
     - escalation_delay_in_minutes: 30
       targets:
-        - type: user
-          id: "L1-backup"
-    - escalation_delay_in_minutes: 60
+        - id: "<L2_TEAM_LEAD_USER_ID>"
+          type: user_reference
+    - escalation_delay_in_minutes: 1
       targets:
-        - type: user
-          id: "L2-team-lead"
-    - escalation_delay_in_minutes: 90
-      targets:
-        - type: user
-          id: "L3-engineering-manager"
+        - id: "<L3_ENGINEERING_MANAGER_USER_ID>"
+          type: user_reference
