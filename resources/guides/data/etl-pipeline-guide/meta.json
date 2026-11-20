@@ -10,7 +10,7 @@
     "https://stackpractices.com/guides/etl-pipeline-guide/",
     "https://stackpractices.com/es/guides/etl-pipeline-guide/"
   ],
-  "language": "bilingual",
+  "language": "multi",
   "tags": [
     "etl",
     "data-pipeline",

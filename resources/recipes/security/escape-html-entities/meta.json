@@ -10,7 +10,7 @@
     "https://stackpractices.com/recipes/escape-html-entities/",
     "https://stackpractices.com/es/recipes/escape-html-entities/"
   ],
-  "language": "python",
+  "language": "multi",
   "tags": [
     "html-escaping",
     "xss-prevention",
