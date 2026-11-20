@@ -1,6 +1,6 @@
 {
-  "title": "Interpreter Pattern — Companion Code",
-  "title_es": "Patrón Interpreter — Código complementario",
+  "title": "Interpreter Pattern",
+  "title_es": "Patrón Interpreter",
   "description": "Runnable interpreter pattern implementations in four languages: an arithmetic expression AST in Python, JavaScript and Java, plus a TypeScript config DSL with a hand-rolled parser, accompanying the Interpreter Pattern resource.",
   "description_es": "Implementaciones ejecutables del patrón interpreter en cuatro lenguajes: un AST de expresiones aritméticas en Python, JavaScript y Java, más un DSL de configuración en TypeScript con parser artesanal, que acompañan al recurso del Patrón Interpreter.",
   "type": "patterns",

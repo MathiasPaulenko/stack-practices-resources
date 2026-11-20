@@ -11,7 +11,7 @@ se evalúan contra un contexto — almacenadas como datos, no compiladas en cód
 
 | Archivo | Qué muestra |
 |---------|-------------|
-| `rule-engine.ts` | La jerarquía completa de expresiones (terminales + no terminales), los dos ejemplos de reglas y un parser de fórmulas por descenso recursivo que respeta la precedencia de `*`/`/`. Incluye `AND`/`OR` con short-circuit y una `DivideExpression` segura. |
+| `rule-engine.ts` | Jerarquía tipada de expresiones, dos ejemplos de reglas y un parser recursivo con precedencia, paréntesis y validación de entradas mal formadas. `AND`/`OR` cortocircuitan y la división rechaza el cero. |
 | `rules-factory.ts` | Factory de reglas JSON → árbol de expresiones con whitelist de variables — el patrón para almacenar reglas en una base de datos y validarlas en la frontera. |
 
 ## Ejecutar

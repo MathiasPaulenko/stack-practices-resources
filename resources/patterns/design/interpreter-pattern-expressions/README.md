@@ -11,7 +11,7 @@ not compiled into code.
 
 | File | What it shows |
 |------|---------------|
-| `rule-engine.ts` | The full expression hierarchy (terminals + non-terminals), the two rule examples, and a recursive-descent formula parser that respects `*`/`/` precedence. Short-circuit `AND`/`OR` and a safe `DivideExpression` included. |
+| `rule-engine.ts` | The typed expression hierarchy, two rule examples, and a recursive-descent parser with precedence, parentheses, and malformed-input checks. `AND`/`OR` short-circuit and division rejects zero. |
 | `rules-factory.ts` | JSON rules → expression tree factory with a variable whitelist — the pattern for storing rules in a database and validating them at the boundary. |
 
 ## Run

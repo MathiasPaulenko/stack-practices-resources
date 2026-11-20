@@ -1,4 +1,4 @@
-# FinOps — Optimización de Costos Cloud
+# FinOps — Gestión Financiera del Gasto Cloud
 
 Recursos acompañantes de la [guía FinOps](https://stackpractices.com/es/guides/finops-guide/)
 en StackPractices.

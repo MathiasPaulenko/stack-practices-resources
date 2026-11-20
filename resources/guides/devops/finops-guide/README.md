@@ -1,4 +1,4 @@
-# FinOps — Cloud Cost Optimization
+# FinOps — Cloud Financial Operations
 
 Companion resources for the [FinOps guide](https://stackpractices.com/guides/finops-guide/)
 on StackPractices.

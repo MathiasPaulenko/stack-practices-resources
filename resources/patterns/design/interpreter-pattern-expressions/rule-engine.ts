@@ -5,8 +5,21 @@
  * Run: npx tsx rule-engine.ts
  */
 
+export type ExpressionValue = string | number | boolean | null;
+export type ExpressionContext = Record<string, ExpressionValue>;
+
 export interface Expression {
-  interpret(context: Record<string, unknown>): boolean | number | unknown;
+  interpret(context: ExpressionContext): ExpressionValue;
+}
+
+function asNumber(value: ExpressionValue): number {
+  if (typeof value !== "number") throw new TypeError("expected a number");
+  return value;
+}
+
+function asBoolean(value: ExpressionValue): boolean {
+  if (typeof value !== "boolean") throw new TypeError("expected a boolean");
+  return value;
 }
 
 // --- Terminal expressions -------------------------------------------------
@@ -14,7 +27,10 @@ export interface Expression {
 export class VariableExpression implements Expression {
   constructor(private name: string) {}
 
-  interpret(context: Record<string, unknown>): unknown {
+  interpret(context: ExpressionContext): ExpressionValue {
+    if (!Object.prototype.hasOwnProperty.call(context, this.name)) {
+      throw new Error(`unknown variable: ${this.name}`);
+    }
     return context[this.name];
   }
 }
@@ -32,44 +48,43 @@ export class NumberExpression implements Expression {
 export class GreaterThanExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): boolean {
-    const l = this.left.interpret(context) as number;
-    const r = this.right.interpret(context) as number;
-    return l > r;
+  interpret(context: ExpressionContext): boolean {
+    return asNumber(this.left.interpret(context)) >
+      asNumber(this.right.interpret(context));
   }
 }
 
 export class AndExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): boolean {
+  interpret(context: ExpressionContext): boolean {
     // short-circuit: skip the right side when the left already decides
-    if (!this.left.interpret(context)) return false;
-    return this.right.interpret(context) as boolean;
+    if (!asBoolean(this.left.interpret(context))) return false;
+    return asBoolean(this.right.interpret(context));
   }
 }
 
 export class OrExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): boolean {
-    if (this.left.interpret(context)) return true;
-    return this.right.interpret(context) as boolean;
+  interpret(context: ExpressionContext): boolean {
+    if (asBoolean(this.left.interpret(context))) return true;
+    return asBoolean(this.right.interpret(context));
   }
 }
 
 export class NotExpression implements Expression {
   constructor(private expr: Expression) {}
 
-  interpret(context: Record<string, unknown>): boolean {
-    return !(this.expr.interpret(context) as boolean);
+  interpret(context: ExpressionContext): boolean {
+    return !asBoolean(this.expr.interpret(context));
   }
 }
 
 export class EqualsExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): boolean {
+  interpret(context: ExpressionContext): boolean {
     return this.left.interpret(context) === this.right.interpret(context);
   }
 }
@@ -77,10 +92,10 @@ export class EqualsExpression implements Expression {
 export class AddExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): number {
+  interpret(context: ExpressionContext): number {
     return (
-      (this.left.interpret(context) as number) +
-      (this.right.interpret(context) as number)
+      asNumber(this.left.interpret(context)) +
+      asNumber(this.right.interpret(context))
     );
   }
 }
@@ -88,10 +103,10 @@ export class AddExpression implements Expression {
 export class SubtractExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): number {
+  interpret(context: ExpressionContext): number {
     return (
-      (this.left.interpret(context) as number) -
-      (this.right.interpret(context) as number)
+      asNumber(this.left.interpret(context)) -
+      asNumber(this.right.interpret(context))
     );
   }
 }
@@ -99,10 +114,10 @@ export class SubtractExpression implements Expression {
 export class MultiplyExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): number {
+  interpret(context: ExpressionContext): number {
     return (
-      (this.left.interpret(context) as number) *
-      (this.right.interpret(context) as number)
+      asNumber(this.left.interpret(context)) *
+      asNumber(this.right.interpret(context))
     );
   }
 }
@@ -110,10 +125,10 @@ export class MultiplyExpression implements Expression {
 export class DivideExpression implements Expression {
   constructor(private left: Expression, private right: Expression) {}
 
-  interpret(context: Record<string, unknown>): number {
-    const r = this.right.interpret(context) as number;
+  interpret(context: ExpressionContext): number {
+    const r = asNumber(this.right.interpret(context));
     if (r === 0) throw new Error("division by zero");
-    return (this.left.interpret(context) as number) / r;
+    return asNumber(this.left.interpret(context)) / r;
   }
 }
 
@@ -121,9 +136,10 @@ export class DivideExpression implements Expression {
 //
 // parseExpression handles + and - (lowest precedence),
 // parseFactor handles * and / (bind tighter),
-// parseTerm handles literals and variables.
+// parseTerm handles parenthesized expressions, literals, and variables.
 
 export function parseFormula(tokens: string[]): Expression {
+  if (tokens.length === 0) throw new SyntaxError("formula cannot be empty");
   let index = 0;
 
   function parseExpression(): Expression {
@@ -132,7 +148,7 @@ export function parseFormula(tokens: string[]): Expression {
       index < tokens.length &&
       (tokens[index] === "+" || tokens[index] === "-")
     ) {
-      const op = tokens[index++];
+      const op = tokens[index++]!;
       const right = parseFactor();
       left =
         op === "+"
@@ -148,7 +164,7 @@ export function parseFormula(tokens: string[]): Expression {
       index < tokens.length &&
       (tokens[index] === "*" || tokens[index] === "/")
     ) {
-      const op = tokens[index++];
+      const op = tokens[index++]!;
       const right = parseTerm();
       left =
         op === "*"
@@ -160,12 +176,28 @@ export function parseFormula(tokens: string[]): Expression {
 
   function parseTerm(): Expression {
     const token = tokens[index++];
-    if (token === undefined) throw new Error("unexpected end of formula");
-    if (!isNaN(Number(token))) return new NumberExpression(Number(token));
-    return new VariableExpression(token);
+    if (token === undefined) throw new SyntaxError("expected a value");
+    if (token === "(") {
+      const nested = parseExpression();
+      if (tokens[index] !== ")") throw new SyntaxError("expected closing parenthesis");
+      index++;
+      return nested;
+    }
+    if (token === ")") throw new SyntaxError("unexpected closing parenthesis");
+    if (/^(?:\d+(?:\.\d+)?|\.\d+)$/.test(token)) {
+      return new NumberExpression(Number(token));
+    }
+    if (/^[A-Za-z_][A-Za-z0-9_]*$/.test(token)) {
+      return new VariableExpression(token);
+    }
+    throw new SyntaxError(`unexpected token: ${token}`);
   }
 
-  return parseExpression();
+  const expression = parseExpression();
+  if (index !== tokens.length) {
+    throw new SyntaxError(`unexpected token: ${tokens[index]}`);
+  }
+  return expression;
 }
 
 // --- Demo -------------------------------------------------------------------

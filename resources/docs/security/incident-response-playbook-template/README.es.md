@@ -1,6 +1,6 @@
 # Plantilla de Playbook de Respuesta a Incidentes
 
-Playbook rellenable en markdown para manejar incidentes de seguridad, estructurado en torno a las cinco fases de NIST SP 800-61: Detección, Contención, Erradicación, Recuperación y Lecciones Aprendidas.
+Playbook rellenable en markdown para manejar incidentes de seguridad, estructurado en torno al ciclo de vida de NIST SP 800-61: Detección, Contención, Erradicación, Recuperación y Lecciones Aprendidas.
 
 ## Contenido
 

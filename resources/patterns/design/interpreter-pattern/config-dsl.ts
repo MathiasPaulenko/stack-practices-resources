@@ -39,15 +39,21 @@ class SequenceExpression implements Expression {
 
 class ConfigParser {
   parse(input: string): Expression {
-    const lines = input.trim().split("\n");
+    const lines = input.split(/\r?\n/).map(line => line.trim()).filter(line => line.length > 0);
     const expressions: Expression[] = [];
     for (const line of lines) {
-      const parts = line.split(" ");
+      const parts = line.split(/\s+/);
       const cmd = parts[0].toUpperCase();
-      if (cmd === "SET") expressions.push(new SetExpression(parts[1], parts.slice(2).join(" ")));
-      else if (cmd === "GET") expressions.push(new GetExpression(parts[1]));
-      else if (cmd === "DEL") expressions.push(new DelExpression(parts[1]));
-      else throw new Error(`Unknown command: ${cmd}`);
+      if (cmd === "SET") {
+        if (parts.length < 3) throw new Error("SET requires a key and a value");
+        expressions.push(new SetExpression(parts[1], parts.slice(2).join(" ")));
+      } else if (cmd === "GET" || cmd === "DEL") {
+        if (parts.length !== 2) throw new Error(`${cmd} requires exactly one key`);
+        if (cmd === "GET") expressions.push(new GetExpression(parts[1]));
+        else expressions.push(new DelExpression(parts[1]));
+      } else {
+        throw new Error(`Unknown command: ${cmd}`);
+      }
     }
     return new SequenceExpression(expressions);
   }

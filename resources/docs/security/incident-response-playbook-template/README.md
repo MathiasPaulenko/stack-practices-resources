@@ -1,6 +1,6 @@
 # Incident Response Playbook Template
 
-Fillable markdown playbook for handling security incidents, structured around the five NIST SP 800-61 phases: Detection, Containment, Eradication, Recovery, and Lessons Learned.
+Fillable markdown playbook for handling security incidents, structured around the incident-handling lifecycle of NIST SP 800-61: Detection, Containment, Eradication, Recovery, and Lessons Learned.
 
 ## Contents
 
