@@ -1,0 +1,17 @@
+{
+  "title": "Logging Standards Document Template",
+  "title_es": "Plantilla de Documento de Estándares de Logging",
+  "description": "Fill-in template for a logging standards document: log levels, required JSON fields, event categories, PII redaction rules, retention tiers, and transport requirements.",
+  "description_es": "Plantilla rellenable para un documento de estándares de logging: niveles de log, campos JSON requeridos, categorías de eventos, reglas de redacción PII, niveles de retención y requisitos de transporte.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "logging-standards-document",
+  "source_urls": ["https://stackpractices.com/docs/logging-standards-document/"],
+  "language": "markdown",
+  "tags": ["logging", "standards", "structured-logging", "observability", "template", "devops"],
+  "files": [
+    "logging-standards-template.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

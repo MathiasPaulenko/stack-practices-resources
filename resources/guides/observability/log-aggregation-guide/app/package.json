@@ -1,0 +1,12 @@
+{
+  "name": "log-aggregation-guide-demo",
+  "version": "1.0.0",
+  "private": true,
+  "main": "logger.js",
+  "scripts": {
+    "start": "node logger.js"
+  },
+  "dependencies": {
+    "pino": "^9.0.0"
+  }
+}

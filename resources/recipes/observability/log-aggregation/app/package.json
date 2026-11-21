@@ -1,0 +1,13 @@
+{
+  "name": "log-aggregation-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Structured logging demo with correlation IDs for the log-aggregation recipe",
+  "main": "logger.js",
+  "scripts": {
+    "start": "node logger.js"
+  },
+  "dependencies": {
+    "winston": "^3.11.0"
+  }
+}

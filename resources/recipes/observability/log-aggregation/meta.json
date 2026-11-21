@@ -1,0 +1,20 @@
+{
+  "title": "Log Aggregation with ELK, Fluentd, and Loki",
+  "title_es": "Agregación de Logs con ELK, Fluentd y Loki",
+  "description": "Runnable log aggregation stack: Docker Compose with Fluentd, Elasticsearch and Kibana, Fluentd config with file buffering and retries, and a Winston logger with correlation IDs.",
+  "description_es": "Stack ejecutable de agregación de logs: Docker Compose con Fluentd, Elasticsearch y Kibana, configuración de Fluentd con buffering en disco y reintentos, y logger de Winston con correlation IDs.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "log-aggregation",
+  "source_urls": ["https://stackpractices.com/recipes/log-aggregation/"],
+  "language": "yaml,javascript",
+  "tags": ["log-aggregation", "fluentd", "elasticsearch", "kibana", "loki", "docker-compose", "winston", "observability"],
+  "files": [
+    "docker-compose.yml",
+    "fluent.conf",
+    "app/logger.js",
+    "app/package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

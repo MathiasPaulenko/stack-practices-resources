@@ -1,0 +1,32 @@
+{
+  "title": "Complete Guide to Log Aggregation",
+  "title_es": "Guía Completa de Agregación de Logs",
+  "description": "Runnable Fluent Bit to Loki pipeline: Docker Compose with Loki, Grafana and a Fluent Bit agent, a pino structured logger emitting JSON, and a shipper config with labels, parsing and disk buffering.",
+  "description_es": "Pipeline ejecutable de Fluent Bit a Loki: Docker Compose con Loki, Grafana y un agente Fluent Bit, logger estructurado pino que emite JSON, y configuración de shipper con labels, parsing y buffering en disco.",
+  "type": "guides",
+  "topic": "observability",
+  "slug": "log-aggregation-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/log-aggregation-guide/"
+  ],
+  "language": "yaml,javascript",
+  "tags": [
+    "log-aggregation",
+    "fluent-bit",
+    "loki",
+    "grafana",
+    "pino",
+    "docker-compose",
+    "structured-logging",
+    "observability"
+  ],
+  "files": [
+    "docker-compose.yml",
+    "fluent-bit.conf",
+    "app/logger.js",
+    "app/Dockerfile",
+    "app/package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}
