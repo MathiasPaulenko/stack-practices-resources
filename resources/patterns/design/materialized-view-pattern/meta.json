@@ -1,0 +1,31 @@
+{
+  "title": "Materialized View Pattern — Companion Resources",
+  "title_es": "Patrón de Vista Materializada — Recursos complementarios",
+  "description": "Ready-to-adapt materialized view implementations: Django + Celery refresh tasks, a Spring @Scheduled refresh service, and PostgreSQL native materialized views with a trigger-based incremental refresh.",
+  "description_es": "Implementaciones de vistas materializadas listas para adaptar: tareas de refresco con Django + Celery, un servicio de refresco con Spring @Scheduled y vistas materializadas nativas de PostgreSQL con refresco incremental por trigger.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "materialized-view-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/materialized-view-pattern/",
+    "https://stackpractices.com/es/patterns/materialized-view-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "materialized-view",
+    "design-pattern",
+    "databases",
+    "caching",
+    "postgresql",
+    "python",
+    "java",
+    "sql"
+  ],
+  "files": [
+    "mv_daily_revenue_django.py",
+    "ProductStatsRefreshService.java",
+    "materialized_views_postgres.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Merge JSON Files in JavaScript — Runnable Node.js Examples",
+  "title_es": "Fusionar Archivos JSON en JavaScript — Ejemplos Node.js ejecutables",
+  "description": "Node.js JSON merge implementations: hardened deepMerge with prototype-pollution guard, directory merge, async ESM variant, conflict resolver with logging, record dedupe, and JSONStream concat for large files.",
+  "description_es": "Implementaciones Node.js de fusión de JSON: deepMerge blindado contra prototype pollution, fusión de directorio, variante ESM asíncrona, resolver de conflictos con log, deduplicación de registros y concat con JSONStream para archivos grandes.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "merge-json-files-javascript",
+  "source_urls": [
+    "https://stackpractices.com/recipes/merge-json-files-javascript/",
+    "https://stackpractices.com/es/recipes/merge-json-files-javascript/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "json",
+    "javascript",
+    "nodejs",
+    "deep-merge",
+    "lodash",
+    "jsonstream"
+  ],
+  "files": [
+    "src/mergeJson.js",
+    "src/mergeJsonDir.js",
+    "src/mergeRecords.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

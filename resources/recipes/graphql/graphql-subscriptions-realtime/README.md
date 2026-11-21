@@ -1,14 +1,14 @@
-# GraphQL Subscriptions over WebSockets — Companion
+# GraphQL Subscriptions over WebSockets â€” Companion
 
 Runnable version of the recipe: one Node process serves GraphQL over HTTP **and** subscriptions over WebSocket on the same port, backed by an in-memory `PubSub`.
 
 ## Files
 
-- `schema.mjs` — typeDefs with `postCreated` / `postUpdated(id)` subscriptions
-- `resolvers.mjs` — PubSub wiring, `withFilter` per-subscriber filtering, `createPost` / `updatePost` publishers
-- `server.mjs` — Express + `expressMiddleware` on the same `http.Server` the `graphql-ws` server attaches to, with drain plugins
-- `demo.mjs` — end-to-end proof: real WS client subscribes, HTTP mutations trigger the events
-- `tests/subscriptions.test.js` — vitest unit tests for publish/filter behavior
+- `schema.mjs` â€” typeDefs with `postCreated` / `postUpdated(id)` subscriptions
+- `resolvers.mjs` â€” PubSub wiring, `withFilter` per-subscriber filtering, `createPost` / `updatePost` publishers
+- `server.mjs` â€” Express + `expressMiddleware` on the same `http.Server` the `graphql-ws` server attaches to, with drain plugins
+- `demo.mjs` â€” end-to-end proof: real WS client subscribes, HTTP mutations trigger the events
+- `tests/subscriptions.test.js` â€” vitest unit tests for publish/filter behavior
 
 ## Run
 

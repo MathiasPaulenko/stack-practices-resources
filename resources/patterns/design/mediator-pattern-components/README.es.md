@@ -1,11 +1,11 @@
-# Patrón Mediator para Componentes UI — Ejemplos TypeScript
+# PatrÃ³n Mediator para Componentes UI â€” Ejemplos TypeScript
 
-Complemento del patrón de StackPractices [Patrón Mediator para Componentes UI](https://stackpractices.com/es/patterns/mediator-pattern-components/).
+Complemento del patrÃ³n de StackPractices [PatrÃ³n Mediator para Componentes UI](https://stackpractices.com/es/patterns/mediator-pattern-components/).
 
 | Archivo | Contiene |
 |---|---|
 | src/dashboard-mediator.ts | DashboardMediator enrutando eventos de widgets |
-| src/event-bus.ts | Variante event bus con desuscripción |
+| src/event-bus.ts | Variante event bus con desuscripciÃ³n |
 | src/chat-room.ts | Escenario de sala de chat |
 
 Ejecutar con ts-node o compilar con tsc (TypeScript 4+).

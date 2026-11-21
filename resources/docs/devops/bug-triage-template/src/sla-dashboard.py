@@ -38,13 +38,13 @@ def format_slack_alert(aged_bugs: List[BugTicket]) -> str:
     if not aged_bugs:
         return "No bugs have exceeded their SLA target."
 
-    lines = [":warning: *SLA Violation Alert* — Bugs exceeding resolution target:\n"]
+    lines = [":warning: *SLA Violation Alert* â€” Bugs exceeding resolution target:\n"]
     for bug in sorted(aged_bugs, key=lambda b: b.created_at):
         age_hours = (datetime.now() - bug.created_at).total_seconds() / 3600
         sla_hours = SLA_TARGETS[bug.severity].total_seconds() / 3600
         lines.append(
-            f"• {bug.severity} {bug.id} — {age_hours:.0f}h old "
-            f"(SLA: {sla_hours:.0f}h) — Assigned: {bug.assignee}"
+            f"â€¢ {bug.severity} {bug.id} â€” {age_hours:.0f}h old "
+            f"(SLA: {sla_hours:.0f}h) â€” Assigned: {bug.assignee}"
         )
     return "\n".join(lines)
 

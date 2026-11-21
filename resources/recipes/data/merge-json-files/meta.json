@@ -1,0 +1,30 @@
+{
+  "title": "Merge JSON Files — Runnable Examples",
+  "title_es": "Fusionar Archivos JSON — Ejemplos ejecutables",
+  "description": "Runnable JSON merge implementations: array concatenation, null-safe deep merge with prototype-pollution guard, glob multi-file merge, and deduplication in Python, JavaScript, and Java (Jackson).",
+  "description_es": "Implementaciones ejecutables de fusión de JSON: concatenación de arrays, deep merge seguro con null y contra prototype pollution, fusión multi-archivo con glob y deduplicación en Python, JavaScript y Java (Jackson).",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "merge-json-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/merge-json-files/",
+    "https://stackpractices.com/es/recipes/merge-json-files/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "json",
+    "merge",
+    "deep-merge",
+    "python",
+    "javascript",
+    "java",
+    "jackson"
+  ],
+  "files": [
+    "src/merge_json.py",
+    "src/mergeJson.js",
+    "src/JsonMerge.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

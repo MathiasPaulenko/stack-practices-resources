@@ -1,0 +1,28 @@
+{
+  "title": "Metrics Aggregation: Collect, Tag and Query Metrics",
+  "title_es": "Metrics Aggregation: recolecta, etiqueta y consulta métricas",
+  "description": "Companion code for the metrics aggregation pattern: prometheus_client examples for all four metric types, tagged business metrics, a FastAPI middleware, an OpenTelemetry setup, a prom-client Express example, a StatsD push variant, plus Prometheus scrape config, alerting rules, PromQL dashboard queries and tests.",
+  "description_es": "Código companion del patrón de agregación de métricas: ejemplos con prometheus_client para los cuatro tipos de métrica, métricas de negocio etiquetadas, un middleware de FastAPI, una configuración de OpenTelemetry, un ejemplo de Express con prom-client, una variante push con StatsD, además de configuración de scrape de Prometheus, reglas de alertado, consultas PromQL para dashboards y tests.",
+  "type": "patterns",
+  "topic": "observability",
+  "slug": "metrics-aggregation-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/metrics-aggregation-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["observability", "metrics", "prometheus", "opentelemetry", "statsd", "promql", "grafana", "python", "javascript"],
+  "files": [
+    "prometheus_metrics.py",
+    "business_metrics.py",
+    "fastapi_middleware.py",
+    "otel_metrics.py",
+    "statsd_metrics.py",
+    "prom_client_express.js",
+    "prometheus.yml",
+    "alerting_rules.yml",
+    "dashboard_queries.promql",
+    "test_metrics_aggregation.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

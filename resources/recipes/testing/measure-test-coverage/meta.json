@@ -1,0 +1,23 @@
+{
+  "title": "Measure Test Coverage (pytest-cov, c8, JaCoCo) — Companion Resources",
+  "title_es": "Medir Cobertura de Test (pytest-cov, c8, JaCoCo) — Recursos complementarios",
+  "description": "Ready-to-use coverage configurations: coverage.py pyproject settings, Vitest coverage thresholds, JaCoCo Maven rules, and a GitHub Actions workflow that merges parallel coverage and enforces a gate.",
+  "description_es": "Configuraciones de cobertura listas para usar: settings de coverage.py en pyproject, thresholds de Vitest, reglas de JaCoCo en Maven y un workflow de GitHub Actions que fusiona cobertura en paralelo y aplica un gate.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "measure-test-coverage",
+  "source_urls": [
+    "https://stackpractices.com/recipes/measure-test-coverage/",
+    "https://stackpractices.com/es/recipes/measure-test-coverage/"
+  ],
+  "language": "bilingual",
+  "tags": ["testing", "coverage", "pytest-cov", "c8", "vitest", "jacoco", "ci-cd", "quality-gates"],
+  "files": [
+    "pyproject-coverage.toml",
+    "vitest.config.ts",
+    "jacoco-pom-snippet.xml",
+    "coverage-gate.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Magic Link Authentication (Express + Nodemailer)",
+  "title_es": "Autenticación con Magic Links (Express + Nodemailer)",
+  "description": "Runnable passwordless login example: magic link request, signed single-use tokens with expiry, email delivery via Nodemailer (Ethereal for dev), and verify endpoint that consumes the token on POST.",
+  "description_es": "Ejemplo ejecutable de login sin contraseña: solicitud de magic link, tokens firmados de uso único con expiración, envío por Nodemailer (Ethereal en dev) y endpoint de verificación que consume el token vía POST.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "magic-link-authentication",
+  "source_urls": ["https://stackpractices.com/recipes/magic-link-authentication/"],
+  "language": "javascript",
+  "tags": ["authentication", "passwordless", "magic-link", "express", "nodemailer", "security"],
+  "files": [
+    "server.js",
+    "package.json",
+    ".env.example",
+    "README.md",
+    "README.es.md"
+  ]
+}

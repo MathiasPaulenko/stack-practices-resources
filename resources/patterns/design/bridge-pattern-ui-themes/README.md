@@ -1,4 +1,4 @@
-# Bridge Pattern for UI Themes — TypeScript Examples
+# Bridge Pattern for UI Themes â€” TypeScript Examples
 
 Companion to the StackPractices pattern [Bridge Pattern for UI Themes](https://stackpractices.com/patterns/bridge-pattern-ui-themes/).
 

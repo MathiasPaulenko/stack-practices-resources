@@ -1,6 +1,6 @@
-# Patrón Bridge para Temas UI — Ejemplos TypeScript
+# PatrÃ³n Bridge para Temas UI â€” Ejemplos TypeScript
 
-Complemento del patrón de StackPractices [Patrón Bridge para Temas UI](https://stackpractices.com/es/patterns/bridge-pattern-ui-themes/).
+Complemento del patrÃ³n de StackPractices [PatrÃ³n Bridge para Temas UI](https://stackpractices.com/es/patterns/bridge-pattern-ui-themes/).
 
 | Archivo | Contiene |
 |---|---|

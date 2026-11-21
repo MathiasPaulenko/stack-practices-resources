@@ -1,4 +1,4 @@
-# Mediator Pattern for UI Components — TypeScript Examples
+# Mediator Pattern for UI Components â€” TypeScript Examples
 
 Companion to the StackPractices pattern [Mediator Pattern for UI Components](https://stackpractices.com/patterns/mediator-pattern-components/).
 

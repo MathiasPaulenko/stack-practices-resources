@@ -1,0 +1,12 @@
+scrape_configs:
+  # Go pull example (main.go listens on :8080)
+  - job_name: "go-app"
+    scrape_interval: 15s
+    static_configs:
+      - targets: ["localhost:8080"]
+
+  # Python OpenTelemetry example (PrometheusMetricReader listens on :9464)
+  - job_name: "otel-python"
+    scrape_interval: 15s
+    static_configs:
+      - targets: ["localhost:9464"]

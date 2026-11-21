@@ -1,0 +1,27 @@
+# PromQL queries for common dashboards
+
+# Request rate (requests per second)
+rate(http_requests_total[5m])
+
+# Error rate (percentage of 5xx responses)
+sum(rate(http_requests_total{status=~"5.."}[5m]))
+  / sum(rate(http_requests_total[5m])) * 100
+
+# 95th percentile latency
+histogram_quantile(0.95,
+  rate(http_request_duration_seconds_bucket[5m]))
+
+# Average latency by endpoint
+rate(http_request_duration_seconds_sum[5m])
+  / rate(http_request_duration_seconds_count[5m])
+
+# Active connections over time
+active_connections
+
+# Orders per minute by category
+sum(rate(orders_processed_total[1m])) by (product_category)
+
+# Top 5 slowest endpoints
+topk(5,
+  histogram_quantile(0.95,
+    rate(http_request_duration_seconds_bucket[5m])) by (endpoint))

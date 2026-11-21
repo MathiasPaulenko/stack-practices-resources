@@ -1,4 +1,4 @@
-# Bug Triage Template — Companion Scripts
+# Bug Triage Template â€” Companion Scripts
 
 Companion to the StackPractices template [Bug Triage Template](https://stackpractices.com/docs/bug-triage-template/).
 

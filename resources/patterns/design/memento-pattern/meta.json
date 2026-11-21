@@ -1,0 +1,31 @@
+{
+  "title": "Memento Pattern — Runnable Examples",
+  "title_es": "Patrón Memento — Ejemplos ejecutables",
+  "description": "Runnable Memento implementations: text editor undo stack with opaque snapshots and bounded caretaker history in Python, JavaScript, and Java, including schema versioning and mid-text insertion.",
+  "description_es": "Implementaciones ejecutables del patrón Memento: pila de deshacer de editor de texto con instantáneas opacas e historial acotado en Python, JavaScript y Java, con versionado de esquema e inserción a mitad de texto.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "memento-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/memento-pattern/",
+    "https://stackpractices.com/es/patterns/memento-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "memento",
+    "design-pattern",
+    "behavioral-pattern",
+    "undo-redo",
+    "state-snapshot",
+    "python",
+    "javascript",
+    "java"
+  ],
+  "files": [
+    "src/memento_pattern.py",
+    "src/mementoPattern.js",
+    "src/MementoDemo.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

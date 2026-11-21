@@ -1,0 +1,35 @@
+# GitHub Actions: parallel test jobs emit partial coverage, merge job enforces the gate
+name: Coverage
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        shard: [1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pytest pytest-cov pytest-split
+      # each group runs a subset and writes its own coverage data
+      - run: pytest --cov=myproject --cov-report=xml --cov-append --splits 2 --group ${{ matrix.shard }} tests/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-${{ matrix.shard }}
+          path: coverage.xml
+
+  gate:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+      - run: pip install coverage[toml]
+      # merge partial reports, then enforce the threshold on the combined data
+      - run: coverage combine . && coverage report --fail-under=80
+      - uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}

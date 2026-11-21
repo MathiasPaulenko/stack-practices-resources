@@ -1,0 +1,32 @@
+{
+  "title": "Mediator Pattern — Runnable Examples",
+  "title_es": "Patrón Mediator — Ejemplos ejecutables",
+  "description": "Runnable Mediator implementations: chat room in Python and JavaScript, colleague/mediator classes in Java, and a multi-step checkout wizard mediator in TypeScript.",
+  "description_es": "Implementaciones ejecutables del patrón Mediator: sala de chat en Python y JavaScript, clases colega/mediador en Java y un mediador de wizard de checkout en TypeScript.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "mediator-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/mediator-pattern/",
+    "https://stackpractices.com/es/patterns/mediator-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "mediator",
+    "design-pattern",
+    "behavioral-pattern",
+    "decoupling",
+    "python",
+    "javascript",
+    "java",
+    "typescript"
+  ],
+  "files": [
+    "src/chat_room.py",
+    "src/chat-room.js",
+    "src/ChatRoom.java",
+    "src/checkout-wizard.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

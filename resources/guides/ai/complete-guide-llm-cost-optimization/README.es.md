@@ -1,12 +1,12 @@
-# Optimización de Costes LLM — Companion
+# OptimizaciÃ³n de Costes LLM â€” Companion
 
-Toolkit ejecutable de [Guía Completa de Optimización de Costes LLM](https://stackpractices.com/es/guides/complete-guide-llm-cost-optimization/).
+Toolkit ejecutable de [GuÃ­a Completa de OptimizaciÃ³n de Costes LLM](https://stackpractices.com/es/guides/complete-guide-llm-cost-optimization/).
 
-| Archivo | Descripción |
+| Archivo | DescripciÃ³n |
 |---------|-------------|
 | `router.py` | `ModelRouter` + `CascadingRouter` (barato primero, escala con UNCERTAIN) |
 | `cache.py` | `LLMCache` exacta + `SemanticCache` |
-| `budget.py` | `BudgetController` — alerta al 80%, corte al 100% |
+| `budget.py` | `BudgetController` â€” alerta al 80%, corte al 100% |
 | `batch_job.py` | Helpers de Batch API (50% dto., 24h) |
 | `token_counter.py` | `TokenManager` con tiktoken |
 | `test_cost.py` | Tests unitarios offline |

@@ -1,0 +1,23 @@
+{
+  "title": "Metrics Collection: Prometheus, StatsD & OpenTelemetry",
+  "title_es": "Recolección de métricas: Prometheus, StatsD y OpenTelemetry",
+  "description": "Runnable examples of application metrics collection: Prometheus pull in Go, StatsD push in Node.js, and OpenTelemetry in Python, plus a Prometheus scrape config.",
+  "description_es": "Ejemplos ejecutables de recolección de métricas: pull de Prometheus en Go, push de StatsD en Node.js y OpenTelemetry en Python, más una configuración de scrape de Prometheus.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "metrics-collection",
+  "source_urls": [
+    "https://stackpractices.com/recipes/metrics-collection/",
+    "https://stackpractices.com/es/recipes/metrics-collection/"
+  ],
+  "language": "multi",
+  "tags": ["prometheus", "statsd", "opentelemetry", "metrics", "observability", "monitoring"],
+  "files": [
+    "main.go",
+    "statsd-client.js",
+    "otel_metrics.py",
+    "prometheus.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

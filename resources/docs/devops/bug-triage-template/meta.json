@@ -1,8 +1,8 @@
 {
-  "title": "Bug Triage Template — Companion Scripts",
-  "title_es": "Plantilla de Triaje de Bugs — Scripts Companion",
+  "title": "Bug Triage Template â€” Companion Scripts",
+  "title_es": "Plantilla de Triaje de Bugs â€” Scripts Companion",
   "description": "Automation scripts from the bug triage template: GitHub Actions auto-labeling, stack-trace fingerprinting, SLA aging alerts, stale-bug finder.",
-  "description_es": "Scripts de automatización de la plantilla de triaje: auto-etiquetado con GitHub Actions, fingerprinting de stack traces, alertas SLA, buscador de bugs obsoletos.",
+  "description_es": "Scripts de automatizaciÃ³n de la plantilla de triaje: auto-etiquetado con GitHub Actions, fingerprinting de stack traces, alertas SLA, buscador de bugs obsoletos.",
   "type": "docs",
   "topic": "devops",
   "slug": "bug-triage-template",

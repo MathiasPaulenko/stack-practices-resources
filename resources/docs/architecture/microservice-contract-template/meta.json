@@ -1,0 +1,24 @@
+{
+  "title": "Microservice Contract Template",
+  "title_es": "Plantilla de Contrato de Microservicios",
+  "description": "A downloadable pack for documenting microservice API agreements: markdown contract template, filled example, Pact consumer test, OpenAPI 3.1 fragment, and a proto3 contract.",
+  "description_es": "Pack descargable para documentar acuerdos de API entre microservicios: plantilla de contrato en markdown, ejemplo rellenado, test de consumidor Pact, fragmento OpenAPI 3.1 y contrato proto3.",
+  "type": "docs",
+  "topic": "architecture",
+  "slug": "microservice-contract-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/microservice-contract-template/",
+    "https://stackpractices.com/es/docs/microservice-contract-template/"
+  ],
+  "language": "multi",
+  "tags": ["microservices", "contract", "api", "openapi", "pact", "grpc", "sla", "template"],
+  "files": [
+    "contract-template.md",
+    "contract-filled-example.md",
+    "pact-consumer.test.js",
+    "openapi-fragment.yaml",
+    "user-service.proto",
+    "README.md",
+    "README.es.md"
+  ]
+}

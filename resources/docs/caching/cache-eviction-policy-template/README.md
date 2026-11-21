@@ -13,4 +13,4 @@ Companion code for [Cache Eviction Policy Template](https://stackpractices.com/d
 ## How to use
 
 - Copy a conf into your Redis deployment and adjust `maxmemory` to your host (max ~75% of RAM).
-- `python monitor_eviction.py` — needs `pip install redis` and a reachable instance.
+- `python monitor_eviction.py` â€” needs `pip install redis` and a reachable instance.

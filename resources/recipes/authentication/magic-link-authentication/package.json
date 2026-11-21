@@ -1,0 +1,14 @@
+{
+  "name": "magic-link-authentication",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Passwordless login with magic links: Express + Nodemailer runnable example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemailer": "^7.0.5"
+  }
+}

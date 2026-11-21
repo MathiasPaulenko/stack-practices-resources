@@ -1,8 +1,8 @@
 {
-  "title": "Mediator Pattern for UI Components — TypeScript Examples",
-  "title_es": "Patrón Mediator para Componentes UI — Ejemplos TypeScript",
+  "title": "Mediator Pattern for UI Components â€” TypeScript Examples",
+  "title_es": "PatrÃ³n Mediator para Componentes UI â€” Ejemplos TypeScript",
   "description": "TypeScript implementations of the Mediator pattern: dashboard mediator, event bus variant, and chat room.",
-  "description_es": "Implementaciones TypeScript del patrón Mediator: mediador de dashboard, variante event bus y sala de chat.",
+  "description_es": "Implementaciones TypeScript del patrÃ³n Mediator: mediador de dashboard, variante event bus y sala de chat.",
   "type": "patterns",
   "topic": "design",
   "slug": "mediator-pattern-components",

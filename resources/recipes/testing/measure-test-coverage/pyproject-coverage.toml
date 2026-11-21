@@ -1,0 +1,26 @@
+# coverage.py / pytest-cov configuration (merge into pyproject.toml)
+[tool.coverage.run]
+source = ["myproject"]          # the importable package, not the tests dir
+branch = true
+omit = [
+    "*/tests/*",
+    "*/migrations/*",
+    "*/venv/*",
+]
+
+[tool.coverage.report]
+precision = 2
+fail_under = 80
+skip_covered = true
+show_missing = true
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "@overload",
+]
+
+[tool.coverage.html]
+directory = "htmlcov"
+
+[tool.coverage.xml]
+output = "coverage.xml"
