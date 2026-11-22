@@ -1,0 +1,25 @@
+{
+  "title": "Multi-Tenant Data Isolation Pattern — Runnable Implementations",
+  "title_es": "Patrón Multi-Tenant Data Isolation — Implementaciones ejecutables",
+  "description": "Runnable tenant-isolation examples in three languages: PostgreSQL row-level security with transaction-scoped context (Python/SQLAlchemy), schema-per-tenant provisioning with safe identifier handling (Python), database-per-tenant connection pools (JavaScript), and Spring tenant resolution middleware plus repository (Java).",
+  "description_es": "Ejemplos ejecutables de aislamiento de tenants en tres lenguajes: row-level security de PostgreSQL con contexto por transacción (Python/SQLAlchemy), aprovisionamiento schema-per-tenant con identificadores seguros (Python), pools de conexión database-per-tenant (JavaScript) y middleware de resolución de tenant en Spring más repositorio (Java).",
+  "type": "patterns",
+  "topic": "architecture",
+  "slug": "multi-tenant-data-isolation-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/multi-tenant-data-isolation-pattern/",
+    "https://stackpractices.com/es/patterns/multi-tenant-data-isolation-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["multi-tenant", "isolation", "row-level-security", "postgresql", "sqlalchemy", "spring", "saas", "security"],
+  "files": [
+    "src/row_level_security.py",
+    "src/schema_per_tenant.py",
+    "src/database_per_tenant.js",
+    "src/TenantInterceptor.java",
+    "src/TenantContext.java",
+    "src/DocumentRepository.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

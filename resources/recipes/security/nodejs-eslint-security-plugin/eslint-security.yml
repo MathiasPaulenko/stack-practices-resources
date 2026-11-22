@@ -1,0 +1,33 @@
+# CI gate — drop into .github/workflows/eslint-security.yml
+name: ESLint Security
+
+on: [push, pull_request]
+
+jobs:
+  eslint-security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run ESLint with security plugin
+        run: npx eslint . --format json --output-file eslint-report.json || true
+
+      - name: Fail on new security findings
+        run: |
+          node -e "
+          const report = require('./eslint-report.json');
+          const hits = report.filter(f =>
+            f.messages.some(m => m.ruleId && m.ruleId.startsWith('security/') && m.severity === 2)
+          );
+          if (hits.length > 0) {
+            console.error('Security findings in', hits.length, 'file(s)');
+            process.exit(1);
+          }
+          "

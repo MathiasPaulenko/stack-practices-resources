@@ -1,0 +1,29 @@
+{
+  "title": "Nginx Reverse Proxy & API Gateway — Companion Config",
+  "title_es": "Nginx Reverse Proxy y API Gateway — Config companion",
+  "description": "Single-file Nginx gateway config with rate limiting, an upstream pool with backup, path routing, forwarded headers, and a docker-compose playground with echo backends.",
+  "description_es": "Config de gateway Nginx en un solo archivo con rate limiting, pool upstream con backup, routing por path, headers reenviados y un entorno docker-compose con backends echo.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "nginx-reverse-proxy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nginx-reverse-proxy/",
+    "https://stackpractices.com/es/recipes/nginx-reverse-proxy/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nginx",
+    "reverse-proxy",
+    "api-gateway",
+    "load-balancing",
+    "rate-limiting",
+    "docker-compose",
+    "devops"
+  ],
+  "files": [
+    "nginx.conf",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

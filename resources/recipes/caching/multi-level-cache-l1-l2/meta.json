@@ -1,0 +1,30 @@
+{
+  "title": "Multi-Level Cache L1+L2 — Companion Files",
+  "title_es": "Caché multi-nivel L1+L2 — Archivos complementarios",
+  "description": "Runnable two-level cache implementation: TypeScript class with in-memory L1 (lru-cache), Redis L2, pub/sub invalidation, hit-rate instrumentation, plus a Python variant with an invalidation listener thread.",
+  "description_es": "Implementación ejecutable de caché de dos niveles: clase TypeScript con L1 en memoria (lru-cache), L2 en Redis, invalidación por pub/sub, instrumentación de hit rate, más una variante Python con hilo listener de invalidación.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "multi-level-cache-l1-l2",
+  "source_urls": [
+    "https://stackpractices.com/recipes/multi-level-cache-l1-l2/",
+    "https://stackpractices.com/es/recipes/multi-level-cache-l1-l2/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "caching",
+    "redis",
+    "lru-cache",
+    "pubsub",
+    "typescript",
+    "python"
+  ],
+  "files": [
+    "multi-level-cache.ts",
+    "usage.ts",
+    "instrumented-cache.ts",
+    "multi_level_cache.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

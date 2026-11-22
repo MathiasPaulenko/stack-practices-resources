@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-eslint-security-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint:security": "eslint .",
+    "lint:security:report": "eslint . --format json --output-file eslint-report.json"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-plugin-security": "^3.0.0"
+  }
+}

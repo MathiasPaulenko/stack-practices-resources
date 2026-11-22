@@ -1,0 +1,31 @@
+{
+  "title": "Microservices Communication Patterns",
+  "title_es": "Patrones de Comunicación entre Microservicios",
+  "description": "Runnable synchronous and asynchronous communication examples: REST clients with timeouts and retries (Python, Node.js, Java), RabbitMQ producer and DLQ consumer, Kafka producer, gRPC client in TypeScript, and a Resilience4j circuit breaker in Java.",
+  "description_es": "Ejemplos ejecutables de comunicación síncrona y asíncrona: clientes REST con timeouts y reintentos (Python, Node.js, Java), productor RabbitMQ y consumidor con DLQ, productor Kafka, cliente gRPC en TypeScript y un circuit breaker de Resilience4j en Java.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "microservices-communication",
+  "source_urls": [
+    "https://stackpractices.com/recipes/microservices-communication/",
+    "https://stackpractices.com/es/recipes/microservices-communication/"
+  ],
+  "language": "bilingual",
+  "tags": ["microservices", "rest", "grpc", "kafka", "rabbitmq", "circuit-breaker", "resilience4j", "architecture"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "rest_client.py",
+    "rabbitmq_producer.py",
+    "dlq_consumer.py",
+    "requirements.txt",
+    "rest_client.mjs",
+    "kafka_producer.mjs",
+    "grpc_client.ts",
+    "proto/orders.proto",
+    "package.json",
+    "pom.xml",
+    "src/main/java/OrderRestClient.java",
+    "src/main/java/ResilientPaymentClient.java"
+  ]
+}

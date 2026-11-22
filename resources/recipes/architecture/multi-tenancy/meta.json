@@ -1,0 +1,33 @@
+{
+  "title": "Multi-Tenancy — Companion Files",
+  "title_es": "Multi-tenancy — Archivos complementarios",
+  "description": "Runnable multi-tenancy building blocks: PostgreSQL RLS DDL, Express tenant middleware with transaction-scoped context, TypeScript per-tenant connection pool, Python tenant-scoped Redis cache, schema migration helper, and an onboarding pipeline.",
+  "description_es": "Bloques ejecutables de multi-tenancy: DDL de RLS en PostgreSQL, middleware Express de tenant con contexto por transacción, pool de conexiones por tenant en TypeScript, caché Redis con scope de tenant en Python, helper de migración de schema y pipeline de onboarding.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "multi-tenancy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/multi-tenancy/",
+    "https://stackpractices.com/es/recipes/multi-tenancy/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "multi-tenancy",
+    "postgresql",
+    "row-level-security",
+    "nodejs",
+    "typescript",
+    "python",
+    "redis"
+  ],
+  "files": [
+    "tenant-isolation.sql",
+    "tenant-middleware.js",
+    "tenant-pool.ts",
+    "tenant_cache.py",
+    "migrate_tenant_schema.py",
+    "tenant-onboarding.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

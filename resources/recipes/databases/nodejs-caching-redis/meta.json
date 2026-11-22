@@ -1,0 +1,30 @@
+{
+  "title": "Node.js Redis Caching — Companion App",
+  "title_es": "Caché con Redis en Node.js — App companion",
+  "description": "Express + ioredis playground with cache-aside, stampede lock, tag-based invalidation, hit-rate metrics, and a docker-compose Redis with an LRU policy.",
+  "description_es": "Playground Express + ioredis con cache-aside, lock anti-stampede, invalidación por tags, métricas de hit rate y un Redis docker-compose con política LRU.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "nodejs-caching-redis",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-caching-redis/",
+    "https://stackpractices.com/es/recipes/nodejs-caching-redis/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "redis",
+    "ioredis",
+    "caching",
+    "cache-aside",
+    "express",
+    "docker-compose"
+  ],
+  "files": [
+    "app.js",
+    "docker-compose.yml",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

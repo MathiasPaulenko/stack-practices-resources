@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-caching-redis-companion",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Companion code for https://stackpractices.com/recipes/nodejs-caching-redis/",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ioredis": "^5.4.0"
+  }
+}

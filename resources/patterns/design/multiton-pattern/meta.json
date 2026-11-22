@@ -1,0 +1,23 @@
+{
+  "title": "Multiton Pattern — Runnable Implementations",
+  "title_es": "Patrón Multiton — Implementaciones ejecutables",
+  "description": "Runnable Multiton examples in four languages: thread-safe keyed registry in Python, atomic ConcurrentHashMap registry in Java, private-field Map registry in JavaScript, and a multi-tenant database pool Multiton in TypeScript.",
+  "description_es": "Ejemplos ejecutables del patrón Multiton en cuatro lenguajes: registro thread-safe con clave en Python, registro atómico con ConcurrentHashMap en Java, registro con Map de campo privado en JavaScript y un Multiton de pools de base de datos por tenant en TypeScript.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "multiton-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/multiton-pattern/",
+    "https://stackpractices.com/es/patterns/multiton-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["multiton", "singleton", "registry", "creational", "design-pattern", "concurrency", "multi-tenant"],
+  "files": [
+    "src/multiton_pool.py",
+    "src/ThemeManager.java",
+    "src/multiton_logger.js",
+    "src/tenant-database.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Node.js File Upload Validation — Companion Resources",
+  "title_es": "Validación de Subidas en Node.js — Recursos complementarios",
+  "description": "Runnable companion code for the Node.js file upload validation recipe: complete Express + multer 2.x pipeline with file-type signature verification, and a Sharp avatar upload with dimension checks and EXIF stripping.",
+  "description_es": "Código ejecutable de la receta de validación de subidas en Node.js: pipeline completo Express + multer 2.x con verificación de firma vía file-type, y subida de avatar con Sharp (dimensiones y limpieza de EXIF).",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "nodejs-file-upload-validation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-file-upload-validation/",
+    "https://stackpractices.com/es/recipes/nodejs-file-upload-validation/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "express",
+    "multer",
+    "file-upload",
+    "validation",
+    "security",
+    "javascript"
+  ],
+  "files": [
+    "upload.js",
+    "avatar.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

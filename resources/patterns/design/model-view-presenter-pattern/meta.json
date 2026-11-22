@@ -1,0 +1,30 @@
+{
+  "title": "Model-View-Presenter Pattern — Companion Code",
+  "title_es": "Patrón Model-View-Presenter — Código complementario",
+  "description": "Zero-dependency MVP implementations in Python and Node.js: a UserDetailPresenter drives an abstract UserDetailView, a fake view records every call, and full unit-test suites verify the happy path, error branches, input validation, and the loading-indicator lifecycle — no UI framework required.",
+  "description_es": "Implementaciones MVP sin dependencias en Python y Node.js: un UserDetailPresenter maneja una UserDetailView abstracta, una view falsa registra cada llamada y las suites de test unitario verifican el camino feliz, las ramas de error, la validación de entrada y el ciclo de los indicadores de carga — sin ningún framework de UI.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "model-view-presenter-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/model-view-presenter-pattern/",
+    "https://stackpractices.com/es/patterns/model-view-presenter-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "design",
+    "mvp",
+    "testability",
+    "architecture",
+    "python",
+    "javascript",
+    "stdlib"
+  ],
+  "files": [
+    "mvp.py",
+    "mvp.mjs",
+    "README.md",
+    "README.es.md"
+  ]
+}

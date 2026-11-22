@@ -1,0 +1,32 @@
+{
+  "title": "MVC Pattern in Modern Frontend Applications — Companion Code",
+  "title_es": "Patrón MVC en Aplicaciones Frontend Modernas — Código complementario",
+  "description": "MVC triad for React and Vue in TypeScript: a pure UserModel, a UserController that orchestrates fetch/search/sort, and thin Views in TSX and <script setup>.",
+  "description_es": "Tríada MVC para React y Vue en TypeScript: un UserModel puro, un UserController que orquesta fetch/búsqueda/ordenación y Views delgadas en TSX y <script setup>.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "mvc-pattern-frontend",
+  "source_urls": [
+    "https://stackpractices.com/patterns/mvc-pattern-frontend/",
+    "https://stackpractices.com/es/patterns/mvc-pattern-frontend/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "mvc",
+    "design-pattern",
+    "frontend",
+    "react",
+    "vue",
+    "typescript",
+    "architecture"
+  ],
+  "files": [
+    "UserModel.ts",
+    "UserController.ts",
+    "userMVC.ts",
+    "UserListView.tsx",
+    "UserListView.vue",
+    "README.md",
+    "README.es.md"
+  ]
+}

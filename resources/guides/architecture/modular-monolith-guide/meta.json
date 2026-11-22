@@ -1,0 +1,30 @@
+{
+  "title": "Modular Monolith Guide — Companion Code",
+  "title_es": "Guía de Monolito Modular — Código complementario",
+  "description": "Zero-dependency module boundary linters in Python and Node.js: walk a modules/ tree, resolve imports, and fail CI whenever a module reaches into another module's internals — the ArchUnit/import-linter idea the guide describes, runnable with a full test suite in both stacks.",
+  "description_es": "Linters de límites de módulos sin dependencias en Python y Node.js: recorren un árbol modules/, resuelven imports y fallan en CI cuando un módulo mete la mano en las internas de otro — la idea de ArchUnit/import-linter que la guía describe, ejecutable con suite de tests completa en ambos stacks.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "modular-monolith-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/modular-monolith-guide/",
+    "https://stackpractices.com/es/guides/modular-monolith-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "guide",
+    "architecture",
+    "modular-monolith",
+    "module-boundaries",
+    "architecture-tests",
+    "python",
+    "javascript",
+    "stdlib"
+  ],
+  "files": [
+    "boundary_check.py",
+    "boundary_check.mjs",
+    "README.md",
+    "README.es.md"
+  ]
+}

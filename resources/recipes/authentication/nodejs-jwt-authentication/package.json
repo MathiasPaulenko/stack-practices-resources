@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-jwt-authentication-companion",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Runnable Express JWT server for the StackPractices nodejs-jwt-authentication recipe",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

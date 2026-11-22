@@ -1,0 +1,32 @@
+# Companion for https://stackpractices.com/recipes/nodejs-caching-redis/
+# Brings up Redis so the Express app (app.js) has somewhere to cache.
+#
+#   docker compose up -d
+#   npm install express ioredis
+#   node app.js
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    command:
+      - --maxmemory
+      - 128mb
+      - --maxmemory-policy
+      - allkeys-lru
+    volumes:
+      - redis-data:/data
+
+  # Optional: Redis Commander UI at http://localhost:8081
+  redis-ui:
+    image: rediscommander/redis-commander:latest
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+
+volumes:
+  redis-data:

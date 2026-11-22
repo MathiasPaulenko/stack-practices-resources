@@ -1,0 +1,32 @@
+# Local playground for the Nginx reverse proxy companion config.
+# Run: docker compose up -d
+# Try:
+#   curl http://localhost:8080/health
+#   curl http://localhost:8080/api/users/
+#   for i in $(seq 30); do curl -o /dev/null -s -w "%{http_code}\n" http://localhost:8080/api/; done  # watch the 429s
+
+services:
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - backend1
+      - backend2
+      - backend3
+
+  # Tiny echo servers that report their own hostname,
+  # so you can see which upstream answered each request.
+  backend1:
+    image: traefik/whoami:latest
+    command: ["--port", "3000", "--name", "backend1"]
+
+  backend2:
+    image: traefik/whoami:latest
+    command: ["--port", "3000", "--name", "backend2"]
+
+  backend3:
+    image: traefik/whoami:latest
+    command: ["--port", "3000", "--name", "backend3"]

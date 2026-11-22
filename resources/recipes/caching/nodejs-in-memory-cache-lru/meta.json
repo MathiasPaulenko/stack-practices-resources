@@ -1,0 +1,31 @@
+{
+  "title": "Node.js In-Memory LRU Cache — Companion Resources",
+  "title_es": "Caché LRU en memoria en Node.js — Recursos complementarios",
+  "description": "Runnable companion code for the Node.js LRU cache recipe: Map + doubly linked list implementation, a Map-only variant, TTL and async caches, and an eviction-cost benchmark.",
+  "description_es": "Código ejecutable de la receta de caché LRU en Node.js: implementación con Map y lista doblemente enlazada, variante solo con Map, cachés TTL y asíncrona, y un benchmark de coste de expulsión.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "nodejs-in-memory-cache-lru",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-in-memory-cache-lru/",
+    "https://stackpractices.com/es/recipes/nodejs-in-memory-cache-lru/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "cache",
+    "lru",
+    "in-memory-cache",
+    "typescript",
+    "performance"
+  ],
+  "files": [
+    "lru-dll.ts",
+    "lru-map.ts",
+    "ttl-cache.ts",
+    "async-lru.ts",
+    "benchmark.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

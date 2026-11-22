@@ -1,0 +1,22 @@
+{
+  "title": "Node.js JWT Authentication",
+  "title_es": "Autenticación JWT en Node.js",
+  "description": "Runnable Express server with JWT login (bcrypt), access/refresh tokens, refresh rotation with reuse detection, and revocation — plus a node:test flow test.",
+  "description_es": "Servidor Express ejecutable con login JWT (bcrypt), access/refresh tokens, rotación de refresh con detección de reuso y revocación — más un test de flujo con node:test.",
+  "type": "recipes",
+  "topic": "authentication",
+  "slug": "nodejs-jwt-authentication",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-jwt-authentication/",
+    "https://stackpractices.com/es/recipes/nodejs-jwt-authentication/"
+  ],
+  "language": ["javascript"],
+  "tags": ["jwt", "authentication", "express", "nodejs", "jsonwebtoken", "bcrypt", "refresh-token", "rotation", "revocation"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "server.js",
+    "test.js",
+    "package.json"
+  ]
+}

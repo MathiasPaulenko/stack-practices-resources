@@ -1,0 +1,29 @@
+{
+  "title": "Microservices Resilience Patterns",
+  "title_es": "Patrones de Resiliencia para Microservicios",
+  "description": "Runnable resilience-pattern examples: a Python circuit breaker, p-retry backoff in Node.js, saga orchestration in TypeScript, a Go bulkhead with errgroup, Resilience4j combined decorators in Java, and Kubernetes health probes.",
+  "description_es": "Ejemplos ejecutables de patrones de resiliencia: circuit breaker en Python, backoff con p-retry en Node.js, orquestación de sagas en TypeScript, bulkhead en Go con errgroup, decoradores combinados de Resilience4j en Java y health probes de Kubernetes.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "microservices-patterns",
+  "source_urls": [
+    "https://stackpractices.com/recipes/microservices-patterns/",
+    "https://stackpractices.com/es/recipes/microservices-patterns/"
+  ],
+  "language": "bilingual",
+  "tags": ["microservices", "circuit-breaker", "bulkhead", "retry", "saga", "resilience4j", "kubernetes", "architecture"],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "circuit_breaker.py",
+    "retry_backoff.mjs",
+    "saga.ts",
+    "health_probes.ts",
+    "package.json",
+    "bulkhead.go",
+    "go.mod",
+    "deployment.yaml",
+    "pom.xml",
+    "src/main/java/ResilientPaymentClient.java"
+  ]
+}

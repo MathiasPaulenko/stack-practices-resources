@@ -1,0 +1,30 @@
+{
+  "title": "Mixin Pattern — Companion Code",
+  "title_es": "Patrón Mixin — Código complementario",
+  "description": "Runnable Mixin Pattern implementations in Python and TypeScript: SerializableMixin and TimestampMixin composed into a User class via cooperative multiple inheritance, typed TS mixin functions, and a unittest suite showing how to test a mixin in isolation with a throwaway host.",
+  "description_es": "Implementaciones ejecutables del Patrón Mixin en Python y TypeScript: SerializableMixin y TimestampMixin compuestos en una clase User mediante herencia múltiple cooperativa, funciones mixin tipadas en TS y una suite unittest que muestra cómo testear un mixin de forma aislada con un host desechable.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "mixin-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/mixin-pattern/",
+    "https://stackpractices.com/es/patterns/mixin-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "design-pattern",
+    "mixin",
+    "composition",
+    "multiple-inheritance",
+    "mro",
+    "python",
+    "typescript"
+  ],
+  "files": [
+    "mixins.py",
+    "mixins.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

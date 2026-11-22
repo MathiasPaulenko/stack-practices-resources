@@ -1,0 +1,16 @@
+{
+  "title": "CRUD Operations with MongoDB and Mongoose (offline)",
+  "title_es": "Operaciones CRUD con MongoDB y Mongoose (offline)",
+  "description": "Dependency-free, runnable version of the recipe's CRUD, validation, soft-delete and transaction semantics against an in-memory store.",
+  "description_es": "Versión ejecutable sin dependencias del CRUD, validación, borrado suave y transacciones de la receta, contra un store en memoria.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "mongodb-crud-mongoose",
+  "source_urls": [
+    "https://stackpractices.com/recipes/mongodb-crud-mongoose/",
+    "https://stackpractices.com/es/recipes/mongodb-crud-mongoose/"
+  ],
+  "language": "javascript",
+  "tags": ["mongodb", "mongoose", "crud", "nodejs", "transactions"],
+  "files": ["user_store.mjs", "user_store.test.mjs"]
+}

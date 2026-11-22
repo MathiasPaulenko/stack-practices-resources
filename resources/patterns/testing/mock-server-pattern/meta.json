@@ -1,0 +1,30 @@
+{
+  "title": "Mock Server Pattern — Companion Code",
+  "title_es": "Patrón Mock Server — Código complementario",
+  "description": "Zero-dependency mock server implementations in Python (http.server) and Node.js (node:http): register stubs per test, record incoming requests, run on a random local port, and verify calls afterwards — the same configure-intercept-match-verify lifecycle as WireMock, nock and MSW, with full test suites for both.",
+  "description_es": "Implementaciones de mock server sin dependencias en Python (http.server) y Node.js (node:http): registra stubs por test, graba las peticiones entrantes, corre en un puerto local aleatorio y verifica las llamadas después — el mismo ciclo configurar-interceptar-matchear-verificar que WireMock, nock y MSW, con suites de test completas en ambos.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "mock-server-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/mock-server-pattern/",
+    "https://stackpractices.com/es/patterns/mock-server-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pattern",
+    "testing",
+    "mock-server",
+    "http",
+    "integration-tests",
+    "python",
+    "javascript",
+    "stdlib"
+  ],
+  "files": [
+    "mock_server.py",
+    "mock_server.mjs",
+    "README.md",
+    "README.es.md"
+  ]
+}

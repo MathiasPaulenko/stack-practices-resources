@@ -1,0 +1,29 @@
+{
+  "title": "Nginx Reverse Proxy Cache — Companion Config",
+  "title_es": "Caché con Nginx Reverse Proxy — Config companion",
+  "description": "Caching reverse proxy config: proxy_cache_path zone, TTL per status code, conditional bypass, cache lock, use_stale, and a purge endpoint — plus a docker-compose playground with echo backends.",
+  "description_es": "Config de reverse proxy con caché: zona proxy_cache_path, TTL por código de estado, bypass condicional, cache lock, use_stale y endpoint de purga — más un entorno docker-compose con backends echo.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "nginx-reverse-proxy-cache",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nginx-reverse-proxy-cache/",
+    "https://stackpractices.com/es/recipes/nginx-reverse-proxy-cache/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nginx",
+    "reverse-proxy",
+    "http-cache",
+    "proxy-cache",
+    "caching",
+    "docker-compose",
+    "devops"
+  ],
+  "files": [
+    "nginx.conf",
+    "docker-compose.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Node.js ESLint Security Plugin — Companion Config",
+  "title_es": "Plugin de Seguridad ESLint en Node.js — Config companion",
+  "description": "Flat-config ESLint setup with eslint-plugin-security, a deliberately vulnerable sample and its fixed counterpart, plus a GitHub Actions gate that fails on new findings.",
+  "description_es": "Config flat de ESLint con eslint-plugin-security, un ejemplo deliberadamente vulnerable y su contraparte corregida, más un gate de GitHub Actions que falla ante nuevos hallazgos.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "nodejs-eslint-security-plugin",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-eslint-security-plugin/",
+    "https://stackpractices.com/es/recipes/nodejs-eslint-security-plugin/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "eslint",
+    "eslint-plugin-security",
+    "security",
+    "static-analysis",
+    "ci-cd"
+  ],
+  "files": [
+    "eslint.config.js",
+    "vulnerable.js",
+    "fixed.js",
+    "package.json",
+    "eslint-security.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "microservices-patterns",
+  "version": "1.0.0",
+  "description": "Microservices resilience examples in Node.js/TypeScript (p-retry, saga orchestration, health probes)",
+  "type": "module",
+  "scripts": {
+    "retry": "node retry_backoff.mjs",
+    "saga": "tsx saga.ts",
+    "probes": "tsx health_probes.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "p-retry": "^6.2.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "@types/express": "^4.17.21"
+  }
+}

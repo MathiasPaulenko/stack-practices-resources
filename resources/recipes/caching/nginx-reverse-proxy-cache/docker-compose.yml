@@ -1,0 +1,38 @@
+# Companion for https://stackpractices.com/recipes/nginx-reverse-proxy-cache/
+# Brings up Nginx plus two echo backends so you can watch X-Cache-Status flip
+# between MISS, HIT and BYPASS.
+#
+#   docker compose up -d
+#   curl -i http://localhost/api/hello          -> MISS
+#   curl -i http://localhost/api/hello          -> HIT
+#   curl -i "http://localhost/api/hello?no_cache=1"  -> BYPASS
+
+services:
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - cache-data:/var/cache/nginx/api
+    depends_on:
+      - app1
+      - app2
+
+  # Two simple echo backends. Any small HTTP service works; whoami
+  # replies with hostname + request info, which is handy for telling
+  # which upstream answered and whether the response was cached.
+  app1:
+    image: traefik/whoami:latest
+    command:
+      - --port=3000
+      - --name=app1
+
+  app2:
+    image: traefik/whoami:latest
+    command:
+      - --port=3000
+      - --name=app2
+
+volumes:
+  cache-data:
