@@ -1,0 +1,28 @@
+{
+  "title": "Page Controller Pattern — Companion Files",
+  "title_es": "Patrón Page Controller — Archivos complementarios",
+  "description": "Runnable Page Controller example in Python: a minimal Request/Response layer, three page controllers, a path-to-controller map, and pytest tests covering routing, 404s, and page-specific logic.",
+  "description_es": "Ejemplo ejecutable del patrón Page Controller en Python: capa mínima Request/Response, tres controladores de página, mapa ruta→controlador y tests de pytest que cubren routing, 404s y lógica de página.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "page-controller-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/page-controller-pattern/",
+    "https://stackpractices.com/es/patterns/page-controller-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "page-controller",
+    "design-pattern",
+    "web",
+    "mvc",
+    "python",
+    "pytest"
+  ],
+  "files": [
+    "page_controller.py",
+    "test_page_controller.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

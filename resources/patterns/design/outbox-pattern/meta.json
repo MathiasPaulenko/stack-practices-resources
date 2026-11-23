@@ -1,0 +1,13 @@
+{
+  "title": "Outbox Pattern",
+  "title_es": "Patrón Outbox",
+  "description": "Scripts for implementing the Transactional Outbox Pattern: outbox table schema, event publisher, and relay processor for at-least-once delivery.",
+  "description_es": "Scripts para implementar el patrón Outbox transaccional: esquema de la tabla outbox, publicador de eventos y procesador relay para entrega at-least-once.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "outbox-pattern",
+  "source_urls": ["https://stackpractices.com/patterns/outbox-pattern/"],
+  "language": ["en", "es"],
+  "tags": ["messaging", "reliability", "event-driven", "outbox", "at-least-once", "postgres"],
+  "files": ["schema.sql", "retention-queries.sql", "outbox.py", "OutboxPublisher.java", "outbox.js", "README.md", "README.es.md"]
+}

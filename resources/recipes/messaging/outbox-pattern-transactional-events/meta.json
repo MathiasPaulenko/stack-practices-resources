@@ -1,0 +1,13 @@
+{
+  "title": "Transactional Outbox Pattern with Python",
+  "title_es": "Patrón Outbox Transaccional con Python",
+  "description": "Runnable implementations of the transactional outbox pattern: PostgreSQL schema, atomic order + event writer, polling relay, Kafka transaction relay, CDC relay, ordering, retries and Debezium config.",
+  "description_es": "Implementaciones ejecutables del patrón outbox transaccional: esquema PostgreSQL, escritor atómico de pedido + evento, relay de polling, relay con transacciones de Kafka, relay CDC, ordenamiento, reintentos y configuración de Debezium.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "outbox-pattern-transactional-events",
+  "source_urls": ["https://stackpractices.com/recipes/outbox-pattern-transactional-events/"],
+  "language": ["en", "es"],
+  "tags": ["messaging", "outbox", "kafka", "postgres", "debezium", "event-driven", "at-least-once"],
+  "files": ["schema.sql", "order_service.py", "polling_relay.py", "transactional_relay.py", "cdc_relay.py", "ordered_relay.py", "resilient_relay.py", "debezium-connector.yaml", "multitenant-schema.sql", "multitenant-relay.py", "README.md", "README.es.md"]
+}

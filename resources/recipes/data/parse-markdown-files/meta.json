@@ -1,0 +1,28 @@
+{
+  "title": "Parse Markdown Files — Companion Files",
+  "title_es": "Analizar Archivos Markdown — Archivos complementarios",
+  "description": "Runnable Python examples for parsing Markdown: MD to HTML conversion with Python-Markdown extensions, frontmatter extraction with python-frontmatter, and a heading-extraction treeprocessor. Includes a sample post and a pytest suite.",
+  "description_es": "Ejemplos ejecutables en Python para analizar Markdown: conversión MD a HTML con extensiones de Python-Markdown, extracción de frontmatter con python-frontmatter y un treeprocessor de extracción de encabezados. Incluye un post de ejemplo y una suite pytest.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-markdown-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-markdown-files/",
+    "https://stackpractices.com/es/recipes/parse-markdown-files/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "markdown",
+    "parsing",
+    "html",
+    "frontmatter",
+    "python"
+  ],
+  "files": [
+    "parse_markdown.py",
+    "post.md",
+    "test_parse_markdown.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

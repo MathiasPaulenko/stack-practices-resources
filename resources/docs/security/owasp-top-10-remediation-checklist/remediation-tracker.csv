@@ -1,0 +1,12 @@
+category,check,priority,status,owner,evidence,revisit_date,retest_result
+A01 - Broken Access Control,Deny-by-default authorization on every route,P0,open,,,,
+A01 - Broken Access Control,Server-side ownership check before read/write/delete (IDOR),P0,open,,,,
+A02 - Security Misconfiguration,Remove or rotate every default credential,P0,open,,,,
+A03 - Software Supply Chain Failures,Dependency scanning in CI blocks critical CVEs,P0,open,,,,
+A04 - Cryptographic Failures,TLS 1.2+ enforced; SSLv3/TLS 1.0/1.1 disabled,P0,open,,,,
+A05 - Injection,All database queries parameterized,P0,open,,,,
+A06 - Insecure Design,Rate limiting on costly actions (signup/reset/export),P0,open,,,,
+A07 - Authentication Failures,MFA for admins and sensitive actions,P0,open,,,,
+A08 - Software or Data Integrity Failures,Deserialization treated as untrusted input,P0,open,,,,
+A09 - Security Logging & Alerting Failures,Auth/authz/validation failures logged with context,P0,open,,,,
+A10 - Mishandling of Exceptional Conditions,Security paths fail closed on error,P0,open,,,,

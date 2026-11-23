@@ -1,0 +1,29 @@
+{
+  "title": "Parameterized Test Pattern — Companion Files",
+  "title_es": "Patrón Parameterized Test — Archivos complementarios",
+  "description": "Runnable pytest examples of parameterized tests: parametrize with readable ids, multi-parameter validators, fixture + parametrize, cross-product dimensions, and a CSV-driven variant with sample data. Includes the functions under test.",
+  "description_es": "Ejemplos ejecutables de tests parametrizados con pytest: parametrize con ids legibles, validadores multi-parámetro, fixture + parametrize, producto cruzado y una variante dirigida por CSV con datos de ejemplo. Incluye las funciones bajo test.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "parameterized-test-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/parameterized-test-pattern/",
+    "https://stackpractices.com/es/patterns/parameterized-test-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "parameterized",
+    "data-driven",
+    "pytest",
+    "test-case"
+  ],
+  "files": [
+    "calculator.py",
+    "validators.py",
+    "email_cases.csv",
+    "test_parameterized.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

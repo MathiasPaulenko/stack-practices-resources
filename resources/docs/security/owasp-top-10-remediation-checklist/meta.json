@@ -1,0 +1,29 @@
+{
+  "title": "OWASP Top 10 2025 — Remediation Checklist",
+  "title_es": "OWASP Top 10 2025 — Checklist de remediación",
+  "description": "Standalone remediation checklist for the OWASP Top 10 2025: prioritized checks per category plus a CSV tracker to record status, evidence, owner, and retest results per item.",
+  "description_es": "Checklist de remediación independiente para el OWASP Top 10 2025: verificaciones priorizadas por categoría y un tracker CSV para registrar estado, evidencia, responsable y resultado del retest por ítem.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "owasp-top-10-remediation-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/owasp-top-10-remediation-checklist/",
+    "https://stackpractices.com/es/docs/owasp-top-10-remediation-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "owasp",
+    "owasp-top-10-2025",
+    "security",
+    "checklist",
+    "remediation",
+    "compliance"
+  ],
+  "files": [
+    "owasp-top-10-2025-remediation-checklist.md",
+    "owasp-top-10-2025-remediation-checklist.es.md",
+    "remediation-tracker.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,8 @@
+email,expected
+alice@example.com,true
+bob@x.com,true
+invalid,false
+@example.com,false
+alice@,false
+alice@.com,false
+,false

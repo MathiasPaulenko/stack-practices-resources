@@ -1,0 +1,28 @@
+{
+  "title": "Pagination — Companion Files",
+  "title_es": "Paginación — Archivos complementarios",
+  "description": "Runnable offset and cursor pagination examples in Python with an in-memory dataset: page + pageSize slicing, the page_size + 1 probe for has_more/next_cursor, and pytest tests covering deep pages, edge cases, and mutation drift.",
+  "description_es": "Ejemplos ejecutables de paginación por offset y por cursor en Python con un dataset en memoria: slicing page + pageSize, la sonda page_size + 1 para has_more/next_cursor y tests de pytest que cubren páginas profundas, casos borde y desplazamiento por mutaciones.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "pagination",
+  "source_urls": [
+    "https://stackpractices.com/recipes/pagination/",
+    "https://stackpractices.com/es/recipes/pagination/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "pagination",
+    "api",
+    "offset",
+    "cursor",
+    "python",
+    "pytest"
+  ],
+  "files": [
+    "pagination.py",
+    "test_pagination.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

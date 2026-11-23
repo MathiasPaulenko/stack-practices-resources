@@ -1,0 +1,29 @@
+{
+  "title": "Parse CSV Files — Companion Files",
+  "title_es": "Analizar Archivos CSV — Archivos complementarios",
+  "description": "Runnable Python CSV parsing examples: csv.reader and DictReader, BOM handling with utf-8-sig, delimiter sniffing, malformed-row handling, and a streaming variant for large files. Includes sample data and a pytest suite.",
+  "description_es": "Ejemplos ejecutables de análisis CSV en Python: csv.reader y DictReader, manejo de BOM con utf-8-sig, detección de delimitador, manejo de filas malformadas y una variante de streaming para archivos grandes. Incluye datos de ejemplo y una suite pytest.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-csv-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-csv-files/",
+    "https://stackpractices.com/es/recipes/parse-csv-files/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "csv",
+    "parsing",
+    "python",
+    "data-processing"
+  ],
+  "files": [
+    "parse_csv.py",
+    "sample.csv",
+    "sample_bom.csv",
+    "sample_semicolon.csv",
+    "test_parse_csv.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
