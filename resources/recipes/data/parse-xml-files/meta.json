@@ -1,0 +1,24 @@
+{
+  "title": "Parse XML Files in Python, Java, and JavaScript",
+  "title_es": "Analizar Archivos XML en Python, Java y JavaScript",
+  "description": "Runnable XML parsing examples: ElementTree, iterparse, defusedxml, fast-xml-parser, and JAXP DOM/SAX with XXE-safe configuration.",
+  "description_es": "Ejemplos ejecutables de parsing XML: ElementTree, iterparse, defusedxml, fast-xml-parser y JAXP DOM/SAX con configuración segura frente a XXE.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-xml-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-xml-files/",
+    "https://docs.python.org/3/library/xml.etree.elementtree.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html"
+  ],
+  "language": "bilingual",
+  "tags": ["xml", "parsing", "python", "javascript", "java", "xxe"],
+  "files": [
+    "data.xml",
+    "parse_xml.py",
+    "parse-xml.mjs",
+    "ParseXml.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

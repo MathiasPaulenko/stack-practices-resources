@@ -1,0 +1,22 @@
+{
+  "title": "Password Hashing in Production",
+  "title_es": "Hashing de Contraseñas en Producción",
+  "description": "Argon2id with pepper, transparent bcrypt migration, and Spring Security encoding examples for the password-hashing-production recipe.",
+  "description_es": "Argon2id con pepper, migración transparente a bcrypt y ejemplos de Spring Security para la receta password-hashing-production.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "password-hashing-production",
+  "source_urls": [
+    "https://stackpractices.com/recipes/password-hashing-production/",
+    "https://stackpractices.com/es/recipes/password-hashing-production/"
+  ],
+  "language": "multi",
+  "tags": ["bcrypt", "argon2", "scrypt", "security", "authentication"],
+  "files": [
+    "password_hash.py",
+    "password-hash.mjs",
+    "PasswordHashing.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

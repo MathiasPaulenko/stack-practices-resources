@@ -1,0 +1,22 @@
+{
+  "title": "Patch Management Template",
+  "title_es": "Plantilla de Gestión de Parches",
+  "description": "Patch management plan template, Ansible rolling-patch playbook, and container image patching pipeline for the patch-management-template doc.",
+  "description_es": "Plantilla de plan de gestión de parches, playbook Ansible de parcheo rolling y pipeline de parcheo de imágenes para el doc patch-management-template.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "patch-management-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/patch-management-template/",
+    "https://stackpractices.com/es/docs/patch-management-template/"
+  ],
+  "language": "multi",
+  "tags": ["devops", "patching", "security", "ansible", "kubernetes"],
+  "files": [
+    "patch-management-plan.md",
+    "patch-security-updates.yml",
+    "patch-image-pipeline.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

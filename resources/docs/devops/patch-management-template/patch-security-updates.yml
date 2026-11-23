@@ -1,0 +1,27 @@
+---
+- name: Apply security patches to Linux servers
+  hosts: production_servers
+  become: yes
+  serial: 1
+  max_fail_percentage: 0
+
+  pre_tasks:
+    - name: Create rollback snapshot
+      community.general.snap:
+        name: "pre-patch-{{ ansible_date_time.iso8601 }}"
+        state: present
+
+  tasks:
+    - name: Update apt cache and install security updates (Debian/Ubuntu)
+      apt:
+        update_cache: yes
+        upgrade: dist
+        only_upgrade: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Install security updates (RHEL/CentOS)
+      yum:
+        name: "*"
+        state: latest
+        security: yes
+      when: ansible_os_family == "RedHat"

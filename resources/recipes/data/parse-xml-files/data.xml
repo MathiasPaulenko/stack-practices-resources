@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <item id="A-001" category="book">
+    <name>Clean Code</name>
+    <price currency="USD">34.99</price>
+  </item>
+  <item id="A-002" category="book">
+    <name>Design Patterns</name>
+    <price currency="USD">44.50</price>
+  </item>
+  <item id="B-101" category="tool">
+    <name>Torque Wrench</name>
+    <price currency="USD">89.90</price>
+  </item>
+</catalog>

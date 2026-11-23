@@ -1,0 +1,24 @@
+{
+  "title": "Parse YAML Files in Python, Java, and JavaScript",
+  "title_es": "Analizar Archivos YAML en Python, Java y JavaScript",
+  "description": "Runnable YAML parsing examples: PyYAML safe_load/safe_dump, js-yaml, and SnakeYAML, with anchors, merge keys, and flow style on a shared config.yaml.",
+  "description_es": "Ejemplos ejecutables de parseo YAML: safe_load/safe_dump de PyYAML, js-yaml y SnakeYAML, con anchors, merge keys y flow style sobre un config.yaml compartido.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "parse-yaml-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/parse-yaml-files/",
+    "https://yaml.org/spec/1.2.2/",
+    "https://pyyaml.org/"
+  ],
+  "language": "bilingual",
+  "tags": ["yaml", "parsing", "python", "javascript", "java", "config"],
+  "files": [
+    "config.yaml",
+    "parse_yaml.py",
+    "parse-yaml.mjs",
+    "ParseYaml.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
