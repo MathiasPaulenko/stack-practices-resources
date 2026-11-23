@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      window.parent.postMessage(
+        {
+          type: 'oauth-silent',
+          state: params.get('state'),
+          code: params.get('code'),
+          error: params.get('error'),
+        },
+        window.location.origin
+      );
+    </script>
+  </body>
+</html>

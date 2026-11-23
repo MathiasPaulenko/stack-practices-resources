@@ -1,0 +1,39 @@
+{
+  "title": "OAuth 2.0 PKCE for Single-Page Applications",
+  "title_es": "OAuth 2.0 PKCE para aplicaciones de una sola página",
+  "description": "Browser-first OAuth 2.0 Authorization Code flow with PKCE (S256) for SPAs: Web Crypto verifier/challenge generation, state validation, silent iframe refresh, React useAuth hook and an Express BFF variant with httpOnly cookies.",
+  "description_es": "Flujo OAuth 2.0 Authorization Code con PKCE (S256) para SPAs: generación de verifier/challenge con Web Crypto, validación de state, renovación silenciosa con iframe, hook useAuth de React y variante BFF en Express con cookies httpOnly.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "oauth2-pkce-spa",
+  "source_urls": [
+    "https://stackpractices.com/recipes/oauth2-pkce-spa/",
+    "https://stackpractices.com/es/recipes/oauth2-pkce-spa/",
+    "https://datatracker.ietf.org/doc/html/rfc7636",
+    "https://datatracker.ietf.org/doc/html/rfc9700"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "oauth2",
+    "pkce",
+    "spa",
+    "authentication",
+    "security",
+    "typescript",
+    "react",
+    "express",
+    "web-crypto"
+  ],
+  "files": [
+    "auth/pkce.ts",
+    "auth/authorize.ts",
+    "auth/tokenExchange.ts",
+    "auth/storage.ts",
+    "auth/silentRefresh.ts",
+    "public/silent-callback.html",
+    "server/bff-auth.ts",
+    "hooks/useAuth.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "supertest Express API Testing — Companion Project",
+  "title_es": "Testing de API Express con supertest — Proyecto complementario",
+  "description": "Runnable Express API + supertest/Vitest suite accompanying the recipe: app/server split, JWT auth, pagination, cookie sessions via request.agent, and error middleware coverage.",
+  "description_es": "API Express ejecutable con suite supertest/Vitest que acompaña a la receta: separación app/server, auth JWT, paginación, sesiones con cookie vía request.agent y cobertura del middleware de errores.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "nodejs-supertest-express-api",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-supertest-express-api/",
+    "https://stackpractices.com/es/recipes/nodejs-supertest-express-api/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "nodejs",
+    "express",
+    "supertest",
+    "vitest",
+    "api"
+  ],
+  "files": [
+    "app.js",
+    "server.js",
+    "api.test.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

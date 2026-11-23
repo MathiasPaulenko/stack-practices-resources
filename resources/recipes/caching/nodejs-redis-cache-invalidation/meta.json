@@ -1,0 +1,32 @@
+{
+    "topic": "caching",
+    "language": "javascript",
+    "files": [
+        "cache.js",
+        "server.js",
+        "test.js",
+        "package.json",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "Redis Cache Invalidation in Node.js",
+    "title_es": "Invalidación de Caché Redis en Node.js",
+    "type": "recipes",
+    "description": "Runnable cache invalidation helpers and Express demo: TTL expiry, explicit DEL, SCAN+DEL pattern clearing, pub/sub L1 propagation, and a stampede lock. Tests run end-to-end against ioredis-mock, no real Redis needed.",
+    "description_es": "Helpers de invalidación de caché ejecutables y demo Express: expiración TTL, DEL explícito, limpieza por patrón SCAN+DEL, propagación a caché L1 por pub/sub y bloqueo anti-estampida. Los tests corren end-to-end contra ioredis-mock, sin Redis real.",
+    "slug": "nodejs-redis-cache-invalidation",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/nodejs-redis-cache-invalidation/"
+    ],
+    "tags": [
+        "caching",
+        "redis",
+        "ioredis",
+        "nodejs",
+        "express",
+        "javascript",
+        "pub-sub"
+    ],
+    "lastUpdated": "2026-11-22"
+}

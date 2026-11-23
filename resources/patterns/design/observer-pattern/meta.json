@@ -1,0 +1,23 @@
+{
+  "title": "Observer Pattern",
+  "title_es": "Patrón Observer",
+  "description": "Companion code for the Observer pattern: subject-observer subscriptions in Python, Java, JavaScript and a typed TypeScript EventEmitter with unsubscribe handles and per-observer error isolation.",
+  "description_es": "Código companion del patrón Observer: suscripciones subject-observador en Python, Java, JavaScript y un EventEmitter tipado en TypeScript con desuscripción y aislamiento de errores por observador.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "observer-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/observer-pattern/",
+    "https://stackpractices.com/es/patterns/observer-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["observer", "behavioral", "design-pattern", "event-driven", "python", "java", "javascript", "typescript"],
+  "files": [
+    "observer.py",
+    "Subject.java",
+    "observer.js",
+    "event-emitter.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

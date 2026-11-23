@@ -1,0 +1,30 @@
+{
+  "title": "Socket.io Real-Time Chat — Companion Project",
+  "title_es": "Chat en tiempo real con Socket.io — Proyecto complementario",
+  "description": "Runnable Socket.io chat server + client accompanying the recipe: rooms, broadcasting, typing indicators, presence map, and cleanup on disconnect. Optional Redis adapter for multi-instance scaling.",
+  "description_es": "Servidor y cliente de chat ejecutables con Socket.io que acompañan a la receta: rooms, broadcasting, indicadores de escritura, mapa de presencia y limpieza al desconectar. Redis adapter opcional para escalar a varias instancias.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "nodejs-websocket-realtime",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-websocket-realtime/",
+    "https://stackpractices.com/es/recipes/nodejs-websocket-realtime/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "websockets",
+    "socket.io",
+    "realtime",
+    "express",
+    "redis",
+    "api"
+  ],
+  "files": [
+    "server.js",
+    "client.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

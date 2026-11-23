@@ -1,0 +1,22 @@
+{
+  "title": "Object Pool Pattern",
+  "title_es": "Patrón Object Pool",
+  "description": "Companion code for the Object Pool pattern: fixed-size pools of expensive connections in Python, Java and JavaScript with fail-fast acquire, release discipline helpers and exhaustion handling.",
+  "description_es": "Código companion del patrón Object Pool: pools de tamaño fijo de conexiones costosas en Python, Java y JavaScript con acquire de fallo rápido, helpers de devolución disciplinada y manejo de agotamiento.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "object-pool-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/object-pool-pattern/",
+    "https://stackpractices.com/es/patterns/object-pool-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["object-pool", "creational", "design-pattern", "python", "java", "javascript", "connection-pool"],
+  "files": [
+    "connection_pool.py",
+    "ConnectionPool.java",
+    "connection-pool.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

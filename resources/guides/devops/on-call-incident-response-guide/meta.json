@@ -1,0 +1,13 @@
+{
+  "title": "On-Call and Incident Response Playbook — Companion Resources",
+  "title_es": "Playbook de Guardias e Incidentes — Recursos complementarios",
+  "description": "Downloadable checklists and templates from the on-call playbook: first-minute triage, handoff, status updates, escalation policy, postmortem, and a worked SEV-1 timeline.",
+  "description_es": "Checklists y plantillas descargables del playbook de guardias: triage del primer minuto, handoff, actualizaciones de estado, política de escalación, postmortem y una línea de tiempo SEV-1 resuelta.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "on-call-incident-response-guide",
+  "source_urls": ["https://stackpractices.com/guides/on-call-incident-response-guide/", "https://stackpractices.com/es/guides/on-call-incident-response-guide/"],
+  "language": "bilingual",
+  "tags": ["on-call","incident-response","postmortem","escalation","runbook","devops","sre"],
+  "files": ["checklists/first-minute-triage.md", "checklists/on-call-handoff.md", "templates/incident-status-update.md", "templates/escalation-policy.md", "templates/postmortem-template.md", "runbooks/sev1-scenario-timeline.md"]
+}

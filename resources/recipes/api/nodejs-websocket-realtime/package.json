@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-websocket-realtime",
+  "version": "1.0.0",
+  "description": "Socket.io real-time chat server and client — companion to the StackPractices recipe",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "client": "node client.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "optionalDependencies": {
+    "@socket.io/redis-adapter": "^8.3.0",
+    "ioredis": "^5.4.2"
+  }
+}

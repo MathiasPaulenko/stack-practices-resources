@@ -1,0 +1,22 @@
+{
+  "title": "Null Object Pattern",
+  "title_es": "Patrón Null Object",
+  "description": "Companion code for the Null Object pattern: NullUser lookups in Python and Java, plus a JavaScript OrderService demo with NullLogger and NullConfig for silent test runs.",
+  "description_es": "Código companion del patrón Null Object: búsquedas con NullUser en Python y Java, más un demo OrderService en JavaScript con NullLogger y NullConfig para tests silenciosos.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "null-object-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/null-object-pattern/",
+    "https://stackpractices.com/es/patterns/null-object-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["null-object", "behavioral-patterns", "design-pattern", "python", "javascript", "java"],
+  "files": [
+    "null_user.py",
+    "null_logger.js",
+    "NullUser.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

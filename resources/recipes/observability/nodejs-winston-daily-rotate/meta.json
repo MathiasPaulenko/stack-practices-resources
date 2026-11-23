@@ -1,0 +1,30 @@
+{
+  "title": "Winston Daily Log Rotation — Companion Project",
+  "title_es": "Rotación diaria de logs con Winston — Proyecto complementario",
+  "description": "Runnable Winston + winston-daily-rotate-file setup accompanying the recipe: split info/error rotating files, gzip archives, rotation events, and Express access logs via morgan.",
+  "description_es": "Montaje ejecutable de Winston + winston-daily-rotate-file que acompaña a la receta: archivos rotatorios separados para info/error, archivos comprimidos gzip, eventos de rotación y access logs de Express vía morgan.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "nodejs-winston-daily-rotate",
+  "source_urls": [
+    "https://stackpractices.com/recipes/nodejs-winston-daily-rotate/",
+    "https://stackpractices.com/es/recipes/nodejs-winston-daily-rotate/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "nodejs",
+    "winston",
+    "logging",
+    "observability",
+    "express",
+    "rotation"
+  ],
+  "files": [
+    "logger.js",
+    "server.js",
+    "demo.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

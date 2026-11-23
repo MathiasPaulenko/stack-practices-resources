@@ -1,0 +1,31 @@
+{
+  "title": "Optimistic Update Pattern — React Examples",
+  "title_es": "Patrón Optimistic Update — Ejemplos en React",
+  "description": "Runnable optimistic-update examples: like button with rollback, todo list with temp IDs, React 19 useOptimistic, React Query onMutate/onError/onSettled, a generic useOptimisticState hook, and versioned conflict handling.",
+  "description_es": "Ejemplos ejecutables de optimistic update: botón de like con rollback, lista de tareas con IDs temporales, useOptimistic de React 19, onMutate/onError/onSettled de React Query, un hook genérico useOptimisticState y manejo de conflictos con versionado.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "optimistic-update-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/optimistic-update-pattern/",
+    "https://stackpractices.com/es/patterns/optimistic-update-pattern/",
+    "https://react.dev/reference/react/useOptimistic",
+    "https://tanstack.com/query/latest/docs/framework/react/guides/optimistic-updates"
+  ],
+  "language": ["javascript"],
+  "tags": ["pattern", "frontend", "react", "optimistic-update", "react-19", "useoptimistic", "react-query", "tanstack-query", "rollback", "state-management"],
+  "files": [
+    "LikeButton.jsx",
+    "TodoList.jsx",
+    "OptimisticTodo.jsx",
+    "useOptimisticTodo.js",
+    "useOptimisticState.js",
+    "CommentEditor.jsx",
+    "EditableTitle.jsx",
+    "MixedOptimistic.jsx",
+    "BatchOptimistic.jsx",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

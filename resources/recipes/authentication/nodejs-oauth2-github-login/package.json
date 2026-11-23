@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-oauth2-github-login-companion",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Runnable Express GitHub OAuth2 login flow for the StackPractices nodejs-oauth2-github-login recipe",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "stub": "node github-stub.js",
+    "test": "node --test test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

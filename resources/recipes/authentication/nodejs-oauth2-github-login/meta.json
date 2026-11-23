@@ -1,0 +1,32 @@
+{
+    "topic": "authentication",
+    "language": "javascript",
+    "files": [
+        "server.js",
+        "github-stub.js",
+        "test.js",
+        "package.json",
+        "README.md",
+        "README.es.md"
+    ],
+    "title": "Node.js OAuth2 GitHub Login with Express",
+    "title_es": "Login con OAuth2 de GitHub en Node.js con Express",
+    "type": "recipes",
+    "description": "Runnable Express app implementing the GitHub OAuth2 authorization code flow with state verification and access_denied handling, plus a local GitHub stub so the whole flow is testable end-to-end without real credentials.",
+    "description_es": "App Express ejecutable que implementa el authorization code flow de GitHub OAuth2 con verificación de state y manejo de access_denied, más un stub local de GitHub que permite probar todo el flujo end-to-end sin credenciales reales.",
+    "slug": "nodejs-oauth2-github-login",
+    "author": "Mathias Paulenko",
+    "source_urls": [
+        "https://stackpractices.com/recipes/nodejs-oauth2-github-login/"
+    ],
+    "tags": [
+        "authentication",
+        "oauth2",
+        "github",
+        "nodejs",
+        "express",
+        "javascript",
+        "security"
+    ],
+    "lastUpdated": "2026-11-22"
+}
