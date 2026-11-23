@@ -1,0 +1,10 @@
+{
+  "name": "proxy-pattern",
+  "version": "1.0.0",
+  "description": "Proxy pattern — runnable virtual, caching and protection proxies in Python and JavaScript",
+  "private": true,
+  "scripts": {
+    "demo": "node proxy.js && python proxy.py",
+    "test": "node --test proxy.test.js && python -m pytest test_proxy.py -v"
+  }
+}

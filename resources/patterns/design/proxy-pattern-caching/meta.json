@@ -1,0 +1,34 @@
+{
+  "title": "Caching Proxy: TTL Cache in Front of an API Client",
+  "title_es": "Proxy de Caché: Caché TTL Delante de un Cliente de API",
+  "description": "Runnable caching-proxy examples: a TTL cache with request coalescing, hit/miss metrics, LRU eviction and explicit invalidation wrapping an API client, in Python and JavaScript with tests.",
+  "description_es": "Ejemplos ejecutables de proxy de caché: una caché TTL con coalescing de peticiones, métricas de aciertos/fallos, evicción LRU e invalidación explícita envolviendo un cliente de API, en Python y JavaScript con tests.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "proxy-pattern-caching",
+  "source_urls": [
+    "https://stackpractices.com/patterns/proxy-pattern-caching/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "structural",
+    "proxy",
+    "caching",
+    "ttl",
+    "lru",
+    "request-coalescing",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "caching_client.py",
+    "test_caching_client.py",
+    "caching-client.js",
+    "caching-client.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

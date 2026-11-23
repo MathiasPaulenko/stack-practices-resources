@@ -1,0 +1,23 @@
+{
+  "title": "Pull Request Template (English + Spanish)",
+  "title_es": "Plantilla de Pull Request (Inglés + Español)",
+  "description": "Copy-paste pull request template for GitHub with description, type of change, testing evidence, and checklist — plus a GitHub Actions workflow that validates required sections and conventional-commit titles.",
+  "description_es": "Plantilla de pull request lista para copiar en GitHub con descripción, tipo de cambio, evidencia de pruebas y checklist — más un workflow de GitHub Actions que valida las secciones requeridas y títulos conventional commit.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "pull-request-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/pull-request-template/",
+    "https://stackpractices.com/es/docs/pull-request-template/",
+    "https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository"
+  ],
+  "language": "bilingual",
+  "tags": ["pull-request", "template", "code-review", "github", "devops", "workflow", "github-actions"],
+  "files": [
+    "pull_request_template.md",
+    "pull_request_template.es.md",
+    "pr-validation.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

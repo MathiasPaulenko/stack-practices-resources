@@ -1,0 +1,29 @@
+name: PR Validation
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR title
+        uses: amannn/action-semantic-pull-request@v5
+        with:
+          types: |
+            fix
+            feat
+            docs
+            refactor
+            chore
+      - name: Verify checklist
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const body = context.payload.pull_request.body || '';
+            const required = ['## Description', '## Type of Change', '## Checklist'];
+            for (const section of required) {
+              if (!body.includes(section)) {
+                core.setFailed(`Missing required section: ${section}`);
+              }
+            }

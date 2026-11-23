@@ -1,0 +1,23 @@
+{
+  "title": "Python API Rate Limiting with Token Bucket",
+  "title_es": "Rate Limiting de API en Python con Token Bucket",
+  "description": "Runnable companion for the Python rate limiting recipe: in-memory TokenBucket, Flask per-IP limiter with Retry-After header, and pytest coverage for burst, refill, and rejection.",
+  "description_es": "Companion ejecutable de la receta de rate limiting en Python: TokenBucket en memoria, limitador por IP en Flask con header Retry-After y cobertura pytest para ráfagas, recarga y rechazos.",
+  "type": "recipes",
+  "topic": "api",
+  "slug": "python-api-rate-limiting",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-api-rate-limiting/",
+    "https://stackpractices.com/es/recipes/python-api-rate-limiting/",
+    "https://datatracker.ietf.org/doc/html/rfc6585#section-4"
+  ],
+  "language": "bilingual",
+  "tags": ["rate-limiting", "token-bucket", "python", "flask", "fastapi", "api", "middleware", "pytest"],
+  "files": [
+    "token_bucket.py",
+    "flask_app.py",
+    "test_token_bucket.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

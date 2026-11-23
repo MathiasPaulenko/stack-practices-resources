@@ -1,0 +1,33 @@
+{
+  "title": "Proxy Pattern: Control Access Behind an Identical Interface",
+  "title_es": "Patrón Proxy: Controla el Acceso tras una Interfaz Idéntica",
+  "description": "Runnable Proxy pattern examples: virtual (lazy), caching and protection proxies in Python and JavaScript, composable around a single report service, with tests for lazy init, memoization and role-based access.",
+  "description_es": "Ejemplos ejecutables del patrón Proxy: proxies virtual (perezoso), de caché y de protección en Python y JavaScript, componibles alrededor de un servicio de informes, con tests de inicialización perezosa, memoización y acceso por roles.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "proxy-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/proxy-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "structural",
+    "proxy",
+    "lazy-loading",
+    "caching",
+    "access-control",
+    "python",
+    "javascript",
+    "testing"
+  ],
+  "files": [
+    "package.json",
+    "proxy.py",
+    "test_proxy.py",
+    "proxy.js",
+    "proxy.test.js",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "proxy-pattern-caching",
+  "version": "1.0.0",
+  "description": "Caching proxy — runnable TTL cache with coalescing, metrics and LRU eviction in Python and JavaScript",
+  "private": true,
+  "scripts": {
+    "demo": "node caching-client.js && python caching_client.py",
+    "test": "node --test caching-client.test.js && python -m pytest test_caching_client.py -v"
+  }
+}
