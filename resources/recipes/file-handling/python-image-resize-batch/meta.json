@@ -1,0 +1,20 @@
+{
+  "title": "Batch Resize Images with Python",
+  "title_es": "Redimensionar Imágenes en Lote con Python",
+  "description": "Batch image resizer CLI: EXIF-aware aspect-ratio resize, JPEG/WebP output, parallel workers, and dry-run mode.",
+  "description_es": "CLI de redimensionado en lote: resize con aspect ratio y EXIF, salida JPEG/WebP, workers en paralelo y modo dry-run.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "python-image-resize-batch",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-image-resize-batch/",
+    "https://stackpractices.com/es/recipes/python-image-resize-batch/"
+  ],
+  "language": "python",
+  "tags": ["images", "python", "pillow", "batch-processing", "resize", "webp"],
+  "files": [
+    "resize_batch.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,5 @@
+﻿[tool.bandit]
+exclude_dirs = ["venv", ".venv", "__pycache__", "build", "dist"]
+
+# Run with: bandit -c pyproject.toml -r src/
+# Requires: pip install "bandit[toml]"

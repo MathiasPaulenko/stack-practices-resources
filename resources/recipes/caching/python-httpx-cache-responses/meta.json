@@ -1,0 +1,29 @@
+{
+  "title": "httpx + CacheControl Response Caching — Companion Files",
+  "title_es": "Caché de respuestas con httpx + CacheControl — Archivos complementarios",
+  "description": "Runnable httpx + CacheControl examples: file-based and Redis cache adapters, a CachedHttpClient wrapper with force-refresh and TTL cap, and a demo script against httpbin.org.",
+  "description_es": "Ejemplos ejecutables de httpx + CacheControl: adapters de caché en archivos y Redis, wrapper CachedHttpClient con force-refresh y límite de TTL, y un script demo contra httpbin.org.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "python-httpx-cache-responses",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-httpx-cache-responses/",
+    "https://stackpractices.com/es/recipes/python-httpx-cache-responses/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "httpx",
+    "cachecontrol",
+    "http",
+    "caching",
+    "redis",
+    "etag"
+  ],
+  "files": [
+    "client.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

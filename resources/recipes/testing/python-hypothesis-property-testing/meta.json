@@ -1,0 +1,30 @@
+{
+  "title": "Hypothesis Property Testing — Companion Files",
+  "title_es": "Property testing con Hypothesis — Archivos complementarios",
+  "description": "Runnable pytest suite: core property tests (strategies, assume, example, settings), a @composite email generator, st.builds over a dataclass, and a RuleBasedStateMachine stack model.",
+  "description_es": "Suite pytest ejecutable: property tests principales (strategies, assume, example, settings), generador de emails con @composite, st.builds sobre un dataclass y un modelo de stack con RuleBasedStateMachine.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "python-hypothesis-property-testing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-hypothesis-property-testing/",
+    "https://stackpractices.com/es/recipes/python-hypothesis-property-testing/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "hypothesis",
+    "property-based-testing",
+    "pytest",
+    "fuzzing",
+    "testing"
+  ],
+  "files": [
+    "test_properties.py",
+    "test_strategies.py",
+    "test_stateful.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

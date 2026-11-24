@@ -1,0 +1,30 @@
+{
+  "title": "Hugging Face Text Classification — Companion Files",
+  "title_es": "Clasificación de texto con Hugging Face — Archivos complementarios",
+  "description": "Runnable fine-tuning pipeline: DistilBERT + Trainer on a 2k IMDb subset with F1/accuracy evaluation, plus a batch inference service with human-readable labels.",
+  "description_es": "Pipeline de fine-tuning ejecutable: DistilBERT + Trainer sobre un subset de 2k de IMDb con evaluación F1/accuracy, más un servicio de inferencia batch con etiquetas legibles.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-huggingface-text-classification",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-huggingface-text-classification/",
+    "https://stackpractices.com/es/recipes/python-huggingface-text-classification/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "huggingface",
+    "transformers",
+    "fine-tuning",
+    "text-classification",
+    "nlp",
+    "distilbert"
+  ],
+  "files": [
+    "train.py",
+    "infer.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

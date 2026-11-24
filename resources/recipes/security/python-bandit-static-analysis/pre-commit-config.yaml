@@ -1,0 +1,8 @@
+﻿# Rename to .pre-commit-config.yaml in your project root.
+repos:
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.9.4
+    hooks:
+      - id: bandit
+        args: ["--severity-level", "medium"]
+        exclude: ^(tests/|migrations/)

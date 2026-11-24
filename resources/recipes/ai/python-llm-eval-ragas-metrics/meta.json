@@ -1,0 +1,20 @@
+{
+  "title": "Evaluate RAG Quality with RAGAS Metrics",
+  "title_es": "Evalúa calidad RAG con métricas RAGAS",
+  "description": "RAGAS evaluation runner: test dataset, four core metrics (faithfulness, answer relevancy, context precision, context recall), report printer, and CSV batch evaluation.",
+  "description_es": "Runner de evaluación RAGAS: dataset de pruebas, cuatro métricas core (fidelidad, relevancia, precisión y recall de contexto), impresor de reportes y evaluación batch desde CSV.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-llm-eval-ragas-metrics",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-llm-eval-ragas-metrics/",
+    "https://stackpractices.com/es/recipes/python-llm-eval-ragas-metrics/"
+  ],
+  "language": "python",
+  "tags": ["ragas", "python", "rag", "evaluation", "llm", "metrics"],
+  "files": [
+    "eval_rag.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

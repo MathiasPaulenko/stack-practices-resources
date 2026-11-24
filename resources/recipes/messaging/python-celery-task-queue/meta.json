@@ -1,0 +1,13 @@
+{
+  "title": "Celery Task Queue for Python: Workers, Canvas and Beat",
+  "title_es": "Cola de tareas Celery en Python: workers, canvas y Beat",
+  "description": "Runnable Celery app and task module: Redis broker/backend, retry policies, chain/chord signatures, queue routing and a Celery Beat schedule.",
+  "description_es": "App Celery y módulo de tareas ejecutables: broker/backend Redis, políticas de retry, signaturas de chain/chord, routing por colas y un schedule de Celery Beat.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "python-celery-task-queue",
+  "source_urls": ["https://stackpractices.com/recipes/python-celery-task-queue/"],
+  "language": "en",
+  "tags": ["python", "celery", "redis", "task-queue", "background-jobs"],
+  "files": ["celery_app.py", "tasks.py", "README.md", "README.es.md"]
+}

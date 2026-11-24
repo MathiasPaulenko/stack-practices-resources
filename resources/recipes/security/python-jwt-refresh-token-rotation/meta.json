@@ -1,0 +1,22 @@
+{
+  "title": "Secure JWT Refresh Token Rotation with Python",
+  "title_es": "Rotación segura de refresh tokens JWT con Python",
+  "description": "JWT token manager with refresh token rotation, blacklist and reuse detection, plus a FastAPI app with login/refresh/logout endpoints.",
+  "description_es": "Gestor de tokens JWT con rotación de refresh tokens, blacklist y detección de reuso, más una app FastAPI con endpoints login/refresh/logout.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "python-jwt-refresh-token-rotation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-jwt-refresh-token-rotation/",
+    "https://stackpractices.com/es/recipes/python-jwt-refresh-token-rotation/"
+  ],
+  "language": "python",
+  "tags": ["jwt", "python", "authentication", "security", "fastapi", "token-rotation"],
+  "files": [
+    "token_manager.py",
+    "redis_token_manager.py",
+    "app.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

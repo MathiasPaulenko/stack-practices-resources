@@ -1,0 +1,13 @@
+{
+  "title": "Bandit Static Analysis for Python: Configuration and CI Setup",
+  "title_es": "Análisis estático con Bandit para Python: configuración y CI",
+  "description": "Ready-to-use Bandit configuration files, a GitHub Actions gate, a pre-commit hook, and a custom test plugin registered via entry points.",
+  "description_es": "Configuración de Bandit lista para usar, un gate de GitHub Actions, un hook de pre-commit y un plugin personalizado registrado vía entry points.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "python-bandit-static-analysis",
+  "source_urls": ["https://stackpractices.com/recipes/python-bandit-static-analysis/"],
+  "language": "en",
+  "tags": ["python", "security", "bandit", "static-analysis", "ci-cd"],
+  "files": ["bandit.ini", "pyproject.toml", "pre-commit-config.yaml", "bandit-workflow.yml", "bandit_plugins/no_print_statements.py", "README.md", "README.es.md"]
+}
