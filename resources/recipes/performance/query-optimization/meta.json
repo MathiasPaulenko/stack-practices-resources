@@ -1,0 +1,30 @@
+{
+  "title": "Query Optimization — Companion Code",
+  "title_es": "Optimización de consultas — Código complementario",
+  "description": "Runnable PostgreSQL for the query-optimization recipe: a seeded demo schema, EXPLAIN (ANALYZE, BUFFERS) exercises covering Seq Scan vs Index Scan, covering indexes, N+1 vs JOIN, OFFSET vs keyset pagination and NOT IN vs NOT EXISTS, plus pg_stat_statements monitoring queries.",
+  "description_es": "PostgreSQL ejecutable para la receta de optimización de consultas: esquema de demo con datos, ejercicios de EXPLAIN (ANALYZE, BUFFERS) que comparan Seq Scan vs Index Scan, índices covering, N+1 vs JOIN, paginación OFFSET vs keyset y NOT IN vs NOT EXISTS, más consultas de monitoreo con pg_stat_statements.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "query-optimization",
+  "source_urls": [
+    "https://stackpractices.com/recipes/query-optimization/",
+    "https://stackpractices.com/es/recipes/query-optimization/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "query-optimization",
+    "explain-analyze",
+    "pg-stat-statements",
+    "indexing",
+    "performance"
+  ],
+  "files": [
+    "schema.sql",
+    "analyze.sql",
+    "monitoring.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}
