@@ -1,0 +1,21 @@
+{
+  "title": "ThreadPoolExecutor Patterns — Companion Code",
+  "title_es": "Patrones de ThreadPoolExecutor — Codigo complementario",
+  "description": "Runnable ThreadPoolExecutor examples: map vs submit/as_completed, per-future error handling, thread-safe result collection, and thread-local sessions. Smoke test uses sleep-based tasks, no network needed.",
+  "description_es": "Ejemplos ejecutables de ThreadPoolExecutor: map vs submit/as_completed, manejo de errores por future, recoleccion thread-safe de resultados y sessions thread-local. El smoke test usa tareas con sleep, sin red.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "python-thread-pool-executor",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-thread-pool-executor/",
+    "https://stackpractices.com/es/recipes/python-thread-pool-executor/"
+  ],
+  "language": "python",
+  "tags": ["python", "concurrency", "thread-pool", "concurrent-futures", "parallelism", "recipe"],
+  "files": [
+    "thread_pool.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

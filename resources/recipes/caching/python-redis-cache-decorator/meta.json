@@ -1,0 +1,29 @@
+{
+  "title": "Cache Function Results with Redis and TTL in Python",
+  "title_es": "Cache de resultados de funciones con Redis y TTL en Python",
+  "description": "Reusable Redis cache decorator: deterministic key generation from function signature, JSON serialization, configurable TTL, per-call invalidation, and an async variant.",
+  "description_es": "Decorador de cache con Redis reutilizable: generacion determinista de claves desde la firma de la funcion, serializacion JSON, TTL configurable, invalidacion por llamada y variante async.",
+  "type": "recipes",
+  "topic": "caching",
+  "slug": "python-redis-cache-decorator",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-redis-cache-decorator/",
+    "https://stackpractices.com/es/recipes/python-redis-cache-decorator/"
+  ],
+  "language": "python",
+  "tags": [
+    "python",
+    "redis",
+    "caching",
+    "decorator",
+    "ttl",
+    "cache-aside",
+    "serialization"
+  ],
+  "files": [
+    "cache_decorator.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

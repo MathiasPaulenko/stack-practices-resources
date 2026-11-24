@@ -1,0 +1,21 @@
+{
+  "title": "Custom Terraform Provider in Python — Companion Code",
+  "title_es": "Provider personalizado de Terraform en Python — Codigo complementario",
+  "description": "Runnable provider skeleton: ApiClient wrapper, ItemResource CRUD with empty-state-on-404 semantics, and an in-memory mock API that runs the full create/read/update/delete cycle.",
+  "description_es": "Skeleton de provider ejecutable: wrapper ApiClient, CRUD de ItemResource con semantica de estado-vacio-ante-404, y una API mock en memoria que corre el ciclo create/read/update/delete completo.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "python-terraform-provider-custom",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-terraform-provider-custom/",
+    "https://stackpractices.com/es/recipes/python-terraform-provider-custom/"
+  ],
+  "language": "python",
+  "tags": ["terraform", "provider", "python", "iac", "devops", "grpc", "recipe"],
+  "files": [
+    "provider.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

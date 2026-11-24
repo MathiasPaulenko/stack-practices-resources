@@ -1,0 +1,21 @@
+{
+  "title": "SQL Injection Prevention with SQLAlchemy — Companion Code",
+  "title_es": "Prevencion de inyeccion SQL con SQLAlchemy — Codigo complementario",
+  "description": "Runnable SQLAlchemy examples: vulnerable f-string query vs text() bound params, ORM select, dynamic filters, ORDER BY whitelists, and LIKE wildcard escaping against in-memory SQLite.",
+  "description_es": "Ejemplos ejecutables de SQLAlchemy: query vulnerable con f-strings vs text() con parametros vinculados, select ORM, filtros dinamicos, whitelists de ORDER BY y escape de wildcards LIKE contra SQLite en memoria.",
+  "type": "recipes",
+  "topic": "security",
+  "slug": "python-sql-injection-sqlalchemy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-sql-injection-sqlalchemy/",
+    "https://stackpractices.com/es/recipes/python-sql-injection-sqlalchemy/"
+  ],
+  "language": "python",
+  "tags": ["sql-injection", "sqlalchemy", "python", "parameterized-queries", "orm", "owasp", "database-security", "recipe"],
+  "files": [
+    "safe_queries.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

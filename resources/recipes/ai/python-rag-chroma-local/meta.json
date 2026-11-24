@@ -1,0 +1,21 @@
+{
+  "title": "Local RAG Pipeline with ChromaDB and Sentence Transformers",
+  "title_es": "Pipeline RAG local con ChromaDB y Sentence Transformers",
+  "description": "Complete local RAG pipeline: document chunking with overlap, ChromaDB persistent vector store, sentence-transformers embeddings, OpenAI or Ollama generation, and optional cross-encoder reranking.",
+  "description_es": "Pipeline RAG local completo: chunking de documentos con overlap, store vectorial persistente con ChromaDB, embeddings con sentence-transformers, generacion con OpenAI u Ollama y reranking opcional con cross-encoder.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-rag-chroma-local",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-rag-chroma-local/",
+    "https://stackpractices.com/es/recipes/python-rag-chroma-local/"
+  ],
+  "language": "python",
+  "tags": ["python", "rag", "chromadb", "sentence-transformers", "embeddings", "local-llm", "ollama"],
+  "files": [
+    "rag_pipeline.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

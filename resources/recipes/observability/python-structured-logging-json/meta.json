@@ -1,0 +1,21 @@
+{
+  "title": "Structured JSON Logging with structlog — Companion Code",
+  "title_es": "Logging estructurado JSON con structlog — Codigo complementario",
+  "description": "Runnable structlog setup: JSON processor chain, contextvars binding, sensitive-data redaction and timing processors, plus a FastAPI-style middleware. Smoke test prints JSON to stdout.",
+  "description_es": "Setup ejecutable de structlog: cadena de processors JSON, vinculacion con contextvars, processors de redaccion de datos sensibles y de timing, mas un middleware estilo FastAPI. El smoke test imprime JSON a stdout.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "python-structured-logging-json",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-structured-logging-json/",
+    "https://stackpractices.com/es/recipes/python-structured-logging-json/"
+  ],
+  "language": "python",
+  "tags": ["structlog", "logging", "python", "json", "observability", "contextvars", "recipe"],
+  "files": [
+    "structured_logging.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
