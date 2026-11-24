@@ -1,0 +1,29 @@
+{
+  "title": "Pytest Fixtures and Parametrize — Companion Resources",
+  "title_es": "Fixtures y Parametrize de Pytest — Recursos complementarios",
+  "description": "Runnable pytest examples: yield fixtures with teardown, fixture scopes, indirect parametrize via request.param, parametrized fixtures, pytest.param IDs, and skipped cases.",
+  "description_es": "Ejemplos ejecutables de pytest: fixtures con yield y teardown, scopes, parametrize indirecto con request.param, fixtures parametrizados, IDs con pytest.param y casos salteados.",
+  "type": "recipes",
+  "topic": "testing",
+  "slug": "python-pytest-fixtures-parametrize",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-pytest-fixtures-parametrize/",
+    "https://stackpractices.com/es/recipes/python-pytest-fixtures-parametrize/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "testing",
+    "pytest",
+    "fixtures",
+    "parametrize",
+    "conftest",
+    "python"
+  ],
+  "files": [
+    "conftest.py",
+    "test_parametrize.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

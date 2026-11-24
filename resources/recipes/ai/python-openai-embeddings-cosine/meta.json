@@ -1,0 +1,23 @@
+{
+  "title": "Compare Text Semantic Similarity with OpenAI Embeddings",
+  "title_es": "Compara similitud semántica con embeddings de OpenAI",
+  "description": "Runnable similarity search project: OpenAI batch embeddings, cosine similarity (scalar and matrix), an in-memory search index, retry with backoff, and threshold-based deduplication.",
+  "description_es": "Proyecto ejecutable de búsqueda por similitud: embeddings batch de OpenAI, similitud coseno (escalar y matriz), un índice de búsqueda en memoria, reintentos con backoff y deduplicación por umbral.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-openai-embeddings-cosine",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-openai-embeddings-cosine/",
+    "https://stackpractices.com/es/recipes/python-openai-embeddings-cosine/",
+    "https://platform.openai.com/docs/guides/embeddings"
+  ],
+  "language": "bilingual",
+  "tags": ["python", "openai", "embeddings", "cosine-similarity", "semantic-search"],
+  "files": [
+    "similarity_search.py",
+    "main.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

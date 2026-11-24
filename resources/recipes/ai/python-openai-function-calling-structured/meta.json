@@ -1,0 +1,23 @@
+{
+  "title": "Structured JSON Output from OpenAI Function Calling",
+  "title_es": "Salida JSON estructurada con OpenAI Function Calling",
+  "description": "Runnable structured-output project: Pydantic schemas, function calling, response_format with json_schema, retry with backoff, refusal handling, and batch extraction.",
+  "description_es": "Proyecto ejecutable de salida estructurada: esquemas Pydantic, function calling, response_format con json_schema, reintentos con backoff, manejo de rechazos y extracción en batch.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-openai-function-calling-structured",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-openai-function-calling-structured/",
+    "https://stackpractices.com/es/recipes/python-openai-function-calling-structured/",
+    "https://platform.openai.com/docs/guides/structured-outputs"
+  ],
+  "language": "bilingual",
+  "tags": ["python", "openai", "function-calling", "structured-output", "pydantic"],
+  "files": [
+    "structured_extract.py",
+    "main.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

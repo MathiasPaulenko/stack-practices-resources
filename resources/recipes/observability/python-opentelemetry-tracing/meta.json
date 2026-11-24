@@ -1,0 +1,23 @@
+{
+  "title": "Distributed Tracing with OpenTelemetry",
+  "title_es": "Trazado distribuido con OpenTelemetry",
+  "description": "Runnable OpenTelemetry tracing project: tracer setup with Jaeger/OTLP/console exporters, ParentBased sampling, context propagation helpers, and a nested-span demo.",
+  "description_es": "Proyecto ejecutable de trazado con OpenTelemetry: configuración del tracer con exportadores Jaeger/OTLP/consola, sampling ParentBased, helpers de propagación de contexto y demo de spans anidados.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "python-opentelemetry-tracing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-opentelemetry-tracing/",
+    "https://stackpractices.com/es/recipes/python-opentelemetry-tracing/",
+    "https://opentelemetry.io/docs/languages/python/"
+  ],
+  "language": "bilingual",
+  "tags": ["python", "opentelemetry", "tracing", "jaeger", "observability"],
+  "files": [
+    "tracing_setup.py",
+    "main.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
