@@ -1,0 +1,16 @@
+{
+  "title": "Web Scraping with BeautifulSoup - Companion Code",
+  "title_es": "Web Scraping con BeautifulSoup - Código Complementario",
+  "description": "Runnable rate-limited HTML scraper built on requests + BeautifulSoup: retry with backoff, CSS selector extraction, pagination, CSV/JSON export.",
+  "description_es": "Scraper HTML ejecutable con rate limiting basado en requests + BeautifulSoup: reintentos con backoff, extracción con selectores CSS, paginación y exportación a CSV/JSON.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "python-web-scraping-beautifulsoup",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-web-scraping-beautifulsoup/",
+    "https://stackpractices.com/es/recipes/python-web-scraping-beautifulsoup/"
+  ],
+  "language": "python",
+  "tags": ["python", "beautifulsoup", "web-scraping", "requests", "csv", "json"],
+  "files": ["scraper.py", "requirements.txt", "README.md", "README.es.md"]
+}
