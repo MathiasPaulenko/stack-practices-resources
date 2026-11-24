@@ -1,0 +1,21 @@
+{
+  "title": "Pinecone Vector Store with OpenAI Embeddings",
+  "title_es": "Store vectorial Pinecone con embeddings de OpenAI",
+  "description": "Runnable Pinecone vector store: serverless index creation, OpenAI embeddings upsert, similarity search with metadata filtering, namespaces for multi-tenant isolation, batch upserts with retries, and hybrid dense+sparse search.",
+  "description_es": "Store vectorial Pinecone ejecutable: creación de índice serverless, upsert de embeddings de OpenAI, búsqueda por similitud con filtros de metadatos, namespaces para aislamiento multi-tenant, upserts por lotes con reintentos y búsqueda híbrida densa+sparse.",
+  "type": "recipes",
+  "topic": "ai",
+  "slug": "python-vector-database-pinecone",
+  "source_urls": [
+    "https://stackpractices.com/recipes/python-vector-database-pinecone/",
+    "https://stackpractices.com/es/recipes/python-vector-database-pinecone/"
+  ],
+  "language": "python",
+  "tags": ["python", "pinecone", "vector-database", "embeddings", "semantic-search", "openai", "rag"],
+  "files": [
+    "pinecone_vector_store.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}
