@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="add-phone-column" author="team">
+        <addColumn tableName="users">
+            <column name="phone" type="VARCHAR(20)" />
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="backfill-phone" author="team">
+        <sql>
+            UPDATE users SET phone = phone_number
+            WHERE phone IS NULL AND phone_number IS NOT NULL
+        </sql>
+    </changeSet>
+
+    <changeSet id="drop-old-phone" author="team">
+        <dropColumn tableName="users" columnName="phone_number" />
+    </changeSet>
+</databaseChangeLog>

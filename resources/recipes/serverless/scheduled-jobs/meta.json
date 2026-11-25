@@ -1,0 +1,31 @@
+{
+  "title": "Scheduled Jobs with Serverless Functions — Companion Resources",
+  "title_es": "Jobs Programados con Funciones Serverless — Recursos complementarios",
+  "description": "Runnable companion files for the scheduled jobs recipe: a Python Lambda handler for daily reports, the EventBridge rule in Terraform, a Google Cloud Scheduler job definition, and an Azure Timer Trigger function.",
+  "description_es": "Archivos ejecutables complementarios de la receta de jobs programados: un handler Lambda en Python para reportes diarios, la regla de EventBridge en Terraform, una definición de job de Cloud Scheduler y una función Azure Timer Trigger.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "scheduled-jobs",
+  "source_urls": [
+    "https://stackpractices.com/recipes/scheduled-jobs/",
+    "https://stackpractices.com/es/recipes/scheduled-jobs/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "serverless",
+    "cron",
+    "aws-lambda",
+    "eventbridge",
+    "cloud-scheduler",
+    "azure-functions",
+    "terraform"
+  ],
+  "files": [
+    "daily_report_lambda.py",
+    "eventbridge_rule.tf",
+    "cloud_scheduler_job.yaml",
+    "timer_trigger_function.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

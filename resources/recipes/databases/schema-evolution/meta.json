@@ -1,0 +1,37 @@
+{
+  "title": "Database Schema Evolution — Companion Resources",
+  "title_es": "Evolución de Schema de Base de Datos — Recursos complementarios",
+  "description": "Runnable companion files for the schema evolution recipe: expand-contract SQL for PostgreSQL, online DDL scripts for MySQL (gh-ost and pt-online-schema-change), Liquibase and Flyway migrations, safe NOT NULL/FK constraints, a dual-write split-column trigger, and migration session guards.",
+  "description_es": "Archivos ejecutables complementarios de la receta de evolución de esquemas: SQL de expand-contract para PostgreSQL, scripts de DDL online para MySQL (gh-ost y pt-online-schema-change), migraciones de Liquibase y Flyway, constraints NOT NULL/FK seguros, un trigger de dual-write para dividir columnas y guardas de sesión para migraciones.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "schema-evolution",
+  "source_urls": [
+    "https://stackpractices.com/recipes/schema-evolution/",
+    "https://stackpractices.com/es/recipes/schema-evolution/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "databases",
+    "postgresql",
+    "mysql",
+    "migrations",
+    "online-ddl",
+    "expand-contract",
+    "flyway",
+    "liquibase",
+    "gh-ost"
+  ],
+  "files": [
+    "expand_contract_postgres.sql",
+    "pt_online_schema_change.sh",
+    "gh_ost_online_change.sh",
+    "liquibase_changelog.xml",
+    "V1_2__add_user_preferences.sql",
+    "not_null_and_fk_safely.sql",
+    "split_column_trigger.sql",
+    "migration_session_settings.sql",
+    "README.md",
+    "README.es.md"
+  ]
+}

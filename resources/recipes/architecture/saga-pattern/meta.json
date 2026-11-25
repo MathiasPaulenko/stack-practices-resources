@@ -1,0 +1,34 @@
+{
+  "title": "Saga Pattern — Orchestration and Choreography",
+  "title_es": "Saga Pattern — Orquestación y Coreografía",
+  "description": "Runnable saga examples: TypeScript orchestrator with compensating transactions, event-driven choreography services, saga state persistence schema for PostgreSQL, and an asyncpg repository to query and resume stuck sagas.",
+  "description_es": "Ejemplos ejecutables de sagas: orquestador en TypeScript con transacciones compensatorias, servicios de coreografía dirigida por eventos, esquema de persistencia de estado en PostgreSQL y un repositorio asyncpg para consultar y reanudar sagas atascadas.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "saga-pattern",
+  "source_urls": [
+    "https://stackpractices.com/recipes/saga-pattern-recipe/",
+    "https://stackpractices.com/es/recipes/saga-pattern-recipe/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "saga",
+    "distributed-transactions",
+    "microservices",
+    "compensation",
+    "orchestration",
+    "choreography",
+    "typescript",
+    "postgresql",
+    "architecture"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "orchestrator.ts",
+    "choreography_services.ts",
+    "OrderSagaManager.java",
+    "saga_state.sql",
+    "saga_state_repository.py"
+  ]
+}

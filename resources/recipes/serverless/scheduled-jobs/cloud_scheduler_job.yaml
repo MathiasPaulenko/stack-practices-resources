@@ -1,0 +1,10 @@
+# Cloud Scheduler job calling an HTTP Cloud Function
+job:
+  name: daily-cleanup
+  schedule: "0 2 * * *"
+  timeZone: UTC
+  httpTarget:
+    uri: https://us-central1-project.cloudfunctions.net/cleanupFunction
+    httpMethod: POST
+    oidcToken:
+      serviceAccountEmail: scheduler@project.iam.gserviceaccount.com

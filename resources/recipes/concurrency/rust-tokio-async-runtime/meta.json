@@ -1,0 +1,26 @@
+{
+  "title": "Rust Tokio Async Runtime Examples",
+  "title_es": "Ejemplos del Runtime Async de Rust con Tokio",
+  "description": "Runnable Cargo project covering Tokio's core primitives: task spawning, mpsc/oneshot/broadcast channels, Arc<Mutex<T>> shared state, CancellationToken graceful shutdown, and Semaphore-bounded concurrency.",
+  "description_es": "Proyecto Cargo ejecutable con las primitivas centrales de Tokio: spawn de tasks, channels mpsc/oneshot/broadcast, estado compartido con Arc<Mutex<T>>, apagado limpio con CancellationToken y concurrencia acotada con Semaphore.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "rust-tokio-async-runtime",
+  "author": "Mathias Paulenko",
+  "source_urls": [
+    "https://stackpractices.com/recipes/rust-tokio-async-runtime/",
+    "https://stackpractices.com/es/recipes/rust-tokio-async-runtime/"
+  ],
+  "language": "rust",
+  "tags": ["rust", "tokio", "async", "concurrency", "channels", "runtime"],
+  "files": [
+    "Cargo.toml",
+    "src/bin/basic_spawn.rs",
+    "src/bin/channels.rs",
+    "src/bin/shared_state.rs",
+    "src/bin/graceful_shutdown.rs",
+    "src/bin/semaphore.rs",
+    "README.md",
+    "README.es.md"
+  ]
+}
