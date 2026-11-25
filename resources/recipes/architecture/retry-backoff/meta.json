@@ -1,0 +1,33 @@
+{
+  "title": "Retry Backoff: Budgets, Deadlines, and Library Configs",
+  "title_es": "Retry Backoff: Budgets, Deadlines y Config de Librerías",
+  "description": "Runnable advanced retry techniques: a Go token-bucket retry budget, a TypeScript hedged request with cancellation, and a Python context-aware retry decorator with a hard deadline.",
+  "description_es": "Técnicas avanzadas de retry ejecutables: un retry budget con token bucket en Go, un hedged request con cancelación en TypeScript y un decorador de retry context-aware con deadline duro en Python.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "retry-backoff",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/retry-backoff/",
+    "es": "https://stackpractices.com/es/recipes/retry-backoff/"
+  },
+  "language": [
+    "go",
+    "typescript",
+    "python"
+  ],
+  "tags": [
+    "retry",
+    "backoff",
+    "resilience",
+    "hedged-request",
+    "retry-budget",
+    "distributed-systems"
+  ],
+  "files": [
+    "retry_budget.go",
+    "hedged_request.ts",
+    "retry_deadline.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

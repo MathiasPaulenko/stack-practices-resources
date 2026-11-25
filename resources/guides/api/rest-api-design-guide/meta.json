@@ -1,0 +1,38 @@
+{
+  "title": "REST API Design Guide",
+  "title_es": "Guía de Diseño de APIs REST",
+  "description": "Runnable FastAPI snippets implementing the conventions from the REST API Design Guide: consistent error envelope, Idempotency-Key handling, ETag conditional requests, rate-limit headers, deprecation headers, cursor pagination, request IDs, and an OpenAPI spec fragment.",
+  "description_es": "Snippets ejecutables de FastAPI que implementan las convenciones de la Guía de Diseño de APIs REST: envelope de error consistente, manejo de Idempotency-Key, requests condicionales con ETag, headers de rate limit, headers de deprecación, paginación por cursor, request IDs y un fragmento de spec OpenAPI.",
+  "type": "guides",
+  "topic": "api",
+  "slug": "rest-api-design-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/rest-api-design-guide/",
+    "es": "https://stackpractices.com/es/guides/rest-api-design-guide/"
+  },
+  "language": [
+    "python",
+    "yaml"
+  ],
+  "tags": [
+    "rest",
+    "api-design",
+    "fastapi",
+    "idempotency",
+    "etag",
+    "pagination",
+    "openapi"
+  ],
+  "files": [
+    "error_envelope.py",
+    "idempotency.py",
+    "etag_conditional.py",
+    "rate_limit_headers.py",
+    "deprecation.py",
+    "cursor_pagination.py",
+    "request_id.py",
+    "openapi_snippet.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

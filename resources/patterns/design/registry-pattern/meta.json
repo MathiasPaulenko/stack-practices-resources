@@ -1,0 +1,23 @@
+{
+  "title": "Registry Pattern — Code Examples",
+  "title_es": "Patrón Registry — Ejemplos de Código",
+  "description": "Runnable Registry Pattern examples in Python, JavaScript, Java, and TypeScript: named instance lookup, lazy factories, test reset, and a plugin-registry variant.",
+  "description_es": "Ejemplos ejecutables del Patrón Registry en Python, JavaScript, Java y TypeScript: lookup de instancias por nombre, factories lazy, reset para tests y una variante de registro de plugins.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "registry-pattern",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/registry-pattern/",
+    "es": "https://stackpractices.com/es/patterns/registry-pattern/"
+  },
+  "language": ["python", "javascript", "java", "typescript"],
+  "tags": ["registry", "design-pattern", "structural", "service-locator", "python", "javascript", "java", "typescript"],
+  "files": [
+    "python/registry.py",
+    "javascript/registry.js",
+    "java/Registry.java",
+    "typescript/plugin_registry.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

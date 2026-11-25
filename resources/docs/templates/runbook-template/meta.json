@@ -1,0 +1,16 @@
+{
+  "title": "Runbook Template (Markdown + Filled Example)",
+  "title_es": "Plantilla de Runbook (Markdown + Ejemplo Cumplimentado)",
+  "description": "Copy-paste runbook template in Markdown: metadata block, prerequisites checklist, procedure steps with expected results and rollback, verification, troubleshooting table, escalation paths — plus a filled Kubernetes high-CPU example.",
+  "description_es": "Plantilla de runbook lista para copiar en Markdown: bloque de metadatos, checklist de prerrequisitos, pasos con resultado esperado y rollback, verificación, tabla de solución de problemas, escalamiento — más un ejemplo cumplimentado de CPU alta en Kubernetes.",
+  "type": "docs",
+  "topic": "templates",
+  "slug": "runbook-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/runbook-template/",
+    "https://stackpractices.com/es/docs/runbook-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["runbook", "incident-response", "sre", "on-call", "template", "markdown"],
+  "files": ["runbook-template.md", "runbook-example.md", "README.md", "README.es.md"]
+}

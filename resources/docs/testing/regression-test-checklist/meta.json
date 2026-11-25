@@ -1,0 +1,21 @@
+{
+  "title": "Regression Test Checklist — Template",
+  "title_es": "Checklist de Pruebas de Regresión — Template",
+  "description": "The raw regression test checklist template: pre-deploy checks, post-deploy smoke tests, feature-specific regression tests, rollback verification, and sign-off.",
+  "description_es": "El template crudo del checklist de pruebas de regresión: comprobaciones pre-deploy, smoke tests post-deploy, regresión específica por feature, verificación de rollback y sign-off.",
+  "type": "docs",
+  "topic": "testing",
+  "slug": "regression-test-checklist",
+  "source_urls": {
+    "en": "https://stackpractices.com/docs/regression-test-checklist/",
+    "es": "https://stackpractices.com/es/docs/regression-test-checklist/"
+  },
+  "language": ["markdown"],
+  "tags": ["regression-testing", "checklist", "template", "deployment", "rollback", "smoke-tests"],
+  "files": [
+    "regression-test-checklist.md",
+    "regression-test-checklist.es.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

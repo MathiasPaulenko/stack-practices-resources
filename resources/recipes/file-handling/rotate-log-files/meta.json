@@ -1,0 +1,37 @@
+{
+  "title": "Rotate Log Files",
+  "title_es": "Rotar Archivos de Log",
+  "description": "Runnable companion examples for the log rotation recipe: Python RotatingFileHandler/TimedRotatingFileHandler/WatchedFileHandler, a JSON-format rotating handler, Winston with winston-daily-rotate-file, Logback SizeAndTimeBasedRollingPolicy, and logrotate configs for time-based, size-based and zstd compression.",
+  "description_es": "Ejemplos ejecutables complementarios de la receta de rotación de logs: RotatingFileHandler/TimedRotatingFileHandler/WatchedFileHandler de Python, un handler rotativo con formato JSON, Winston con winston-daily-rotate-file, SizeAndTimeBasedRollingPolicy de Logback y configuraciones de logrotate por tiempo, por tamaño y con compresión zstd.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "rotate-log-files",
+  "source_urls": [
+    "https://stackpractices.com/recipes/rotate-log-files/",
+    "https://stackpractices.com/es/recipes/rotate-log-files/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "python",
+    "nodejs",
+    "winston",
+    "java",
+    "logback",
+    "linux",
+    "logrotate",
+    "logging",
+    "rotation",
+    "retention"
+  ],
+  "files": [
+    "python_rotation.py",
+    "python_json_rotation.py",
+    "nodejs_winston_rotation.js",
+    "logback.xml",
+    "logrotate-daily.conf",
+    "logrotate-size.conf",
+    "logrotate-zstd.conf",
+    "README.md",
+    "README.es.md"
+  ]
+}
