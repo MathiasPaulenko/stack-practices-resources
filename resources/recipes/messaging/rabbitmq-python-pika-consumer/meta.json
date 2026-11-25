@@ -1,0 +1,23 @@
+{
+  "title": "RabbitMQ Consumer with Python and Pika",
+  "title_es": "Consumer de RabbitMQ con Python y Pika",
+  "description": "Runnable RabbitMQ producer and consumer using pika: durable queues, manual acknowledgments, dead-letter exchange, prefetch tuning, and reconnection-safe consumer.",
+  "description_es": "Productor y consumer de RabbitMQ ejecutables con pika: colas durables, acknowledgments manuales, dead-letter exchange, ajuste de prefetch y consumer con reconexión.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "rabbitmq-python-pika-consumer",
+  "source_urls": [
+    "https://stackpractices.com/recipes/rabbitmq-python-pika-consumer/",
+    "https://stackpractices.com/es/recipes/rabbitmq-python-pika-consumer/"
+  ],
+  "language": "python",
+  "tags": ["rabbitmq", "python", "pika", "consumer", "message-queue", "dead-letter"],
+  "files": [
+    "producer.py",
+    "consumer.py",
+    "dlq_setup.py",
+    "resilient_consumer.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

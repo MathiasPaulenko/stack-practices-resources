@@ -1,0 +1,29 @@
+{
+  "title": "RAG Hybrid Search Pattern — Runnable Implementations",
+  "title_es": "Patrón de búsqueda híbrida para RAG — Implementaciones ejecutables",
+  "description": "Runnable BM25, vector search, and reciprocal rank fusion examples in Python, JavaScript, and Java. The demos use local sample data and need no API keys.",
+  "description_es": "Ejemplos ejecutables de BM25, búsqueda vectorial y reciprocal rank fusion en Python, JavaScript y Java. Usan datos locales de muestra y no requieren claves de API.",
+  "type": "patterns",
+  "topic": "ai",
+  "slug": "rag-hybrid-search-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/rag-hybrid-search-pattern/",
+    "https://stackpractices.com/es/patterns/rag-hybrid-search-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "ai",
+    "rag",
+    "hybrid-search",
+    "bm25",
+    "vector-search",
+    "rrf"
+  ],
+  "files": [
+    "src/hybrid_search.py",
+    "src/hybrid-search.js",
+    "src/HybridSearch.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

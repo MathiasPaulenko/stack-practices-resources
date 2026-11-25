@@ -1,0 +1,24 @@
+{
+  "title": "Race Condition Prevention — TypeScript & Python",
+  "title_es": "Prevención de race conditions — TypeScript y Python",
+  "description": "Runnable implementations of the six async race-condition patterns: AbortController cancellation, serialized promise queue, latest-only request IDs, Mutex, compare-and-swap and an asyncio.Lock transfer example.",
+  "description_es": "Implementaciones ejecutables de los seis patrones contra race conditions async: cancelación con AbortController, cola de promises serializada, request IDs solo-última, Mutex, compare-and-swap y un ejemplo de transferencias con asyncio.Lock.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "race-condition-prevention",
+  "source_urls": [
+    "https://stackpractices.com/recipes/race-condition-prevention/"
+  ],
+  "language": "bilingual",
+  "tags": ["race-condition", "concurrency", "javascript", "typescript", "async", "mutex", "abortcontroller"],
+  "files": [
+    "search_service.ts",
+    "atomic_counter.ts",
+    "use_latest_query.ts",
+    "mutex.ts",
+    "cas_store.ts",
+    "asyncio_transfer.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "RabbitMQ Dead-Letter Queues — Companion Resources",
+  "title_es": "Dead-Letter Queues en RabbitMQ — Recursos complementarios",
+  "description": "Runnable companion code for the RabbitMQ DLQ recipe: dead-letter exchange setup with TTL and max-length, a consumer with retry queues and exponential backoff, and tools to inspect and replay dead-lettered messages.",
+  "description_es": "Código ejecutable de la receta de DLQ en RabbitMQ: configuración del dead-letter exchange con TTL y max-length, consumer con colas de retry y backoff exponencial, y herramientas para inspeccionar y replayar mensajes dead-lettered.",
+  "type": "recipes",
+  "topic": "messaging",
+  "slug": "rabbitmq-dead-letter-queue",
+  "source_urls": [
+    "https://stackpractices.com/recipes/rabbitmq-dead-letter-queue/",
+    "https://stackpractices.com/es/recipes/rabbitmq-dead-letter-queue/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "rabbitmq",
+    "dead-letter-queue",
+    "dlq",
+    "pika",
+    "python",
+    "message-queue",
+    "error-handling"
+  ],
+  "files": [
+    "dlq_setup.py",
+    "consumer_with_retry.py",
+    "dlq_tools.py",
+    "README.md",
+    "README.es.md"
+  ]
+}
