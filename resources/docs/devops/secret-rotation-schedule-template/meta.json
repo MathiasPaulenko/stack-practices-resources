@@ -1,0 +1,23 @@
+{
+  "title": "Secret Rotation Schedule Template",
+  "title_es": "Plantilla de Cronograma de Rotación de Secretos",
+  "description": "Ready-to-fill companion files for the secret rotation schedule template: Markdown schedule template, secret inventory CSV, and rotation log CSV for tracking every rotation event.",
+  "description_es": "Archivos listos para rellenar de la plantilla de cronograma de rotación de secretos: plantilla de cronograma en Markdown, CSV de inventario de secretos y CSV de registro de rotaciones.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "secret-rotation-schedule-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/secret-rotation-schedule-template/",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+    "https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "secrets", "rotation", "template", "compliance", "csv", "markdown"],
+  "files": [
+    "secret-rotation-schedule-template.md",
+    "secret-inventory.csv",
+    "rotation-log.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,2 @@
+rotation_id,secret,started_at,finished_at,performed_by,systems_updated,verification,rollback_plan,related_incident
+ROT-YYYY-NNN,,YYYY-MM-DD HH:MM,YYYY-MM-DD HH:MM,@owner,vault+ci-cd+app-configs,health-checks-ok,restore-previous-vault-version,
