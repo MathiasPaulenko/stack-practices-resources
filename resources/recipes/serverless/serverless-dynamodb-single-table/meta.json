@@ -1,0 +1,26 @@
+{
+  "title": "Design a DynamoDB Single-Table Schema for Serverless Apps",
+  "title_es": "Diseñar un Schema Single-Table de DynamoDB para Apps Serverless",
+  "description": "Runnable companion for the DynamoDB single-table recipe: access patterns, table creation with overloaded GSI, entity writers, queries for all eight access patterns, transactions, GSI variants and cursor pagination.",
+  "description_es": "Proyecto ejecutable complementario de la receta de single-table en DynamoDB: access patterns, creación de tabla con GSI sobrecargado, escritores de entidades, queries para los ocho access patterns, transacciones, variantes de GSI y paginación por cursor.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-dynamodb-single-table",
+  "source_urls": [
+    "https://stackpractices.com/recipes/serverless-dynamodb-single-table/",
+    "https://stackpractices.com/es/recipes/serverless-dynamodb-single-table/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["aws", "dynamodb", "single-table", "serverless", "python", "gsi"],
+  "files": [
+    "access-patterns.txt",
+    "create_table.py",
+    "entities.py",
+    "queries.py",
+    "transactions.py",
+    "gsi_variants.py",
+    "pagination.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

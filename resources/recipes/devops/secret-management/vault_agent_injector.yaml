@@ -1,0 +1,27 @@
+# helm values for Vault Agent Injector
+injector:
+  enabled: true
+  replicas: 1
+---
+# Deployment annotated to inject secrets as files
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-server
+  annotations:
+    vault.hashicorp.com/agent-inject: "true"
+    vault.hashicorp.com/role: "api-server"
+    vault.hashicorp.com/agent-inject-secret-db-creds: "database/creds/api"
+    vault.hashicorp.com/agent-inject-template-db-creds: |
+      {{- with secret "database/creds/api" -}}
+      DB_USER={{ .Data.username }}
+      DB_PASS={{ .Data.password }}
+      {{- end }}
+spec:
+  template:
+    spec:
+      containers:
+      - name: api
+        env:
+        - name: DB_USER_FILE
+          value: /vault/secrets/db-creds

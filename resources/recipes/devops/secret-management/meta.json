@@ -1,0 +1,29 @@
+{
+  "title": "Secret Management Recipes",
+  "title_es": "Recetas de Gestión de Secretos",
+  "description": "Runnable examples for storing, injecting, and rotating application secrets with AWS Secrets Manager, HashiCorp Vault, GCP Secret Manager, Doppler, and Kubernetes.",
+  "description_es": "Ejemplos ejecutables para almacenar, inyectar y rotar secretos de aplicación con AWS Secrets Manager, HashiCorp Vault, GCP Secret Manager, Doppler y Kubernetes.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "secret-management",
+  "source_urls": [
+    "https://stackpractices.com/recipes/secret-management/",
+    "https://stackpractices.com/es/recipes/secret-management/"
+  ],
+  "language": ["python", "go", "javascript", "yaml", "bash"],
+  "tags": ["secret-management", "vault", "aws-secrets-manager", "kubernetes", "ci-cd", "doppler"],
+  "files": [
+    "aws_get_secret.py",
+    "vault_get_secret.go",
+    "gcp_get_secret.js",
+    "k8s_secret.yaml",
+    "k8s_deployment.yaml",
+    "doppler_commands.sh",
+    "vault_agent_injector.yaml",
+    "init_container.yaml",
+    "rotate_secret_lambda.py",
+    "secret_scan_workflow.yml",
+    "env_injection.py",
+    "vault_dynamic_creds.sh"
+  ]
+}

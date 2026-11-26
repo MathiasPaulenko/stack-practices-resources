@@ -1,0 +1,21 @@
+{
+  "title": "Serverless Cold Start Runbook",
+  "title_es": "Runbook de Cold Start Serverless",
+  "description": "Runnable cold start tooling: a Lambda warmer with EventBridge schedule, a cold-start rate measurement script for CloudWatch logs, and module-level init detection for Python handlers.",
+  "description_es": "Herramientas ejecutables de cold start: warmer de Lambda con schedule de EventBridge, script de medición de tasa de cold starts sobre logs de CloudWatch y detección de init a nivel de módulo para handlers Python.",
+  "type": "docs",
+  "topic": "serverless",
+  "slug": "serverless-cold-start-runbook",
+  "source_urls": [
+    "https://stackpractices.com/docs/serverless-cold-start-runbook/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "cold-start", "aws-lambda", "performance", "runbook"],
+  "files": [
+    "warmer.py",
+    "cold-start-rate.sh",
+    "cold-start-detection.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,50 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  AuthFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/authorizer.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+      Environment:
+        Variables:
+          JWT_SECRET: '{{resolve:secretsmanager:jwt-secret:SecretString}}'
+
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handler.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+
+  MyApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: prod
+      Auth:
+        DefaultAuthorizer: JwtAuthorizer
+        Authorizers:
+          JwtAuthorizer:
+            FunctionArn: !GetAtt AuthFunction.Arn
+            Identity:
+              Header: Authorization
+              ValidationExpression: ^Bearer [a-zA-Z0-9._-]+$
+            AuthorizerResultTtlInSeconds: 300
+
+  ProtectedResource:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handler.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+      Events:
+        GetUsers:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: /users
+            Method: GET
+            Auth:
+              Authorizer: JwtAuthorizer

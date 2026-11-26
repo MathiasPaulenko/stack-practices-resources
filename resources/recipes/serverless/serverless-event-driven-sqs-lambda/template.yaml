@@ -1,0 +1,64 @@
+# SAM template: SQS queue with DLQ, Lambda consumer with partial batch
+# responses, SNS alert topic and CloudWatch alarm on DLQ depth.
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  ProcessQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: my-queue
+      VisibilityTimeout: 120
+      MessageRetentionPeriod: 1209600
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt DeadLetterQueue.Arn
+        maxReceiveCount: 3
+
+  DeadLetterQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      QueueName: my-dlq
+
+  ProcessFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      CodeUri: src/
+      Timeout: 120
+      MemorySize: 512
+      Events:
+        SQSEvent:
+          Type: SQS
+          Properties:
+            Queue: !GetAtt ProcessQueue.Arn
+            BatchSize: 10
+            MaxBatchingWindow: 30
+            FunctionResponseTypes:
+              - ReportBatchItemFailures
+      Policies:
+        - SQSPollerPolicy:
+            QueueName: !GetAtt ProcessQueue.QueueName
+
+  AlertTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: dlq-alerts
+
+  DLQAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: DLQ-Messages-Alert
+      AlarmDescription: Alert when DLQ has messages
+      MetricName: ApproximateNumberOfMessagesVisible
+      Namespace: AWS/SQS
+      Dimensions:
+        - Name: QueueName
+          Value: my-dlq
+      Statistic: Sum
+      Period: 60
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      AlarmActions:
+        - !Ref AlertTopic

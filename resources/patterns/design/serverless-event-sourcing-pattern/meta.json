@@ -1,0 +1,22 @@
+{
+  "title": "Serverless Event Sourcing Pattern",
+  "title_es": "Patrón Serverless Event Sourcing",
+  "description": "Runnable event sourcing examples for AWS Lambda: a Python EventStore on DynamoDB with optimistic concurrency, a projection handler driven by DynamoDB Streams, a TypeScript variant publishing to EventBridge, and a SAM template wiring the event store table, stream, and projection function.",
+  "description_es": "Ejemplos ejecutables de event sourcing para AWS Lambda: EventStore en Python sobre DynamoDB con concurrencia optimista, handler de proyección disparado por DynamoDB Streams, variante TypeScript que publica a EventBridge y una plantilla SAM con la tabla, el stream y la función de proyección.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "serverless-event-sourcing-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/serverless-event-sourcing-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "event-sourcing", "aws-lambda", "dynamodb", "dynamodb-streams", "eventbridge", "cqrs"],
+  "files": [
+    "event_store.py",
+    "projection_handler.py",
+    "event-store.ts",
+    "template.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

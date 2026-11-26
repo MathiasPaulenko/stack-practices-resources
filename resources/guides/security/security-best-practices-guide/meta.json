@@ -1,0 +1,20 @@
+{
+  "title": "Security Best Practices Checklist",
+  "title_es": "Checklist de Mejores Prácticas de Seguridad",
+  "description": "Printable application security checklist in Markdown and CSV: authentication, authorization, input validation, secrets management, dependencies, HTTPS, headers, rate limiting, encryption, and logging controls.",
+  "description_es": "Checklist imprimible de seguridad de aplicaciones en Markdown y CSV: autenticación, autorización, validación de entradas, gestión de secretos, dependencias, HTTPS, headers, rate limiting, cifrado y controles de logging.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "security-best-practices-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/security-best-practices-guide/"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "checklist", "owasp", "audit", "best-practices"],
+  "files": [
+    "security-checklist.md",
+    "security-checklist.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}

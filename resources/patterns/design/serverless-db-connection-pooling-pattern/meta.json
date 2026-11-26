@@ -1,0 +1,22 @@
+{
+  "title": "Serverless DB Connection Pooling Pattern",
+  "title_es": "Patrón Serverless DB Connection Pooling",
+  "description": "Runnable connection-pooling examples for AWS Lambda: a Python handler reusing a warm psycopg2 connection through PgBouncer, a Node.js pg Pool with max=1 behind RDS Proxy, a Java HikariCP config for transaction pooling, and a reference pgbouncer.ini.",
+  "description_es": "Ejemplos ejecutables de connection pooling para AWS Lambda: handler Python que reutiliza una conexión psycopg2 caliente a través de PgBouncer, Pool de Node.js pg con max=1 detrás de RDS Proxy, config Java HikariCP para transaction pooling y un pgbouncer.ini de referencia.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "serverless-db-connection-pooling-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/serverless-db-connection-pooling-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "aws-lambda", "connection-pooling", "pgbouncer", "rds-proxy", "postgresql"],
+  "files": [
+    "lambda_pgbouncer.py",
+    "lambda_rds_proxy.js",
+    "HikariLambda.java",
+    "pgbouncer.ini",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "Comment": "Order processing workflow: validate -> pay -> branch (inventory+notify | refund+fail)",
+  "StartAt": "ValidateOrder",
+  "States": {
+    "ValidateOrder": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "ValidateOrder",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "Next": "ProcessPayment"
+    },
+    "ProcessPayment": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "ProcessPayment",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 3,
+          "BackoffRate": 2.0
+        }
+      ],
+      "Next": "PaymentResult"
+    },
+    "PaymentResult": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.paymentStatus",
+          "StringEquals": "SUCCESS",
+          "Next": "ReserveInventory"
+        },
+        {
+          "Variable": "$.paymentStatus",
+          "StringEquals": "FAILED",
+          "Next": "RefundPayment"
+        }
+      ],
+      "Default": "UnknownPaymentStatus"
+    },
+    "ReserveInventory": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "ReserveInventory",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "Next": "SendNotification"
+    },
+    "SendNotification": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "SendNotification",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "End": true
+    },
+    "RefundPayment": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "RefundPayment",
+        "Payload.$": "$"
+      },
+      "OutputPath": "$.Payload",
+      "Next": "OrderFailed"
+    },
+    "OrderFailed": {
+      "Type": "Fail",
+      "Error": "PaymentFailed",
+      "Cause": "Payment processing failed"
+    },
+    "UnknownPaymentStatus": {
+      "Type": "Fail",
+      "Error": "UnknownPaymentStatus",
+      "Cause": "ProcessPayment returned an unexpected paymentStatus"
+    }
+  }
+}

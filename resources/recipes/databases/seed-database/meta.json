@@ -1,0 +1,25 @@
+{
+  "title": "Seed Database",
+  "title_es": "Seed de la Base de Datos",
+  "description": "Runnable database seeding examples: SQL seed files with a Node.js pg runner, MongoDB seed script, Prisma seed.ts, and SQLAlchemy seed script — all idempotent with production guards.",
+  "description_es": "Ejemplos ejecutables de seed de base de datos: archivos SQL con runner Node.js pg, script de seed para MongoDB, seed.ts de Prisma y script SQLAlchemy — todos idempotentes con protección de producción.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "seed-database",
+  "source_urls": [
+    "https://stackpractices.com/recipes/seed-database/"
+  ],
+  "language": "bilingual",
+  "tags": ["databases", "seeding", "testing", "postgresql", "mongodb", "prisma", "sqlalchemy"],
+  "files": [
+    "db/seeds/01_users.sql",
+    "db/seeds/02_products.sql",
+    "db/seeds/03_orders.sql",
+    "db/seed.js",
+    "seeds/mongo-seed.js",
+    "prisma/seed.ts",
+    "scripts/seed_database.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "Customer",
+  "namespace": "com.shop.events",
+  "fields": [
+    {"name": "id", "type": "long", "doc": "Customer ID"},
+    {"name": "email", "type": "string", "doc": "Customer email"},
+    {"name": "status", "type": {"type": "enum", "name": "Status", "symbols": ["active", "inactive", "banned"]}},
+    {"name": "created_at", "type": {"type": "long", "logicalType": "timestamp-millis"}}
+  ]
+}

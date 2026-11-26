@@ -1,0 +1,16 @@
+Access Patterns:
+1. Get user by ID              -> PK=USER#<id>, SK=PROFILE
+2. Get all orders for a user   -> PK=USER#<id>, SK begins_with ORDER#
+3. Get order by ID             -> PK=ORDER#<id>, SK=DETAILS
+4. Get all items in an order   -> PK=ORDER#<id>, SK begins_with ITEM#
+5. Get orders by status        -> GSI1PK=ORDERSTATUS#<status>, GSI1SK=ORDER#<id>
+6. Get orders by date range    -> GSI1PK=ORDERBYDATE, GSI1SK between DATE#<start> and DATE#<end>
+7. Get product by ID           -> PK=PRODUCT#<id>, SK=DETAILS
+8. Get products by category    -> GSI1PK=CATEGORY#<cat>, GSI1SK=PRODUCT#<id>
+
+Entity layout (orders are written to TWO partitions on purpose):
+- USER#<id> / PROFILE        -> user record
+- USER#<id> / ORDER#<id>     -> order index copy (drives AP2 and GSI1 by status)
+- ORDER#<id> / DETAILS       -> order header (direct get, colocated with items)
+- ORDER#<id> / ITEM#<id>     -> order line item
+- PRODUCT#<id> / DETAILS     -> product record (feeds GSI1 by category)

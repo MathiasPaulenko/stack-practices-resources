@@ -1,0 +1,39 @@
+// CustomerProducer.java — Kafka producer with Confluent Avro SerDes
+import io.confluent.kafka.serializers.KafkaAvroSerializer;
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.serialization.StringSerializer;
+
+import java.util.Properties;
+
+public class CustomerProducer {
+    public static void main(String[] args) {
+        Properties props = new Properties();
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, KafkaAvroSerializer.class);
+        props.put("schema.registry.url", "http://localhost:8081");
+
+        try (var producer = new KafkaProducer<String, Customer>(props)) {
+            Customer customer = Customer.newBuilder()
+                .setId(42L)
+                .setEmail("alice@example.com")
+                .setStatus(Status.ACTIVE)
+                .setCreatedAt(1783305600000L)
+                .setPhone("555-1234")
+                .setCountry("US")
+                .build();
+
+            producer.send(new ProducerRecord<>("customer-events",
+                String.valueOf(customer.getId()), customer), (metadata, e) -> {
+                if (e != null) {
+                    System.err.println("Send failed: " + e);
+                } else {
+                    System.out.printf("Sent to %s [%d] offset %d%n",
+                        metadata.topic(), metadata.partition(), metadata.offset());
+                }
+            });
+        }
+    }
+}

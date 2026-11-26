@@ -1,0 +1,22 @@
+{
+  "title": "Serverless Function Composition Pattern",
+  "title_es": "Patrón Serverless Function Composition",
+  "description": "Runnable function composition examples: an AWS CDK (Python) order-processing state machine with Choice branching and a compensation step, Lambda step handlers, the equivalent ASL definition, and a client that starts and polls executions.",
+  "description_es": "Ejemplos ejecutables de composición de funciones: una state machine de procesamiento de órdenes en AWS CDK (Python) con branching Choice y paso de compensación, handlers Lambda por paso, la definición ASL equivalente y un cliente que lanza y consulta ejecuciones.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "serverless-function-composition-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/serverless-function-composition-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "step-functions", "aws-lambda", "orchestration", "aws-cdk", "durable-functions", "workflow"],
+  "files": [
+    "order_stack.py",
+    "steps.py",
+    "state_machine.asl.json",
+    "start_execution.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

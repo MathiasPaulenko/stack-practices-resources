@@ -1,0 +1,132 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >-
+  Serverless fanout pattern: one SNS topic fans out to several SQS queues,
+  each consumed by its own Lambda with a DLQ and partial batch responses.
+
+Parameters:
+  TopicName:
+    Type: String
+    Default: order-events
+
+Resources:
+  OrderEventsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: !Ref TopicName
+
+  # --- Inventory consumer ---------------------------------------------------
+
+  InventoryQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 180        # >= 6x consumer timeout
+      MessageRetentionPeriod: 1209600  # 14 days
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt InventoryDLQ.Arn
+        maxReceiveCount: 3
+
+  InventoryDLQ:
+    Type: AWS::SQS::Queue
+    Properties:
+      MessageRetentionPeriod: 1209600
+
+  InventorySubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      TopicArn: !Ref OrderEventsTopic
+      Protocol: sqs
+      Endpoint: !GetAtt InventoryQueue.Arn
+      RawMessageDelivery: true    # record body = published JSON, no envelope
+      FilterPolicy:
+        eventType: [OrderPlaced]
+
+  InventoryQueuePolicy:
+    Type: AWS::SQS::QueuePolicy
+    Properties:
+      Queues: [!Ref InventoryQueue]
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal: {Service: sns.amazonaws.com}
+            Action: sqs:SendMessage
+            Resource: !GetAtt InventoryQueue.Arn
+            Condition:
+              ArnEquals: {aws:SourceArn: !Ref OrderEventsTopic}
+
+  InventoryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.12
+      Handler: consumer.handler
+      CodeUri: ./
+      Timeout: 30
+      Events:
+        Queue:
+          Type: SQS
+          Properties:
+            Queue: !GetAtt InventoryQueue.Arn
+            BatchSize: 10
+            FunctionResponseTypes:
+              - ReportBatchItemFailures
+
+  # --- Analytics consumer ---------------------------------------------------
+
+  AnalyticsQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 180
+      MessageRetentionPeriod: 1209600
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt AnalyticsDLQ.Arn
+        maxReceiveCount: 3
+
+  AnalyticsDLQ:
+    Type: AWS::SQS::Queue
+    Properties:
+      MessageRetentionPeriod: 1209600
+
+  AnalyticsSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      TopicArn: !Ref OrderEventsTopic
+      Protocol: sqs
+      Endpoint: !GetAtt AnalyticsQueue.Arn
+      RawMessageDelivery: true    # no filter: analytics wants every event
+
+  AnalyticsQueuePolicy:
+    Type: AWS::SQS::QueuePolicy
+    Properties:
+      Queues: [!Ref AnalyticsQueue]
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal: {Service: sns.amazonaws.com}
+            Action: sqs:SendMessage
+            Resource: !GetAtt AnalyticsQueue.Arn
+            Condition:
+              ArnEquals: {aws:SourceArn: !Ref OrderEventsTopic}
+
+  AnalyticsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.12
+      Handler: consumer.handler
+      CodeUri: ./
+      Timeout: 30
+      Events:
+        Queue:
+          Type: SQS
+          Properties:
+            Queue: !GetAtt AnalyticsQueue.Arn
+            BatchSize: 10
+            FunctionResponseTypes:
+              - ReportBatchItemFailures
+
+Outputs:
+  TopicArn:
+    Value: !Ref OrderEventsTopic
+  InventoryQueueUrl:
+    Value: !Ref InventoryQueue
+  AnalyticsQueueUrl:
+    Value: !Ref AnalyticsQueue

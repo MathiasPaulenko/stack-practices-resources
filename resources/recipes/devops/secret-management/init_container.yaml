@@ -1,0 +1,12 @@
+# Kubernetes init container that preloads secrets before the app starts
+initContainers:
+- name: secret-loader
+  image: secret-loader:latest
+  command: ["/bin/sh", "-c"]
+  args:
+    - |
+      vault kv get -field=password secret/db > /secrets/db_password
+      vault kv get -field=apikey secret/api > /secrets/api_key
+  volumeMounts:
+  - name: secrets
+    mountPath: /secrets

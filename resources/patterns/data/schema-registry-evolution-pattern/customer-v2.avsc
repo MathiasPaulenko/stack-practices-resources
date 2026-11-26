@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "Customer",
+  "namespace": "com.shop.events",
+  "fields": [
+    {"name": "id", "type": "long", "doc": "Customer ID"},
+    {"name": "email", "type": "string", "doc": "Customer email"},
+    {"name": "status", "type": {"type": "enum", "name": "Status", "symbols": ["active", "inactive", "banned", "suspended"]}},
+    {"name": "created_at", "type": {"type": "long", "logicalType": "timestamp-millis"}},
+    {"name": "phone", "type": ["null", "string"], "default": null, "doc": "Phone number (added in v2)"},
+    {"name": "country", "type": "string", "default": "US", "doc": "Country code (added in v2)"}
+  ]
+}

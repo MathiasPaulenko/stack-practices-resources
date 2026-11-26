@@ -1,0 +1,60 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Event sourcing infrastructure — DynamoDB event store, stream-driven projection Lambda, and read model table.
+
+Resources:
+  EventStoreTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: event_store
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: aggregateId
+          AttributeType: S
+        - AttributeName: version
+          AttributeType: N
+      KeySchema:
+        - AttributeName: aggregateId
+          KeyType: HASH
+        - AttributeName: version
+          KeyType: RANGE
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+
+  OrderProjectionTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: order_projection
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: orderId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: orderId
+          KeyType: HASH
+
+  ProjectionFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: order-projection
+      Runtime: python3.12
+      Handler: projection_handler.lambda_handler
+      CodeUri: .
+      Timeout: 30
+      MemorySize: 256
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref EventStoreTable
+        - DynamoDBCrudPolicy:
+            TableName: !Ref OrderProjectionTable
+      Events:
+        EventStoreStream:
+          Type: DynamoDB
+          Properties:
+            Stream: !GetAtt EventStoreTable.StreamArn
+            StartingPosition: TRIM_HORIZON
+            BatchSize: 100
+            BisectBatchOnFunctionError: true
+            MaximumRetryAttempts: 3

@@ -1,0 +1,21 @@
+{
+  "title": "Serverless Fanout Pattern",
+  "title_es": "Patrón Serverless Fanout",
+  "description": "Runnable fanout examples for AWS SNS + SQS: a Python producer publishing order events to an SNS topic, a consumer Lambda processing SQS batches with partial failure reporting, and a SAM template wiring the topic, queues, DLQs, and subscriptions with raw message delivery and filtering.",
+  "description_es": "Ejemplos ejecutables del fanout con AWS SNS + SQS: productor Python que publica eventos de pedido en un topic SNS, Lambda consumidora que procesa lotes SQS con reporte de fallos parciales y una plantilla SAM con el topic, colas, DLQs y suscripciones con entrega raw y filtrado.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "serverless-fanout-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/serverless-fanout-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "sns", "sqs", "aws-lambda", "fanout", "pub-sub", "event-driven"],
+  "files": [
+    "producer.py",
+    "consumer.py",
+    "template.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

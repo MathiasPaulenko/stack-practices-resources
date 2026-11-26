@@ -1,0 +1,22 @@
+{
+  "title": "API Gateway Lambda Authorizers",
+  "title_es": "Lambda Authorizers de API Gateway",
+  "description": "Runnable Lambda authorizer examples for API Gateway: JWT validation with IAM policy generation, role-based access control, and API-key lookup via DynamoDB — plus a fixed SAM template with caching.",
+  "description_es": "Ejemplos ejecutables de Lambda authorizers para API Gateway: validación JWT con generación de políticas IAM, control de acceso por roles y lookup de API keys en DynamoDB — más un template SAM corregido con caché.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-api-gateway-lambda-authorizer",
+  "source_urls": [
+    "https://stackpractices.com/recipes/serverless-api-gateway-lambda-authorizer/"
+  ],
+  "language": "bilingual",
+  "tags": ["aws", "api-gateway", "lambda", "jwt", "authentication", "sam", "serverless"],
+  "files": [
+    "src/authorizer.py",
+    "src/authorizer_rbac.py",
+    "src/authorizer_apikey.py",
+    "template.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

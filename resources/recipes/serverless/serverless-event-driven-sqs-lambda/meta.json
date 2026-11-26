@@ -1,0 +1,24 @@
+{
+  "title": "Event-Driven Lambda with SQS Triggers and Batch Processing",
+  "title_es": "Lambda Event-Driven con Triggers SQS y Batch Processing",
+  "description": "Runnable companion for the SQS-triggered Lambda recipe: batch handler with partial batch responses, producer helpers, SAM template with DLQ and CloudWatch alarm, and scheduled queue draining.",
+  "description_es": "Proyecto ejecutable complementario de la receta de Lambda con triggers SQS: handler por lotes con partial batch responses, helpers de productor, template SAM con DLQ y alarma CloudWatch, y drenado programado de la cola.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-event-driven-sqs-lambda",
+  "source_urls": [
+    "https://stackpractices.com/recipes/serverless-event-driven-sqs-lambda/",
+    "https://stackpractices.com/es/recipes/serverless-event-driven-sqs-lambda/"
+  ],
+  "language": ["en", "es"],
+  "tags": ["aws", "lambda", "sqs", "event-driven", "batch-processing", "dlq"],
+  "files": [
+    "lambda_function.py",
+    "producer.py",
+    "drain_queue.py",
+    "template.yaml",
+    "queue-attributes.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

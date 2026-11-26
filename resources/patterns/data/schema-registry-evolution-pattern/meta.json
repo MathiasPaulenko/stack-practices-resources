@@ -1,0 +1,37 @@
+{
+  "title": "Schema Registry Evolution — Companion Resources",
+  "title_es": "Patrón Schema Registry Evolution — Recursos complementarios",
+  "description": "Runnable companion files for the schema registry evolution pattern: Avro v1/v2 schemas, a Protobuf variant, schema registration and compatibility-check scripts, and Python producer/consumer plus a Java producer using Confluent SerDes.",
+  "description_es": "Archivos ejecutables del patrón schema registry evolution: esquemas Avro v1/v2, una variante Protobuf, scripts de registro y chequeo de compatibilidad, y producer/consumer en Python más un producer en Java con SerDes de Confluent.",
+  "type": "patterns",
+  "topic": "data",
+  "slug": "schema-registry-evolution-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/schema-registry-evolution-pattern/",
+    "https://stackpractices.com/es/patterns/schema-registry-evolution-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "design-pattern",
+    "architectural",
+    "schema-registry",
+    "avro",
+    "protobuf",
+    "kafka",
+    "streaming",
+    "python",
+    "java"
+  ],
+  "files": [
+    "customer-v1.avsc",
+    "customer-v2.avsc",
+    "customer.proto",
+    "register_schema.py",
+    "compatibility.py",
+    "avro_producer.py",
+    "avro_consumer.py",
+    "CustomerProducer.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
