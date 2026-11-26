@@ -1,0 +1,24 @@
+{
+  "title": "Security Audit Checklist",
+  "title_es": "Checklist de Auditoría de Seguridad",
+  "description": "Downloadable security audit checklist covering network, application, data protection, infrastructure, monitoring, incident response, and compliance domains. Markdown + CSV formats.",
+  "description_es": "Checklist descargable de auditoría de seguridad que cubre red, aplicaciones, protección de datos, infraestructura, monitorización, respuesta a incidentes y cumplimiento. Formatos Markdown + CSV.",
+  "type": "docs",
+  "topic": "security",
+  "slug": "security-audit-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/security-audit-checklist/",
+    "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "https://www.iso.org/standard/27001",
+    "https://www.cisecurity.org/controls"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "audit", "checklist", "compliance", "soc2", "iso27001", "csv", "markdown"],
+  "files": [
+    "security-audit-checklist.md",
+    "security-audit-checklist.es.md",
+    "security-audit-checklist.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}
