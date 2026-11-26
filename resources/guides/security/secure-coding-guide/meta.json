@@ -1,0 +1,24 @@
+{
+  "title": "Secure Coding Guide: Code Review Checklist",
+  "title_es": "Guía de Codificación Segura: Checklist de Revisión de Código",
+  "description": "Downloadable secure code review checklist (23 items) covering input validation, authentication, authorization, sessions, logging, dependencies, and configuration. Markdown + CSV formats.",
+  "description_es": "Checklist descargable de revisión de código segura (23 ítems) que cubre validación de entrada, autenticación, autorización, sesiones, logging, dependencias y configuración. Formatos Markdown + CSV.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "secure-coding-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/secure-coding-guide/",
+    "https://owasp.org/Top10/",
+    "https://cwe.mitre.org/top25/",
+    "https://csrc.nist.gov/pubs/sp/800/218/final"
+  ],
+  "language": "bilingual",
+  "tags": ["security", "secure-coding", "code-review", "checklist", "input-validation", "authentication", "csv", "markdown"],
+  "files": [
+    "secure-code-review-checklist.md",
+    "secure-code-review-checklist.es.md",
+    "secure-code-review-checklist.csv",
+    "README.md",
+    "README.es.md"
+  ]
+}
