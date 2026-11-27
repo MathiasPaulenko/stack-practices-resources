@@ -1,0 +1,23 @@
+{
+  "title": "Structured Logging — Code Examples",
+  "title_es": "Logging Estructurado — Ejemplos de Código",
+  "description": "Structured logging examples: a Pino JSON logger with child loggers, a structlog pipeline, a Go correlation-ID middleware, sample JSON output, a Fluent Bit to Loki config, and field redaction with pino.",
+  "description_es": "Ejemplos de logging estructurado: un logger JSON con Pino con child loggers, un pipeline con structlog, un middleware de correlation ID en Go, salida JSON de ejemplo, una configuración Fluent Bit a Loki y redacción de campos con pino.",
+  "type": "recipes",
+  "topic": "observability",
+  "slug": "structured-logging",
+  "source_urls": [
+    "https://stackpractices.com/recipes/structured-logging/",
+    "https://stackpractices.com/es/recipes/structured-logging/"
+  ],
+  "language": "multi",
+  "tags": ["logging", "structured-logging", "json", "correlation-id", "pino", "structlog", "fluent-bit", "observability"],
+  "files": [
+    "pino_logger.js",
+    "structlog_setup.py",
+    "correlation_middleware.go",
+    "example_output.json",
+    "fluent-bit.conf",
+    "pino_redact.js"
+  ]
+}

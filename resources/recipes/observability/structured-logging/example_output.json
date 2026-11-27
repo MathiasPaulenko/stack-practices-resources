@@ -1,0 +1,2 @@
+{"level":"info","time":"2026-06-19T14:32:07.142Z","service":"user-api","version":"1.2.3","request_id":"9f4c2a","user_id":123,"route":"/orders","event":"order_processed","order_id":"ORD-881","duration_ms":47}
+{"level":"error","time":"2026-06-19T14:32:08.931Z","service":"user-api","request_id":"9f4c2a","event":"order_failed","error":"payment declined","status":402}

@@ -1,0 +1,28 @@
+# Circuit breaker presets per dependency, matching the dependency map.
+# Thresholds scale with criticality in reverse: less critical dependencies
+# tolerate more failures before the breaker opens.
+
+circuit_breakers:
+  payment-service:
+    failure_threshold: 5          # Open after 5 consecutive failures
+    failure_rate_threshold: 0.5   # Or 50% failure rate in window
+    window_duration: 60s          # Rolling 60-second window
+    open_state_duration: 30s      # Stay open for 30s before half-open
+    max_calls_in_half_open: 3     # Test with 3 calls before closing
+    fallback: queue_for_retry     # Send to async retry queue
+
+  user-service:
+    failure_threshold: 10
+    failure_rate_threshold: 0.3
+    window_duration: 30s
+    open_state_duration: 10s
+    max_calls_in_half_open: 5
+    fallback: cached_jwt          # Use cached JWT for 5 minutes
+
+  notification-service:
+    failure_threshold: 20
+    failure_rate_threshold: 0.8
+    window_duration: 120s
+    open_state_duration: 60s
+    max_calls_in_half_open: 10
+    fallback: skip_silently       # Drop notification, log audit entry

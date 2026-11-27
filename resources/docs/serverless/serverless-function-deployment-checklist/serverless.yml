@@ -1,0 +1,97 @@
+# serverless.yml — reference config matching the deployment checklist
+# Covers: function sizing, least-privilege IAM, per-stage env vars,
+# API Gateway events with validation, SQS event source with partial batch
+# responses, CloudWatch alarms, and canary rollout via CodeDeploy.
+
+service: order-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x # pinned runtime
+  stage: ${opt:stage, 'dev'}
+  region: us-east-1
+
+  # IAM role — least privilege
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - s3:GetObject
+            - s3:PutObject
+          Resource:
+            - !Sub "arn:aws:s3:::orders-bucket/*"
+        - Effect: Allow
+          Action:
+            - secretsmanager:GetSecretValue
+          Resource:
+            - !Sub "arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:order-api-key-*"
+
+  environment:
+    LOG_LEVEL: ${self:custom.logLevel.${sls:stage}}
+    DB_HOST: ${ssm:/order-service/${sls:stage}/db-host}
+    API_KEY: ${ssm:/order-service/${sls:stage}/api-key~true} # secure string
+    FEATURE_NEW_PRICING: "true"
+
+  # Gradual deployment via CodeDeploy — canary shifts 10% of traffic for
+  # 5 minutes and rolls back automatically if the alarms fire.
+  deploymentMethod: CodeDeploy
+  deploymentPreference:
+    type: Canary10Percent5Minutes
+    alarms:
+      - ProcessOrderErrors
+      - ProcessOrderDuration
+    rollbackEnabled: true
+
+custom:
+  logLevel:
+    dev: DEBUG
+    staging: INFO
+    prod: INFO
+
+functions:
+  processOrder:
+    handler: src/handlers/processOrder.handler
+    memorySize: 512          # MB — tuned via profiling (AWS Lambda Power Tuning)
+    timeout: 30              # seconds — 90% of max observed
+    reservedConcurrency: 100 # limit concurrent executions
+    deadLetter:
+      queueName: processOrder-dlq
+    events:
+      - http:
+          path: /orders
+          method: post
+          cors: true
+          request:
+            schemas:
+              application/json: ${file(schema/order-create.json)}
+      - http:
+          path: /orders/{id}
+          method: get
+          request:
+            parameters:
+              paths:
+                id: true # required
+      - sqs:
+          arn: !GetAtt OrderQueue.Arn
+          batchSize: 10
+          maximumBatchingWindow: 5 # seconds
+          functionResponseTypes:
+            - ReportBatchItemFailures # partial batch response
+          filterPatterns:
+            - body: { eventType: ["ORDER_CREATED"] }
+
+resources:
+  Resources:
+    ProcessOrderErrors:
+      Type: AWS::CloudWatch::Alarm
+      Properties:
+        MetricName: Errors
+        Namespace: AWS/Lambda
+        Statistic: Sum
+        Period: 60
+        EvaluationPeriods: 1
+        Threshold: 5
+        ComparisonOperator: GreaterThanThreshold
+        AlarmActions:
+          - !Ref AlertTopic

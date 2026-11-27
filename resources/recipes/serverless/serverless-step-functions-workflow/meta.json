@@ -1,0 +1,20 @@
+{
+  "title": "AWS Step Functions Order Workflow",
+  "title_es": "Flujo de Pedidos con AWS Step Functions",
+  "description": "Runnable order-processing state machine: ASL definition, SAM template, Python task handlers, and a start-execution script.",
+  "description_es": "Máquina de estados de pedidos ejecutable: definición ASL, plantilla SAM, handlers de tareas en Python y script para arrancar ejecuciones.",
+  "type": "recipes",
+  "topic": "serverless",
+  "slug": "serverless-step-functions-workflow",
+  "source_urls": ["https://stackpractices.com/recipes/serverless-step-functions-workflow/"],
+  "language": "en",
+  "tags": ["serverless", "step-functions", "state-machine", "asl", "sam", "aws-lambda", "orchestration"],
+  "files": [
+    "order_workflow.asl.json",
+    "template.yaml",
+    "handlers.py",
+    "start_execution.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

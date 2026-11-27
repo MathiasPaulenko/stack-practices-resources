@@ -1,0 +1,33 @@
+{
+  "title": "State Machine UI Pattern — React Examples",
+  "title_es": "Patrón State Machine para UI — Ejemplos en React",
+  "description": "Runnable finite-state-machine examples for UI: useReducer FSM, XState fetch machine with guarded retries, checkout wizard, dropdown, auth guards, hierarchical upload machine, and actor-model batch uploads.",
+  "description_es": "Ejemplos ejecutables de máquinas de estados finitos para UI: FSM con useReducer, máquina XState de fetch con reintentos con guarda, wizard de checkout, dropdown, guardas de auth, máquina jerárquica de subida y subidas en lote con modelo de actores.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "state-machine-ui-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/state-machine-ui-pattern/",
+    "https://stackpractices.com/es/patterns/state-machine-ui-pattern/",
+    "https://xstate.js.org/docs/",
+    "https://stately.ai/docs"
+  ],
+  "language": ["javascript"],
+  "tags": ["pattern", "frontend", "react", "state-machine", "xstate", "statecharts", "finite-state-machine", "state-management", "usereducer", "actors"],
+  "files": [
+    "useFormMachine.js",
+    "ContactForm.jsx",
+    "fetchMachine.js",
+    "DataFetcher.jsx",
+    "checkoutMachine.js",
+    "Checkout.jsx",
+    "toggleMachine.js",
+    "Dropdown.jsx",
+    "authMachine.js",
+    "fileUploadMachine.js",
+    "concurrentUploads.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

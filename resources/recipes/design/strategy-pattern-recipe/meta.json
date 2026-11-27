@@ -1,0 +1,27 @@
+{
+  "slug": "strategy-pattern-recipe",
+  "title": "Swap Algorithms at Runtime with the Strategy Pattern",
+  "titleEs": "Intercambiar Algoritmos en Runtime con el Strategy Pattern",
+  "type": "recipes",
+  "topic": "design",
+  "difficulty": "beginner",
+  "description": "Strategy pattern recipe: TypeScript shipping strategies, a Java enum tax strategy, Python function strategies, a strategy registry, decorator composition, and a payment context.",
+  "descriptionEs": "Receta del strategy pattern: estrategias de envío en TypeScript, una enum strategy en Java, estrategias con funciones en Python, un registry, composición con decorators y un contexto de pago.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-11-27",
+  "lastUpdated": "2026-11-27",
+  "source_urls": [
+    "https://stackpractices.com/recipes/strategy-pattern-recipe/",
+    "https://stackpractices.com/es/recipes/strategy-pattern-recipe/"
+  ],
+  "language": "multi",
+  "tags": ["recipe", "strategy", "design-pattern", "behavioral", "algorithms"],
+  "files": [
+    "shipping_strategy.ts",
+    "TaxStrategy.java",
+    "function_strategies.py",
+    "strategy_registry.ts",
+    "pricing_decorators.ts",
+    "payment_context.py"
+  ]
+}

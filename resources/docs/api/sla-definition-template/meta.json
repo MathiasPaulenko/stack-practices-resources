@@ -1,0 +1,25 @@
+{
+  "title": "SLA Definition Template",
+  "title_es": "Plantilla de Definición de SLA",
+  "description": "Companion files for the SLA definition template: the full SLA document (EN/ES Markdown), Prometheus recording and alert rules for SLOs and burn rate (YAML), and a runnable error budget calculator (Python).",
+  "description_es": "Archivos complementarios de la plantilla de definición de SLA: el documento SLA completo (Markdown EN/ES), reglas de grabación y alerta de Prometheus para SLOs y burn rate (YAML), y una calculadora ejecutable de presupuesto de error (Python).",
+  "type": "docs",
+  "topic": "api",
+  "slug": "sla-definition-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/sla-definition-template/",
+    "https://stackpractices.com/es/docs/sla-definition-template/",
+    "https://sre.google/sre-book/service-level-objectives/",
+    "https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/"
+  ],
+  "language": "bilingual",
+  "tags": ["sla", "slo", "error-budget", "availability", "sre", "prometheus", "template"],
+  "files": [
+    "sla-template.md",
+    "sla-template.es.md",
+    "prometheus-slo-rules.yaml",
+    "burn_rate.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

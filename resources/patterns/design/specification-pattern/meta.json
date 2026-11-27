@@ -1,0 +1,22 @@
+{
+  "title": "Specification Pattern",
+  "title_es": "Patrón Specification",
+  "description": "Composable invoice specifications with operator overloading and repository integration, covered by pytest.",
+  "description_es": "Specifications de facturas componibles con sobrecarga de operadores e integración con repository, cubiertas con pytest.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "specification-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/specification-pattern/",
+    "https://stackpractices.com/es/patterns/specification-pattern/"
+  ],
+  "language": "python",
+  "tags": ["design-pattern", "specification", "python", "testing"],
+  "files": [
+    "specifications.py",
+    "tests/test_specifications.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

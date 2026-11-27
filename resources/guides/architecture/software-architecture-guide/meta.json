@@ -1,0 +1,28 @@
+{
+  "title": "Software Architecture — Modular Monolith E-commerce Layout",
+  "title_es": "Arquitectura de Software — Layout de Monolito Modular E-commerce",
+  "description": "Phase-1 codebase from the guide's e-commerce scenario: a Django-style modular monolith where catalog, orders, and payments live behind public APIs, share nothing but a small kernel, and are enforced by import-linter contracts so any module can be extracted mechanically later.",
+  "description_es": "Código de la Fase 1 del escenario e-commerce de la guía: un monolito modular estilo Django donde catalog, orders y payments viven detrás de APIs públicas, no comparten nada salvo un kernel pequeño, y sus límites se aplican con contratos de import-linter para poder extraer cualquier módulo mecánicamente más adelante.",
+  "type": "guides",
+  "topic": "architecture",
+  "slug": "software-architecture-guide",
+  "source_urls": {
+    "en": "https://stackpractices.com/guides/software-architecture-guide/",
+    "es": "https://stackpractices.com/es/guides/software-architecture-guide/"
+  },
+  "language": "bilingual",
+  "tags": ["modular-monolith", "bounded-context", "python", "django", "import-linter", "architecture", "e-commerce", "module-boundaries"],
+  "files": [
+    "shop/shared/kernel/base_entity.py",
+    "shop/shared/kernel/money.py",
+    "shop/modules/catalog/domain/product.py",
+    "shop/modules/catalog/application/create_product.py",
+    "shop/modules/catalog/infrastructure/product_repository.py",
+    "shop/modules/catalog/api/catalog_api.py",
+    "shop/modules/orders/api/orders_api.py",
+    "contracts/importlinter.ini",
+    "tests/test_place_order.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

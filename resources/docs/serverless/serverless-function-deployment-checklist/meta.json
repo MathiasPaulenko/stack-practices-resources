@@ -1,0 +1,20 @@
+{
+  "title": "Serverless Function Deployment Checklist",
+  "title_es": "Checklist de Despliegue de Funciones Serverless",
+  "description": "Deployment pipeline script and reference serverless.yml: least-privilege IAM, per-stage env vars, API Gateway and SQS events, CloudWatch alarms, and canary rollout via CodeDeploy.",
+  "description_es": "Script de pipeline de despliegue y serverless.yml de referencia: IAM de mínimo privilegio, variables por stage, eventos de API Gateway y SQS, alarmas de CloudWatch y rollout canary vía CodeDeploy.",
+  "type": "docs",
+  "topic": "serverless",
+  "slug": "serverless-function-deployment-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/serverless-function-deployment-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "deployment", "aws-lambda", "ci-cd", "checklist", "codedeploy"],
+  "files": [
+    "deploy.sh",
+    "serverless.yml",
+    "README.md",
+    "README.es.md"
+  ]
+}

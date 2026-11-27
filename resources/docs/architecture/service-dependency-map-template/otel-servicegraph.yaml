@@ -1,0 +1,35 @@
+# OpenTelemetry Collector config: servicegraph processor
+# Exports caller-callee span pairs as Prometheus metrics — a live
+# dependency graph discovered from real traffic.
+
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+
+processors:
+  servicegraph:
+    latency_bucket: [10, 50, 100, 200, 500, 1000, 2000]
+    store:
+      ttl: 30s
+  batch:
+
+exporters:
+  prometheus:
+    endpoint: 0.0.0.0:9090
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [servicegraph, batch]
+      exporters: [prometheus]
+
+# Resulting metrics to diff against your documented map:
+#   traces_service_graph_request_total{client, server}
+#   traces_service_graph_request_failed_total{client, server}
+#   traces_service_graph_request_duration_seconds_bucket{client, server}
+#
+# Monthly check: every (client, server) pair seen in metrics but missing
+# from the dependency map is drift worth a ticket.

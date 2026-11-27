@@ -1,0 +1,37 @@
+{
+  "title": "Analyze and Optimize SQL Indexes",
+  "title_es": "Analizar y optimizar índices SQL",
+  "description": "Runnable PostgreSQL index optimization scripts: EXPLAIN ANALYZE workflows, unused and duplicate index detection, partial, covering and expression indexes, safe index drops, REINDEX and statistics maintenance, weekly monitoring queries, hypothetical index testing with hypopg and query pattern analysis with pg_stat_statements.",
+  "description_es": "Scripts ejecutables de optimización de índices en PostgreSQL: flujos con EXPLAIN ANALYZE, detección de índices no usados y duplicados, índices parciales, de cobertura y de expresión, eliminación segura de índices, mantenimiento con REINDEX y estadísticas, consultas de monitoreo semanal, pruebas con índices hipotéticos de hypopg y análisis de patrones con pg_stat_statements.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "sql-index-optimization-analysis",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-index-optimization-analysis/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "indexes",
+    "explain",
+    "performance",
+    "gin",
+    "b-tree",
+    "hypopg"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "explain-analyze-baseline.sql",
+    "find-unused-indexes.sql",
+    "find-duplicate-indexes.sql",
+    "partial-index.sql",
+    "covering-index.sql",
+    "expression-index.sql",
+    "drop-index-safely.sql",
+    "reindex-and-analyze.sql",
+    "monitoring-weekly.sql",
+    "hypothetical-index-hypopg.sql"
+  ]
+}

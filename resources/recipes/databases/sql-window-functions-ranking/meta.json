@@ -1,0 +1,23 @@
+{
+  "title": "Rank Rows and Calculate Running Totals with Window Functions",
+  "title_es": "Funciones de ventana en SQL: ranking y totales acumulados",
+  "description": "Runnable SQL examples for ranking rows, running totals, moving averages, and deduplication with window functions.",
+  "description_es": "Ejemplos SQL ejecutables para clasificar filas, totales acumulados, promedios móviles y desduplicación con funciones de ventana.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "sql-window-functions-ranking",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-window-functions-ranking/",
+    "https://stackpractices.com/es/recipes/sql-window-functions-ranking/"
+  ],
+  "language": "sql",
+  "tags": ["sql", "window-functions", "postgresql", "analytics", "row_number", "rank"],
+  "files": [
+    "setup_test_data.sql",
+    "01_ranking_and_running_totals.sql",
+    "02_top_n_per_group.sql",
+    "03_moving_average_and_growth.sql",
+    "04_deduplicate_rows.sql",
+    "05_rank_variants_comparison.sql"
+  ]
+}

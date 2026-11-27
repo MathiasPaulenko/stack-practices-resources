@@ -1,0 +1,22 @@
+{
+  "title": "Stream Processing Guide — Code Examples",
+  "title_es": "Guía de Procesamiento de Streams — Ejemplos de Código",
+  "description": "Code from the stream processing guide: a CloudEvents-compliant order schema, a JSON-Schema event validator, a Kafka Streams analytics app, a Flink fraud-detection job with keyed state, and exactly-once configuration.",
+  "description_es": "Código de la guía de procesamiento de streams: un esquema de pedidos compatible con CloudEvents, un validador de eventos con JSON Schema, una aplicación de analítica con Kafka Streams, un job de detección de fraude con Flink con estado por clave, y configuración exactly-once.",
+  "type": "guides",
+  "topic": "data",
+  "slug": "stream-processing-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/stream-processing-guide/",
+    "https://stackpractices.com/es/guides/stream-processing-guide/"
+  ],
+  "language": "multi",
+  "tags": ["stream-processing", "kafka", "flink", "event-driven", "exactly-once", "java", "python"],
+  "files": [
+    "cloudevents_order_schema.json",
+    "schema_validator.py",
+    "OrderAnalyticsApp.java",
+    "FraudDetectionJob.java",
+    "ExactlyOnceConfig.java"
+  ]
+}

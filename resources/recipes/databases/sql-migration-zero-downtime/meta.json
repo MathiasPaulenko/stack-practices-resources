@@ -1,0 +1,37 @@
+{
+  "title": "Zero-Downtime Column Migrations",
+  "title_es": "Migraciones de columnas sin downtime",
+  "description": "Runnable PostgreSQL zero-downtime migration scripts: expand-contract column rename and type change with sync triggers, batched backfill loops, parity verification, application dual-write, view-based migration, NOT VALID constraint validation, foreign key migration, shadow-column rollback and lock/statement timeout guardrails.",
+  "description_es": "Scripts ejecutables de migración sin downtime en PostgreSQL: renombre y cambio de tipo con expand-contract y triggers de sincronización, relleno por lotes, verificación de paridad, dual-write en aplicación, migración con vistas, validación de constraints NOT VALID, migración de claves foráneas, rollback con columna shadow y protección con lock/statement timeout.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "sql-migration-zero-downtime",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-migration-zero-downtime/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "migration",
+    "zero-downtime",
+    "expand-contract",
+    "alter-table",
+    "trigger",
+    "backfill"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "rename-column-zero-downtime.sql",
+    "change-type-zero-downtime.sql",
+    "batch-backfill.sql",
+    "verify-parity.sql",
+    "app-dual-write.sql",
+    "view-migration.sql",
+    "not-valid-constraint.sql",
+    "foreign-key-migration.sql",
+    "shadow-column-rollback.sql",
+    "lock-timeouts.sql"
+  ]
+}

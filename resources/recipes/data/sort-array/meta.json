@@ -1,0 +1,24 @@
+{
+  "title": "Sort an Array — Multi-language Sorting Examples",
+  "title_es": "Ordenar un Array — Ejemplos de Ordenación Multi-lenguaje",
+  "description": "Runnable sorting examples from the recipe: ascending/descending, multi-key sorts, locale-aware string ordering, null and NaN edge cases, and in-place vs copy semantics — in Python, JavaScript, and Java, each with unit tests for the pitfalls.",
+  "description_es": "Ejemplos ejecutables de ordenación de la receta: ascendente/descendente, ordenación multi-clave, strings por locale, casos límite de nulos y NaN, y semántica in-place vs copia — en Python, JavaScript y Java, cada uno con tests unitarios para los pitfalls.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "sort-array",
+  "source_urls": {
+    "en": "https://stackpractices.com/recipes/sort-array/",
+    "es": "https://stackpractices.com/es/recipes/sort-array/"
+  },
+  "language": "bilingual",
+  "tags": ["sorting", "arrays", "python", "javascript", "java", "comparator", "unit-tests"],
+  "files": [
+    "python/sort_examples.py",
+    "python/test_sort_examples.py",
+    "javascript/sort-examples.js",
+    "javascript/sort-examples.test.js",
+    "java/SortExamples.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

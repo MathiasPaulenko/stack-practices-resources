@@ -1,0 +1,28 @@
+{
+  "slug": "strangler-fig-pattern",
+  "title": "Strangler Fig Pattern: Gradual Legacy Replacement via Routing",
+  "titleEs": "Patrón Strangler Fig: reemplazo gradual de legacy mediante routing",
+  "type": "patterns",
+  "topic": "architecture",
+  "difficulty": "intermediate",
+  "description": "Strangler Fig pattern examples: Nginx routing config, a Flask feature-flag router, Spring Cloud Gateway route definitions, a shadow traffic comparer in Python, a cutover progress tracker, branch by abstraction, and a parallel run comparator.",
+  "descriptionEs": "Ejemplos del patrón Strangler Fig: configuración de routing con Nginx, router con feature flags en Flask, rutas de Spring Cloud Gateway, comparador de shadow traffic en Python, tracker de progreso de cutover, branch by abstraction y comparador de parallel run.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-11-27",
+  "lastUpdated": "2026-11-27",
+  "source_urls": [
+    "https://stackpractices.com/patterns/strangler-fig-pattern/",
+    "https://stackpractices.com/es/patterns/strangler-fig-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["pattern", "strangler-fig", "migration", "legacy", "architecture", "api-gateway"],
+  "files": [
+    "nginx.conf",
+    "strangler_router.py",
+    "StranglerGateway.java",
+    "shadow_traffic.py",
+    "cutover.py",
+    "branch_by_abstraction.py",
+    "parallel_run.py"
+  ]
+}

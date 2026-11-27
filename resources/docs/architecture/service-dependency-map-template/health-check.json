@@ -1,0 +1,20 @@
+{
+  "status": "degraded",
+  "timestamp": "2026-06-26T10:00:00Z",
+  "dependencies": {
+    "postgres": {
+      "status": "healthy",
+      "latency_ms": 3
+    },
+    "redis": {
+      "status": "healthy",
+      "latency_ms": 1
+    },
+    "payment-service": {
+      "status": "unhealthy",
+      "latency_ms": null,
+      "error": "connection_timeout",
+      "circuit_breaker": "open"
+    }
+  }
+}

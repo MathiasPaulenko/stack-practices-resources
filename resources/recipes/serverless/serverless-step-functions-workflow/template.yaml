@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  OrderWorkflow:
+    Type: AWS::Serverless::StateMachine
+    Properties:
+      DefinitionUri: order_workflow.asl.json
+      DefinitionSubstitutions:
+        ValidateFunctionArn: !GetAtt ValidateOrderFunction.Arn
+        InventoryFunctionArn: !GetAtt CheckInventoryFunction.Arn
+        PaymentFunctionArn: !GetAtt ProcessPaymentFunction.Arn
+        ShipFunctionArn: !GetAtt ShipOrderFunction.Arn
+        NotifyFunctionArn: !GetAtt NotifyFunction.Arn
+      Role: !GetAtt WorkflowRole.Arn
+      Type: STANDARD
+
+  WorkflowRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: states.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: InvokeOrderFunctions
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource:
+                  - !GetAtt ValidateOrderFunction.Arn
+                  - !GetAtt CheckInventoryFunction.Arn
+                  - !GetAtt ProcessPaymentFunction.Arn
+                  - !GetAtt ShipOrderFunction.Arn
+                  - !GetAtt NotifyFunction.Arn
+
+  ValidateOrderFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers.validate_order_handler
+      Runtime: python3.11
+      CodeUri: ./
+
+  CheckInventoryFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers.check_inventory_handler
+      Runtime: python3.11
+      CodeUri: ./
+
+  ProcessPaymentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers.process_payment_handler
+      Runtime: python3.11
+      CodeUri: ./
+
+  ShipOrderFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers.ship_order_handler
+      Runtime: python3.11
+      CodeUri: ./
+
+  NotifyFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handlers.notify_handler
+      Runtime: python3.11
+      CodeUri: ./

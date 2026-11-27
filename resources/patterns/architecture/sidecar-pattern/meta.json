@@ -1,0 +1,30 @@
+{
+  "slug": "sidecar-pattern",
+  "title": "Sidecar Pattern: Extend Services with Companion Containers",
+  "titleEs": "Patrón Sidecar: Extiende Servicios con Contenedores",
+  "type": "patterns",
+  "topic": "architecture",
+  "difficulty": "intermediate",
+  "description": "Sidecar Pattern examples: Kubernetes pod manifests, Fluent Bit log forwarding, Envoy TLS termination, a Prometheus metrics sidecar in Python, Docker Compose, a Java config reloader, Istio injection and init containers.",
+  "descriptionEs": "Ejemplos del patrón Sidecar: manifiestos de pod en Kubernetes, reenvío de logs con Fluent Bit, terminación TLS con Envoy, sidecar de métricas Prometheus en Python, Docker Compose, recargador de config en Java, inyección de Istio e init containers.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-11-27",
+  "lastUpdated": "2026-11-27",
+  "source_urls": [
+    "https://stackpractices.com/patterns/sidecar-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["pattern", "sidecar", "containers", "kubernetes", "service-mesh"],
+  "files": [
+    "kubernetes-pod.yaml",
+    "fluentbit-sidecar.yaml",
+    "envoy-tls-sidecar.yaml",
+    "metrics_sidecar.py",
+    "docker-compose.yaml",
+    "ConfigReloaderSidecar.java",
+    "istio-injection.yaml",
+    "init-container.yaml",
+    "README.md",
+    "README.es.md"
+  ]
+}

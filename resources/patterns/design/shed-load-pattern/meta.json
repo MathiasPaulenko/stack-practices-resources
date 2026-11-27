@@ -1,0 +1,25 @@
+{
+  "slug": "shed-load-pattern",
+  "title": "Shed Load Pattern: Drop Excess Traffic Before Overload",
+  "titleEs": "Patrón Shed Load: Descarta el Tráfico que Satura el Sistema",
+  "type": "patterns",
+  "topic": "design",
+  "difficulty": "intermediate",
+  "description": "Shed Load Pattern implementations in Python, JavaScript and Java: admission control with concurrency, CPU, memory and queue-depth thresholds returning HTTP 503.",
+  "descriptionEs": "Implementaciones del patrón Shed Load en Python, JavaScript y Java: control de admisión con umbrales de concurrencia, CPU, memoria y profundidad de cola que devuelve HTTP 503.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-11-27",
+  "lastUpdated": "2026-11-27",
+  "source_urls": [
+    "https://stackpractices.com/patterns/shed-load-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["pattern", "design-pattern", "resilience", "load-shedding", "backpressure"],
+  "files": [
+    "load_shedder.py",
+    "load_shedder.js",
+    "LoadShedder.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "SSL Certificate Management — Companion Kit",
+  "title_es": "Gestión de Certificados SSL — Kit complementario",
+  "description": "Runnable SSL/TLS certificate operations kit: certbot renewal scripts (incl. DNS-01 wildcard), Kubernetes cert-manager manifests, Vault PKI internal CA setup, expiry monitoring, CT log watch, and TLS hardening config.",
+  "description_es": "Kit operativo de certificados SSL/TLS listo para usar: scripts de renovación certbot (incl. wildcard DNS-01), manifiestos cert-manager, CA interna con Vault PKI, monitoreo de vencimientos, vigilancia CT y configuración TLS endurecida.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "ssl-certificate-management-template",
+  "source_urls": ["https://stackpractices.com/docs/ssl-certificate-management-template/", "https://stackpractices.com/es/docs/ssl-certificate-management-template/"],
+  "language": "bilingual",
+  "tags": ["ssl","tls","certificates","certbot","cert-manager","vault-pki","lets-encrypt","monitoring"],
+  "files": [
+    "scripts/certbot-renew.sh",
+    "scripts/certbot-wildcard.sh",
+    "scripts/vault-pki.sh",
+    "scripts/cert-expiry-check.sh",
+    "scripts/ct-watch.sh",
+    "scripts/ocsp-refresh.sh",
+    "k8s/cert-manager.yaml",
+    "sql/inventory-dashboard.sql",
+    "nginx/tls-hardening.conf"
+  ]
+}

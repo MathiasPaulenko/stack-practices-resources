@@ -1,0 +1,22 @@
+{
+  "title": "Serverless Security Checklist",
+  "title_es": "Checklist de Seguridad Serverless",
+  "description": "Runnable security assets: PII masking helper, structured security-event logger, Dependabot config, and a dependency audit script covering npm audit, pip safety, Snyk and lockfile provenance.",
+  "description_es": "Assets de seguridad ejecutables: helper de enmascarado de PII, logger estructurado de eventos de seguridad, config de Dependabot y script de auditoría de dependencias con npm audit, pip safety, Snyk y verificación del lockfile.",
+  "type": "docs",
+  "topic": "serverless",
+  "slug": "serverless-security-checklist",
+  "source_urls": [
+    "https://stackpractices.com/docs/serverless-security-checklist/"
+  ],
+  "language": "bilingual",
+  "tags": ["serverless", "security", "aws-lambda", "checklist", "dependencies", "logging"],
+  "files": [
+    "mask-pii.py",
+    "security-logger.py",
+    "dependabot.yml",
+    "security-audit.sh",
+    "README.md",
+    "README.es.md"
+  ]
+}

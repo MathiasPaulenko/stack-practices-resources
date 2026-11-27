@@ -1,0 +1,19 @@
+{
+  "title": "Serverless Throttling Pattern",
+  "title_es": "Patrón de Throttling Serverless",
+  "description": "SQS consumer with reserved concurrency and partial batch failures, a DynamoDB token bucket, and the CDK stack that ties them together.",
+  "description_es": "Consumidor SQS con concurrencia reservada y fallos parciales de lote, un token bucket en DynamoDB y el stack CDK que los conecta.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "serverless-throttling-pattern",
+  "source_urls": ["https://stackpractices.com/patterns/serverless-throttling-pattern/"],
+  "language": "en",
+  "tags": ["serverless", "throttling", "backpressure", "sqs", "token-bucket", "reserved-concurrency", "aws-cdk", "rate-limiting"],
+  "files": [
+    "sqs_consumer.py",
+    "token_bucket.ts",
+    "throttled_consumer_stack.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

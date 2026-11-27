@@ -1,0 +1,48 @@
+# Istio traffic routing on top of Kubernetes-native discovery.
+#
+# Kubernetes keeps the Endpoints list healthy; the VirtualService splits
+# traffic 90/10 for a canary and adds retries, while the DestinationRule
+# ejects a Pod after 5 consecutive 5xx errors (outlier detection).
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: payment-service
+spec:
+  hosts:
+    - payment-service
+  http:
+    - route:
+        - destination:
+            host: payment-service
+            subset: v1
+          weight: 90
+        - destination:
+            host: payment-service
+            subset: v2
+          weight: 10
+      retries:
+        attempts: 3
+        perTryTimeout: 2s
+        retryOn: 5xx,reset,connect-failure
+      timeout: 5s
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: payment-service
+spec:
+  host: payment-service
+  subsets:
+    - name: v1
+      labels:
+        version: v1
+    - name: v2
+      labels:
+        version: v2
+  trafficPolicy:
+    loadBalancer:
+      simple: LEAST_REQUEST
+    outlierDetection:
+      consecutive5xxErrors: 5
+      interval: 30s
+      baseEjectionTime: 60s

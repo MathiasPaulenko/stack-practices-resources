@@ -1,0 +1,37 @@
+{
+  "title": "Setup CI with GitLab Pipelines",
+  "title_es": "Configurar CI con GitLab Pipelines",
+  "description": "Runnable companion project for the GitLab CI recipe: minimal Node app, tests, build script, modular pipeline configuration, artifacts, and a manual staging publish job.",
+  "description_es": "Proyecto ejecutable complementario de la receta de GitLab CI: aplicación Node mínima, pruebas, script de build, configuración modular del pipeline, artefactos y job manual de publicación en staging.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "setup-ci-gitlab-pipelines",
+  "source_urls": [
+    "https://stackpractices.com/recipes/setup-ci-gitlab-pipelines/",
+    "https://stackpractices.com/es/recipes/setup-ci-gitlab-pipelines/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "gitlab",
+    "ci-cd",
+    "pipeline",
+    "nodejs",
+    "yaml",
+    "devops"
+  ],
+  "files": [
+    ".gitignore",
+    ".gitlab-ci.yml",
+    ".gitlab/ci/test.yml",
+    ".gitlab/ci/build.yml",
+    ".gitlab/ci/deploy.yml",
+    "package.json",
+    "package-lock.json",
+    "src/index.js",
+    "test/index.test.js",
+    "scripts/build.js",
+    "README.md",
+    "README.es.md",
+    "meta.json"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "title": "SQL Table Partitioning Strategies",
+  "title_es": "Estrategias de particionamiento de tablas SQL",
+  "description": "Runnable PostgreSQL partitioning scripts: range, list and hash partitioned tables, composite sub-partitioning, partition pruning verification, attach/detach archiving, pg_partman automation, per-partition indexing, monitoring queries and partitioned foreign keys.",
+  "description_es": "Scripts ejecutables de particionamiento en PostgreSQL: tablas por rango, lista y hash, sub-particionamiento compuesto, verificación de poda, archivado con attach/detach, automatización con pg_partman, índices por partición, consultas de monitoreo y claves foráneas particionadas.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "sql-partitioning-strategies",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-partitioning-strategies/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "partitioning",
+    "pg-partman",
+    "performance",
+    "time-series",
+    "archiving"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "range-partition-by-month.sql",
+    "list-partition-by-region.sql",
+    "hash-partition.sql",
+    "composite-subpartitioning.sql",
+    "verify-partition-pruning.sql",
+    "detach-and-archive.sql",
+    "pg-partman-automation.sql",
+    "partition-indexes.sql",
+    "monitor-partition-sizes.sql",
+    "foreign-keys-partitioned.sql"
+  ]
+}

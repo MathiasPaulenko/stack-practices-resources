@@ -1,0 +1,36 @@
+{
+  "title": "Service Discovery — Companion Code",
+  "title_es": "Descubrimiento de servicios — Código complementario",
+  "description": "Runnable service discovery examples: Consul registration and graceful deregistration in Go, a caching client-side discovery picker in Python, a liveness/readiness health checker in Go, and Istio traffic routing YAML that accompany the Service Discovery recipe.",
+  "description_es": "Ejemplos ejecutables de descubrimiento de servicios: registro en Consul con desregistro elegante en Go, un selector client-side con caché en Python, un health checker con liveness/readiness en Go y YAML de enrutado de Istio, que acompañan a la receta de descubrimiento de servicios.",
+  "type": "recipes",
+  "topic": "architecture",
+  "slug": "service-discovery",
+  "source_urls": [
+    "https://stackpractices.com/recipes/service-discovery/",
+    "https://stackpractices.com/es/recipes/service-discovery/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "recipe",
+    "architecture",
+    "service-discovery",
+    "consul",
+    "eureka",
+    "kubernetes",
+    "istio",
+    "health-checks",
+    "microservices",
+    "go",
+    "python"
+  ],
+  "files": [
+    "consul_register.go",
+    "consul_discovery.py",
+    "health_check.go",
+    "istio-traffic.yaml",
+    "pooled_client.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

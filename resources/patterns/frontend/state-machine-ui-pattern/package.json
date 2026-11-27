@@ -1,0 +1,13 @@
+{
+  "name": "state-machine-ui-pattern-examples",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Runnable examples for the State Machine UI pattern (useReducer FSM, XState machines, guarded transitions, actors)",
+  "dependencies": {
+    "@xstate/react": "^5.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "xstate": "^5.0.0"
+  }
+}

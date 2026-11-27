@@ -1,0 +1,26 @@
+# init-container.yaml — runs before app and sidecar start
+spec:
+  initContainers:
+    - name: config-init
+      image: config-fetcher:latest
+      command:
+        ["sh", "-c", "fetch-config --output /config/app.yaml"]
+      volumeMounts:
+        - name: config
+          mountPath: /config
+
+  containers:
+    - name: api
+      image: shop/api-server:latest
+      volumeMounts:
+        - name: config
+          mountPath: /etc/app/config
+    - name: config-reloader
+      image: config-reloader:latest
+      volumeMounts:
+        - name: config
+          mountPath: /etc/app/config
+
+  volumes:
+    - name: config
+      emptyDir: {}

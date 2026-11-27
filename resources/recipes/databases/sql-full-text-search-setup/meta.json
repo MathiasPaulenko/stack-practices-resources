@@ -1,0 +1,36 @@
+{
+  "title": "Set Up Full-Text Search Indexes",
+  "title_es": "Configurar índices de búsqueda de texto completo",
+  "description": "Runnable PostgreSQL full-text search scripts: generated tsvector column with GIN index, ranked and highlighted queries, weighted columns, phrase and proximity search, trigram fuzzy matching, multi-language vectors, trigger-based updates, custom text search configurations and materialized search caching.",
+  "description_es": "Scripts ejecutables de búsqueda de texto completo en PostgreSQL: columna tsvector generada con índice GIN, consultas con ranking y resaltado, columnas ponderadas, búsqueda de frases y proximidad, coincidencia difusa con trigramas, vectores multi-idioma, actualización con triggers, configuraciones de búsqueda personalizadas y caché con vistas materializadas.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "sql-full-text-search-setup",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-full-text-search-setup/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "full-text-search",
+    "gin",
+    "tsvector",
+    "pg-trgm",
+    "search"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "setup-gin-index.sql",
+    "headline-snippets.sql",
+    "weighted-search.sql",
+    "phrase-proximity-search.sql",
+    "trigram-fuzzy-search.sql",
+    "multi-language-search.sql",
+    "index-maintenance.sql",
+    "trigger-updates.sql",
+    "custom-text-search-config.sql",
+    "search-caching.sql"
+  ]
+}

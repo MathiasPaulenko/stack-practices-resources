@@ -1,0 +1,17 @@
+deploy_staging:
+  stage: deploy
+  image: alpine:3.20
+  needs:
+    - job: build
+      artifacts: true
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: manual
+    - when: never
+  script:
+    - test -f dist/index.js
+    - tar -czf "app-$CI_COMMIT_SHORT_SHA.tar.gz" dist/
+    - apk add --no-cache curl
+    - curl --fail --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file "app-$CI_COMMIT_SHORT_SHA.tar.gz" "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/gitlab-ci-example/$CI_PIPELINE_IID/app-$CI_COMMIT_SHORT_SHA.tar.gz"
+  environment:
+    name: staging

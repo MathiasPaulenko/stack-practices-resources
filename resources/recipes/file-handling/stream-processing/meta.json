@@ -1,0 +1,24 @@
+{
+  "title": "Process Large Files with Streams — Code Examples",
+  "title_es": "Procesar Archivos Grandes con Streams — Ejemplos de Código",
+  "description": "Runnable stream processing examples: minimal readers in Python, Node.js and Java, a Python ETL pipeline with progress tracking, a Node.js backpressure pipeline, a Java parallel processor, and a Bash named-pipe example.",
+  "description_es": "Ejemplos ejecutables de procesamiento con streams: lectores mínimos en Python, Node.js y Java, un pipeline ETL en Python con seguimiento de progreso, un pipeline con backpressure en Node.js, un procesador paralelo en Java y un ejemplo de pipe nombrado en Bash.",
+  "type": "recipes",
+  "topic": "file-handling",
+  "slug": "stream-processing",
+  "source_urls": [
+    "https://stackpractices.com/recipes/stream-processing/",
+    "https://stackpractices.com/es/recipes/stream-processing/"
+  ],
+  "language": "multi",
+  "tags": ["streams", "file-handling", "etl", "backpressure", "python", "nodejs", "java", "bash"],
+  "files": [
+    "python_reader.py",
+    "nodejs_reader.js",
+    "FileProcessor.java",
+    "etl_pipeline.py",
+    "process_large_file.js",
+    "ParallelStreamProcessor.java",
+    "fifo_pipeline.sh"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Find and Remove Duplicate Rows in SQL",
+  "title_es": "Encontrar y eliminar filas duplicadas en SQL",
+  "description": "Runnable SQL scripts to detect and remove duplicate rows: GROUP BY/HAVING detection, ROW_NUMBER + DELETE in a transaction, batch deletion for large tables, MySQL 5.7 self-join, case-insensitive dedup, data merge before delete, cross-table dedup and clean-copy table swap.",
+  "description_es": "Scripts SQL ejecutables para detectar y eliminar filas duplicadas: detección con GROUP BY/HAVING, ROW_NUMBER + DELETE en transacción, borrado por lotes para tablas grandes, self-join en MySQL 5.7, dedup insensible a mayúsculas, fusión de datos antes de borrar, dedup entre tablas e intercambio con copia limpia.",
+  "type": "recipes",
+  "topic": "databases",
+  "slug": "sql-find-duplicate-rows",
+  "source_urls": [
+    "https://stackpractices.com/recipes/sql-find-duplicate-rows/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "sql",
+    "postgresql",
+    "mysql",
+    "deduplication",
+    "cte",
+    "window-functions",
+    "data-quality"
+  ],
+  "files": [
+    "README.md",
+    "README.es.md",
+    "find-duplicates.sql",
+    "delete-duplicates-window-functions.sql",
+    "delete-duplicates-mysql57.sql",
+    "batch-delete-duplicates.sql",
+    "merge-duplicates-before-delete.sql",
+    "case-insensitive-dedup.sql",
+    "dedup-across-tables.sql",
+    "clean-table-swap.sql"
+  ]
+}

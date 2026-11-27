@@ -1,0 +1,20 @@
+{
+  "slug": "sharding-pattern",
+  "title": "Sharding Pattern: Split Data Across Database Servers",
+  "titleEs": "Patrón de Sharding: Divide los Datos entre Servidores",
+  "type": "patterns",
+  "topic": "design",
+  "difficulty": "advanced",
+  "description": "Sharding Pattern implementations in Python, JavaScript and Java: hash-based routing with Redis, directory-based routing with migration, and range-based routing with Spring JdbcTemplate.",
+  "descriptionEs": "Implementaciones del patrón Sharding en Python, JavaScript y Java: enrutado por hash con Redis, enrutado por directorio con migración, y enrutado por rango con Spring JdbcTemplate.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-11-27",
+  "lastUpdated": "2026-11-27",
+  "files": [
+    "shard_manager.py",
+    "directory_shard_manager.js",
+    "RangeShardRouter.java",
+    "README.md",
+    "README.es.md"
+  ]
+}

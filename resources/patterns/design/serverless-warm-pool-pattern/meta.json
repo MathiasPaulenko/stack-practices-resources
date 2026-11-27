@@ -1,0 +1,21 @@
+{
+  "title": "Serverless Warm Pool Pattern",
+  "title_es": "Patrón Serverless Warm Pool",
+  "description": "CDK stack that keeps a Lambda API warm: an EventBridge rule invokes a small warmup function every 5 minutes, which sends concurrent async pings that the target function short-circuits on an isWarmup flag.",
+  "description_es": "Stack CDK que mantiene en caliente una API Lambda: una regla de EventBridge invoca una pequeña función warmup cada 5 minutos, que envía pings async concurrentes que el target cortocircuita con un flag isWarmup.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "serverless-warm-pool-pattern",
+  "source_urls": ["https://stackpractices.com/patterns/serverless-warm-pool-pattern/"],
+  "language": "en",
+  "tags": ["serverless", "warm-pool", "cold-start", "lambda", "eventbridge", "provisioned-concurrency", "aws-cdk", "keep-warm"],
+  "files": [
+    "warm_pool_stack.py",
+    "warmup_handler.py",
+    "warmup_handler.ts",
+    "api_handler.py",
+    "api_handler.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Suspense Boundary Pattern — React Examples",
+  "title_es": "Patrón Suspense Boundary — Ejemplos en React",
+  "description": "Runnable Suspense boundary examples: lazy loading with fallbacks, a suspense-compatible resource cache, nested boundaries, and an error boundary wrapper.",
+  "description_es": "Ejemplos ejecutables de boundaries Suspense: lazy loading con fallbacks, caché de recursos compatible con suspense, boundaries anidados y un wrapper error boundary.",
+  "type": "patterns",
+  "topic": "frontend",
+  "slug": "suspense-boundary-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/suspense-boundary-pattern/",
+    "https://stackpractices.com/es/patterns/suspense-boundary-pattern/",
+    "https://react.dev/reference/react/Suspense",
+    "https://react.dev/reference/react/use"
+  ],
+  "language": ["javascript", "jsx"],
+  "tags": ["pattern", "frontend", "react", "suspense", "loading-states", "error-boundary", "ssr", "concurrent"],
+  "files": [
+    "App.jsx",
+    "ErrorBoundary.jsx",
+    "suspenseResource.js",
+    "Skeletons.jsx",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

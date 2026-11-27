@@ -1,0 +1,69 @@
+# Prometheus recording and alert rules for SLO monitoring.
+# Apply with: prometheus --config.file=prometheus.yml referencing this file
+# via rule_files, or load into your preferred alerting stack.
+
+groups:
+  - name: slo_rules
+    interval: 1m
+    rules:
+      - record: request_total:rate5m
+        expr: sum(rate(http_requests_total[5m]))
+
+      - record: request_errors:rate5m
+        expr: sum(rate(http_requests_total{status=~"5.."}[5m]))
+
+      - record: slo:availability:rate5m
+        expr: 1 - (request_errors:rate5m / request_total:rate5m)
+
+      - record: slo:error_budget:remaining
+        expr: |
+          1 - (
+            sum(rate(http_requests_total{status=~"5.."}[30d]))
+            /
+            sum(rate(http_requests_total[30d]))
+          ) / (1 - 0.999)
+
+      - record: slo:burn_rate:1h
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[1h]))
+            /
+            sum(rate(http_requests_total[1h]))
+          ) / (1 - 0.999)
+
+      - record: slo:burn_rate:5m
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[5m]))
+            /
+            sum(rate(http_requests_total[5m]))
+          ) / (1 - 0.999)
+
+  - name: slo_alerts
+    rules:
+      - alert: SLOBurnRateCritical
+        expr: slo:burn_rate:5m > 10 and slo:burn_rate:1h > 10
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Error budget burning 10x faster"
+          description: "Freeze non-critical deploys."
+
+      - alert: SLOBurnRateWarning
+        expr: slo:burn_rate:1h > 2
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Error budget burning 2x faster"
+          description: "Review recent changes."
+
+      - alert: SLOErrorBudgetExhausted
+        expr: slo:error_budget:remaining < 0
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Error budget exhausted"
+          description: "Deploys frozen until recovery."

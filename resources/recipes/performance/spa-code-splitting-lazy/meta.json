@@ -1,0 +1,29 @@
+{
+  "title": "SPA Code Splitting and Lazy Loading",
+  "title_es": "Code Splitting y Lazy Loading en SPA",
+  "description": "Runnable Vite + React app demonstrating route-level code splitting, prefetch-on-hover, chunk error boundaries, and manualChunks vendor splitting.",
+  "description_es": "App Vite + React ejecutable que demuestra code splitting por rutas, prefetch al pasar el cursor, error boundaries para chunks y manualChunks.",
+  "type": "recipes",
+  "topic": "performance",
+  "slug": "spa-code-splitting-lazy",
+  "source_urls": [
+    "https://stackpractices.com/recipes/spa-code-splitting-lazy/",
+    "https://stackpractices.com/es/recipes/spa-code-splitting-lazy/"
+  ],
+  "language": "typescript",
+  "tags": ["react", "vite", "code-splitting", "lazy-loading", "performance"],
+  "files": [
+    "package.json",
+    "vite.config.ts",
+    "index.html",
+    "src/main.tsx",
+    "src/App.tsx",
+    "src/components/ChunkErrorBoundary.tsx",
+    "src/utils/prefetch.ts",
+    "src/pages/Dashboard.tsx",
+    "src/pages/Reports.tsx",
+    "src/pages/Analytics.tsx",
+    "README.md",
+    "README.es.md"
+  ]
+}

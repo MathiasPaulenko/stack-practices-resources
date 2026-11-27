@@ -1,0 +1,25 @@
+{
+  "title": "Service Dependency Map Template",
+  "title_es": "Plantilla de Mapa de Dependencias de Servicios",
+  "description": "A downloadable pack for documenting service dependencies: fillable markdown dependency map, a filled checkout example, OpenTelemetry servicegraph config, circuit breaker presets, a health-check payload, and a static dependency discovery script.",
+  "description_es": "Pack descargable para documentar dependencias de servicios: mapa de dependencias rellenable en markdown, ejemplo de checkout rellenado, configuración de servicegraph de OpenTelemetry, presets de circuit breaker, payload de health check y script de descubrimiento estático de dependencias.",
+  "type": "docs",
+  "topic": "architecture",
+  "slug": "service-dependency-map-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/service-dependency-map-template/",
+    "https://stackpractices.com/es/docs/service-dependency-map-template/"
+  ],
+  "language": "multi",
+  "tags": ["microservices", "dependency-map", "architecture", "opentelemetry", "circuit-breaker", "blast-radius", "service-catalog", "template"],
+  "files": [
+    "dependency-map-template.md",
+    "dependency-map-filled-example.md",
+    "otel-servicegraph.yaml",
+    "circuit-breakers.yaml",
+    "health-check.json",
+    "discover_imports.py",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "strategy-pattern",
+  "title": "Strategy Pattern: Interchangeable Algorithms at Runtime",
+  "titleEs": "Patrón Strategy: algoritmos intercambiables en runtime",
+  "type": "patterns",
+  "topic": "design",
+  "difficulty": "beginner",
+  "description": "Strategy Pattern examples: payment strategies in Python, JavaScript and Java, plus a full TypeScript pricing service with composite strategies.",
+  "descriptionEs": "Ejemplos del patrón Strategy: estrategias de pago en Python, JavaScript y Java, más un servicio de precios completo en TypeScript con estrategias compuestas.",
+  "author": "Mathias Paulenko",
+  "publishedAt": "2026-11-27",
+  "lastUpdated": "2026-11-27",
+  "source_urls": [
+    "https://stackpractices.com/patterns/strategy-pattern/",
+    "https://stackpractices.com/es/patterns/strategy-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["pattern", "strategy", "design-pattern", "behavioral", "algorithms"],
+  "files": [
+    "payment_strategy.py",
+    "strategy_checkout.js",
+    "StrategyCheckout.java",
+    "pricing_strategy.ts"
+  ]
+}

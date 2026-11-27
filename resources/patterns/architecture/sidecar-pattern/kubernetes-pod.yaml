@@ -1,0 +1,52 @@
+# kubernetes-pod.yaml — Pod with main container and sidecar
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api-server
+  labels:
+    app: api-server
+spec:
+  containers:
+    # Main application container
+    - name: api
+      image: shop/api-server:latest
+      ports:
+        - containerPort: 8080
+      env:
+        - name: DB_URL
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: url
+      volumeMounts:
+        - name: shared-logs
+          mountPath: /var/log/app
+        - name: config
+          mountPath: /etc/app/config
+
+    # Sidecar: log forwarder
+    - name: log-forwarder
+      image: fluent-bit:2.1
+      volumeMounts:
+        - name: shared-logs
+          mountPath: /var/log/app
+          readOnly: true
+      env:
+        - name: LOG_OUTPUT
+          value: "elasticsearch://es:9200"
+
+    # Sidecar: config reloader
+    - name: config-reloader
+      image: config-reloader:latest
+      volumeMounts:
+        - name: config
+          mountPath: /etc/app/config
+      env:
+        - name: CONFIG_SOURCE
+          value: "configmap:api-config"
+
+  volumes:
+    - name: shared-logs
+      emptyDir: {}
+    - name: config
+      emptyDir: {}

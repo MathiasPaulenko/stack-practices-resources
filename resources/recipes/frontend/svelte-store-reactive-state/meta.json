@@ -1,0 +1,28 @@
+{
+  "title": "Reactive State with Svelte Stores — Examples",
+  "title_es": "Estado Reactivo con Svelte Stores — Ejemplos",
+  "description": "Runnable Svelte store examples: writable and readable stores, a derived cart store, a custom store with a contract-based API, localStorage persistence, and store tests with Vitest.",
+  "description_es": "Ejemplos ejecutables de stores de Svelte: stores writable y readable, store derived de carrito, store personalizado con API por contrato, persistencia en localStorage y tests de stores con Vitest.",
+  "type": "recipes",
+  "topic": "frontend",
+  "slug": "svelte-store-reactive-state",
+  "source_urls": [
+    "https://stackpractices.com/recipes/svelte-store-reactive-state/",
+    "https://stackpractices.com/es/recipes/svelte-store-reactive-state/",
+    "https://svelte.dev/docs/svelte/stores",
+    "https://svelte.dev/docs/svelte/svelte-store"
+  ],
+  "language": ["javascript", "svelte"],
+  "tags": ["recipe", "frontend", "svelte", "stores", "state-management", "reactive", "vitest"],
+  "files": [
+    "stores/counter.js",
+    "stores/time.js",
+    "stores/cart.js",
+    "stores/user.js",
+    "Counter.svelte",
+    "counter.test.js",
+    "package.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

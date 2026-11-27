@@ -1,0 +1,29 @@
+# istio-injection.yaml — Envoy is injected automatically
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+  labels:
+    istio-injection: enabled  # Istio auto-injects sidecar
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  namespace: production
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          image: shop/api-server:latest
+          ports:
+            - containerPort: 8080
+      # Istio injects the Envoy sidecar at admission time

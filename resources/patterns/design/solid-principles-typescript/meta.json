@@ -1,0 +1,27 @@
+{
+  "title": "SOLID Principles TypeScript — Order Service Companion",
+  "title_es": "Principios SOLID en TypeScript — Servicio de Pedidos Companion",
+  "description": "Runnable TypeScript version of the pattern's order-service scenario: SRP-separated validator/repository/notifier, OCP discount strategies wired through an interface, ISP Readable/Writable interfaces, and DIP constructor injection — with Vitest tests that swap in the mock implementations.",
+  "description_es": "Versión TypeScript ejecutable del escenario del servicio de pedidos del patrón: validator/repository/notifier separados por SRP, estrategias de descuento OCP detrás de una interfaz, interfaces ISP Readable/Writable e inyección por constructor DIP — con tests Vitest que intercambian las implementaciones mock.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "solid-principles-typescript",
+  "source_urls": {
+    "en": "https://stackpractices.com/patterns/solid-principles-typescript/",
+    "es": "https://stackpractices.com/es/patterns/solid-principles-typescript/"
+  },
+  "language": "bilingual",
+  "tags": ["solid", "typescript", "clean-code", "dependency-injection", "design-patterns", "vitest"],
+  "files": [
+    "src/domain/order.ts",
+    "src/domain/order-validator.ts",
+    "src/discount/discount-strategy.ts",
+    "src/infra/interfaces.ts",
+    "src/infra/order-repository.ts",
+    "src/infra/order-notifier.ts",
+    "src/order-service.ts",
+    "tests/order-service.test.ts",
+    "README.md",
+    "README.es.md"
+  ]
+}

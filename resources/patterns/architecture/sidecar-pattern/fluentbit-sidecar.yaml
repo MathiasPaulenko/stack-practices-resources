@@ -1,0 +1,59 @@
+# fluentbit-sidecar.yaml — Fluent Bit config + Deployment
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluentbit-config
+data:
+  fluent-bit.conf: |
+    [SERVICE]
+        Flush         5
+        Log_Level     info
+    [INPUT]
+        Name          tail
+        Path          /var/log/app/*.log
+        Parser        json
+        Tag           app
+    [OUTPUT]
+        Name          es
+        Match         *
+        Host          elasticsearch
+        Port          9200
+        Index         app-logs
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-with-logging
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api
+          image: shop/api-server:latest
+          volumeMounts:
+            - name: logs
+              mountPath: /var/log/app
+
+        - name: log-sidecar
+          image: fluent-bit:2.1
+          volumeMounts:
+            - name: logs
+              mountPath: /var/log/app
+              readOnly: true
+            - name: fluentbit-config
+              mountPath: /fluent-bit/etc
+              readOnly: true
+
+      volumes:
+        - name: logs
+          emptyDir: {}
+        - name: fluentbit-config
+          configMap:
+            name: fluentbit-config

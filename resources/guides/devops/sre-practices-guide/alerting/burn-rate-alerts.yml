@@ -1,0 +1,42 @@
+# Prometheus alerting rules: multi-window burn rate for a 99.9% availability SLO.
+# Error ratio base = 0.001 (0.1% allowed). Adjust the multiplier and windows
+# to match your SLO target and traffic shape.
+groups:
+  - name: slo-burn-rate
+    rules:
+      # Fast burn: paging. Burns 2% of the monthly budget per hour
+      # (14.4x). Exhausts a 99.9% SLO budget in ~2 days.
+      - alert: SLOBurnRateFast
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[1h]))
+            / sum(rate(http_requests_total[1h]))
+          ) > (14.4 * 0.001)
+          and
+          (
+            sum(rate(http_requests_total{status=~"5.."}[5m]))
+            / sum(rate(http_requests_total[5m]))
+          ) > (14.4 * 0.001)
+        for: 2m
+        labels:
+          severity: page
+        annotations:
+          summary: "Fast SLO burn rate on {{ $labels.job }}"
+
+      # Slow burn: ticket. 6x burn over 3 days.
+      - alert: SLOBurnRateSlow
+        expr: |
+          (
+            sum(rate(http_requests_total{status=~"5.."}[6h]))
+            / sum(rate(http_requests_total[6h]))
+          ) > (6 * 0.001)
+          and
+          (
+            sum(rate(http_requests_total{status=~"5.."}[30m]))
+            / sum(rate(http_requests_total[30m]))
+          ) > (6 * 0.001)
+        for: 1h
+        labels:
+          severity: ticket
+        annotations:
+          summary: "Slow SLO burn rate on {{ $labels.job }}"

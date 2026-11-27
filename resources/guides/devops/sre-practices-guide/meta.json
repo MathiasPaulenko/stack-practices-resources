@@ -1,0 +1,13 @@
+{
+  "title": "SRE Practices Guide — Companion Kit",
+  "title_es": "Guía de Prácticas SRE — Kit complementario",
+  "description": "Ready-to-adapt SRE kit: multi-window burn rate alerting rules for Prometheus, an SLO document template, and a blameless postmortem template.",
+  "description_es": "Kit SRE listo para adaptar: reglas de alertado por burn rate multi-ventana para Prometheus, plantilla de documento SLO y plantilla de postmortem sin culpa.",
+  "type": "guides",
+  "topic": "devops",
+  "slug": "sre-practices-guide",
+  "source_urls": ["https://stackpractices.com/guides/sre-practices-guide/", "https://stackpractices.com/es/guides/sre-practices-guide/"],
+  "language": "bilingual",
+  "tags": ["sre","slo","sli","error-budget","burn-rate","prometheus","alerting","postmortem"],
+  "files": ["alerting/burn-rate-alerts.yml", "templates/slo-document.md", "templates/postmortem-template.md"]
+}
