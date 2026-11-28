@@ -1,0 +1,15 @@
+/* Single-line ellipsis — full text stays in the DOM, only display is clipped */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 30ch;
+}
+
+/* Multi-line clamp — needs the -webkit- prefix, but works in every browser */
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}

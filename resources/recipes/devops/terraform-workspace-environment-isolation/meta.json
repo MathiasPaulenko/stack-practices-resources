@@ -1,0 +1,32 @@
+{
+  "title": "Isolate Environments with Terraform Workspaces",
+  "title_es": "Aislar Entornos con Terraform Workspaces",
+  "description": "Runnable Terraform configuration for environment isolation with CLI workspaces: S3 backend with native lockfile, per-workspace env_config locals, and per-environment tfvars.",
+  "description_es": "Configuración de Terraform ejecutable para aislar entornos con workspaces de CLI: backend S3 con lockfile nativo, locals env_config por workspace y tfvars por entorno.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "terraform-workspace-environment-isolation",
+  "source_urls": [
+    "https://stackpractices.com/recipes/terraform-workspace-environment-isolation/",
+    "https://stackpractices.com/es/recipes/terraform-workspace-environment-isolation/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "workspaces",
+    "aws",
+    "s3",
+    "state-management",
+    "iac",
+    "environments"
+  ],
+  "files": [
+    "backend.tf",
+    "environments.tf",
+    "dev.tfvars",
+    "staging.tfvars",
+    "production.tfvars",
+    "README.md",
+    "README.es.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "How to Truncate Text (Python, JS, Java, CSS)",
+  "title_es": "Cómo Truncar Texto (Python, JS, Java, CSS)",
+  "description": "Runnable text truncation helpers in Python, JavaScript, Java, and CSS: character slices, word-boundary cuts, grapheme-safe Unicode truncation, and CSS ellipsis/line-clamp.",
+  "description_es": "Helpers ejecutables para truncar texto en Python, JavaScript, Java y CSS: cortes por carácter, por límite de palabra, truncamiento Unicode seguro por grafemas y ellipsis/line-clamp en CSS.",
+  "type": "recipes",
+  "topic": "data",
+  "slug": "truncate-text",
+  "source_urls": [
+    "https://stackpractices.com/recipes/truncate-text/",
+    "https://stackpractices.com/es/recipes/truncate-text/"
+  ],
+  "language": "multi",
+  "tags": ["text", "truncation", "ellipsis", "unicode", "css", "python", "javascript", "java"],
+  "files": [
+    "truncate_text.py",
+    "truncate-text.js",
+    "TextTruncator.java",
+    "truncate.css",
+    "README.md",
+    "README.es.md"
+  ]
+}

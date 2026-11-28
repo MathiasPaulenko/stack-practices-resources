@@ -1,0 +1,22 @@
+{
+  "title": "Thread Pools — Runnable Examples",
+  "title_es": "Thread Pools — Ejemplos ejecutables",
+  "description": "Runnable worker-pool examples in Java, Python, C#, and Go: fixed pools, production ThreadPoolExecutor with bounded queue and rejection policy, SemaphoreSlim + Task.WhenAll, and goroutine worker pools.",
+  "description_es": "Ejemplos ejecutables de worker pools en Java, Python, C# y Go: pools fijos, ThreadPoolExecutor de producción con cola acotada y política de rechazo, SemaphoreSlim + Task.WhenAll y worker pools con goroutines.",
+  "type": "recipes",
+  "topic": "concurrency",
+  "slug": "thread-pools",
+  "source_urls": [
+    "https://stackpractices.com/recipes/thread-pools/"
+  ],
+  "language": "bilingual",
+  "tags": ["thread-pool", "concurrency", "executor", "java", "python", "csharp", "go", "worker-pool"],
+  "files": [
+    "ImageProcessor.java",
+    "fetch_urls.py",
+    "WorkerPool.cs",
+    "worker_pool.go",
+    "README.md",
+    "README.es.md"
+  ]
+}

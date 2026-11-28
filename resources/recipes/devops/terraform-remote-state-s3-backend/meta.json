@@ -1,0 +1,30 @@
+{
+  "title": "Store Terraform Remote State in S3 with Locking",
+  "title_es": "Almacenar Terraform Remote State en S3 con Bloqueo",
+  "description": "Bootstrap and backend configuration for Terraform remote state on S3 with native lockfile locking, encryption, versioning, public access block, and per-environment state isolation.",
+  "description_es": "Configuración de bootstrap y backend para Terraform remote state en S3 con locking nativo por lockfile, cifrado, versionado, acceso público bloqueado y aislamiento de state por entorno.",
+  "type": "recipes",
+  "topic": "devops",
+  "slug": "terraform-remote-state-s3-backend",
+  "source_urls": [
+    "https://stackpractices.com/recipes/terraform-remote-state-s3-backend/",
+    "https://stackpractices.com/es/recipes/terraform-remote-state-s3-backend/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "aws",
+    "s3",
+    "state-management",
+    "iac",
+    "remote-state",
+    "locking"
+  ],
+  "files": [
+    "bootstrap.tf",
+    "backend.tf",
+    "environments.tf",
+    "README.md",
+    "README.es.md"
+  ]
+}
