@@ -1,0 +1,28 @@
+{
+  "title": "Threat Modeling — Session Worksheet & Worked Example",
+  "title_es": "Modelado de Amenazas — Hoja de trabajo de sesión y ejemplo resuelto",
+  "description": "A printable threat modeling session worksheet (DFD checklist, STRIDE prompts, risk matrix, mitigation register) plus the payment-API worked example from the guide, ready to copy into your team's docs.",
+  "description_es": "Hoja de trabajo imprimible para sesiones de modelado de amenazas (checklist DFD, guiones STRIDE, matriz de riesgo, registro de mitigaciones) más el ejemplo resuelto de la API de pagos de la guía, listo para copiar a la documentación de tu equipo.",
+  "type": "guides",
+  "topic": "security",
+  "slug": "threat-modeling-guide",
+  "source_urls": [
+    "https://stackpractices.com/guides/threat-modeling-guide/",
+    "https://stackpractices.com/es/guides/threat-modeling-guide/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "threat-modeling",
+    "stride",
+    "security",
+    "dfd",
+    "risk-matrix",
+    "worksheet"
+  ],
+  "files": [
+    "session-worksheet.md",
+    "payment-api-worked-example.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
