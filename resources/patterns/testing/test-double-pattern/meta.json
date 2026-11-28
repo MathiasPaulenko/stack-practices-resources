@@ -1,0 +1,23 @@
+{
+  "title": "Test Double: Replace Dependencies with Stubs, Spies, Fakes",
+  "title_es": "Patrón Test Double: Reemplazar Dependencias con Stubs, Spies, Fakes",
+  "description": "Runnable pytest and jest examples of all five test-double types — dummy, stub, spy, fake, mock — with an in-memory fake repository.",
+  "description_es": "Ejemplos ejecutables en pytest y jest de los cinco tipos de test doubles — dummy, stub, spy, fake, mock — con un fake repository en memoria.",
+  "type": "patterns",
+  "topic": "testing",
+  "slug": "test-double-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/test-double-pattern/",
+    "https://stackpractices.com/es/patterns/test-double-pattern/"
+  ],
+  "language": "bilingual",
+  "tags": ["testing", "test-doubles", "pytest", "jest", "mocking", "stubs", "fakes"],
+  "files": [
+    "test_doubles.py",
+    "test_doubles.test.js",
+    "package.json",
+    "pytest.ini",
+    "README.md",
+    "README.es.md"
+  ]
+}

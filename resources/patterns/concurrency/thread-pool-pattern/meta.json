@@ -1,0 +1,22 @@
+{
+  "title": "Thread Pool Pattern — Companion",
+  "title_es": "Patrón Thread Pool — Companion",
+  "description": "Runnable Python thread-pool examples: submit/as_completed, executor.map, per-future error handling, and Goetz's sizing formula. Offline — simulated I/O tasks.",
+  "description_es": "Ejemplos ejecutables en Python de thread pools: submit/as_completed, executor.map, manejo de errores por future y la fórmula de dimensionado de Goetz. Offline — tareas I/O simuladas.",
+  "type": "patterns",
+  "topic": "concurrency",
+  "slug": "thread-pool-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/thread-pool-pattern/",
+    "https://stackpractices.com/es/patterns/thread-pool-pattern/"
+  ],
+  "language": "python",
+  "tags": ["python", "concurrency", "thread-pool", "concurrent-futures", "pattern"],
+  "files": [
+    "thread_pool_examples.py",
+    "test_thread_pool.py",
+    "requirements.txt",
+    "README.md",
+    "README.es.md"
+  ]
+}

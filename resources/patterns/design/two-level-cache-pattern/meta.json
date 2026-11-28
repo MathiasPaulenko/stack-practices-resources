@@ -1,0 +1,22 @@
+{
+  "title": "Two-Level Cache Pattern (L1 + L2)",
+  "title_es": "Patrón Two-Level Cache (L1 + L2)",
+  "description": "Two-level cache implementations in Python, TypeScript, and Java: LRU/Caffeine L1 plus Redis L2 with pub/sub invalidation for cross-instance consistency.",
+  "description_es": "Implementaciones de caché de dos niveles en Python, TypeScript y Java: L1 LRU/Caffeine más L2 Redis con invalidación por pub/sub para consistencia entre instancias.",
+  "type": "patterns",
+  "topic": "design",
+  "slug": "two-level-cache-pattern",
+  "source_urls": [
+    "https://stackpractices.com/patterns/two-level-cache-pattern/",
+    "https://stackpractices.com/es/patterns/two-level-cache-pattern/"
+  ],
+  "language": "multi",
+  "tags": ["caching", "redis", "l1-l2", "caffeine", "invalidation", "python", "typescript", "java"],
+  "files": [
+    "two_level_cache.py",
+    "two-level-cache.ts",
+    "TwoLevelCacheManager.java",
+    "README.md",
+    "README.es.md"
+  ]
+}
