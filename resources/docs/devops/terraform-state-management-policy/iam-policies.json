@@ -1,0 +1,46 @@
+{
+  "read_only_plan": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:GetObject",
+          "s3:ListBucket"
+        ],
+        "Resource": [
+          "arn:aws:s3:::example-tfstate-prod",
+          "arn:aws:s3:::example-tfstate-prod/*"
+        ]
+      },
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:PutObject",
+          "s3:DeleteObject"
+        ],
+        "Resource": [
+          "arn:aws:s3:::example-tfstate-prod/*.tflock"
+        ]
+      }
+    ]
+  },
+  "read_write_apply": {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": [
+          "s3:GetObject",
+          "s3:PutObject",
+          "s3:ListBucket",
+          "s3:DeleteObject"
+        ],
+        "Resource": [
+          "arn:aws:s3:::example-tfstate-prod",
+          "arn:aws:s3:::example-tfstate-prod/*"
+        ]
+      }
+    ]
+  }
+}

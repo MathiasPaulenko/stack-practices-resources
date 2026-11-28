@@ -1,0 +1,30 @@
+{
+  "title": "Terraform State Management Policy Template",
+  "title_es": "Plantilla de Política de Gestión de Estado de Terraform",
+  "description": "Ready-to-adopt Terraform state management policy: S3 backend with native locking, isolation rules, IAM policies, disaster recovery procedures, enforcement, exceptions and quarterly review metrics.",
+  "description_es": "Política de gestión de estado de Terraform lista para adoptar: backend S3 con locking nativo, reglas de aislamiento, políticas IAM, procedimientos de disaster recovery, enforcement, excepciones y métricas de revisión trimestral.",
+  "type": "docs",
+  "topic": "devops",
+  "slug": "terraform-state-management-policy",
+  "source_urls": [
+    "https://stackpractices.com/docs/terraform-state-management-policy/",
+    "https://stackpractices.com/es/docs/terraform-state-management-policy/"
+  ],
+  "language": "bilingual",
+  "tags": [
+    "terraform",
+    "aws",
+    "s3",
+    "state-management",
+    "policy",
+    "iac",
+    "governance"
+  ],
+  "files": [
+    "POLICY.md",
+    "backend.tf",
+    "iam-policies.json",
+    "README.md",
+    "README.es.md"
+  ]
+}

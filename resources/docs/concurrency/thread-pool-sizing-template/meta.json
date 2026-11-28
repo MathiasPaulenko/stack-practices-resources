@@ -1,0 +1,20 @@
+{
+  "title": "Thread Pool Sizing Template",
+  "title_es": "Plantilla de Dimensionado de Thread Pools",
+  "description": "Blank fillable worksheet plus a filled example (checkout service calling an inventory API) for documenting thread pool configuration: workload type, measured W/C ratio, sizing formulas, queue capacity, rejection policy, and monitoring thresholds.",
+  "description_es": "Hoja de trabajo rellenable en blanco más un ejemplo completo (servicio de checkout que llama a una API de inventario) para documentar la configuración de pools de hilos: tipo de carga, ratio W/C medido, fórmulas de tamaño, capacidad de cola, política de rechazo y umbrales de monitorización.",
+  "type": "docs",
+  "topic": "concurrency",
+  "slug": "thread-pool-sizing-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/thread-pool-sizing-template/"
+  ],
+  "language": "bilingual",
+  "tags": ["thread-pool", "concurrency", "performance", "sizing", "template", "capacity-planning"],
+  "files": [
+    "template.md",
+    "example-checkout-service.md",
+    "README.md",
+    "README.es.md"
+  ]
+}

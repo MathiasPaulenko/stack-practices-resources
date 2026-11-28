@@ -1,0 +1,20 @@
+%% C4 Level 2 — Container diagram
+%% Shows the deployable/runnable units inside the system
+flowchart TD
+    subgraph system["Online Banking System"]
+        web["Web App<br/>(React SPA)"]
+        mobile["Mobile App<br/>(React Native)"]
+        api["API Application<br/>(Node.js / Express)"]
+        worker["Notification Worker<br/>(Node.js)"]
+        db[("PostgreSQL")]
+        cache[("Redis")]
+        queue[["RabbitMQ"]]
+    end
+
+    web -->|"REST / JSON"| api
+    mobile -->|"REST / JSON"| api
+    api --> db
+    api --> cache
+    api -->|"enqueue"| queue
+    queue --> worker
+    worker -->|"SMTP"| email["Email System<br/>(external)"]

@@ -1,0 +1,17 @@
+%% C4 Level 1 — System Context diagram
+%% Render with mermaid-cli: mmdc -i c4-context.mmd -o context.svg
+flowchart TD
+    customer["Customer<br/>(person)"]
+    admin["Support Agent<br/>(person)"]
+
+    system["Online Banking System<br/>(system under design)"]
+
+    mainframe["Mainframe Core<br/>(external system)"]
+    email["Email System<br/>(external system)"]
+    kyc["KYC Provider<br/>(external system)"]
+
+    customer -->|"checks balance, transfers"| system
+    admin -->|"manages tickets"| system
+    system -->|"account data"| mainframe
+    system -->|"sends notifications"| email
+    system -->|"verifies identity"| kyc

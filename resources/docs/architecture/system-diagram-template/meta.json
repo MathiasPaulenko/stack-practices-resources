@@ -1,0 +1,25 @@
+{
+  "title": "System Diagram Template — C4 Examples",
+  "title_es": "Plantilla de Diagramas de Sistema — Ejemplos C4",
+  "description": "Ready-to-use system diagram assets: Mermaid C4 context and container diagrams, a Structurizr DSL workspace, and a diagram review checklist.",
+  "description_es": "Recursos listos para diagramas de sistema: diagramas C4 de contexto y contenedores en Mermaid, un workspace en Structurizr DSL y un checklist de revisión de diagramas.",
+  "type": "docs",
+  "topic": "architecture",
+  "slug": "system-diagram-template",
+  "source_urls": [
+    "https://stackpractices.com/docs/system-diagram-template/",
+    "https://stackpractices.com/es/docs/system-diagram-template/",
+    "https://c4model.com/",
+    "https://docs.structurizr.com/dsl"
+  ],
+  "language": ["mermaid", "structurizr"],
+  "tags": ["template", "architecture", "c4-model", "diagram", "mermaid", "structurizr", "documentation"],
+  "files": [
+    "c4-context.mmd",
+    "c4-container.mmd",
+    "workspace.dsl",
+    "diagram-review-checklist.md",
+    "README.md",
+    "README.es.md"
+  ]
+}
